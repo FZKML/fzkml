@@ -16,7 +16,8 @@ shell expression interpolation and uploads outside the reviewed report path.
 Action SHAs are immutable and updates require review. Python, uv, Rust, runner
 family and all dependencies are pinned; the actual hosted runner image revision
 is recorded in the job summary. The Ubuntu family pin is not a byte-identical
-runner image. Rust has no external dependencies yet; Cargo.lock is still enforced.
+runner image. Rust dependencies and bundled native code are inventoried with preserved notices;
+Cargo.lock is enforced.
 
 Trusted report publication rebuilds from reviewed `main` in the `public-reports`
 environment. It never consumes PR-produced archives, data, executables or caches.

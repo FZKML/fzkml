@@ -104,6 +104,37 @@ def claim() -> dict[str, Any]:
 
 
 class ResultTests(unittest.TestCase):
+    def test_local_pending_record_and_publication_gate(self) -> None:
+        r = measured()
+        r["schema_version"] = "1.1.0"
+        r["provenance"].update(execution_kind="local", workflow_path=None, workflow_run=None)
+        r["publication_review"]["approved"] = False
+        r["repetitions"][0]["measurements"][0]["phase"] = "aggregate"
+        r["repetitions"][1]["measurements"][0]["phase"] = "aggregate"
+        r["metrics"][0]["phase"] = "aggregate"
+        validate_result(r)
+        bundle = {"schema_version": "1.1.0", "results": [r]}
+        validate_bundle(bundle, registry())
+        with tempfile.TemporaryDirectory() as directory:
+            destination = Path(directory) / "out"
+            with self.assertRaisesRegex(Invalid, "publication-review-pending"):
+                write_report(bundle, registry(), destination)
+            self.assertFalse(destination.exists())
+        for mutation in ("fake-run", "missing-run", "unknown-phase", "old-version"):
+            changed = copy.deepcopy(r)
+            if mutation == "fake-run":
+                changed["provenance"]["workflow_run"] = 1
+            elif mutation == "missing-run":
+                changed["provenance"]["execution_kind"] = "github-actions"
+            elif mutation == "unknown-phase":
+                changed["repetitions"][0]["measurements"][0]["phase"] = "anything"
+            else:
+                changed["schema_version"] = "1.0.0"
+            with self.subTest(mutation=mutation), self.assertRaises(Invalid):
+                validate_result(changed)
+        r["publication_review"]["approved"] = True
+        self.assertIn("Execution: local; no workflow run.", render(bundle, registry())["report.md"])
+
     def test_language_workflow_registration(self) -> None:
         result = measured()
         result["provenance"]["workflow_path"] = ".github/workflows/language.yml"

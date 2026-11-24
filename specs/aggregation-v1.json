@@ -1,0 +1,23 @@
+{
+  "version": "fzkml-protected-aggregation-v1",
+  "status": "research; independent protocol and cryptographic review pending",
+  "clients": 3,
+  "recipients": 3,
+  "threshold": 2,
+  "construction": "degree-one Shamir with Pedersen VSS commitments, composed with a private Groth16 local SGD relation",
+  "numeric_relation": "fzknum-1.0.0 local step; full-state scalar, scale 16, ties-to-even, input range [-32,32], output [-80,80]",
+  "sharing_encoding": "u=local_update+80 in BabyJubJub scalar field; weighted sum decoded without wrap, subtract 80*denominator, then ties-to-even division",
+  "output_commitment": "C0=(u+context_scalar)*G+r0*H",
+  "coefficient_commitment": "C1=a*G+b*H; shares s_j=u+j*a, t_j=r0+j*b",
+  "data_commitment": "D=(x+32+65*(y+32))*G+rd*H; x,y are private bounded witnesses",
+  "context_scalar": "first 31 bytes of domain-separated SHA-256 context, little-endian; 248 bits constrained in circuit",
+  "h_derivation": "SHA-256 domain FZKML/Pedersen/H/BabyJubJub/v1 plus u32le counter, reduced to y, lexicographically smaller x, clear cofactor; reject identity/G; ROM unknown-DL assumption, not an RFC 9380 suite",
+  "proof": "BN254 Groth16; private x,y and commitment blindings; public context, parent w, C0 and D; local randomized research setup",
+  "authentication": "Ed25519 strict verification; pinned issuer, client, recipient and durable-authority keys; trusted authenticated private delivery API",
+  "observer": "coordinator sees credentials/pseudonyms, commitments, proofs, acknowledgments and authorized aggregate shares/sum; no per-client share or witness in coordinator API",
+  "corruption": "privacy at most one colluding recipient plus honest-but-curious coordinator, conditioned on permitted aggregate; malicious inputs must satisfy proof, opening and authentication checks",
+  "availability": "all three recipient availability receipts before freeze; release needs two distinct verified aggregate shares; earlier withholding aborts; no unconditional liveness guarantee",
+  "identity": "one contribution per issuer-attested entity per round; no one-person, anonymous credential or real-world identity claim",
+  "release": "durable possible-disclosure reservation before any aggregate share, immutable accepted root and one disclosure slot per parent, SQLite FULL/WAL trusted authority, durable cached release before delivery",
+  "unsupported": ["two colluding recipients", "fewer than two available verified recipients", "client dropout after accepted-set freeze", "different shapes/encoding", "momentum or error-feedback optimizer execution", "low-rank-only bound substituted for dense payload", "network transport or distributed consensus", "malicious storage rollback or corrupted signing authority", "DP output privacy", "production setup and side-channel guarantees"]
+}
