@@ -35,7 +35,8 @@ class FixedMean:
 
     def __post_init__(self) -> None:
         if (
-            type(self.cap) is not int
+            type(self.weights) is not tuple
+            or type(self.cap) is not int
             or not 0 < self.cap <= 80
             or not 1 <= len(self.weights) <= 8
             or any(type(w) is not int or not 1 <= w <= 4 for w in self.weights)

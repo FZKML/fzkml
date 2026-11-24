@@ -77,13 +77,15 @@ class ContextV2:
         ):
             raise ValueError("round-or-parent-format-domain")
         if (
-            len(self.roster) != 3
+            type(self.roster) is not tuple
+            or len(self.roster) != 3
             or len(set(self.roster)) != 3
             or any(type(v) is not bytes or len(v) != 16 or v == bytes(16) for v in self.roster)
         ):
             raise ValueError("ordered-roster-domain")
         if (
-            len(self.counts) != 3
+            type(self.counts) is not tuple
+            or len(self.counts) != 3
             or any(type(v) is not int or not 1 <= v <= 4 for v in self.counts)
             or type(self.local_step_count) is not int
             or self.local_step_count != 1

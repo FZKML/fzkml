@@ -224,6 +224,8 @@ class SensitivityTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             FixedMean(1, (0,))
         with self.assertRaises(ValueError):
+            FixedMean(1, [1, 1])  # type: ignore[arg-type]
+        with self.assertRaises(ValueError):
             FixedMean(1, (1, 1)).bound("record-unspecified")
 
 
@@ -484,6 +486,8 @@ class PrivateV2Tests(unittest.TestCase):
         for value in f["invalid_context_hex"]:
             with self.assertRaises(ValueError):
                 ContextV2.decode(bytes.fromhex(value))
+        with self.assertRaises(ValueError):
+            replace(private_context(), counts=[1, 2, 1]).encode()  # type: ignore[arg-type]
         previous = StatementV2.decode(bytes.fromhex(f["valid"][0]["statement_hex"]))
         next_context = ContextV2.decode(bytes.fromhex(f["valid"][1]["context_hex"]))
         require_next(previous, replace(next_context, counts=(4, 1, 1)))
