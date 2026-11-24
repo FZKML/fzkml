@@ -85,9 +85,12 @@ def load(path: Path) -> Any:
 
 def schema(value: Any, name: str) -> None:
     public_tree(value)
-    definition = json.loads((ROOT / "schemas" / f"{name}-1.0.0.json").read_text())
+    version = value.get("schema_version") if isinstance(value, dict) else None
+    supported = {"result": {"1.0.0", "1.1.0"}, "bundle": {"1.0.0", "1.1.0"}, "claims": {"1.0.0"}}
+    require(isinstance(version, str) and version in supported[name], f"{name}-schema-version")
+    definition = json.loads((ROOT / "schemas" / f"{name}-{version}.json").read_text())
     local: Registry[Any] = Registry()
-    for path in (ROOT / "schemas").glob("*-1.0.0.json"):
+    for path in (ROOT / "schemas").glob("*.json"):
         document = json.loads(path.read_text())
         resource = Resource.from_contents(document)
         local = local.with_resource(document["$id"], resource)
@@ -124,7 +127,7 @@ def validate_result(result: dict[str, Any]) -> None:
         p = result["provenance"]
         require(
             p["source_commit"] != "0" * 40
-            and p["workflow_run"] > 0
+            and (p.get("execution_kind") == "local" or p["workflow_run"] > 0)
             and p["dependency_digest"] != "sha256:" + "0" * 64,
             "executed-provenance-placeholder",
         )
@@ -240,4 +243,13 @@ def validate_artifacts(directory: Path) -> None:
         total += len(data)
         require(not SECRET.search(data.decode("utf-8")), "artifact-secret-marker")
     require(total <= MAX_TOTAL, "artifact-total-size-limit")
-    validate_bundle(load(directory / "results.json"), load(directory / "claims.json"))
+    bundle = load(directory / "results.json")
+    validate_bundle(bundle, load(directory / "claims.json"))
+    require_publication(bundle)
+
+
+def require_publication(bundle: dict[str, Any]) -> None:
+    require(
+        all(r["publication_review"]["approved"] is True for r in bundle["results"]),
+        "publication-review-pending",
+    )
