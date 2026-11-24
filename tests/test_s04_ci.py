@@ -215,6 +215,7 @@ class JournalBoundaryTests(unittest.TestCase):
             (directory / "proof-check.json").symlink_to(directory / "journal.json")
             with self.assertRaises(Invalid):
                 artifact_tree(directory)
+        (ROOT / ".tools").mkdir(exist_ok=True)
         with tempfile.TemporaryDirectory(dir=ROOT / ".tools") as temporary:
             directory = Path(temporary)
             (directory / "redirect").symlink_to(directory, target_is_directory=True)
