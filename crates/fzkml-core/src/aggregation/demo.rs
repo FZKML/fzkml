@@ -86,7 +86,7 @@ pub fn demo(path: &Path) -> Result<DemoReport> {
         let witness = Witness::new(x, y);
         *seconds.entry("witness").or_default() += start.elapsed().as_secs_f64();
         let start = Instant::now();
-        let (contribution, packets) = clients[i].contribute(&context, &parameters, &witness)?;
+        let (contribution, packets) = clients[i].contribute(&context, &parameters, witness)?;
         *seconds.entry("prove").or_default() += start.elapsed().as_secs_f64();
         // Four public-envelope deliveries plus three logical private messages.
         // A private message has three 32-byte IDs, one role byte and two scalars.

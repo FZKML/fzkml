@@ -104,7 +104,10 @@ undo disclosure; the roster/decision remains immutable.
 | Coordinator/ledger | Public credentials, stable pseudonyms and validity/revocations, commitments/proofs, signed availability receipts, fixed accepted roster/weights, permit, verified aggregate openings, clean weighted sum and released model |
 | Measurement log | Fixed synthetic reference result, aggregate IDs, public setup/key digests, phase costs, size totals, process RSS and explicit limitations |
 
-Witness and private Packet types have no Debug or Serialize. The coordinator API
+Witness and private Packet types have no Debug or Serialize. Contribution
+construction consumes its non-cloneable witness, making commitment blindings
+single-use at this API boundary. Delivery retries reuse the original immutable
+contribution and packets; newly proving a replacement is not an idempotent retry. The coordinator API
 never takes individual packets. The fixture runs all roles in one process and
 delivers typed objects through APIs; authenticated confidential channels and role
 isolation are assumptions, not implemented transport properties. The in-process

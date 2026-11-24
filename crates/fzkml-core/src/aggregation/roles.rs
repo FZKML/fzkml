@@ -101,15 +101,26 @@ impl Client {
         )?;
         Ok(Self { key, credential })
     }
+    /// Consumes the private witness so its commitment blindings cannot be reused.
+    /// Retry delivery with the original contribution/packets, not a new proof.
+    ///
+    /// ```compile_fail,E0382
+    /// use fzkml_core::aggregation::{Client, Context, Parameters, Witness};
+    /// fn reuse(client: &Client, context: &Context, parameters: &Parameters) {
+    ///     let witness = Witness::new(16, 16);
+    ///     let _ = client.contribute(context, parameters, witness);
+    ///     let _ = client.contribute(context, parameters, witness);
+    /// }
+    /// ```
     pub fn contribute(
         &self,
         context: &Context,
         parameters: &Parameters,
-        witness: &Witness,
+        witness: Witness,
     ) -> Result<(Contribution, [Packet; 3])> {
         self.credential.verify(context)?;
         let index = context.index(self.credential.serial)?;
-        let proved = parameters.prove(context, witness)?;
+        let proved = parameters.prove(context, &witness)?;
         let a = Scalar::rand(&mut OsRng);
         let b = Scalar::rand(&mut OsRng);
         let mut contribution = Contribution {

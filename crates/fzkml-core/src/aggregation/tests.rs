@@ -104,7 +104,7 @@ impl Fixture {
             .contribute(
                 &self.context,
                 &self.parameters,
-                &Witness::new(values[index].0, values[index].1),
+                Witness::new(values[index].0, values[index].1),
             )
             .unwrap()
     }
@@ -532,7 +532,7 @@ fn issuer_entity_quota_revocation_and_unavailable_storage() {
     .unwrap();
     let second = Client::new(key, credential).unwrap();
     let (c1, packets) = second
-        .contribute(&f.context, &f.parameters, &Witness::new(-8, -16))
+        .contribute(&f.context, &f.parameters, Witness::new(-8, -16))
         .unwrap();
     let acks = f.deliver(&c1, packets);
     assert!(ledger.admit(&f.context, &f.parameters, &c1, &acks).is_err());
