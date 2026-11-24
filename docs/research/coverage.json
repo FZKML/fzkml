@@ -989,9 +989,13 @@
         58
       ],
       "mapping_basis": "published-issue-plan",
-      "extraction_status": "pending-extraction",
-      "source_review": "outline-inspected",
-      "claim_ids": []
+      "extraction_status": "partial",
+      "source_review": "selected-prose-and-equation-markup-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C47-ENTROPY-001",
+        "FZK-MS20261124-C47-RETRY-001",
+        "FZK-MS20261124-C47-LEDGER-001"
+      ]
     },
     {
       "kind": "chapter",
@@ -1105,9 +1109,11 @@
         59
       ],
       "mapping_basis": "published-issue-plan",
-      "extraction_status": "pending-extraction",
-      "source_review": "outline-inspected",
-      "claim_ids": []
+      "extraction_status": "partial",
+      "source_review": "selected-prose-and-equation-markup-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C53-INCLUSION-001"
+      ]
     },
     {
       "kind": "chapter",
@@ -1396,9 +1402,11 @@
         60
       ],
       "mapping_basis": "published-issue-plan",
-      "extraction_status": "pending-extraction",
-      "source_review": "outline-inspected",
-      "claim_ids": []
+      "extraction_status": "partial",
+      "source_review": "selected-prose-and-equation-markup-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C67-POPULATION-001"
+      ]
     },
     {
       "kind": "chapter",
@@ -1562,9 +1570,12 @@
         58
       ],
       "mapping_basis": "published-issue-plan",
-      "extraction_status": "pending-extraction",
-      "source_review": "outline-inspected",
-      "claim_ids": []
+      "extraction_status": "partial",
+      "source_review": "selected-prose-and-equation-markup-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C75-GEOMETRY-001",
+        "FZK-MS20261124-C75-REFERENCE-001"
+      ]
     },
     {
       "kind": "chapter",

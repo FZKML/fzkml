@@ -69,7 +69,14 @@ class ResearchMetadataTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        for directory in ("docs/research", "claims", "specs/m0", "experiments/m0", "assets/public"):
+        for directory in (
+            "docs/research",
+            "claims",
+            "specs",
+            "experiments/m0",
+            "assets/public",
+            "tests",
+        ):
             shutil.copytree(ROOT / directory, self.root / directory)
 
     def mutate(self, path, change):
@@ -81,7 +88,9 @@ class ResearchMetadataTests(unittest.TestCase):
     def test_coverage_and_evidence_are_not_confused(self):
         result = validate(self.root)
         self.assertEqual((result["chapters"], result["exercises"]), (80, 48))
-        self.assertEqual(result["claims"], 16)
+        self.assertEqual(
+            result["claims"], len(json.loads((ROOT / "claims/registry.json").read_text())["claims"])
+        )
         for name in (
             "empirical_evidence",
             "externally_reviewed",

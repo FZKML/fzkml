@@ -4,19 +4,19 @@
   "artifacts": [
     {
       "path": "claims/registry.json",
-      "sha256": "01ba045ffcd469e5014a080e0afc1118ad819804690a1e258f5baa8120bf17e2"
+      "sha256": "b986a4033d8bf9d0375b3993a981ab23c95e536990d774b9057b5806001d283a"
     },
     {
       "path": "docs/research/claim-context.json",
-      "sha256": "2eed116a48d4f8477f9ced5e0c8262da457fe3c2a362ca6cb0db1750f473ce6b"
+      "sha256": "2a024b0c1076509db9ff19206ff1c4aa2c02985865c85bfaa2d9b0a9c60be749"
     },
     {
       "path": "docs/research/coverage.json",
-      "sha256": "0af82d02be0fc907ee4470197ca3cc004c8cf9d25df28402695b9e4a583c24d0"
+      "sha256": "25d07da6f66adf6e4abd5ca1a1181f3ee5057d8723c52e58df33347af54ef563"
     },
     {
       "path": "docs/research/manuscript.json",
-      "sha256": "18d0a5849ee5dafebf1409f045ddffd961ca604fe4a6e60d73f49fac70f22ce2"
+      "sha256": "e14b9824f3fb3e511a264dcbfac30b2f9e433f7e0827c3b6eb7bae320e163ab5"
     },
     {
       "path": "docs/research/security-obligations.json",
@@ -24,7 +24,7 @@
     },
     {
       "path": "docs/research/source-index.json",
-      "sha256": "c8080bff8b1f47d6dbf375d3f3ac9822d6988071dff178087714a79b3f91e601"
+      "sha256": "b39b25fb28c683a376b740d418e50c836b05518ae7df41d212360dae1274441f"
     },
     {
       "path": "experiments/m0/capabilities.json",
@@ -65,6 +65,18 @@
     {
       "path": "specs/m0/security-v0.1.md",
       "sha256": "9da084f5babf476132cd817aed97dd2e6cea775e77002676565f2a67ec9a47a3"
+    },
+    {
+      "path": "specs/privacy/transcript-v0.1.md",
+      "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
+    },
+    {
+      "path": "docs/research/transcript-source-review.json",
+      "sha256": "f1350b5bb218d12ba1787fcdf5c5d2f13410f699c48c79565c92eeda3f487a2c"
+    },
+    {
+      "path": "assets/public/transcript-analytic-v1.json",
+      "sha256": "ae294df7023abc6e7639e9e3baa3cc1899bc041d0e1733fc0717a85a344c0d72"
     }
   ]
 }

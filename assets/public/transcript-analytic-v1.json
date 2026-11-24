@@ -1,0 +1,55 @@
+{
+  "amplification": "none; completion fractions are not amplification probabilities",
+  "assurance": "Analytic/synthetic conformance fixtures only; no finite sampler or deployed DP guarantee.",
+  "completion_filter": {
+    "invitation_probability_substitution_mean": "9/20",
+    "observed_unweighted_mean": "9/10",
+    "weighted_mean": "0",
+    "weighted_variance": "9/4"
+  },
+  "conditioned_variance": "1",
+  "equal_marginal_variances": {
+    "exclusive": "1",
+    "independent": "1/2",
+    "together": "0"
+  },
+  "fixture_version": "transcript-analytic-1",
+  "half_normal_retry": {
+    "delta_over_sigma": "1/10",
+    "expected_attempts": "2",
+    "necessary_delta_floor_approx": "0.079655674554",
+    "scope": "Ideal Gaussian sign-visible rejection, not post-processing of one common public output."
+  },
+  "numeric_policy": "Exact rational arithmetic, except the named erf approximation rounded to 12 decimals (absolute tolerance 1e-12).",
+  "resource_population_stages": {
+    "accepted": {
+      "fast": 2,
+      "slow": 0
+    },
+    "completed": {
+      "fast": 2,
+      "slow": 1
+    },
+    "invited": {
+      "fast": 2,
+      "slow": 2
+    },
+    "released": {
+      "fast": 2,
+      "slow": 0
+    },
+    "selected": {
+      "fast": 2,
+      "slow": 2
+    }
+  },
+  "scalar_vector_example": {
+    "scalar_maximum": "43/10",
+    "scope": "Full three-round C=1 row-norm-bounded class; fixed data-independent continuous Gaussian precision.",
+    "vector_maximum": "24/5"
+  },
+  "singular_covariance": {
+    "outside_support": true,
+    "supported_squared_cost": "1"
+  }
+}
