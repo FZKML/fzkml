@@ -22,12 +22,26 @@ class Classifier:
     weights: tuple[Fraction, ...]
     threshold: Fraction
 
+    def __post_init__(self) -> None:
+        require(
+            type(self.weights) is tuple
+            and 0 < len(self.weights) <= 128
+            and all(isinstance(v, Fraction) for v in self.weights)
+            and isinstance(self.threshold, Fraction),
+            "classifier-exact-domain",
+        )
+
     def digest(self) -> str:
         data = tuple(map(str, self.weights)), str(self.threshold)
         return hashlib.sha256(json.dumps(data).encode()).hexdigest()
 
     def predict(self, features: tuple[Fraction, ...]) -> bool:
-        require(bool(features) and len(features) == len(self.weights), "classifier-shape")
+        require(
+            type(features) is tuple
+            and len(features) == len(self.weights)
+            and all(isinstance(v, Fraction) for v in features),
+            "classifier-shape",
+        )
         return (
             sum((a * b for a, b in zip(features, self.weights, strict=True)), Fraction(0))
             >= self.threshold
@@ -168,6 +182,10 @@ def private_gap_certificate(
     distribution_shift_tv: tuple[float, float] = (0, 0),
 ) -> dict[str, Any]:
     """Post-process already released counts; never disclose exact sample sizes."""
+    require(
+        len(noisy_denominators) == len(missing_fractions) == len(distribution_shift_tv) == 2,
+        "certificate-two-declared-groups-required",
+    )
     require(
         all(
             math.isfinite(x)

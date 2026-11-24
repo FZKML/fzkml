@@ -143,6 +143,12 @@ def summarize(
     qualified = []
     for entry in quality:
         require(
+            type(entry.certificate_verified) is bool
+            and type(entry.release_authorized) is bool
+            and isinstance(entry.quality, Fraction),
+            "quality-evidence-domain",
+        )
+        require(
             type(entry.time_ns) is int and 0 <= entry.time_ns <= budget_ns, "quality-time-domain"
         )
         if (

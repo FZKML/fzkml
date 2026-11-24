@@ -295,9 +295,15 @@ class EvaluationTests(unittest.TestCase):
                 private_gap_certificate((1000, 100), 0.04, **opts)["status"], "inconclusive"
             )
         self.assertIsNone(private_gap_certificate((1000, 1), 0.04, **kwargs)["upper_bound"])
+        with self.assertRaises(Invalid):
+            private_gap_certificate((1000, 100, 100), 0.04, **kwargs)  # type: ignore[arg-type]
 
     def test_frozen_model_holdout_query_budget_and_idempotence(self) -> None:
         classifier, data = classifier_records()
+        with self.assertRaises(Invalid):
+            Classifier((1.0,), F(0))  # type: ignore[arg-type]
+        with self.assertRaises(Invalid):
+            classifier.predict((float("nan"),))  # type: ignore[arg-type]
         self.assertEqual(counts(classifier, data), (1, 2, 1, 1))
         self.assertEqual(measured_gap((1, 2, 1, 1)), F(1, 2))
         ledger = HoldoutLedger(

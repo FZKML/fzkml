@@ -32,4 +32,4 @@ The numerical relation and output digests match exactly. RSS is the worker proce
 
 ## Validation and interpretation
 
-`./scripts/validate` passes locally, including the foundation checks and 69 Python tests before this evidence-only addition. Hosted head checks are linked from PR #71. The inherited real-proof/required-cpu gate from #68 remains unavailable until its adapter exists; it is not bypassed. No issue is closed or scientific evidence automatically promoted by passing arithmetic tests.
+`./scripts/validate` passes locally, including the foundation checks and 70 Python tests, including retained-artifact integrity and raw-aggregation checks. Hosted head checks are linked from PR #71. The inherited real-proof/required-cpu gate from #68 remains unavailable until its adapter exists; it is not bypassed. No issue is closed or scientific evidence automatically promoted by passing arithmetic tests.
