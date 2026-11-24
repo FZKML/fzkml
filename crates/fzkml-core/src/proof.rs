@@ -14,7 +14,7 @@ fn domain() -> Fr {
     let digest = Sha256::digest(include_bytes!("../../../specs/numeric-contract-v1.json"));
     Fr::from_le_bytes_mod_order(&digest[..31])
 }
-fn field(v: i128) -> Fr {
+pub(crate) fn field(v: i128) -> Fr {
     if v >= 0 {
         Fr::from(v as u128)
     } else {
@@ -23,7 +23,7 @@ fn field(v: i128) -> Fr {
 }
 
 /// Bound both v-low and high-v by nonnegative bit sums; no field ordering.
-fn bound(
+pub(crate) fn bound(
     cs: ConstraintSystemRef<Fr>,
     v: &FpVar<Fr>,
     value: i128,
@@ -51,7 +51,7 @@ fn bound(
     Ok(first)
 }
 
-fn rounded(
+pub(crate) fn rounded(
     cs: ConstraintSystemRef<Fr>,
     n: &FpVar<Fr>,
     n_value: i128,

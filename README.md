@@ -83,3 +83,8 @@ explicit placeholders in these unexecuted fixtures, never real provenance.
 
 See [record contracts](docs/records.md), [workflow and publication policy](docs/security.md)
 and [implementation evidence and remaining work](docs/implementation.md).
+
+The [v0.2 protected aggregation research draft](docs/PROTECTED-AGGREGATION.md)
+adds proof-bound three-client VSS and durable release recovery. It remains pending
+independent cryptographic/protocol review. Run `./scripts/validate-aggregation`
+for the exact synthetic fixture and initial CI-04 costs.

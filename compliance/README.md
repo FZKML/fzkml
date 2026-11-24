@@ -43,3 +43,14 @@ The CFF schema and its CC-BY-4.0 license are copied without modification from
 by the Citation File Format contributors. Attribution is retained here and in the
 file map. [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) applies to those
 imported files only; the project Apache-2.0 choice does not relicense them.
+
+The protected aggregation draft adds exact-pinned BabyJubJub gadgets, Ed25519,
+serde and rusqlite with bundled SQLite3.46.0. Every additional locked source
+archive was checked against Cargo.lock and its upstream notices preserved in
+the wheel bundle. Dual licenses select MIT where offered and Apache-2.0 for
+ryu; Dalek uses BSD-3-Clause. SQLite's original public-domain disclaimer is
+retained as NOTICE-SQLite under LicenseRef-SQLite-Public-Domain, alongside the
+libsqlite3-sys MIT wrapper license. SQLCipher is not enabled; its supplied notice
+is preserved conservatively. Additional alternative notices (BSD-1-Clause,
+BSL-1.0 and Unlicense) are retained without selecting those alternatives. This
+inventory is proposed for maintainer terms review, not a legal certification.

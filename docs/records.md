@@ -1,7 +1,7 @@
-# Public record contract 1.0.0
+# Public record contracts 1.0.0 and 1.1.0
 
-`schemas/result-1.0.0.json` is the one result schema. The bundle schema references
-that definition; the validator resolves only local, registered schemas and never
+The 1.0.0 contract remains unchanged. Each versioned bundle schema references
+its registered result definitions; the validator resolves only local, registered schemas and never
 downloads references. Unknown fields and schema versions fail closed. Schema
 validation is necessary but must be followed by the semantic validator in
 `src/fzkml_ci/validate.py`. New incompatible fields require a new schema version
@@ -73,3 +73,21 @@ limitations, source and run links. Inputs regenerate identical output bytes,
 without timestamps or network access. Comparison groups include statement,
 relation, numerical semantics, backend/security, assets/digests and hardware;
 each metric has its own raw-repetition plot. There is no cross-group leaderboard.
+
+
+## 1.1.0 migration for the v0.2 fixture
+
+Result 1.1.0 adds `witness`, `prepare`, `aggregate`, `release` and `end-to-end`
+phases, and required `provenance.execution_kind`. A local run uses `local` and
+null workflow path/run; a hosted run uses `github-actions`, a registered workflow
+path and a positive actual run ID. Source/dependency placeholders remain rejected.
+Never invent a GitHub run ID for local measurements. Bundle 1.1.0 accepts results
+1.0.0 and 1.1.0; bundle 1.0.0 continues to accept only 1.0.0 results.
+
+Publication review can be pending (`approved: false`) in 1.1.0 engineering
+records. Validation does not grant approval. Rendering, writing and verifying
+public report artifacts all reject any pending record before writing output.
+An approved local record is rendered as local, without a fictitious Actions link.
+Only the existing approved fixtures feed the public report job. The aggregation
+measurement lives in `.tools/aggregation/`, with no automatic upload or assertion
+of independent review. Maintainers must review an explicit publication change.

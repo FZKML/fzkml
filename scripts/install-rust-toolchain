@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Source in CI so both this step and later steps use the isolated toolchain.
+set -euo pipefail
+if [[ "${GITHUB_ACTIONS:-false}" == true ]]; then
+  : "${RUNNER_TEMP:?GitHub runner temporary directory required}"
+  : "${GITHUB_ENV:?GitHub job environment file required}"
+  export RUSTUP_HOME="$RUNNER_TEMP/fzkml-rustup"
+  export CARGO_HOME="$RUNNER_TEMP/fzkml-cargo"
+  printf 'RUSTUP_HOME=%s\nCARGO_HOME=%s\n' "$RUSTUP_HOME" "$CARGO_HOME" >> "$GITHUB_ENV"
+fi
+rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
