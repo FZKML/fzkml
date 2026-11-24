@@ -119,6 +119,15 @@ def generate(contract_json: str) -> dict[str, object]:
                 "expected": "reject-numeric-v1-input-domain",
             },
         ],
+        "reachable_unsupported_continuation": {
+            "initial_weight": 32,
+            "features": [8, 8, 8],
+            "labels": [32, 32, 32],
+            "counts": [1, 2, 1],
+            "expected_full_state_output": 34,
+            "next_parent_format_valid": True,
+            "next_numeric_initial_weight_supported": False,
+        },
         "limitations": [
             "Public deterministic test openings only; "
             "not private RNG, hiding or cryptographic proof evidence.",

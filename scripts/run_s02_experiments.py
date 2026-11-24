@@ -200,6 +200,29 @@ def report() -> dict[str, Any]:
             ],
         }
     )
+    reached = evaluate(encode(32, [8, 8, 8], [32, 32, 32], [1, 2, 1]))
+    observations.append(
+        {
+            "id": "numeric-profile-not-closed-under-update",
+            "status": "unsupported-continuation",
+            "inputs": {
+                "initial_weight": 32,
+                "features": [8, 8, 8],
+                "labels": [32, 32, 32],
+                "weights": [1, 2, 1],
+            },
+            "result": {
+                "full_state_output": reached["output"],
+                "next_parent_format_valid": True,
+                "next_numeric_initial_weight_supported": False,
+            },
+            "assumptions": ["Unchanged fzknum-1.0.0 input bound32 and v2 parent format bound80"],
+            "limitations": [
+                "A valid one-step transition does not imply every resulting state can "
+                "continue under the same bounded numeric profile."
+            ],
+        }
+    )
     source = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     names = [
         "Cargo.lock",

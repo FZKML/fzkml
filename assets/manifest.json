@@ -186,7 +186,7 @@
       "source": "https://github.com/FZKML/fzkml/blob/2e8a464ffd7eb5f358e811b9285519d46f594bc2/specs/private-transition-v2.json",
       "version": "s02-private-transition-v2-1.0.0",
       "path": "tests/vectors/synthetic/private-transition-v2.json",
-      "sha256": "8254e2c09ae3f1826d26cdfa02fe3362d06e59e48368930a934a76490cb3e2b2",
+      "sha256": "67b521351b374a971136a7e074b90810010a59bcb31501b6b30585557d9a51bd",
       "terms": {
         "license": "Apache-2.0",
         "text": "LICENSE"

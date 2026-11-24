@@ -504,6 +504,11 @@ class PrivateV2Tests(unittest.TestCase):
             private_arithmetic(
                 private_context(), numeric.encode(7, [16, -8, 24], [16, -16, 8], [1, 2, 1])
             )
+        reached = numeric.evaluate(numeric.encode(32, [8, 8, 8], [32, 32, 32], [1, 2, 1]))
+        self.assertEqual(reached["output"], 34)
+        self.assertEqual(len(private_context(34).encode()), 392)
+        with self.assertRaises(ValueError):
+            numeric.encode(34, [8, 8, 8], [32, 32, 32], [1, 2, 1])
         context = private_context(33)
         self.assertEqual(len(context.encode()), 392)
         wire = bytes.fromhex(f["valid"][0]["numeric_hex"])

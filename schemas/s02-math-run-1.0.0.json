@@ -101,7 +101,8 @@
               "analytical-teaching-example",
               "conditional-analytic-confidence",
               "inconclusive",
-              "numerical-reference-experiment"
+              "numerical-reference-experiment",
+              "unsupported-continuation"
             ]
           },
           "inputs": {

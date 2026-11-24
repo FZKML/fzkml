@@ -173,3 +173,10 @@ measured, so #85 stays open. No new manuscript values are inferred.
 
 The entity/time toy dataset tests fixture policy; it is separate from the one-
 sample-per-client fzknum batch and is not fed into a proved training relation.
+
+The numeric input range is not closed under every legal update: w=32 with all
+three x=8/y=32 and weights[1,2,1] gives full-state output34. This is a valid
+one-step result but an unsupported next initial weight under unchanged v1.
+The v2 format can represent parent34; arithmetic/proving must still reject the
+next batch. The reference tests and raw results retain this reachable example.
+No arbitrary indefinite chaining or convergence guarantee follows from one step.
