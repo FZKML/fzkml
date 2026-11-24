@@ -4202,6 +4202,33 @@
       ],
       "notice_files": []
     },
+    "evidence/protected-aggregation/local-v02/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original public synthetic engineering evidence; source revision and procedure recorded alongside the measurements.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/protected-aggregation/local-v02/aggregation-profile.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original public synthetic engineering evidence; source revision and procedure recorded alongside the measurements.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/protected-aggregation/local-v02/aggregation-result.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original public synthetic engineering evidence; source revision and procedure recorded alongside the measurements.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "examples/claims.json": {
       "license": "Apache-2.0",
       "origin": "original",
