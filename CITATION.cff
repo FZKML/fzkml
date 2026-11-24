@@ -1,0 +1,9 @@
+{
+  "cff-version": "1.2.0",
+  "message": "Please cite the exact software release or commit used in your research.",
+  "type": "software",
+  "title": "FZKML — Federated Zero-Knowledge Machine Learning",
+  "authors": [{"given-names": "Guillaume", "family-names": "Lauzier"}],
+  "repository-code": "https://github.com/FZKML/fzkml",
+  "license": "Apache-2.0"
+}

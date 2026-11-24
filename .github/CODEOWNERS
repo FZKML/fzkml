@@ -1,0 +1,13 @@
+# Last matching pattern wins. Owners require verified write access.
+# One listed owner does not implement independent-review requirements.
+* @guillaumelauzier
+/specs/ @guillaumelauzier
+/src/crypto/ @guillaumelauzier
+/src/learning/ @guillaumelauzier
+/claims/ @guillaumelauzier
+/assets/ @guillaumelauzier
+/compliance/ @guillaumelauzier
+/scripts/ @guillaumelauzier
+/.github/ @guillaumelauzier
+/GOVERNANCE.md @guillaumelauzier
+/MAINTAINERS.md @guillaumelauzier

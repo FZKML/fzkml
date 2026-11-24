@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "governance-vector-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/m0-governance-foundation/assets/public/governance-vector.json",
+      "version": "governance-vector-v1; sha256 identifies exact bytes",
+      "path": "assets/public/governance-vector.json",
+      "sha256": "ce2e2e27ff4ea63391bbf406d348b8de1d60a475d29856b5e07dba77e6e8d534",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original FZKML repository contribution; contributor provenance in Git history.",
+      "intended_use": "Exercise governance checks only; no scientific or training use.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Literal deterministic integer vector; no random sampling",
+        "configuration": {
+          "values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "seed": "not applicable; no randomness"
+        }
+      },
+      "source_inputs": "none; no private or external inputs",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original contribution submitted for PR review)",
+        "date": "2026-11-24",
+        "decision": "Original trivial synthetic metadata fixture only; maintainer reviews this decision with the PR."
+      }
+    }
+  ]
+}

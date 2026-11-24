@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "approved_licenses": [
+    "Apache-2.0",
+    "MIT",
+    "CC-BY-4.0",
+    "LicenseRef-DCO-1.1"
+  ],
+  "files": {
+    ".github/CODEOWNERS": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/ISSUE_TEMPLATE/work.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/pull_request_template.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/governance.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".gitignore": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "CITATION.cff": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "CODE_OF_CONDUCT.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "CONTRIBUTING.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "DCO": {
+      "license": "LicenseRef-DCO-1.1",
+      "origin": "upstream",
+      "source": "https://developercertificate.org/",
+      "version": "1.1",
+      "sha256": "f7ac75b443f4ca16b503241344b41aeff9503b0c30bedc2b119551d83cb0fa90",
+      "attribution": "Copyright (C) 2004, 2006 The Linux Foundation and its contributors.",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "DCO"
+      ],
+      "notice_files": []
+    },
+    "GOVERNANCE.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "LICENSE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "version": "2.0",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "attribution": "Apache License 2.0, January 2004; existing repository license text preserved.",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "LICENSE-MAP.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "MAINTAINERS.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "SECURITY.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "assets/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "assets/manifest.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "assets/public/governance-vector.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/cff-schema.json": {
+      "license": "CC-BY-4.0",
+      "origin": "upstream",
+      "source": "https://github.com/citation-file-format/citation-file-format/blob/dd51afe18fe23b4daaaf923d305e3046415b2c7c/schema.json",
+      "version": "dd51afe18fe23b4daaaf923d305e3046415b2c7c",
+      "sha256": "17bc7993c67b95eec988dadca78b65cb29cd489d1fceba71040a141dfb9791df",
+      "attribution": "Citation File Format contributors; see compliance/README.md.",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/cff-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/dependencies.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/files.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/attrs-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/fc/0f/aafca9af9315aee06a89ffde799a10a582fe8de76c563ee80bbcdc08b3fb/attrs-24.2.0.tar.gz",
+      "version": "24.2.0",
+      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+      "attribution": "The MIT License (MIT)",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/attrs-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/cff-LICENSE": {
+      "license": "CC-BY-4.0",
+      "origin": "upstream",
+      "source": "https://github.com/citation-file-format/citation-file-format/blob/dd51afe18fe23b4daaaf923d305e3046415b2c7c/LICENSE",
+      "version": "dd51afe18fe23b4daaaf923d305e3046415b2c7c",
+      "sha256": "d26e56663498f0f17dbcb8a9bd50d344828948be08265f4fc97b4fc612e9be71",
+      "attribution": "Creative Commons Attribution 4.0 International Public License; Citation File Format contributors.",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/cff-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/jsonschema-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/38/2e/03362ee4034a4c917f697890ccd4aec0800ccf9ded7f511971c75451deec/jsonschema-4.23.0.tar.gz",
+      "version": "4.23.0",
+      "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+      "attribution": "Copyright (c) 2013 Julian Berman",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/jsonschema-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/jsonschema-specifications-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/10/db/58f950c996c793472e336ff3655b13fbcf1e3b359dcf52dcf3ed3b52c352/jsonschema_specifications-2024.10.1.tar.gz",
+      "version": "2024.10.1",
+      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "attribution": "Copyright (c) 2022 Julian Berman",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/jsonschema-specifications-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/referencing-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/99/5b/73ca1f8e72fff6fa52119dbd185f73a907b1989428917b24cff660129b6d/referencing-0.35.1.tar.gz",
+      "version": "0.35.1",
+      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "attribution": "Copyright (c) 2022 Julian Berman",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/referencing-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/rpds-py-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/25/cb/8e919951f55d109d658f81c9b49d0cc3b48637c50792c5d2e77032b8c5da/rpds_py-0.20.1.tar.gz",
+      "version": "0.20.1",
+      "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+      "attribution": "Copyright (c) 2023 Julian Berman",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/rpds-py-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/CHARTER.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/CREDIT.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/FOUNDATION-EVIDENCE.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "requirements-dev.txt": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/build_source.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_citation.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_dco.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_governance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_governance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    }
+  }
+}
