@@ -1,7 +1,7 @@
 name: Reconcile CPU research
 on:
   workflow_run:
-    workflows: [Bounded CPU research]
+    workflows: [Bounded CPU research, Main integration and CPU adapter]
     types: [completed]
 permissions: {}
 concurrency:

@@ -11,6 +11,8 @@ jobs:
   publish:
     if: github.ref == 'refs/heads/main'
     environment: public-reports
+    env:
+      S04_PUBLICATION_CONTEXT: protected-public-reports
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:
@@ -46,7 +48,9 @@ jobs:
         if: always() && steps.public.outcome == 'success'
         with:
           name: public-report-${{ github.sha }}
-          path: dist/
+          path: |
+            dist/
+            reports/s04-publication-receipt.json
           retention-days: 7
           if-no-files-found: error
           include-hidden-files: false

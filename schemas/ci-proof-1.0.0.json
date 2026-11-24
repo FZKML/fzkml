@@ -64,6 +64,11 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "prepare": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
         "setup": {
           "type": "number",
           "minimum": 0,
@@ -83,13 +88,32 @@
           "type": "number",
           "minimum": 0,
           "maximum": 900
+        },
+        "negative-setup": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "negative-verify": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "end-to-end": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
         }
       },
       "required": [
+        "prepare",
         "setup",
         "witness",
         "prove",
-        "verify"
+        "verify",
+        "negative-setup",
+        "negative-verify",
+        "end-to-end"
       ]
     },
     "workflow_run": {

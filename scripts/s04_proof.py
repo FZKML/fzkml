@@ -36,6 +36,7 @@ def rejected(operation: Callable[[], bool]) -> bool:
 
 
 def check() -> dict[str, Any]:
+    entire = time.perf_counter()
     from fzkml_native import CONTRACT_SHA256, CanonicalBatch, ResearchSession, _native
 
     from reference.numeric import encode, evaluate
@@ -56,6 +57,7 @@ def check() -> dict[str, Any]:
     require(expected == golden["expected"] and expected["output"] == 9, "independent-oracle-drift")
     batch = CanonicalBatch(raw)
     require(batch.evaluate() == expected["output"], "native-oracle-disagreement")
+    preparation = time.perf_counter() - entire
     started = time.perf_counter()
     session = ResearchSession()
     setup = time.perf_counter() - started
@@ -65,7 +67,10 @@ def check() -> dict[str, Any]:
     verification = time.perf_counter() - started
     require(type(proved.proof) is bytes and len(proved.proof) == 128, "real-proof-encoding")
     changed = CanonicalBatch(encode(8, [16, -8, 24], [16, -16, 8], [2, 1, 1]))
+    started = time.perf_counter()
     other = ResearchSession()
+    negative_setup = time.perf_counter() - started
+    started = time.perf_counter()
     negatives = {
         "changed-output": rejected(lambda: session.verify(batch, replace(proved, output=10))),
         "changed-public-count": rejected(lambda: session.verify(changed, proved)),
@@ -81,6 +86,7 @@ def check() -> dict[str, Any]:
         ),
     }
     require(all(value is True for value in negatives.values()), "negative-proof-case-accepted")
+    negative_verification = time.perf_counter() - started
     source = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     record = {
         "version": 1,
@@ -106,6 +112,10 @@ def check() -> dict[str, Any]:
         "oracle_matches": True,
         "negatives": negatives,
         "seconds": {
+            "prepare": preparation,
+            "negative-setup": negative_setup,
+            "negative-verify": negative_verification,
+            "end-to-end": time.perf_counter() - entire,
             "setup": setup,
             "witness": proved.witness_seconds,
             "prove": proved.proving_seconds,
@@ -117,7 +127,9 @@ def check() -> dict[str, Any]:
         "limitations": [
             "Fresh local research setup; no production setup or security claim.",
             "All inputs public; no private-transition/protected-protocol assurance.",
-            "Build/install, negative-key setup and compiler work are outside these phase times.",
+            "One proof shared across three cases; these are not independent proof samples.",
+            "Logical proof bytes exclude keys/transport; peak process RSS is unavailable.",
+            "Adapter wall time includes negatives; build/install wall time is in the journal.",
         ],
     }
     return record
@@ -189,14 +201,24 @@ def result_bundle(record: dict[str, Any]) -> dict[str, Any]:
             "status": "successful",
             "reason": "Fresh real Groth16 verification and mandatory negatives passed.",
         }
-        measurements = (
-            [
-                {"phase": phase, "quantity": "time", "unit": "s", "value": record["seconds"][phase]}
-                for phase in ["setup", "witness", "prove", "verify"]
-            ]
-            if name == "tiny-proof"
-            else []
-        )
+        phases = {
+            "tiny-proof": {k: k for k in ["setup", "witness", "prove", "verify", "end-to-end"]},
+            "native-circuit-conformance": {"prepare": "prepare"},
+            "negative-cases": {"setup": "negative-setup", "verify": "negative-verify"},
+        }[name]
+        measurements = [
+            {"phase": phase, "quantity": "time", "unit": "s", "value": record["seconds"][key]}
+            for phase, key in phases.items()
+        ]
+        if name == "tiny-proof":
+            measurements.append(
+                {
+                    "phase": "communicate",
+                    "quantity": "communication",
+                    "unit": "byte",
+                    "value": record["proof_bytes"],
+                }
+            )
         row["repetitions"] = [
             {
                 "id": "rep1",

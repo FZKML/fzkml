@@ -88,7 +88,20 @@ def proof_receipt(value: Any, expected_source: str | None = None) -> None:
             and value[name] != "sha256:" + "0" * 64,
             "proof-identity-unavailable",
         )
-    require(set(value["seconds"]) == {"setup", "witness", "prove", "verify"}, "proof-phase-fields")
+    require(
+        set(value["seconds"])
+        == {
+            "prove",
+            "prepare",
+            "verify",
+            "witness",
+            "setup",
+            "end-to-end",
+            "negative-verify",
+            "negative-setup",
+        },
+        "proof-phase-fields",
+    )
     require(
         all(type(v) in {int, float} and 0 <= v <= 900 for v in value["seconds"].values()),
         "proof-phase-range",

@@ -203,6 +203,7 @@ def run(name: str, output: Path) -> int:
             repetition["status"] = "not-run"
         write(output, state)
         return 1
+    seconds: float | None
     for repetition in state["repetitions"]:
         state["status"] = "running"
         repetition["status"] = "running"
@@ -210,7 +211,7 @@ def run(name: str, output: Path) -> int:
         try:
             status, seconds = execute(command, config["timeout_seconds"], config["threads"])
         except OSError:
-            status, seconds = "failed", 0.0
+            status, seconds = "failed", None
         repetition.update(status=status, seconds=seconds)
         write(output, state)
         if (
@@ -270,14 +271,25 @@ def reconcile(jobs: Any, journal: Any | None) -> dict[str, Any]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "operation", choices=["init", "run", "proof", "reconcile", "verify-artifacts", "summary"]
+        "operation",
+        choices=[
+            "init",
+            "run",
+            "proof",
+            "reconcile",
+            "verify-artifacts",
+            "verify-journal",
+            "summary",
+        ],
     )
     parser.add_argument("profile", nargs="?", default="contract")
     parser.add_argument("--output", type=Path, default=Path("research/journal.json"))
     parser.add_argument("--jobs", type=Path)
     args = parser.parse_args()
     try:
-        if args.operation == "verify-artifacts":
+        if args.operation == "verify-journal":
+            journal(load(args.output))
+        elif args.operation == "verify-artifacts":
             artifact_tree(args.output.parent)
         elif args.operation == "summary":
             print(summary(args.output))

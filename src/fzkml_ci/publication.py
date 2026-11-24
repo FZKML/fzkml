@@ -90,7 +90,7 @@ def authorize(
     run = os.environ.get("GITHUB_RUN_ID", "")
     require(run.isdigit() and int(run) > 0, "publication-real-workflow-required")
     for mapping in [policy["producer_files"], policy["schemas"]]:
-        require(isinstance(mapping, dict) and 0 < len(mapping) <= 20, "publication-allowlist-size")
+        require(isinstance(mapping, dict) and 0 < len(mapping) <= 64, "publication-allowlist-size")
         for relative, expected in mapping.items():
             parts = Path(relative).parts
             require(

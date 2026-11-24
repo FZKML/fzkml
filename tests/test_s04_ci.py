@@ -14,6 +14,7 @@ from unittest.mock import patch
 
 import yaml
 
+from fzkml_ci.publication import authorize, policy_digest
 from fzkml_ci.report import render, write_report
 from fzkml_ci.research import initialize, profile, reconcile, run, write
 from fzkml_ci.s04 import DIGESTS, artifact_tree, journal, proof_receipt, summary, verify_required
@@ -44,7 +45,19 @@ def fake_receipt() -> dict[str, Any]:
                 "trailing-proof-byte",
             ]
         },
-        "seconds": {k: 0.1 for k in ["setup", "witness", "prove", "verify"]},
+        "seconds": {
+            k: 0.1
+            for k in [
+                "prepare",
+                "setup",
+                "witness",
+                "prove",
+                "verify",
+                "negative-setup",
+                "negative-verify",
+                "end-to-end",
+            ]
+        },
         "workflow_run": None,
         "limitations": ["Synthetic unit metadata, not a proof."],
         **{k: "sha256:" + "1" * 64 for k in DIGESTS},
@@ -264,9 +277,13 @@ class WorkflowTierTests(unittest.TestCase):
         workflow = yaml.load(
             (ROOT / ".github/workflows/research.yml").read_text(), Loader=yaml.BaseLoader
         )
-        self.assertEqual(len(workflow["on"]["schedule"]), 2)
-        self.assertEqual(set(workflow["jobs"]), {"nightly", "weekly"})
-        for job in workflow["jobs"].values():
+        self.assertEqual(len(workflow["on"]["schedule"]), 1)
+        weekly = yaml.load(
+            (ROOT / ".github/workflows/language.yml").read_text(), Loader=yaml.BaseLoader
+        )
+        self.assertEqual(len(weekly["on"]["schedule"]), 1)
+        self.assertEqual(set(workflow["jobs"]), {"nightly"})
+        for job in [workflow["jobs"]["nightly"], weekly["jobs"]["weekly"]]:
             self.assertIn("refs/heads/main", job["if"])
             self.assertIn("FZKML/fzkml", job["if"])
             upload = job["steps"][-1]
@@ -275,6 +292,98 @@ class WorkflowTierTests(unittest.TestCase):
 
 
 class PublicationTests(unittest.TestCase):
+    def test_publication_requires_actual_policy_approval(self) -> None:
+        policy = {
+            "version": 1,
+            "id": "s04-public-synthetic-v1",
+            "status": "proposed",
+            "scope": "Synthetic unit fixture policy; no real approval.",
+            "producer_files": {},
+            "schemas": {},
+            "allowed_scenarios": ["tiny-proof"],
+            "allowed_outcomes": ["successful"],
+            "limitations": ["Unit test only"],
+            "human_approval": None,
+        }
+        with self.assertRaisesRegex(Invalid, "human-review-pending"):
+            authorize({}, {}, policy)
+
+    def test_policy_bound_receipt_and_changed_scope_rejection(self) -> None:
+        adapter = script_module("s04_proof")
+        record = fake_receipt()
+        record["source_commit"] = "1" * 40
+        record["workflow_run"] = 1
+        environment = {
+            "GITHUB_RUN_ID": "1",
+            "GITHUB_REPOSITORY": "FZKML/fzkml",
+            "GITHUB_REF": "refs/heads/main",
+            "GITHUB_SHA": "1" * 40,
+            "GITHUB_WORKFLOW_REF": "FZKML/fzkml/.github/workflows/reports.yml@refs/heads/main",
+            "S04_PUBLICATION_CONTEXT": "protected-public-reports",
+        }
+        with patch.dict("os.environ", environment):
+            candidate = adapter.result_bundle(
+                record
+            )  # Explicit synthetic metadata fixture, not proof.
+            self.assertTrue(
+                all(r["publication_review"]["approved"] is False for r in candidate["results"])
+            )
+            claims = load(ROOT / "claims/registry.json")
+            with tempfile.TemporaryDirectory() as temporary:
+                root = Path(temporary)
+                (root / "assets/public").mkdir(parents=True)
+                (root / "assets/public/numeric-v1.json").write_bytes(
+                    (ROOT / "assets/public/numeric-v1.json").read_bytes()
+                )
+                (root / "producer.py").write_text("# Synthetic policy validator fixture only\n")
+                (root / "schema.json").write_text("{}\n")
+
+                def checksum(name: str) -> str:
+                    return "sha256:" + hashlib.sha256((root / name).read_bytes()).hexdigest()
+
+                policy = {
+                    "version": 1,
+                    "id": "s04-public-synthetic-v1",
+                    "status": "approved",
+                    "scope": "Synthetic test metadata; no real human approval represented.",
+                    "producer_files": {"producer.py": checksum("producer.py")},
+                    "schemas": {"schema.json": checksum("schema.json")},
+                    "allowed_scenarios": [
+                        "tiny-proof",
+                        "native-circuit-conformance",
+                        "negative-cases",
+                    ],
+                    "allowed_outcomes": ["successful"],
+                    "limitations": ["Unit fixture"],
+                    "human_approval": None,
+                }
+                policy["human_approval"] = {
+                    "reviewer": "synthetic-test-approver",
+                    "date": "2026-11-24",
+                    "scope": "Unit test fixture only",
+                    "policy_digest": policy_digest(policy),
+                    "evidence_url": "https://github.com/FZKML/fzkml/pull/0",
+                }
+                approved, receipt = authorize(candidate, claims, policy, root)
+                self.assertTrue(
+                    all(r["publication_review"]["approved"] is True for r in approved["results"])
+                )
+                self.assertFalse(candidate["results"][0]["publication_review"]["approved"])
+                self.assertEqual(
+                    receipt["candidate_digest"],
+                    "sha256:"
+                    + hashlib.sha256(
+                        json.dumps(candidate, sort_keys=True, separators=(",", ":")).encode()
+                    ).hexdigest(),
+                )
+                changed = copy.deepcopy(policy)
+                changed["scope"] = "Expanded to private data"
+                with self.assertRaises(Invalid):
+                    authorize(candidate, claims, changed, root)
+                (root / "producer.py").write_text("# Changed unreviewed producer\n")
+                with self.assertRaises(Invalid):
+                    authorize(candidate, claims, policy, root)
+
     def test_local_v11_compatibility_and_pending_publication(self) -> None:
         row = copy.deepcopy(load(ROOT / "examples/results.json")["results"][0])
         row["schema_version"] = "1.1.0"

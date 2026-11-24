@@ -41,7 +41,25 @@
       ],
       "notice_files": []
     },
+    ".github/dependabot.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     ".github/pull_request_template.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/codeql.yml": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
@@ -68,7 +86,25 @@
       ],
       "notice_files": []
     },
+    ".github/workflows/gpu.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     ".github/workflows/language.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/release.yml": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
@@ -81,6 +117,24 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/research-reconcile.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/research.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
@@ -211,6 +265,15 @@
       ],
       "notice_files": []
     },
+    "RELEASING.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "SECURITY.md": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -251,6 +314,24 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "assets/public/synthetic-cross-silo-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "assets/public/transcript-analytic-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
       "license_files": [
         "LICENSE"
       ],
@@ -2607,10 +2688,163 @@
       ],
       "notice_files": []
     },
+    "ci/profiles/conformance.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/profiles/contract.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/profiles/integration.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/profiles/nightly-adversarial.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/profiles/protocol-invariants.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/profiles/tiny-reference.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/profiles/weekly-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/proof-adapter.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/publication-policy.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/workflow-digests.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "claims/README.md": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/editions-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/registry.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/source-map-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/source-map-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/traceability-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/traceability-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
       "license_files": [
         "LICENSE"
       ],
@@ -2648,6 +2882,15 @@
       "notice_files": []
     },
     "compliance/dependencies.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/dependency-inventory.json": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
@@ -3188,6 +3431,24 @@
       ],
       "notice_files": []
     },
+    "docs/CI-DELIVERY-EVIDENCE.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/CI-RESEARCH.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "docs/CREDIT.md": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3215,510 +3476,6 @@
       ],
       "notice_files": []
     },
-    "docs/implementation.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/records.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/security.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "examples/claims.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "examples/results.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "experiments/README.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "experiments/language-tiny.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "pyproject.toml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "reference/__init__.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "reference/numeric.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "requirements-dev.txt": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "rust-toolchain.toml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "schemas/bundle-1.0.0.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "schemas/claims-1.0.0.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "schemas/result-1.0.0.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/build-public-report": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/build_source.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_ci_inventory.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_citation.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_dco.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_governance.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_wheel.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/conformance.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/generate_numeric_vectors.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/mutation_conformance.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/profile_language.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/validate": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/validate-language": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/verify-public-report": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/NUMERIC-CONTRACT.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/README.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/numeric-contract-v1.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/README.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/__init__.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/__main__.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/report.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/validate.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/workflow.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "tests/test_governance.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "tests/test_language.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "tests/test_pipeline.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "tools-requirements.txt": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "uv.lock": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    ".github/dependabot.yml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    ".github/workflows/codeql.yml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    ".github/workflows/gpu.yml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    ".github/workflows/release.yml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    ".github/workflows/research-reconcile.yml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    ".github/workflows/research.yml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "ci/profiles/contract.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "ci/profiles/tiny-reference.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "ci/proof-adapter.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "ci/workflow-digests.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/dependency-inventory.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/CI-DELIVERY-EVIDENCE.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/CI-RESEARCH.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "docs/RELEASE-LIMITATIONS.md": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3737,7 +3494,7 @@
       ],
       "notice_files": []
     },
-    "scripts/release-evidence": {
+    "docs/SESSION-04.md": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
@@ -3746,82 +3503,28 @@
       ],
       "notice_files": []
     },
-    "scripts/reproduce": {
+    "docs/assurance.md": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "scripts/research": {
+    "docs/implementation.md": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "src/fzkml_ci/benchmark.py": {
+    "docs/records.md": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/inventory.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/release.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/research.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "tests/test_research.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "assets/public/synthetic-cross-silo-v1.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "claims/registry.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
@@ -3890,6 +3593,24 @@
       ],
       "notice_files": []
     },
+    "docs/research/s03-evidence.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/s03-source-inspection.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "docs/research/security-obligations.json": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3903,6 +3624,69 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/transcript-implementation-evidence.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering evidence generated with Codex; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/transcript-source-review.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/security.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "examples/claims.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "examples/results.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/language-tiny.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history.",
       "license_files": [
         "LICENSE"
       ],
@@ -3944,10 +3728,244 @@
       ],
       "notice_files": []
     },
+    "pyproject.toml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "reference/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "reference/numeric.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "requirements-dev.txt": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "rust-toolchain.toml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/bundle-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/bundle-1.1.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/ci-proof-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/ci-run-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/claims-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/result-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/result-1.1.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/build-public-report": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/build_source.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_ci_inventory.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_citation.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_dco.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_governance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "scripts/check_research.py": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_wheel.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/conformance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/generate_numeric_vectors.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/mutation_conformance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/profile_language.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/release-evidence": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/reproduce": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/research": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
@@ -3962,172 +3980,82 @@
       ],
       "notice_files": []
     },
-    "specs/m0/capabilities-v0.1.md": {
+    "scripts/s04-adversarial": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "specs/m0/deployment-v0.1.md": {
+    "scripts/s04-conformance": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "specs/m0/fixtures-v0.1.md": {
+    "scripts/s04-proof": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "specs/m0/measurement-v0.1.md": {
+    "scripts/s04-report": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "specs/m0/relation-v0.1.md": {
+    "scripts/s04_proof.py": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "specs/m0/security-v0.1.md": {
+    "scripts/s04_report.py": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "RELEASING.md": {
+    "scripts/validate": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "assets/public/transcript-analytic-v1.json": {
+    "scripts/validate-language": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "claims/editions-v1.json": {
+    "scripts/verify-public-report": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "claims/schema-v1.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "claims/source-map-schema-v1.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "claims/source-map-v1.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "claims/traceability-schema-v1.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "claims/traceability-v1.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/assurance.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/s03-evidence.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/s03-source-inspection.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/transcript-implementation-evidence.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering evidence generated with Codex; no private manuscript bytes.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/transcript-source-review.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
@@ -4214,10 +4142,199 @@
       ],
       "notice_files": []
     },
+    "specs/NUMERIC-CONTRACT.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/capabilities-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/deployment-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/fixtures-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/measurement-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/relation-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/security-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/numeric-contract-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "specs/privacy/transcript-v0.1.md": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/__main__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/benchmark.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/inventory.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/publication.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/release.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/report.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/s04.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/validate.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/workflow.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
@@ -4277,6 +4394,60 @@
       ],
       "notice_files": []
     },
+    "tests/test_ci_research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_governance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_language.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_pipeline.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_s04_ci.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "tests/test_specification_registry.py": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -4290,6 +4461,24 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tools-requirements.txt": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "uv.lock": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],

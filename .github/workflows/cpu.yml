@@ -99,7 +99,9 @@ jobs:
       - name: Record hosted image revision
         run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
       - name: Validate Session 03 registry and scientific references
-        run: PYTHONPATH=src uv run --locked python scripts/check_research.py
+        run: |
+          PYTHONPATH=src uv run --locked python scripts/check_research.py
+          PYTHONPATH=src uv run --locked python specifications/validate.py
   required-cpu:
     if: always()
     needs: [validate, proof, conformance, registry]
