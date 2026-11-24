@@ -1,0 +1,2638 @@
+{
+  "schema_version": "1.0.0",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "items": [
+    {
+      "kind": "chapter",
+      "number": 1,
+      "title": "From Centralized AI to Cryptographically Governed Collaboration",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 10892,
+        "end_utf16": 10959,
+        "heading_id": "h.m1cnptj6zcca",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.m1cnptj6zcca"
+      },
+      "planned_issues": [
+        19
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 2,
+      "title": "Threat Models",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 14748,
+        "end_utf16": 14765,
+        "heading_id": "h.yk59qo3f88gl",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.yk59qo3f88gl"
+      },
+      "planned_issues": [
+        13,
+        52
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C02-DEF-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 3,
+      "title": "Federated Optimization",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 16544,
+        "end_utf16": 16570,
+        "heading_id": "h.h7166h9w1ft0",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.h7166h9w1ft0"
+      },
+      "planned_issues": [
+        19,
+        26,
+        28
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C03-MATH-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 4,
+      "title": "Cryptographic Commitments",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 18401,
+        "end_utf16": 18430,
+        "heading_id": "h.qynfat1gdlfk",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.qynfat1gdlfk"
+      },
+      "planned_issues": [
+        23,
+        32
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C04-SEC-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 5,
+      "title": "Zero-Knowledge Proofs",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 19586,
+        "end_utf16": 19611,
+        "heading_id": "h.hbka8563tgft",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.hbka8563tgft"
+      },
+      "planned_issues": [
+        23,
+        33,
+        35
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C05-SEC-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 6,
+      "title": "Differential Privacy",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 21108,
+        "end_utf16": 21132,
+        "heading_id": "h.u6ucjmd9t2mu",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.u6ucjmd9t2mu"
+      },
+      "planned_issues": [
+        54,
+        55,
+        57
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 7,
+      "title": "The FZKML Protocol Family",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 22244,
+        "end_utf16": 22273,
+        "heading_id": "h.hw3f93i6yd7k",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.hw3f93i6yd7k"
+      },
+      "planned_issues": [
+        13,
+        33,
+        45
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C07-REL-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 8,
+      "title": "Verifiable Secure Aggregation",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 24278,
+        "end_utf16": 24311,
+        "heading_id": "h.7379v5bglvc",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.7379v5bglvc"
+      },
+      "planned_issues": [
+        44,
+        46,
+        50
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 9,
+      "title": "Robustness and Byzantine Behavior",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 26086,
+        "end_utf16": 26123,
+        "heading_id": "h.6i9vkfdhb3g7",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.6i9vkfdhb3g7"
+      },
+      "planned_issues": [
+        50,
+        53
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 10,
+      "title": "Private and Verifiable Evaluation",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 27089,
+        "end_utf16": 27127,
+        "heading_id": "h.ijjkignl2gqm",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ijjkignl2gqm"
+      },
+      "planned_issues": [
+        62
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 11,
+      "title": "A Reference Architecture",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 27880,
+        "end_utf16": 27909,
+        "heading_id": "h.1ngxfk8tv2b0",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.1ngxfk8tv2b0"
+      },
+      "planned_issues": [
+        13,
+        46
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 12,
+      "title": "Protocol Transcript",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 28678,
+        "end_utf16": 28702,
+        "heading_id": "h.nnagczgvdut9",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.nnagczgvdut9"
+      },
+      "planned_issues": [
+        32,
+        35,
+        45,
+        48,
+        52,
+        57
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 13,
+      "title": "Cryptographic State Machine",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 29966,
+        "end_utf16": 29998,
+        "heading_id": "h.ylmpjgc0c2sz",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ylmpjgc0c2sz"
+      },
+      "planned_issues": [
+        35,
+        45,
+        48,
+        49,
+        51
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 14,
+      "title": "Composition",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 30678,
+        "end_utf16": 30694,
+        "heading_id": "h.4zc95m5dipwu",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.4zc95m5dipwu"
+      },
+      "planned_issues": [
+        13,
+        23,
+        57
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C14-SEC-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 15,
+      "title": "Security Goals",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 31338,
+        "end_utf16": 31357,
+        "heading_id": "h.q4timh5agh6j",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.q4timh5agh6j"
+      },
+      "planned_issues": [
+        13,
+        23,
+        52
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 16,
+      "title": "Attacks and Failure Modes",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 32196,
+        "end_utf16": 32226,
+        "heading_id": "h.1qs6c97rzk37",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.1qs6c97rzk37"
+      },
+      "planned_issues": [
+        35,
+        36,
+        50,
+        53
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 17,
+      "title": "What Zero Knowledge Cannot Prove",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 33480,
+        "end_utf16": 33517,
+        "heading_id": "h.30fmns6fp5js",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.30fmns6fp5js"
+      },
+      "planned_issues": [
+        13,
+        20,
+        23,
+        53
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C17-DEF-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 18,
+      "title": "Cost Model",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 34040,
+        "end_utf16": 34055,
+        "heading_id": "h.gsct3k1hwyn6",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.gsct3k1hwyn6"
+      },
+      "planned_issues": [
+        63,
+        64
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 19,
+      "title": "Proof-Aware Machine Learning",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 34700,
+        "end_utf16": 34733,
+        "heading_id": "h.vot5dlldn8yg",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.vot5dlldn8yg"
+      },
+      "planned_issues": [
+        21,
+        33,
+        60,
+        64,
+        65
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 20,
+      "title": "Full Training Proofs versus Property Proofs",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 35367,
+        "end_utf16": 35415,
+        "heading_id": "h.blv71l3cywsu",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.blv71l3cywsu"
+      },
+      "planned_issues": [
+        21,
+        33,
+        64
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 21,
+      "title": "Recursive Proofs and Proof Aggregation",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 36421,
+        "end_utf16": 36464,
+        "heading_id": "h.xosfrtrq796d",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.xosfrtrq796d"
+      },
+      "planned_issues": [
+        51
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 22,
+      "title": "Homomorphic Encryption and ZK",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 37288,
+        "end_utf16": 37322,
+        "heading_id": "h.3mp0m34e8w3s",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3mp0m34e8w3s"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 23,
+      "title": "MPC and ZK",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 37773,
+        "end_utf16": 37788,
+        "heading_id": "h.czaosjgxrxoe",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.czaosjgxrxoe"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 24,
+      "title": "Private Set Operations",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 38165,
+        "end_utf16": 38192,
+        "heading_id": "h.7gz4opxqkww6",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.7gz4opxqkww6"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 25,
+      "title": "Post-Quantum Considerations",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 38684,
+        "end_utf16": 38716,
+        "heading_id": "h.q3ubf01j27it",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.q3ubf01j27it"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 26,
+      "title": "Healthcare",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 39346,
+        "end_utf16": 39361,
+        "heading_id": "h.twq8h0w9wzcb",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.twq8h0w9wzcb"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 27,
+      "title": "Financial Crime and Fraud",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 39804,
+        "end_utf16": 39834,
+        "heading_id": "h.gjcsczxeb6ol",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.gjcsczxeb6ol"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 28,
+      "title": "Industrial Consortia",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 40193,
+        "end_utf16": 40218,
+        "heading_id": "h.y3lgszmxqjdy",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.y3lgszmxqjdy"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 29,
+      "title": "Autonomous and Edge Systems",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 40496,
+        "end_utf16": 40528,
+        "heading_id": "h.clw5nva8qdhs",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.clw5nva8qdhs"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 30,
+      "title": "Foundation Models",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 40841,
+        "end_utf16": 40863,
+        "heading_id": "h.3qksx6aa4moq",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3qksx6aa4moq"
+      },
+      "planned_issues": [
+        21
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 31,
+      "title": "From Trust in Institutions to Trust-Minimized Evidence",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 41289,
+        "end_utf16": 41348,
+        "heading_id": "h.htwadv9whnh2",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.htwadv9whnh2"
+      },
+      "planned_issues": [
+        13
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 32,
+      "title": "Data Sovereignty",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 41934,
+        "end_utf16": 41955,
+        "heading_id": "h.edlhu5wp7zbk",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.edlhu5wp7zbk"
+      },
+      "planned_issues": [
+        20
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 33,
+      "title": "Markets for Private Computation",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 42282,
+        "end_utf16": 42318,
+        "heading_id": "h.wxgts2jtqvyi",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.wxgts2jtqvyi"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 34,
+      "title": "Open Problems",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 42889,
+        "end_utf16": 42907,
+        "heading_id": "h.a29mz3qbu60g",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.a29mz3qbu60g"
+      },
+      "planned_issues": [
+        22
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 35,
+      "title": "Proposed Research Benchmarks",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 43724,
+        "end_utf16": 43757,
+        "heading_id": "h.i71kxq1ep5qq",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.i71kxq1ep5qq"
+      },
+      "planned_issues": [
+        14,
+        19
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 36,
+      "title": "A Minimal Experimental Protocol",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 44332,
+        "end_utf16": 44368,
+        "heading_id": "h.uq4lrn6z8uss",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.uq4lrn6z8uss"
+      },
+      "planned_issues": [
+        14,
+        19,
+        20,
+        28,
+        33,
+        46
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 37,
+      "title": "Formalization Roadmap",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 45234,
+        "end_utf16": 45260,
+        "heading_id": "h.rafhpqog7pd4",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.rafhpqog7pd4"
+      },
+      "planned_issues": [
+        13,
+        23
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 38,
+      "title": "What the Evidence Actually Establishes",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 45895,
+        "end_utf16": 45938,
+        "heading_id": "h.yvb8h750nug6",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.yvb8h750nug6"
+      },
+      "planned_issues": [
+        14,
+        22,
+        61
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C38-DEF-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 39,
+      "title": "Federated Optimization Under Cryptographic Constraints",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 50285,
+        "end_utf16": 50344,
+        "heading_id": "h.qtzddef1xgyf",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.qtzddef1xgyf"
+      },
+      "planned_issues": [
+        59,
+        60
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 40,
+      "title": "Proof Systems and Exact Machine-Learning Arithmetic",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 57637,
+        "end_utf16": 57693,
+        "heading_id": "h.yzxsmken08hp",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.yzxsmken08hp"
+      },
+      "planned_issues": [
+        26,
+        28,
+        33,
+        34,
+        36,
+        55,
+        65
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C40-REL-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 41,
+      "title": "Secure Aggregation, Malicious Behavior, and Verifiable Admission",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 76060,
+        "end_utf16": 76129,
+        "heading_id": "h.58g51gy5m3sv",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.58g51gy5m3sv"
+      },
+      "planned_issues": [
+        44,
+        46,
+        47,
+        48,
+        50
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 42,
+      "title": "Differential Privacy for the Complete Federated Transcript",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 94151,
+        "end_utf16": 94214,
+        "heading_id": "h.fkqbhaafk0t4",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.fkqbhaafk0t4"
+      },
+      "planned_issues": [
+        32,
+        49,
+        54,
+        55,
+        56,
+        57
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 43,
+      "title": "An Implementable Research Specification",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 112704,
+        "end_utf16": 112748,
+        "heading_id": "h.tli207k4l3e8",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.tli207k4l3e8"
+      },
+      "planned_issues": [
+        13,
+        28,
+        33,
+        34,
+        46
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C43-DEF-001",
+        "FZK-MS20261124-C43-EXP-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 44,
+      "title": "Standards, New Results, and the Limits of Certification",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 121248,
+        "end_utf16": 121308,
+        "heading_id": "h.gpwuowcupz09",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.gpwuowcupz09"
+      },
+      "planned_issues": [
+        22,
+        23
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 45,
+      "title": "Collaborative Proving Without a Central Witness Holder",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 125046,
+        "end_utf16": 125105,
+        "heading_id": "h.w3cu2r3ll1u6",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.w3cu2r3ll1u6"
+      },
+      "planned_issues": [
+        52
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 46,
+      "title": "Composition, Recursive Evidence, and Persistent Protocol State",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 139200,
+        "end_utf16": 139267,
+        "heading_id": "h.6z6g9luuuh28",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.6z6g9luuuh28"
+      },
+      "planned_issues": [
+        23,
+        45,
+        51,
+        57
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 47,
+      "title": "Randomness, Selective Abort, and Correlated Releases",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 151720,
+        "end_utf16": 151777,
+        "heading_id": "h.m12wmtpvekur",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.m12wmtpvekur"
+      },
+      "planned_issues": [
+        49,
+        55,
+        56,
+        57,
+        58
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 48,
+      "title": "Privacy Auditing as a Statistical Research Discipline",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 163909,
+        "end_utf16": 163967,
+        "heading_id": "h.p3xml0hht5yn",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.p3xml0hht5yn"
+      },
+      "planned_issues": [
+        61
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 49,
+      "title": "Encrypted and Multiparty Computation for Foundation Models",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 176832,
+        "end_utf16": 176895,
+        "heading_id": "h.r5pcwv92xnvl",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.r5pcwv92xnvl"
+      },
+      "planned_issues": [
+        21
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 50,
+      "title": "Federated Foundation Models with Verifiable State",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 192480,
+        "end_utf16": 192534,
+        "heading_id": "h.30stg3973uxp",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.30stg3973uxp"
+      },
+      "planned_issues": [
+        21,
+        45
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 51,
+      "title": "Vertical Collaboration, Private Joins, and the Meaning of an Authorized Output",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 206207,
+        "end_utf16": 206290,
+        "heading_id": "h.ivog4qpnijrd",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ivog4qpnijrd"
+      },
+      "planned_issues": [
+        54
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 52,
+      "title": "Verifiable Unlearning and the Lifetime of a Collaborative Model",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 219561,
+        "end_utf16": 219629,
+        "heading_id": "h.78opqrefexwv",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.78opqrefexwv"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 53,
+      "title": "Participation, Sampling, and the Population a Federated Model Learns",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 236894,
+        "end_utf16": 236967,
+        "heading_id": "h.3io691prab6",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3io691prab6"
+      },
+      "planned_issues": [
+        47,
+        59
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 54,
+      "title": "Time, Dropout, Compression, and Privacy in Asynchronous Collaboration",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 250042,
+        "end_utf16": 250116,
+        "heading_id": "h.p0vh454ey0s1",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.p0vh454ey0s1"
+      },
+      "planned_issues": [
+        49,
+        54,
+        59,
+        60
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 55,
+      "title": "Robustness Against Malicious Updates Under Cryptographic Privacy",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 261973,
+        "end_utf16": 262042,
+        "heading_id": "h.5tqjbl7jlyva",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.5tqjbl7jlyva"
+      },
+      "planned_issues": [
+        53,
+        54
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 56,
+      "title": "Fairness, Group Privacy, and Verifiable Evaluation",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 274117,
+        "end_utf16": 274172,
+        "heading_id": "h.5zlgrkf4e95w",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.5zlgrkf4e95w"
+      },
+      "planned_issues": [
+        54,
+        57,
+        62
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 57,
+      "title": "From a Mathematical Relation to a Correct Proof Implementation",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 286899,
+        "end_utf16": 286966,
+        "heading_id": "h.v4vrjvd2rfsa",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.v4vrjvd2rfsa"
+      },
+      "planned_issues": [
+        26,
+        32,
+        34,
+        35,
+        36
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 58,
+      "title": "Benchmarking and Reproducible Evidence for Federated Zero-Knowledge Learning",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 301242,
+        "end_utf16": 301323,
+        "heading_id": "h.fye4gci37ojx",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.fye4gci37ojx"
+      },
+      "planned_issues": [
+        14,
+        22,
+        61,
+        63
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 59,
+      "title": "Private Contribution Valuation and Verifiable Rewards",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 314656,
+        "end_utf16": 314714,
+        "heading_id": "h.e92bae6pb8dm",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.e92bae6pb8dm"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 60,
+      "title": "Anonymous Admission, Credentials, and the Meaning of One Participant",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 329525,
+        "end_utf16": 329598,
+        "heading_id": "h.mcgwsnkgzhjt",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mcgwsnkgzhjt"
+      },
+      "planned_issues": [
+        47
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 61,
+      "title": "What Makes AI Proofs Expensive—and What Current Benchmarks Measure",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 344499,
+        "end_utf16": 344570,
+        "heading_id": "h.nrt97iw2lqbt",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.nrt97iw2lqbt"
+      },
+      "planned_issues": [
+        14,
+        22,
+        63,
+        64,
+        65
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 62,
+      "title": "Co-Designing Fast Zero-Knowledge AI",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 355135,
+        "end_utf16": 355175,
+        "heading_id": "h.b6jxpc78gk5a",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.b6jxpc78gk5a"
+      },
+      "planned_issues": [
+        63,
+        64,
+        65
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 63,
+      "title": "A Fast Federated Architecture with Explicit Guarantees",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 367974,
+        "end_utf16": 368033,
+        "heading_id": "h.k4wpjd4xy9kv",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.k4wpjd4xy9kv"
+      },
+      "planned_issues": [
+        44,
+        60
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 64,
+      "title": "Selecting the Fastest Adequate System",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 380967,
+        "end_utf16": 381009,
+        "heading_id": "h.8g2754g86eyb",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.8g2754g86eyb"
+      },
+      "planned_issues": [
+        63,
+        64,
+        65
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 65,
+      "title": "Population Scale, Protected Aggregation, and Hierarchical Execution",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 394565,
+        "end_utf16": 394637,
+        "heading_id": "h.h38n6atuazkq",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.h38n6atuazkq"
+      },
+      "planned_issues": [
+        50,
+        56
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 66,
+      "title": "Scalable Proof Verification, Aggregation, and Accepted State",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 406172,
+        "end_utf16": 406237,
+        "heading_id": "h.wc46miwxpsrw",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.wc46miwxpsrw"
+      },
+      "planned_issues": [
+        47,
+        48
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 67,
+      "title": "Sampling, Asynchrony, Compression, and Privacy at Scale",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 417313,
+        "end_utf16": 417373,
+        "heading_id": "h.3ihzx56v15ze",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3ihzx56v15ze"
+      },
+      "planned_issues": [
+        59,
+        60
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 68,
+      "title": "Capacity Planning, Failure Recovery, and a Scalable Deployment Plan",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 427941,
+        "end_utf16": 428013,
+        "heading_id": "h.acg1khxfxhm4",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.acg1khxfxhm4"
+      },
+      "planned_issues": [
+        49,
+        63
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 69,
+      "title": "Training Proofs, Speculative Execution, and Endpoint Certificates",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 442115,
+        "end_utf16": 442185,
+        "heading_id": "h.mr6p8hysbmda",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mr6p8hysbmda"
+      },
+      "planned_issues": [
+        21
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 70,
+      "title": "Compiling Robust Aggregation into a Scalable Private Protocol",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 456018,
+        "end_utf16": 456084,
+        "heading_id": "h.tzvyx8n9b88d",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.tzvyx8n9b88d"
+      },
+      "planned_issues": [
+        53
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 71,
+      "title": "Distributed Proving, Streaming Memory, and Asynchronous State",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 468176,
+        "end_utf16": 468242,
+        "heading_id": "h.n2j9dmt3heim",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.n2j9dmt3heim"
+      },
+      "planned_issues": [
+        52
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 72,
+      "title": "Private Adapter Aggregation with a Fixed Shared Factor",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 482694,
+        "end_utf16": 482753,
+        "heading_id": "h.egtw549pcos8",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.egtw549pcos8"
+      },
+      "planned_issues": [
+        44
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 73,
+      "title": "Reactive Security and the Meaning of a Certified Federated State",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 496646,
+        "end_utf16": 496715,
+        "heading_id": "h.42bvb27kl9vr",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.42bvb27kl9vr"
+      },
+      "planned_issues": [
+        13,
+        23,
+        48,
+        49,
+        51,
+        57
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C73-MATH-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 74,
+      "title": "Numerical Refinement and Proof-Constrained Optimization",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 511545,
+        "end_utf16": 511605,
+        "heading_id": "h.xv5i84ydo8mx",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.xv5i84ydo8mx"
+      },
+      "planned_issues": [
+        26,
+        34,
+        65
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 75,
+      "title": "Transcript Geometry and the Privacy of Repeated Aggregation",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 524452,
+        "end_utf16": 524516,
+        "heading_id": "h.uxpexwkkmxzx",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.uxpexwkkmxzx"
+      },
+      "planned_issues": [
+        54,
+        55,
+        56,
+        58
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 76,
+      "title": "Sufficient Statistics and Proof-Carrying Solvers",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 538722,
+        "end_utf16": 538775,
+        "heading_id": "h.fev9x2oz3drg",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.fev9x2oz3drg"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 77,
+      "title": "Data Access as a Source of Model Quality",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 554365,
+        "end_utf16": 554410,
+        "heading_id": "h.q2ksf8xsi601",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.q2ksf8xsi601"
+      },
+      "planned_issues": [
+        19,
+        20,
+        22,
+        62
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C77-HYP-001"
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 78,
+      "title": "Learning Across Private Model Families",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 562149,
+        "end_utf16": 562192,
+        "heading_id": "h.f2kqd9sknplj",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.f2kqd9sknplj"
+      },
+      "planned_issues": [
+        21
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 79,
+      "title": "A Verifiable Architecture for Useful Private Data",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 582913,
+        "end_utf16": 582967,
+        "heading_id": "h.3k5ss21m8gp3",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3k5ss21m8gp3"
+      },
+      "planned_issues": [
+        20,
+        21,
+        44,
+        52,
+        53
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "chapter",
+      "number": 80,
+      "title": "Measuring the Benefit of Federated Zero-Knowledge Learning",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 593348,
+        "end_utf16": 593411,
+        "heading_id": "h.phkudcuyf7fk",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.phkudcuyf7fk"
+      },
+      "planned_issues": [
+        14,
+        19,
+        20,
+        22,
+        59,
+        62,
+        63
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "partial",
+      "source_review": "selected-prose-inspected",
+      "claim_ids": [
+        "FZK-MS20261124-C80-HYP-001",
+        "FZK-MS20261124-C80-ADOPT-001"
+      ]
+    },
+    {
+      "kind": "exercise",
+      "number": 1,
+      "title": "State the observer",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 694043,
+        "end_utf16": 694245,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        13,
+        52
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 2,
+      "title": "Construct a substitution attack",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 694245,
+        "end_utf16": 694447,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        44
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 3,
+      "title": "Analyze field arithmetic",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 694447,
+        "end_utf16": 694667,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        26,
+        28,
+        36
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 4,
+      "title": "Bound every residual",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 694667,
+        "end_utf16": 694916,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        26
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 5,
+      "title": "Preserve a classifier",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 694916,
+        "end_utf16": 695125,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 6,
+      "title": "Vary the privacy unit",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 695125,
+        "end_utf16": 695374,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        54,
+        55
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 7,
+      "title": "Budget honest noise",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 695374,
+        "end_utf16": 695591,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        50,
+        55,
+        56
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 8,
+      "title": "Audit the public statement",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 695591,
+        "end_utf16": 695814,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        32
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 9,
+      "title": "Distinguish validity from utility",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 695814,
+        "end_utf16": 696074,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        53
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 10,
+      "title": "Expose adapter cross terms",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 696074,
+        "end_utf16": 696297,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 11,
+      "title": "Account for failure",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 696297,
+        "end_utf16": 696540,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        49,
+        50,
+        57
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 12,
+      "title": "Build the smallest complete artifact",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 696540,
+        "end_utf16": 696889,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        28,
+        33,
+        44,
+        45,
+        46,
+        48,
+        50
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 13,
+      "title": "Separate prover views",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 696889,
+        "end_utf16": 697144,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        52
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 14,
+      "title": "Join a proof history",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 697144,
+        "end_utf16": 697394,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        23,
+        45,
+        51
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 15,
+      "title": "Audit a retry policy",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 697394,
+        "end_utf16": 697597,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        49,
+        56
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 16,
+      "title": "Quantify an empirical audit",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 697597,
+        "end_utf16": 697850,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        61
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 17,
+      "title": "Bound attention error",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 697850,
+        "end_utf16": 698091,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 18,
+      "title": "Type an adapter update",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 698091,
+        "end_utf16": 698337,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        21,
+        45
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 19,
+      "title": "Prove a join contribution bound",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 698337,
+        "end_utf16": 698582,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        54
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 20,
+      "title": "Verify a removal transition",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 698582,
+        "end_utf16": 698821,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 21,
+      "title": "Identify the learned population",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 698821,
+        "end_utf16": 699098,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        59
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 22,
+      "title": "Bound the transmitted update",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 699098,
+        "end_utf16": 699335,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        54,
+        60
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 23,
+      "title": "Separate robustness from privacy calibration",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 699335,
+        "end_utf16": 699609,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        54
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 24,
+      "title": "Interpret a private fairness certificate",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 699609,
+        "end_utf16": 699892,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        62
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 25,
+      "title": "Find a unique wrong answer",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 699892,
+        "end_utf16": 700164,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        26,
+        34,
+        35,
+        36
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 26,
+      "title": "Retain failed experiments",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 700164,
+        "end_utf16": 700443,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        14,
+        63
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 27,
+      "title": "Audit a contribution payment",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 700443,
+        "end_utf16": 700721,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 28,
+      "title": "Connect admission to a privacy unit",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 700721,
+        "end_utf16": 701012,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        47
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 29,
+      "title": "Normalize an AI-proof benchmark",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 701012,
+        "end_utf16": 701272,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        14,
+        22,
+        63,
+        64,
+        65
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 30,
+      "title": "Separate computation savings from waiting time",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 701272,
+        "end_utf16": 701518,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        63,
+        64,
+        65
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 31,
+      "title": "Certify the delivered low-rank update",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 701518,
+        "end_utf16": 701811,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        44
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 32,
+      "title": "Choose a verification and trust boundary",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 701811,
+        "end_utf16": 702126,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        13,
+        21,
+        64
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 33,
+      "title": "Partition work without expanding disclosure",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 702126,
+        "end_utf16": 702410,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 34,
+      "title": "Bind a compact certificate to accepted state",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 702410,
+        "end_utf16": 702718,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        48
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 35,
+      "title": "Analyze completion-aware sampling",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 702718,
+        "end_utf16": 703012,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        59,
+        60
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 36,
+      "title": "Reproduce a capacity and recovery model",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 703012,
+        "end_utf16": 703306,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        49
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 37,
+      "title": "Certify progress rather than speculative work",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 703306,
+        "end_utf16": 703605,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 38,
+      "title": "Compile the required robust function",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 703605,
+        "end_utf16": 703896,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 39,
+      "title": "Audit every computing role",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 703896,
+        "end_utf16": 704179,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        52
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 40,
+      "title": "Preserve a compact private adapter",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 704179,
+        "end_utf16": 704474,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 41,
+      "title": "Compose the continuing service",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 704474,
+        "end_utf16": 704785,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        13,
+        23,
+        51,
+        57
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 42,
+      "title": "Allocate a numerical error budget",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 704785,
+        "end_utf16": 705072,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        65
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 43,
+      "title": "Analyze the complete privacy geometry",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 705072,
+        "end_utf16": 705385,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        55,
+        56,
+        58
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 44,
+      "title": "Certify a sufficient-statistic solution",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 705385,
+        "end_utf16": 705692,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 45,
+      "title": "Separate the sources of learning gain",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 705692,
+        "end_utf16": 705966,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        19,
+        20
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 46,
+      "title": "Identify a missing correspondence",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 705966,
+        "end_utf16": 706235,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        12
+      ],
+      "mapping_basis": "R001 extraction backlog; no specialized implementation issue yet",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 47,
+      "title": "Bind a private adapter contribution",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 706235,
+        "end_utf16": 706532,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        21,
+        44,
+        53
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    },
+    {
+      "kind": "exercise",
+      "number": 48,
+      "title": "Benchmark certified time to quality",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 706532,
+        "end_utf16": 706802,
+        "heading_id": null,
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr"
+      },
+      "planned_issues": [
+        14,
+        19,
+        59,
+        63
+      ],
+      "mapping_basis": "published-issue-plan",
+      "extraction_status": "pending-extraction",
+      "source_review": "outline-inspected",
+      "claim_ids": []
+    }
+  ]
+}

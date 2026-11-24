@@ -225,10 +225,28 @@
       ],
       "notice_files": []
     },
+    "assets/public/synthetic-cross-silo-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "claims/README.md": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/registry.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
       "license_files": [
         "LICENSE"
       ],
@@ -619,6 +637,87 @@
       ],
       "notice_files": []
     },
+    "docs/research/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/claim-context.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/coverage-report.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/coverage.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/evidence-manifest.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering artifact generated with Codex; contributor history records provenance. Manuscript content excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/implementation-evidence.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering artifact generated with Codex; contributor history records provenance. Manuscript content excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/manuscript.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/security-obligations.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/source-index.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "docs/security.md": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -650,6 +749,42 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/capabilities.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/preregistration-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/replication-cards.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/reporting-cases.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
       "license_files": [
         "LICENSE"
       ],
@@ -763,6 +898,24 @@
       ],
       "notice_files": []
     },
+    "scripts/check_research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/research_fixtures.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "scripts/validate": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -785,6 +938,60 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/capabilities-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/deployment-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/fixtures-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/measurement-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/relation-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/security-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
       "license_files": [
         "LICENSE"
       ],
@@ -857,6 +1064,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
       "license_files": [
         "LICENSE"
       ],

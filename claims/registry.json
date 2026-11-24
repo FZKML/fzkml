@@ -1,0 +1,686 @@
+{
+  "schema_version": "1.0.0",
+  "claims": [
+    {
+      "id": "FZK-MS20261124-C02-DEF-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 2,
+        "section": "anchor.h.mn3e6ekapbyf",
+        "equation": "native.16109",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "definition",
+      "statement": "A deployment claim must enumerate distinct public, coordinator and coalition views, including authorized outputs and failure metadata.",
+      "evidence_class": "specification",
+      "scope": "Observer separation for the four-client synthetic simulation.",
+      "assumptions": [
+        "Roles and corruption model are fixed before execution."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 13,
+      "status": "specified",
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "not-applicable"
+    },
+    {
+      "id": "FZK-MS20261124-C03-MATH-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 3,
+        "section": "anchor.h.4i1eqlmd67wf",
+        "equation": "native.16761",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "assumption-theorem",
+      "statement": "For a fixed accepted roster A and public integer weights a_i, the declared encoded update is componentwise floor(sum_i(a_i*delta_i)/sum_i(a_i)+1/2); the denominator must be positive and fixed by policy.",
+      "evidence_class": "specification",
+      "scope": "An original M0 rounded aggregation definition; not a universal FedAvg convergence theorem.",
+      "assumptions": [
+        "The roster and weights are authoritative.",
+        "All sums use exact bounded integers."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 13,
+      "status": "specified",
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C04-SEC-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 4,
+        "section": "anchor.h.qynfat1gdlfk",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "cryptographic-security",
+      "statement": "The selected commitment must bind one canonical message and hide protected messages under its declared setup and randomness distribution; deterministic dataset hashes alone do not supply hiding.",
+      "evidence_class": "specification",
+      "scope": "Conditional component requirement; no commitment backend integrated.",
+      "assumptions": [
+        "A concrete hiding/binding commitment and compatible setup must be selected.",
+        "Adequate secret independent blinding is available."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 23,
+      "status": "planned",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C05-SEC-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 5,
+        "section": "anchor.h.saoa7hxj9kic",
+        "equation": "native.19763",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "cryptographic-security",
+      "statement": "For the exact one-step relation and permitted setup, a concrete standalone argument must supply completeness, soundness and witness-view simulation; extraction is an additional explicitly required property.",
+      "evidence_class": "specification",
+      "scope": "One isolated proof invocation only; reactive composition remains open.",
+      "assumptions": [
+        "A backend theorem matches the concrete relation/setup and adversary.",
+        "Semantic circuit conformance holds."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 23,
+      "status": "planned",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C07-REL-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 7,
+        "section": "anchor.h.3qc3zk3a4gwj",
+        "equation": "native.22760",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "implementation-relation",
+      "statement": "A local contribution statement binds its authorized selected record, initial model, policy and exact bounded one-record SGD result to the same output-delta commitment.",
+      "evidence_class": "specification",
+      "scope": "One record, one step, two features, squared loss and no bias; no batch/full-history coverage.",
+      "assumptions": [
+        "Commitment openings and record-selection membership are checked.",
+        "All numeric bounds in relation-v0.1 are enforced."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 13,
+      "status": "specified",
+      "evidence_ids": [
+        "spec-relation-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C14-SEC-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 14,
+        "section": "anchor.h.4zc95m5dipwu",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "cryptographic-security",
+      "statement": "A valid local proof constrains the released aggregate only if its committed contribution is equality-bound to the payload actually consumed and to the same accepted roster and policy.",
+      "evidence_class": "specification",
+      "scope": "Necessary composition interface; aggregate security unproved.",
+      "assumptions": [
+        "Transport equality and aggregate conservation are enforced.",
+        "The coordinator cannot substitute an unchecked buffer."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 23,
+      "status": "planned",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C17-DEF-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 17,
+        "section": "anchor.h.30fmns6fp5js",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "definition",
+      "statement": "Binding a computation to a dataset representation does not establish truthful records, consent, completeness or statistical representativeness.",
+      "evidence_class": "specification",
+      "scope": "Boundary of all synthetic and later public-asset claims.",
+      "assumptions": [
+        "The proof checks only the specified relation."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 20,
+      "status": "specified",
+      "evidence_ids": [
+        "spec-fixtures-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C38-DEF-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 38,
+        "section": "anchor.h.l88xmv590y85",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "definition",
+      "statement": "Training, inference, update-property, aggregation and privacy statements are distinct assurance types; evidence for one does not by itself establish the others.",
+      "evidence_class": "specification",
+      "scope": "The typed registry separates proof and trust boundaries.",
+      "assumptions": [
+        "Each relation and observer is explicitly identified."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 12,
+      "status": "specified",
+      "evidence_ids": [
+        "spec-capabilities-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C40-REL-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 40,
+        "section": "anchor.h.2i5vvyqm5f1l",
+        "equation": "native.66390",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "implementation-relation",
+      "statement": "For S=16, X=(16,-8), Y=4, W=(8,4), rate 1 and the rounded analytical squared-loss gradient, the specified trace is A=96, Q=6, E=2, G=(2,-1), W_next=(6,5).",
+      "evidence_class": "specification",
+      "scope": "Expected readable-prose example only; omitted native constraints require review.",
+      "assumptions": [
+        "Inputs are signed encoded integers, with no bias or optimizer memory.",
+        "The specified rescale rule and enforced ranges apply."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 13,
+      "status": "specified",
+      "evidence_ids": [
+        "spec-relation-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C43-DEF-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 43,
+        "section": "anchor.h.w0rgjjp54sqv",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "definition",
+      "statement": "The first research profile fixes four synthetic cross-silo clients, one rounded squared-loss step and a public context before increasing model size or claiming protected composition.",
+      "evidence_class": "specification",
+      "scope": "One local process; no process/network privacy.",
+      "assumptions": [
+        "The chosen four-client profile is an engineering adaptation of the manuscript proposal."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 13,
+      "status": "specified",
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C43-EXP-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 43,
+        "section": "anchor.h.9f7b3s41mv0e",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "empirical-hypothesis",
+      "statement": "Proof overhead can be isolated only after matching the complete computation, numeric semantics, observer guarantee, eligible roster and release policy; deployment exclusion is a separately measured effect.",
+      "evidence_class": "specification",
+      "scope": "Experimental-design requirement, with no measured speedup.",
+      "assumptions": [
+        "The same honest trace is available in each compared arm.",
+        "All failed/retried work is retained."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 14,
+      "status": "planned",
+      "evidence_ids": [
+        "spec-measurement-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C73-MATH-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 73,
+        "section": "anchor.h.mpflvnnhtwzq",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "assumption-theorem",
+      "statement": "If two distinct permitted successors of one parent each have obtainable valid certificates, a coordinator can present them to isolated verifiers that check only local validity, so proof soundness alone does not ensure agreement.",
+      "evidence_class": "specification",
+      "scope": "Conditional counterexample; certificate availability is an assumption.",
+      "assumptions": [
+        "Both transitions are permitted and produce different successors.",
+        "The coordinator can obtain both valid certificates.",
+        "Verifiers have no authoritative cross-view agreement check."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 23,
+      "status": "specified",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C73-SEC-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 73,
+        "section": "anchor.h.nn42qotnu70g",
+        "equation": "native.510226",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "cryptographic-security",
+      "statement": "If the complete ideal output is (epsilon,delta)-DP and the real transcript is kappa-indistinguishable from a common simulator of that output with identical neighboring public context, efficient events satisfy slack delta+(1+exp(epsilon))*kappa.",
+      "evidence_class": "specification",
+      "scope": "Conditional derivation only; M0 supplies none of the DP/simulation premises.",
+      "assumptions": [
+        "The simulator and auxiliary information are common across neighbors.",
+        "All public observations and prior releases belong to the joint mechanism.",
+        "The real/ideal transcript replacement bound holds for each neighbor."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 23,
+      "status": "planned",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C77-HYP-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 77,
+        "section": "anchor.h.q2ksf8xsi601",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "empirical-hypothesis",
+      "statement": "At matched sample count and evaluation protocol, additional authorized source diversity or improved labels may improve quality; a null or adverse effect contradicts that benefit in the tested scope.",
+      "evidence_class": "specification",
+      "scope": "Proposed synthetic factorial study; no real-world outcome claim.",
+      "assumptions": [
+        "Source diversity, sample count and label quality are independently controlled.",
+        "Evaluation excludes relevant entity/time/duplicate leakage."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 19,
+      "status": "planned",
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C80-HYP-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 80,
+        "section": "anchor.h.56u5q1l9c7bl",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "empirical-hypothesis",
+      "statement": "Protected-plus-proof deployment should be evaluated by time and resources to a preregistered useful certified quality threshold, counting failures and proof-induced exclusions from the initially eligible population.",
+      "evidence_class": "specification",
+      "scope": "Threshold MSE<=0.05 in the proposed public synthetic profile only.",
+      "assumptions": [
+        "Matched control arms and budgets are fixed in advance.",
+        "Unreached thresholds and missing runs are retained."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 19,
+      "status": "planned",
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-relation-0.1"
+    },
+    {
+      "id": "FZK-MS20261124-C80-ADOPT-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 80,
+        "section": "anchor.h.8l3iothd8p0p",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "adoption-outcome",
+      "statement": "Whether verification expands authorized participation, and whether those contributors improve learning, requires a separate consented adoption/outcome study and cannot be inferred from proof performance.",
+      "evidence_class": "specification",
+      "scope": "No institutional, clinical or commercial outcome evidence exists.",
+      "assumptions": [
+        "A field study has authorized recruitment and a defined target population."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 19,
+      "status": "planned",
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof artifact or checked kernel result."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review; no approval claimed."
+      },
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "not-applicable"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "spec-deployment-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/deployment-v0.1.md",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation."
+    },
+    {
+      "id": "spec-security-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/security-v0.1.md",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation."
+    },
+    {
+      "id": "spec-relation-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/relation-v0.1.md",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation."
+    },
+    {
+      "id": "spec-fixtures-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/fixtures-v0.1.md",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation."
+    },
+    {
+      "id": "spec-capabilities-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/capabilities-v0.1.md",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation."
+    },
+    {
+      "id": "spec-measurement-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/measurement-v0.1.md",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation."
+    },
+    {
+      "id": "spec-preregistration-v0.1",
+      "kind": "specification",
+      "path": "experiments/m0/preregistration-v0.1.md",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation."
+    }
+  ]
+}
