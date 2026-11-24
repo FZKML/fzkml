@@ -82,3 +82,11 @@ explicit placeholders in these unexecuted fixtures, never real provenance.
 
 See [record contracts](docs/records.md), [workflow and publication policy](docs/security.md)
 and [implementation evidence and remaining work](docs/implementation.md).
+
+## Scoped privacy and performance research
+
+Issues #60–#65 add source-verified manuscript goldens, exact compression and audit
+references, synthetic fixed-classifier evaluation, resource ledgers and an exact
+CPU kernel comparison. See the [contracts](specs/m3-m4/privacy-performance-v1.md)
+and [actual evidence and limitations](experiments/m3-m4/EVIDENCE.md). These do not
+implement a production DP release or a complete protected-training proof bakeoff.

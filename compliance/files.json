@@ -799,6 +799,33 @@
       ],
       "notice_files": []
     },
+    "experiments/m3-m4/EVIDENCE.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic CPU observations and engineering interpretation generated with Codex; exact source and hardware retained.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m3-m4/native-profile-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic CPU observations and engineering interpretation generated with Codex; exact source and hardware retained.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m3-m4/native-profile-v1.sha256": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "SHA-256 of the retained synthetic CPU observation artifact.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "pyproject.toml": {
       "license": "Apache-2.0",
       "origin": "original",

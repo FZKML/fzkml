@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import math
 import random
@@ -9,6 +10,7 @@ from dataclasses import replace
 from fractions import Fraction as F
 from typing import Any, Literal
 
+from fzkml_ci.benchmark import summarize_times
 from fzkml_ci.validate import ROOT, Invalid
 from fzkml_research.audit import AuditPlan, Trial, audit
 from fzkml_research.backends import Assurance, BackendEvidence, compare_backends
@@ -548,6 +550,38 @@ class BackendTests(unittest.TestCase):
 
 
 class SourceTests(unittest.TestCase):
+    def test_retained_profile_integrity_and_raw_aggregation(self) -> None:
+        path = ROOT / "experiments/m3-m4/native-profile-v1.json"
+        data = json.loads(path.read_text())
+        expected = (path.with_suffix(".sha256")).read_text().split()[0]
+        self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), expected)
+        self.assertRegex(data["execution_origin"]["source_commit"], r"^[a-f0-9]{40}$")
+        self.assertEqual(data["execution_origin"]["kind"], "local")
+        self.assertIsNone(data["execution_origin"]["workflow_run"])
+        all_results = set()
+        for index, name in enumerate(("reference", "transposed")):
+            rows = data["raw_profiles"][name]
+            self.assertEqual(len(rows), data["plan"]["repetitions"])
+            for row in rows:
+                events = [Event(**event) for event in row["ledger"]["events"]]
+                samples = [LiveSample(**sample) for sample in row["ledger"]["resource_samples"]]
+                recomputed = summarize(
+                    events, samples, [], budget_ns=20_000_000_000, quality_target=F(0)
+                )
+                for key, value in recomputed.items():
+                    self.assertEqual(row["profile"][key], value)
+                self.assertGreaterEqual(row["end_to_end_ns"], row["profile"]["wall_ns"])
+                self.assertEqual(
+                    row["launch_import_and_ipc_ns"],
+                    row["end_to_end_ns"] - row["profile"]["wall_ns"],
+                )
+                all_results.add(row["result_digest"])
+            summary = summarize_times([row["end_to_end_ns"] / 1e9 for row in rows], 0, 0)
+            self.assertEqual(data["comparison"]["distributions"][index], summary)
+        self.assertEqual(len(all_results), 1)
+        self.assertEqual(data["gpu"]["status"], "not-run")
+        self.assertEqual(data["backend_bakeoff"]["status"], "not-run")
+
     def test_every_golden_has_verified_source_equation_and_inputs(self) -> None:
         self.assertEqual(GOLDEN["source"]["author_declared_edition"], None)
         self.assertEqual(len(GOLDEN["source"]["markdown_export_sha256"]), 64)
