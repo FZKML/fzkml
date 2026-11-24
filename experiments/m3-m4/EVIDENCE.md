@@ -33,3 +33,5 @@ The numerical relation and output digests match exactly. RSS is the worker proce
 ## Validation and interpretation
 
 `./scripts/validate` passes locally, including the foundation checks and 70 Python tests, including retained-artifact integrity and raw-aggregation checks. Hosted head checks are linked from PR #71. The inherited real-proof/required-cpu gate from #68 remains unavailable until its adapter exists; it is not bypassed. No issue is closed or scientific evidence automatically promoted by passing arithmetic tests.
+
+Hosted validation exposed an inherited preinstalled Rust/Clippy conflict before the real-proof gate. Rust-installing workflows now source `scripts/install-rust-toolchain`, isolating RUSTUP_HOME/CARGO_HOME in the job temporary directory. Workflow review hashes are updated with that explicit change; no trust cache or required proof check is weakened.

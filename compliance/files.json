@@ -934,6 +934,15 @@
       ],
       "notice_files": []
     },
+    "scripts/install-rust-toolchain": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original CI bootstrap isolation fix developed with Codex assistance.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "scripts/release-evidence": {
       "license": "Apache-2.0",
       "origin": "original",

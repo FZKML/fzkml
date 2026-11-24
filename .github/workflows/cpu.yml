@@ -23,7 +23,7 @@ jobs:
       - name: Install reviewed tools
         run: |
           python -m pip install --require-hashes -r tools-requirements.txt
-          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          source ./scripts/install-rust-toolchain
           uv sync --locked
       - name: Record runner image revision
         run: |
@@ -48,7 +48,7 @@ jobs:
       - name: Install locked tools
         run: |
           python -m pip install --require-hashes -r tools-requirements.txt
-          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          source ./scripts/install-rust-toolchain
           uv sync --locked
       - run: ./scripts/research proof
   required-cpu:
