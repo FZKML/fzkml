@@ -30,7 +30,7 @@ class GovernanceTests(unittest.TestCase):
         (self.root / name).write_text(json.dumps(value))
 
     def test_current_manifests(self):
-        self.assertEqual(validate(self.root, self.paths)["assets"], 4)
+        self.assertEqual(validate(self.root, self.paths)["assets"], 5)
 
     def test_controlled_missing_license_fixture(self):
         fixture = self.root / "unlicensed-example.py"
