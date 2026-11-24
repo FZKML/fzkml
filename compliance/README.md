@@ -14,11 +14,15 @@ The combined CPU command uses `uv.lock`; the older `requirements-dev.txt` remain
 the independent citation-validator lock from the governance foundation and is
 still checked against its original inventory. No installed tool package is bundled
 in the source-only archive. The CI integration validates new Python manifests,
-all uv artifact hashes and notice digests; Rust currently has no external crates.
+all uv artifact hashes and notice digests. `rust-dependencies.json` records every
+locked crate's version, registry/source checksum, declared/selected license and
+preserved notices. The native wheel retains the complete locked crate notice set,
+including build/target-only crates conservatively, plus Rust standard-library
+licenses/copyright. `scripts/check_wheel.py` checks the actual archive bundle.
 Python, Git, hosted runners and the pinned GitHub Actions are execution tools,
 not distribution contents. New distribution formats require a fresh inventory of
 their transitive contents. Do not describe this initial inventory as covering an
-as-yet unbuilt wheel, container, binary, or proof system.
+as-yet unbuilt container, binary, or model format.
 
 Update dependency metadata from exact upstream/PyPI releases; verify the source
 hash and inspect actual license texts, notices, and transitive requirements.

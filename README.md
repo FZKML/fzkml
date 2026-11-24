@@ -5,16 +5,17 @@ federated learning: protocol specifications, original reference implementations,
 test vectors, claim records, and reproducible experiments belong together here.
 Intended users are protocol researchers, implementers, and independent reviewers.
 
-**Maturity: project foundation.** This branch implements governance and provenance
-checks, a DCO check, and a source-distribution builder. No federated training,
-zero-knowledge proof system, or security guarantee is implemented or demonstrated.
-The research prototype is not production-ready or externally audited.
+**Maturity: research prototype.** In addition to governance and CI tooling, this
+branch implements a tiny exact three-client linear update, independent Python/Rust
+conformance, an arkworks Groth16 local research proof, PyO3 bindings and a CPU
+PyTorch comparison. All scenario inputs are public. No production security or
+training-data privacy guarantee is established; the prototype is not externally audited.
 
-The first planned scientific workflow is a local, deterministic simulation of one
-federated learning round on synthetic inputs, followed by an explicitly specified
-verification relation and positive/negative test vectors. Privacy, proof cost,
-robustness, and convergence remain untested hypotheses until recorded evidence
-supports a precisely scoped claim.
+The first implemented numeric workflow is a local deterministic round on three
+original synthetic clients under the [exact contract](specs/NUMERIC-CONTRACT.md).
+See [architecture](docs/ADR-001-RUST-PYTHON.md) and
+[reproduction/API/evidence](docs/LANGUAGE-IMPLEMENTATION.md). Privacy, scalability,
+robustness and convergence remain untested hypotheses.
 
 Start with [the charter](docs/CHARTER.md), [contributing](CONTRIBUTING.md),
 [governance](GOVERNANCE.md), [security reporting](SECURITY.md), and

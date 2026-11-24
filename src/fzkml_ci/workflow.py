@@ -28,7 +28,8 @@ def check_workflow(workflow: dict[str, Any]) -> None:
     require(isinstance(triggers, dict), "explicit-workflow-triggers-required")
     assert isinstance(triggers, dict)
     require(
-        bool(triggers) and set(triggers) <= {"pull_request", "push", "workflow_dispatch"},
+        bool(triggers)
+        and set(triggers) <= {"pull_request", "push", "workflow_dispatch", "schedule"},
         "unsafe-trigger",
     )
     require(workflow.get("permissions") == {}, "workflow-permissions-must-be-empty")
@@ -40,6 +41,11 @@ def check_workflow(workflow: dict[str, Any]) -> None:
     require("env" not in workflow and "defaults" not in workflow, "global-execution-configuration")
     jobs = workflow.get("jobs", {})
     require(isinstance(jobs, dict) and 0 < len(jobs) <= 4, "job-count-limit")
+    if "schedule" in triggers:
+        require(
+            triggers["schedule"] == [{"cron": "37 4 * * 1"}] and set(jobs) == {"language"},
+            "schedule-not-reviewed",
+        )
     for job_name, job in jobs.items():
         require(isinstance(job, dict) and "uses" not in job, "reusable-job-not-reviewed")
         require(job.get("runs-on") == "ubuntu-24.04", "ephemeral-runner-required")
