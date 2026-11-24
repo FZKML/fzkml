@@ -11,6 +11,14 @@
       "sha256": "ae294df7023abc6e7639e9e3baa3cc1899bc041d0e1733fc0717a85a344c0d72"
     },
     {
+      "path": "claims/candidate-evidence-schema-v1.json",
+      "sha256": "70b6222bf555da797f7642b5d7e096182c79fb1a9764ce4368047688a45a100e"
+    },
+    {
+      "path": "claims/candidate-evidence-v1.json",
+      "sha256": "21b4a35b035b97b0ecf9255d146582304782ccb02bc07c7492b9f5448540de54"
+    },
+    {
       "path": "claims/editions-v1.json",
       "sha256": "96b17c6c9e4ab250b7c618fd88ae5711f20e46af5e5cf4abeae08b598a1182a8"
     },
@@ -56,7 +64,7 @@
     },
     {
       "path": "docs/research/s03-evidence.md",
-      "sha256": "a0f8fdf4befbc455c2211cdedec321eeafbd5f8ef31904189b7f798f78b50277"
+      "sha256": "30981c93973f5cc6172ef6b494dbaee5ad65dfa77815e713a7cf9dccfb3c81d0"
     },
     {
       "path": "docs/research/s03-source-inspection.json",
@@ -92,7 +100,7 @@
     },
     {
       "path": "specifications/README.md",
-      "sha256": "8486aab032ba652cf54ab2ab3f7ce44ca24fd21c74ada40577692160951d22bb"
+      "sha256": "d296867501381de1d969d1f1f20198b341bead9490071b85b2f2aa4e876ed630"
     },
     {
       "path": "specifications/__init__.py",
@@ -116,15 +124,15 @@
     },
     {
       "path": "specifications/session-handoffs-v1.md",
-      "sha256": "d64602d6dd0dc02d91bd1a545b38d2054d767da54e50616b35e5395988764bc4"
+      "sha256": "b7a36ccb5e268b9ceac1104cafd4ee6b6e6cf6c931a06f57927378c71dec260c"
     },
     {
       "path": "specifications/source-inputs-v1.json",
-      "sha256": "5b85c3accfcee92ec6dceec27ae9be9e1310de27b3b7152096058f22108be622"
+      "sha256": "5621bb07835fcb7876ef6bbb0c699ff3c0bb48423ca28d9a37bbb93c904d722d"
     },
     {
       "path": "specifications/validate.py",
-      "sha256": "0acd5d06be28ccce7951179f90fbf7ac76b172eeff4a701db627e1643393f0df"
+      "sha256": "c47e65cf68fb5ba360915072b46351d06ee016df382d5b3feffc56ebdf588020"
     },
     {
       "path": "specs/m0/capabilities-v0.1.md",
@@ -156,7 +164,7 @@
     },
     {
       "path": "tests/test_specification_registry.py",
-      "sha256": "fa14b21db6da8ec52ae04fd71c41019c6c761312b3860d0a54f4a3fc51b62018"
+      "sha256": "31eee85611709684ffbd422522f6c4a3aade6b008e5af25d675972101f575220"
     }
   ]
 }

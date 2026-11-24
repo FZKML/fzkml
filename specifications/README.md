@@ -46,3 +46,11 @@ Original engineering documents and metadata use the repository software license.
 The private manuscript, its export, images and equation XML remain outside the
 repository and its Apache-2.0 publication scope. Obtain authorized source access
 through the canonical Google Doc; no local manuscript path is assumed.
+
+`claims/candidate-evidence-v1.json` and its closed schema retain immutable peer
+numerical evidence awaiting contribution/adoption gates. The validator checks
+its source/claim locators, commit URLs, content identifiers and exact local/
+hosted pass/skip scope. Candidate entries remain separate from adopted evidence
+and never promote a scientific claim. Include this catalog/schema when consuming
+the validator; published code hashes are reviewed observations, not network-fetched
+or executed by the validation command.

@@ -19,3 +19,9 @@ relation/implementation bindings and evidence attestations. See
 Five scoped analytic/synthetic references have named passing test evidence;
 these do not establish a complete training, cryptographic, DP or adoption claim.
 Formal proof and independent review remain separate, currently empty categories.
+
+[candidate-evidence-v1.json](candidate-evidence-v1.json) records immutable external
+numerical evidence awaiting contribution/adoption gates. It is schema checked
+and source mapped, but is separate from adopted claim evidence. Hosted CPU and
+language test scopes, local skips and pending certification remain explicit.
+A candidate record never promotes a claim or native-equation review status.

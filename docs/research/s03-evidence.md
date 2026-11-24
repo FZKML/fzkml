@@ -72,3 +72,35 @@ construction and its reproducible-content tests passed. No manuscript bytes,
 private input caches or foreign worktrees are inventoried archive contents.
 Hosted checks must still be inspected on the actual pushed PR head; local checks
 do not constitute independent scientific/domain review.
+
+## Candidate Session 02 numerical evidence
+
+PR #124 at `387294fb897959a1be8d5c830d95b7823f4b2edd` supplies five numerical
+fixtures in Chapters 40, 48, 56 and 64. All 32 fixture source-node references,
+aliases and UTF-16 locators match the authoritative graph. The corrected loss
+labels separate exact decoded-model loss from rounded prediction loss. S03
+inspected these immutable public bytes and reran the mathematical tests from an
+isolated source snapshot: 21 discovered, 20 passed, one external Rust comparison
+skipped because that snapshot had no built Rust CLI. An initial local invocation
+resolved the venv interpreter symlink to its base Python and could not import
+jsonschema; rerunning with the venv entry point resolved that environment error.
+
+Hosted scope was verified separately: CPU run 45317415492 runs only 17 governance
+and 16 pipeline tests, while language run 45317416653 executes all 21 mathematical
+tests through unittest's load_tests hook and passes all 29 tests in that job,
+including the Rust comparison. This does not show the full validate-s02
+lint/types/regeneration command ran in the hosted job. The candidate catalog
+records exact source/fixture/test hashes and both execution scopes.
+
+PR #124's DCO check failed at that observed commit pending the user's explicit
+certification. Candidate metadata is retained while contribution/adoption gates
+remain pending; no peer code/fixture is imported, source inspection count or
+claim status promoted, or independent scientific review asserted. Later rewritten
+commits require fresh immutable pins. The earlier 20 inspected/397 pending native
+equation counts are unchanged; matching peer locators is not additional S03
+inspection of native mathematical source.
+
+After adding the candidate contract and five mutation checks, the complete locked
+repository validation passed all 106 tests (34 S03 registry tests). Additional
+Ruff/strict mypy and both research validators passed; other sessions' source,
+experiments, shared schemas and workflows remain unchanged.

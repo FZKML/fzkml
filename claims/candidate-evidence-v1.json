@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "S02-NUMERICAL-387294",
+      "state": "candidate-pending-contribution-certification",
+      "repository": "FZKML/fzkml",
+      "pull_request": 124,
+      "source_commit": "387294fb897959a1be8d5c830d95b7823f4b2edd",
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_map_commit": "f9485039d5529fb652dcee70ac2ba1a49446c4d9",
+      "source_map_sha256": "ab28cfe312a16ded3d31c557b8abb4c7ea999a896da991f5011264ee887d6a79",
+      "files": [
+        {
+          "path": "tests/vectors/book/manuscript-v1.json",
+          "sha256": "c4c5daf7d49ddb496b9b5420c98e7e3ff2b542c512df37aca9259ba4a8777a33",
+          "url": "https://github.com/FZKML/fzkml/blob/387294fb897959a1be8d5c830d95b7823f4b2edd/tests/vectors/book/manuscript-v1.json"
+        },
+        {
+          "path": "tests/vectors/synthetic/s02-boundaries-v1.json",
+          "sha256": "cebf9098307b6bcdf662aac2e43c155e5b6e53b44b94af336a9cd8b14aab0ff2",
+          "url": "https://github.com/FZKML/fzkml/blob/387294fb897959a1be8d5c830d95b7823f4b2edd/tests/vectors/synthetic/s02-boundaries-v1.json"
+        },
+        {
+          "path": "tests/test_s02_math.py",
+          "sha256": "89977501407189c57cc7d6c42cdf83596f986388540fad9669cb82fb1fede7bd",
+          "url": "https://github.com/FZKML/fzkml/blob/387294fb897959a1be8d5c830d95b7823f4b2edd/tests/test_s02_math.py"
+        },
+        {
+          "path": "python/fzkml_math/arithmetic.py",
+          "sha256": "83763afae1b9acd34bd6b01d264b9b48ef30533d0b73fc183742694d8892302f",
+          "url": "https://github.com/FZKML/fzkml/blob/387294fb897959a1be8d5c830d95b7823f4b2edd/python/fzkml_math/arithmetic.py"
+        },
+        {
+          "path": "scripts/validate-s02",
+          "sha256": "9deb8ff9bbf235be5043a2ffd0d0ce26fde293ff0253ff3c01334d6bda3f0221",
+          "url": "https://github.com/FZKML/fzkml/blob/387294fb897959a1be8d5c830d95b7823f4b2edd/scripts/validate-s02"
+        },
+        {
+          "path": "tests/test_language.py",
+          "sha256": "ff2f3812fc581e3478a59924c35a47f5cc28d6b26ce0cb061b4f8bac6fcf3608",
+          "url": "https://github.com/FZKML/fzkml/blob/387294fb897959a1be8d5c830d95b7823f4b2edd/tests/test_language.py"
+        },
+        {
+          "path": "scripts/validate-language",
+          "sha256": "090260385b354125320deb9b7adb6d0d1f2526bf6ad66576f1f33354a2e59c50",
+          "url": "https://github.com/FZKML/fzkml/blob/387294fb897959a1be8d5c830d95b7823f4b2edd/scripts/validate-language"
+        }
+      ],
+      "vectors": [
+        {
+          "id": "audit-ch48-2",
+          "chapter": 48,
+          "source_refs": [
+            "FZK-MS20261124-SEC-h.mqziry8vuhsk",
+            "FZK-MS20261124-EQ-0103",
+            "FZK-MS20261124-EQ-0104",
+            "FZK-MS20261124-EQ-0105",
+            "FZK-MS20261124-EQ-0106"
+          ],
+          "claim_ids": [],
+          "scope": "analytical-teaching-example-not-training",
+          "source_review": "S02 asserts source inspection; S03 checked exact locator correspondence, not additional native mathematics."
+        },
+        {
+          "id": "fairness-ch56-4",
+          "chapter": 56,
+          "source_refs": [
+            "FZK-MS20261124-SEC-h.neesa92w9nld",
+            "FZK-MS20261124-EQ-0199",
+            "FZK-MS20261124-EQ-0200",
+            "FZK-MS20261124-EQ-0201",
+            "FZK-MS20261124-EQ-0202",
+            "FZK-MS20261124-EQ-0203",
+            "FZK-MS20261124-EQ-0204",
+            "FZK-MS20261124-EQ-0205",
+            "FZK-MS20261124-EQ-0206",
+            "FZK-MS20261124-EQ-0207",
+            "FZK-MS20261124-EQ-0208",
+            "FZK-MS20261124-EQ-0209",
+            "FZK-MS20261124-EQ-0210",
+            "FZK-MS20261124-EQ-0211",
+            "FZK-MS20261124-EQ-0212",
+            "FZK-MS20261124-EQ-0213",
+            "FZK-MS20261124-EQ-0214"
+          ],
+          "claim_ids": [],
+          "scope": "analytical-hypothetical-noisy-release",
+          "source_review": "S02 asserts source inspection; S03 checked exact locator correspondence, not additional native mathematics."
+        },
+        {
+          "id": "amdahl-ch64-2",
+          "chapter": 64,
+          "source_refs": [
+            "FZK-MS20261124-SEC-h.uqexi7a4mfh1",
+            "FZK-MS20261124-EQ-0263"
+          ],
+          "claim_ids": [],
+          "scope": "analytical-sequential-model",
+          "source_review": "S02 asserts source inspection; S03 checked exact locator correspondence, not additional native mathematics."
+        },
+        {
+          "id": "batch-ch64-2",
+          "chapter": 64,
+          "source_refs": [
+            "FZK-MS20261124-SEC-h.uqexi7a4mfh1"
+          ],
+          "claim_ids": [],
+          "scope": "analytical-no-queue-equally-spaced-arrivals",
+          "source_review": "S02 asserts source inspection; S03 checked exact locator correspondence, not additional native mathematics."
+        },
+        {
+          "id": "training-ch40",
+          "chapter": 40,
+          "source_refs": [
+            "FZK-MS20261124-SEC-h.2i5vvyqm5f1l",
+            "FZK-MS20261124-EQ-0050",
+            "FZK-MS20261124-EQ-0051",
+            "FZK-MS20261124-EQ-0052",
+            "FZK-MS20261124-EQ-0053",
+            "FZK-MS20261124-EQ-0054",
+            "FZK-MS20261124-EQ-0055"
+          ],
+          "claim_ids": [
+            "FZK-MS20261124-C40-REL-001"
+          ],
+          "scope": "exact-analytical-worked-step",
+          "source_review": "S02 asserts source inspection; S03 checked exact locator correspondence, not additional native mathematics."
+        }
+      ],
+      "observation": {
+        "kind": "local-exact-commit-snapshot",
+        "date": "2026-11-24",
+        "python_version": "3.11.14",
+        "command": "PYTHONPATH=.:src python -m unittest discover -s tests -p test_s02_math.py -v",
+        "exit_code": 0,
+        "discovered": 21,
+        "passed": 20,
+        "skipped": [
+          {
+            "test": "ArithmeticTests.test_external_rust_cli_extended_vectors_when_built",
+            "reason": "External Rust CLI not built in the isolated source snapshot; no foreign/unpinned binary was copied."
+          }
+        ],
+        "log_sha256": "2b1060a43f8c5e351e1d07ea2d4c1beb9c4e6f0c66f0db683943b5594f2b9d35",
+        "scope": "Separate reference implementation agrees with five numerical fixtures within their stated exact/tolerance semantics and synthetic boundary cases; not independent scientific review."
+      },
+      "hosted_check_scope": {
+        "cpu_run": "https://github.com/FZKML/fzkml/actions/runs/45317415492",
+        "observation": "Observed CPU command selects17 governance and16 pipeline tests; it does not execute test_s02_math.py. Other hosted success must not substitute for that suite.",
+        "dco_run": "https://github.com/FZKML/fzkml/actions/runs/45317415538",
+        "dco_outcome_at_observation": "failed-pending-user-certification",
+        "cpu_mathematical_suite_executed": false,
+        "language_run": "https://github.com/FZKML/fzkml/actions/runs/45317416653/job/138187491741",
+        "language_source_commit": "387294fb897959a1be8d5c830d95b7823f4b2edd",
+        "language_command": "./scripts/validate-language",
+        "language_math_discovered": 21,
+        "language_math_passed": 21,
+        "language_math_skipped": 0,
+        "language_total_tests": 29,
+        "language_scope": "Verified21 test_s02_math entries executed and passed through the standard unittest.load_tests hook in test_language.py, including the Rust CLI comparison.29 includes8 additional language tests.",
+        "full_validate_s02_executed_in_hosted_job": false
+      },
+      "limitations": [
+        "Candidate metadata only; no S02 code or fixture is imported or adopted.",
+        "Contribution certification and final immutable source/evidence handoff are pending; rewritten commits require fresh pins.",
+        "The skipped Rust cross-conformance test is not successful execution evidence.",
+        "No new source-equation inspection count, training/proof implementation status, empirical replication, formal theorem or independent domain review is asserted.",
+        "Loss semantics distinguish exact decoded-model loss1/2048 from derived rounded-residual loss0."
+      ]
+    }
+  ]
+}

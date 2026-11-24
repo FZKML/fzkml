@@ -100,3 +100,10 @@ No published CI-14–CI-25 specification was found in the audited issues/files o
 2026-11-24. Treat those identifiers as pending specification rather than inventing
 acceptance requirements or claiming their completion. Existing CI ownership for
 #15/#16 remains with the CI session; S03 supplies the source/evidence interface.
+
+Candidate S02 numerical evidence is now catalogued separately in
+`claims/candidate-evidence-v1.json`. Its pinned language job runs the mathematical
+suite through unittest's load_tests hook; its CPU job alone does not. Local
+snapshot skips, full-command coverage and pending contribution certification are
+explicit. This catalog is not adopted claim evidence and does not authorize
+scientific publication, new source-review counts or status promotion.

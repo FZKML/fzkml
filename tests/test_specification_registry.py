@@ -229,6 +229,36 @@ class SpecificationRegistryTests(unittest.TestCase):
                 },
             )
 
+    def test_candidate_cannot_be_marked_adopted(self) -> None:
+        d = self.read("claims/candidate-evidence-v1.json")
+        d["records"][0]["state"] = "adopted"
+        self.save("claims/candidate-evidence-v1.json", d)
+        self.invalid("schema validation failed")
+
+    def test_candidate_skipped_test_cannot_count_as_passed(self) -> None:
+        d = self.read("claims/candidate-evidence-v1.json")
+        d["records"][0]["observation"]["passed"] += 1
+        self.save("claims/candidate-evidence-v1.json", d)
+        self.invalid("candidate skipped tests counted as passed")
+
+    def test_candidate_hosted_counts_must_match(self) -> None:
+        d = self.read("claims/candidate-evidence-v1.json")
+        d["records"][0]["hosted_check_scope"]["language_math_passed"] += 1
+        self.save("claims/candidate-evidence-v1.json", d)
+        self.invalid("candidate hosted execution scope mismatch")
+
+    def test_candidate_source_mapping_must_match(self) -> None:
+        d = self.read("claims/candidate-evidence-v1.json")
+        d["records"][0]["vectors"][0]["chapter"] = 40
+        self.save("claims/candidate-evidence-v1.json", d)
+        self.invalid("candidate source mapping mismatch")
+
+    def test_candidate_requires_immutable_url(self) -> None:
+        d = self.read("claims/candidate-evidence-v1.json")
+        d["records"][0]["files"][0]["url"] = "https://github.com/FZKML/fzkml/blob/main/example"
+        self.save("claims/candidate-evidence-v1.json", d)
+        self.invalid("candidate immutable URL mismatch")
+
     def test_unknown_status_rejected(self) -> None:
         d = self.read("claims/registry.json")
         d["claims"][0]["status"] = "verified"

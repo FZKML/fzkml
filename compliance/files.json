@@ -261,6 +261,24 @@
       ],
       "notice_files": []
     },
+    "claims/candidate-evidence-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original source/evidence metadata and validation contract generated with Codex assistance; contributor provenance in Git history. No private manuscript or external implementation bytes are included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/candidate-evidence-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original source/evidence metadata and validation contract generated with Codex assistance; contributor provenance in Git history. No private manuscript or external implementation bytes are included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "claims/editions-v1.json": {
       "license": "Apache-2.0",
       "origin": "original",

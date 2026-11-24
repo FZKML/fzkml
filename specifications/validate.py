@@ -87,6 +87,7 @@ def schemas(root: Path) -> Registry[Any]:
         "claims/schema-v1.json",
         "claims/source-map-schema-v1.json",
         "claims/traceability-schema-v1.json",
+        "claims/candidate-evidence-schema-v1.json",
     ):
         schema = read(root, name)
         Draft202012Validator.check_schema(schema)
@@ -333,6 +334,79 @@ def validate(root: Path = ROOT) -> Json:
     )
     nodes = check_source(root, source, manuscript)
     claims = indexed(registry["claims"], "id")
+    candidates = read(root, "claims/candidate-evidence-v1.json")
+    check_schema(root, "claims/candidate-evidence-schema-v1.json", candidates, local_schemas)
+    candidate_records = indexed(candidates["records"], "id")
+    for candidate in candidate_records.values():
+        require(
+            candidate["source_version"] == trace["source_version"],
+            "candidate source version mismatch",
+        )
+        require(
+            candidate["source_map_sha256"] == digest(local_file(root, "claims/source-map-v1.json")),
+            "candidate source map digest mismatch",
+        )
+        observation = candidate["observation"]
+        date.fromisoformat(observation["date"])
+        require(
+            observation["discovered"] == observation["passed"] + len(observation["skipped"]),
+            "candidate skipped tests counted as passed",
+        )
+        hosted = candidate["hosted_check_scope"]
+        require(
+            hosted["language_source_commit"] == candidate["source_commit"]
+            and hosted["language_math_discovered"]
+            == hosted["language_math_passed"] + hosted["language_math_skipped"]
+            and hosted["language_total_tests"] >= hosted["language_math_discovered"],
+            "candidate hosted execution scope mismatch",
+        )
+        for reference in candidate["files"]:
+            parts = PurePosixPath(reference["path"]).parts
+            require(
+                parts
+                and not reference["path"].startswith("/")
+                and not any(part.startswith(".") for part in parts),
+                "unsafe candidate path",
+            )
+            expected_url = (
+                "https://github.com/FZKML/fzkml/blob/"
+                + candidate["source_commit"]
+                + "/"
+                + reference["path"]
+            )
+            require(reference["url"] == expected_url, "candidate immutable URL mismatch")
+        indexed(candidate["vectors"], "id")
+        for vector in candidate["vectors"]:
+            require(
+                all(
+                    sid in nodes and nodes[sid]["chapter"] == vector["chapter"]
+                    for sid in vector["source_refs"]
+                ),
+                "candidate source mapping mismatch",
+            )
+            require(
+                all(
+                    cid in claims and claims[cid]["source"]["chapter"] == vector["chapter"]
+                    for cid in vector["claim_ids"]
+                ),
+                "candidate claim mapping mismatch",
+            )
+    for vector in read(root, "specifications/source-inputs-v1.json")["vectors"]:
+        if "candidate_validation_record" in vector:
+            require(
+                vector["candidate_validation_catalog"] == "claims/candidate-evidence-v1.json"
+                and vector["candidate_validation_record"] in candidate_records,
+                "missing candidate validation record",
+            )
+            candidate = candidate_records[vector["candidate_validation_record"]]
+            require(
+                any(
+                    vector["claim_id"] in row["claim_ids"]
+                    and set(vector["source_refs"]) <= set(row["source_refs"])
+                    for row in candidate["vectors"]
+                ),
+                "candidate source-input mismatch",
+            )
     evidence = indexed(registry["evidence"], "id")
     records = indexed(trace["records"], "claim_id")
     attestations = indexed(trace["evidence"], "evidence_id")
@@ -520,6 +594,7 @@ def validate(root: Path = ROOT) -> Json:
         "pending_equations": 417 - manuscript["native_equations"]["inspected_count"],
         "declared_formal_artifacts": formal_count,
         "declared_independent_reviews": reviewed_count,
+        "candidate_external_records": len(candidate_records),
         "trust": "Metadata checked; external receipts/reviews require trusted verification.",
     }
 
