@@ -1,6 +1,8 @@
 {
   "version": 1,
-  "status": "unavailable",
-  "reason": "LANG-03 and FZK-R013/R014/R015 must supply a reviewed real proof adapter.",
-  "command": []
+  "status": "available",
+  "reason": "Session02 PR72 genuine Groth16 public arithmetic only; independent oracle and mandatory negatives. Private/protected protocol remains unavailable.",
+  "command": [
+    "./scripts/s04-proof"
+  ]
 }

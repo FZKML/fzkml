@@ -1,20 +1,24 @@
-name: Language conformance and CPU adapter
+name: Main integration and CPU adapter
 on:
-  pull_request:
   push:
     branches: [main]
-  schedule:
-    - cron: '37 4 * * 1'
+  workflow_dispatch:
 permissions: {}
 concurrency:
-  group: language-${{ github.ref }}
-  cancel-in-progress: true
+  group: main-integration
+  cancel-in-progress: false
 jobs:
-  language:
+  integration:
+    if: github.repository == 'FZKML/fzkml' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     permissions:
       contents: read
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        profile: [integration, protocol-invariants]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
@@ -22,9 +26,41 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.11.14'
-      - name: Install pinned CPU tools
+      - name: Install reviewed tools
         run: |
           python -m pip install --require-hashes -r tools-requirements.txt
           rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
-          uv sync --locked --group ml
-      - run: ./scripts/validate-language
+          uv sync --locked
+      - name: Record hosted image revision
+        run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
+      - name: Initialize bounded manifest
+        env:
+          PROFILE: ${{ matrix.profile }}
+        run: ./scripts/research init "$PROFILE"
+      - run: ./scripts/research verify-artifacts
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: initial-${{ matrix.profile }}-${{ github.run_attempt }}
+          path: research/journal.json
+          retention-days: 7
+          if-no-files-found: error
+          include-hidden-files: false
+      - name: Execute reviewed profile
+        env:
+          PROFILE: ${{ matrix.profile }}
+        run: ./scripts/research run "$PROFILE"
+      - name: Retain every attempt outcome in job summary
+        if: always()
+        run: ./scripts/research summary >> "$GITHUB_STEP_SUMMARY"
+      - name: Validate bounded public artifact tree
+        id: public
+        if: always()
+        run: ./scripts/research verify-artifacts
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        if: always() && steps.public.outcome == 'success'
+        with:
+          name: evidence-${{ matrix.profile }}-${{ github.run_attempt }}
+          path: research/
+          retention-days: 7
+          if-no-files-found: error
+          include-hidden-files: false

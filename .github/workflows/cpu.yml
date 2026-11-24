@@ -14,10 +14,10 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.11.14'
       - name: Install reviewed tools
@@ -25,14 +25,12 @@ jobs:
           python -m pip install --require-hashes -r tools-requirements.txt
           rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
           uv sync --locked
-      - name: Record runner image revision
-        run: |
-          printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
+      - name: Record hosted image revision
+        run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
       - run: ./scripts/validate
       - run: ./scripts/build-public-report
       - run: ./scripts/reproduce --contract-only
-      - name: Bounded job summary
-        run: cat dist/report.md >> "$GITHUB_STEP_SUMMARY"
+      - run: cat dist/report.md >> "$GITHUB_STEP_SUMMARY"
   proof:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
@@ -45,22 +43,75 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.11.14'
-      - name: Install locked tools
+      - name: Install reviewed tools
         run: |
           python -m pip install --require-hashes -r tools-requirements.txt
           rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
           uv sync --locked
-      - run: ./scripts/research proof
+      - name: Record hosted image revision
+        run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
+      - run: ./scripts/research init tiny-reference
+      - run: ./scripts/research run tiny-reference
+      - name: Genuine-proof result and assurance boundary
+        if: always()
+        run: ./scripts/research summary >> "$GITHUB_STEP_SUMMARY"
+  conformance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.11.14'
+      - name: Install reviewed tools
+        run: |
+          python -m pip install --require-hashes -r tools-requirements.txt
+          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          uv sync --locked
+      - name: Record hosted image revision
+        run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
+      - run: ./scripts/research init conformance
+      - run: ./scripts/research run conformance
+      - name: Independent oracle and serialization outcome
+        if: always()
+        run: ./scripts/research summary >> "$GITHUB_STEP_SUMMARY"
+  registry:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.11.14'
+      - name: Install reviewed tools
+        run: |
+          python -m pip install --require-hashes -r tools-requirements.txt
+          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          uv sync --locked
+      - name: Record hosted image revision
+        run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
+      - name: Validate Session 03 registry and scientific references
+        run: PYTHONPATH=src uv run --locked python scripts/check_research.py
   required-cpu:
     if: always()
-    needs: [validate, proof]
+    needs: [validate, proof, conformance, registry]
     runs-on: ubuntu-24.04
     timeout-minutes: 1
     permissions:
       contents: read
     steps:
-      - name: Require all mandatory jobs
+      - name: Require all mandatory jobs, including genuine proof
         env:
-          VALIDATION: ${{ needs.validate.result }}
+          FOUNDATION: ${{ needs.validate.result }}
           PROOF: ${{ needs.proof.result }}
-        run: test "$VALIDATION" = success && test "$PROOF" = success
+          CONFORMANCE: ${{ needs.conformance.result }}
+          REGISTRY: ${{ needs.registry.result }}
+        run: test "$FOUNDATION" = success && test "$PROOF" = success && test "$CONFORMANCE" = success && test "$REGISTRY" = success

@@ -23,6 +23,8 @@ RESEARCH_WORKFLOWS = {
     "codeql.yml",
     "gpu.yml",
     "release.yml",
+    "language.yml",
+    "reports.yml",
 }
 
 
@@ -59,7 +61,7 @@ def check_workflow(workflow: dict[str, Any]) -> None:
     )
     require("env" not in workflow and "defaults" not in workflow, "global-execution-configuration")
     jobs = workflow.get("jobs", {})
-    require(isinstance(jobs, dict) and 0 < len(jobs) <= 4, "job-count-limit")
+    require(isinstance(jobs, dict) and 0 < len(jobs) <= 6, "job-count-limit")
     if "schedule" in triggers:
         require(
             triggers["schedule"] == [{"cron": "37 4 * * 1"}] and set(jobs) == {"language"},
@@ -145,6 +147,7 @@ def check_repository(directory: Path = ROOT / ".github" / "workflows") -> None:
     paths = sorted(itertools.chain(directory.glob("*.yml"), directory.glob("*.yaml")))
     require(bool(paths), "no-workflows")
     for path in paths:
+        require(path.name in RESEARCH_WORKFLOWS | {"governance.yml"}, "workflow-not-registered")
         data = bounded_file(path)
         if path.name in RESEARCH_WORKFLOWS:
             check_research_workflow(path.name, data)

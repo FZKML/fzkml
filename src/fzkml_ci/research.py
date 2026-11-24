@@ -3,24 +3,41 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
+import shutil
 import signal
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 from typing import Any
 
+from .s04 import COMMANDS, artifact_tree, journal, proof_receipt, summary
 from .validate import ROOT, Invalid, load, require, schema, validate_result
 
-PROFILES = {"contract", "tiny-reference"}
+PROFILES = {
+    "contract",
+    "tiny-reference",
+    "conformance",
+    "nightly-adversarial",
+    "weekly-proof",
+    "integration",
+    "protocol-invariants",
+}
 
 
 def write(path: Path, value: Any) -> None:
+    if path.absolute().is_relative_to(ROOT):
+        current = ROOT
+        for part in path.absolute().relative_to(ROOT).parts[:-1]:
+            current /= part
+            require(not current.is_symlink(), "output-parent-symlink")
     path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_suffix(".tmp")
-    with temporary.open("w") as stream:
+    with tempfile.NamedTemporaryFile(mode="w", dir=path.parent, delete=False) as stream:
+        temporary = Path(stream.name)
         json.dump(value, stream, sort_keys=True, indent=2, allow_nan=False)
         stream.write("\n")
         stream.flush()
@@ -46,15 +63,19 @@ def profile(name: str) -> dict[str, Any]:
         "profile-fields",
     )
     require(value["version"] == 1 and value["id"] == name, "profile-version-or-id")
-    require(value["task"] in {"contract", "proof"}, "profile-task")
+    require(value["task"] in set(COMMANDS) | {"unavailable"}, "profile-task")
     for key, maximum in [
         ("repetitions", 5),
-        ("timeout_seconds", 120),
+        ("timeout_seconds", 900),
         ("threads", 2),
         ("max_input_bytes", 1000000),
     ]:
         require(type(value[key]) is int and 1 <= value[key] <= maximum, "profile-budget")
     require(value["warmups"] == 0, "warmup-policy")
+    require(
+        (ROOT / "assets/public/numeric-v1.json").stat().st_size <= value["max_input_bytes"],
+        "profile-input-budget",
+    )
     return value
 
 
@@ -130,6 +151,10 @@ def execute(command: list[str], timeout: float, threads: int) -> tuple[str, floa
         os.killpg(process.pid, signal.SIGKILL)
         process.wait()
         status = "timed-out"
+    except BaseException:
+        os.killpg(process.pid, signal.SIGKILL)
+        process.wait()
+        raise
     return status, time.monotonic() - start
 
 
@@ -160,13 +185,16 @@ def initialize(name: str, output: Path) -> dict[str, Any]:
 def run(name: str, output: Path) -> int:
     config = profile(name)
     state = load(output)
+    journal(state)
     require(state["profile"] == name and state["status"] == "initialized", "journal-state")
+    require(
+        state["source_sha"]
+        == subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
+        "journal-source-drift",
+    )
     try:
-        command = (
-            [sys.executable, "-m", "unittest", "discover", "-s", "tests"]
-            if config["task"] == "contract"
-            else ["./scripts/research", "proof"]
-        )
+        require(config["task"] != "unavailable", "dependent-protocol-unavailable")
+        command = COMMANDS[config["task"]]
         if config["task"] == "proof":
             proof_command()
     except Invalid:
@@ -176,11 +204,23 @@ def run(name: str, output: Path) -> int:
         write(output, state)
         return 1
     for repetition in state["repetitions"]:
+        state["status"] = "running"
         repetition["status"] = "running"
         write(output, state)
-        status, seconds = execute(command, config["timeout_seconds"], config["threads"])
+        try:
+            status, seconds = execute(command, config["timeout_seconds"], config["threads"])
+        except OSError:
+            status, seconds = "failed", 0.0
         repetition.update(status=status, seconds=seconds)
         write(output, state)
+        if (
+            status == "completed"
+            and config["task"] == "proof"
+            and (ROOT / "research/proof-results.json").exists()
+        ):
+            source = ROOT / "research/proof-results.json"
+            proof_results(load(source))
+            shutil.copyfile(source, output.parent / f"rep-{repetition['index']}-proof-results.json")
         if status != "completed":
             write(
                 output.parent / "reproducer.json",
@@ -188,6 +228,12 @@ def run(name: str, output: Path) -> int:
                     "profile": name,
                     "repetition": repetition["index"],
                     "command": f"./scripts/research run {name}",
+                    "source_sha": state["source_sha"],
+                    "public_seed": 20261125,
+                    "fixture_digest": "sha256:"
+                    + hashlib.sha256(
+                        (ROOT / "assets/public/numeric-v1.json").read_bytes()
+                    ).hexdigest(),
                 },
             )
     state["status"] = (
@@ -223,13 +269,19 @@ def reconcile(jobs: Any, journal: Any | None) -> dict[str, Any]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("operation", choices=["init", "run", "proof", "reconcile"])
+    parser.add_argument(
+        "operation", choices=["init", "run", "proof", "reconcile", "verify-artifacts", "summary"]
+    )
     parser.add_argument("profile", nargs="?", default="contract")
     parser.add_argument("--output", type=Path, default=Path("research/journal.json"))
     parser.add_argument("--jobs", type=Path)
     args = parser.parse_args()
     try:
-        if args.operation == "init":
+        if args.operation == "verify-artifacts":
+            artifact_tree(args.output.parent)
+        elif args.operation == "summary":
+            print(summary(args.output))
+        elif args.operation == "init":
             initialize(args.profile, args.output)
         elif args.operation == "run":
             if not args.output.exists():
@@ -241,17 +293,23 @@ def main() -> int:
         else:
             command = proof_command()
             (ROOT / "research" / "proof-results.json").unlink(missing_ok=True)
-            status, _ = execute(command, 120, 2)
+            (ROOT / "research" / "proof-check.json").unlink(missing_ok=True)
+            status, _ = execute(command, 600, 2)
             require(status == "completed", "real-proof-execution-failed")
-            results = load(ROOT / "research" / "proof-results.json")
-            proof_results(results)
             source = subprocess.check_output(
                 ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
             ).strip()
-            require(
-                all(row["provenance"]["source_commit"] == source for row in results["results"]),
-                "stale-proof-results",
-            )
+            receipt = load(ROOT / "research/proof-check.json")
+            proof_receipt(receipt, source)
+            if os.environ.get("GITHUB_RUN_ID"):
+                results = load(ROOT / "research/proof-results.json")
+                proof_results(results)
+                require(
+                    all(row["provenance"]["source_commit"] == source for row in results["results"]),
+                    "stale-proof-results",
+                )
+            else:
+                print("Local genuine proof executed; publication remains pending review.")
     except (Invalid, OSError, ValueError, KeyError, TypeError):
         print(
             "research gate failed: unavailable backend, invalid record or execution",

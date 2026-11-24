@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+cargo build --release --locked -p fzkml-core --bin fzkml-contract
+uv run --locked python scripts/conformance.py target/release/fzkml-contract --extra-random 256
+cargo test --release --locked -p fzkml-core
+uv run --locked python scripts/mutation_conformance.py

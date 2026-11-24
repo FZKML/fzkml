@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any
 
 from .research import proof_results, write
-from .validate import ROOT, Invalid, load, require
+from .validate import ROOT, Invalid, load, require, require_publication
 
 REPOSITORY = "FZKML/fzkml"
 WORKFLOW = "FZKML/fzkml/.github/workflows/release.yml"
@@ -31,6 +31,7 @@ def inventory(directory: Path, commit: str, tag: str) -> dict[str, Any]:
     require(re.fullmatch(r"v[0-9]+\.[0-9]+\.[0-9]+", tag) is not None, "release-tag")
     require({p.name for p in directory.iterdir()} == FILES, "release-file-set")
     proof_results(load(directory / "results.json"))
+    require_publication(load(directory / "results.json"))
     return {
         "version": 1,
         "repository": REPOSITORY,
@@ -83,6 +84,7 @@ def verify(directory: Path, commit: str, tag: str, attest: bool = True) -> None:
     for name in FILES:
         require(sha(directory / name) == manifest["files"][name], "release-digest-mismatch")
     proof_results(load(directory / "results.json"))
+    require_publication(load(directory / "results.json"))
     require(
         all(
             row["provenance"]["source_commit"] == commit

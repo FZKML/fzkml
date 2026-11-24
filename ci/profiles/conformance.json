@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "id": "conformance",
+  "task": "oracle",
+  "repetitions": 1,
+  "timeout_seconds": 240,
+  "threads": 2,
+  "max_input_bytes": 1000000,
+  "warmups": 0
+}
