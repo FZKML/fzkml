@@ -36,7 +36,7 @@
     },
     {
       "path": "claims/traceability-v1.json",
-      "sha256": "951bbaaa3814f66f3c8093a85d904b4afd5cb3740bf331df39d26e0c83850764"
+      "sha256": "d3ac19544efe086b7c6e3ca4b5aa233fd69b5e44ef0f76a2791e445a46db661b"
     },
     {
       "path": "docs/assurance.md",
@@ -104,11 +104,11 @@
     },
     {
       "path": "specifications/protocol-v1.md",
-      "sha256": "81ee2bbda48172ce39e8ed08bb46422313053b344f01804a0466337148fb9669"
+      "sha256": "5b6b278cccb9802f58f66a73df77113dda8961464c43a155e66379ae3e8f4358"
     },
     {
       "path": "specifications/relations/fzknum-1.0.0.json",
-      "sha256": "76c83a9f06837d209425e66e3abe450d1ef539c94979b2ce2ec19b877bb78489"
+      "sha256": "2b5c5447361122d6494adb13765ddbcd7f4de2e3dfdfcb86fcbf03eff65d7652"
     },
     {
       "path": "specifications/reporting-requirements-v1.json",
@@ -120,7 +120,7 @@
     },
     {
       "path": "specifications/source-inputs-v1.json",
-      "sha256": "f41389b11ab4c4b99117fd6b5f64aa0a8e180c30d8d9e2639d617b38ccf113f7"
+      "sha256": "5b85c3accfcee92ec6dceec27ae9be9e1310de27b3b7152096058f22108be622"
     },
     {
       "path": "specifications/validate.py",

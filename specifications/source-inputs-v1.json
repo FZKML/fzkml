@@ -55,7 +55,13 @@
       "limitations": [
         "Single local worked step; not the four-client M0 aggregation fixture or scalar fzknum implementation.",
         "No independent numerical replication or formal theorem is asserted."
-      ]
+      ],
+      "evaluation_semantics": {
+        "trace_scope": "The encoded training trace specifies rounded prediction/residual; it does not define an evaluation-loss metric.",
+        "exact_decoded_model": "Half-squared loss uses prediction=sum_j(W_j*X_j)/scale^2 and target=Y/scale, without rounding the prediction.",
+        "rounded_encoded_prediction": "A loss defined from Q/scale instead uses the declared rounded Q. It is a different metric and must be labeled separately.",
+        "validation_status": "Formula distinction specified; no independent numerical evidence is adopted by this clarification."
+      }
     }
   ]
 }

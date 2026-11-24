@@ -134,3 +134,16 @@ take parent 1, local states (1,1,2), counts (1,1,2). The full-state average roun
 implemented inputs `(x,y)=(0,0),(0,0),(8,8)` produce those states. This is an
 original derived conformance counterexample, not a manuscript numerical quote.
 Session 02 should verify it against its independent oracle before adoption.
+
+Rounding also changes sensitivity reasoning. On the integer-numerator lattice
+with fixed denominator 2, RNE(1/2)=0 and RNE(3/2)=2. The numerator changes by 2,
+but the output changes by 2, exceeding ceil(2/2)=1. Odd integer translations can
+swap half-tie parity. This original counterexample refutes an unqualified
+ceil(D/N) shortcut for this RNE lattice; it is not a general sensitivity theorem.
+Any privacy bound must specify the exact lattice, denominator, adjacency and
+payload. It does not change the separate M0 ties-toward-positive-infinity rule.
+
+Evaluation metrics must also declare whether they use exact decoded-model
+predictions or the rounded encoded prediction from the training relation.
+These can have different losses even for the same final weights. Neither a
+loss label nor a source-example match proves useful learning or a privacy bound.
