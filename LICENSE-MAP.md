@@ -26,7 +26,8 @@ texts, notices, and attribution. Modified imported files must prominently identi
 changes as well as recording them in the manifest.
 
 The source builder includes all inventoried source files and their required texts.
-Development tools are inventoried separately in `compliance/dependencies.json`;
+Development tools are inventoried in `compliance/dependencies.json` and the
+uv/Rust integration `compliance/ci-dependencies.json`;
 they are not bundled into the source distribution. A future wheel, container,
 binary, or model distribution requires an inventory of its actual transitive
 contents and applicable licenses/notices before that format is released.

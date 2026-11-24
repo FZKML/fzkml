@@ -17,7 +17,7 @@ def build(root=ROOT, destination=None):
                     data = public_path(root, name).read_bytes()
                     info = tarfile.TarInfo("fzkml/" + name)
                     info.size = len(data)
-                    info.mode = 0o644
+                    info.mode = 0o755 if public_path(root, name).stat().st_mode & 0o111 else 0o644
                     info.mtime = 0
                     archive.addfile(info, io.BytesIO(data))
     destination.with_suffix(destination.suffix + ".sha256").write_text(
