@@ -1,289 +1,141 @@
-"""Synthetic control fixtures only: these tests never establish a real proof."""
-
-from __future__ import annotations
-
-import copy
 import json
-import subprocess
+import shutil
 import sys
 import tempfile
 import unittest
-from collections.abc import Callable
 from pathlib import Path
-from typing import Any
-from unittest.mock import patch
 
-from fzkml_ci.benchmark import compare
-from fzkml_ci.inventory import generate
-from fzkml_ci.release import FILES, inventory, verify
-from fzkml_ci.research import (
-    execute,
-    initialize,
-    profile,
-    proof_command,
-    proof_results,
-    reconcile,
-    run,
-)
-from fzkml_ci.validate import ROOT, Invalid, load
-from fzkml_ci.workflow import check_research_workflow
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from check_research import validate  # noqa: E402
+from research_fixtures import canonical_bytes, default_entities, generate, split  # noqa: E402
 
 
-def proof_fixture() -> dict[str, Any]:
-    # Made-up successful records exercise validators; no cryptographic execution.
-    value: dict[str, Any] = load(ROOT / "examples" / "results.json")
-    value["results"] = value["results"][:3]
-    for row in value["results"]:
-        row["outcome"] = {"status": "successful", "reason": "Synthetic unit fixture only."}
-        row["scenario"]["security_mode"] = "research"
-        row["scenario"]["backend"] = "test-fixture"
-        for field in ["program_digest", "circuit_digest", "parameters_digest", "key_digest"]:
-            row["scenario"][field] = "sha256:" + "1" * 64
-        row["provenance"].update(
-            source_commit="1" * 40, workflow_run=1, dependency_digest="sha256:" + "1" * 64
+class FixtureTests(unittest.TestCase):
+    def test_stable_public_bytes_and_seed_separation(self):
+        expected = (ROOT / "assets/public/synthetic-cross-silo-v1.json").read_bytes()
+        self.assertEqual(canonical_bytes(generate()), expected)
+        self.assertNotEqual(canonical_bytes(generate(0)), canonical_bytes(generate(1)))
+
+    def test_entity_time_and_duplicate_separation(self):
+        data = generate()
+        parts = split(data["records"], *default_entities())
+        self.assertEqual([len(parts[k]) for k in ("train", "evaluation", "excluded")], [32, 16, 52])
+        self.assertTrue(
+            all(r["event_time"] <= 4 and r["label_available_at"] <= 4 for r in parts["train"])
         )
-        row["repetitions"] = [
-            {
-                "id": "fixture",
-                "attempt": 1,
-                "status": "successful",
-                "timeout": False,
-                "excluded": False,
-                "reason": "unit fixture",
-                "measurements": [],
-                "quality": "pass",
-            }
-        ]
-    return value
-
-
-class ProofGateTests(unittest.TestCase):
-    def test_placeholder_and_missing_adapter_fail(self) -> None:
-        with self.assertRaises(Invalid):
-            proof_command()
-        with self.assertRaises(Invalid):
-            proof_results(load(ROOT / "examples" / "results.json"))
-
-    def test_mandatory_cases_and_mode(self) -> None:
-        value = proof_fixture()
-        proof_results(value)
-        for mode in ["synthetic-test", "production-declared"]:
-            bad = copy.deepcopy(value)
-            bad["results"][0]["scenario"]["security_mode"] = mode
-            with self.assertRaises(Invalid):
-                proof_results(bad)
-        value["results"].pop()
-        with self.assertRaises(Invalid):
-            proof_results(value)
-
-    def test_skips_timeouts_mock_and_zero_identity_fail(self) -> None:
-        for field, value in [("excluded", True), ("timeout", True), ("status", "failed")]:
-            bad = proof_fixture()
-            bad["results"][0]["repetitions"][0][field] = value
-            with self.assertRaises(Invalid):
-                proof_results(bad)
-        for field, value in [("backend", "mock"), ("program_digest", "sha256:" + "0" * 64)]:
-            bad = proof_fixture()
-            bad["results"][0]["scenario"][field] = value
-            with self.assertRaises(Invalid):
-                proof_results(bad)
-
-
-class JournalTests(unittest.TestCase):
-    def test_initial_manifest_and_unavailable_repetitions(self) -> None:
-        with tempfile.TemporaryDirectory() as temporary:
-            path = Path(temporary) / "journal.json"
-            initial = initialize("tiny-reference", path)
-            self.assertEqual([r["status"] for r in initial["repetitions"]], ["not-started"] * 3)
-            self.assertEqual(run("tiny-reference", path), 1)
-            self.assertEqual([r["status"] for r in load(path)["repetitions"]], ["not-run"] * 3)
-
-    def test_failure_retained_with_bounded_reproducer(self) -> None:
-        with tempfile.TemporaryDirectory() as temporary:
-            path = Path(temporary) / "journal.json"
-            initialize("contract", path)
-            with patch(
-                "fzkml_ci.research.execute",
-                side_effect=[("completed", 1.0), ("failed", 2.0), ("timed-out", 3.0)],
-            ):
-                self.assertEqual(run("contract", path), 1)
-            final = load(path)
-            self.assertEqual(
-                [r["status"] for r in final["repetitions"]], ["completed", "failed", "timed-out"]
+        self.assertTrue(all(r["event_time"] > 4 for r in parts["evaluation"]))
+        for field in ("entity_id", "duplicate_group"):
+            self.assertFalse(
+                {r[field] for r in parts["train"]} & {r[field] for r in parts["evaluation"]}
             )
-            self.assertLess((path.parent / "reproducer.json").stat().st_size, 1000)
-
-    def test_partial_journal_survives_interrupted_execution(self) -> None:
-        with tempfile.TemporaryDirectory() as temporary:
-            path = Path(temporary) / "journal.json"
-            initialize("contract", path)
-            with patch(
-                "fzkml_ci.research.execute", side_effect=[("completed", 1.0), KeyboardInterrupt]
-            ):
-                with self.assertRaises(KeyboardInterrupt):
-                    run("contract", path)
-            self.assertEqual(
-                [r["status"] for r in load(path)["repetitions"]],
-                ["completed", "running", "not-started"],
-            )
-
-    def test_timeout_and_failure_are_real_process_results(self) -> None:
-        self.assertEqual(execute([sys.executable, "-c", "raise SystemExit(1)"], 1, 1)[0], "failed")
         self.assertEqual(
-            execute([sys.executable, "-c", "import time; time.sleep(5)"], 0.05, 1)[0], "timed-out"
+            len(parts["train"]) + len(parts["evaluation"]) + len(parts["excluded"]),
+            len(data["records"]),
         )
 
-    def test_reconciliation_never_infers_repetitions(self) -> None:
-        jobs = {
-            "jobs": [
-                {"id": i, "status": "completed", "conclusion": c}
-                for i, c in enumerate(["success", "cancelled", "timed_out", "failure"])
-            ]
-        }
-        value = reconcile(jobs, None)
-        self.assertEqual(value["status"], "inconclusive")
-        self.assertEqual(len(value["jobs"]), 4)
-        self.assertTrue(all(j["repetitions"] == "unknown-without-journal" for j in value["jobs"]))
+    def test_future_label_never_enters_training(self):
+        rows = generate()["records"]
+        target = next(
+            r for r in rows if r["entity_id"] == "synthetic:s0-e1" and r["event_time"] == 2
+        )
+        target["label_available_at"] = 9
+        parts = split(rows, *default_entities())
+        self.assertNotIn(target["record_id"], {r["record_id"] for r in parts["train"]})
 
-    def test_allowlist_and_budget(self) -> None:
-        with self.assertRaises(Invalid):
-            profile("../../arbitrary")
-        with patch(
-            "fzkml_ci.research.load", return_value=dict(profile("contract"), repetitions=500)
+    def test_entity_overlap_fails(self):
+        train, evaluation = default_entities()
+        with self.assertRaisesRegex(ValueError, "entity policy overlaps"):
+            split(generate()["records"], train, evaluation | train)
+
+    def test_conflicting_duplicate_payload_fails(self):
+        rows = generate()["records"]
+        duplicate = next(r for r in rows if r["record_id"].endswith("v0-b"))
+        duplicate["target"] += 1
+        with self.assertRaisesRegex(ValueError, "duplicate-group"):
+            split(rows, *default_entities())
+
+    def test_duplicate_id_and_bad_seed_fail(self):
+        rows = generate()["records"]
+        with self.assertRaisesRegex(ValueError, "duplicate record ID"):
+            split(rows + [rows[0]], *default_entities())
+        for seed in (-1, 2**32, True):
+            with self.assertRaises(ValueError):
+                generate(seed)
+
+
+class ResearchMetadataTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        for directory in ("docs/research", "claims", "specs/m0", "experiments/m0", "assets/public"):
+            shutil.copytree(ROOT / directory, self.root / directory)
+
+    def mutate(self, path, change):
+        file = self.root / path
+        value = json.loads(file.read_text())
+        change(value)
+        file.write_text(json.dumps(value))
+
+    def test_coverage_and_evidence_are_not_confused(self):
+        result = validate(self.root)
+        self.assertEqual((result["chapters"], result["exercises"]), (80, 48))
+        self.assertEqual(result["claims"], 16)
+        for name in (
+            "empirical_evidence",
+            "externally_reviewed",
+            "formal_artifacts_with_declared_assumptions",
         ):
-            with self.assertRaises(Invalid):
-                profile("contract")
+            self.assertEqual(result[name], 0)
 
+    def test_missing_chapter_is_not_covered(self):
+        self.mutate("docs/research/coverage.json", lambda d: d["items"].pop(0))
+        with self.assertRaisesRegex(ValueError, "chapter coverage"):
+            validate(self.root)
 
-class ReleaseTests(unittest.TestCase):
-    def bundle(self, directory: Path) -> None:
-        for name in FILES:
-            (directory / name).write_bytes(b"synthetic artifact")
-        (directory / "results.json").write_text(json.dumps(proof_fixture()))
-        manifest = inventory(directory, "1" * 40, "v0.0.0")
-        (directory / "manifest.json").write_text(json.dumps(manifest))
+    def test_dangling_claim_fails(self):
+        self.mutate(
+            "docs/research/coverage.json", lambda d: d["items"][0]["claim_ids"].append("unknown")
+        )
+        with self.assertRaisesRegex(ValueError, "dangling coverage claim"):
+            validate(self.root)
 
-    def test_binary_and_manifest_tampering_detected(self) -> None:
-        for filename in ["libfzkml_core.rlib", "manifest.json"]:
-            with tempfile.TemporaryDirectory() as temporary:
-                directory = Path(temporary)
-                self.bundle(directory)
-                verify(directory, "1" * 40, "v0.0.0", attest=False)
-                if filename == "manifest.json":
-                    value = load(directory / filename)
-                    value["commit"] = "2" * 40
-                    (directory / filename).write_text(json.dumps(value))
-                else:
-                    (directory / filename).write_bytes(b"tampered")
-                with self.assertRaises(Invalid):
-                    verify(directory, "1" * 40, "v0.0.0", attest=False)
+    def test_wrong_source_version_fails(self):
+        self.mutate("docs/research/coverage.json", lambda d: d.update(source_version="other"))
+        with self.assertRaisesRegex(ValueError, "source version mismatch"):
+            validate(self.root)
 
-    def test_identity_constrained_verification_is_required(self) -> None:
-        with tempfile.TemporaryDirectory() as temporary:
-            directory = Path(temporary)
-            self.bundle(directory)
-            with patch("fzkml_ci.release.subprocess.run") as verifier:
-                verify(directory, "1" * 40, "v0.0.0")
-                self.assertEqual(verifier.call_count, 2)
-                command = verifier.call_args.args[0]
-                for option in [
-                    "--repo",
-                    "--signer-workflow",
-                    "--source-digest",
-                    "--source-ref",
-                    "--deny-self-hosted-runners",
-                ]:
-                    self.assertIn(option, command)
-            with patch(
-                "fzkml_ci.release.subprocess.run",
-                side_effect=subprocess.CalledProcessError(1, "gh"),
-            ):
-                with self.assertRaises(subprocess.CalledProcessError):
-                    verify(directory, "1" * 40, "v0.0.0")
+    def test_unimplemented_status_cannot_be_promoted(self):
+        self.mutate("claims/registry.json", lambda d: d["claims"][0].update(status="tested"))
+        with self.assertRaisesRegex(ValueError, "unimplemented claim promoted"):
+            validate(self.root)
 
-    def test_extra_files_and_symlinks_rejected(self) -> None:
-        with tempfile.TemporaryDirectory() as temporary:
-            directory = Path(temporary)
-            self.bundle(directory)
-            (directory / "unexpected").write_text("extra")
-            with self.assertRaises(Invalid):
-                verify(directory, "1" * 40, "v0.0.0", attest=False)
-            (directory / "unexpected").unlink()
-            (directory / "libfzkml_core.rlib").unlink()
-            (directory / "libfzkml_core.rlib").symlink_to(directory / "source.tar.gz")
-            with self.assertRaises(Invalid):
-                verify(directory, "1" * 40, "v0.0.0", attest=False)
+    def test_unit_test_is_not_formal_proof(self):
+        def promote(d):
+            eid = d["claims"][0]["evidence_ids"][0]
+            d["evidence"][0]["kind"] = "unit-test"
+            d["claims"][0]["formal_proof"]["artifact_ids"] = [eid]
 
+        self.mutate("claims/registry.json", promote)
+        with self.assertRaisesRegex(ValueError, "wrong special evidence kind"):
+            validate(self.root)
 
-class BenchmarkTests(unittest.TestCase):
-    def fixture(self) -> dict[str, Any]:
-        row: dict[str, Any] = proof_fixture()["results"][0]
-        row["benchmark"] = {
-            "workload_digest": "sha256:" + "1" * 64,
-            "warmups": 0,
-            "setup_amortization": "none",
-            "cached_work": "none",
-            "quality_threshold": "unit fixture only",
-            "phases": {
-                p: "unavailable"
-                for p in ["setup", "witness", "prove", "aggregate", "verify", "transfer", "total"]
-            },
-            "resources": {
-                p: "unavailable: unit fixture"
-                for p in ["peak_memory", "proof_bytes", "communication"]
-            },
-        }
-        row["benchmark"]["phases"]["total"] = "measured"
-        row["repetitions"] *= 2
-        row["repetitions"] = [copy.deepcopy(r) for r in row["repetitions"]]
-        for i, rep in enumerate(row["repetitions"]):
-            rep["id"] = str(i)
-            rep["measurements"] = [
-                {"phase": "total", "quantity": "time", "unit": "s", "value": i + 1}
-            ]
-        return row
+    def test_equation_payload_cannot_be_invented(self):
+        self.mutate(
+            "docs/research/source-index.json",
+            lambda d: d["equations"][0].update(source_review="verified"),
+        )
+        with self.assertRaisesRegex(ValueError, "authorized inspected artifact"):
+            validate(self.root)
 
-    def test_comparison_stays_diagnostic_with_raw_variance(self) -> None:
-        row = self.fixture()
-        value = compare(row, row)
-        self.assertEqual(value["status"], "diagnostic")
-        self.assertEqual(value["distributions"][0]["variance_seconds2"], 0.5)
-
-    def test_unmatched_work_and_hidden_setup_rejected(self) -> None:
-        row = self.fixture()
-        mutations: list[Callable[[dict[str, Any]], None]] = [
-            lambda r: r["scenario"].update(numerical_semantics="different"),
-            lambda r: r["provenance"]["hardware"].update(cpu="different"),
-            lambda r: r["benchmark"].update(cached_work="precomputed"),
-            lambda r: r["benchmark"]["phases"].update(setup="measured"),
-        ]
-        for mutation in mutations:
-            bad = copy.deepcopy(row)
-            mutation(bad)
-            with self.assertRaises(Invalid):
-                compare(row, bad)
-
-
-class PolicyTests(unittest.TestCase):
-    def test_workflow_mutations_need_review(self) -> None:
-        for name in [
-            "research.yml",
-            "research-reconcile.yml",
-            "gpu.yml",
-            "release.yml",
-            "codeql.yml",
-            "cpu.yml",
-        ]:
-            data = (ROOT / ".github" / "workflows" / name).read_bytes()
-            check_research_workflow(name, data)
-            with self.assertRaises(Invalid):
-                check_research_workflow(name, data.replace(b"ubuntu-24.04", b"self-hosted"))
-
-    def test_inventory_includes_transitive_and_tooling(self) -> None:
-        document = generate()
-        packages = {p["name"] for p in document["sbom"]["packages"]}
-        self.assertTrue({"rpds-py", "attrs", "uv", "fzkml-core"} <= packages)
-        self.assertEqual(document, generate())
+    def test_missing_assurance_cell_fails(self):
+        self.mutate(
+            "experiments/m0/capabilities.json",
+            lambda d: d["families"][0]["assurance_modes"].pop("inference-proof"),
+        )
+        with self.assertRaisesRegex(ValueError, "assurance mode gap"):
+            validate(self.root)
 
 
 if __name__ == "__main__":
