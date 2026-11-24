@@ -10,9 +10,9 @@ cargo metadata --locked --no-deps --format-version 1 >/dev/null
 cargo fmt --all --check
 cargo clippy --workspace --all-targets --locked -- -D warnings
 cargo test --workspace --locked
-uv run --locked ruff check src tests/test_pipeline.py scripts/check_ci_inventory.py
-uv run --locked ruff format --check src tests/test_pipeline.py scripts/check_ci_inventory.py
-uv run --locked mypy src tests/test_pipeline.py scripts/check_ci_inventory.py
+uv run --locked ruff check src tests/test_pipeline.py tests/test_research.py scripts/check_ci_inventory.py
+uv run --locked ruff format --check src tests/test_pipeline.py tests/test_research.py scripts/check_ci_inventory.py
+uv run --locked mypy src tests/test_pipeline.py tests/test_research.py scripts/check_ci_inventory.py
 uv run --locked python scripts/check_governance.py
 uv run --locked python scripts/check_citation.py
 PYTHONPATH=src uv run --locked python -m unittest discover -s tests -v

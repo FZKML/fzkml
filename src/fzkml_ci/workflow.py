@@ -6,6 +6,7 @@ Workflow ownership and protected refs remain administrator-enforced controls.
 
 from __future__ import annotations
 
+import hashlib
 import itertools
 import re
 from pathlib import Path
@@ -13,7 +14,25 @@ from typing import Any
 
 import yaml
 
-from .validate import ROOT, bounded_file, require
+from .validate import ROOT, bounded_file, load, require
+
+RESEARCH_WORKFLOWS = {
+    "cpu.yml",
+    "research.yml",
+    "research-reconcile.yml",
+    "codeql.yml",
+    "gpu.yml",
+    "release.yml",
+}
+
+
+def check_research_workflow(name: str, data: bytes) -> None:
+    # These new trust boundaries use reviewed exact templates. Changes to both
+    # workflow and digest registry require CODEOWNERS review, just like policy code.
+    approved = load(ROOT / "ci" / "workflow-digests.json")
+    require(name in RESEARCH_WORKFLOWS, "unreviewed-research-workflow")
+    require(hashlib.sha256(data).hexdigest() == approved.get(name), "workflow-review-required")
+
 
 ACTIONS = {
     "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
@@ -120,6 +139,11 @@ def check_repository(directory: Path = ROOT / ".github" / "workflows") -> None:
     paths = sorted(itertools.chain(directory.glob("*.yml"), directory.glob("*.yaml")))
     require(bool(paths), "no-workflows")
     for path in paths:
-        workflow = yaml.load(bounded_file(path), Loader=yaml.BaseLoader)
+        data = bounded_file(path)
+        if path.name in RESEARCH_WORKFLOWS:
+            check_research_workflow(path.name, data)
+            if path.name != "cpu.yml":
+                continue
+        workflow = yaml.load(data, Loader=yaml.BaseLoader)
         require(isinstance(workflow, dict), "workflow-shape")
         check_workflow(workflow)

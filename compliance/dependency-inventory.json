@@ -1,0 +1,383 @@
+{
+  "findings": [],
+  "limitations": [
+    "Includes all lock packages, including platform-conditional dependencies.",
+    "No compatibility/rights conclusion; datasets and model terms are separate.",
+    "Hosted runner tools and stdlib are external infrastructure."
+  ],
+  "lock_digests": {
+    "Cargo.lock": "0eca0cb26451a428a34d1c349fb590877c67aa12b136b4c2ca35be73ce99ece8",
+    "tools-requirements.txt": "733006d4dfccca27a3a781dad8aaa4cf6ed8d42515317a90823a187610b34ef5",
+    "uv.lock": "eb7e8a9b6daa13557c1bb07547b464c810fa5ea2b8c454fc6ace6d35e6626f3d"
+  },
+  "sbom": {
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "creationInfo": {
+      "created": "2026-11-24T00:00:00Z",
+      "creators": [
+        "Tool: fzkml-ci-0.1.0"
+      ]
+    },
+    "dataLicense": "CC0-1.0",
+    "documentNamespace": "https://github.com/FZKML/fzkml/sbom/68698fceea49fb9a2f9e0922a5500db57859df266b8dbf00fde71624691b27cf",
+    "name": "fzkml-locked-dependencies",
+    "packages": [
+      {
+        "SPDXID": "SPDXRef-pypi-attrs",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/9a/8e/82a0fe20a541c03148528be8cac2408564a6c9a0cc7e9171802bc1d26985/attrs-26.1.0.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/attrs@26.1.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "attrs",
+        "versionInfo": "26.1.0"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-fzkml-ci",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/fzkml-ci@0.1.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "Apache-2.0",
+        "name": "fzkml-ci",
+        "versionInfo": "0.1.0"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-jsonschema",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/74/69/f7185de793a29082a9f3c7728268ffb31cb5095131a9c139a74078e27336/jsonschema-4.25.1.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/jsonschema@4.25.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "jsonschema",
+        "versionInfo": "4.25.1"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-jsonschema-specifications",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/19/74/a633ee74eb36c44aa6d1095e7cc5569bebf04342ee146178e2d36600708b/jsonschema_specifications-2025.9.1.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/jsonschema-specifications@2025.9.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "jsonschema-specifications",
+        "versionInfo": "2025.9.1"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-mypy",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/c0/77/8f0d0001ffad290cef2f7f216f96c814866248a0b92a722365ed54648e7e/mypy-1.18.2.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/mypy@1.18.2",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "mypy",
+        "versionInfo": "1.18.2"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-mypy-extensions",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/d0/6f/43edf3be2748d0e40974a5ee046a8bb4c9961a4bdd3e7d5c6dcbf32d1af6/mypy_extensions-1.2.0.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/mypy-extensions@1.2.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "mypy-extensions",
+        "versionInfo": "1.2.0"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-pathspec",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/5a/82/42f767fc1c1143d6fd36efb827202a2d997a375e160a71eb2888a925aac1/pathspec-1.1.1.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/pathspec@1.1.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MPL-2.0",
+        "name": "pathspec",
+        "versionInfo": "1.1.1"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-pyyaml",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/pyyaml@6.0.3",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "pyyaml",
+        "versionInfo": "6.0.3"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-referencing",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/22/f5/df4e9027acead3ecc63e50fe1e36aca1523e1719559c499951bb4b53188f/referencing-0.37.0.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/referencing@0.37.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "referencing",
+        "versionInfo": "0.37.0"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-rpds-py",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/42/68/3bd46b8a5e01d3c2ebdf9c5e9497912e3fe0cde02bac21a7130ca866e403/rpds_py-2026.9.1.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/rpds-py@2026.9.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "rpds-py",
+        "versionInfo": "2026.9.1"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-ruff",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/82/fa/fbb67a5780ae0f704876cb8ac92d6d76da41da4dc72b7ed3565ab18f2f52/ruff-0.14.5.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/ruff@0.14.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "ruff",
+        "versionInfo": "0.14.5"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-types-jsonschema",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/ef/da/5b901088da5f710690b422137e8ae74197fb1ca471e4aa84dd3ef0d6e295/types_jsonschema-4.25.1.20251009.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/types-jsonschema@4.25.1.20251009",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "Apache-2.0",
+        "name": "types-jsonschema",
+        "versionInfo": "4.25.1.20251009"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-types-pyyaml",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/7e/69/3c51b36d04da19b92f9e815be12753125bd8bc247ba0470a982e6979e71c/types_pyyaml-6.0.12.20250915.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/types-pyyaml@6.0.12.20250915",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "Apache-2.0",
+        "name": "types-pyyaml",
+        "versionInfo": "6.0.12.20250915"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-typing-extensions",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/f6/cc/6253133b5bb138fc3306cebfbda2c520f545d36b5be2c7255cc528bb45d6/typing_extensions-4.16.0.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/typing-extensions@4.16.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "PSF-2.0",
+        "name": "typing-extensions",
+        "versionInfo": "4.16.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-fzkml-core",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/fzkml-core@0.1.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "Apache-2.0",
+        "name": "fzkml-core",
+        "versionInfo": "0.1.0"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-uv",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/uv@0.9.11",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "Apache-2.0 OR MIT",
+        "name": "uv",
+        "versionInfo": "0.9.11"
+      }
+    ],
+    "relationships": [
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-attrs",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-fzkml-ci",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-jsonschema",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-jsonschema-specifications",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-mypy",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-mypy-extensions",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-pathspec",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-pyyaml",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-referencing",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-rpds-py",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-ruff",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-types-jsonschema",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-types-pyyaml",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-typing-extensions",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-fzkml-core",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-uv",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      }
+    ],
+    "spdxVersion": "SPDX-2.3"
+  },
+  "version": 1
+}

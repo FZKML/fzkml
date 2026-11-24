@@ -165,7 +165,9 @@
         "workflow_path": {
           "enum": [
             ".github/workflows/cpu.yml",
-            ".github/workflows/reports.yml"
+            ".github/workflows/reports.yml",
+            ".github/workflows/research.yml",
+            ".github/workflows/release.yml"
           ]
         },
         "workflow_run": {
@@ -323,7 +325,11 @@
                     "verify",
                     "train",
                     "evaluate",
-                    "communicate"
+                    "communicate",
+                    "witness",
+                    "aggregate",
+                    "transfer",
+                    "total"
                   ]
                 },
                 "quantity": {
@@ -331,7 +337,8 @@
                     "time",
                     "memory",
                     "communication",
-                    "quality"
+                    "quality",
+                    "proof-bytes"
                   ]
                 },
                 "unit": {
@@ -395,7 +402,11 @@
               "verify",
               "train",
               "evaluate",
-              "communicate"
+              "communicate",
+              "witness",
+              "aggregate",
+              "transfer",
+              "total"
             ]
           },
           "quantity": {
@@ -403,7 +414,8 @@
               "time",
               "memory",
               "communication",
-              "quality"
+              "quality",
+              "proof-bytes"
             ]
           },
           "unit": {
@@ -513,6 +525,135 @@
         "approved",
         "review_id"
       ]
+    },
+    "benchmark": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "workload_digest",
+        "warmups",
+        "setup_amortization",
+        "cached_work",
+        "quality_threshold",
+        "phases",
+        "resources"
+      ],
+      "properties": {
+        "workload_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "warmups": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "setup_amortization": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "cached_work": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "quality_threshold": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "phases": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "setup",
+            "witness",
+            "prove",
+            "aggregate",
+            "verify",
+            "transfer",
+            "total"
+          ],
+          "properties": {
+            "setup": {
+              "enum": [
+                "measured",
+                "unavailable",
+                "not-applicable"
+              ]
+            },
+            "witness": {
+              "enum": [
+                "measured",
+                "unavailable",
+                "not-applicable"
+              ]
+            },
+            "prove": {
+              "enum": [
+                "measured",
+                "unavailable",
+                "not-applicable"
+              ]
+            },
+            "aggregate": {
+              "enum": [
+                "measured",
+                "unavailable",
+                "not-applicable"
+              ]
+            },
+            "verify": {
+              "enum": [
+                "measured",
+                "unavailable",
+                "not-applicable"
+              ]
+            },
+            "transfer": {
+              "enum": [
+                "measured",
+                "unavailable",
+                "not-applicable"
+              ]
+            },
+            "total": {
+              "enum": [
+                "measured",
+                "unavailable",
+                "not-applicable"
+              ]
+            }
+          }
+        },
+        "resources": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "peak_memory",
+            "proof_bytes",
+            "communication"
+          ],
+          "properties": {
+            "peak_memory": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "proof_bytes": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "communication": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            }
+          }
+        }
+      }
     }
   },
   "required": [
