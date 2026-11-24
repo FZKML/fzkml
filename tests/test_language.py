@@ -145,5 +145,14 @@ class TorchAdapterTests(unittest.TestCase):
         )
 
 
+def load_tests(
+    loader: unittest.TestLoader, tests: unittest.TestSuite, pattern: str | None
+) -> unittest.TestSuite:
+    """Include S02's independent math cases in the existing Python language lane."""
+    if pattern in (None, "test_language.py"):
+        tests.addTests(loader.discover(str(ROOT / "tests"), pattern="test_s02_math.py"))
+    return tests
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -3287,6 +3287,114 @@
       ],
       "notice_files": []
     },
+    "python/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/arithmetic.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/costs.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/datasets.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/distributions.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/numeric.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/private_v2.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML Python mathematical reference/vector contribution; provenance recorded alongside the files.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/refinement.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Python mathematical-reference contribution; contributor and source provenance recorded in Git and adjacent metadata.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/sensitivity.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/reference-sources.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "reference/__init__.py": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3345,6 +3453,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/s02-math-run-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
       "license_files": [
         "LICENSE"
       ],
@@ -3431,6 +3548,24 @@
       ],
       "notice_files": []
     },
+    "scripts/generate_s02_private_v2.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML Python mathematical reference/vector contribution; provenance recorded alongside the files.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/generate_s02_vectors.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "scripts/mutation_conformance.py": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3449,6 +3584,24 @@
       ],
       "notice_files": []
     },
+    "scripts/run_s02_experiments.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/s02_conformance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "scripts/validate": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3462,6 +3615,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/validate-s02": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
       "license_files": [
         "LICENSE"
       ],
@@ -3557,6 +3719,123 @@
       ],
       "notice_files": []
     },
+    "src/fzkml_protocol/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_protocol/geometric.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_protocol/integer.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/audit.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/compression.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/evaluation.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/statistics.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/algebra.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/entropy.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/ledger.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/sampling.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "tests/test_governance.py": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3579,6 +3858,51 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_s02_math.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/book/manuscript-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/synthetic/private-transition-v2.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML Python mathematical reference/vector contribution; provenance recorded alongside the files.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/synthetic/s02-boundaries-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/synthetic/s02-data-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
       "license_files": [
         "LICENSE"
       ],

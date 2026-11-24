@@ -1,0 +1,615 @@
+{
+  "fixture_version": "s02-book-1.0.0",
+  "source": {
+    "observed_edition": "MS20261124",
+    "author_declared_edition": null,
+    "document_id": "14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY",
+    "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+    "tab_id": "t.0",
+    "observed_revision_id": "AHj4eMTDhszajz9XWwtYr25APOt8jDNWJ06dbjKxf-xlK9xmwk34ZzwRRUkjWfouVFGjH-x3SMlEEFPR_syq3-Z8kERBX1SruWGFOdkln3SW",
+    "observed_date": "2026-11-24",
+    "text_only_sha256": "e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+    "markdown_export_sha256": "309fe571705524159fdabd4c57c70c119829fde71757b75a0ba99aedf59c30ec",
+    "inspection_method": "Connected Docs metadata plus native Markdown export on 2026-11-24; equations and numeric inputs inspected; source-private export excluded from repository.",
+    "post_export_revision_matches": true,
+    "snapshot_atomicity": "Matching observed pre/post revisions and export hash; no atomic Docs/export transaction claimed."
+  },
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "source_map_contract": "Session03 edition-scoped chapter/section/equation IDs; read-only snapshot, no registry promotion",
+  "vectors": [
+    {
+      "id": "audit-ch48-2",
+      "evidence": "analytical-teaching-example-not-training",
+      "chapter": 48,
+      "section": "48.2",
+      "equation": "unnumbered binomial-tail inversion, zero-event upper bound and approximate-DP event inequality",
+      "docs_utf16_range": [
+        165821,
+        167953
+      ],
+      "verified_inputs": {
+        "n_D": 1000,
+        "events_D": 100,
+        "n_D_prime": 1000,
+        "events_D_prime": 0,
+        "one_sided_error": 0.025,
+        "family_error": 0.05,
+        "delta": 1e-06
+      },
+      "expected": {
+        "p_lower": 0.0821053,
+        "q_upper": 0.00368208,
+        "epsilon_lower": 3.10451
+      },
+      "tolerances": {
+        "probability": 5e-08,
+        "epsilon": 5e-06
+      },
+      "source_nodes": [
+        {
+          "id": "FZK-MS20261124-SEC-h.mqziry8vuhsk",
+          "aliases": [
+            "heading:h.mqziry8vuhsk"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 165821,
+            "end_utf16": 165862,
+            "heading_id": "h.mqziry8vuhsk",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mqziry8vuhsk"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0103",
+          "aliases": [
+            "native-166208"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 166208,
+            "end_utf16": 166233,
+            "heading_id": "h.mqziry8vuhsk",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mqziry8vuhsk"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0104",
+          "aliases": [
+            "native-166793"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 166793,
+            "end_utf16": 166830,
+            "heading_id": "h.mqziry8vuhsk",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mqziry8vuhsk"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0105",
+          "aliases": [
+            "native-166865"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 166865,
+            "end_utf16": 166890,
+            "heading_id": "h.mqziry8vuhsk",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mqziry8vuhsk"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0106",
+          "aliases": [
+            "native-166940"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 166940,
+            "end_utf16": 166951,
+            "heading_id": "h.mqziry8vuhsk",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mqziry8vuhsk"
+          }
+        }
+      ],
+      "source_review": "inspected-native-equations-and-inputs",
+      "claim_status_promotion": false
+    },
+    {
+      "id": "fairness-ch56-4",
+      "evidence": "analytical-hypothetical-noisy-release",
+      "chapter": 56,
+      "section": "56.4",
+      "equation": "unnumbered four-coordinate Laplace tail, observable ratio/sampling bounds, and U",
+      "docs_utf16_range": [
+        279435,
+        283379
+      ],
+      "verified_inputs": {
+        "epsilon": 1,
+        "beta": 0.01,
+        "alpha": 0.04,
+        "noisy_denominators": [
+          1000,
+          100
+        ],
+        "noisy_gap": 0.04
+      },
+      "expected": {
+        "noise_bound": 11.9829,
+        "upper_bound": 0.5898,
+        "confidence": 0.95
+      },
+      "tolerances": {
+        "noise_bound": 5e-05,
+        "upper_bound": 5e-05
+      },
+      "source_nodes": [
+        {
+          "id": "FZK-MS20261124-SEC-h.neesa92w9nld",
+          "aliases": [
+            "heading:h.neesa92w9nld"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 279435,
+            "end_utf16": 279480,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0199",
+          "aliases": [
+            "native-279928"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 279928,
+            "end_utf16": 279971,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0200",
+          "aliases": [
+            "native-281029"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 281029,
+            "end_utf16": 281056,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0201",
+          "aliases": [
+            "native-281793"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 281793,
+            "end_utf16": 281802,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0202",
+          "aliases": [
+            "native-281807"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 281807,
+            "end_utf16": 281816,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0203",
+          "aliases": [
+            "native-281892"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 281892,
+            "end_utf16": 281919,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0204",
+          "aliases": [
+            "native-281950"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 281950,
+            "end_utf16": 281999,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0205",
+          "aliases": [
+            "native-282118"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 282118,
+            "end_utf16": 282135,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0206",
+          "aliases": [
+            "native-282298"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 282298,
+            "end_utf16": 282315,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0207",
+          "aliases": [
+            "native-282322"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 282322,
+            "end_utf16": 282334,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0208",
+          "aliases": [
+            "native-282393"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 282393,
+            "end_utf16": 282417,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0209",
+          "aliases": [
+            "native-282418"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 282418,
+            "end_utf16": 282452,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0210",
+          "aliases": [
+            "native-282457"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 282457,
+            "end_utf16": 282462,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0211",
+          "aliases": [
+            "native-282546"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 282546,
+            "end_utf16": 282584,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0212",
+          "aliases": [
+            "native-282973"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 282973,
+            "end_utf16": 282987,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0213",
+          "aliases": [
+            "native-282989"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 282989,
+            "end_utf16": 283002,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0214",
+          "aliases": [
+            "native-283008"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 283008,
+            "end_utf16": 283018,
+            "heading_id": "h.neesa92w9nld",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.neesa92w9nld"
+          }
+        }
+      ],
+      "source_review": "inspected-native-equations-and-inputs",
+      "claim_status_promotion": false
+    },
+    {
+      "id": "amdahl-ch64-2",
+      "evidence": "analytical-sequential-model",
+      "chapter": 64,
+      "section": "64.2",
+      "equation": "S = 1 / ((1-f)+f/k)",
+      "docs_utf16_range": [
+        384096,
+        385122
+      ],
+      "verified_inputs": {
+        "f": "4/5",
+        "k": "10"
+      },
+      "expected": {
+        "speedup": "25/7",
+        "infinite_acceleration_limit": "5"
+      },
+      "source_nodes": [
+        {
+          "id": "FZK-MS20261124-SEC-h.uqexi7a4mfh1",
+          "aliases": [
+            "heading:h.uqexi7a4mfh1"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 384096,
+            "end_utf16": 384154,
+            "heading_id": "h.uqexi7a4mfh1",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.uqexi7a4mfh1"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0263",
+          "aliases": [
+            "native-384366"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 384366,
+            "end_utf16": 384386,
+            "heading_id": "h.uqexi7a4mfh1",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.uqexi7a4mfh1"
+          }
+        }
+      ],
+      "source_review": "inspected-native-equations-and-inputs",
+      "claim_status_promotion": false
+    },
+    {
+      "id": "batch-ch64-2",
+      "evidence": "analytical-no-queue-equally-spaced-arrivals",
+      "chapter": 64,
+      "section": "64.2",
+      "equation": "T(b)=a+bc and equally spaced batch-filling delays",
+      "docs_utf16_range": [
+        385123,
+        386220
+      ],
+      "verified_inputs": {
+        "a": "1/5",
+        "c": "3/100",
+        "b": 8,
+        "spacing": "1"
+      },
+      "expected": {
+        "compute": "11/25",
+        "amortized_compute": "11/200",
+        "mean_filling": "7/2",
+        "mean_completion": "197/50",
+        "first_completion": "186/25",
+        "single_completion": "23/100"
+      },
+      "source_nodes": [
+        {
+          "id": "FZK-MS20261124-SEC-h.uqexi7a4mfh1",
+          "aliases": [
+            "heading:h.uqexi7a4mfh1"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 384096,
+            "end_utf16": 384154,
+            "heading_id": "h.uqexi7a4mfh1",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.uqexi7a4mfh1"
+          }
+        }
+      ],
+      "source_review": "inspected-native-equations-and-inputs",
+      "claim_status_promotion": false
+    },
+    {
+      "id": "training-ch40",
+      "evidence": "exact-analytical-worked-step",
+      "chapter": 40,
+      "section": "Worked example: a verifiable local gradient step",
+      "equation": "dot product, scaled positive-tie rounding, residual, rounded gradients and full-state update",
+      "docs_utf16_range": [
+        65671,
+        68200
+      ],
+      "profile": "manuscript-ch40-two-feature-rate1-positive-ties-v1",
+      "verified_inputs": {
+        "w": [
+          8,
+          4
+        ],
+        "x": [
+          16,
+          -8
+        ],
+        "y": 4,
+        "scale": 16,
+        "rate": "1",
+        "rounding": "nearest-positive"
+      },
+      "expected": {
+        "dot": 96,
+        "prediction": 6,
+        "residual": 2,
+        "gradients": [
+          2,
+          -1
+        ],
+        "updated": [
+          6,
+          5
+        ],
+        "loss_before": "1/128",
+        "loss_after": "1/2048"
+      },
+      "source_nodes": [
+        {
+          "id": "FZK-MS20261124-SEC-h.2i5vvyqm5f1l",
+          "aliases": [
+            "heading:h.2i5vvyqm5f1l"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 65671,
+            "end_utf16": 65720,
+            "heading_id": "h.2i5vvyqm5f1l",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.2i5vvyqm5f1l"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0050",
+          "aliases": [
+            "native-66390"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 66390,
+            "end_utf16": 66398,
+            "heading_id": "h.2i5vvyqm5f1l",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.2i5vvyqm5f1l"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0051",
+          "aliases": [
+            "native-66581"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 66581,
+            "end_utf16": 66607,
+            "heading_id": "h.2i5vvyqm5f1l",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.2i5vvyqm5f1l"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0052",
+          "aliases": [
+            "native-66608"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 66608,
+            "end_utf16": 66641,
+            "heading_id": "h.2i5vvyqm5f1l",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.2i5vvyqm5f1l"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0053",
+          "aliases": [
+            "native-66642"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 66642,
+            "end_utf16": 66650,
+            "heading_id": "h.2i5vvyqm5f1l",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.2i5vvyqm5f1l"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0054",
+          "aliases": [
+            "native-66651"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 66651,
+            "end_utf16": 66693,
+            "heading_id": "h.2i5vvyqm5f1l",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.2i5vvyqm5f1l"
+          }
+        },
+        {
+          "id": "FZK-MS20261124-EQ-0055",
+          "aliases": [
+            "native-66694"
+          ],
+          "location": {
+            "tab_id": "t.0",
+            "start_utf16": 66694,
+            "end_utf16": 66726,
+            "heading_id": "h.2i5vvyqm5f1l",
+            "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.2i5vvyqm5f1l"
+          }
+        }
+      ],
+      "source_review": "inspected-native-equations-and-inputs",
+      "claim_status_promotion": false,
+      "loss_semantics": "Exact decoded real-model half-squared loss (dot product / 256 minus y / 16), not loss from the rounded intermediate prediction.",
+      "derived_reference_only": {
+        "rounded_prediction_after": 4,
+        "rounded_residual_loss_after": "0",
+        "interpretation": "Additional independently computed reference values; not quoted manuscript numerical outputs."
+      }
+    }
+  ],
+  "limitations": [
+    "Inspected hypothetical/analytical examples, not measurements of training, privacy or deployed fairness.",
+    "Original numerical serialization and mathematical facts only; no private manuscript prose/export redistributed.",
+    "Source inspection and numerical agreement are not independent scientific or security approval."
+  ],
+  "source_map_commit": "f9485039d5529fb652dcee70ac2ba1a49446c4d9",
+  "source_map_path": "claims/source-map-v1.json",
+  "source_map_sha256": "ab28cfe312a16ded3d31c557b8abb4c7ea999a896da991f5011264ee887d6a79"
+}

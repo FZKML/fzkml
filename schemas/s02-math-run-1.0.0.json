@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "s02-math-run-1.0.0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "kind": {
+      "const": "deterministic-reference-calculations"
+    },
+    "claim_ids": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "source_dirty": {
+      "type": "boolean"
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "local"
+        },
+        "workflow_run": {
+          "type": "null"
+        },
+        "python": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "os": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "machine": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "public_experiment_seed": {
+          "type": "integer"
+        },
+        "private_randomness": {
+          "const": "not-used-or-recorded"
+        },
+        "reproduction_command": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "kind",
+        "workflow_run",
+        "python",
+        "os",
+        "machine",
+        "public_experiment_seed",
+        "private_randomness",
+        "reproduction_command"
+      ]
+    },
+    "digests": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^sha256:[a-f0-9]{64}$"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "status": {
+            "enum": [
+              "counterexample-reproduced",
+              "exact-finite-pair-analysis",
+              "analytical-teaching-example",
+              "conditional-analytic-confidence",
+              "inconclusive",
+              "numerical-reference-experiment"
+            ]
+          },
+          "inputs": {
+            "type": "object"
+          },
+          "result": {
+            "type": "object"
+          },
+          "assumptions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "inputs",
+          "result",
+          "assumptions",
+          "limitations"
+        ]
+      }
+    },
+    "repetitions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "status": {
+            "const": "completed"
+          },
+          "excluded": {
+            "const": false
+          },
+          "reference_checks_seconds": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "excluded",
+          "reference_checks_seconds"
+        ]
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "kind",
+    "claim_ids",
+    "source_commit",
+    "source_dirty",
+    "execution",
+    "digests",
+    "observations",
+    "repetitions",
+    "limitations"
+  ],
+  "$id": "https://github.com/FZKML/fzkml/schemas/s02-math-run-1.0.0.json"
+}

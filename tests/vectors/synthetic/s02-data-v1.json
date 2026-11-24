@@ -1,0 +1,238 @@
+{
+  "fixture_version": "s02-data-1.0.0",
+  "origin": "original deterministic public synthetic records",
+  "seed": 20261124,
+  "license": "Apache-2.0",
+  "representation_sha256": "e8f45ef36c4445c0fe29ca32da0354510ce0bb249e33a9e6043689fd70e7abb5",
+  "records": [
+    {
+      "id": "synthetic:e0-t1",
+      "entity": "synthetic:e0",
+      "source": "synthetic:source0",
+      "time": 1,
+      "x": -5,
+      "y": -16,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e0-t5",
+      "entity": "synthetic:e0",
+      "source": "synthetic:source0",
+      "time": 5,
+      "x": -14,
+      "y": -8,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e0-t11",
+      "entity": "synthetic:e0",
+      "source": "synthetic:source0",
+      "time": 11,
+      "x": 13,
+      "y": 15,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e1-t1",
+      "entity": "synthetic:e1",
+      "source": "synthetic:source1",
+      "time": 1,
+      "x": -6,
+      "y": 12,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e1-t5",
+      "entity": "synthetic:e1",
+      "source": "synthetic:source1",
+      "time": 5,
+      "x": 11,
+      "y": -1,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e1-t11",
+      "entity": "synthetic:e1",
+      "source": "synthetic:source1",
+      "time": 11,
+      "x": -12,
+      "y": -16,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e2-t1",
+      "entity": "synthetic:e2",
+      "source": "synthetic:source0",
+      "time": 1,
+      "x": -13,
+      "y": -7,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e2-t5",
+      "entity": "synthetic:e2",
+      "source": "synthetic:source0",
+      "time": 5,
+      "x": 12,
+      "y": 2,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e2-t11",
+      "entity": "synthetic:e2",
+      "source": "synthetic:source0",
+      "time": 11,
+      "x": -15,
+      "y": 6,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e3-t1",
+      "entity": "synthetic:e3",
+      "source": "synthetic:source1",
+      "time": 1,
+      "x": 0,
+      "y": -12,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e3-t5",
+      "entity": "synthetic:e3",
+      "source": "synthetic:source1",
+      "time": 5,
+      "x": -12,
+      "y": 0,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e3-t11",
+      "entity": "synthetic:e3",
+      "source": "synthetic:source1",
+      "time": 11,
+      "x": -6,
+      "y": 12,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e4-t1",
+      "entity": "synthetic:e4",
+      "source": "synthetic:source0",
+      "time": 1,
+      "x": 4,
+      "y": -2,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e4-t5",
+      "entity": "synthetic:e4",
+      "source": "synthetic:source0",
+      "time": 5,
+      "x": 0,
+      "y": 0,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e4-t11",
+      "entity": "synthetic:e4",
+      "source": "synthetic:source0",
+      "time": 11,
+      "x": 1,
+      "y": 7,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e5-t1",
+      "entity": "synthetic:e5",
+      "source": "synthetic:source1",
+      "time": 1,
+      "x": -8,
+      "y": 16,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e5-t5",
+      "entity": "synthetic:e5",
+      "source": "synthetic:source1",
+      "time": 5,
+      "x": 5,
+      "y": -15,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e5-t11",
+      "entity": "synthetic:e5",
+      "source": "synthetic:source1",
+      "time": 11,
+      "x": 3,
+      "y": -14,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e6-t1",
+      "entity": "synthetic:e6",
+      "source": "synthetic:source0",
+      "time": 1,
+      "x": -7,
+      "y": -15,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e6-t5",
+      "entity": "synthetic:e6",
+      "source": "synthetic:source0",
+      "time": 5,
+      "x": 2,
+      "y": 13,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e6-t11",
+      "entity": "synthetic:e6",
+      "source": "synthetic:source0",
+      "time": 11,
+      "x": 9,
+      "y": 14,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e7-t1",
+      "entity": "synthetic:e7",
+      "source": "synthetic:source1",
+      "time": 1,
+      "x": 9,
+      "y": 16,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e7-t5",
+      "entity": "synthetic:e7",
+      "source": "synthetic:source1",
+      "time": 5,
+      "x": 11,
+      "y": -3,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:e7-t11",
+      "entity": "synthetic:e7",
+      "source": "synthetic:source1",
+      "time": 11,
+      "x": 4,
+      "y": -4,
+      "duplicate_of": null
+    },
+    {
+      "id": "synthetic:duplicate",
+      "entity": "synthetic:e0",
+      "source": "synthetic:source1",
+      "time": 6,
+      "x": -5,
+      "y": -16,
+      "duplicate_of": "synthetic:e0-t1"
+    }
+  ],
+  "limitations": [
+    "Multiple records per entity are clustered, not IID mechanism runs.",
+    "Representation commitment establishes neither truth nor consent or population coverage."
+  ]
+}

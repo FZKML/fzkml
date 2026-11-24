@@ -134,7 +134,7 @@ def validate(root, paths=None):
         if asset["path"] not in files or digest(path) != asset["sha256"]:
             raise ValueError("asset checksum/coverage mismatch: " + asset["id"])
     # These directories are reserved for inventoried data/model/generated payloads.
-    payloads = {p for p in actual if p.startswith(("assets/public/", "tests/fixtures/",
+    payloads = {p for p in actual if p.startswith(("assets/public/", "tests/fixtures/", "tests/vectors/",
                                                  "models/", "checkpoints/", "datasets/"))}
     if payloads != registered:
         raise ValueError("asset registry coverage gap: " + str(sorted(payloads ^ registered)))

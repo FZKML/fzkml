@@ -77,6 +77,142 @@
         "date": "2026-11-24",
         "decision": "Original public generated test vectors; no third-party asset rights assumed. Numeric/security correctness requires separate review."
       }
+    },
+    {
+      "id": "manuscript-v1-s02",
+      "kind": "mathematical-reference",
+      "source": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+      "version": "s02-1.0.0; exact-byte sha256",
+      "path": "tests/vectors/book/manuscript-v1.json",
+      "sha256": "c4c5daf7d49ddb496b9b5420c98e7e3ff2b542c512df37aca9259ba4a8777a33",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original numerical serialization and mathematical facts/source locators; no private manuscript prose or external dataset copied.",
+      "intended_use": "Independent mathematical tests and reference calculations only; no production or scientific guarantee inferred.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Source-inspected numerical facts serialized by contributor",
+        "configuration": {
+          "seed": "not applicable; source facts"
+        }
+      },
+      "source_inputs": "Inspected manuscript mathematical facts; private export excluded",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original mathematical serialization submitted for PR/DCO review)",
+        "date": "2026-11-24",
+        "decision": "Original software/metadata and mathematical facts only; private prose and full exports excluded. Independent scientific/security review remains pending."
+      }
+    },
+    {
+      "id": "s02-boundaries-v1-s02",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/s02/exact-math-references/tests/vectors/synthetic/s02-boundaries-v1.json",
+      "version": "s02-1.0.0; exact-byte sha256",
+      "path": "tests/vectors/synthetic/s02-boundaries-v1.json",
+      "sha256": "cebf9098307b6bcdf662aac2e43c155e5b6e53b44b94af336a9cd8b14aab0ff2",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original numerical serialization and mathematical facts/source locators; no private manuscript prose or external dataset copied.",
+      "intended_use": "Independent mathematical tests and reference calculations only; no production or scientific guarantee inferred.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "scripts/generate_s02_vectors.py; independent Fraction arithmetic and deterministic synthetic record generator",
+        "configuration": {
+          "seed": 20261124
+        }
+      },
+      "source_inputs": "none; original deterministic small synthetic values",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original mathematical serialization submitted for PR/DCO review)",
+        "date": "2026-11-24",
+        "decision": "Original software/metadata and mathematical facts only; private prose and full exports excluded. Independent scientific/security review remains pending."
+      }
+    },
+    {
+      "id": "s02-data-v1-s02",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/s02/exact-math-references/tests/vectors/synthetic/s02-data-v1.json",
+      "version": "s02-1.0.0; exact-byte sha256",
+      "path": "tests/vectors/synthetic/s02-data-v1.json",
+      "sha256": "39e3bc4018fb7902b3e0715876249206ea538a888419b89e605265e247168ed2",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original numerical serialization and mathematical facts/source locators; no private manuscript prose or external dataset copied.",
+      "intended_use": "Independent mathematical tests and reference calculations only; no production or scientific guarantee inferred.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "scripts/generate_s02_vectors.py; independent Fraction arithmetic and deterministic synthetic record generator",
+        "configuration": {
+          "seed": 20261124
+        }
+      },
+      "source_inputs": "none; original deterministic small synthetic values",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original mathematical serialization submitted for PR/DCO review)",
+        "date": "2026-11-24",
+        "decision": "Original software/metadata and mathematical facts only; private prose and full exports excluded. Independent scientific/security review remains pending."
+      }
+    },
+    {
+      "id": "s02-private-transition-v2",
+      "kind": "mathematical-reference",
+      "source": "https://github.com/FZKML/fzkml/blob/2e8a464ffd7eb5f358e811b9285519d46f594bc2/specs/private-transition-v2.json",
+      "version": "s02-private-transition-v2-1.0.0",
+      "path": "tests/vectors/synthetic/private-transition-v2.json",
+      "sha256": "8254e2c09ae3f1826d26cdfa02fe3362d06e59e48368930a934a76490cb3e2b2",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original independent Python public-test byte/numeric vectors, based on the same-repository S01 candidate contract; no valid proof is supplied.",
+      "intended_use": "Independent mathematical tests and reference calculations only; no production or scientific guarantee inferred.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "scripts/generate_s02_private_v2.py with the retained exact contract byte snapshot",
+        "configuration": {
+          "seed": "none; published deterministic test openings only"
+        }
+      },
+      "source_inputs": "Exact S01 contract SHA820850561fb327bd6c267ca5fc1c31078a20e05ed8b32b77c6775161572a9cd3, current fzknum oracle and published deterministic test openings.",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original mathematical serialization submitted for PR/DCO review)",
+        "date": "2026-11-24",
+        "decision": "Original software/metadata and mathematical facts only; private prose and full exports excluded. Independent scientific/security review remains pending."
+      }
     }
   ]
 }

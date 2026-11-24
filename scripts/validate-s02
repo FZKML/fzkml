@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+uv run --locked ruff check python reference src/fzkml_protocol src/fzkml_research src/fzkml_transcript tests/test_s02_math.py scripts/generate_s02_vectors.py scripts/generate_s02_private_v2.py scripts/s02_conformance.py scripts/run_s02_experiments.py
+uv run --locked ruff format --check python reference src/fzkml_protocol src/fzkml_research src/fzkml_transcript tests/test_s02_math.py scripts/generate_s02_vectors.py scripts/generate_s02_private_v2.py scripts/s02_conformance.py scripts/run_s02_experiments.py
+MYPYPATH=src uv run --locked mypy python reference src/fzkml_protocol src/fzkml_research src/fzkml_transcript tests/test_s02_math.py scripts/generate_s02_vectors.py scripts/generate_s02_private_v2.py scripts/s02_conformance.py scripts/run_s02_experiments.py
+uv run --locked python scripts/generate_s02_vectors.py --check
+uv run --locked python scripts/generate_s02_private_v2.py --check
+PYTHONPATH=.:src uv run --locked python -m unittest discover -s tests -p test_s02_math.py -v
+cargo build --release --locked -p fzkml-core --bin fzkml-contract
+uv run --locked python scripts/s02_conformance.py target/release/fzkml-contract
+PYTHONPATH=.:src uv run --locked python scripts/run_s02_experiments.py .tools/s02
