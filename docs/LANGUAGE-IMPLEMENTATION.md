@@ -38,6 +38,8 @@ of universal wheel support. No package is published by this change.
 `evaluate()` returns the exact integer aggregate. `ResearchSession()` owns one
 fresh local keypair; `prove(batch)` returns a typed `ProofResult` with integer
 output, proof bytes, contract version, verifying-key digest, and timings.
+The session separately exposes `parameters_id`, the digest of its complete public
+proving parameters; it is distinct from `key_id`, the verifying-key digest.
 `verify(batch, result)` checks the same statement and session. The compiled
 contract digest is exposed so a stale wheel cannot silently pass new fixtures.
 

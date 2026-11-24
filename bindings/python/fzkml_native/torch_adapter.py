@@ -142,6 +142,7 @@ def profile_tiny(
         },
         "digests": digests,
         "key_id": result.key_id,
+        "parameters_id": session.parameters_id,
         "proof_valid": accepted,
         "proof_bytes": len(result.proof),
         "quality": {

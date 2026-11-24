@@ -213,6 +213,7 @@ pub struct ResearchSession {
     pk: ProvingKey<Bn254>,
     vk: PreparedVerifyingKey<Bn254>,
     pub key_id: String,
+    pub parameters_id: String,
 }
 pub struct Proved {
     pub output: i64,
@@ -236,7 +237,16 @@ impl ResearchSession {
             .serialize_compressed(&mut encoded)
             .map_err(|_| ContractError("key-encoding"))?;
         let key_id = format!("{:x}", Sha256::digest(encoded));
-        Ok(Self { pk, vk, key_id })
+        let mut parameters = Vec::new();
+        pk.serialize_compressed(&mut parameters)
+            .map_err(|_| ContractError("parameter-encoding"))?;
+        let parameters_id = format!("{:x}", Sha256::digest(parameters));
+        Ok(Self {
+            pk,
+            vk,
+            key_id,
+            parameters_id,
+        })
     }
     pub fn prove(&self, input: &[u8]) -> Result<Proved, ContractError> {
         let start = Instant::now();

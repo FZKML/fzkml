@@ -43,6 +43,10 @@ class ResearchSession:
     def key_id(self) -> str:
         return self._session.key_id
 
+    @property
+    def parameters_id(self) -> str:
+        return self._session.parameters_id
+
     def prove(self, batch: CanonicalBatch) -> ProofResult:
         output, proof, witness, proving = self._session.prove(batch.data)
         return ProofResult(output, proof, CONTRACT_VERSION, self.key_id, witness, proving)

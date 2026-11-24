@@ -42,6 +42,10 @@ impl ResearchSession {
     fn key_id(&self) -> String {
         self.inner.key_id.clone()
     }
+    #[getter]
+    fn parameters_id(&self) -> String {
+        self.inner.parameters_id.clone()
+    }
     fn prove<'py>(
         &self,
         py: Python<'py>,

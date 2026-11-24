@@ -104,6 +104,14 @@ def claim() -> dict[str, Any]:
 
 
 class ResultTests(unittest.TestCase):
+    def test_language_workflow_registration(self) -> None:
+        result = measured()
+        result["provenance"]["workflow_path"] = ".github/workflows/language.yml"
+        validate_result(result)
+        result["provenance"]["workflow_path"] = ".github/workflows/unreviewed.yml"
+        with self.assertRaises(Invalid):
+            validate_result(result)
+
     def test_all_outcomes_remain_distinct(self) -> None:
         for status in ["successful", "failed", "inconclusive", "unsupported", "not-run"]:
             with self.subTest(status=status):

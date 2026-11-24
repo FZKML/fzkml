@@ -67,7 +67,7 @@ if profile["workflow_run"]:
             "numerical_semantics": "fixed16-rne",
             "backend": profile["backend"],
             "security_mode": "research",
-            "parameters_digest": "sha256:" + profile["key_id"],
+            "parameters_digest": "sha256:" + profile["parameters_id"],
             "key_digest": "sha256:" + profile["key_id"],
             "program_digest": digest((ROOT / "crates/fzkml-core/src/lib.rs").read_bytes()),
             "circuit_digest": digest((ROOT / "crates/fzkml-core/src/proof.rs").read_bytes()),
