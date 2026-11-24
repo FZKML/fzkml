@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_id": "fzkml-research-service-1.0.0",
+  "status": "specified-pending-independent-review",
+  "normative_document": "specifications/protocol-v1.md",
+  "participants": [
+    "model-owner",
+    "coordinator",
+    "client",
+    "verifier",
+    "admission-issuer",
+    "aggregation-recipient",
+    "durable-authority"
+  ],
+  "profiles": [
+    {
+      "id": "m0-two-feature-v0.1",
+      "relation_id": "m0-two-feature-v0.1",
+      "specification": "specs/m0/relation-v0.1.md",
+      "stage": "specified",
+      "capabilities": {
+        "computational-validity": "specified",
+        "witness-privacy": "unsupported",
+        "aggregate-privacy": "unsupported",
+        "DP": "unsupported",
+        "robustness": "unsupported",
+        "availability": "abort-permitted"
+      }
+    },
+    {
+      "id": "fzknum-1.0.0",
+      "relation_id": "fzknum-1.0.0",
+      "specification": "specifications/relations/fzknum-1.0.0.json",
+      "stage": "external-implementation-reference",
+      "implementation": {
+        "repository": "FZKML/fzkml",
+        "commit": "91f61f7dc641e69192ee0c687cce4f64519cf172",
+        "path": "specs/numeric-contract-v1.json",
+        "sha256": "87d097bb7c7af37def94289290fb53e996fc63094144150bc4b1e7112a8b50c0",
+        "url": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/specs/numeric-contract-v1.json"
+      },
+      "capabilities": {
+        "computational-validity": "conditional-on-relation-and-backend",
+        "witness-privacy": "unsupported-public-inputs",
+        "aggregate-privacy": "unsupported",
+        "DP": "unsupported",
+        "robustness": "unsupported",
+        "availability": "abort-permitted"
+      }
+    },
+    {
+      "id": "fzk-private-1.0.0-candidate",
+      "relation_id": "fzknum-1.0.0",
+      "specification": "specifications/relations/fzknum-1.0.0.json",
+      "stage": "candidate-pending-review",
+      "implementation": {
+        "repository": "FZKML/fzkml",
+        "commit": "6b8f3c6baf138e8f13ad98c454e1f506c8a6d34e",
+        "path": "specs/private-transition-v1.json",
+        "sha256": "def1e6e093e5897a99f572b8674a78e88af978f67a63fd2187f1913da6ce23ab",
+        "url": "https://github.com/FZKML/fzkml/blob/6b8f3c6baf138e8f13ad98c454e1f506c8a6d34e/specs/private-transition-v1.json"
+      },
+      "capabilities": {
+        "computational-validity": "conditional-on-relation-and-backend",
+        "witness-privacy": "conditional-against-verifier-not-joint-prover",
+        "aggregate-privacy": "unsupported-output-public",
+        "DP": "unsupported",
+        "robustness": "unsupported",
+        "availability": "abort-permitted"
+      }
+    },
+    {
+      "id": "protected-aggregation-v1-candidate",
+      "relation_id": "fzknum-1.0.0",
+      "specification": "specifications/relations/fzknum-1.0.0.json",
+      "stage": "candidate-pending-review",
+      "implementation": {
+        "repository": "FZKML/fzkml",
+        "commit": "cb3590648f3a6d38c8092e6f24ee3ad1461daef4",
+        "path": "specs/aggregation-v1.json",
+        "sha256": "7f0dd95e86275f3979ef72fd951d6aec77df366b76d6aa1af985b2d7a425a107",
+        "url": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/specs/aggregation-v1.json"
+      },
+      "capabilities": {
+        "computational-validity": "conditional-local-proof-and-conservation",
+        "witness-privacy": "conditional-private-input-custody",
+        "aggregate-privacy": "conditional-unknown-contributions-given-clean-aggregate",
+        "DP": "unsupported",
+        "robustness": "unsupported",
+        "availability": "threshold-and-receipt-conditional"
+      }
+    }
+  ],
+  "commands": [
+    "Initialize",
+    "Submit",
+    "Verify",
+    "Freeze",
+    "Aggregate",
+    "ReserveDisclosure",
+    "Release",
+    "Abort",
+    "Recover"
+  ],
+  "state_fields": [
+    "profile",
+    "relation_digest",
+    "sid",
+    "round",
+    "parent",
+    "model_version",
+    "initialization",
+    "optimizer_state",
+    "data_policy",
+    "key_epoch",
+    "expected_verifier_key",
+    "ordered_roster",
+    "weights",
+    "accepted_root",
+    "phase",
+    "release_id",
+    "possible_disclosure",
+    "cached_output"
+  ],
+  "release_invariants": [
+    "one-authoritative-successor-per-parent",
+    "reserve-before-possible-disclosure",
+    "cache-before-delivery",
+    "identical-retransmission-only",
+    "no-refund-for-already-observed-information",
+    "no-cohort-renormalization-without-new-policy"
+  ],
+  "observer_views": {
+    "public": [
+      "context",
+      "commitments",
+      "proof-public-inputs",
+      "acceptance-and-failure-metadata",
+      "timing-and-lengths",
+      "authorized-output"
+    ],
+    "coordinator": [
+      "public-view",
+      "received-messages",
+      "profile-specific-input-disclosure"
+    ],
+    "coalition": [
+      "union-of-public-and-coordinator-view",
+      "corrupt-party-inputs-openings-shares-and-coins",
+      "authorized-aggregate"
+    ],
+    "joint-prover": [
+      "all-witnesses-required-by-joint-relation"
+    ]
+  },
+  "review_obligations": [
+    "setup-and-hiding",
+    "semantic-numeric-conformance",
+    "proof-extraction-and-simulation",
+    "payload-binding-and-conservation",
+    "authenticated-accepted-state",
+    "entropy-and-privacy-transcript",
+    "durable-state-and-rollback",
+    "independent-domain-review"
+  ],
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "limitations": [
+    "No complete integrated production guarantee.",
+    "No profile supplies complete-view DP.",
+    "Local proof validity does not establish global agreement or truthful records."
+  ]
+}
