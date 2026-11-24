@@ -128,7 +128,13 @@ def validate_result(result: dict[str, Any]) -> None:
             and p["dependency_digest"] != "sha256:" + "0" * 64,
             "executed-provenance-placeholder",
         )
-    units = {"time": "s", "memory": "byte", "communication": "byte", "quality": "ratio"}
+    units = {
+        "time": "s",
+        "memory": "byte",
+        "communication": "byte",
+        "quality": "ratio",
+        "proof-bytes": "byte",
+    }
     for rep in reps.values():
         require(not rep["timeout"] or rep["status"] == "failed", "timeout-status-conflict")
         require(rep["quality"] != "fail" or rep["status"] != "successful", "quality-conflict")

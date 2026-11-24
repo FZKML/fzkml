@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+mode="${1:---full}"
+test "$mode" = --full || test "$mode" = --contract-only
+source_sha="$(git rev-parse HEAD)"
+source_repository="$PWD"
+reproduction_dir="$(mktemp -d)"
+trap 'rm -rf "$reproduction_dir"' EXIT
+git clone --no-hardlinks --no-checkout "$source_repository" "$reproduction_dir/source"
+cd "$reproduction_dir/source"
+git checkout --detach "$source_sha"
+python3.11 -m venv bootstrap
+bootstrap/bin/python -m pip install --require-hashes -r tools-requirements.txt
+export PATH="$reproduction_dir/bootstrap/bin:$PATH"
+export UV_PROJECT_ENVIRONMENT="$reproduction_dir/environment"
+uv sync --locked
+PYTHONPATH=src uv run --locked python -m fzkml_ci report
+PYTHONPATH=src uv run --locked python -m fzkml_ci verify-report
+if test "$mode" = --full; then
+  # Missing inputs/backend are failure, never a reproduced scientific result.
+  if ! ./scripts/research proof; then
+    echo 'UNREPRODUCIBLE: real reference backend or authorized inputs unavailable.' >&2
+    exit 1
+  fi
+fi
+echo "Reproduced $mode for $source_sha (contract-only covers metadata fixtures)."

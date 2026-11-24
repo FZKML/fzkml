@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "id": "contract",
+  "task": "contract",
+  "repetitions": 3,
+  "timeout_seconds": 120,
+  "threads": 2,
+  "max_input_bytes": 1000000,
+  "warmups": 0
+}
