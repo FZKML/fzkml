@@ -27,6 +27,18 @@ Before publication, an identified reviewer checks the exact artifact bundle for
 private records/witnesses, raw samples, secret randomness, identifiers, private
 paths, restricted assets and unapproved model/generated outputs. Review the
 actual digest-bound files, not only their filenames or an approval boolean.
+For an allowlisted public-synthetic producer, an authorized human may instead
+approve a versioned, digest-bound publication policy covering that exact
+producer, input class, schemas, artifact types and protected execution environment.
+Every run must then emit an automated receipt binding its actual output hashes,
+producer/source/schema/policy digests, execution identity and successful policy
+checks to the prior human policy-approval artifact. Identify the human policy
+approver separately from the automated verifier; do not invent per-run human
+review. A changed producer/schema/scope, private or unknown input, unrestricted
+attachment, failed check or missing real prior approval requires new review and
+leaves publication unauthorized. No such policy is approved by this proposed
+document or by a passing CI job. Session 04 owns policy enforcement and must
+verify protected-environment authorization rather than trusting receipt strings.
 Manuscript read access is not permission to redistribute its body, export,
 images or native equations. Publish original engineering summaries and source
 locators only within the authorized scope. Uncertain rights or disclosure block

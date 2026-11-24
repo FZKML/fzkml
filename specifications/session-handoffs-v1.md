@@ -88,6 +88,13 @@ S04 owns integration and must exercise its canonical schemas/renderer/policy.
 An unapproved result may be archived privately/local for audit but must not be
 published. A schema-valid boolean is insufficient publication review. Do not
 rewrite a local run as a hosted workflow or erase failed/not-run outcomes.
+For allowlisted public-synthetic CI producers, a real prior human approval may
+cover a versioned policy rather than every random seed. Per-run automated
+receipts must bind actual outputs and successful enforcement to the approved
+policy, producer, schemas and protected environment. Clearly distinguish the
+human policy approver from the automated verifier. Until the actual policy is
+reviewed and authorized, records remain unapproved; this proposed interface
+does not grant approval. Other inputs/producers/scopes need their own review.
 
 No published CI-14–CI-25 specification was found in the audited issues/files on
 2026-11-24. Treat those identifiers as pending specification rather than inventing

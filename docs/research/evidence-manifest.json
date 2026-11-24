@@ -4,7 +4,7 @@
   "artifacts": [
     {
       "path": "RELEASING.md",
-      "sha256": "df5f225a8534e896bdbce2b0f66287ace1e060f6c1b2570c348c4ef04f935690"
+      "sha256": "9c8e8cd44d2558580ac99738c591d79fdd9bc35e6647af2d3ee0ade909f4b6b8"
     },
     {
       "path": "assets/public/transcript-analytic-v1.json",
@@ -112,11 +112,11 @@
     },
     {
       "path": "specifications/reporting-requirements-v1.json",
-      "sha256": "6f7c8285f9f6e5ddc6f70c75a43d18caa63ccab8ab1acd6172d5ec694dc35040"
+      "sha256": "a751f985149b5cff21873f1ea075abc8f030495760b598c7d392ce93ca5dc6db"
     },
     {
       "path": "specifications/session-handoffs-v1.md",
-      "sha256": "4062df9c99bf412bdb563a6f9c8cc827f1785ec87628bef082e122a216e2384d"
+      "sha256": "d64602d6dd0dc02d91bd1a545b38d2054d767da54e50616b35e5395988764bc4"
     },
     {
       "path": "specifications/source-inputs-v1.json",

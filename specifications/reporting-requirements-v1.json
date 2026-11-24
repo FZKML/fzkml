@@ -74,7 +74,45 @@
     "approved_false": "Permitted for truthful local/private records; prohibit publication/export of the bundle until exact digest-bound artifacts receive authorized review.",
     "raw_inputs": "Never include private records/witnesses, model/data commitment openings, secret randomness, private paths or restricted source bytes.",
     "review": "Record reviewer, scope, date and exact artifact hashes; approval boolean alone is insufficient.",
-    "retention": "Archive approved evidence and digests independently of expiring hosted logs; follow RELEASING.md."
+    "retention": "Archive approved evidence and digests independently of expiring hosted logs; follow RELEASING.md.",
+    "authorization_routes": {
+      "exact_artifact_review": {
+        "requires": [
+          "identified authorized human reviewer",
+          "review date/scope",
+          "actual digest-bound file inspection",
+          "approved decision for those exact hashes"
+        ]
+      },
+      "reviewed_public_synthetic_producer_policy": {
+        "status": "proposed-pending-real-human-policy-review",
+        "prior_approval": [
+          "versioned policy digest",
+          "authorized human policy approver/date/scope",
+          "immutable approval artifact digest",
+          "allowlisted producer/source/schema digests",
+          "allowed public synthetic input class and output artifact types",
+          "protected execution environment and enforcement rules"
+        ],
+        "per_run_receipt": [
+          "exact output path/hash/size inventory",
+          "producer/source/schema/policy digests",
+          "actual execution identity and protected environment",
+          "automated verifier identity distinct from human policy approver",
+          "successful checks with named scope and date",
+          "link/digest to real prior human approval"
+        ],
+        "deny_if": [
+          "missing real prior policy approval",
+          "private or unknown inputs",
+          "changed unreviewed producer/schema/scope",
+          "unrestricted attachments",
+          "failed or unperformed checks",
+          "unverified protected-environment authorization"
+        ],
+        "review_boundary": "The automation attests enforcement of a human-approved scoped policy; it does not impersonate a human review of each randomized artifact or confer scientific approval."
+      }
+    }
   },
   "result_compatibility": {
     "stable": [
