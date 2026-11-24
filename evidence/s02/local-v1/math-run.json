@@ -1,9 +1,9 @@
 {
   "schema_version": "s02-math-run-1.0.0",
-  "run_id": "synthetic:s02-math-01129d390bbf",
+  "run_id": "synthetic:s02-math-d5e28970a36b",
   "kind": "deterministic-reference-calculations",
   "claim_ids": [],
-  "source_commit": "01129d390bbfed5152f0eb3397cd66de027ceaeb",
+  "source_commit": "d5e28970a36b43ccc1a6f72b18fef41e9914c7d7",
   "source_dirty": false,
   "execution": {
     "kind": "local",
@@ -23,7 +23,7 @@
     "tests/vectors/synthetic/s02-boundaries-v1.json": "sha256:cebf9098307b6bcdf662aac2e43c155e5b6e53b44b94af336a9cd8b14aab0ff2",
     "tests/vectors/synthetic/s02-data-v1.json": "sha256:39e3bc4018fb7902b3e0715876249206ea538a888419b89e605265e247168ed2",
     "python/reference-sources.json": "sha256:8bec58ca7d622838612fbf0f2a3b1164acb24b3de459253d581538bef45c464a",
-    "tests/vectors/synthetic/private-transition-v2.json": "sha256:8254e2c09ae3f1826d26cdfa02fe3362d06e59e48368930a934a76490cb3e2b2"
+    "tests/vectors/synthetic/private-transition-v2.json": "sha256:67b521351b374a971136a7e074b90810010a59bcb31501b6b30585557d9a51bd"
   },
   "observations": [
     {
@@ -1103,6 +1103,39 @@
         "Original finite CPU reference trajectory, not manuscript numerical inputs or global model convergence evidence.",
         "Circuit constraint cost and general attention/optimizer refinement remain not measured."
       ]
+    },
+    {
+      "id": "numeric-profile-not-closed-under-update",
+      "status": "unsupported-continuation",
+      "inputs": {
+        "initial_weight": 32,
+        "features": [
+          8,
+          8,
+          8
+        ],
+        "labels": [
+          32,
+          32,
+          32
+        ],
+        "weights": [
+          1,
+          2,
+          1
+        ]
+      },
+      "result": {
+        "full_state_output": 34,
+        "next_parent_format_valid": true,
+        "next_numeric_initial_weight_supported": false
+      },
+      "assumptions": [
+        "Unchanged fzknum-1.0.0 input bound32 and v2 parent format bound80"
+      ],
+      "limitations": [
+        "A valid one-step transition does not imply every resulting state can continue under the same bounded numeric profile."
+      ]
     }
   ],
   "repetitions": [
@@ -1110,7 +1143,7 @@
       "id": "rep1",
       "status": "completed",
       "excluded": false,
-      "reference_checks_seconds": 0.06777754198992625
+      "reference_checks_seconds": 0.06601204199250787
     }
   ],
   "limitations": [

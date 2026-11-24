@@ -1,6 +1,6 @@
 # Session02 local mathematical evidence
 
-Immutable source: `01129d390bbfed5152f0eb3397cd66de027ceaeb`, clean at calculation time.
+Immutable source: `d5e28970a36b43ccc1a6f72b18fef41e9914c7d7`, clean at calculation time.
 Reproduce with `./scripts/validate-s02` and
 `PYTHONPATH=.:src .venv/bin/python scripts/run_s02_experiments.py .tools/s02`.
 The adjacent [raw companion](math-run.json) validates against
@@ -17,6 +17,9 @@ Observed mathematical outcomes:
   stated rounded values; no real model-training trials are claimed.
 - The small-denominator certificate remains **inconclusive**, without repairing
   the denominator or claiming deployment fairness.
+- A valid update from initial weight32 reaches34. The v2 parent format can
+  encode34, but unchanged numeric-v1 rejects34 as a next initial weight;
+  arbitrary indefinite chaining is unsupported.
 - Original quadratic precision trajectories are recorded below. The unsafe
   learning-rate3 case is `rejected-state-domain` after
   2 accepted steps. The uniform-error
@@ -48,4 +51,4 @@ The wheel build, notice verification and isolated import smoke test passed.
 These observations do not certify v2 Groth16 security or a general DP theorem.
 The v2 envelope layout fixture deliberately contains an invalid zero proof.
 
-Raw artifact SHA-256: `62882d6256867df8caab4984b3ac3483428d294a6749ff9d6e163437b40f06dc`.
+Raw artifact SHA-256: `3142e7b12d986bbcf1c248e9f19f54c4d763a68ef92d0a69f47614871ca134ca`.
