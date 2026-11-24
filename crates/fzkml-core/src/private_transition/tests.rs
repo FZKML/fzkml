@@ -181,6 +181,33 @@ fn full_state_aggregation_is_not_parent_plus_rounded_delta_aggregation() {
 }
 
 #[test]
+fn valid_output_outside_next_round_input_range_is_not_continuable() {
+    let batch = Batch {
+        w: 32,
+        x: [8, 8, 8],
+        y: [32, 32, 32],
+        counts: [1, 2, 1],
+    };
+    let witness = evaluate(&batch).expect("valid bounded transition");
+    assert_eq!(witness.updates, [34, 34, 34]);
+    assert_eq!(witness.output, 34);
+
+    // The v2 context format can carry this public output, but numeric-v1 only
+    // admits an initial weight in [-32,32]; the lineage gate must stop here.
+    let context = Context::synthetic([5; 32], batch.counts, witness.output);
+    assert!(Context::decode(&context.encode()).is_ok());
+    assert_eq!(
+        ensure_next_initial_weight(witness.output),
+        Err(ContractError("lineage-parent-outside-next-input-range"))
+    );
+    let next_batch = Batch {
+        w: witness.output,
+        ..batch
+    };
+    assert!(next_batch.validate().is_err());
+}
+
+#[test]
 fn bounded_seeded_parser_fuzz_and_noncanonical_points_fail_closed() {
     let mut rng = StdRng::seed_from_u64(20261124);
     for _ in 0..256 {

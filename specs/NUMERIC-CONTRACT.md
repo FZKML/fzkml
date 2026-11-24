@@ -110,6 +110,13 @@ unit. The implementation's output is explicitly a full-state value; this is a
 regression test against substituting a delta interpretation or moving rounding
 across the state boundary.
 
+The bounded relation is not closed over repeated transitions: `w=32`,
+`x=[8,8,8]`, `y=[32,32,32]`, and counts `[1,2,1]` produce local states
+`[34,34,34]` and full-state output 34. This is a valid one-step output in
+[-80,80], but it lies outside the next step's initial-weight input range
+[-32,32]. The v2 lineage gate rejects a continuation from this state; a
+successful two-round example therefore does not imply arbitrary-length chaining.
+
 The manuscript's Chapter 40 benchmark describes a different model and a
 different half-way rule (ties toward positive infinity). This scalar fixture
 does not reproduce that benchmark or establish its claim. Any implementation

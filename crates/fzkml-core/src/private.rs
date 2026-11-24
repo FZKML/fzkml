@@ -279,6 +279,14 @@ struct AcceptedParent {
     output: i64,
 }
 
+fn ensure_next_initial_weight(value: i64) -> Result<(), ContractError> {
+    if (-32..=32).contains(&value) {
+        Ok(())
+    } else {
+        Err(ContractError("lineage-parent-outside-next-input-range"))
+    }
+}
+
 /// In-memory sequential state gate for the v2 full-state relation. A deployment
 /// must persist this atomically and protect it from rollback before using it.
 pub struct TransitionChain {
@@ -329,9 +337,7 @@ impl TransitionChain {
             .as_ref()
             .ok_or(ContractError("lineage-parent-not-accepted"))?;
         context.validate()?;
-        if !(-32..=32).contains(&parent.output) {
-            return Err(ContractError("lineage-parent-outside-next-input-range"));
-        }
+        ensure_next_initial_weight(parent.output)?;
         if !self.current_consumed
             || context.session != parent.context.session
             || context.round != parent.context.round + 1

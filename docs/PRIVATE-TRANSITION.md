@@ -26,7 +26,12 @@ constrains the public parent value to its private initial weight.
 Context parsing permits a parent output in [-80,80], but the implemented v1
 initial weight is in [-32,32]. Proving fails closed if the previous output is
 not representable as the next initial weight; the relation does not widen the
-numeric-v1 input domain.
+numeric-v1 input domain. This can occur after a valid step: `w=32`,
+`x=(8,8,8)`, `y=(32,32,32)`, and counts `(1,2,1)` produce three local states
+of 34 and aggregate output 34. The context format can carry 34, but
+`TransitionChain` rejects continuing from it. The successful two-step smoke
+uses the specific 8→9→10 path and does not establish that every accepted output
+can be continued or that arbitrary-length chains stay within the input domain.
 
 The model commitment is
 `SHA256("FZKMOD02" || 32-byte blinding || SHA256(context) || i64le(weight))`.
