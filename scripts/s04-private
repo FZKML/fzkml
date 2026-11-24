@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+cargo build --release --locked -p fzkml-core --bin fzkml-private
+PYTHONPATH=src uv run --locked python scripts/s04_private.py

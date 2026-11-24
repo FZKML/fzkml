@@ -2,8 +2,9 @@
 
 This integration supersedes the unavailable-backend snapshot in CI-DELIVERY.md.
 It is stacked on PR #72 and incorporates the CI infrastructure from #68 and
-Session 03's authoritative interfaces from #121. No core cryptographic or
-numerical implementation is changed by Session 04. Dependency PRs remain
+Session 03's authoritative interfaces from #121 and Session 01's private proof
+candidate from #75. Core cryptographic and numerical changes are imported from
+their owning sessions without Session 04 edits. Dependency PRs remain
 separately reviewable; this branch does not merge them on GitHub.
 
 ## Correctness and assurance
@@ -31,6 +32,15 @@ M0 relation. These checks establish neither private/protected aggregation nor
 cryptographic security, differential privacy or independent review. The
 `protocol-invariants` profile deliberately reports unavailable and fails until
 the corresponding implementation and reviewed interface exist.
+
+The PR proof job additionally runs `./scripts/s04-private`: Session 01's actual
+196,118-constraint private transition setup and two genuine proofs, twelve
+statement substitution rejections and one-shot state checks. This candidate
+has fresh random commitment blindings and private model/data witnesses. It
+does not provide aggregate privacy, differential privacy or durable replay
+protection. Its existing full conformance suite runs in main integration.
+Private-transition scientific exports remain pending a reviewed evidence
+interface; the public-arithmetic publication policy does not cover them.
 
 ## Execution tiers
 
