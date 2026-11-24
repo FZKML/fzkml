@@ -1257,6 +1257,105 @@
         "LICENSE"
       ],
       "notice_files": []
+    },
+    "assets/public/transcript-analytic-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/transcript-implementation-evidence.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering evidence generated with Codex; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/transcript-source-review.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/privacy/transcript-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/algebra.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/entropy.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/fixtures.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/ledger.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/sampling.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_transcript_privacy.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
     }
   }
 }
