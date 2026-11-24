@@ -40,6 +40,41 @@
         "date": "2026-11-24",
         "decision": "Original trivial synthetic metadata fixture only; maintainer reviews this decision with the PR."
       }
+    },
+    {
+      "id": "privacy-performance-golden-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+      "version": "observed-MS20261124; exact source metadata in fixture",
+      "path": "assets/public/privacy-performance-golden-v1.json",
+      "sha256": "10893e4e17d6ac30b35cff06798a665dc6681b9c53cf0765021a813a0604a5af",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original numerical fixture/code; manuscript facts and formulas inspected with owner-authorized access. No manuscript prose or complete snapshot copied.",
+      "intended_use": "Verify analytical teaching calculations only; no private records or training evidence.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Original JSON transcription of verified numeric facts and expected rounded teaching outputs",
+        "configuration": {
+          "fixture_version": "1.0.0",
+          "seed": "not-applicable; analytical numbers, no mechanism randomness"
+        }
+      },
+      "source_inputs": "Authoritative manuscript sections 48.2, 54.4, 56.4, 64.2; source equation/input locators retained.",
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex source verification; submitted for maintainer/domain review",
+        "date": "2026-11-24",
+        "decision": "Limited original numerical fixture approved for synthetic checks within requested work; no manuscript relicensing or independent scientific approval claimed."
+      }
     }
   ]
 }
