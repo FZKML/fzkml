@@ -40,6 +40,45 @@
         "date": "2026-11-24",
         "decision": "Original trivial synthetic metadata fixture only; maintainer reviews this decision with the PR."
       }
+    },
+    {
+      "id": "synthetic-cross-silo-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/m0-scientific-specifications/scripts/research_fixtures.py",
+      "version": "synthetic-records-1.0; exact payload identified by SHA-256",
+      "path": "assets/public/synthetic-cross-silo-v1.json",
+      "sha256": "4e9adb696712bb682b69d87e5b02644896a525a23d4a510d949c4e5dc333e6b7",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original synthetic generator and fixtures; contributor provenance recorded in Git history.",
+      "intended_use": "Deterministic split/provenance conformance checks only; benchmark use awaits independent provenance review.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "SHA-256 of domain-separated public seed/site/entity/visit; bounded original integer features, repeated visits and explicit duplicates",
+        "configuration": {
+          "seed": 20261124,
+          "sources": 4,
+          "entities_per_source": 12,
+          "visits_per_entity": 2,
+          "duplicates_per_source": 1,
+          "scale": 16
+        }
+      },
+      "source_inputs": "none; no private, external or manuscript data inputs",
+      "review": {
+        "status": "approved",
+        "reviewer": "original synthetic contribution submitted for maintainer PR review",
+        "date": "2026-11-24",
+        "decision": "Source-only synthetic conformance payload under the repository license. No independent benchmark adoption approval is asserted."
+      }
     }
   ]
 }
