@@ -1,0 +1,319 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "state": {
+            "const": "candidate-pending-contribution-certification"
+          },
+          "repository": {
+            "const": "FZKML/fzkml"
+          },
+          "pull_request": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source_commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "source_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_map_commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "source_map_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "files": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "url": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "path",
+                "sha256",
+                "url"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 5000,
+            "uniqueItems": true
+          },
+          "vectors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "chapter": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 80
+                },
+                "source_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 1,
+                  "maxItems": 5000,
+                  "uniqueItems": true
+                },
+                "claim_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 0,
+                  "maxItems": 5000,
+                  "uniqueItems": true
+                },
+                "scope": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_review": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "chapter",
+                "source_refs",
+                "claim_ids",
+                "scope",
+                "source_review"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 5000,
+            "uniqueItems": true
+          },
+          "observation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "local-exact-commit-snapshot"
+              },
+              "date": {
+                "type": "string",
+                "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+              },
+              "python_version": {
+                "type": "string",
+                "minLength": 1
+              },
+              "command": {
+                "type": "string",
+                "minLength": 1
+              },
+              "exit_code": {
+                "const": 0
+              },
+              "discovered": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "passed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "skipped": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "test": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "test",
+                    "reason"
+                  ]
+                },
+                "minItems": 0,
+                "maxItems": 5000,
+                "uniqueItems": true
+              },
+              "log_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "kind",
+              "date",
+              "python_version",
+              "command",
+              "exit_code",
+              "discovered",
+              "passed",
+              "skipped",
+              "log_sha256",
+              "scope"
+            ]
+          },
+          "hosted_check_scope": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "cpu_run": {
+                "type": "string",
+                "minLength": 1
+              },
+              "observation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "dco_run": {
+                "type": "string",
+                "minLength": 1
+              },
+              "dco_outcome_at_observation": {
+                "const": "failed-pending-user-certification"
+              },
+              "cpu_mathematical_suite_executed": {
+                "const": false
+              },
+              "language_run": {
+                "type": "string",
+                "minLength": 1
+              },
+              "language_command": {
+                "type": "string",
+                "minLength": 1
+              },
+              "language_scope": {
+                "type": "string",
+                "minLength": 1
+              },
+              "language_source_commit": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{40}$"
+              },
+              "language_math_discovered": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "language_math_passed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "language_math_skipped": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "language_total_tests": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "full_validate_s02_executed_in_hosted_job": {
+                "const": false
+              }
+            },
+            "required": [
+              "cpu_run",
+              "observation",
+              "dco_run",
+              "dco_outcome_at_observation",
+              "cpu_mathematical_suite_executed",
+              "language_run",
+              "language_command",
+              "language_scope",
+              "language_source_commit",
+              "language_math_discovered",
+              "language_math_passed",
+              "language_math_skipped",
+              "language_total_tests",
+              "full_validate_s02_executed_in_hosted_job"
+            ]
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 5000,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "state",
+          "repository",
+          "pull_request",
+          "source_commit",
+          "source_version",
+          "source_map_commit",
+          "source_map_sha256",
+          "files",
+          "vectors",
+          "observation",
+          "hosted_check_scope",
+          "limitations"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 5000,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "records"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/claims/candidate-evidence-schema-v1.json"
+}

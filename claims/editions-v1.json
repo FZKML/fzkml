@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "current_edition": "MS20261124",
+  "editions": [
+    {
+      "id": "MS20261124",
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "observed_revision_id": "AHj4eMTDhszajz9XWwtYr25APOt8jDNWJ06dbjKxf-xlK9xmwk34ZzwRRUkjWfouVFGjH-x3SMlEEFPR_syq3-Z8kERBX1SruWGFOdkln3SW",
+      "text_only_sha256": "e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "authorized_export_sha256": "990e1d372cef0122a8c2a8b4ac6e7062e416b926fa538855de227b8400bf52c8",
+      "chapters": 80,
+      "exercises": 48,
+      "native_equations": 417,
+      "migration_from": null,
+      "migration_policy": "New source revisions require a reviewed edition entry and explicit old-to-new ID/locator mapping; never silently reassign IDs. Text digest excludes native equation payloads; export digest and revision identify inspected mathematics."
+    }
+  ]
+}

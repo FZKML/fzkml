@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "owner_session": "04",
+  "claim_schema": "schemas/claims-1.0.0.json",
+  "claim_validator": "PYTHONPATH=src uv run --locked python specifications/validate.py",
+  "supplemental_schemas": [
+    "claims/traceability-schema-v1.json",
+    "claims/source-map-schema-v1.json"
+  ],
+  "authored_statuses": [
+    "planned",
+    "specified",
+    "implemented",
+    "tested",
+    "replicated",
+    "reviewed",
+    "refuted",
+    "inconclusive",
+    "unsupported",
+    "deferred"
+  ],
+  "evidence_categories": {
+    "planned-or-unverified": [
+      "planned",
+      "specified",
+      "deferred"
+    ],
+    "implemented": [
+      "implemented"
+    ],
+    "tested": [
+      "tested"
+    ],
+    "empirically-replicated": [
+      "replicated"
+    ],
+    "formally-proved-under-stated-assumptions": "Separate formal_proof artifacts and checked receipt bound to exact claim context; passing tests never imply this category.",
+    "independently-reviewed": "Separate independent_review artifacts and reviewer/independence/source/scope receipt; authored reviewed status requires it.",
+    "negative-or-unresolved": [
+      "refuted",
+      "inconclusive",
+      "unsupported"
+    ]
+  },
+  "outcomes": [
+    "successful",
+    "failed",
+    "inconclusive",
+    "unsupported",
+    "not-run"
+  ],
+  "measurement_contract": {
+    "raw_repetitions": "Retain every attempted repetition and reason, including failed/skipped/timeout/OOM. Record seed/repetition policy and exact input/claim/relation/backend/security-mode IDs.",
+    "phases": [
+      "prepare",
+      "setup",
+      "witness",
+      "prove",
+      "verify",
+      "train",
+      "evaluate",
+      "communicate",
+      "aggregate",
+      "release",
+      "end-to-end"
+    ],
+    "setup": "Separate cold/cached/reused setup, preprocessing and amortization policy.",
+    "units": "Name units per metric, distinguish wall/CPU time and peak/resident memory; include hardware/toolchain/locks.",
+    "statistics": "Name statistic, uncertainty procedure and sample count; never invent variance/confidence from one trial.",
+    "security_mode": "Identify public/private witnesses, setup trust, cohort/collusion/noise/release assumptions and unsupported capabilities.",
+    "not_run": "No fabricated zero timing or successful skipped proof. Preserve unavailable-adapter reasons and negative results."
+  },
+  "publication": {
+    "approved_false": "Permitted for truthful local/private records; prohibit publication/export of the bundle until exact digest-bound artifacts receive authorized review.",
+    "raw_inputs": "Never include private records/witnesses, model/data commitment openings, secret randomness, private paths or restricted source bytes.",
+    "review": "Record reviewer, scope, date and exact artifact hashes; approval boolean alone is insufficient.",
+    "retention": "Archive approved evidence and digests independently of expiring hosted logs; follow RELEASING.md.",
+    "authorization_routes": {
+      "exact_artifact_review": {
+        "requires": [
+          "identified authorized human reviewer",
+          "review date/scope",
+          "actual digest-bound file inspection",
+          "approved decision for those exact hashes"
+        ]
+      },
+      "reviewed_public_synthetic_producer_policy": {
+        "status": "proposed-pending-real-human-policy-review",
+        "prior_approval": [
+          "versioned policy digest",
+          "authorized human policy approver/date/scope",
+          "immutable approval artifact digest",
+          "allowlisted producer/source/schema digests",
+          "allowed public synthetic input class and output artifact types",
+          "protected execution environment and enforcement rules"
+        ],
+        "per_run_receipt": [
+          "exact output path/hash/size inventory",
+          "producer/source/schema/policy digests",
+          "actual execution identity and protected environment",
+          "automated verifier identity distinct from human policy approver",
+          "successful checks with named scope and date",
+          "link/digest to real prior human approval"
+        ],
+        "deny_if": [
+          "missing real prior policy approval",
+          "private or unknown inputs",
+          "changed unreviewed producer/schema/scope",
+          "unrestricted attachments",
+          "failed or unperformed checks",
+          "unverified protected-environment authorization"
+        ],
+        "review_boundary": "The automation attests enforcement of a human-approved scoped policy; it does not impersonate a human review of each randomized artifact or confer scientific approval."
+      }
+    }
+  },
+  "result_compatibility": {
+    "stable": [
+      "1.0.0"
+    ],
+    "candidate": [
+      "1.1.0"
+    ],
+    "inspected_candidate_refs": [
+      {
+        "path": "schemas/result-1.1.0.json",
+        "commit": "cb3590648f3a6d38c8092e6f24ee3ad1461daef4",
+        "sha256": "582bc7a993f3dd5baf612cb90ef0b7ea56480700d9413eb7fa2252ffbbea6f5e",
+        "url": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/schemas/result-1.1.0.json"
+      },
+      {
+        "path": "schemas/bundle-1.1.0.json",
+        "commit": "cb3590648f3a6d38c8092e6f24ee3ad1461daef4",
+        "sha256": "4ba965923f13c02781671567f359eaa1207255773ea1aa3c027827cfc1393e54",
+        "url": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/schemas/bundle-1.1.0.json"
+      }
+    ],
+    "review": "S03 reviewed schema changes for metadata truthfulness, not renderer/policy integration or scientific validation. S04 must run canonical schema/renderer/publication tests.",
+    "candidate_requirements": [
+      "local execution has null workflow_path and workflow_run, execution_kind=local",
+      "github-actions execution has a real positive workflow run ID and supported workflow path",
+      "publication_review.approved=false cannot authorize public publication",
+      "phase expansion must preserve raw/summary identity and unit validation",
+      "bundle validator resolves result versions locally and rejects unknown versions"
+    ],
+    "ci_14_to_25": "pending-specification; no published contracts found in audit 2026-11-24"
+  }
+}

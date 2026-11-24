@@ -78,6 +78,14 @@ class ResearchMetadataTests(unittest.TestCase):
             "tests",
         ):
             shutil.copytree(ROOT / directory, self.root / directory)
+        # The versioned evidence manifest now also covers S03 contracts. Include
+        # its actual public inputs before applying metadata mutations below.
+        manifest = json.loads((ROOT / "docs/research/evidence-manifest.json").read_text())
+        for artifact in manifest["artifacts"]:
+            target = self.root / artifact["path"]
+            if not target.exists():
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(ROOT / artifact["path"], target)
 
     def mutate(self, path, change):
         file = self.root / path

@@ -1,0 +1,186 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "edition": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "source_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "kind": {
+            "enum": [
+              "chapter",
+              "exercise",
+              "section",
+              "equation"
+            ]
+          },
+          "number": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "chapter": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 80
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "maxItems": 5000
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "parent_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source_version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "location": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "tab_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "start_utf16": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end_utf16": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "heading_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "url": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              }
+            },
+            "required": [
+              "tab_id",
+              "start_utf16",
+              "end_utf16",
+              "heading_id",
+              "url"
+            ]
+          },
+          "extraction_status": {
+            "enum": [
+              "pending-extraction",
+              "partial",
+              "extracted"
+            ]
+          },
+          "inspection_status": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "planned_issues": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "maxItems": 5000
+          },
+          "inspection_record": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "number",
+          "chapter",
+          "aliases",
+          "title",
+          "parent_id",
+          "source_version",
+          "location",
+          "extraction_status",
+          "inspection_status",
+          "planned_issues"
+        ]
+      },
+      "maxItems": 5000
+    }
+  },
+  "required": [
+    "schema_version",
+    "edition",
+    "source_version",
+    "nodes"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/claims/source-map-schema-v1.json"
+}

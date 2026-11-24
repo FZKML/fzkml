@@ -351,7 +351,7 @@
         "scope": "Pending independent domain review; no approval claimed."
       },
       "limitations": [
-        "Source prose inspected; native equation payloads are not extracted.",
+        "The referenced worked-step equation markup was inspected; general source extraction remains partial.",
         "Specification/design only; no training or cryptographic implementation evidence."
       ],
       "observer": "external",

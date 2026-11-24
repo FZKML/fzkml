@@ -189,6 +189,15 @@
       ],
       "notice_files": []
     },
+    "RELEASING.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "SECURITY.md": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -252,10 +261,82 @@
       ],
       "notice_files": []
     },
+    "claims/candidate-evidence-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original source/evidence metadata and validation contract generated with Codex assistance; contributor provenance in Git history. No private manuscript or external implementation bytes are included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/candidate-evidence-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original source/evidence metadata and validation contract generated with Codex assistance; contributor provenance in Git history. No private manuscript or external implementation bytes are included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/editions-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "claims/registry.json": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/source-map-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/source-map-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/traceability-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/traceability-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
       "license_files": [
         "LICENSE"
       ],
@@ -628,6 +709,15 @@
       ],
       "notice_files": []
     },
+    "docs/assurance.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "docs/implementation.md": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -704,6 +794,24 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/s03-evidence.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/s03-source-inspection.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
       "license_files": [
         "LICENSE"
       ],
@@ -961,6 +1069,87 @@
       ],
       "notice_files": []
     },
+    "specifications/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/protocol-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/protocol-v1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/relations/fzknum-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/reporting-requirements-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/session-handoffs-v1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/source-inputs-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/validate.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "specs/README.md": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -1163,6 +1352,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_specification_registry.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, source metadata or validation code generated with Codex assistance; contributor provenance in Git history. Private manuscript bytes are excluded.",
       "license_files": [
         "LICENSE"
       ],

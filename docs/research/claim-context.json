@@ -248,7 +248,7 @@
         65671,
         68475
       ],
-      "source_review": "prose-inspected-equations-pending",
+      "source_review": "prose-and-equation-markup-inspected",
       "native_equation_ids": [
         "native-66390",
         "native-66581",
@@ -268,7 +268,8 @@
       "experiment_status": "not-run",
       "specification": "specs/m0/relation-v0.1.md",
       "review_status": "pending-independent-review",
-      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied.",
+      "source_inspection_record": "docs/research/s03-source-inspection.json"
     },
     "FZK-MS20261124-C43-DEF-001": {
       "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",

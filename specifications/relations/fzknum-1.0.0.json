@@ -1,0 +1,213 @@
+{
+  "specification_version": "1.0.0",
+  "relation_id": "fzknum-1.0.0",
+  "kind": "engineering-instantiation",
+  "source_relationship": "Different from manuscript Chapter 40/M0 example; never transfer evidence by model name alone.",
+  "implementation_contract": {
+    "repository": "FZKML/fzkml",
+    "commit": "91f61f7dc641e69192ee0c687cce4f64519cf172",
+    "path": "specs/numeric-contract-v1.json",
+    "sha256": "87d097bb7c7af37def94289290fb53e996fc63094144150bc4b1e7112a8b50c0",
+    "url": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/specs/numeric-contract-v1.json"
+  },
+  "domain": {
+    "clients": 3,
+    "features": 1,
+    "samples_per_client": 1,
+    "scale": 16,
+    "w": [
+      -32,
+      32
+    ],
+    "x": [
+      -32,
+      32
+    ],
+    "y": [
+      -32,
+      32
+    ],
+    "counts": [
+      1,
+      4
+    ]
+  },
+  "arithmetic": "exact signed integers before field encoding; reject unsupported values; no wrap/saturation",
+  "rounding": {
+    "id": "nearest-ties-even",
+    "definition": "For n=d*q+r with d>0 and 0<=r<d, use q if 2r<d, q+1 if 2r>d, and the even member of {q,q+1} at equality.",
+    "lattice_caveat": {
+      "classification": "original-derived-counterexample-not-general-sensitivity-theorem",
+      "numerators": [
+        1,
+        3
+      ],
+      "fixed_denominator": 2,
+      "rounded_values": [
+        0,
+        2
+      ],
+      "numerator_change": 2,
+      "rounded_change": 2,
+      "naive_ceil_change_over_denominator": 1,
+      "consequence": "RNE is not equivariant under odd integer translations at half ties. Do not import an unqualified ceil(D/N) sensitivity bound or parent-plus-rounded-delta identity; derive the bound for the exact numerator lattice, denominator, adjacency and payload.",
+      "profile_boundary": "The manuscript/M0 nearest-ties-toward-positive-infinity rule has different translation behavior; this counterexample does not refute that rule."
+    }
+  },
+  "steps": [
+    "prediction_i=RNE(w*x_i/16)",
+    "residual_i=prediction_i-y_i",
+    "gradient_i=RNE(residual_i*x_i/16)",
+    "step_i=RNE(gradient_i/4)",
+    "local_state_i=w-step_i",
+    "N=sum_i count_i",
+    "T=sum_i count_i*local_state_i",
+    "output=RNE(T/N)"
+  ],
+  "ranges": {
+    "prediction": [
+      -64,
+      64
+    ],
+    "residual": [
+      -96,
+      96
+    ],
+    "gradient": [
+      -192,
+      192
+    ],
+    "step": [
+      -48,
+      48
+    ],
+    "local_state": [
+      -80,
+      80
+    ],
+    "N": [
+      3,
+      12
+    ],
+    "T": [
+      -960,
+      960
+    ],
+    "output": [
+      -80,
+      80
+    ]
+  },
+  "payload_type": "full-state",
+  "optimizer_state": "empty; no momentum/error feedback",
+  "clipping": "none",
+  "field": {
+    "name": "BN254 scalar Fr",
+    "modulus": "21888242871839275222246405745257275088548364400416034343698204186575808495617",
+    "obligation": "Every intermediate, quotient, remainder and equality must have an adequate signed range/no-wrap constraint; a large prime alone does not establish semantic conformance."
+  },
+  "counterexample": {
+    "kind": "original-derived-conformance-case",
+    "source_status": "not-a-manuscript-example; pending Session 02 oracle confirmation",
+    "w": 1,
+    "records": [
+      {
+        "x": 0,
+        "y": 0,
+        "count": 1
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "count": 1
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "count": 2
+      }
+    ],
+    "expected_local_states": [
+      1,
+      1,
+      2
+    ],
+    "expected_full_state_aggregate": 2,
+    "incorrect_parent_plus_rounded_delta": 1
+  },
+  "exclusions": [
+    "other shapes/scales",
+    "DP calibration",
+    "clipping proof",
+    "real-world data/identity validity",
+    "cryptographic security from numerical tests"
+  ],
+  "continuation": {
+    "closure": "not-guaranteed-under-unchanged-initial-domain",
+    "admission": "Every successor proposed as the next initial state must satisfy this same relation domain and trusted lineage/context; framing acceptance alone is insufficient.",
+    "unsupported_successor": "Stop the next round before proving or releasing another transition. Retain the valid prior release/history. Do not silently clip, reset, widen bounds or substitute a different relation.",
+    "witness": {
+      "classification": "original-derived-engineering-counterexample-not-manuscript-claim",
+      "w": 32,
+      "records": [
+        {
+          "x": 8,
+          "y": 32,
+          "count": 1
+        },
+        {
+          "x": 8,
+          "y": 32,
+          "count": 2
+        },
+        {
+          "x": 8,
+          "y": 32,
+          "count": 1
+        }
+      ],
+      "prediction": [
+        16,
+        16,
+        16
+      ],
+      "residual": [
+        -16,
+        -16,
+        -16
+      ],
+      "gradient": [
+        -8,
+        -8,
+        -8
+      ],
+      "step": [
+        -2,
+        -2,
+        -2
+      ],
+      "local_state": [
+        34,
+        34,
+        34
+      ],
+      "N": 4,
+      "T": 136,
+      "output": 34,
+      "valid_current_transition": true,
+      "valid_next_initial_weight": false,
+      "S03_check": "All divisions in this witness are exact; independent rational arithmetic recomputation agrees.",
+      "peer_evidence": {
+        "state": "candidate-pending-contribution-certification",
+        "calculation_source_commit": "d5e28970a36b43ccc1a6f72b18fef41e9914c7d7",
+        "source_dirty": false,
+        "artifact_commit": "9d5060e54e70038416f1bddf9c14120194302eaa",
+        "path": "evidence/s02/local-v1/math-run.json",
+        "sha256": "3142e7b12d986bbcf1c248e9f19f54c4d763a68ef92d0a69f47614871ca134ca",
+        "url": "https://github.com/FZKML/fzkml/blob/9d5060e54e70038416f1bddf9c14120194302eaa/evidence/s02/local-v1/math-run.json",
+        "observations": 8,
+        "limitations": "Peer reference retained as candidate provenance only; no fixture/code adoption, scientific status promotion or manuscript attribution."
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "registry_version": "1.0.0",
   "edition_id": "MS20261124",
   "author_declared_edition": null,
-  "title": "Collaborative Privacy-Preserving Artificial Intelligence — Federated Zero-Knowledge Machine Learning",
+  "title": "Collaborative Privacy-Preserving Artificial Intelligence \u2014 Federated Zero-Knowledge Machine Learning",
   "canonical_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
   "document_id": "14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY",
   "tab_id": "t.0",
@@ -15,11 +15,12 @@
     "count": 417,
     "content_status": "partial-source-review",
     "reason": "Docs returned equation:{} with UTF-16 ranges, without formula contents.",
-    "inspected_count": 14,
-    "inspection_record": "docs/research/transcript-source-review.json"
+    "inspected_count": 20,
+    "inspection_record": "docs/research/transcript-source-review.json",
+    "additional_inspection_record": "docs/research/s03-source-inspection.json"
   },
-  "inspection_scope": "All chapter/exercise headings indexed; only selected M0 prose claims extracted. Neither all prose nor all mathematics is reviewed.",
-  "snapshot_policy": "Revision and text digest identify this observation; no complete immutable manuscript snapshot is published. Obtain an authorized private archive before equation-dependent promotion.",
+  "inspection_scope": "All chapter/exercise headings indexed; selected M0 and transcript prose and 20 native equation elements inspected. Neither all prose nor all mathematics is reviewed.",
+  "snapshot_policy": "Observed revision, text-only digest and private authorized export digest identify this inspection. No complete immutable manuscript snapshot is published; inspect remaining source mathematics before source-dependent promotion.",
   "publication_rights": "undecided; manuscript excluded from Apache-2.0 software distribution",
   "source_access": "Use connected Google Docs with owner-granted access. No local manuscript path is assumed."
 }
