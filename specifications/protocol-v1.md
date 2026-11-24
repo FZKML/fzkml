@@ -59,6 +59,9 @@ proof for another context, key, policy, parent or roster is not admissible.
 1. `Initialize` fixes profile, relation, keys, authorized cohort, weight policy,
    complete initial state, leakage and one release identity before witness/noise
    generation. Private eligibility and sampling policies require extra analysis.
+   For every subsequent round, revalidate the complete successor as a supported
+   initial input to that exact relation. A wire-valid parent or valid previous
+   transition does not establish that the successor is in the next input domain.
 2. `Submit` authenticates and parses an envelope, checks context and identity
    policy, and records at most one contribution per declared admission unit and
    round. Identical retransmission returns its stored receipt; conflicting bytes
@@ -99,6 +102,17 @@ The authority selects one successor per parent. Proof validity alone cannot
 establish agreement among isolated observers or completeness of timely
 submissions. Branching, refresh, key rotation, asynchronous staleness, dropout
 after freeze and mobile corruption require a new explicit profile and theorem.
+
+The scalar profile is not closed under iteration over its unchanged input
+domain. With initial weight 32, each client's x=8 and y=32, and public counts
+(1,2,1), prediction is 16, residual -16, gradient -8, step -2 and every local
+state 34. The valid weighted output is 136/4=34, outside the next initial
+weight bound [-32,32]. All these divisions are exact. The current transition
+and its authorized release remain valid; the next round must stop under this
+profile. A framing format that can encode 34 does not widen the numeric domain.
+Clipping, resetting or changing bounds/relation requires an explicit reviewed
+migration with new binding/range obligations. This original engineering example
+is not a manuscript claim or evidence of unrestricted multi-round learning.
 
 ## Observer views and release boundaries
 

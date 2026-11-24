@@ -141,5 +141,73 @@
     "clipping proof",
     "real-world data/identity validity",
     "cryptographic security from numerical tests"
-  ]
+  ],
+  "continuation": {
+    "closure": "not-guaranteed-under-unchanged-initial-domain",
+    "admission": "Every successor proposed as the next initial state must satisfy this same relation domain and trusted lineage/context; framing acceptance alone is insufficient.",
+    "unsupported_successor": "Stop the next round before proving or releasing another transition. Retain the valid prior release/history. Do not silently clip, reset, widen bounds or substitute a different relation.",
+    "witness": {
+      "classification": "original-derived-engineering-counterexample-not-manuscript-claim",
+      "w": 32,
+      "records": [
+        {
+          "x": 8,
+          "y": 32,
+          "count": 1
+        },
+        {
+          "x": 8,
+          "y": 32,
+          "count": 2
+        },
+        {
+          "x": 8,
+          "y": 32,
+          "count": 1
+        }
+      ],
+      "prediction": [
+        16,
+        16,
+        16
+      ],
+      "residual": [
+        -16,
+        -16,
+        -16
+      ],
+      "gradient": [
+        -8,
+        -8,
+        -8
+      ],
+      "step": [
+        -2,
+        -2,
+        -2
+      ],
+      "local_state": [
+        34,
+        34,
+        34
+      ],
+      "N": 4,
+      "T": 136,
+      "output": 34,
+      "valid_current_transition": true,
+      "valid_next_initial_weight": false,
+      "S03_check": "All divisions in this witness are exact; independent rational arithmetic recomputation agrees.",
+      "peer_evidence": {
+        "state": "candidate-pending-contribution-certification",
+        "calculation_source_commit": "d5e28970a36b43ccc1a6f72b18fef41e9914c7d7",
+        "source_dirty": false,
+        "artifact_commit": "9d5060e54e70038416f1bddf9c14120194302eaa",
+        "path": "evidence/s02/local-v1/math-run.json",
+        "sha256": "3142e7b12d986bbcf1c248e9f19f54c4d763a68ef92d0a69f47614871ca134ca",
+        "url": "https://github.com/FZKML/fzkml/blob/9d5060e54e70038416f1bddf9c14120194302eaa/evidence/s02/local-v1/math-run.json",
+        "observations": 8,
+        "limitations": "Peer reference retained as candidate provenance only; no fixture/code adoption, scientific status promotion or manuscript attribution."
+      }
+    }
+  }
 }

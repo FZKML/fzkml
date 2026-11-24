@@ -44,7 +44,7 @@
     },
     {
       "path": "claims/traceability-v1.json",
-      "sha256": "d3ac19544efe086b7c6e3ca4b5aa233fd69b5e44ef0f76a2791e445a46db661b"
+      "sha256": "23bf29a4437e6f23180e246f7cb7e91e11fcae970d8c424fee56c2e18caf16db"
     },
     {
       "path": "docs/assurance.md",
@@ -64,7 +64,7 @@
     },
     {
       "path": "docs/research/s03-evidence.md",
-      "sha256": "30981c93973f5cc6172ef6b494dbaee5ad65dfa77815e713a7cf9dccfb3c81d0"
+      "sha256": "2e60448727ebbaaf5c26179f3d6a418cfb45ef2ad8ab5401cb91d4127fbb8fb6"
     },
     {
       "path": "docs/research/s03-source-inspection.json",
@@ -108,15 +108,15 @@
     },
     {
       "path": "specifications/protocol-v1.json",
-      "sha256": "6ead5e53241a51cb352ab2ec79ccb3b0fa512e6d517c83e300644cd7778b4954"
+      "sha256": "543fad4148a7202c91ec119cd3ecca0bb924798180bac1db7419178e274180f1"
     },
     {
       "path": "specifications/protocol-v1.md",
-      "sha256": "5b6b278cccb9802f58f66a73df77113dda8961464c43a155e66379ae3e8f4358"
+      "sha256": "c6f35131da10d9d957a958e7c749135101c4feab415ca344cecf94173ce98313"
     },
     {
       "path": "specifications/relations/fzknum-1.0.0.json",
-      "sha256": "2b5c5447361122d6494adb13765ddbcd7f4de2e3dfdfcb86fcbf03eff65d7652"
+      "sha256": "9e39ed014bbb8867f4e200db4e3495dd60d19ee3a5881296f0c5dbdc06a9801f"
     },
     {
       "path": "specifications/reporting-requirements-v1.json",
@@ -124,7 +124,7 @@
     },
     {
       "path": "specifications/session-handoffs-v1.md",
-      "sha256": "b7a36ccb5e268b9ceac1104cafd4ee6b6e6cf6c931a06f57927378c71dec260c"
+      "sha256": "1a86ef30111bd95393e7a839b0c3c07f8099e065edd6dfe59684379d76a3ef35"
     },
     {
       "path": "specifications/source-inputs-v1.json",

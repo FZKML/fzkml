@@ -104,3 +104,24 @@ After adding the candidate contract and five mutation checks, the complete locke
 repository validation passed all 106 tests (34 S03 registry tests). Additional
 Ruff/strict mypy and both research validators passed; other sessions' source,
 experiments, shared schemas and workflows remain unchanged.
+
+## Reachable continuation boundary
+
+The scalar input domain is not closed under its update. S03 recomputed the
+original engineering witness with exact rational arithmetic: w=32; all x=8 and
+y=32; counts (1,2,1); prediction16, residual-16, gradient-8, step-2, local states34
+and weighted output136/4=34. The current one-step transition is supported, but
+34 exceeds the unchanged next-initial bound32. The protocol now explicitly
+revalidates every successor against the selected relation's input domain and
+stops unsupported continuation while retaining the valid prior release/history.
+Wire acceptance, silent clipping/resetting and unreviewed bound changes cannot
+satisfy that admission rule.
+
+The normalized relation pins S02's eight-observation raw artifact at
+`9d5060e54e70038416f1bddf9c14120194302eaa`, calculation source
+`d5e28970a36b43ccc1a6f72b18fef41e9914c7d7`, source_dirty=false and SHA-256
+`3142e7b12d986bbcf1c248e9f19f54c4d763a68ef92d0a69f47614871ca134ca`.
+Those metadata and bytes were checked; the reference remains candidate provenance
+pending certification. No peer implementation, fixture, raw artifact payload or
+new manuscript claim is adopted. Both research validators pass after refreshing
+protocol/relation content hashes; scientific/source-review statuses are unchanged.

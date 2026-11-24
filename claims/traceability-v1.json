@@ -14,7 +14,7 @@
     {
       "id": "fzknum-1.0.0",
       "path": "specifications/relations/fzknum-1.0.0.json",
-      "sha256": "2b5c5447361122d6494adb13765ddbcd7f4de2e3dfdfcb86fcbf03eff65d7652"
+      "sha256": "9e39ed014bbb8867f4e200db4e3495dd60d19ee3a5881296f0c5dbdc06a9801f"
     },
     {
       "id": "analytic-reference-v1",
@@ -25,7 +25,7 @@
   "protocol": {
     "id": "fzkml-research-service-1.0.0",
     "path": "specifications/protocol-v1.json",
-    "sha256": "6ead5e53241a51cb352ab2ec79ccb3b0fa512e6d517c83e300644cd7778b4954"
+    "sha256": "543fad4148a7202c91ec119cd3ecca0bb924798180bac1db7419178e274180f1"
   },
   "records": [
     {

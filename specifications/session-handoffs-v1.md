@@ -107,3 +107,12 @@ suite through unittest's load_tests hook; its CPU job alone does not. Local
 snapshot skips, full-command coverage and pending contribution certification are
 explicit. This catalog is not adopted claim evidence and does not authorize
 scientific publication, new source-review counts or status promotion.
+
+Continuation is conditional on numeric domain admission, separately from wire
+validity and parent-lineage checks. The normalized scalar relation now includes
+the reachable 32-to-34 trace: x=8/y=32 for each client, counts (1,2,1), exact
+intermediates and output34 outside the unchanged next-input bound32. Preserve the
+valid prior release and stop the next transition; widening/clipping/resetting
+requires an explicit reviewed relation migration. S02's eight-observation raw
+artifact is pinned as candidate provenance pending certification; no code,
+fixture or broad claim is adopted from it.
