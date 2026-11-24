@@ -47,6 +47,9 @@ branch. Automatic owner-request routing from the default-branch CODEOWNERS has
 not been exercised: the file is first introduced by this PR. The authenticated
 private draft-advisory listing returned successfully (zero advisories), verifying
 API access without creating or exposing a report.
+The maintainer subsequently confirmed in this session that they can access and
+manage private reports in Security → Advisories. End-to-end benign-report receipt
+remains untested and is not presented as a completed test.
 
 Before #5 is closed: obtain independent review of the controls and exercise owner
 routing/protected merge behavior with the reviewed policy on the default branch.
