@@ -92,6 +92,21 @@ class GovernanceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "hash lock differs"):
             validate(self.root, self.paths)
 
+    def test_ci_toolchain_inventory_drift(self):
+        mutations = {
+            "uv.lock": lambda text: text.replace('version = "4.25.1"', 'version = "99.0.0"'),
+            "Cargo.lock": lambda text: text + '\n[[package]]\nname = "unknown-crate"\nversion = "1.0.0"\n',
+            "tools-requirements.txt": lambda text: text.replace('--hash=sha256:', '--hash=sha256:0', 1),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(name=name):
+                path = self.root / name
+                original = path.read_text()
+                path.write_text(mutate(original))
+                with self.assertRaises(ValueError):
+                    validate(self.root, self.paths)
+                path.write_text(original)
+
     def test_private_or_escaped_paths(self):
         for name in ("../secret", "private/secret", "restricted/data"):
             with self.subTest(name=name):

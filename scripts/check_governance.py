@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+from check_ci_inventory import validate_ci_inventory
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -92,12 +93,14 @@ def validate(root, paths=None):
     pinned = sorted(d["name"] + "==" + d["version"] for d in deps["dependencies"])
     if sorted(requirements) != pinned:
         raise ValueError("dependency inventory differs from pinned requirements")
-    # Additional runtime/build package manifests need an explicit new inventory integration.
+    validate_ci_inventory(root)
+    integrated = {"pyproject.toml", "Cargo.toml", "crates/fzkml-core/Cargo.toml"}
+    # Additional runtime/build manifests still require explicit inventory integration.
     for name in actual:
         basename = Path(name).name
         if (basename in {"pyproject.toml", "package.json", "Cargo.toml", "go.mod",
                          "Pipfile", "setup.py", "setup.cfg", "poetry.lock"}
-                or (basename.startswith("requirements") and name != "requirements-dev.txt")):
+                or (basename.startswith("requirements") and name != "requirements-dev.txt")) and name not in integrated:
             raise ValueError("new package/dependency manifest requires inventory integration: " + name)
 
     manifest = read_json(root / "assets/manifest.json")

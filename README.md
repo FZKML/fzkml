@@ -37,21 +37,48 @@ see [the credit policy](docs/CREDIT.md).
 
 ## Local validation
 
-Python 3.9+ and Git are required for the standard-library checks:
-Stage new public files before validation; licensing coverage is checked against
-the Git index, matching the files a PR will contain.
-
-```sh
-python3 scripts/check_governance.py
-python3 -m unittest discover -s tests -v
-python3 scripts/build_source.py
-```
-
-For full citation schema validation, install the pinned development requirements
-in a virtual environment and run `python3 scripts/check_citation.py`. CI runs all
-these checks, checks DCO trailers on the PR commit range, and uploads inventories,
-their diff, and the source archive. No scientific experiment is implied by CI.
+Use the locked CPU setup and command below. Stage new public files before running
+validation: licensing coverage uses the Git index, matching the files a PR contains.
+CI also checks DCO trailers on the PR commit range. Governance/source validation
+runs without uploading broad source archives or arbitrary inventory diffs.
 
 Original code and engineering documentation use Apache-2.0, subject to the
 path-specific exceptions in [LICENSE-MAP.md](LICENSE-MAP.md). The private book is
 outside this repository's publication and licensing scope.
+
+## CPU validation and public reports
+
+Research infrastructure for scoped, reproducible claims. This repository currently
+contains a CPU development scaffold and public reporting validators. It contains
+no implemented proof backend and no measured scientific result.
+
+Install [rustup](https://rustup.rs/) and Python 3.11.14. From a clean Linux checkout:
+
+```sh
+python3.11 -m pip install --require-hashes -r tools-requirements.txt
+rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+uv sync --locked
+./scripts/validate
+./scripts/build-public-report
+```
+
+`./scripts/validate` is the single CPU validation command after installation. It
+checks exact tool versions, committed locks, Rust formatting/Clippy/tests, Python
+formatting/lint/strict types, adversarial validator tests and workflow policy.
+It requires neither GPU, cloud credentials nor paid services. Installation needs
+network access to the reviewed package registries; validation uses installed tools.
+`dist/` must not exist before building a report: move or remove your previous
+generated report explicitly before rebuilding.
+
+The Rust workspace reserves protocol ownership; Python owns reporting and
+experiments. LANG-01 (#9) still owns the proof-backend decision. No language choice
+provides a constant-time or cryptographic-security guarantee.
+
+Reports are in `dist/report.md`, `dist/report.html`, `dist/plots.svg`, and
+`dist/summary.json`; `results.json` and `claims.json` retain their exact inputs.
+The checked-in v0.1 scaffold lists tiny proof, native/circuit conformance, negative
+cases, costs and later research as **not-run**. Zero digests and workflow run 0 are
+explicit placeholders in these unexecuted fixtures, never real provenance.
+
+See [record contracts](docs/records.md), [workflow and publication policy](docs/security.md)
+and [implementation evidence and remaining work](docs/implementation.md).

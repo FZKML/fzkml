@@ -11,3 +11,11 @@
 /.github/ @guillaumelauzier
 /GOVERNANCE.md @guillaumelauzier
 /MAINTAINERS.md @guillaumelauzier
+
+# Requires a protected branch rule to enforce review. One owner is one approval.
+/schemas/ @guillaumelauzier
+/src/fzkml_ci/ @guillaumelauzier
+/tools-requirements.txt @guillaumelauzier
+/uv.lock @guillaumelauzier
+/Cargo.lock @guillaumelauzier
+/rust-toolchain.toml @guillaumelauzier

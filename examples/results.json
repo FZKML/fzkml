@@ -1,0 +1,320 @@
+{
+  "schema_version": "1.0.0",
+  "results": [
+    {
+      "schema_version": "1.0.0",
+      "run_id": "synthetic:tiny-proof-not-run",
+      "claim_ids": [],
+      "scenario": {
+        "id": "tiny-proof",
+        "statement": "pending-R002",
+        "relation_version": "pending",
+        "numerical_semantics": "pending",
+        "backend": "pending-LANG-01",
+        "security_mode": "synthetic-test",
+        "parameters_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "key_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "program_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "circuit_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "model": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        },
+        "dataset": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        }
+      },
+      "provenance": {
+        "source_commit": "0000000000000000000000000000000000000000",
+        "workflow_path": ".github/workflows/cpu.yml",
+        "workflow_run": 0,
+        "toolchain": "fixture-not-a-run",
+        "dependency_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "hardware": {
+          "cpu": "not-run",
+          "memory_bytes": 0,
+          "accelerator": "none",
+          "os": "not-run",
+          "runner_image_revision": "not-run"
+        }
+      },
+      "randomness": {
+        "public_experiment_seed": 0,
+        "protocol_randomness": "not-applicable",
+        "dp_randomness": "not-applicable"
+      },
+      "outcome": {
+        "status": "not-run",
+        "reason": "Awaiting scientific dependencies and proof implementation."
+      },
+      "repetitions": [],
+      "metrics": [],
+      "limitations": [
+        "Synthetic reporting fixture only; zero digests denote unavailable provenance. No proof or benchmark has run."
+      ],
+      "publication_review": {
+        "approved": true,
+        "review_id": "synthetic:fixture-review"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "run_id": "synthetic:native-circuit-conformance-not-run",
+      "claim_ids": [],
+      "scenario": {
+        "id": "native-circuit-conformance",
+        "statement": "pending-R002",
+        "relation_version": "pending",
+        "numerical_semantics": "pending",
+        "backend": "pending-LANG-01",
+        "security_mode": "synthetic-test",
+        "parameters_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "key_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "program_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "circuit_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "model": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        },
+        "dataset": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        }
+      },
+      "provenance": {
+        "source_commit": "0000000000000000000000000000000000000000",
+        "workflow_path": ".github/workflows/cpu.yml",
+        "workflow_run": 0,
+        "toolchain": "fixture-not-a-run",
+        "dependency_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "hardware": {
+          "cpu": "not-run",
+          "memory_bytes": 0,
+          "accelerator": "none",
+          "os": "not-run",
+          "runner_image_revision": "not-run"
+        }
+      },
+      "randomness": {
+        "public_experiment_seed": 0,
+        "protocol_randomness": "not-applicable",
+        "dp_randomness": "not-applicable"
+      },
+      "outcome": {
+        "status": "not-run",
+        "reason": "Awaiting scientific dependencies and proof implementation."
+      },
+      "repetitions": [],
+      "metrics": [],
+      "limitations": [
+        "Synthetic reporting fixture only; zero digests denote unavailable provenance. No proof or benchmark has run."
+      ],
+      "publication_review": {
+        "approved": true,
+        "review_id": "synthetic:fixture-review"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "run_id": "synthetic:negative-cases-not-run",
+      "claim_ids": [],
+      "scenario": {
+        "id": "negative-cases",
+        "statement": "pending-R002",
+        "relation_version": "pending",
+        "numerical_semantics": "pending",
+        "backend": "pending-LANG-01",
+        "security_mode": "synthetic-test",
+        "parameters_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "key_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "program_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "circuit_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "model": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        },
+        "dataset": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        }
+      },
+      "provenance": {
+        "source_commit": "0000000000000000000000000000000000000000",
+        "workflow_path": ".github/workflows/cpu.yml",
+        "workflow_run": 0,
+        "toolchain": "fixture-not-a-run",
+        "dependency_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "hardware": {
+          "cpu": "not-run",
+          "memory_bytes": 0,
+          "accelerator": "none",
+          "os": "not-run",
+          "runner_image_revision": "not-run"
+        }
+      },
+      "randomness": {
+        "public_experiment_seed": 0,
+        "protocol_randomness": "not-applicable",
+        "dp_randomness": "not-applicable"
+      },
+      "outcome": {
+        "status": "not-run",
+        "reason": "Awaiting scientific dependencies and proof implementation."
+      },
+      "repetitions": [],
+      "metrics": [],
+      "limitations": [
+        "Synthetic reporting fixture only; zero digests denote unavailable provenance. No proof or benchmark has run."
+      ],
+      "publication_review": {
+        "approved": true,
+        "review_id": "synthetic:fixture-review"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "run_id": "synthetic:costs-not-run",
+      "claim_ids": [],
+      "scenario": {
+        "id": "costs",
+        "statement": "pending-R002",
+        "relation_version": "pending",
+        "numerical_semantics": "pending",
+        "backend": "pending-LANG-01",
+        "security_mode": "synthetic-test",
+        "parameters_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "key_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "program_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "circuit_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "model": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        },
+        "dataset": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        }
+      },
+      "provenance": {
+        "source_commit": "0000000000000000000000000000000000000000",
+        "workflow_path": ".github/workflows/cpu.yml",
+        "workflow_run": 0,
+        "toolchain": "fixture-not-a-run",
+        "dependency_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "hardware": {
+          "cpu": "not-run",
+          "memory_bytes": 0,
+          "accelerator": "none",
+          "os": "not-run",
+          "runner_image_revision": "not-run"
+        }
+      },
+      "randomness": {
+        "public_experiment_seed": 0,
+        "protocol_randomness": "not-applicable",
+        "dp_randomness": "not-applicable"
+      },
+      "outcome": {
+        "status": "not-run",
+        "reason": "Awaiting scientific dependencies and proof implementation."
+      },
+      "repetitions": [],
+      "metrics": [],
+      "limitations": [
+        "Synthetic reporting fixture only; zero digests denote unavailable provenance. No proof or benchmark has run."
+      ],
+      "publication_review": {
+        "approved": true,
+        "review_id": "synthetic:fixture-review"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "run_id": "synthetic:later-research-not-run",
+      "claim_ids": [],
+      "scenario": {
+        "id": "later-research",
+        "statement": "pending-R002",
+        "relation_version": "pending",
+        "numerical_semantics": "pending",
+        "backend": "pending-LANG-01",
+        "security_mode": "synthetic-test",
+        "parameters_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "key_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "program_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "circuit_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "model": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        },
+        "dataset": {
+          "id": "synthetic:placeholder",
+          "version": "0",
+          "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "license": "CC0-1.0",
+          "publication": "permitted"
+        }
+      },
+      "provenance": {
+        "source_commit": "0000000000000000000000000000000000000000",
+        "workflow_path": ".github/workflows/cpu.yml",
+        "workflow_run": 0,
+        "toolchain": "fixture-not-a-run",
+        "dependency_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "hardware": {
+          "cpu": "not-run",
+          "memory_bytes": 0,
+          "accelerator": "none",
+          "os": "not-run",
+          "runner_image_revision": "not-run"
+        }
+      },
+      "randomness": {
+        "public_experiment_seed": 0,
+        "protocol_randomness": "not-applicable",
+        "dp_randomness": "not-applicable"
+      },
+      "outcome": {
+        "status": "not-run",
+        "reason": "Awaiting scientific dependencies and proof implementation."
+      },
+      "repetitions": [],
+      "metrics": [],
+      "limitations": [
+        "Synthetic reporting fixture only; zero digests denote unavailable provenance. No proof or benchmark has run."
+      ],
+      "publication_review": {
+        "approved": true,
+        "review_id": "synthetic:fixture-review"
+      }
+    }
+  ]
+}
