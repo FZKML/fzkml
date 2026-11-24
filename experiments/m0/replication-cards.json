@@ -1,0 +1,141 @@
+{
+  "version": "0.1",
+  "cards": [
+    {
+      "id": "fedavg-2017",
+      "source_url": "https://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf",
+      "source_version": "AISTATS 2017, PMLR 54:1273-1282; section 3, Table 1",
+      "original_setting": "MNIST model averaging with 100 simulated partitions; IID and label-skew splits.",
+      "reported_metric": "Table 1 reports rounds to fixed accuracy and speedup, with failed target runs retained.",
+      "population": {
+        "source_sites": null,
+        "training_clients": 100,
+        "held_out_sites": null,
+        "virtual_clients": 100,
+        "physical_concurrent_participants": null
+      },
+      "resources": "Physical concurrency/hardware for this selected table is not established by this card.",
+      "missing": "Pinned original implementation/data artifacts and their licenses have not been recovered or adopted.",
+      "changes": "A future two-feature synthetic surrogate changes model, data and workload; it is an adaptation, not reproduction of Table 1.",
+      "mode": "adaptation",
+      "mode_definitions": {
+        "reproduction": "same original artifact/configuration",
+        "replication": "independent implementation of the same scoped experiment",
+        "adaptation": "changed data/model/threat/workload"
+      },
+      "execution_status": "not-run",
+      "code_license": "unreviewed; no code imported",
+      "data_license": "not adopted; source-specific review required",
+      "source_accessed": "2026-11-24",
+      "responsible_issue": 22,
+      "required_before_execution": [
+        "immutable code/data versions and checksums",
+        "license/terms review",
+        "matching scientific preregistration"
+      ],
+      "evidence_status": "published-reference-only; not local evidence"
+    },
+    {
+      "id": "secagg-2017",
+      "source_url": "https://acmccs.github.io/papers/p1175-bonawitzA.pdf",
+      "source_version": "CCS 2017, DOI 10.1145/3133956.3133982; sections 7.1 and 7.3",
+      "original_setting": "Single-server secure sum; prototype simulations use the honest-but-curious configuration.",
+      "reported_metric": "Communication expansion 1.73 for 1024 users and 2^20 coordinates with 16-bit inputs; not a full training proof benchmark.",
+      "population": {
+        "source_sites": null,
+        "training_clients": null,
+        "held_out_sites": null,
+        "virtual_clients": 1024,
+        "physical_concurrent_participants": null
+      },
+      "resources": "Single-threaded Linux simulation on one Xeon E5-1650 v3 host, 3.50 GHz, 32 GB RAM; virtual clients do not establish physically concurrent participants.",
+      "missing": "Original runnable code/license and matching hardware not obtained in this workstream.",
+      "changes": "Future local reconstruction of the communication formula would be replication; a small synthetic protocol would be an adaptation.",
+      "mode": "adaptation",
+      "mode_definitions": {
+        "reproduction": "same original artifact/configuration",
+        "replication": "independent implementation of the same scoped experiment",
+        "adaptation": "changed data/model/threat/workload"
+      },
+      "execution_status": "not-run",
+      "code_license": "unreviewed; no code imported",
+      "data_license": "not adopted; source-specific review required",
+      "source_accessed": "2026-11-24",
+      "responsible_issue": 22,
+      "required_before_execution": [
+        "immutable code/data versions and checksums",
+        "license/terms review",
+        "matching scientific preregistration"
+      ],
+      "evidence_status": "published-reference-only; not local evidence"
+    },
+    {
+      "id": "discrete-gaussian-2021",
+      "source_url": "https://proceedings.mlr.press/v139/kairouz21a.html",
+      "source_version": "ICML 2021, PMLR 139:5201-5212; proceedings abstract inspected only",
+      "original_setting": "On-device discrete Gaussian noise with discretization and modular secure aggregation.",
+      "reported_metric": "Authors report central-DP-like accuracy at less than 16 bits per value; no FZKML proof-cost result.",
+      "population": {
+        "source_sites": null,
+        "training_clients": null,
+        "held_out_sites": null,
+        "virtual_clients": null,
+        "physical_concurrent_participants": null
+      },
+      "resources": "Full theorem parameters, workload, hardware and population counts remain pending full-text review.",
+      "missing": "Code/data versions, terms and theorem-to-implementation match have not been inspected.",
+      "changes": "No local DP implementation; a finite-arithmetic adoption needs theorem-matched noise and coalition assumptions under #55.",
+      "mode": "adaptation",
+      "mode_definitions": {
+        "reproduction": "same original artifact/configuration",
+        "replication": "independent implementation of the same scoped experiment",
+        "adaptation": "changed data/model/threat/workload"
+      },
+      "execution_status": "not-run",
+      "code_license": "unreviewed; no code imported",
+      "data_license": "not adopted; source-specific review required",
+      "source_accessed": "2026-11-24",
+      "responsible_issue": 22,
+      "required_before_execution": [
+        "immutable code/data versions and checksums",
+        "license/terms review",
+        "matching scientific preregistration"
+      ],
+      "evidence_status": "published-reference-only; not local evidence"
+    },
+    {
+      "id": "melloddy",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11005050/",
+      "source_version": "DOI 10.1021/acs.jcim.3c00799, JCIM 64(7):2331-2344; Methods, Figure 4, Data Availability Statement",
+      "original_setting": "Cross-endpoint QSAR collaboration among ten pharma partners with private data and model heads.",
+      "reported_metric": "Task-level AUC-PR and regression performance comparisons; industrial evidence does not establish FZKML security or a causal adoption effect.",
+      "population": {
+        "source_sites": 10,
+        "training_clients": 10,
+        "held_out_sites": null,
+        "virtual_clients": null,
+        "physical_concurrent_participants": null
+      },
+      "resources": "Ten organizational partners are not a verified count of simultaneous physical workers; matching hardware is not available here.",
+      "missing": "The source explicitly excludes publication of underlying private datasets and derived models. Exact reproduction is unavailable.",
+      "changes": "A synthetic diversity study is an adaptation; it cannot reproduce proprietary outcomes.",
+      "mode": "adaptation",
+      "mode_definitions": {
+        "reproduction": "same original artifact/configuration",
+        "replication": "independent implementation of the same scoped experiment",
+        "adaptation": "changed data/model/threat/workload"
+      },
+      "execution_status": "not-run",
+      "code_license": "unreviewed; no code imported",
+      "data_license": "not adopted; source-specific review required",
+      "source_accessed": "2026-11-24",
+      "responsible_issue": 22,
+      "required_before_execution": [
+        "immutable code/data versions and checksums",
+        "license/terms review",
+        "matching scientific preregistration"
+      ],
+      "evidence_status": "published-reference-only; not local evidence"
+    }
+  ]
+}

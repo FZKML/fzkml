@@ -12,7 +12,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("command", choices=["report", "verify-report", "workflow-policy"])
     parser.add_argument("--results", type=Path, default=Path("examples/results.json"))
-    parser.add_argument("--claims", type=Path, default=Path("examples/claims.json"))
+    parser.add_argument("--claims", type=Path, default=Path("claims/registry.json"))
     parser.add_argument("--output", type=Path, default=Path("dist"))
     args = parser.parse_args()
     try:
