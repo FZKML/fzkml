@@ -49,7 +49,7 @@ fn smoke(fuzz_cases: usize) -> Result<(), ContractError> {
         counts: [1, 2, 1],
     };
     let input = batch.encode()?;
-    let context = Context::synthetic(session.key_id(), batch.counts);
+    let context = Context::synthetic(session.key_id(), batch.counts, batch.w);
     let prepared = session.prepare(&input, context.clone())?;
     let expected = prepared.precommit();
     let repeated_opening = session.prepare(&input, context.clone())?;
@@ -70,7 +70,7 @@ fn smoke(fuzz_cases: usize) -> Result<(), ContractError> {
     let start = Instant::now();
     let original = Envelope::decode(&proved.bytes)?;
     let mut substitutions = 0;
-    for field in 0..12 {
+    for field in 0..18 {
         let mut changed = Envelope::decode(&proved.bytes)?;
         match field {
             0 => changed.statement.model_commitment[0] ^= 1,
@@ -81,9 +81,15 @@ fn smoke(fuzz_cases: usize) -> Result<(), ContractError> {
             5 => changed.statement.context.roster.swap(0, 1),
             6 => changed.statement.context.counts[0] = 2,
             7 => changed.statement.output += 1,
-            8 => changed.statement.context.model_version[0] ^= 1,
-            9 => changed.statement.context.data_policy[0] ^= 1,
-            10 => changed.statement.context.optimizer[0] ^= 1,
+            8 => changed.statement.context.parent_value -= 1,
+            9 => changed.statement.context.model_version[0] ^= 1,
+            10 => changed.statement.context.preprocessing[0] ^= 1,
+            11 => changed.statement.context.initialization[0] ^= 1,
+            12 => changed.statement.context.local_step_count += 1,
+            13 => changed.statement.context.data_policy[0] ^= 1,
+            14 => changed.statement.context.optimizer[0] ^= 1,
+            15 => changed.statement.context.relation[0] ^= 1,
+            16 => changed.statement.context.contract[0] ^= 1,
             _ => changed.statement.context.key_id[0] ^= 1,
         }
         require(
@@ -113,7 +119,7 @@ fn smoke(fuzz_cases: usize) -> Result<(), ContractError> {
         session.prepare(&input, wrong_key).is_err(),
         "wrong-key-accepted",
     )?;
-    let mut other_context = context;
+    let mut other_context = context.clone();
     other_context.session[0] ^= 1;
     let other_prepared = session.prepare(&input, other_context)?;
     let other_expected = other_prepared.precommit();
@@ -141,6 +147,42 @@ fn smoke(fuzz_cases: usize) -> Result<(), ContractError> {
         state.accept(&session, &proved.bytes).is_err() && state.receipt() == Some(receipt),
         "replay-consumed-twice",
     )?;
+    let mut chain = TransitionChain::new(expected.clone())?;
+    let parent_receipt = chain.accept(&session, &proved.bytes)?;
+    let mut next_context = context.clone();
+    next_context.round = 2;
+    next_context.parent = parent_receipt;
+    next_context.parent_value = 9;
+    let mut stale_context = next_context.clone();
+    stale_context.parent[0] ^= 1;
+    require(
+        chain.validate_next_context(&stale_context).is_err(),
+        "stale-parent-accepted",
+    )?;
+    let mut wrong_parent_value = next_context.clone();
+    wrong_parent_value.parent_value = 8;
+    require(
+        chain.validate_next_context(&wrong_parent_value).is_err(),
+        "wrong-parent-state-accepted",
+    )?;
+    let next_batch = Batch { w: 9, ..batch };
+    let next_input = next_batch.encode()?;
+    let next_prepared = session.prepare(&next_input, next_context)?;
+    let next_expected = next_prepared.precommit();
+    chain.advance(next_expected.clone())?;
+    require(
+        chain.accept(&session, &proved.bytes).is_err(),
+        "cross-round-replay-accepted",
+    )?;
+    let next_proof = session.prove(next_prepared)?;
+    let second_verification_start = Instant::now();
+    require(
+        session.verify(&next_expected, &next_proof.bytes)?,
+        "second-transition-verification-failed",
+    )?;
+    let second_verification_s = second_verification_start.elapsed().as_secs_f64();
+    let next_receipt = chain.accept(&session, &next_proof.bytes)?;
+    require(next_receipt != parent_receipt, "lineage-receipt-reused")?;
     let mut rng = StdRng::seed_from_u64(20261124);
     for _ in 0..fuzz_cases {
         let mut mutated = proved.bytes;
@@ -154,7 +196,7 @@ fn smoke(fuzz_cases: usize) -> Result<(), ContractError> {
             "fuzz-mutant-accepted",
         )?;
     }
-    for offset in [0, 8, 10, 12, 44, 444] {
+    for offset in [0, 8, 12, 44, 520] {
         let mut mutated = proved.bytes;
         mutated[offset] ^= 1;
         require(
@@ -164,12 +206,14 @@ fn smoke(fuzz_cases: usize) -> Result<(), ContractError> {
     }
     let validation_s = start.elapsed().as_secs_f64();
     println!(
-        "{{\"contract_version\":\"fzk-private-1.0.0\",\"numeric_contract\":\"fzknum-1.0.0\",\"verified\":true,\"output\":9,\"proof_bytes\":128,\"envelope_bytes\":576,\"constraints\":{},\"public_field_count\":101,\"setup_seconds\":{},\"witness_seconds\":{},\"proving_seconds\":{},\"verification_seconds\":{},\"validation_seconds\":{},\"key_id\":\"{}\",\"parameters_id\":\"{}\",\"statement_digest\":\"{}\",\"substitutions_rejected\":{},\"fuzz_cases\":{},\"fresh_allowed_proof_verified\":true,\"wrong_expected_rejected\":true,\"replay_rejected\":true}}",
+        "{{\"contract_version\":\"fzk-private-2.0.0\",\"numeric_contract\":\"fzknum-1.0.0\",\"verified\":true,\"output\":9,\"proof_bytes\":128,\"envelope_bytes\":652,\"constraints\":{},\"public_field_count\":102,\"setup_seconds\":{},\"witness_seconds\":{},\"proving_seconds\":{},\"verification_seconds\":{},\"second_proving_seconds\":{},\"second_verification_seconds\":{},\"validation_seconds\":{},\"key_id\":\"{}\",\"parameters_id\":\"{}\",\"statement_digest\":\"{}\",\"substitutions_rejected\":{},\"fuzz_cases\":{},\"fresh_allowed_proof_verified\":true,\"wrong_expected_rejected\":true,\"replay_rejected\":true,\"two_transition_chain_verified\":true,\"stale_parent_rejected\":true,\"cross_round_replay_rejected\":true}}",
         session.constraints(),
         setup_s,
         proved.witness_seconds,
         proved.proving_seconds,
         verification_s,
+        next_proof.proving_seconds,
+        second_verification_s,
         validation_s,
         hex(&session.key_id()),
         hex(&session.parameters_id()),
@@ -201,7 +245,7 @@ fn audit() -> Result<(), ContractError> {
         }
         let (satisfied, n, public) = constraint_audit_details(&unhex(encoded)?, expected)?;
         require(
-            satisfied && public == 102,
+            satisfied && public == 103,
             "private-circuit-oracle-mismatch",
         )?;
         if count != 0 {
@@ -212,7 +256,7 @@ fn audit() -> Result<(), ContractError> {
     }
     require(count > 0, "empty-audit")?;
     println!(
-        "{{\"contract_version\":\"fzk-private-1.0.0\",\"fixture_version\":\"numeric-v1\",\"cases\":{count},\"constraints\":{constraints},\"public_field_count\":101,\"all_satisfied\":true}}"
+        "{{\"contract_version\":\"fzk-private-2.0.0\",\"fixture_version\":\"numeric-v1\",\"cases\":{count},\"constraints\":{constraints},\"public_field_count\":102,\"all_satisfied\":true}}"
     );
     Ok(())
 }
