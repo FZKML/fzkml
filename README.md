@@ -11,6 +11,11 @@ conformance, an arkworks Groth16 local research proof, PyO3 bindings and a CPU
 PyTorch comparison. All scenario inputs are public. No production security or
 training-data privacy guarantee is established; the prototype is not externally audited.
 
+The [M0 research registry](docs/research/README.md) records 80 chapter and 48
+exercise work mappings, selected manuscript prose claims, versioned deployment
+and measurement specifications, and explicit source-review gaps. Deterministic
+synthetic fixture generation and split checks are implemented.
+
 The first implemented numeric workflow is a local deterministic round on three
 original synthetic clients under the [exact contract](specs/NUMERIC-CONTRACT.md).
 See [architecture](docs/ADR-001-RUST-PYTHON.md) and

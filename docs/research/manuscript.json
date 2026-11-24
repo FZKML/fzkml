@@ -1,0 +1,23 @@
+{
+  "registry_version": "1.0.0",
+  "edition_id": "MS20261124",
+  "author_declared_edition": null,
+  "title": "Collaborative Privacy-Preserving Artificial Intelligence — Federated Zero-Knowledge Machine Learning",
+  "canonical_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+  "document_id": "14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY",
+  "tab_id": "t.0",
+  "observed_revision_id": "AHj4eMTDhszajz9XWwtYr25APOt8jDNWJ06dbjKxf-xlK9xmwk34ZzwRRUkjWfouVFGjH-x3SMlEEFPR_syq3-Z8kERBX1SruWGFOdkln3SW",
+  "observed_date": "2026-11-24",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "text_only_sha256": "e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "extraction_method": "Google Docs get_document; depth-first body/table paragraphs in tab t.0, concatenate textRun.content in document order, UTF-8 without normalization. Native equation elements contribute no text.",
+  "native_equations": {
+    "count": 417,
+    "content_status": "pending-source-review",
+    "reason": "Docs returned equation:{} with UTF-16 ranges, without formula contents."
+  },
+  "inspection_scope": "All chapter/exercise headings indexed; only selected M0 prose claims extracted. Neither all prose nor all mathematics is reviewed.",
+  "snapshot_policy": "Revision and text digest identify this observation; no complete immutable manuscript snapshot is published. Obtain an authorized private archive before equation-dependent promotion.",
+  "publication_rights": "undecided; manuscript excluded from Apache-2.0 software distribution",
+  "source_access": "Use connected Google Docs with owner-granted access. No local manuscript path is assumed."
+}
