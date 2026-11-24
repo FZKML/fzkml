@@ -3692,6 +3692,15 @@
       ],
       "notice_files": []
     },
+    "specs/private-transition-v2.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "tests/test_private_transcript.py": {
       "license": "Apache-2.0",
       "origin": "original",
