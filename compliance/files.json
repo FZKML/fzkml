@@ -3242,6 +3242,24 @@
       ],
       "notice_files": []
     },
+    "evidence/s02/local-v1/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original mathematical-reference evidence; source, input and software provenance recorded with the artifact.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/local-v1/math-run.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original mathematical-reference evidence; source, input and software provenance recorded with the artifact.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "examples/claims.json": {
       "license": "Apache-2.0",
       "origin": "original",
