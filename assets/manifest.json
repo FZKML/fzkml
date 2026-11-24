@@ -79,6 +79,47 @@
         "date": "2026-11-24",
         "decision": "Source-only synthetic conformance payload under the repository license. No independent benchmark adoption approval is asserted."
       }
+    },
+    {
+      "id": "transcript-analytic-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/transcript-privacy-research/src/fzkml_transcript/fixtures.py",
+      "version": "transcript-analytic-1; exact bytes identified by SHA-256",
+      "path": "assets/public/transcript-analytic-v1.json",
+      "sha256": "ae294df7023abc6e7639e9e3baa3cc1899bc041d0e1733fc0717a85a344c0d72",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original analytic fixture implementation generated with Codex; manuscript and primary source references recorded separately.",
+      "intended_use": "Exact mathematical/synthetic conformance cases only, not a private dataset or deployed privacy benchmark.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Deterministic exact rational functions and one named erf approximation; no sampled data",
+        "configuration": {
+          "precision": "(8/5)I_3-(1/2)11^T",
+          "clip_bound": 1,
+          "delta_over_sigma": "1/10",
+          "final_inclusions": [
+            "1",
+            "1/10"
+          ],
+          "seed": "not applicable; no sampling"
+        }
+      },
+      "source_inputs": "No data/model inputs. Mathematical parameters refer to inspected source locations in docs/research/transcript-source-review.json.",
+      "review": {
+        "status": "approved",
+        "reviewer": "original synthetic contribution submitted for maintainer review",
+        "date": "2026-11-24",
+        "decision": "Original analytic fixture only; no independent benchmark/privacy approval asserted."
+      }
     }
   ]
 }

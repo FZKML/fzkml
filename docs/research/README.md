@@ -1,15 +1,18 @@
 # M0 research registry
 
 This directory records source locations and original engineering decisions for
-issues #12–14 and #19–23. It contains no manuscript body or native equation
+issues #12–14, #19–23 and #56–#59. It contains no manuscript body or native equation
 payload. The manuscript remains outside the software license and distribution.
 
 - `manuscript.json`: canonical Google Doc, observed revision, text-only digest,
   extraction method and source-access limitations.
 - `coverage.json`: all 80 chapters and 48 exercises, their issue mappings and
   explicit extraction state. A mapping is a work assignment, not evidence.
-- `source-index.json`: section anchors and native-equation positions. Equation
-  contents are unavailable through the Docs read used here and remain pending.
+- `source-index.json`: section anchors and native-equation positions. Fourteen
+  selected equations have inspected authorized export markup; remaining equation
+  contents are pending. Source inspection never means independent proof review.
+- `transcript-source-review.json`: source revision/export digest, exact inspected
+  equation IDs and the assumptions of the entropy, covariance and inclusion cases.
 - `claim-context.json`: source locations, observer, privacy unit, numeric scope,
   required validation and implementation state for each registered claim.
 - `coverage-report.md`: generated accounting; never a book-verification badge.
@@ -54,3 +57,7 @@ During parallel development, an explicit `--ci-root` argument checks this regist
 against the shared schema in another checkout.
 The research checker adds scientific metadata consistency and coverage checks;
 neither command establishes a theorem or protocol security.
+
+`src/fzkml_transcript/` and `specs/privacy/transcript-v0.1.md` add exact analytic
+fixtures and a synthetic durable accounting reference. They do not instantiate a
+finite Gaussian sampler or a production protected release protocol.

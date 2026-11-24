@@ -13,8 +13,10 @@
   "extraction_method": "Google Docs get_document; depth-first body/table paragraphs in tab t.0, concatenate textRun.content in document order, UTF-8 without normalization. Native equation elements contribute no text.",
   "native_equations": {
     "count": 417,
-    "content_status": "pending-source-review",
-    "reason": "Docs returned equation:{} with UTF-16 ranges, without formula contents."
+    "content_status": "partial-source-review",
+    "reason": "Docs returned equation:{} with UTF-16 ranges, without formula contents.",
+    "inspected_count": 14,
+    "inspection_record": "docs/research/transcript-source-review.json"
   },
   "inspection_scope": "All chapter/exercise headings indexed; only selected M0 prose claims extracted. Neither all prose nor all mathematics is reviewed.",
   "snapshot_policy": "Revision and text digest identify this observation; no complete immutable manuscript snapshot is published. Obtain an authorized private archive before equation-dependent promotion.",
