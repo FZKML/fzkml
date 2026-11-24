@@ -1,0 +1,593 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/schemas/result-1.1.0.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "1.1.0"
+      ]
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^(synthetic|public):[A-Za-z0-9._-]{1,100}$"
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^FZK-[A-Z0-9]+-C[0-9]{2}-[A-Z0-9]+-[0-9]{3}$"
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "scenario": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "statement": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "relation_version": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "numerical_semantics": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "backend": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "security_mode": {
+          "enum": [
+            "synthetic-test",
+            "research",
+            "production-declared"
+          ]
+        },
+        "parameters_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "key_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "program_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "circuit_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "model": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^(synthetic|public):[A-Za-z0-9._-]{1,100}$"
+            },
+            "version": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "digest": {
+              "type": "string",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            },
+            "license": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "publication": {
+              "enum": [
+                "permitted"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "version",
+            "digest",
+            "license",
+            "publication"
+          ]
+        },
+        "dataset": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^(synthetic|public):[A-Za-z0-9._-]{1,100}$"
+            },
+            "version": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "digest": {
+              "type": "string",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            },
+            "license": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "publication": {
+              "enum": [
+                "permitted"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "version",
+            "digest",
+            "license",
+            "publication"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "statement",
+        "relation_version",
+        "numerical_semantics",
+        "backend",
+        "security_mode",
+        "parameters_digest",
+        "key_digest",
+        "program_digest",
+        "circuit_digest",
+        "model",
+        "dataset"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "workflow_path": {
+          "anyOf": [
+            {
+              "enum": [
+                ".github/workflows/cpu.yml",
+                ".github/workflows/reports.yml",
+                ".github/workflows/language.yml"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "workflow_run": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "toolchain": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "dependency_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "hardware": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "cpu": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "memory_bytes": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1e+18
+            },
+            "accelerator": {
+              "enum": [
+                "none"
+              ]
+            },
+            "os": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "runner_image_revision": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            }
+          },
+          "required": [
+            "cpu",
+            "memory_bytes",
+            "accelerator",
+            "os",
+            "runner_image_revision"
+          ]
+        },
+        "execution_kind": {
+          "enum": [
+            "local",
+            "github-actions"
+          ]
+        }
+      },
+      "required": [
+        "source_commit",
+        "workflow_path",
+        "workflow_run",
+        "toolchain",
+        "dependency_digest",
+        "hardware",
+        "execution_kind"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "execution_kind": {
+                "const": "local"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "workflow_path": {
+                "type": "null"
+              },
+              "workflow_run": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "workflow_path": {
+                "type": "string"
+              },
+              "workflow_run": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "randomness": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "public_experiment_seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "protocol_randomness": {
+          "enum": [
+            "private-not-recorded",
+            "not-applicable"
+          ]
+        },
+        "dp_randomness": {
+          "enum": [
+            "private-not-recorded",
+            "not-applicable"
+          ]
+        }
+      },
+      "required": [
+        "public_experiment_seed",
+        "protocol_randomness",
+        "dp_randomness"
+      ]
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "not-run",
+            "unsupported",
+            "failed",
+            "inconclusive",
+            "successful"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "status",
+        "reason"
+      ]
+    },
+    "repetitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+          },
+          "attempt": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": {
+            "enum": [
+              "failed",
+              "inconclusive",
+              "successful"
+            ]
+          },
+          "timeout": {
+            "type": "boolean"
+          },
+          "excluded": {
+            "type": "boolean"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "measurements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "phase": {
+                  "enum": [
+                    "setup",
+                    "prove",
+                    "verify",
+                    "train",
+                    "evaluate",
+                    "communicate",
+                    "witness",
+                    "prepare",
+                    "aggregate",
+                    "release",
+              "end-to-end"
+                  ]
+                },
+                "quantity": {
+                  "enum": [
+                    "time",
+                    "memory",
+                    "communication",
+                    "quality"
+                  ]
+                },
+                "unit": {
+                  "enum": [
+                    "s",
+                    "byte",
+                    "ratio",
+                    "count"
+                  ]
+                },
+                "value": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1e+18
+                }
+              },
+              "required": [
+                "phase",
+                "quantity",
+                "unit",
+                "value"
+              ]
+            },
+            "minItems": 0,
+            "maxItems": 1000,
+            "uniqueItems": true
+          },
+          "quality": {
+            "enum": [
+              "pass",
+              "fail",
+              "not-measured"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "attempt",
+          "status",
+          "timeout",
+          "excluded",
+          "reason",
+          "measurements",
+          "quality"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "phase": {
+            "enum": [
+              "setup",
+              "prove",
+              "verify",
+              "train",
+              "evaluate",
+              "communicate",
+              "witness",
+              "prepare",
+              "aggregate",
+              "release",
+              "end-to-end"
+            ]
+          },
+          "quantity": {
+            "enum": [
+              "time",
+              "memory",
+              "communication",
+              "quality"
+            ]
+          },
+          "unit": {
+            "enum": [
+              "s",
+              "byte",
+              "ratio",
+              "count"
+            ]
+          },
+          "aggregation": {
+            "enum": [
+              "mean",
+              "median",
+              "min",
+              "max",
+              "sum"
+            ]
+          },
+          "repetition_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "minItems": 1,
+            "maxItems": 1000,
+            "uniqueItems": true
+          },
+          "value": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1e+18
+          }
+        },
+        "required": [
+          "phase",
+          "quantity",
+          "unit",
+          "aggregation",
+          "repetition_ids",
+          "value"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      },
+      "minItems": 1,
+      "maxItems": 1000,
+      "uniqueItems": true
+    },
+    "privacy_accounting": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mechanism": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "privacy_unit": {
+          "enum": [
+            "synthetic-record",
+            "public-record"
+          ]
+        },
+        "epsilon": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1e+18
+        },
+        "delta": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "mechanism",
+        "privacy_unit",
+        "epsilon",
+        "delta"
+      ]
+    },
+    "publication_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "approved": {
+          "type": "boolean"
+        },
+        "review_id": {
+          "type": "string",
+          "pattern": "^(synthetic|public):[A-Za-z0-9._-]{1,100}$"
+        }
+      },
+      "required": [
+        "approved",
+        "review_id"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "claim_ids",
+    "scenario",
+    "provenance",
+    "randomness",
+    "outcome",
+    "repetitions",
+    "metrics",
+    "limitations",
+    "publication_review"
+  ]
+}
