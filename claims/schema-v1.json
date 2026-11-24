@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/claims/schema-v1.json",
+  "$comment": "The authoritative claim schema remains the shared CI-05 1.0.0 contract; this local alias does not fork it.",
+  "$ref": "../schemas/claims-1.0.0.json"
+}

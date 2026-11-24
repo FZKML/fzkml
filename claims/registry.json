@@ -351,7 +351,7 @@
         "scope": "Pending independent domain review; no approval claimed."
       },
       "limitations": [
-        "Source prose inspected; native equation payloads are not extracted.",
+        "The referenced worked-step equation markup was inspected; general source extraction remains partial.",
         "Specification/design only; no training or cryptographic implementation evidence."
       ],
       "observer": "external",
@@ -637,6 +637,294 @@
       "observer": "external",
       "privacy_unit": "not-applicable",
       "numerical_semantics": "not-applicable"
+    },
+    {
+      "id": "FZK-MS20261124-C47-ENTROPY-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 47,
+        "section": "anchor.h.46hgt8p76kii",
+        "equation": "native.154277",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "assumption-theorem",
+      "statement": "If honest H is uniformly distributed conditional on the observer view and the adversarial contribution A, then H XOR A remains conditional-uniform; seed expansion, binding or domain separation alone does not establish that premise.",
+      "evidence_class": "specification",
+      "scope": "Conditional elementary entropy requirement; no distributed entropy protocol is implemented.",
+      "assumptions": [
+        "H is uniform conditional on both the prior observer view and A.",
+        "A is fixed without learning H; later disclosure and selective inclusion are excluded."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 56,
+      "status": "specified",
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "exact-rational-v1",
+      "evidence_ids": [
+        "spec-transcript-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal artifact/kernel check; unit tests do not prove the general theorem."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Independent mathematical/protocol/privacy review pending."
+      },
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "id": "FZK-MS20261124-C47-RETRY-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 47,
+        "section": "anchor.h.7it5eevtnxo1",
+        "equation": "native.156319",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "implementation-relation",
+      "statement": "The analytic reference computes the half-normal retry counterexample delta floor erf(Delta/(sigma*sqrt(2))) and distinguishes resampling from a one-shot fixed public-output filter; unavailable entropy/retry assumptions reject.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Deterministic analytic fixture and declared-policy conformance, not a protected deployment.",
+      "assumptions": [
+        "Ideal continuous Gaussian noise; rejector observes its sign.",
+        "Neighboring queries are 0 and Delta>0; this is not a finite sampler theorem."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 56,
+      "status": "tested",
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "exact-rational-v1",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-retry-test"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal artifact/kernel check; unit tests do not prove the general theorem."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Independent mathematical/protocol/privacy review pending."
+      },
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "id": "FZK-MS20261124-C47-LEDGER-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 47,
+        "section": "anchor.h.6ygnggir7wzu",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "implementation-relation",
+      "statement": "The synthetic fixed-cohort observer ledger classifies every submitted observation, retains accounted failure/retry costs, rejects budget exhaustion, and returns identical receipts for identical event retransmissions; recovery never initializes missing state.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Reference accounting only; no consensus, finite sampler, live publisher or complete-view security proof.",
+      "assumptions": [
+        "Registered epsilon/delta contracts hold conditionally on prior history.",
+        "Trusted local Unix filesystem and external latest-root custody are assumed.",
+        "The publisher must authorize before observing or releasing protected information."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 57,
+      "status": "tested",
+      "observer": "server",
+      "privacy_unit": "record",
+      "numerical_semantics": "exact-rational-v1",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-ledger-test"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal artifact/kernel check; unit tests do not prove the general theorem."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Independent mathematical/protocol/privacy review pending."
+      },
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "id": "FZK-MS20261124-C75-GEOMETRY-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 75,
+        "section": "anchor.h.h96lab402kwp",
+        "equation": "native.533631",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "assumption-theorem",
+      "statement": "For C=1 and positive-definite K=(8/5)I_3-(1/2)11^T, the scalar cube maximum of s^T K s is 43/10, while the full vector row-norm-bounded class attains 24/5 with three planar unit rows summing to zero.",
+      "evidence_class": "specification",
+      "scope": "Scoped mathematical example with exact rational witness calculations; no formal-proof artifact or independent review.",
+      "assumptions": [
+        "Fixed public data-independent precision with eigenvalues 1/10,8/5,8/5.",
+        "Full bounded stream class; scalar dimension one versus vector dimension at least two.",
+        "Continuous Gaussian geometry does not establish finite-arithmetic sampler DP."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 58,
+      "status": "specified",
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "exact-rational-v1",
+      "evidence_ids": [
+        "spec-transcript-v0.1"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal artifact/kernel check; unit tests do not prove the general theorem."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Independent mathematical/protocol/privacy review pending."
+      },
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "id": "FZK-MS20261124-C75-REFERENCE-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 75,
+        "section": "anchor.h.7z55qb3kyte5",
+        "equation": "native.527046",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "implementation-relation",
+      "statement": "Exact rational reference routines check PSD covariance, distinguish unsupported singular shifts from zero cost, compute supported Gaussian quadratic costs and invertible-block conditional covariance, and reject missing permitted recovery patterns.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Dimension-bounded analytic conformance; no numerical SDP solver, Gaussian sampler or adaptive DP theorem.",
+      "assumptions": [
+        "Fixed dataset-independent jointly Gaussian law for the analytic interpretation.",
+        "Observed conditioning block is invertible.",
+        "Only the complete explicitly supplied finite pattern/shift set is certified by enumeration."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 58,
+      "status": "tested",
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "exact-rational-v1",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-reference-test"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal artifact/kernel check; unit tests do not prove the general theorem."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Independent mathematical/protocol/privacy review pending."
+      },
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "id": "FZK-MS20261124-C53-INCLUSION-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 53,
+        "section": "anchor.h.g2hxl15c4lor",
+        "equation": "native.239434",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "implementation-relation",
+      "statement": "For the source two-client final-inclusion law, the exact inverse-inclusion estimator has mean 0 and variance 9/4; substituting invitation probabilities gives biased mean 9/20, while equal-marginal dependent laws can have distinct variances.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Exact finite analytical enumeration, not an empirical federated training or amplification result.",
+      "assumptions": [
+        "Potential vectors and target weights are fixed conditional on history.",
+        "The complete finite final-inclusion law is known; every positive-weight client has positive inclusion probability."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 59,
+      "status": "tested",
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "exact-rational-v1",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-inclusion-test"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal artifact/kernel check; unit tests do not prove the general theorem."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Independent mathematical/protocol/privacy review pending."
+      },
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "id": "FZK-MS20261124-C67-POPULATION-001",
+      "source": {
+        "edition": "MS20261124",
+        "chapter": 67,
+        "section": "anchor.h.o0gvyscd0hen",
+        "equation": "none",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "kind": "implementation-relation",
+      "statement": "The reference requires nested invited, selected, completed, accepted and released populations and reports each by declared resource class; realized completion fractions are not accepted as DP amplification probabilities.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Synthetic stage conformance and resource-coverage illustration only.",
+      "assumptions": [
+        "Resource metadata covers all initially invited clients.",
+        "Final inclusion is distinct from invitation, and fixed-cohort accounting uses no amplification."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 59,
+      "status": "tested",
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "exact-rational-v1",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-population-test"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal artifact/kernel check; unit tests do not prove the general theorem."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Independent mathematical/protocol/privacy review pending."
+      },
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
     }
   ],
   "evidence": [
@@ -681,6 +969,42 @@
       "kind": "specification",
       "path": "experiments/m0/preregistration-v0.1.md",
       "scope": "Defines target and limitations only; no empirical, formal or independent security validation."
+    },
+    {
+      "id": "spec-transcript-v0.1",
+      "kind": "specification",
+      "path": "specs/privacy/transcript-v0.1.md",
+      "scope": "Scoped synthetic/analytic requirements and derivations; independent protocol/privacy review remains pending."
+    },
+    {
+      "id": "transcript-retry-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_half_normal_retry_counterexample",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review."
+    },
+    {
+      "id": "transcript-ledger-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_failure_retry_recovery_keeps_cost",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review."
+    },
+    {
+      "id": "transcript-reference-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_singular_support_is_not_zero_cost",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review."
+    },
+    {
+      "id": "transcript-inclusion-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_source_inverse_inclusion_example",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review."
+    },
+    {
+      "id": "transcript-population-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_resource_coverage_and_no_amplification",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review."
     }
   ]
 }

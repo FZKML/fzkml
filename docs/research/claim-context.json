@@ -248,7 +248,7 @@
         65671,
         68475
       ],
-      "source_review": "prose-inspected-equations-pending",
+      "source_review": "prose-and-equation-markup-inspected",
       "native_equation_ids": [
         "native-66390",
         "native-66581",
@@ -268,7 +268,8 @@
       "experiment_status": "not-run",
       "specification": "specs/m0/relation-v0.1.md",
       "review_status": "pending-independent-review",
-      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied.",
+      "source_inspection_record": "docs/research/s03-source-inspection.json"
     },
     "FZK-MS20261124-C43-DEF-001": {
       "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
@@ -467,6 +468,232 @@
       "specification": "experiments/m0/preregistration-v0.1.md",
       "review_status": "pending-independent-review",
       "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C47-ENTROPY-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 153850,
+        "end_utf16": 155709,
+        "heading_id": "h.46hgt8p76kii",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.46hgt8p76kii"
+      },
+      "source_range_utf16": [
+        153850,
+        155709
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-154277"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "independent mathematical review",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "analytic-specification-only",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C47-RETRY-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 155709,
+        "end_utf16": 159848,
+        "heading_id": "h.7it5eevtnxo1",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.7it5eevtnxo1"
+      },
+      "source_range_utf16": [
+        155709,
+        159848
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-156319",
+        "native-156345",
+        "native-156505"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C47-LEDGER-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 159848,
+        "end_utf16": 161801,
+        "heading_id": "h.6ygnggir7wzu",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.6ygnggir7wzu"
+      },
+      "source_range_utf16": [
+        159848,
+        161801
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C75-GEOMETRY-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 533337,
+        "end_utf16": 535556,
+        "heading_id": "h.h96lab402kwp",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.h96lab402kwp"
+      },
+      "source_range_utf16": [
+        533337,
+        535556
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-533631",
+        "native-533704",
+        "native-533726",
+        "native-534998"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "independent mathematical review",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "analytic-specification-only",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C75-REFERENCE-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 526389,
+        "end_utf16": 535556,
+        "heading_id": "h.7z55qb3kyte5",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.7z55qb3kyte5"
+      },
+      "source_range_utf16": [
+        526389,
+        535556
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-527046",
+        "native-530158",
+        "native-530755",
+        "native-533631",
+        "native-533704",
+        "native-533726",
+        "native-534998"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C53-INCLUSION-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 239089,
+        "end_utf16": 241418,
+        "heading_id": "h.g2hxl15c4lor",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.g2hxl15c4lor"
+      },
+      "source_range_utf16": [
+        239089,
+        241418
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-239434",
+        "native-240038",
+        "native-240157"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C67-POPULATION-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 420350,
+        "end_utf16": 424215,
+        "heading_id": "h.o0gvyscd0hen",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.o0gvyscd0hen"
+      },
+      "source_range_utf16": [
+        420350,
+        424215
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "version": "s03-source-inspection-1.0.0",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "source_edition": "MS20261124",
+  "observed_revision_id": "AHj4eMTDhszajz9XWwtYr25APOt8jDNWJ06dbjKxf-xlK9xmwk34ZzwRRUkjWfouVFGjH-x3SMlEEFPR_syq3-Z8kERBX1SruWGFOdkln3SW",
+  "canonical_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+  "export_sha256": "990e1d372cef0122a8c2a8b4ac6e7062e416b926fa538855de227b8400bf52c8",
+  "method": "Authorized DOCX word/document.xml equation markup plus canonical Google Docs revision readback; no manuscript bytes are published.",
+  "date": "2026-11-24",
+  "independent_review": false,
+  "revision_reconciliation": "Later Google Docs revision readback matched the revision observed before the authorized export. This identifies the observed source version, not a server-signed atomic export attestation.",
+  "inspected_native_equation_ids": [
+    "native-66390",
+    "native-66581",
+    "native-66608",
+    "native-66642",
+    "native-66651",
+    "native-66694"
+  ],
+  "scope": "Chapter 40 worked-step equations and prose, plus previously inspected M0 and transcript section locations. No all-book extraction/review claim.",
+  "limitations": [
+    "Source inspection is not independent mathematical or cryptographic review.",
+    "The private export is outside the software license/distribution."
+  ]
+}

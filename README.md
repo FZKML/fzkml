@@ -104,6 +104,10 @@ and measurement specifications, and explicit source-review gaps. Deterministic
 synthetic fixture generation and split checks are implemented. Training, proofs,
 protected aggregation and scientific benchmarking remain planned and untested.
 
+The [observer-transcript reference](specs/privacy/transcript-v0.1.md) adds exact
+entropy/retry, covariance and completion-aware sampling fixtures plus a synthetic
+accounting journal. These tested reference tools supply no deployed DP guarantee.
+
 The first planned scientific workflow is a local, deterministic simulation of one
 federated learning round on synthetic inputs, followed by an explicitly specified
 verification relation and positive/negative test vectors. Privacy, proof cost,
