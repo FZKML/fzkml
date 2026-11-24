@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "run_id": "synthetic:protected-aggregation-c94127602938",
+  "run_id": "synthetic:protected-aggregation-a088876b74cc",
   "claim_ids": [],
   "scenario": {
     "id": "protected-aggregation-v02",
@@ -9,9 +9,9 @@
     "numerical_semantics": "fixed16-rne-offset80",
     "backend": "arkworks-groth16-bn254-pedersen-babyjubjub",
     "security_mode": "research",
-    "parameters_digest": "sha256:a9d5e1b8df7e45a775528c15a478c118a1ecd95e45fbae2762c2f6a90c0cfe65",
-    "key_digest": "sha256:4220c4d5d2354b46879c14900447805412f95efb04563057794759f42e223fd2",
-    "program_digest": "sha256:f75e674c12fb3fc7883213ad82c9ea27ca84a360b251b8639c8e5fd4114ae20a",
+    "parameters_digest": "sha256:a1a1058ef66e8ddb09736d43b17008666bf0812c7b7326209acba0bff62d7f3d",
+    "key_digest": "sha256:b166a7eecdb95293a7697f567840325cc54162079d3e57bbb176e27a244b7798",
+    "program_digest": "sha256:aef2c29a845823729f2b2e047c57453019866e4fa4c27c12e7565e6ac614e7fe",
     "circuit_digest": "sha256:ffdb72a94a3a435bfeea810a707620f7ae58dd0832776cd62b12363a9c6782ae",
     "model": {
       "id": "synthetic:protected-tiny-model",
@@ -29,7 +29,7 @@
     }
   },
   "provenance": {
-    "source_commit": "c9412760293896855c2575a5e6a223b7ce690e7d",
+    "source_commit": "a088876b74ccae624fc6597819d21e1a928d05c6",
     "execution_kind": "local",
     "workflow_path": null,
     "workflow_run": null,
@@ -66,73 +66,73 @@
           "phase": "aggregate",
           "quantity": "time",
           "unit": "s",
-          "value": 0.000612583
+          "value": 0.000526917
         },
         {
           "phase": "communicate",
           "quantity": "time",
           "unit": "s",
-          "value": 1.0999000000000001e-05
+          "value": 1.0043e-05
         },
         {
           "phase": "prepare",
           "quantity": "time",
           "unit": "s",
-          "value": 0.000555458
+          "value": 0.000534208
         },
         {
           "phase": "prove",
           "quantity": "time",
           "unit": "s",
-          "value": 1.19355425
+          "value": 0.781061501
         },
         {
           "phase": "release",
           "quantity": "time",
           "unit": "s",
-          "value": 0.001818208
+          "value": 0.001621292
         },
         {
           "phase": "setup",
           "quantity": "time",
           "unit": "s",
-          "value": 0.296618292
+          "value": 0.336727917
         },
         {
           "phase": "train",
           "quantity": "time",
           "unit": "s",
-          "value": 4.59e-07
+          "value": 5.42e-07
         },
         {
           "phase": "verify",
           "quantity": "time",
           "unit": "s",
-          "value": 0.025337332999999997
+          "value": 0.021937125000000002
         },
         {
           "phase": "witness",
           "quantity": "time",
           "unit": "s",
-          "value": 3.521e-05
+          "value": 2.4373999999999997e-05
         },
         {
           "phase": "end-to-end",
           "quantity": "time",
           "unit": "s",
-          "value": 1.5344102919916622
+          "value": 1.5340947919758037
         },
         {
           "phase": "end-to-end",
           "quantity": "memory",
           "unit": "byte",
-          "value": 25509888
+          "value": 26918912
         },
         {
           "phase": "communicate",
           "quantity": "communication",
           "unit": "byte",
-          "value": 35245
+          "value": 34920
         }
       ]
     },
@@ -149,73 +149,73 @@
           "phase": "aggregate",
           "quantity": "time",
           "unit": "s",
-          "value": 0.000577042
+          "value": 0.0006405
         },
         {
           "phase": "communicate",
           "quantity": "time",
           "unit": "s",
-          "value": 1.0124e-05
+          "value": 1.2083000000000001e-05
         },
         {
           "phase": "prepare",
           "quantity": "time",
           "unit": "s",
-          "value": 0.000450833
+          "value": 0.000667417
         },
         {
           "phase": "prove",
           "quantity": "time",
           "unit": "s",
-          "value": 0.872546458
+          "value": 0.804412209
         },
         {
           "phase": "release",
           "quantity": "time",
           "unit": "s",
-          "value": 0.002129791
+          "value": 0.0019105
         },
         {
           "phase": "setup",
           "quantity": "time",
           "unit": "s",
-          "value": 0.407093209
+          "value": 0.295127875
         },
         {
           "phase": "train",
           "quantity": "time",
           "unit": "s",
-          "value": 5e-07
+          "value": 4.58e-07
         },
         {
           "phase": "verify",
           "quantity": "time",
           "unit": "s",
-          "value": 0.020325875
+          "value": 0.021040916
         },
         {
           "phase": "witness",
           "quantity": "time",
           "unit": "s",
-          "value": 2.8624999999999998e-05
+          "value": 3.3459e-05
         },
         {
           "phase": "end-to-end",
           "quantity": "time",
           "unit": "s",
-          "value": 1.3125729170278646
+          "value": 1.1309947499539703
         },
         {
           "phase": "end-to-end",
           "quantity": "memory",
           "unit": "byte",
-          "value": 28672000
+          "value": 25559040
         },
         {
           "phase": "communicate",
           "quantity": "communication",
           "unit": "byte",
-          "value": 35094
+          "value": 35231
         }
       ]
     },
@@ -232,73 +232,73 @@
           "phase": "aggregate",
           "quantity": "time",
           "unit": "s",
-          "value": 0.000560792
+          "value": 0.000518125
         },
         {
           "phase": "communicate",
           "quantity": "time",
           "unit": "s",
-          "value": 1.0082e-05
+          "value": 1.0542e-05
         },
         {
           "phase": "prepare",
           "quantity": "time",
           "unit": "s",
-          "value": 0.000477792
+          "value": 0.000407375
         },
         {
           "phase": "prove",
           "quantity": "time",
           "unit": "s",
-          "value": 0.8015169579999999
+          "value": 0.806616292
         },
         {
           "phase": "release",
           "quantity": "time",
           "unit": "s",
-          "value": 0.001740334
+          "value": 0.001669375
         },
         {
           "phase": "setup",
           "quantity": "time",
           "unit": "s",
-          "value": 0.298377417
+          "value": 0.344329834
         },
         {
           "phase": "train",
           "quantity": "time",
           "unit": "s",
-          "value": 5.84e-07
+          "value": 1.209e-06
         },
         {
           "phase": "verify",
           "quantity": "time",
           "unit": "s",
-          "value": 0.022056250000000003
+          "value": 0.020501875
         },
         {
           "phase": "witness",
           "quantity": "time",
           "unit": "s",
-          "value": 3.4418e-05
+          "value": 3.1543e-05
         },
         {
           "phase": "end-to-end",
           "quantity": "time",
           "unit": "s",
-          "value": 1.1322005839901976
+          "value": 1.1826952919946052
         },
         {
           "phase": "end-to-end",
           "quantity": "memory",
           "unit": "byte",
-          "value": 25378816
+          "value": 25509888
         },
         {
           "phase": "communicate",
           "quantity": "communication",
           "unit": "byte",
-          "value": 34950
+          "value": 34859
         }
       ]
     }
@@ -308,7 +308,7 @@
       "phase": "aggregate",
       "quantity": "time",
       "unit": "s",
-      "value": 0.0005834723333333334,
+      "value": 0.0005618473333333334,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -320,7 +320,7 @@
       "phase": "communicate",
       "quantity": "time",
       "unit": "s",
-      "value": 1.0401666666666666e-05,
+      "value": 1.0889333333333333e-05,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -332,7 +332,7 @@
       "phase": "prepare",
       "quantity": "time",
       "unit": "s",
-      "value": 0.0004946943333333332,
+      "value": 0.0005363333333333333,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -344,7 +344,7 @@
       "phase": "prove",
       "quantity": "time",
       "unit": "s",
-      "value": 0.9558725553333334,
+      "value": 0.7973633339999999,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -356,7 +356,7 @@
       "phase": "release",
       "quantity": "time",
       "unit": "s",
-      "value": 0.001896111,
+      "value": 0.0017337223333333334,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -368,7 +368,7 @@
       "phase": "setup",
       "quantity": "time",
       "unit": "s",
-      "value": 0.33402963933333335,
+      "value": 0.32539520866666666,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -380,7 +380,7 @@
       "phase": "train",
       "quantity": "time",
       "unit": "s",
-      "value": 5.143333333333334e-07,
+      "value": 7.363333333333333e-07,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -392,7 +392,7 @@
       "phase": "verify",
       "quantity": "time",
       "unit": "s",
-      "value": 0.022573152666666665,
+      "value": 0.021159972,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -404,7 +404,7 @@
       "phase": "witness",
       "quantity": "time",
       "unit": "s",
-      "value": 3.2751e-05,
+      "value": 2.9792000000000002e-05,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -416,7 +416,7 @@
       "phase": "end-to-end",
       "quantity": "time",
       "unit": "s",
-      "value": 1.326394597669908,
+      "value": 1.2825949446414597,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -428,7 +428,7 @@
       "phase": "end-to-end",
       "quantity": "memory",
       "unit": "byte",
-      "value": 26520234.666666668,
+      "value": 25995946.666666668,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
@@ -440,7 +440,7 @@
       "phase": "communicate",
       "quantity": "communication",
       "unit": "byte",
-      "value": 35096.333333333336,
+      "value": 35003.333333333336,
       "aggregation": "mean",
       "repetition_ids": [
         "rep1",
