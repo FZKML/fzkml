@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0.0",
+  "claims": [
+    {
+      "id": "FZK-ENG20261124-C13-HISTORY-001",
+      "source": {
+        "edition": "ENG20261124",
+        "chapter": 13,
+        "section": "original-engineering-definition",
+        "equation": "original-not-manuscript-extraction",
+        "version": "protocol-reference-v1"
+      },
+      "kind": "implementation-relation",
+      "statement": "Disconnected locally valid edges are rejected; two valid connected forks require an external selection/availability assumption.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Original scoped engineering reference associated with the issue book mapping; not manuscript equation extraction.",
+      "assumptions": [
+        "ideal local certificate verifier",
+        "externally pinned genesis",
+        "complete public state",
+        "trusted single-writer selection when enabled"
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 51,
+      "status": "tested",
+      "evidence_ids": [
+        "protocol-spec-51",
+        "protocol-test-51",
+        "protocol-observations"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No machine-checked formal proof artifact."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review."
+      },
+      "limitations": [
+        "Native/reference checks only; no real proof, network deployment or global privacy/security guarantee.",
+        "Original source is the linked engineering specification; manuscript coverage/status is unchanged."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-half-up-and-fixed-slot-v1"
+    },
+    {
+      "id": "FZK-ENG20261124-C02-VIEW-001",
+      "source": {
+        "edition": "ENG20261124",
+        "chapter": 2,
+        "section": "original-engineering-definition",
+        "equation": "original-not-manuscript-extraction",
+        "version": "protocol-reference-v1"
+      },
+      "kind": "implementation-relation",
+      "statement": "The reference public exporter omits synthetic witness canaries; ordinary outsourced and trusted provers still see supplied plaintext.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Original scoped engineering reference associated with the issue book mapping; not manuscript equation extraction.",
+      "assumptions": [
+        "Declared reference public surfaces",
+        "local synthetic inputs",
+        "no arbitrary backend/OS telemetry coverage"
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 52,
+      "status": "tested",
+      "evidence_ids": [
+        "protocol-spec-52",
+        "protocol-test-52",
+        "protocol-observations"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No machine-checked formal proof artifact."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review."
+      },
+      "limitations": [
+        "Native/reference checks only; no real proof, network deployment or global privacy/security guarantee.",
+        "Original source is the linked engineering specification; manuscript coverage/status is unchanged."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-half-up-and-fixed-slot-v1"
+    },
+    {
+      "id": "FZK-ENG20261124-C16-POISON-001",
+      "source": {
+        "edition": "ENG20261124",
+        "chapter": 16,
+        "section": "original-engineering-definition",
+        "equation": "original-not-manuscript-extraction",
+        "version": "protocol-reference-v1"
+      },
+      "kind": "implementation-relation",
+      "statement": "Equal-norm opposing updates pass the property relation while correct training on a poisoned label worsens the specified clean loss.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Original scoped engineering reference associated with the issue book mapping; not manuscript equation extraction.",
+      "assumptions": [
+        "M0 half-up one-step relation",
+        "original synthetic two-feature record",
+        "native exact checks only"
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 53,
+      "status": "tested",
+      "evidence_ids": [
+        "protocol-spec-53",
+        "protocol-test-53",
+        "protocol-observations"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No machine-checked formal proof artifact."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review."
+      },
+      "limitations": [
+        "Native/reference checks only; no real proof, network deployment or global privacy/security guarantee.",
+        "Original source is the linked engineering specification; manuscript coverage/status is unchanged."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "M0-half-up-and-fixed-slot-v1"
+    },
+    {
+      "id": "FZK-ENG20261124-C06-SENS-001",
+      "source": {
+        "edition": "ENG20261124",
+        "chapter": 6,
+        "section": "original-engineering-definition",
+        "equation": "original-not-manuscript-extraction",
+        "version": "protocol-reference-v1"
+      },
+      "kind": "assumption-theorem",
+      "statement": "The declared fixed-four-slot clipped integer query has L1 add/remove-zero-slot sensitivity 24 and replacement sensitivity 48.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Original scoped engineering reference associated with the issue book mapping; not manuscript equation extraction. Here client denotes one bounded public contribution slot, not a person or organization.",
+      "assumptions": [
+        "Public fixed roster/weights/denominator",
+        "coordinate clip48 before half-up division4",
+        "one slot change"
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 54,
+      "status": "tested",
+      "evidence_ids": [
+        "protocol-spec-54",
+        "protocol-test-54",
+        "protocol-observations"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No machine-checked formal proof artifact."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review."
+      },
+      "limitations": [
+        "Native/reference checks only; no real proof, network deployment or global privacy/security guarantee.",
+        "Original source is the linked engineering specification; manuscript coverage/status is unchanged."
+      ],
+      "observer": "external",
+      "privacy_unit": "client",
+      "numerical_semantics": "M0-half-up-and-fixed-slot-v1"
+    },
+    {
+      "id": "FZK-ENG20261124-C06-DP-001",
+      "source": {
+        "edition": "ENG20261124",
+        "chapter": 6,
+        "section": "original-engineering-definition",
+        "equation": "original-not-manuscript-extraction",
+        "version": "protocol-reference-v1"
+      },
+      "kind": "assumption-theorem",
+      "statement": "The exact rational folded geometric reference matches the discrete-Laplace law modulo a public ring; the specified query has conditional output-only epsilon at most16/85 for one replacement.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Original scoped engineering reference associated with the issue book mapping; not manuscript equation extraction. Here client denotes one bounded public contribution slot, not a person or organization.",
+      "assumptions": [
+        "Ideal independent uniform coins",
+        "a255 b256 modulus257",
+        "fixed-slot query",
+        "trusted central role",
+        "no extra leakage"
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 55,
+      "status": "tested",
+      "evidence_ids": [
+        "protocol-spec-55",
+        "protocol-test-55",
+        "protocol-observations"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No machine-checked formal proof artifact."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "Pending independent domain review."
+      },
+      "limitations": [
+        "Native/reference checks only; no real proof, network deployment or global privacy/security guarantee.",
+        "Original source is the linked engineering specification; manuscript coverage/status is unchanged."
+      ],
+      "observer": "external",
+      "privacy_unit": "client",
+      "numerical_semantics": "M0-half-up-and-fixed-slot-v1"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "protocol-spec-51",
+      "kind": "specification",
+      "path": "specs/protocol/HISTORIES.md",
+      "scope": "Original conditional definition/derivation; independent review pending."
+    },
+    {
+      "id": "protocol-test-51",
+      "kind": "unit-test",
+      "path": "tests/test_protocol_privacy.py::test_two_valid_histories_and_ledger_selection",
+      "scope": "Synthetic conformance/counterexample checks; no formal-proof promotion."
+    },
+    {
+      "id": "protocol-spec-52",
+      "kind": "specification",
+      "path": "specs/protocol/VISIBILITY.md",
+      "scope": "Original conditional definition/derivation; independent review pending."
+    },
+    {
+      "id": "protocol-test-52",
+      "kind": "unit-test",
+      "path": "tests/test_protocol_privacy.py::test_canary_success_failure_and_declared_surfaces",
+      "scope": "Synthetic conformance/counterexample checks; no formal-proof promotion."
+    },
+    {
+      "id": "protocol-spec-53",
+      "kind": "specification",
+      "path": "specs/protocol/ROBUSTNESS.md",
+      "scope": "Original conditional definition/derivation; independent review pending."
+    },
+    {
+      "id": "protocol-test-53",
+      "kind": "unit-test",
+      "path": "tests/test_protocol_privacy.py::test_valid_harmful_and_incorrect_execution",
+      "scope": "Synthetic conformance/counterexample checks; no formal-proof promotion."
+    },
+    {
+      "id": "protocol-spec-54",
+      "kind": "specification",
+      "path": "specs/protocol/SENSITIVITY.md",
+      "scope": "Original conditional definition/derivation; independent review pending."
+    },
+    {
+      "id": "protocol-test-54",
+      "kind": "unit-test",
+      "path": "tests/test_protocol_privacy.py::test_exact_sensitivity_extremizers_and_private_denominator",
+      "scope": "Synthetic conformance/counterexample checks; no formal-proof promotion."
+    },
+    {
+      "id": "protocol-spec-55",
+      "kind": "specification",
+      "path": "specs/protocol/DP-MECHANISM.md",
+      "scope": "Original conditional definition/derivation; independent review pending."
+    },
+    {
+      "id": "protocol-test-55",
+      "kind": "unit-test",
+      "path": "tests/test_protocol_privacy.py::test_folded_mass_and_exact_privacy_ratios",
+      "scope": "Synthetic conformance/counterexample checks; no formal-proof promotion."
+    },
+    {
+      "id": "protocol-observations",
+      "kind": "experiment",
+      "path": "experiments/protocol/observations.json",
+      "scope": "Retained deterministic original synthetic reference outputs; real proof cases explicitly not-run."
+    }
+  ]
+}
