@@ -1,0 +1,70 @@
+{
+  "version": "0.1",
+  "scope": "Content hashes identify the scoped specification and metadata snapshot, not independent review or scientific evidence. No private manuscript bytes are archived here.",
+  "artifacts": [
+    {
+      "path": "claims/registry.json",
+      "sha256": "01ba045ffcd469e5014a080e0afc1118ad819804690a1e258f5baa8120bf17e2"
+    },
+    {
+      "path": "docs/research/claim-context.json",
+      "sha256": "2eed116a48d4f8477f9ced5e0c8262da457fe3c2a362ca6cb0db1750f473ce6b"
+    },
+    {
+      "path": "docs/research/coverage.json",
+      "sha256": "0af82d02be0fc907ee4470197ca3cc004c8cf9d25df28402695b9e4a583c24d0"
+    },
+    {
+      "path": "docs/research/manuscript.json",
+      "sha256": "18d0a5849ee5dafebf1409f045ddffd961ca604fe4a6e60d73f49fac70f22ce2"
+    },
+    {
+      "path": "docs/research/security-obligations.json",
+      "sha256": "2843ef11b8c325b5aaccd940059dff650de7716770f4a269d1f82c4c1ed8de0b"
+    },
+    {
+      "path": "docs/research/source-index.json",
+      "sha256": "c8080bff8b1f47d6dbf375d3f3ac9822d6988071dff178087714a79b3f91e601"
+    },
+    {
+      "path": "experiments/m0/capabilities.json",
+      "sha256": "27feeaec52610dcba57643e1e602c5fa6d7d02553c291827eb3592b86950a3f7"
+    },
+    {
+      "path": "experiments/m0/preregistration-v0.1.md",
+      "sha256": "4373395f984e7e3dd860608a7bc95586d5b5ae6cde0c6a800dc786ccea81765c"
+    },
+    {
+      "path": "experiments/m0/replication-cards.json",
+      "sha256": "d6bdab2621df3dcf9ef558d8860947202a3bb2e992e219769d2d86d9a3e755b3"
+    },
+    {
+      "path": "experiments/m0/reporting-cases.json",
+      "sha256": "fffaaf53b511b5b003c8558a18982c8378c22f1992b9be4c2cd3acb3019e96d1"
+    },
+    {
+      "path": "specs/m0/capabilities-v0.1.md",
+      "sha256": "019ed0775b8a5c63193c47553a51c795ef0c754711ba944424b3603d02d7606a"
+    },
+    {
+      "path": "specs/m0/deployment-v0.1.md",
+      "sha256": "5bcef5481d5a8ab5f2601073f316646940d6dd7bda99fb3b219325d4b239eedf"
+    },
+    {
+      "path": "specs/m0/fixtures-v0.1.md",
+      "sha256": "a13ec2bb9712479236fe7467989a29b6b782b6d0c4c2916e615cc6051bacc502"
+    },
+    {
+      "path": "specs/m0/measurement-v0.1.md",
+      "sha256": "555acaca233664dcfdcbd1a17a24512adee91174fc4419d6c935a286ad186abc"
+    },
+    {
+      "path": "specs/m0/relation-v0.1.md",
+      "sha256": "61fc98b1c0cc1ac95244db018d17a3ff14cdd5308ddc7f48e7f5cee778f3a4e2"
+    },
+    {
+      "path": "specs/m0/security-v0.1.md",
+      "sha256": "9da084f5babf476132cd817aed97dd2e6cea775e77002676565f2a67ec9a47a3"
+    }
+  ]
+}
