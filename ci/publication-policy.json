@@ -4,7 +4,7 @@
   "status": "proposed",
   "scope": "Only the fixed original Apache-2.0 public synthetic three-client arithmetic fixture and bounded CI-04 outcomes; no private or manuscript inputs.",
   "producer_files": {
-    "scripts/s04-proof": "sha256:4f50600c643f30e81bea9e3cfe1c5850fb779a1153e7fde4c5d9608a40b5df90",
+    "scripts/s04-proof": "sha256:1c3640ef96e0cea4005fb4c053587152f830f5e9aef3cac6bcbd219f979374ce",
     "scripts/s04_proof.py": "sha256:11078cf9f2979f3071c88ff19f7d1b2f619c444cb8084c43becef36ec642ef22",
     "scripts/s04-report": "sha256:a0cae74faf23a506cee86d2d0623b7fcc8a3ea4f63b065d1c6efbe0f620242fb",
     "scripts/s04_report.py": "sha256:e72854e34e851e0908e932e09c8208713a4af9df32e3bdf06bc9c8dce03f3af7",
