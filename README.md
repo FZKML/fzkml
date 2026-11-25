@@ -93,3 +93,11 @@ The [v0.2 protected aggregation research draft](docs/PROTECTED-AGGREGATION.md)
 adds proof-bound three-client VSS and durable release recovery. It remains pending
 independent cryptographic/protocol review. Run `./scripts/validate-aggregation`
 for the exact synthetic fixture and initial CI-04 costs.
+
+## Scoped privacy and performance research
+
+Issues #60–#65 add source-verified manuscript goldens, exact compression and audit
+references, synthetic fixed-classifier evaluation, resource ledgers and an exact
+CPU kernel comparison. See the [contracts](specs/m3-m4/privacy-performance-v1.md)
+and [actual evidence and limitations](experiments/m3-m4/EVIDENCE.md). These do not
+implement a production DP release or a complete protected-training proof bakeoff.

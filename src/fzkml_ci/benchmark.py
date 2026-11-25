@@ -2,12 +2,29 @@
 
 from __future__ import annotations
 
+import math
 import statistics
 from typing import Any
 
 from .validate import require, validate_result
 
 PHASES = {"setup", "witness", "prove", "aggregate", "verify", "transfer", "total"}
+
+
+def summarize_times(raw: list[float], failures: int, excluded: int) -> dict[str, Any]:
+    """Shared diagnostic summary for CI-04 results and local profiling companions."""
+    require(
+        len(raw) >= 2 and all(math.isfinite(v) and v >= 0 for v in raw),
+        "benchmark-repetitions-required",
+    )
+    require(failures >= 0 and excluded >= 0, "benchmark-counts")
+    return {
+        "raw_seconds": raw,
+        "mean_seconds": statistics.mean(raw),
+        "variance_seconds2": statistics.variance(raw),
+        "failures": failures,
+        "excluded": excluded,
+    }
 
 
 def compare(left: dict[str, Any], right: dict[str, Any]) -> dict[str, Any]:
@@ -81,13 +98,11 @@ def compare(left: dict[str, Any], right: dict[str, Any]) -> dict[str, Any]:
         ]
         require(len(raw) >= 2, "benchmark-repetitions-required")
         distributions.append(
-            {
-                "raw_seconds": raw,
-                "mean_seconds": statistics.mean(raw),
-                "variance_seconds2": statistics.variance(raw),
-                "failures": sum(r["status"] != "successful" for r in row["repetitions"]),
-                "excluded": sum(r["excluded"] for r in row["repetitions"]),
-            }
+            summarize_times(
+                raw,
+                sum(r["status"] != "successful" for r in row["repetitions"]),
+                sum(r["excluded"] for r in row["repetitions"]),
+            )
         )
     return {
         "status": "diagnostic",

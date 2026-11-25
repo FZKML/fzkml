@@ -287,6 +287,15 @@
       ],
       "notice_files": []
     },
+    "assets/public/privacy-performance-golden-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "ci/profiles/contract.json": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -798,6 +807,33 @@
       ],
       "notice_files": []
     },
+    "experiments/m3-m4/EVIDENCE.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic CPU observations and engineering interpretation generated with Codex; exact source and hardware retained.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m3-m4/native-profile-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic CPU observations and engineering interpretation generated with Codex; exact source and hardware retained.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m3-m4/native-profile-v1.sha256": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "SHA-256 of the retained synthetic CPU observation artifact.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "pyproject.toml": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -906,6 +942,15 @@
       ],
       "notice_files": []
     },
+    "scripts/install-rust-toolchain": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original CI bootstrap isolation fix developed with Codex assistance.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "scripts/release-evidence": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -955,6 +1000,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m3-m4/privacy-performance-v1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
@@ -1050,6 +1104,87 @@
       ],
       "notice_files": []
     },
+    "src/fzkml_research/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/audit.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/backends.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/compression.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/evaluation.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/experiment.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/kernels.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/profiling.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/statistics.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "tests/test_governance.py": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -1063,6 +1198,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_privacy_performance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; manuscript-inspired numerical facts are sourced in the golden fixture. Contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],

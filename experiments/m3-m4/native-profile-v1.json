@@ -1,0 +1,1989 @@
+{
+  "backend_bakeoff": {
+    "reason": "Full proof and payload-binding dependencies #33/#44 not available.",
+    "status": "not-run"
+  },
+  "companion_version": "native-profile-1.0.0",
+  "comparison": {
+    "distributions": [
+      {
+        "excluded": 0,
+        "failures": 0,
+        "mean_seconds": 0.0769091735,
+        "raw_seconds": [
+          0.076138917,
+          0.07520725,
+          0.075550708,
+          0.075452208,
+          0.079645708,
+          0.07946025
+        ],
+        "variance_seconds2": 4.2909256074134886e-06
+      },
+      {
+        "excluded": 0,
+        "failures": 0,
+        "mean_seconds": 0.073975236,
+        "raw_seconds": [
+          0.073493417,
+          0.072150458,
+          0.078147959,
+          0.072134291,
+          0.071659625,
+          0.076265666
+        ],
+        "variance_seconds2": 6.994156782803993e-06
+      }
+    ],
+    "scope": "Matched native arithmetic only; not a proof-backend bakeoff.",
+    "status": "diagnostic"
+  },
+  "dependency_digest": "sha256:eb7e8a9b6daa13557c1bb07547b464c810fa5ea2b8c454fc6ace6d35e6626f3d",
+  "end_to_end_speed_ratio": 1.0396610765797354,
+  "execution_origin": {
+    "kind": "local",
+    "source_commit": "2a356c78203ed492131c023165ef9a1c5f19bdd7",
+    "workflow_run": null
+  },
+  "experiment": "synthetic-native-kernel-v1",
+  "gpu": {
+    "reason": "No GPU/authorized accelerator adapter in this experiment.",
+    "status": "not-run"
+  },
+  "hardware": {
+    "accelerator": "none",
+    "architecture": "arm64",
+    "cpu": "Apple M3 Pro",
+    "memory_bytes": 19327352832,
+    "os": "Darwin-25.5.0",
+    "python_version": "3.11.14",
+    "runner_image_revision": "local-no-hosted-image",
+    "threads_per_worker": 1,
+    "workers": 1
+  },
+  "numerical_relation": "modular-matmul-v1",
+  "numerical_semantics": "unbounded-integer-dot-then-mod-v1",
+  "plan": {
+    "assurance": "native-arithmetic-only",
+    "modulus": 2305843009213693951,
+    "order": "alternating-reference-transposed",
+    "repetitions": 6,
+    "seed": "no-random-input-generation",
+    "size": 32,
+    "version": "native-kernel-plan-1",
+    "warmups": 1
+  },
+  "program_digest": "sha256:383681d7801fb3b2bc99d12b9792cec809aa0fee37d78f370a57291783700086",
+  "raw_profiles": {
+    "reference": [
+      {
+        "backend": "reference",
+        "end_to_end_ns": 76138917,
+        "launch_import_and_ipc_ns": 67584292,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 124000,
+              "end_ns": 125125,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 583,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 0,
+              "end_ns": 129375,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 128958,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 3812000,
+              "end_ns": 3942958,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 131125,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 2156000,
+              "end_ns": 6106708,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 3949625,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 3000,
+              "end_ns": 6343167,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 6340083,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 144000,
+              "end_ns": 8555208,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 8234958,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 6239000,
+          "aggregate_worker_occupied_ns": 6417209,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31670272,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 417,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 8554625
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31670272
+      },
+      {
+        "backend": "reference",
+        "end_to_end_ns": 75207250,
+        "launch_import_and_ipc_ns": 67881167,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 124000,
+              "end_ns": 125417,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 584,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 0,
+              "end_ns": 129709,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 129209,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 3666000,
+              "end_ns": 3798084,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 131834,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 2075000,
+              "end_ns": 5875042,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 3800292,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 4000,
+              "end_ns": 6085875,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 6083417,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 138000,
+              "end_ns": 7326667,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 7178084,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 6007000,
+          "aggregate_worker_occupied_ns": 6017374,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31588352,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 500,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 7326083
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31588352
+      },
+      {
+        "backend": "reference",
+        "end_to_end_ns": 75550708,
+        "launch_import_and_ipc_ns": 68188750,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 127000,
+              "end_ns": 127667,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 542,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 0,
+              "end_ns": 132709,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 132084,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 3599000,
+              "end_ns": 3733834,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 134917,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 2111000,
+              "end_ns": 5883750,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 3735959,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 4000,
+              "end_ns": 6112750,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 6109334,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 130000,
+              "end_ns": 7362500,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 7197834,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 5971000,
+          "aggregate_worker_occupied_ns": 6042540,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31653888,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 625,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 7361958
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31653888
+      },
+      {
+        "backend": "reference",
+        "end_to_end_ns": 75452208,
+        "launch_import_and_ipc_ns": 68196208,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 120000,
+              "end_ns": 120459,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 625,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 0,
+              "end_ns": 124709,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 124209,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 3413000,
+              "end_ns": 3540250,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 126709,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 2215000,
+              "end_ns": 5815292,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 3545584,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 5000,
+              "end_ns": 6073250,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 6068917,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 122000,
+              "end_ns": 7256625,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 7098459,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 5875000,
+          "aggregate_worker_occupied_ns": 5966082,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31539200,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 500,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 7256000
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31539200
+      },
+      {
+        "backend": "reference",
+        "end_to_end_ns": 79645708,
+        "launch_import_and_ipc_ns": 71925124,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 132000,
+              "end_ns": 133792,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 583,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 1000,
+              "end_ns": 139333,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 138667,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 3684000,
+              "end_ns": 3825458,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 141667,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 2038000,
+              "end_ns": 5868833,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 3831667,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 3000,
+              "end_ns": 6084292,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 6080917,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 109000,
+              "end_ns": 7721167,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 7594458,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 5967000,
+          "aggregate_worker_occupied_ns": 5984916,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31653888,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 666,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 7720584
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31653888
+      },
+      {
+        "backend": "reference",
+        "end_to_end_ns": 79460250,
+        "launch_import_and_ipc_ns": 72012083,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 127000,
+              "end_ns": 127458,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 583,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 1000,
+              "end_ns": 131833,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 131333,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 3824000,
+              "end_ns": 3957292,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 133625,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 2047000,
+              "end_ns": 6047250,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 3962208,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 7000,
+              "end_ns": 6276917,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 6269125,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 113000,
+              "end_ns": 7448750,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 7312583,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 6119000,
+          "aggregate_worker_occupied_ns": 6180043,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31637504,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 500,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 7448167
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31637504
+      }
+    ],
+    "transposed": [
+      {
+        "backend": "transposed",
+        "end_to_end_ns": 73493417,
+        "launch_import_and_ipc_ns": 67467750,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 130000,
+              "end_ns": 131209,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 542,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 1000,
+              "end_ns": 135417,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 134959,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 1711000,
+              "end_ns": 1847375,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 137250,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 1949000,
+              "end_ns": 3798209,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 1849917,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 3000,
+              "end_ns": 4022667,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 4019500,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 156000,
+              "end_ns": 6026209,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 5618875,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 3950000,
+          "aggregate_worker_occupied_ns": 4200043,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31522816,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 458,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 6025667
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31522816
+      },
+      {
+        "backend": "transposed",
+        "end_to_end_ns": 72150458,
+        "launch_import_and_ipc_ns": 66871333,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 119000,
+              "end_ns": 120209,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 375,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 2000,
+              "end_ns": 123875,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 123375,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 1691000,
+              "end_ns": 1815875,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 125500,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 1917000,
+              "end_ns": 3736792,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 1818792,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 3000,
+              "end_ns": 3926625,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 3923792,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 123000,
+              "end_ns": 5279500,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 5110167,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 3855000,
+          "aggregate_worker_occupied_ns": 3900875,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31637504,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 500,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 5279125
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31637504
+      },
+      {
+        "backend": "transposed",
+        "end_to_end_ns": 78147959,
+        "launch_import_and_ipc_ns": 72102418,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 142000,
+              "end_ns": 143708,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 375,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 0,
+              "end_ns": 147833,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 147375,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 1881000,
+              "end_ns": 2060541,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 149875,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 1894000,
+              "end_ns": 3959541,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 2065583,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 3000,
+              "end_ns": 4172666,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 4169083,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 112000,
+              "end_ns": 6045916,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 5898041,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 4032000,
+          "aggregate_worker_occupied_ns": 4099873,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31637504,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 458,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 6045541
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31637504
+      },
+      {
+        "backend": "transposed",
+        "end_to_end_ns": 72134291,
+        "launch_import_and_ipc_ns": 66674374,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 118000,
+              "end_ns": 118334,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 542,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 0,
+              "end_ns": 122042,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 121584,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 1705000,
+              "end_ns": 1829209,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 123667,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 1918000,
+              "end_ns": 3749500,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 1831209,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 3000,
+              "end_ns": 3994625,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 3990792,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 114000,
+              "end_ns": 5460459,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 5291625,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 3858000,
+          "aggregate_worker_occupied_ns": 3914750,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31490048,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 458,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 5459917
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31490048
+      },
+      {
+        "backend": "transposed",
+        "end_to_end_ns": 71659625,
+        "launch_import_and_ipc_ns": 66301833,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 127000,
+              "end_ns": 128000,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 958,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 0,
+              "end_ns": 132000,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 131500,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 1970000,
+              "end_ns": 2103833,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 133833,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 2065000,
+              "end_ns": 4172458,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 2107416,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 4000,
+              "end_ns": 4390750,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 4387583,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 135000,
+              "end_ns": 5358750,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 5203625,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 4301000,
+          "aggregate_worker_occupied_ns": 4320876,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31440896,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 500,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 5357792
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31440896
+      },
+      {
+        "backend": "transposed",
+        "end_to_end_ns": 76265666,
+        "launch_import_and_ipc_ns": 70801416,
+        "ledger": {
+          "companion_version": "profile-ledger-1.0.0",
+          "events": [
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "prepare",
+              "cpu_ns": 163000,
+              "end_ns": 191750,
+              "phase": "prepare",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 834,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "setup",
+              "cpu_ns": 1000,
+              "end_ns": 200417,
+              "phase": "setup",
+              "reuse_cost_ids": [],
+              "setup_mode": "cold",
+              "start_ns": 199750,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "evaluate",
+              "cpu_ns": 1680000,
+              "end_ns": 1882625,
+              "phase": "evaluate",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 202625,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "verify",
+              "cpu_ns": 2043000,
+              "end_ns": 3931209,
+              "phase": "verify",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 1888542,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 23966,
+              "contribution_id": "synthetic:one",
+              "cost_id": "transfer",
+              "cpu_ns": 2000,
+              "end_ns": 4132584,
+              "phase": "transfer",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 4129667,
+              "status": "successful",
+              "worker": "cpu-0"
+            },
+            {
+              "attempt_id": "one",
+              "bytes_sent": 0,
+              "contribution_id": "synthetic:one",
+              "cost_id": "release",
+              "cpu_ns": 113000,
+              "end_ns": 5465084,
+              "phase": "release",
+              "reuse_cost_ids": [],
+              "setup_mode": "not-applicable",
+              "start_ns": 5335125,
+              "status": "successful",
+              "worker": "cpu-0"
+            }
+          ],
+          "resource_samples": []
+        },
+        "profile": {
+          "aggregate_cpu_ns": 4002000,
+          "aggregate_worker_occupied_ns": 4047126,
+          "attempts": 1,
+          "bytes_sent": 23966,
+          "complete_protected_path": {
+            "aggregate": "not-run",
+            "prove": "not-run",
+            "train": "not-run",
+            "witness": "not-run"
+          },
+          "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+          "disk_method": "Single complete temporary output file, removed after fsync",
+          "disk_peak_bytes": 23966,
+          "failed_cost_ids": [],
+          "limitations": [
+            "Sampled live peaks are lower bounds unless every resource change is observed.",
+            "Sum worker occupancy is work, not end-to-end latency.",
+            "CPU work must come from exclusive per-worker counters.",
+            "Retries are counted per contribution; shared setup costs occur once."
+          ],
+          "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+          "os_worker_peak_rss_bytes": 31473664,
+          "retries": 0,
+          "sampled_joint_live_peaks": {
+            "disk_bytes": null,
+            "ram_bytes": null,
+            "vram_bytes": null
+          },
+          "setup_cold_ns": 667,
+          "setup_warm_ns": 0,
+          "time_to_certified_quality": {
+            "budget_ns": 20000000000,
+            "status": "right-censored",
+            "time_ns": null
+          },
+          "transfer_scope": "Local buffer copy; no network transfer or protected release",
+          "wall_ns": 5464250
+        },
+        "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+        "rss_bytes": 31473664
+      }
+    ]
+  },
+  "warmup_profiles": [
+    {
+      "backend": "reference",
+      "end_to_end_ns": 86207333,
+      "launch_import_and_ipc_ns": 78888500,
+      "ledger": {
+        "companion_version": "profile-ledger-1.0.0",
+        "events": [
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "prepare",
+            "cpu_ns": 126000,
+            "end_ns": 127417,
+            "phase": "prepare",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 625,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "setup",
+            "cpu_ns": 2000,
+            "end_ns": 132417,
+            "phase": "setup",
+            "reuse_cost_ids": [],
+            "setup_mode": "cold",
+            "start_ns": 131917,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "evaluate",
+            "cpu_ns": 3503000,
+            "end_ns": 3645208,
+            "phase": "evaluate",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 134417,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "verify",
+            "cpu_ns": 2016000,
+            "end_ns": 5669292,
+            "phase": "verify",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 3653083,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 23966,
+            "contribution_id": "synthetic:one",
+            "cost_id": "transfer",
+            "cpu_ns": 3000,
+            "end_ns": 5889833,
+            "phase": "transfer",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 5886250,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "release",
+            "cpu_ns": 179000,
+            "end_ns": 7319458,
+            "phase": "release",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 6966833,
+            "status": "successful",
+            "worker": "cpu-0"
+          }
+        ],
+        "resource_samples": []
+      },
+      "profile": {
+        "aggregate_cpu_ns": 5829000,
+        "aggregate_worker_occupied_ns": 6010500,
+        "attempts": 1,
+        "bytes_sent": 23966,
+        "complete_protected_path": {
+          "aggregate": "not-run",
+          "prove": "not-run",
+          "train": "not-run",
+          "witness": "not-run"
+        },
+        "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+        "disk_method": "Single complete temporary output file, removed after fsync",
+        "disk_peak_bytes": 23966,
+        "failed_cost_ids": [],
+        "limitations": [
+          "Sampled live peaks are lower bounds unless every resource change is observed.",
+          "Sum worker occupancy is work, not end-to-end latency.",
+          "CPU work must come from exclusive per-worker counters.",
+          "Retries are counted per contribution; shared setup costs occur once."
+        ],
+        "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+        "os_worker_peak_rss_bytes": 31522816,
+        "retries": 0,
+        "sampled_joint_live_peaks": {
+          "disk_bytes": null,
+          "ram_bytes": null,
+          "vram_bytes": null
+        },
+        "setup_cold_ns": 500,
+        "setup_warm_ns": 0,
+        "time_to_certified_quality": {
+          "budget_ns": 20000000000,
+          "status": "right-censored",
+          "time_ns": null
+        },
+        "transfer_scope": "Local buffer copy; no network transfer or protected release",
+        "wall_ns": 7318833
+      },
+      "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+      "rss_bytes": 31522816
+    },
+    {
+      "backend": "transposed",
+      "end_to_end_ns": 76594209,
+      "launch_import_and_ipc_ns": 69774334,
+      "ledger": {
+        "companion_version": "profile-ledger-1.0.0",
+        "events": [
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "prepare",
+            "cpu_ns": 126000,
+            "end_ns": 128584,
+            "phase": "prepare",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 750,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "setup",
+            "cpu_ns": 0,
+            "end_ns": 132625,
+            "phase": "setup",
+            "reuse_cost_ids": [],
+            "setup_mode": "cold",
+            "start_ns": 132084,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "evaluate",
+            "cpu_ns": 1622000,
+            "end_ns": 1756125,
+            "phase": "evaluate",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 134167,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "verify",
+            "cpu_ns": 1788000,
+            "end_ns": 3547500,
+            "phase": "verify",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 1758709,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 23966,
+            "contribution_id": "synthetic:one",
+            "cost_id": "transfer",
+            "cpu_ns": 2000,
+            "end_ns": 3738875,
+            "phase": "transfer",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 3736417,
+            "status": "successful",
+            "worker": "cpu-0"
+          },
+          {
+            "attempt_id": "one",
+            "bytes_sent": 0,
+            "contribution_id": "synthetic:one",
+            "cost_id": "release",
+            "cpu_ns": 235000,
+            "end_ns": 6820625,
+            "phase": "release",
+            "reuse_cost_ids": [],
+            "setup_mode": "not-applicable",
+            "start_ns": 5914667,
+            "status": "successful",
+            "worker": "cpu-0"
+          }
+        ],
+        "resource_samples": []
+      },
+      "profile": {
+        "aggregate_cpu_ns": 3773000,
+        "aggregate_worker_occupied_ns": 4447540,
+        "attempts": 1,
+        "bytes_sent": 23966,
+        "complete_protected_path": {
+          "aggregate": "not-run",
+          "prove": "not-run",
+          "train": "not-run",
+          "witness": "not-run"
+        },
+        "coordinator_memory": "unavailable; worker RSS is not aggregate parent-plus-child memory",
+        "disk_method": "Single complete temporary output file, removed after fsync",
+        "disk_peak_bytes": 23966,
+        "failed_cost_ids": [],
+        "limitations": [
+          "Sampled live peaks are lower bounds unless every resource change is observed.",
+          "Sum worker occupancy is work, not end-to-end latency.",
+          "CPU work must come from exclusive per-worker counters.",
+          "Retries are counted per contribution; shared setup costs occur once."
+        ],
+        "memory_method": "OS process lifetime high-water RSS; includes interpreter/imports; one worker",
+        "os_worker_peak_rss_bytes": 31670272,
+        "retries": 0,
+        "sampled_joint_live_peaks": {
+          "disk_bytes": null,
+          "ram_bytes": null,
+          "vram_bytes": null
+        },
+        "setup_cold_ns": 541,
+        "setup_warm_ns": 0,
+        "time_to_certified_quality": {
+          "budget_ns": 20000000000,
+          "status": "right-censored",
+          "time_ns": null
+        },
+        "transfer_scope": "Local buffer copy; no network transfer or protected release",
+        "wall_ns": 6819875
+      },
+      "result_digest": "sha256:b72a5e17ea41eade71f399eef1e814f68435847de30540fab3eed5d738198800",
+      "rss_bytes": 31670272
+    }
+  ]
+}
