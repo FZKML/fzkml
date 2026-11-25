@@ -1,0 +1,59 @@
+name: Bounded CPU research
+on:
+  schedule:
+    - cron: '37 3 * * 1'
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: scheduled-cpu
+  cancel-in-progress: false
+jobs:
+  research:
+    if: github.repository == 'FZKML/fzkml' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        profile: [contract, tiny-reference]
+    concurrency:
+      group: research-${{ matrix.profile }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.11.14'
+      - name: Install locked tools
+        run: |
+          python -m pip install --require-hashes -r tools-requirements.txt
+          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          uv sync --locked
+      - name: Persist initial manifest
+        env:
+          PROFILE: ${{ matrix.profile }}
+        run: ./scripts/research init "$PROFILE"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: initial-${{ matrix.profile }}-${{ github.run_attempt }}
+          path: research/journal.json
+          retention-days: 7
+          if-no-files-found: error
+      - name: Run reviewed profile
+        env:
+          PROFILE: ${{ matrix.profile }}
+        run: ./scripts/research run "$PROFILE"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        if: always()
+        with:
+          name: final-${{ matrix.profile }}-${{ github.run_attempt }}
+          path: |
+            research/journal.json
+            research/reproducer.json
+          retention-days: 7
+          if-no-files-found: error

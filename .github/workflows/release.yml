@@ -1,0 +1,56 @@
+name: Tagged evidence release
+on:
+  push:
+    tags: ['v*']
+permissions: {}
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.repository == 'FZKML/fzkml' && github.ref_protected && startsWith(github.ref, 'refs/tags/v')
+    environment: release-evidence
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.11.14'
+      - name: Install locked tools
+        run: |
+          python -m pip install --require-hashes -r tools-requirements.txt
+          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          uv sync --locked
+      - name: Require tag source on protected default branch
+        run: |
+          git fetch --no-tags origin main
+          git merge-base --is-ancestor HEAD FETCH_HEAD
+      - run: ./scripts/validate
+      - run: ./scripts/research proof
+      - run: cargo build --release --locked
+      - name: Build inventory and evidence bundle
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          PYTHONPATH=src uv run --locked python -m fzkml_ci.inventory
+          ./scripts/release-evidence build release-bundle --tag "$RELEASE_TAG"
+      - uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a
+        with:
+          subject-path: |
+            release-bundle/libfzkml_core.rlib
+            release-bundle/manifest.json
+      - name: Independently verify provenance and publish tagged evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          ./scripts/release-evidence verify release-bundle --tag "$RELEASE_TAG" --commit "$SOURCE_SHA"
+          gh release create "$RELEASE_TAG" release-bundle/* --verify-tag --title "$RELEASE_TAG (experimental)" --notes-file docs/RELEASE-LIMITATIONS.md

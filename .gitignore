@@ -12,6 +12,10 @@ target/
 .mypy_cache/
 .ruff_cache/
 *.egg-info/
+
+/research/
+release-bundle/
+
 .cargo-cache/
 .mutation-work/
 .venv-smoke/

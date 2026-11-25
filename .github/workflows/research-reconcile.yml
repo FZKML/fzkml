@@ -1,0 +1,41 @@
+name: Reconcile CPU research
+on:
+  workflow_run:
+    workflows: [Bounded CPU research]
+    types: [completed]
+permissions: {}
+concurrency:
+  group: research-reconcile-${{ github.event.workflow_run.id }}
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    if: github.repository == 'FZKML/fzkml' && github.event.workflow_run.head_repository.full_name == 'FZKML/fzkml' && github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.11.14'
+      - run: python -m pip install --require-hashes -r tools-requirements.txt && uv sync --locked
+      - name: Fetch metadata only, never execute or download run artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          ATTEMPT: ${{ github.event.workflow_run.run_attempt }}
+        run: |
+          gh api --paginate "repos/FZKML/fzkml/actions/runs/$RUN_ID/attempts/$ATTEMPT/jobs?per_page=100" --slurp > /tmp/jobs-pages.json
+          python -c 'import json; p=json.load(open("/tmp/jobs-pages.json")); json.dump({"jobs":[j for page in p for j in page["jobs"]]},open("/tmp/jobs.json","w"))'
+          ./scripts/research reconcile --jobs /tmp/jobs.json --output research/reconciliation.json
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: reconciliation-${{ github.event.workflow_run.id }}-${{ github.event.workflow_run.run_attempt }}
+          path: research/reconciliation.json
+          retention-days: 14
+          if-no-files-found: error

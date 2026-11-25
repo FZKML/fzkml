@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "status": "available",
+  "reason": "Session02 PR72 genuine Groth16 public arithmetic only; independent oracle and mandatory negatives. Private/protected protocol remains unavailable.",
+  "command": [
+    "./scripts/s04-proof"
+  ]
+}

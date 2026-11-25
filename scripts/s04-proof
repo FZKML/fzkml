@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+uv sync --locked
+proof_environment="${UV_PROJECT_ENVIRONMENT:-$PWD/.venv}"
+if [[ "$proof_environment" != /* ]]; then
+  proof_environment="$PWD/$proof_environment"
+fi
+cargo build --release --locked -p fzkml-core --bin fzkml-contract
+wheel_dir="$(mktemp -d)"
+trap 'rm -rf "$wheel_dir"' EXIT
+(
+  cd bindings
+  if [[ "$(uname -s)" == Linux ]]; then
+    "$proof_environment/bin/maturin" build --release --locked --out "$wheel_dir" -i "$proof_environment/bin/python" --compatibility linux
+  else
+    "$proof_environment/bin/maturin" build --release --locked --out "$wheel_dir" -i "$proof_environment/bin/python"
+  fi
+)
+wheel=$(find "$wheel_dir" -maxdepth 1 -name 'fzkml_native-*.whl' -print -quit)
+test -n "$wheel"
+uv pip install --python "$proof_environment/bin/python" --no-deps --reinstall "$wheel"
+PYTHONPATH=.:src uv run --locked python scripts/s04_proof.py

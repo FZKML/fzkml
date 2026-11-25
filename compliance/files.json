@@ -18,15 +18,6 @@
     "Unlicense"
   ],
   "files": {
-    ".gitattributes": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     ".github/CODEOWNERS": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -45,7 +36,25 @@
       ],
       "notice_files": []
     },
+    ".github/dependabot.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     ".github/pull_request_template.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/codeql.yml": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
@@ -72,7 +81,16 @@
       ],
       "notice_files": []
     },
-    ".github/workflows/language.yml": {
+    ".github/workflows/gpu.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/release.yml": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
@@ -85,6 +103,24 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/research-reconcile.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/research.yml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
@@ -243,6 +279,1048 @@
       "notice_files": []
     },
     "assets/public/governance-vector.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/profiles/contract.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/profiles/tiny-reference.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/proof-adapter.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/workflow-digests.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/cff-schema.json": {
+      "license": "CC-BY-4.0",
+      "origin": "upstream",
+      "source": "https://github.com/citation-file-format/citation-file-format/blob/dd51afe18fe23b4daaaf923d305e3046415b2c7c/schema.json",
+      "version": "dd51afe18fe23b4daaaf923d305e3046415b2c7c",
+      "sha256": "17bc7993c67b95eec988dadca78b65cb29cd489d1fceba71040a141dfb9791df",
+      "attribution": "Citation File Format contributors; see compliance/README.md.",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/cff-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/ci-dependencies.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/dependencies.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/dependency-inventory.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/files.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/attrs-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/fc/0f/aafca9af9315aee06a89ffde799a10a582fe8de76c563ee80bbcdc08b3fb/attrs-24.2.0.tar.gz",
+      "version": "24.2.0",
+      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+      "attribution": "The MIT License (MIT)",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/attrs-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/cff-LICENSE": {
+      "license": "CC-BY-4.0",
+      "origin": "upstream",
+      "source": "https://github.com/citation-file-format/citation-file-format/blob/dd51afe18fe23b4daaaf923d305e3046415b2c7c/LICENSE",
+      "version": "dd51afe18fe23b4daaaf923d305e3046415b2c7c",
+      "sha256": "d26e56663498f0f17dbcb8a9bd50d344828948be08265f4fc97b4fc612e9be71",
+      "attribution": "Creative Commons Attribution 4.0 International Public License; Citation File Format contributors.",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/cff-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-attrs-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/9a/8e/82a0fe20a541c03148528be8cac2408564a6c9a0cc7e9171802bc1d26985/attrs-26.1.0.tar.gz#attrs-26.1.0/LICENSE",
+      "version": "26.1.0",
+      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+      "attribution": "Upstream attrs authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-attrs-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-jsonschema-COPYING": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/74/69/f7185de793a29082a9f3c7728268ffb31cb5095131a9c139a74078e27336/jsonschema-4.25.1.tar.gz#jsonschema-4.25.1/COPYING",
+      "version": "4.25.1",
+      "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+      "attribution": "Upstream jsonschema authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-jsonschema-COPYING"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-jsonschema-specifications-COPYING": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/19/74/a633ee74eb36c44aa6d1095e7cc5569bebf04342ee146178e2d36600708b/jsonschema_specifications-2025.9.1.tar.gz#jsonschema_specifications-2025.9.1/COPYING",
+      "version": "2025.9.1",
+      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "attribution": "Upstream jsonschema-specifications authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-jsonschema-specifications-COPYING"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-mypy-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/c0/77/8f0d0001ffad290cef2f7f216f96c814866248a0b92a722365ed54648e7e/mypy-1.18.2.tar.gz#mypy-1.18.2/LICENSE",
+      "version": "1.18.2",
+      "sha256": "de341f6e031d021aab9eb27bdf713cc6fb844dee832ef3bcd4688bff5517220b",
+      "attribution": "Upstream mypy authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-mypy-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-mypy-extensions-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/d0/6f/43edf3be2748d0e40974a5ee046a8bb4c9961a4bdd3e7d5c6dcbf32d1af6/mypy_extensions-1.2.0.tar.gz#mypy_extensions-1.2.0/LICENSE",
+      "version": "1.2.0",
+      "sha256": "a50450da1d53cd777b80ced77c58ff96abe0ccd879706bd142c3ec20e245f0b4",
+      "attribution": "Upstream mypy-extensions authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-mypy-extensions-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-pathspec-LICENSE": {
+      "license": "MPL-2.0",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/5a/82/42f767fc1c1143d6fd36efb827202a2d997a375e160a71eb2888a925aac1/pathspec-1.1.1.tar.gz#pathspec-1.1.1/LICENSE",
+      "version": "1.1.1",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+      "attribution": "Upstream pathspec authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-pathspec-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-pyyaml-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz#pyyaml-6.0.3/LICENSE",
+      "version": "6.0.3",
+      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+      "attribution": "Upstream pyyaml authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-pyyaml-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-referencing-COPYING": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/22/f5/df4e9027acead3ecc63e50fe1e36aca1523e1719559c499951bb4b53188f/referencing-0.37.0.tar.gz#referencing-0.37.0/COPYING",
+      "version": "0.37.0",
+      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "attribution": "Upstream referencing authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-referencing-COPYING"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-rpds-py-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/42/68/3bd46b8a5e01d3c2ebdf9c5e9497912e3fe0cde02bac21a7130ca866e403/rpds_py-2026.9.1.tar.gz#rpds_py-2026.9.1/LICENSE",
+      "version": "2026.9.1",
+      "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+      "attribution": "Upstream rpds-py authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-rpds-py-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-ruff-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/82/fa/fbb67a5780ae0f704876cb8ac92d6d76da41da4dc72b7ed3565ab18f2f52/ruff-0.14.5.tar.gz#ruff-0.14.5/LICENSE",
+      "version": "0.14.5",
+      "sha256": "2597d854122b77ddc71971564ca2350a37608575ce324adc5650a2b2051c8f18",
+      "attribution": "Upstream ruff authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-ruff-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-types-jsonschema-LICENSE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/ef/da/5b901088da5f710690b422137e8ae74197fb1ca471e4aa84dd3ef0d6e295/types_jsonschema-4.25.1.20251009.tar.gz#types_jsonschema-4.25.1.20251009/LICENSE",
+      "version": "4.25.1.20251009",
+      "sha256": "295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe",
+      "attribution": "Upstream types-jsonschema authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-types-jsonschema-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-types-pyyaml-LICENSE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/7e/69/3c51b36d04da19b92f9e815be12753125bd8bc247ba0470a982e6979e71c/types_pyyaml-6.0.12.20250915.tar.gz#types_pyyaml-6.0.12.20250915/LICENSE",
+      "version": "6.0.12.20250915",
+      "sha256": "295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe",
+      "attribution": "Upstream types-pyyaml authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-types-pyyaml-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-typing-extensions-LICENSE": {
+      "license": "PSF-2.0",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/f6/cc/6253133b5bb138fc3306cebfbda2c520f545d36b5be2c7255cc528bb45d6/typing_extensions-4.16.0.tar.gz#typing_extensions-4.16.0/LICENSE",
+      "version": "4.16.0",
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "attribution": "Upstream typing-extensions authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-typing-extensions-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-uv-LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/8a/08/3bf76403ea7c22feef634849137fab10b28ab5ba5bbf08a53390763d5448/uv-0.9.11.tar.gz#uv-0.9.11/LICENSE-APACHE",
+      "version": "0.9.11",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "attribution": "Upstream uv authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-uv-LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/ci-uv-LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/8a/08/3bf76403ea7c22feef634849137fab10b28ab5ba5bbf08a53390763d5448/uv-0.9.11.tar.gz#uv-0.9.11/LICENSE-MIT",
+      "version": "0.9.11",
+      "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c",
+      "attribution": "Upstream uv authors; verbatim copyright and terms in this file.",
+      "modifications": "none; verbatim upstream license text",
+      "license_files": [
+        "compliance/third-party/ci-uv-LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/jsonschema-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/38/2e/03362ee4034a4c917f697890ccd4aec0800ccf9ded7f511971c75451deec/jsonschema-4.23.0.tar.gz",
+      "version": "4.23.0",
+      "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+      "attribution": "Copyright (c) 2013 Julian Berman",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/jsonschema-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/jsonschema-specifications-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/10/db/58f950c996c793472e336ff3655b13fbcf1e3b359dcf52dcf3ed3b52c352/jsonschema_specifications-2024.10.1.tar.gz",
+      "version": "2024.10.1",
+      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "attribution": "Copyright (c) 2022 Julian Berman",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/jsonschema-specifications-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/referencing-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/99/5b/73ca1f8e72fff6fa52119dbd185f73a907b1989428917b24cff660129b6d/referencing-0.35.1.tar.gz",
+      "version": "0.35.1",
+      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "attribution": "Copyright (c) 2022 Julian Berman",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/referencing-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "compliance/third-party/rpds-py-LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://files.pythonhosted.org/packages/25/cb/8e919951f55d109d658f81c9b49d0cc3b48637c50792c5d2e77032b8c5da/rpds_py-0.20.1.tar.gz",
+      "version": "0.20.1",
+      "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+      "attribution": "Copyright (c) 2023 Julian Berman",
+      "modifications": "none; verbatim upstream text",
+      "license_files": [
+        "compliance/third-party/rpds-py-LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/Cargo.toml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/lib.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/CHARTER.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/CI-DELIVERY-EVIDENCE.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/CI-RESEARCH.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/CREDIT.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/FOUNDATION-EVIDENCE.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/RELEASE-LIMITATIONS.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/REPRODUCE.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/implementation.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/records.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/security.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "examples/claims.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "examples/results.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "pyproject.toml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "requirements-dev.txt": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "rust-toolchain.toml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/bundle-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/claims-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/result-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/build-public-report": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/build_source.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_ci_inventory.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_citation.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_dco.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_governance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/release-evidence": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/reproduce": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/research": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/validate": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/verify-public-report": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/__main__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/benchmark.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/inventory.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/release.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/report.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/validate.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/workflow.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_governance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_pipeline.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tools-requirements.txt": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "uv.lock": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "assets/public/synthetic-cross-silo-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/registry.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/claim-context.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/coverage-report.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/coverage.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/evidence-manifest.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering artifact generated with Codex; contributor history records provenance. Manuscript content excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/implementation-evidence.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering artifact generated with Codex; contributor history records provenance. Manuscript content excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/manuscript.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/security-obligations.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/source-index.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/capabilities.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/preregistration-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/replication-cards.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/reporting-cases.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/research_fixtures.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/capabilities-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/deployment-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/fixtures-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/measurement-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/relation-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/security-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_ci_research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".gitattributes": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    ".github/workflows/language.yml": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
@@ -3495,317 +4573,12 @@
       ],
       "notice_files": []
     },
-    "claims/README.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/README.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/cff-schema.json": {
-      "license": "CC-BY-4.0",
-      "origin": "upstream",
-      "source": "https://github.com/citation-file-format/citation-file-format/blob/dd51afe18fe23b4daaaf923d305e3046415b2c7c/schema.json",
-      "version": "dd51afe18fe23b4daaaf923d305e3046415b2c7c",
-      "sha256": "17bc7993c67b95eec988dadca78b65cb29cd489d1fceba71040a141dfb9791df",
-      "attribution": "Citation File Format contributors; see compliance/README.md.",
-      "modifications": "none; verbatim upstream text",
-      "license_files": [
-        "compliance/third-party/cff-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/ci-dependencies.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/dependencies.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/files.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "compliance/rust-dependencies.json": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/attrs-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/fc/0f/aafca9af9315aee06a89ffde799a10a582fe8de76c563ee80bbcdc08b3fb/attrs-24.2.0.tar.gz",
-      "version": "24.2.0",
-      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
-      "attribution": "The MIT License (MIT)",
-      "modifications": "none; verbatim upstream text",
-      "license_files": [
-        "compliance/third-party/attrs-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/cff-LICENSE": {
-      "license": "CC-BY-4.0",
-      "origin": "upstream",
-      "source": "https://github.com/citation-file-format/citation-file-format/blob/dd51afe18fe23b4daaaf923d305e3046415b2c7c/LICENSE",
-      "version": "dd51afe18fe23b4daaaf923d305e3046415b2c7c",
-      "sha256": "d26e56663498f0f17dbcb8a9bd50d344828948be08265f4fc97b4fc612e9be71",
-      "attribution": "Creative Commons Attribution 4.0 International Public License; Citation File Format contributors.",
-      "modifications": "none; verbatim upstream text",
-      "license_files": [
-        "compliance/third-party/cff-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-attrs-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/9a/8e/82a0fe20a541c03148528be8cac2408564a6c9a0cc7e9171802bc1d26985/attrs-26.1.0.tar.gz#attrs-26.1.0/LICENSE",
-      "version": "26.1.0",
-      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
-      "attribution": "Upstream attrs authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-attrs-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-jsonschema-COPYING": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/74/69/f7185de793a29082a9f3c7728268ffb31cb5095131a9c139a74078e27336/jsonschema-4.25.1.tar.gz#jsonschema-4.25.1/COPYING",
-      "version": "4.25.1",
-      "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
-      "attribution": "Upstream jsonschema authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-jsonschema-COPYING"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-jsonschema-specifications-COPYING": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/19/74/a633ee74eb36c44aa6d1095e7cc5569bebf04342ee146178e2d36600708b/jsonschema_specifications-2025.9.1.tar.gz#jsonschema_specifications-2025.9.1/COPYING",
-      "version": "2025.9.1",
-      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
-      "attribution": "Upstream jsonschema-specifications authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-jsonschema-specifications-COPYING"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-mypy-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/c0/77/8f0d0001ffad290cef2f7f216f96c814866248a0b92a722365ed54648e7e/mypy-1.18.2.tar.gz#mypy-1.18.2/LICENSE",
-      "version": "1.18.2",
-      "sha256": "de341f6e031d021aab9eb27bdf713cc6fb844dee832ef3bcd4688bff5517220b",
-      "attribution": "Upstream mypy authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-mypy-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-mypy-extensions-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/d0/6f/43edf3be2748d0e40974a5ee046a8bb4c9961a4bdd3e7d5c6dcbf32d1af6/mypy_extensions-1.2.0.tar.gz#mypy_extensions-1.2.0/LICENSE",
-      "version": "1.2.0",
-      "sha256": "a50450da1d53cd777b80ced77c58ff96abe0ccd879706bd142c3ec20e245f0b4",
-      "attribution": "Upstream mypy-extensions authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-mypy-extensions-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-pathspec-LICENSE": {
-      "license": "MPL-2.0",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/5a/82/42f767fc1c1143d6fd36efb827202a2d997a375e160a71eb2888a925aac1/pathspec-1.1.1.tar.gz#pathspec-1.1.1/LICENSE",
-      "version": "1.1.1",
-      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
-      "attribution": "Upstream pathspec authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-pathspec-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-pyyaml-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz#pyyaml-6.0.3/LICENSE",
-      "version": "6.0.3",
-      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
-      "attribution": "Upstream pyyaml authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-pyyaml-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-referencing-COPYING": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/22/f5/df4e9027acead3ecc63e50fe1e36aca1523e1719559c499951bb4b53188f/referencing-0.37.0.tar.gz#referencing-0.37.0/COPYING",
-      "version": "0.37.0",
-      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
-      "attribution": "Upstream referencing authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-referencing-COPYING"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-rpds-py-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/42/68/3bd46b8a5e01d3c2ebdf9c5e9497912e3fe0cde02bac21a7130ca866e403/rpds_py-2026.9.1.tar.gz#rpds_py-2026.9.1/LICENSE",
-      "version": "2026.9.1",
-      "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
-      "attribution": "Upstream rpds-py authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-rpds-py-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-ruff-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/82/fa/fbb67a5780ae0f704876cb8ac92d6d76da41da4dc72b7ed3565ab18f2f52/ruff-0.14.5.tar.gz#ruff-0.14.5/LICENSE",
-      "version": "0.14.5",
-      "sha256": "2597d854122b77ddc71971564ca2350a37608575ce324adc5650a2b2051c8f18",
-      "attribution": "Upstream ruff authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-ruff-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-types-jsonschema-LICENSE": {
-      "license": "Apache-2.0",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/ef/da/5b901088da5f710690b422137e8ae74197fb1ca471e4aa84dd3ef0d6e295/types_jsonschema-4.25.1.20251009.tar.gz#types_jsonschema-4.25.1.20251009/LICENSE",
-      "version": "4.25.1.20251009",
-      "sha256": "295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe",
-      "attribution": "Upstream types-jsonschema authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-types-jsonschema-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-types-pyyaml-LICENSE": {
-      "license": "Apache-2.0",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/7e/69/3c51b36d04da19b92f9e815be12753125bd8bc247ba0470a982e6979e71c/types_pyyaml-6.0.12.20250915.tar.gz#types_pyyaml-6.0.12.20250915/LICENSE",
-      "version": "6.0.12.20250915",
-      "sha256": "295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe",
-      "attribution": "Upstream types-pyyaml authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-types-pyyaml-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-typing-extensions-LICENSE": {
-      "license": "PSF-2.0",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/f6/cc/6253133b5bb138fc3306cebfbda2c520f545d36b5be2c7255cc528bb45d6/typing_extensions-4.16.0.tar.gz#typing_extensions-4.16.0/LICENSE",
-      "version": "4.16.0",
-      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
-      "attribution": "Upstream typing-extensions authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-typing-extensions-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-uv-LICENSE-APACHE": {
-      "license": "Apache-2.0",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/8a/08/3bf76403ea7c22feef634849137fab10b28ab5ba5bbf08a53390763d5448/uv-0.9.11.tar.gz#uv-0.9.11/LICENSE-APACHE",
-      "version": "0.9.11",
-      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-      "attribution": "Upstream uv authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-uv-LICENSE-APACHE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/ci-uv-LICENSE-MIT": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/8a/08/3bf76403ea7c22feef634849137fab10b28ab5ba5bbf08a53390763d5448/uv-0.9.11.tar.gz#uv-0.9.11/LICENSE-MIT",
-      "version": "0.9.11",
-      "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c",
-      "attribution": "Upstream uv authors; verbatim copyright and terms in this file.",
-      "modifications": "none; verbatim upstream license text",
-      "license_files": [
-        "compliance/third-party/ci-uv-LICENSE-MIT"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/jsonschema-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/38/2e/03362ee4034a4c917f697890ccd4aec0800ccf9ded7f511971c75451deec/jsonschema-4.23.0.tar.gz",
-      "version": "4.23.0",
-      "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
-      "attribution": "Copyright (c) 2013 Julian Berman",
-      "modifications": "none; verbatim upstream text",
-      "license_files": [
-        "compliance/third-party/jsonschema-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/jsonschema-specifications-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/10/db/58f950c996c793472e336ff3655b13fbcf1e3b359dcf52dcf3ed3b52c352/jsonschema_specifications-2024.10.1.tar.gz",
-      "version": "2024.10.1",
-      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
-      "attribution": "Copyright (c) 2022 Julian Berman",
-      "modifications": "none; verbatim upstream text",
-      "license_files": [
-        "compliance/third-party/jsonschema-specifications-LICENSE"
       ],
       "notice_files": []
     },
@@ -3978,41 +4751,6 @@
       ],
       "notice_files": []
     },
-    "compliance/third-party/referencing-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/99/5b/73ca1f8e72fff6fa52119dbd185f73a907b1989428917b24cff660129b6d/referencing-0.35.1.tar.gz",
-      "version": "0.35.1",
-      "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
-      "attribution": "Copyright (c) 2022 Julian Berman",
-      "modifications": "none; verbatim upstream text",
-      "license_files": [
-        "compliance/third-party/referencing-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "compliance/third-party/rpds-py-LICENSE": {
-      "license": "MIT",
-      "origin": "upstream",
-      "source": "https://files.pythonhosted.org/packages/25/cb/8e919951f55d109d658f81c9b49d0cc3b48637c50792c5d2e77032b8c5da/rpds_py-0.20.1.tar.gz",
-      "version": "0.20.1",
-      "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
-      "attribution": "Copyright (c) 2023 Julian Berman",
-      "modifications": "none; verbatim upstream text",
-      "license_files": [
-        "compliance/third-party/rpds-py-LICENSE"
-      ],
-      "notice_files": []
-    },
-    "crates/fzkml-core/Cargo.toml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "crates/fzkml-core/src/aggregation/crypto.rs": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -4085,15 +4823,6 @@
       ],
       "notice_files": []
     },
-    "crates/fzkml-core/src/lib.rs": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "crates/fzkml-core/src/proof.rs": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -4130,33 +4859,6 @@
       ],
       "notice_files": []
     },
-    "docs/CHARTER.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/CREDIT.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/FOUNDATION-EVIDENCE.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "docs/LANGUAGE-IMPLEMENTATION.md": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -4170,33 +4872,6 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/implementation.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/records.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/security.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
@@ -4229,46 +4904,10 @@
       ],
       "notice_files": []
     },
-    "examples/claims.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "examples/results.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "experiments/README.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "experiments/language-tiny.json": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "pyproject.toml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
@@ -4292,33 +4931,6 @@
       ],
       "notice_files": []
     },
-    "requirements-dev.txt": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "rust-toolchain.toml": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "schemas/bundle-1.0.0.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "schemas/bundle-1.1.0.json": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -4328,82 +4940,10 @@
       ],
       "notice_files": []
     },
-    "schemas/claims-1.0.0.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "schemas/result-1.0.0.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "schemas/result-1.1.0.json": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/build-public-report": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/build_source.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_ci_inventory.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_citation.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_dco.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_governance.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
       "license_files": [
         "LICENSE"
       ],
@@ -4472,15 +5012,6 @@
       ],
       "notice_files": []
     },
-    "scripts/validate": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "scripts/validate-aggregation": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -4499,25 +5030,7 @@
       ],
       "notice_files": []
     },
-    "scripts/verify-public-report": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "specs/NUMERIC-CONTRACT.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/README.md": {
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
@@ -4544,69 +5057,6 @@
       ],
       "notice_files": []
     },
-    "src/README.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/__init__.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/__main__.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/report.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/validate.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "src/fzkml_ci/workflow.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "tests/test_governance.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
     "tests/test_language.py": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -4616,244 +5066,19 @@
       ],
       "notice_files": []
     },
-    "tests/test_pipeline.py": {
+    "scripts/s04-proof": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "attribution": "Existing FZKML proof adapter reused from the CI integration branch; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
       "notice_files": []
     },
-    "tools-requirements.txt": {
+    "scripts/s04_proof.py": {
       "license": "Apache-2.0",
       "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "uv.lock": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "assets/public/synthetic-cross-silo-v1.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "claims/registry.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/README.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/claim-context.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/coverage-report.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/coverage.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/evidence-manifest.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering artifact generated with Codex; contributor history records provenance. Manuscript content excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/implementation-evidence.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering artifact generated with Codex; contributor history records provenance. Manuscript content excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/manuscript.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/security-obligations.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "docs/research/source-index.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "experiments/m0/capabilities.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "experiments/m0/preregistration-v0.1.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "experiments/m0/replication-cards.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "experiments/m0/reporting-cases.json": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/check_research.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "scripts/research_fixtures.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/m0/capabilities-v0.1.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/m0/deployment-v0.1.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/m0/fixtures-v0.1.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/m0/measurement-v0.1.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/m0/relation-v0.1.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "specs/m0/security-v0.1.md": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
-      "license_files": [
-        "LICENSE"
-      ],
-      "notice_files": []
-    },
-    "tests/test_research.py": {
-      "license": "Apache-2.0",
-      "origin": "original",
-      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "attribution": "Existing FZKML proof adapter reused from the CI integration branch; contributor provenance in Git history.",
       "license_files": [
         "LICENSE"
       ],
