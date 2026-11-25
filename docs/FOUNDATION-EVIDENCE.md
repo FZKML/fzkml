@@ -21,8 +21,7 @@ scientific experiment, legal audit, security audit, or independent review.
 Verified from the GitHub connector on 2026-11-24: repository description and
 Apache-2.0 license; initial commit author Guillaume Lauzier; authenticated account
 `guillaumelauzier`; repository response reported admin/maintain/push permission.
-The `main` branch response reported `protected: false`. No branch protection or
-independent review is claimed by the presence of CODEOWNERS.
+The initial `main` branch response reported `protected: false`.
 
 The authenticated GitHub CLI independently verified `guillaumelauzier` has the
 repository `admin` role on 2026-11-24, satisfying CODEOWNERS write eligibility.
@@ -36,12 +35,28 @@ The GitHub connector rejected mutations with HTTP 403. After the maintainer
 authenticated the CLI, all eight issues were assigned to `guillaumelauzier` and
 received claim comments linking this branch. The CLI was used for remote writes.
 
-Before #5/#6 are closed: verify CODEOWNERS errors;
-configure and test protected review behavior; appoint/obtain independent review
-for sensitive controls; verify
-private report receipt/access with maintainer participation. Record non-sensitive
-outcomes here or in the reviewed issue/PR. Maintainer acceptance of policies and
-review of license/terms inventory remain part of PR review.
+On 2026-11-24 the CLI configured `main` branch protection and verified the response:
+strict `governance` and `dco` checks, one approving review, code-owner reviews,
+stale-review dismissal, last-push approval by someone else, resolved conversations,
+admin enforcement, no force pushes or deletion. PR #66 reports `REVIEW_REQUIRED`
+and `BLOCKED`. It is also a draft, so that observation alone does not isolate every
+merge-blocking rule. No controls were bypassed to merge it.
+
+GitHub's CODEOWNERS errors endpoint returned `errors: []` for the implementation
+branch. Automatic owner-request routing from the default-branch CODEOWNERS has
+not been exercised: the file is first introduced by this PR. The authenticated
+private draft-advisory listing returned successfully (zero advisories), verifying
+API access without creating or exposing a report.
+The maintainer subsequently confirmed in this session that they can access and
+manage private reports in Security → Advisories. End-to-end benign-report receipt
+remains untested and is not presented as a completed test.
+
+Before #5 is closed: obtain independent review of the controls and exercise owner
+routing/protected merge behavior with the reviewed policy on the default branch.
+Before #6 is closed: obtain maintainer confirmation of private report handling and
+verify receipt/coordination without exposing contents. Record only non-sensitive
+outcomes. Maintainer acceptance of policies and license/terms inventory remains
+part of PR review.
 
 ## Reproducible validation
 
@@ -51,6 +66,12 @@ development-only dependencies, one original synthetic governance fixture; all
 construction. The archive test verifies exact contents and reproducible bytes.
 The source builder also emits an archive SHA-256 sidecar. These results do not
 substitute for the remote CI run or independent review.
+
+Initial remote CI for commit `78ec1d0fe6ccf64527c2ed268eb0f2031c1dc611` passed
+both jobs ([run 45298257736](https://github.com/FZKML/fzkml/actions/runs/45298257736)).
+The `governance-evidence` artifact was uploaded (89,293 bytes; not expired when
+checked). Later commits must pass the same checks; artifact retention is 14 days,
+so archive evidence separately for durable release records.
 
 Run the commands in README and inspect the CI artifact `governance-evidence`.
 The archive must include LICENSE, DCO, the CFF upstream license, file/dependency

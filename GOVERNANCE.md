@@ -28,7 +28,7 @@ fork, but cannot claim existing authority without an authorized transfer.
 
 ## Review configuration
 
-`.github/CODEOWNERS` requests review from the founding maintainer for protocol,
+Once present on the default branch, `.github/CODEOWNERS` routes owner review for protocol,
 cryptography, learning, claims, provenance, and CI paths, including CODEOWNERS itself.
 GitHub uses the last matching pattern. Multiple owners on one line allow **any one**
 of them to satisfy a code-owner approval; they do not require every listed owner.
@@ -42,7 +42,7 @@ workflow files, governance policy, and validators require independent review.
 Do not mark the control active merely because the files exist.
 
 `docs/FOUNDATION-EVIDENCE.md` records actual configuration verification and gaps.
-Test ownership through a draft PR touching a protected path, inspect requested
+Test ownership through a PR touching a protected path, inspect requested
 reviewers and CODEOWNERS errors, and confirm a missing review/check prevents merge.
 Repeat after owner, access, ruleset, or workflow changes. A local syntax check
 cannot establish GitHub access or protected-branch behavior.
