@@ -1,0 +1,469 @@
+{
+  "schema_version": "1.1.0",
+  "run_id": "synthetic:protected-aggregation-a088876b74cc",
+  "claim_ids": [],
+  "scenario": {
+    "id": "protected-aggregation-v02",
+    "statement": "private-exact-sgd-three-client-vss",
+    "relation_version": "fzkml-protected-aggregation-v1",
+    "numerical_semantics": "fixed16-rne-offset80",
+    "backend": "arkworks-groth16-bn254-pedersen-babyjubjub",
+    "security_mode": "research",
+    "parameters_digest": "sha256:a1a1058ef66e8ddb09736d43b17008666bf0812c7b7326209acba0bff62d7f3d",
+    "key_digest": "sha256:b166a7eecdb95293a7697f567840325cc54162079d3e57bbb176e27a244b7798",
+    "program_digest": "sha256:aef2c29a845823729f2b2e047c57453019866e4fa4c27c12e7565e6ac614e7fe",
+    "circuit_digest": "sha256:ffdb72a94a3a435bfeea810a707620f7ae58dd0832776cd62b12363a9c6782ae",
+    "model": {
+      "id": "synthetic:protected-tiny-model",
+      "version": "numeric-v1",
+      "digest": "sha256:454af1102b6eff77c878b9012600320bdb25c797447ff067c716ea9242d693b8",
+      "license": "Apache-2.0",
+      "publication": "permitted"
+    },
+    "dataset": {
+      "id": "synthetic:protected-tiny-dataset",
+      "version": "numeric-v1",
+      "digest": "sha256:454af1102b6eff77c878b9012600320bdb25c797447ff067c716ea9242d693b8",
+      "license": "Apache-2.0",
+      "publication": "permitted"
+    }
+  },
+  "provenance": {
+    "source_commit": "a088876b74ccae624fc6597819d21e1a928d05c6",
+    "execution_kind": "local",
+    "workflow_path": null,
+    "workflow_run": null,
+    "toolchain": "rust-1.85.1-python-3.11.14",
+    "dependency_digest": "sha256:2dff6f5d15c9d9d53f624ff92fcfa7f620b0f89bf6f651ffbb70b1d35a0b377f",
+    "hardware": {
+      "cpu": "arm64",
+      "memory_bytes": 19327352832,
+      "accelerator": "none",
+      "os": "Darwin",
+      "runner_image_revision": "local-unspecified"
+    }
+  },
+  "randomness": {
+    "public_experiment_seed": 0,
+    "protocol_randomness": "private-not-recorded",
+    "dp_randomness": "not-applicable"
+  },
+  "outcome": {
+    "status": "successful",
+    "reason": "Three original synthetic fixtures match the exact reference; cryptographic/domain review pending."
+  },
+  "repetitions": [
+    {
+      "id": "rep1",
+      "attempt": 1,
+      "status": "successful",
+      "timeout": false,
+      "excluded": false,
+      "reason": "Fresh native process and independent private research setup.",
+      "quality": "not-measured",
+      "measurements": [
+        {
+          "phase": "aggregate",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.000526917
+        },
+        {
+          "phase": "communicate",
+          "quantity": "time",
+          "unit": "s",
+          "value": 1.0043e-05
+        },
+        {
+          "phase": "prepare",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.000534208
+        },
+        {
+          "phase": "prove",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.781061501
+        },
+        {
+          "phase": "release",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.001621292
+        },
+        {
+          "phase": "setup",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.336727917
+        },
+        {
+          "phase": "train",
+          "quantity": "time",
+          "unit": "s",
+          "value": 5.42e-07
+        },
+        {
+          "phase": "verify",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.021937125000000002
+        },
+        {
+          "phase": "witness",
+          "quantity": "time",
+          "unit": "s",
+          "value": 2.4373999999999997e-05
+        },
+        {
+          "phase": "end-to-end",
+          "quantity": "time",
+          "unit": "s",
+          "value": 1.5340947919758037
+        },
+        {
+          "phase": "end-to-end",
+          "quantity": "memory",
+          "unit": "byte",
+          "value": 26918912
+        },
+        {
+          "phase": "communicate",
+          "quantity": "communication",
+          "unit": "byte",
+          "value": 34920
+        }
+      ]
+    },
+    {
+      "id": "rep2",
+      "attempt": 1,
+      "status": "successful",
+      "timeout": false,
+      "excluded": false,
+      "reason": "Fresh native process and independent private research setup.",
+      "quality": "not-measured",
+      "measurements": [
+        {
+          "phase": "aggregate",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.0006405
+        },
+        {
+          "phase": "communicate",
+          "quantity": "time",
+          "unit": "s",
+          "value": 1.2083000000000001e-05
+        },
+        {
+          "phase": "prepare",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.000667417
+        },
+        {
+          "phase": "prove",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.804412209
+        },
+        {
+          "phase": "release",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.0019105
+        },
+        {
+          "phase": "setup",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.295127875
+        },
+        {
+          "phase": "train",
+          "quantity": "time",
+          "unit": "s",
+          "value": 4.58e-07
+        },
+        {
+          "phase": "verify",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.021040916
+        },
+        {
+          "phase": "witness",
+          "quantity": "time",
+          "unit": "s",
+          "value": 3.3459e-05
+        },
+        {
+          "phase": "end-to-end",
+          "quantity": "time",
+          "unit": "s",
+          "value": 1.1309947499539703
+        },
+        {
+          "phase": "end-to-end",
+          "quantity": "memory",
+          "unit": "byte",
+          "value": 25559040
+        },
+        {
+          "phase": "communicate",
+          "quantity": "communication",
+          "unit": "byte",
+          "value": 35231
+        }
+      ]
+    },
+    {
+      "id": "rep3",
+      "attempt": 1,
+      "status": "successful",
+      "timeout": false,
+      "excluded": false,
+      "reason": "Fresh native process and independent private research setup.",
+      "quality": "not-measured",
+      "measurements": [
+        {
+          "phase": "aggregate",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.000518125
+        },
+        {
+          "phase": "communicate",
+          "quantity": "time",
+          "unit": "s",
+          "value": 1.0542e-05
+        },
+        {
+          "phase": "prepare",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.000407375
+        },
+        {
+          "phase": "prove",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.806616292
+        },
+        {
+          "phase": "release",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.001669375
+        },
+        {
+          "phase": "setup",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.344329834
+        },
+        {
+          "phase": "train",
+          "quantity": "time",
+          "unit": "s",
+          "value": 1.209e-06
+        },
+        {
+          "phase": "verify",
+          "quantity": "time",
+          "unit": "s",
+          "value": 0.020501875
+        },
+        {
+          "phase": "witness",
+          "quantity": "time",
+          "unit": "s",
+          "value": 3.1543e-05
+        },
+        {
+          "phase": "end-to-end",
+          "quantity": "time",
+          "unit": "s",
+          "value": 1.1826952919946052
+        },
+        {
+          "phase": "end-to-end",
+          "quantity": "memory",
+          "unit": "byte",
+          "value": 25509888
+        },
+        {
+          "phase": "communicate",
+          "quantity": "communication",
+          "unit": "byte",
+          "value": 34859
+        }
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "phase": "aggregate",
+      "quantity": "time",
+      "unit": "s",
+      "value": 0.0005618473333333334,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "communicate",
+      "quantity": "time",
+      "unit": "s",
+      "value": 1.0889333333333333e-05,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "prepare",
+      "quantity": "time",
+      "unit": "s",
+      "value": 0.0005363333333333333,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "prove",
+      "quantity": "time",
+      "unit": "s",
+      "value": 0.7973633339999999,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "release",
+      "quantity": "time",
+      "unit": "s",
+      "value": 0.0017337223333333334,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "setup",
+      "quantity": "time",
+      "unit": "s",
+      "value": 0.32539520866666666,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "train",
+      "quantity": "time",
+      "unit": "s",
+      "value": 7.363333333333333e-07,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "verify",
+      "quantity": "time",
+      "unit": "s",
+      "value": 0.021159972,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "witness",
+      "quantity": "time",
+      "unit": "s",
+      "value": 2.9792000000000002e-05,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "end-to-end",
+      "quantity": "time",
+      "unit": "s",
+      "value": 1.2825949446414597,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "end-to-end",
+      "quantity": "memory",
+      "unit": "byte",
+      "value": 25995946.666666668,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    },
+    {
+      "phase": "communicate",
+      "quantity": "communication",
+      "unit": "byte",
+      "value": 35003.333333333336,
+      "aggregation": "mean",
+      "repetition_ids": [
+        "rep1",
+        "rep2",
+        "rep3"
+      ]
+    }
+  ],
+  "limitations": [
+    "Original synthetic scalar fixture; all roles share one native process, authenticated private delivery is an API assumption, no network isolation demonstrated.",
+    "One measurement is not a performance study. Prove includes circuit witness synthesis, commitments, signatures and share construction; witness is host input/blinding creation only.",
+    "Communication counts logical application fields and public canonical JSON with delivery multiplicity; excludes context/key distribution, transport, TLS, retransmission and storage traffic. Communicate time covers initial envelope encoding only, not a network measurement.",
+    "Peak memory is the joint process RSS including all roles, SQLite and setup. No per-role memory attribution.",
+    "Local randomized Groth16 setup, custom Pedersen generator derivation and composition require independent review; no production or 128-bit security claim.",
+    "Privacy tolerates at most one colluding recipient plus an honest-but-curious coordinator, conditioned on the permitted clean aggregate. No DP guarantee or personhood claim.",
+    "All three availability receipts required before freeze; two verified recipients needed after freeze. Trusted non-rollbackable authority/storage and issuer; no unconditional liveness.",
+    "All repetitions retained; setup included separately and in end-to-end wall/RSS. No quality experiment, transport benchmark or per-role memory measurement.",
+    "Fresh per-repetition parameter/key IDs are in the companion profile; scenario digests hash their ordered lists.",
+    "Public experiment seed 0 denotes literal fixed inputs; it does not seed credentials, proofs, sharing or setup.",
+    "Source working tree dirty: False. Companion profile records source/dependency/spec digests; no invented CI identity or independent approval."
+  ],
+  "publication_review": {
+    "approved": false,
+    "review_id": "synthetic:protected-aggregation-pending"
+  }
+}

@@ -17,6 +17,7 @@ Adding an unlisted file fails CI. `LICENSE` itself is the preserved license text
 | `compliance/cff-schema.json` | Pinned upstream CFF schema; CC-BY-4.0 |
 | Third-party notices/texts | Their original terms, never relicensed by the root license |
 | Downloaded datasets, models, checkpoints | Separate asset terms; not inferred from code licensing |
+| Native wheel Rust dependencies/runtime | Exact Cargo inventory and preserved upstream texts in `compliance/rust-dependencies.json` and `bindings/python/fzkml_native/licenses/` |
 | Private manuscript and private/restricted inputs | Excluded; no publication or relicensing authorization |
 
 No imported ASF implementation or ASF NOTICE is present. Do not invent an ASF
@@ -27,10 +28,12 @@ changes as well as recording them in the manifest.
 
 The source builder includes all inventoried source files and their required texts.
 Development tools are inventoried in `compliance/dependencies.json` and the
-uv/Rust integration `compliance/ci-dependencies.json`;
-they are not bundled into the source distribution. A future wheel, container,
-binary, or model distribution requires an inventory of its actual transitive
-contents and applicable licenses/notices before that format is released.
+uv integration `compliance/ci-dependencies.json`; those tools are not bundled
+into the source distribution or native wheel. The native wheel contains compiled
+Rust code, with all 89 locked crate notice sets conservatively retained plus the
+Rust 1.85.1 standard-library license/copyright record. Its license bundle is checked
+inside the actual wheel. Any future container, binary, or model format requires
+an inventory of its actual transitive contents before release.
 
 ## Review procedure
 

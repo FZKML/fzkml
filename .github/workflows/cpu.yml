@@ -23,12 +23,13 @@ jobs:
       - name: Install reviewed tools
         run: |
           python -m pip install --require-hashes -r tools-requirements.txt
-          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          source ./scripts/install-rust-toolchain
           uv sync --locked
       - name: Record runner image revision
         run: |
           printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
       - run: ./scripts/validate
+      - run: ./scripts/validate-aggregation
       - run: ./scripts/build-public-report
       - name: Bounded job summary
         run: cat dist/report.md >> "$GITHUB_STEP_SUMMARY"

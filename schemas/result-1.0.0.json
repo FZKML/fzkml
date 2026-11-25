@@ -165,7 +165,8 @@
         "workflow_path": {
           "enum": [
             ".github/workflows/cpu.yml",
-            ".github/workflows/reports.yml"
+            ".github/workflows/reports.yml",
+            ".github/workflows/language.yml"
           ]
         },
         "workflow_run": {
