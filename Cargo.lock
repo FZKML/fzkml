@@ -497,6 +497,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
 
 [[package]]
+name = "fzkml-assurance"
+version = "0.1.0"
+dependencies = [
+ "ark-bn254",
+ "ark-ff",
+ "ark-serialize",
+ "fzkml-core",
+ "serde_json",
+ "sha2",
+]
+
+[[package]]
 name = "fzkml-core"
 version = "0.1.0"
 dependencies = [

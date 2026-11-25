@@ -627,7 +627,7 @@
     "Hosted runner tools and stdlib are external infrastructure."
   ],
   "lock_digests": {
-    "Cargo.lock": "a331067fcc9b226954f792a85e956ad5655a68155d63f828ac09cc8ba11db8ef",
+    "Cargo.lock": "1a40f5eb6d8529f9835445f0d38016db54427e187fae00dec61dd91cfd7e1d8d",
     "tools-requirements.txt": "733006d4dfccca27a3a781dad8aaa4cf6ed8d42515317a90823a187610b34ef5",
     "uv.lock": "430a20df79b8fdd69a2eab08b08f35b4123fffd388131043552edd046bc600a5"
   },
@@ -640,7 +640,7 @@
       ]
     },
     "dataLicense": "CC0-1.0",
-    "documentNamespace": "https://github.com/FZKML/fzkml/sbom/cda10fbf8268147c1cb719ce8c417990d338d761cf61d98f93aa07a2fe6f90e5",
+    "documentNamespace": "https://github.com/FZKML/fzkml/sbom/1361611a3b70256cdc5d0098d56a6b7fb1c6d3fe0c2112502e833cdeca572fbf",
     "name": "fzkml-locked-dependencies",
     "packages": [
       {
@@ -1849,6 +1849,23 @@
         "licenseDeclared": "NOASSERTION",
         "name": "fnv",
         "versionInfo": "1.0.7"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-fzkml-assurance",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/fzkml-assurance@0.1.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "Apache-2.0",
+        "name": "fzkml-assurance",
+        "versionInfo": "0.1.0"
       },
       {
         "SPDXID": "SPDXRef-cargo-fzkml-core",
@@ -3564,6 +3581,11 @@
       },
       {
         "relatedSpdxElement": "SPDXRef-cargo-fnv",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-fzkml-assurance",
         "relationshipType": "DESCRIBES",
         "spdxElementId": "SPDXRef-DOCUMENT"
       },

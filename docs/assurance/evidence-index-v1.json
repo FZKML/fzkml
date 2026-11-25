@@ -1,0 +1,3020 @@
+{
+  "candidate_results": [
+    {
+      "artifact_policy": "Raw science needs publication review; not embedded.",
+      "ci_run": "https://github.com/FZKML/fzkml/actions/runs/45520402482",
+      "configuration": "docs/MODEL-CAPACITY-EVIDENCE.md",
+      "fixture": "assets/public/model-capacity-v1.json",
+      "fixture_digest": "0fa76ec2d6c6aa98f6095dce4f7d246aafc9ce8a435e7e7eb079b27671987584",
+      "hardware_provenance": "Hosted image logs; field hardware not inventoried.",
+      "producer": "Session04 PR127 model candidates",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "state": "executed-CI-conformance-scientific-publication-unapproved",
+      "uncertainty": "Tiny public fixtures only; no private training/DP/utility claim."
+    }
+  ],
+  "canonical_book": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+  "ci_execution_ledger": {
+    "classification": "Hosted CI execution metadata only; no scientific publication approval",
+    "observations": [
+      {
+        "checkout_commit": "1e45c90f282b776287696142b7f8312456ad8ec8",
+        "outcome": "success",
+        "purpose": "prior model candidate conformance",
+        "run_id": 45520402482,
+        "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+        "url": "https://github.com/FZKML/fzkml/actions/runs/45520402482"
+      }
+    ],
+    "version": 1
+  },
+  "ci_execution_ledger_digest": "e21ccd44e9135bfc44070749a90d8ba0af9c4dc84a7a5aefdf8262d18d24ac0d",
+  "claims": [
+    {
+      "assumptions": [
+        "Roles and corruption model are fixed before execution."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C02-DEF-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "Observer separation for the four-client synthetic simulation.",
+      "source": {
+        "chapter": 2,
+        "edition": "MS20261124",
+        "equation": "native.16109",
+        "section": "anchor.h.mn3e6ekapbyf",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "A deployment claim must enumerate distinct public, coordinator and coalition views, including authorized outputs and failure metadata.",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "The roster and weights are authoritative.",
+        "All sums use exact bounded integers."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C03-MATH-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": "m0-two-feature-v0.1",
+      "scope": "An original M0 rounded aggregation definition; not a universal FedAvg convergence theorem.",
+      "source": {
+        "chapter": 3,
+        "edition": "MS20261124",
+        "equation": "native.16761",
+        "section": "anchor.h.4i1eqlmd67wf",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "For a fixed accepted roster A and public integer weights a_i, the declared encoded update is componentwise floor(sum_i(a_i*delta_i)/sum_i(a_i)+1/2); the denominator must be positive and fixed by policy.",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "A concrete hiding/binding commitment and compatible setup must be selected.",
+        "Adequate secret independent blinding is available."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C04-SEC-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "Conditional component requirement; no commitment backend integrated.",
+      "source": {
+        "chapter": 4,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.qynfat1gdlfk",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "The selected commitment must bind one canonical message and hide protected messages under its declared setup and randomness distribution; deterministic dataset hashes alone do not supply hiding.",
+      "status": "planned"
+    },
+    {
+      "assumptions": [
+        "A backend theorem matches the concrete relation/setup and adversary.",
+        "Semantic circuit conformance holds."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C05-SEC-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "One isolated proof invocation only; reactive composition remains open.",
+      "source": {
+        "chapter": 5,
+        "edition": "MS20261124",
+        "equation": "native.19763",
+        "section": "anchor.h.saoa7hxj9kic",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "For the exact one-step relation and permitted setup, a concrete standalone argument must supply completeness, soundness and witness-view simulation; extraction is an additional explicitly required property.",
+      "status": "planned"
+    },
+    {
+      "assumptions": [
+        "Commitment openings and record-selection membership are checked.",
+        "All numeric bounds in relation-v0.1 are enforced."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-relation-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C07-REL-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": "m0-two-feature-v0.1",
+      "scope": "One record, one step, two features, squared loss and no bias; no batch/full-history coverage.",
+      "source": {
+        "chapter": 7,
+        "edition": "MS20261124",
+        "equation": "native.22760",
+        "section": "anchor.h.3qc3zk3a4gwj",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "A local contribution statement binds its authorized selected record, initial model, policy and exact bounded one-record SGD result to the same output-delta commitment.",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "Transport equality and aggregate conservation are enforced.",
+        "The coordinator cannot substitute an unchecked buffer."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C14-SEC-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "Necessary composition interface; aggregate security unproved.",
+      "source": {
+        "chapter": 14,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.4zc95m5dipwu",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "A valid local proof constrains the released aggregate only if its committed contribution is equality-bound to the payload actually consumed and to the same accepted roster and policy.",
+      "status": "planned"
+    },
+    {
+      "assumptions": [
+        "The proof checks only the specified relation."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-fixtures-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C17-DEF-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "Boundary of all synthetic and later public-asset claims.",
+      "source": {
+        "chapter": 17,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.30fmns6fp5js",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "Binding a computation to a dataset representation does not establish truthful records, consent, completeness or statistical representativeness.",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "Each relation and observer is explicitly identified."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-capabilities-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C38-DEF-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "The typed registry separates proof and trust boundaries.",
+      "source": {
+        "chapter": 38,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.l88xmv590y85",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "Training, inference, update-property, aggregation and privacy statements are distinct assurance types; evidence for one does not by itself establish the others.",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "Inputs are signed encoded integers, with no bias or optimizer memory.",
+        "The specified rescale rule and enforced ranges apply."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-relation-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C40-REL-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "The referenced worked-step equation markup was inspected; general source extraction remains partial.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": "m0-two-feature-v0.1",
+      "scope": "Expected readable-prose example only; omitted native constraints require review.",
+      "source": {
+        "chapter": 40,
+        "edition": "MS20261124",
+        "equation": "native.66390",
+        "section": "anchor.h.2i5vvyqm5f1l",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "For S=16, X=(16,-8), Y=4, W=(8,4), rate 1 and the rounded analytical squared-loss gradient, the specified trace is A=96, Q=6, E=2, G=(2,-1), W_next=(6,5).",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "The chosen four-client profile is an engineering adaptation of the manuscript proposal."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C43-DEF-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": "m0-two-feature-v0.1",
+      "scope": "One local process; no process/network privacy.",
+      "source": {
+        "chapter": 43,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.w0rgjjp54sqv",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "The first research profile fixes four synthetic cross-silo clients, one rounded squared-loss step and a public context before increasing model size or claiming protected composition.",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "The same honest trace is available in each compared arm.",
+        "All failed/retried work is retained."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-measurement-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C43-EXP-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": "m0-two-feature-v0.1",
+      "scope": "Experimental-design requirement, with no measured speedup.",
+      "source": {
+        "chapter": 43,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.9f7b3s41mv0e",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "Proof overhead can be isolated only after matching the complete computation, numeric semantics, observer guarantee, eligible roster and release policy; deployment exclusion is a separately measured effect.",
+      "status": "planned"
+    },
+    {
+      "assumptions": [
+        "Both transitions are permitted and produce different successors.",
+        "The coordinator can obtain both valid certificates.",
+        "Verifiers have no authoritative cross-view agreement check."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C73-MATH-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "Conditional counterexample; certificate availability is an assumption.",
+      "source": {
+        "chapter": 73,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.mpflvnnhtwzq",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "If two distinct permitted successors of one parent each have obtainable valid certificates, a coordinator can present them to isolated verifiers that check only local validity, so proof soundness alone does not ensure agreement.",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "The simulator and auxiliary information are common across neighbors.",
+        "All public observations and prior releases belong to the joint mechanism.",
+        "The real/ideal transcript replacement bound holds for each neighbor."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C73-SEC-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "Conditional derivation only; M0 supplies none of the DP/simulation premises.",
+      "source": {
+        "chapter": 73,
+        "edition": "MS20261124",
+        "equation": "native.510226",
+        "section": "anchor.h.nn42qotnu70g",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "If the complete ideal output is (epsilon,delta)-DP and the real transcript is kappa-indistinguishable from a common simulator of that output with identical neighboring public context, efficient events satisfy slack delta+(1+exp(epsilon))*kappa.",
+      "status": "planned"
+    },
+    {
+      "assumptions": [
+        "Source diversity, sample count and label quality are independently controlled.",
+        "Evaluation excludes relevant entity/time/duplicate leakage."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C77-HYP-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "Proposed synthetic factorial study; no real-world outcome claim.",
+      "source": {
+        "chapter": 77,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.q2ksf8xsi601",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "At matched sample count and evaluation protocol, additional authorized source diversity or improved labels may improve quality; a null or adverse effect contradicts that benefit in the tested scope.",
+      "status": "planned"
+    },
+    {
+      "assumptions": [
+        "Matched control arms and budgets are fixed in advance.",
+        "Unreached thresholds and missing runs are retained."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C80-HYP-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "Threshold MSE<=0.05 in the proposed public synthetic profile only.",
+      "source": {
+        "chapter": 80,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.56u5q1l9c7bl",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "Protected-plus-proof deployment should be evaluated by time and resources to a preregistered useful certified quality threshold, counting failures and proof-induced exclusions from the initially eligible population.",
+      "status": "planned"
+    },
+    {
+      "assumptions": [
+        "A field study has authorized recruitment and a defined target population."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C80-ADOPT-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ],
+      "relation_id": null,
+      "scope": "No institutional, clinical or commercial outcome evidence exists.",
+      "source": {
+        "chapter": 80,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.8l3iothd8p0p",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "Whether verification expands authorized participation, and whether those contributors improve learning, requires a separate consented adoption/outcome study and cannot be inferred from proof performance.",
+      "status": "planned"
+    },
+    {
+      "assumptions": [
+        "H is uniform conditional on both the prior observer view and A.",
+        "A is fixed without learning H; later disclosure and selective inclusion are excluded."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-transcript-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C47-ENTROPY-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ],
+      "relation_id": null,
+      "scope": "Conditional elementary entropy requirement; no distributed entropy protocol is implemented.",
+      "source": {
+        "chapter": 47,
+        "edition": "MS20261124",
+        "equation": "native.154277",
+        "section": "anchor.h.46hgt8p76kii",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "If honest H is uniformly distributed conditional on the observer view and the adversarial contribution A, then H XOR A remains conditional-uniform; seed expansion, binding or domain separation alone does not establish that premise.",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "Ideal continuous Gaussian noise; rejector observes its sign.",
+        "Neighboring queries are 0 and Delta>0; this is not a finite sampler theorem."
+      ],
+      "declared_evidence_class": "implementation-conformance",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-retry-test"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C47-RETRY-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ],
+      "relation_id": "analytic-reference-v1",
+      "scope": "Deterministic analytic fixture and declared-policy conformance, not a protected deployment.",
+      "source": {
+        "chapter": 47,
+        "edition": "MS20261124",
+        "equation": "native.156319",
+        "section": "anchor.h.7it5eevtnxo1",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "The analytic reference computes the half-normal retry counterexample delta floor erf(Delta/(sigma*sqrt(2))) and distinguishes resampling from a one-shot fixed public-output filter; unavailable entropy/retry assumptions reject.",
+      "status": "tested"
+    },
+    {
+      "assumptions": [
+        "Registered epsilon/delta contracts hold conditionally on prior history.",
+        "Trusted local Unix filesystem and external latest-root custody are assumed.",
+        "The publisher must authorize before observing or releasing protected information."
+      ],
+      "declared_evidence_class": "implementation-conformance",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-ledger-test"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C47-LEDGER-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ],
+      "relation_id": "analytic-reference-v1",
+      "scope": "Reference accounting only; no consensus, finite sampler, live publisher or complete-view security proof.",
+      "source": {
+        "chapter": 47,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.6ygnggir7wzu",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "The synthetic fixed-cohort observer ledger classifies every submitted observation, retains accounted failure/retry costs, rejects budget exhaustion, and returns identical receipts for identical event retransmissions; recovery never initializes missing state.",
+      "status": "tested"
+    },
+    {
+      "assumptions": [
+        "Fixed public data-independent precision with eigenvalues 1/10,8/5,8/5.",
+        "Full bounded stream class; scalar dimension one versus vector dimension at least two.",
+        "Continuous Gaussian geometry does not establish finite-arithmetic sampler DP."
+      ],
+      "declared_evidence_class": "specification",
+      "evidence_ids": [
+        "spec-transcript-v0.1"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C75-GEOMETRY-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ],
+      "relation_id": null,
+      "scope": "Scoped mathematical example with exact rational witness calculations; no formal-proof artifact or independent review.",
+      "source": {
+        "chapter": 75,
+        "edition": "MS20261124",
+        "equation": "native.533631",
+        "section": "anchor.h.h96lab402kwp",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "For C=1 and positive-definite K=(8/5)I_3-(1/2)11^T, the scalar cube maximum of s^T K s is 43/10, while the full vector row-norm-bounded class attains 24/5 with three planar unit rows summing to zero.",
+      "status": "specified"
+    },
+    {
+      "assumptions": [
+        "Fixed dataset-independent jointly Gaussian law for the analytic interpretation.",
+        "Observed conditioning block is invertible.",
+        "Only the complete explicitly supplied finite pattern/shift set is certified by enumeration."
+      ],
+      "declared_evidence_class": "implementation-conformance",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-reference-test"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C75-REFERENCE-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ],
+      "relation_id": "analytic-reference-v1",
+      "scope": "Dimension-bounded analytic conformance; no numerical SDP solver, Gaussian sampler or adaptive DP theorem.",
+      "source": {
+        "chapter": 75,
+        "edition": "MS20261124",
+        "equation": "native.527046",
+        "section": "anchor.h.7z55qb3kyte5",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "Exact rational reference routines check PSD covariance, distinguish unsupported singular shifts from zero cost, compute supported Gaussian quadratic costs and invertible-block conditional covariance, and reject missing permitted recovery patterns.",
+      "status": "tested"
+    },
+    {
+      "assumptions": [
+        "Potential vectors and target weights are fixed conditional on history.",
+        "The complete finite final-inclusion law is known; every positive-weight client has positive inclusion probability."
+      ],
+      "declared_evidence_class": "implementation-conformance",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-inclusion-test"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C53-INCLUSION-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ],
+      "relation_id": "analytic-reference-v1",
+      "scope": "Exact finite analytical enumeration, not an empirical federated training or amplification result.",
+      "source": {
+        "chapter": 53,
+        "edition": "MS20261124",
+        "equation": "native.239434",
+        "section": "anchor.h.g2hxl15c4lor",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "For the source two-client final-inclusion law, the exact inverse-inclusion estimator has mean 0 and variance 9/4; substituting invitation probabilities gives biased mean 9/20, while equal-marginal dependent laws can have distinct variances.",
+      "status": "tested"
+    },
+    {
+      "assumptions": [
+        "Resource metadata covers all initially invited clients.",
+        "Final inclusion is distinct from invitation, and fixed-cohort accounting uses no amplification."
+      ],
+      "declared_evidence_class": "implementation-conformance",
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-population-test"
+      ],
+      "formal_artifact_ids": [],
+      "id": "FZK-MS20261124-C67-POPULATION-001",
+      "independent_review_ids": [],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ],
+      "relation_id": "analytic-reference-v1",
+      "scope": "Synthetic stage conformance and resource-coverage illustration only.",
+      "source": {
+        "chapter": 67,
+        "edition": "MS20261124",
+        "equation": "none",
+        "section": "anchor.h.o0gvyscd0hen",
+        "version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0"
+      },
+      "statement": "The reference requires nested invited, selected, completed, accepted and released populations and reports each by declared resource class; realized completion fractions are not accepted as DP amplification probabilities.",
+      "status": "tested"
+    }
+  ],
+  "classes": {
+    "ci_conformance": "Recorded separately from theorem/security/privacy/utility support.",
+    "empirical_field_study": "not-run",
+    "independent_review": "not-commissioned",
+    "mathematical_derivations": "Only the five scoped analytic references are tested.",
+    "security_arguments": "specified/planned; no security theorem certified by CI."
+  },
+  "corrections": [
+    {
+      "book_source_claim_status_changed": false,
+      "evidence": "specifications/relations/fzknum-1.0.0.json",
+      "id": "relation-scope",
+      "scope": "M0 half-up/two-feature differs from fzknum RNE/one-feature.",
+      "status": "proposed-scope-caveat"
+    },
+    {
+      "book_source_claim_status_changed": false,
+      "evidence": "ci/assurance/benchmark-plan-v1.json",
+      "id": "toy-evaluation-overlap",
+      "scope": "Overlapping development pilot excluded; final holdout disjoint.",
+      "status": "invalid-development-prototype"
+    },
+    {
+      "book_source_claim_status_changed": false,
+      "evidence": "assets/public/ci14-golden-v1.json",
+      "id": "rne-tie-translation",
+      "scope": "RNE(.5)=0, RNE(1.5)=2: translation/sensitivity needs review.",
+      "status": "proposed-scope-caveat"
+    }
+  ],
+  "coverage": [
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 1,
+      "planned_issues": [
+        19
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.m1cnptj6zcca",
+      "status": "not-run",
+      "title": "From Centralized AI to Cryptographically Governed Collaboration"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C02-DEF-001"
+      ],
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 2,
+      "planned_issues": [
+        13,
+        52
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.yk59qo3f88gl",
+      "status": "not-executable",
+      "title": "Threat Models"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C03-MATH-001"
+      ],
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 3,
+      "planned_issues": [
+        19,
+        26,
+        28
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.h7166h9w1ft0",
+      "status": "not-run",
+      "title": "Federated Optimization"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C04-SEC-001"
+      ],
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 4,
+      "planned_issues": [
+        23,
+        32
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.qynfat1gdlfk",
+      "status": "not-run",
+      "title": "Cryptographic Commitments"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C05-SEC-001"
+      ],
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 5,
+      "planned_issues": [
+        23,
+        33,
+        35
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.hbka8563tgft",
+      "status": "not-run",
+      "title": "Zero-Knowledge Proofs"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 6,
+      "planned_issues": [
+        54,
+        55,
+        57
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.u6ucjmd9t2mu",
+      "status": "not-run",
+      "title": "Differential Privacy"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C07-REL-001"
+      ],
+      "evidence_ids": [
+        "spec-relation-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 7,
+      "planned_issues": [
+        13,
+        33,
+        45
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.hw3f93i6yd7k",
+      "status": "not-run",
+      "title": "The FZKML Protocol Family"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 8,
+      "planned_issues": [
+        44,
+        46,
+        50
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.7379v5bglvc",
+      "status": "not-run",
+      "title": "Verifiable Secure Aggregation"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 9,
+      "planned_issues": [
+        50,
+        53
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.6i9vkfdhb3g7",
+      "status": "not-run",
+      "title": "Robustness and Byzantine Behavior"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 10,
+      "planned_issues": [
+        62
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ijjkignl2gqm",
+      "status": "not-run",
+      "title": "Private and Verifiable Evaluation"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 11,
+      "planned_issues": [
+        13,
+        46
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.1ngxfk8tv2b0",
+      "status": "not-run",
+      "title": "A Reference Architecture"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 12,
+      "planned_issues": [
+        32,
+        35,
+        45,
+        48,
+        52,
+        57
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.nnagczgvdut9",
+      "status": "not-run",
+      "title": "Protocol Transcript"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 13,
+      "planned_issues": [
+        35,
+        45,
+        48,
+        49,
+        51
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ylmpjgc0c2sz",
+      "status": "not-run",
+      "title": "Cryptographic State Machine"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C14-SEC-001"
+      ],
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 14,
+      "planned_issues": [
+        13,
+        23,
+        57
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.4zc95m5dipwu",
+      "status": "not-run",
+      "title": "Composition"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 15,
+      "planned_issues": [
+        13,
+        23,
+        52
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.q4timh5agh6j",
+      "status": "not-run",
+      "title": "Security Goals"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 16,
+      "planned_issues": [
+        35,
+        36,
+        50,
+        53
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.1qs6c97rzk37",
+      "status": "not-run",
+      "title": "Attacks and Failure Modes"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C17-DEF-001"
+      ],
+      "evidence_ids": [
+        "spec-fixtures-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 17,
+      "planned_issues": [
+        13,
+        20,
+        23,
+        53
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.30fmns6fp5js",
+      "status": "not-executable",
+      "title": "What Zero Knowledge Cannot Prove"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 18,
+      "planned_issues": [
+        63,
+        64
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.gsct3k1hwyn6",
+      "status": "not-run",
+      "title": "Cost Model"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 19,
+      "planned_issues": [
+        21,
+        33,
+        60,
+        64,
+        65
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.vot5dlldn8yg",
+      "status": "not-run",
+      "title": "Proof-Aware Machine Learning"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 20,
+      "planned_issues": [
+        21,
+        33,
+        64
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.blv71l3cywsu",
+      "status": "not-run",
+      "title": "Full Training Proofs versus Property Proofs"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 21,
+      "planned_issues": [
+        51
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.xosfrtrq796d",
+      "status": "not-run",
+      "title": "Recursive Proofs and Proof Aggregation"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 22,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3mp0m34e8w3s",
+      "status": "not-run",
+      "title": "Homomorphic Encryption and ZK"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 23,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.czaosjgxrxoe",
+      "status": "not-run",
+      "title": "MPC and ZK"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 24,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.7gz4opxqkww6",
+      "status": "not-run",
+      "title": "Private Set Operations"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 25,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.q3ubf01j27it",
+      "status": "not-run",
+      "title": "Post-Quantum Considerations"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 26,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.twq8h0w9wzcb",
+      "status": "not-run",
+      "title": "Healthcare"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 27,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.gjcsczxeb6ol",
+      "status": "not-run",
+      "title": "Financial Crime and Fraud"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 28,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.y3lgszmxqjdy",
+      "status": "not-run",
+      "title": "Industrial Consortia"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 29,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.clw5nva8qdhs",
+      "status": "not-run",
+      "title": "Autonomous and Edge Systems"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 30,
+      "planned_issues": [
+        21
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3qksx6aa4moq",
+      "status": "not-run",
+      "title": "Foundation Models"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 31,
+      "planned_issues": [
+        13
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.htwadv9whnh2",
+      "status": "not-run",
+      "title": "From Trust in Institutions to Trust-Minimized Evidence"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 32,
+      "planned_issues": [
+        20
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.edlhu5wp7zbk",
+      "status": "not-run",
+      "title": "Data Sovereignty"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 33,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.wxgts2jtqvyi",
+      "status": "not-run",
+      "title": "Markets for Private Computation"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 34,
+      "planned_issues": [
+        22
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.a29mz3qbu60g",
+      "status": "not-run",
+      "title": "Open Problems"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 35,
+      "planned_issues": [
+        14,
+        19
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.i71kxq1ep5qq",
+      "status": "not-run",
+      "title": "Proposed Research Benchmarks"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 36,
+      "planned_issues": [
+        14,
+        19,
+        20,
+        28,
+        33,
+        46
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.uq4lrn6z8uss",
+      "status": "not-run",
+      "title": "A Minimal Experimental Protocol"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 37,
+      "planned_issues": [
+        13,
+        23
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.rafhpqog7pd4",
+      "status": "not-run",
+      "title": "Formalization Roadmap"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C38-DEF-001"
+      ],
+      "evidence_ids": [
+        "spec-capabilities-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 38,
+      "planned_issues": [
+        14,
+        22,
+        61
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.yvb8h750nug6",
+      "status": "not-executable",
+      "title": "What the Evidence Actually Establishes"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 39,
+      "planned_issues": [
+        59,
+        60
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.qtzddef1xgyf",
+      "status": "not-run",
+      "title": "Federated Optimization Under Cryptographic Constraints"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C40-REL-001"
+      ],
+      "evidence_ids": [
+        "spec-relation-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 40,
+      "planned_issues": [
+        26,
+        28,
+        33,
+        34,
+        36,
+        55,
+        65
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.yzxsmken08hp",
+      "status": "not-run",
+      "title": "Proof Systems and Exact Machine-Learning Arithmetic"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 41,
+      "planned_issues": [
+        44,
+        46,
+        47,
+        48,
+        50
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.58g51gy5m3sv",
+      "status": "not-run",
+      "title": "Secure Aggregation, Malicious Behavior, and Verifiable Admission"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 42,
+      "planned_issues": [
+        32,
+        49,
+        54,
+        55,
+        56,
+        57
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.fkqbhaafk0t4",
+      "status": "not-run",
+      "title": "Differential Privacy for the Complete Federated Transcript"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C43-DEF-001",
+        "FZK-MS20261124-C43-EXP-001"
+      ],
+      "evidence_ids": [
+        "spec-deployment-v0.1",
+        "spec-measurement-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 43,
+      "planned_issues": [
+        13,
+        28,
+        33,
+        34,
+        46
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.tli207k4l3e8",
+      "status": "not-run",
+      "title": "An Implementable Research Specification"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 44,
+      "planned_issues": [
+        22,
+        23
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.gpwuowcupz09",
+      "status": "not-run",
+      "title": "Standards, New Results, and the Limits of Certification"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 45,
+      "planned_issues": [
+        52
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.w3cu2r3ll1u6",
+      "status": "not-run",
+      "title": "Collaborative Proving Without a Central Witness Holder"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 46,
+      "planned_issues": [
+        23,
+        45,
+        51,
+        57
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.6z6g9luuuh28",
+      "status": "not-run",
+      "title": "Composition, Recursive Evidence, and Persistent Protocol State"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C47-ENTROPY-001",
+        "FZK-MS20261124-C47-RETRY-001",
+        "FZK-MS20261124-C47-LEDGER-001"
+      ],
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-ledger-test",
+        "transcript-retry-test"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 47,
+      "planned_issues": [
+        49,
+        55,
+        56,
+        57,
+        58
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-and-equation-markup-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.m12wmtpvekur",
+      "status": "tested-analytic-reference",
+      "title": "Randomness, Selective Abort, and Correlated Releases"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 48,
+      "planned_issues": [
+        61
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.p3xml0hht5yn",
+      "status": "not-run",
+      "title": "Privacy Auditing as a Statistical Research Discipline"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 49,
+      "planned_issues": [
+        21
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.r5pcwv92xnvl",
+      "status": "not-run",
+      "title": "Encrypted and Multiparty Computation for Foundation Models"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 50,
+      "planned_issues": [
+        21,
+        45
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.30stg3973uxp",
+      "status": "not-run",
+      "title": "Federated Foundation Models with Verifiable State"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 51,
+      "planned_issues": [
+        54
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ivog4qpnijrd",
+      "status": "not-run",
+      "title": "Vertical Collaboration, Private Joins, and the Meaning of an Authorized Output"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 52,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.78opqrefexwv",
+      "status": "not-run",
+      "title": "Verifiable Unlearning and the Lifetime of a Collaborative Model"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C53-INCLUSION-001"
+      ],
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-inclusion-test"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 53,
+      "planned_issues": [
+        47,
+        59
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-and-equation-markup-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3io691prab6",
+      "status": "tested-analytic-reference",
+      "title": "Participation, Sampling, and the Population a Federated Model Learns"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 54,
+      "planned_issues": [
+        49,
+        54,
+        59,
+        60
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.p0vh454ey0s1",
+      "status": "not-run",
+      "title": "Time, Dropout, Compression, and Privacy in Asynchronous Collaboration"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 55,
+      "planned_issues": [
+        53,
+        54
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.5tqjbl7jlyva",
+      "status": "not-run",
+      "title": "Robustness Against Malicious Updates Under Cryptographic Privacy"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 56,
+      "planned_issues": [
+        54,
+        57,
+        62
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.5zlgrkf4e95w",
+      "status": "not-run",
+      "title": "Fairness, Group Privacy, and Verifiable Evaluation"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 57,
+      "planned_issues": [
+        26,
+        32,
+        34,
+        35,
+        36
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.v4vrjvd2rfsa",
+      "status": "not-run",
+      "title": "From a Mathematical Relation to a Correct Proof Implementation"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 58,
+      "planned_issues": [
+        14,
+        22,
+        61,
+        63
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.fye4gci37ojx",
+      "status": "not-run",
+      "title": "Benchmarking and Reproducible Evidence for Federated Zero-Knowledge Learning"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 59,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.e92bae6pb8dm",
+      "status": "not-run",
+      "title": "Private Contribution Valuation and Verifiable Rewards"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 60,
+      "planned_issues": [
+        47
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mcgwsnkgzhjt",
+      "status": "not-run",
+      "title": "Anonymous Admission, Credentials, and the Meaning of One Participant"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 61,
+      "planned_issues": [
+        14,
+        22,
+        63,
+        64,
+        65
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.nrt97iw2lqbt",
+      "status": "not-run",
+      "title": "What Makes AI Proofs Expensive\u2014and What Current Benchmarks Measure"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 62,
+      "planned_issues": [
+        63,
+        64,
+        65
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.b6jxpc78gk5a",
+      "status": "not-run",
+      "title": "Co-Designing Fast Zero-Knowledge AI"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 63,
+      "planned_issues": [
+        44,
+        60
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.k4wpjd4xy9kv",
+      "status": "not-run",
+      "title": "A Fast Federated Architecture with Explicit Guarantees"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 64,
+      "planned_issues": [
+        63,
+        64,
+        65
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.8g2754g86eyb",
+      "status": "not-run",
+      "title": "Selecting the Fastest Adequate System"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 65,
+      "planned_issues": [
+        50,
+        56
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.h38n6atuazkq",
+      "status": "not-run",
+      "title": "Population Scale, Protected Aggregation, and Hierarchical Execution"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 66,
+      "planned_issues": [
+        47,
+        48
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.wc46miwxpsrw",
+      "status": "not-run",
+      "title": "Scalable Proof Verification, Aggregation, and Accepted State"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C67-POPULATION-001"
+      ],
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-population-test"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 67,
+      "planned_issues": [
+        59,
+        60
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-and-equation-markup-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3ihzx56v15ze",
+      "status": "tested-analytic-reference",
+      "title": "Sampling, Asynchrony, Compression, and Privacy at Scale"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 68,
+      "planned_issues": [
+        49,
+        63
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.acg1khxfxhm4",
+      "status": "not-run",
+      "title": "Capacity Planning, Failure Recovery, and a Scalable Deployment Plan"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 69,
+      "planned_issues": [
+        21
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mr6p8hysbmda",
+      "status": "not-run",
+      "title": "Training Proofs, Speculative Execution, and Endpoint Certificates"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 70,
+      "planned_issues": [
+        53
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.tzvyx8n9b88d",
+      "status": "not-run",
+      "title": "Compiling Robust Aggregation into a Scalable Private Protocol"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 71,
+      "planned_issues": [
+        52
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.n2j9dmt3heim",
+      "status": "not-run",
+      "title": "Distributed Proving, Streaming Memory, and Asynchronous State"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 72,
+      "planned_issues": [
+        44
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.egtw549pcos8",
+      "status": "not-run",
+      "title": "Private Adapter Aggregation with a Fixed Shared Factor"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C73-MATH-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 73,
+      "planned_issues": [
+        13,
+        23,
+        48,
+        49,
+        51,
+        57
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.42bvb27kl9vr",
+      "status": "not-run",
+      "title": "Reactive Security and the Meaning of a Certified Federated State"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 74,
+      "planned_issues": [
+        26,
+        34,
+        65
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.xv5i84ydo8mx",
+      "status": "not-run",
+      "title": "Numerical Refinement and Proof-Constrained Optimization"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C75-GEOMETRY-001",
+        "FZK-MS20261124-C75-REFERENCE-001"
+      ],
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-reference-test"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 75,
+      "planned_issues": [
+        54,
+        55,
+        56,
+        58
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-and-equation-markup-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.uxpexwkkmxzx",
+      "status": "tested-analytic-reference",
+      "title": "Transcript Geometry and the Privacy of Repeated Aggregation"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 76,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.fev9x2oz3drg",
+      "status": "not-run",
+      "title": "Sufficient Statistics and Proof-Carrying Solvers"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C77-HYP-001"
+      ],
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 77,
+      "planned_issues": [
+        19,
+        20,
+        22,
+        62
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.q2ksf8xsi601",
+      "status": "not-run",
+      "title": "Data Access as a Source of Model Quality"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 78,
+      "planned_issues": [
+        21
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.f2kqd9sknplj",
+      "status": "not-run",
+      "title": "Learning Across Private Model Families"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "chapter",
+      "number": 79,
+      "planned_issues": [
+        20,
+        21,
+        44,
+        52,
+        53
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3k5ss21m8gp3",
+      "status": "not-run",
+      "title": "A Verifiable Architecture for Useful Private Data"
+    },
+    {
+      "claim_ids": [
+        "FZK-MS20261124-C80-HYP-001",
+        "FZK-MS20261124-C80-ADOPT-001"
+      ],
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "extraction_status": "partial",
+      "kind": "chapter",
+      "number": 80,
+      "planned_issues": [
+        14,
+        19,
+        20,
+        22,
+        59,
+        62,
+        63
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "selected-prose-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.phkudcuyf7fk",
+      "status": "not-run",
+      "title": "Measuring the Benefit of Federated Zero-Knowledge Learning"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 1,
+      "planned_issues": [
+        13,
+        52
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "State the observer"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 2,
+      "planned_issues": [
+        44
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Construct a substitution attack"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 3,
+      "planned_issues": [
+        26,
+        28,
+        36
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Analyze field arithmetic"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 4,
+      "planned_issues": [
+        26
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Bound every residual"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 5,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Preserve a classifier"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 6,
+      "planned_issues": [
+        54,
+        55
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Vary the privacy unit"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 7,
+      "planned_issues": [
+        50,
+        55,
+        56
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Budget honest noise"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 8,
+      "planned_issues": [
+        32
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Audit the public statement"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 9,
+      "planned_issues": [
+        53
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Distinguish validity from utility"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 10,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Expose adapter cross terms"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 11,
+      "planned_issues": [
+        49,
+        50,
+        57
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Account for failure"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 12,
+      "planned_issues": [
+        28,
+        33,
+        44,
+        45,
+        46,
+        48,
+        50
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Build the smallest complete artifact"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 13,
+      "planned_issues": [
+        52
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Separate prover views"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 14,
+      "planned_issues": [
+        23,
+        45,
+        51
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Join a proof history"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 15,
+      "planned_issues": [
+        49,
+        56
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Audit a retry policy"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 16,
+      "planned_issues": [
+        61
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Quantify an empirical audit"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 17,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Bound attention error"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 18,
+      "planned_issues": [
+        21,
+        45
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Type an adapter update"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 19,
+      "planned_issues": [
+        54
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Prove a join contribution bound"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 20,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Verify a removal transition"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 21,
+      "planned_issues": [
+        59
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Identify the learned population"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 22,
+      "planned_issues": [
+        54,
+        60
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Bound the transmitted update"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 23,
+      "planned_issues": [
+        54
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Separate robustness from privacy calibration"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 24,
+      "planned_issues": [
+        62
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Interpret a private fairness certificate"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 25,
+      "planned_issues": [
+        26,
+        34,
+        35,
+        36
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Find a unique wrong answer"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 26,
+      "planned_issues": [
+        14,
+        63
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Retain failed experiments"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 27,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Audit a contribution payment"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 28,
+      "planned_issues": [
+        47
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Connect admission to a privacy unit"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 29,
+      "planned_issues": [
+        14,
+        22,
+        63,
+        64,
+        65
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Normalize an AI-proof benchmark"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 30,
+      "planned_issues": [
+        63,
+        64,
+        65
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Separate computation savings from waiting time"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 31,
+      "planned_issues": [
+        44
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Certify the delivered low-rank update"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 32,
+      "planned_issues": [
+        13,
+        21,
+        64
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Choose a verification and trust boundary"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 33,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Partition work without expanding disclosure"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 34,
+      "planned_issues": [
+        48
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Bind a compact certificate to accepted state"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 35,
+      "planned_issues": [
+        59,
+        60
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Analyze completion-aware sampling"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 36,
+      "planned_issues": [
+        49
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Reproduce a capacity and recovery model"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 37,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Certify progress rather than speculative work"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 38,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Compile the required robust function"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 39,
+      "planned_issues": [
+        52
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Audit every computing role"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 40,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Preserve a compact private adapter"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 41,
+      "planned_issues": [
+        13,
+        23,
+        51,
+        57
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Compose the continuing service"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 42,
+      "planned_issues": [
+        65
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Allocate a numerical error budget"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 43,
+      "planned_issues": [
+        55,
+        56,
+        58
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Analyze the complete privacy geometry"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 44,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Certify a sufficient-statistic solution"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 45,
+      "planned_issues": [
+        19,
+        20
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Separate the sources of learning gain"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 46,
+      "planned_issues": [
+        12
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Identify a missing correspondence"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 47,
+      "planned_issues": [
+        21,
+        44,
+        53
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Bind a private adapter contribution"
+    },
+    {
+      "claim_ids": [],
+      "evidence_ids": [],
+      "extraction_status": "pending-extraction",
+      "kind": "exercise",
+      "number": 48,
+      "planned_issues": [
+        14,
+        19,
+        59,
+        63
+      ],
+      "reason": "Only listed claims/references are covered, not the entire item.",
+      "source_review": "outline-inspected",
+      "source_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ntfmnx6lk2fr",
+      "status": "not-run",
+      "title": "Benchmark certified time to quality"
+    }
+  ],
+  "edition": "MS20261124",
+  "generator": {
+    "path": "src/fzkml_assurance/reporting.py",
+    "sha256": "ae3c16325c404263bbeef08259f90928db523db8e448ebdb6a8d55e7ba2a2727",
+    "source_commit": "uncommitted"
+  },
+  "inputs": [
+    {
+      "path": "claims/registry.json",
+      "sha256": "ceacffa47c1d59d145c0cab0aee295d28b74f21838c4444ccd9853f6652dcebd",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/claims/registry.json"
+    },
+    {
+      "path": "claims/traceability-v1.json",
+      "sha256": "951bbaaa3814f66f3c8093a85d904b4afd5cb3740bf331df39d26e0c83850764",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/claims/traceability-v1.json"
+    },
+    {
+      "path": "docs/research/coverage.json",
+      "sha256": "25d07da6f66adf6e4abd5ca1a1181f3ee5057d8723c52e58df33347af54ef563",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/docs/research/coverage.json"
+    },
+    {
+      "path": "docs/research/claim-context.json",
+      "sha256": "ba9ec686e2f0d1404cc0eb3ab1858c609dc8f0c5201e8e1597199aab6308a928",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/docs/research/claim-context.json"
+    },
+    {
+      "path": "docs/research/manuscript.json",
+      "sha256": "8eb46515aabec7407176dfe6454f544b877eccea014d0af12eab8a63d86a893f",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/docs/research/manuscript.json"
+    },
+    {
+      "path": "experiments/m0/reporting-cases.json",
+      "sha256": "fffaaf53b511b5b003c8558a18982c8378c22f1992b9be4c2cd3acb3019e96d1",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/experiments/m0/reporting-cases.json"
+    },
+    {
+      "path": "experiments/m0/replication-cards.json",
+      "sha256": "d6bdab2621df3dcf9ef558d8860947202a3bb2e992e219769d2d86d9a3e755b3",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/experiments/m0/replication-cards.json"
+    }
+  ],
+  "issue": 108,
+  "limitations": [
+    "Historical pinned source edition, not an assertion about the latest manuscript revision.",
+    "Unmapped/not-extracted is not the same as disproved or not executable.",
+    "Failed/inconclusive/refuted items cannot be dropped or converted to supported claims.",
+    "Candidate CI evidence is not independent review, DP/security proof or universal model improvement."
+  ],
+  "publication_review": {
+    "approved": false,
+    "canonical_manuscript_edited": false
+  },
+  "replication_cards": [
+    {
+      "execution_status": "not-run",
+      "id": "fedavg-2017",
+      "missing": "Pinned original implementation/data artifacts and their licenses have not been recovered or adopted.",
+      "mode": "adaptation",
+      "source_url": "https://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf"
+    },
+    {
+      "execution_status": "not-run",
+      "id": "secagg-2017",
+      "missing": "Original runnable code/license and matching hardware not obtained in this workstream.",
+      "mode": "adaptation",
+      "source_url": "https://acmccs.github.io/papers/p1175-bonawitzA.pdf"
+    },
+    {
+      "execution_status": "not-run",
+      "id": "discrete-gaussian-2021",
+      "missing": "Code/data versions, terms and theorem-to-implementation match have not been inspected.",
+      "mode": "adaptation",
+      "source_url": "https://proceedings.mlr.press/v139/kairouz21a.html"
+    },
+    {
+      "execution_status": "not-run",
+      "id": "melloddy",
+      "missing": "The source explicitly excludes publication of underlying private datasets and derived models. Exact reproduction is unavailable.",
+      "mode": "adaptation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11005050/"
+    }
+  ],
+  "reporting_fixture_cases": [
+    {
+      "id": "success",
+      "requirement": "At least one completed included repetition; raw-linked summaries and non-placeholder provenance; quality threshold outcome recorded separately.",
+      "status": "successful",
+      "timeout": false
+    },
+    {
+      "id": "rejected-proof",
+      "requirement": "Retain rejection reason and incurred training, witness, proving and verification cost; exclude unaccepted model from released quality.",
+      "status": "failed",
+      "timeout": false
+    },
+    {
+      "id": "deadline",
+      "requirement": "Retain deadline, elapsed lower bound and partial work; do not report an absent proof or quality value as zero.",
+      "status": "failed",
+      "timeout": true
+    },
+    {
+      "id": "missing-backend",
+      "requirement": "No repetitions, measurements or successful proof claim; report the unavailable prerequisite.",
+      "status": "not-run",
+      "timeout": false
+    },
+    {
+      "id": "unsupported-cell",
+      "requirement": "No measurements; identify the model/assurance pair and version that is not supported.",
+      "status": "unsupported",
+      "timeout": false
+    },
+    {
+      "id": "uncertain-effect",
+      "requirement": "Retain executed repetitions and uncertainty; insufficient evidence does not become a successful scientific hypothesis.",
+      "status": "inconclusive",
+      "timeout": false
+    }
+  ],
+  "reporting_fixture_classification": "Fictional acceptance cases, not actual experiments.",
+  "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "status": "book-update-proposal-not-applied",
+  "version": 1
+}

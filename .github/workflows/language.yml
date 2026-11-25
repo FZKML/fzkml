@@ -10,14 +10,14 @@ on:
         type: choice
         required: true
         default: integration
-        options: [integration, weekly]
+        options: [integration, weekly, benchmark]
 permissions: {}
 concurrency:
   group: main-integration-${{ github.event_name }}
   cancel-in-progress: false
 jobs:
   integration:
-    if: github.repository == 'FZKML/fzkml' && github.ref == 'refs/heads/main' && github.event_name != 'schedule' && inputs.tier != 'weekly'
+    if: github.repository == 'FZKML/fzkml' && github.ref == 'refs/heads/main' && github.event_name != 'schedule' && inputs.tier != 'weekly' && inputs.tier != 'benchmark'
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     permissions:
@@ -150,3 +150,27 @@ jobs:
           retention-days: 7
           if-no-files-found: error
           include-hidden-files: false
+
+  benchmark:
+    if: github.repository == 'FZKML/fzkml' && github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.tier == 'benchmark'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.11.14'
+      - name: Install reviewed tools
+        run: |
+          python -m pip install --require-hashes -r tools-requirements.txt
+          source ./scripts/install-rust-toolchain
+          uv sync --locked
+      - name: Run one bounded CPU diagnostic
+        run: ./scripts/assurance benchmark --repetitions 1
+      - name: State field-study boundary
+        if: always()
+        run: echo 'Same-host CPU diagnostics only; physical field study, matched DP arms and independent review pending. Raw science publication unapproved.' >> "$GITHUB_STEP_SUMMARY"

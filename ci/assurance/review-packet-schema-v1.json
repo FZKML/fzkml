@@ -1,0 +1,252 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/ci/assurance/review-packet-schema-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "issue": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "protocol_subject_commit": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "reviewed_commit": {
+      "type": "null"
+    },
+    "generator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "sha256": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "source_commit": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "source_commit"
+      ]
+    },
+    "configuration": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "release_label": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "reviewer": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "appointment_status": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "packet_owner": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "packet_status": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "distribution": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "reviewer_requirements": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "maxLength": 1000
+      }
+    },
+    "reviewers": {
+      "type": "array",
+      "maxItems": 128,
+      "items": false
+    },
+    "findings": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 100
+          },
+          "severity": {
+            "enum": [
+              "critical",
+              "high",
+              "medium",
+              "low",
+              "informational"
+            ]
+          },
+          "disposition": {
+            "enum": [
+              "open",
+              "fixed",
+              "refuted",
+              "deferred"
+            ]
+          },
+          "scope_commit": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "regressions": {
+            "type": "array",
+            "maxItems": 30,
+            "items": {
+              "type": "string",
+              "maxLength": 200
+            }
+          }
+        },
+        "required": [
+          "id",
+          "severity",
+          "disposition",
+          "scope_commit",
+          "regressions"
+        ]
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "included": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "excluded": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        }
+      },
+      "required": [
+        "included",
+        "excluded"
+      ]
+    },
+    "artifacts": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "source_commit": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "sha256": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "url": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "path",
+          "source_commit",
+          "sha256",
+          "url"
+        ]
+      }
+    },
+    "prerequisites": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "integer"
+      }
+    },
+    "required_domains": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "maxLength": 1000
+      }
+    },
+    "review_questions": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "maxLength": 1000
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "maxLength": 1000
+      }
+    }
+  },
+  "required": [
+    "version",
+    "issue",
+    "status",
+    "protocol_subject_commit",
+    "reviewed_commit",
+    "generator",
+    "configuration",
+    "release_label",
+    "reviewer",
+    "appointment_status",
+    "packet_owner",
+    "packet_status",
+    "distribution",
+    "reviewer_requirements",
+    "reviewers",
+    "findings",
+    "scope",
+    "artifacts",
+    "prerequisites",
+    "required_domains",
+    "review_questions",
+    "limitations"
+  ]
+}

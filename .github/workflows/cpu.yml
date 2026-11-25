@@ -17,6 +17,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.11.14'
@@ -41,6 +42,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.11.14'
@@ -57,6 +59,8 @@ jobs:
         run: ./scripts/s04-private
       - name: Require genuine ridge and fixed-factor research proofs
         run: ./scripts/models
+      - name: Require controller-owned genuine proof and zero-exit negative rejection
+        run: ./scripts/assurance proof
       - name: Genuine-proof result and assurance boundary
         if: always()
         run: ./scripts/research summary >> "$GITHUB_STEP_SUMMARY"
@@ -69,6 +73,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.11.14'
@@ -81,6 +86,8 @@ jobs:
         run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
       - run: ./scripts/research init conformance
       - run: ./scripts/research run conformance
+      - name: Require exact versioned CI-14 vectors and native mutation rejection
+        run: ./scripts/assurance golden
       - name: Independent oracle and serialization outcome
         if: always()
         run: ./scripts/research summary >> "$GITHUB_STEP_SUMMARY"
@@ -93,6 +100,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.11.14'

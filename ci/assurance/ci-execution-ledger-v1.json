@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "classification": "Hosted CI execution metadata only; no scientific publication approval",
+  "observations": [
+    {
+      "purpose": "prior model candidate conformance",
+      "run_id": 45520402482,
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "checkout_commit": "1e45c90f282b776287696142b7f8312456ad8ec8",
+      "url": "https://github.com/FZKML/fzkml/actions/runs/45520402482",
+      "outcome": "success"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "appointment_status": "not-appointed",
+  "artifacts": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "a331067fcc9b226954f792a85e956ad5655a68155d63f828ac09cc8ba11db8ef",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/Cargo.lock"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "430a20df79b8fdd69a2eab08b08f35b4123fffd388131043552edd046bc600a5",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/uv.lock"
+    },
+    {
+      "path": "specs/numeric-contract-v1.json",
+      "sha256": "87d097bb7c7af37def94289290fb53e996fc63094144150bc4b1e7112a8b50c0",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/specs/numeric-contract-v1.json"
+    },
+    {
+      "path": "specs/private-transition-v1.json",
+      "sha256": "def1e6e093e5897a99f572b8674a78e88af978f67a63fd2187f1913da6ce23ab",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/specs/private-transition-v1.json"
+    },
+    {
+      "path": "specs/aggregation-v1.json",
+      "sha256": "7f0dd95e86275f3979ef72fd951d6aec77df366b76d6aa1af985b2d7a425a107",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/specs/aggregation-v1.json"
+    },
+    {
+      "path": "crates/fzkml-core/src/lib.rs",
+      "sha256": "31d1680a7be386ca36b549797d61e1efeb81296c627404e5d650f4c2ef2e1b1c",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/crates/fzkml-core/src/lib.rs"
+    },
+    {
+      "path": "crates/fzkml-core/src/proof.rs",
+      "sha256": "aa8b1ce49cb5aa59b525f1dd10619917af37d56ac1cdd7b02fbbe0d10767946d",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/crates/fzkml-core/src/proof.rs"
+    },
+    {
+      "path": "crates/fzkml-core/src/private.rs",
+      "sha256": "d3a251f73315cf85783358a011877dba6231d4dc91acdd9099563cd2193061e9",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/crates/fzkml-core/src/private.rs"
+    },
+    {
+      "path": "crates/fzkml-core/src/aggregation/mod.rs",
+      "sha256": "cd4d27c966d78da319b387b2edc95beeb0ef7bc4b5ad7503e059295834ecc988",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/crates/fzkml-core/src/aggregation/mod.rs"
+    },
+    {
+      "path": "crates/fzkml-core/src/aggregation/crypto.rs",
+      "sha256": "ffdb72a94a3a435bfeea810a707620f7ae58dd0832776cd62b12363a9c6782ae",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/crates/fzkml-core/src/aggregation/crypto.rs"
+    },
+    {
+      "path": "crates/fzkml-core/src/aggregation/roles.rs",
+      "sha256": "92ec79e0d9c1405e901b495fde838651fe3494cfaf3975a0e97a1ee60f1b4683",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/crates/fzkml-core/src/aggregation/roles.rs"
+    },
+    {
+      "path": "crates/fzkml-core/src/aggregation/durable.rs",
+      "sha256": "6b079f565b96deef4715ef2f155e20e2e87c91949f94acc1675733741faa9571",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/crates/fzkml-core/src/aggregation/durable.rs"
+    },
+    {
+      "path": "crates/fzkml-core/src/aggregation/tests.rs",
+      "sha256": "cb3b0e448fd72d6208035224056e84eaa421df9f64dd38dbb2905c1e8afd3bcc",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/crates/fzkml-core/src/aggregation/tests.rs"
+    },
+    {
+      "path": "crates/fzkml-core/src/private_transition/tests.rs",
+      "sha256": "64a515a5b6e98e3ad6949b52456068c70ac8360647788c4f5dfe2cb5db6ca83f",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/crates/fzkml-core/src/private_transition/tests.rs"
+    },
+    {
+      "path": "specs/m0/security-v0.1.md",
+      "sha256": "9da084f5babf476132cd817aed97dd2e6cea775e77002676565f2a67ec9a47a3",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/specs/m0/security-v0.1.md"
+    },
+    {
+      "path": "docs/assurance.md",
+      "sha256": "db64323d2843c3d940564d71301d209735988838aabc103a45f84de70cb3975e",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/docs/assurance.md"
+    },
+    {
+      "path": "docs/PRIVATE-TRANSITION.md",
+      "sha256": "f912bfd69739f57c11aebba4b4fba59660493d5112373f8c626bdadb3f68654e",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/docs/PRIVATE-TRANSITION.md"
+    },
+    {
+      "path": "docs/PROTECTED-AGGREGATION.md",
+      "sha256": "31dad4d1590750036ca843f6d8f0c7e9ae673d6cb7b363327a2e70667660f332",
+      "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+      "url": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/docs/PROTECTED-AGGREGATION.md"
+    }
+  ],
+  "configuration": "v0.2-three-client-three-recipient-threshold2-research",
+  "distribution": "not-authorized",
+  "findings": [],
+  "generator": {
+    "path": "src/fzkml_assurance/reporting.py",
+    "sha256": "ae3c16325c404263bbeef08259f90928db523db8e448ebdb6a8d55e7ba2a2727",
+    "source_commit": "uncommitted"
+  },
+  "issue": 107,
+  "limitations": [
+    "No reviewer is appointed, contacted or represented as consenting.",
+    "No external findings or remediation certification exists; internal CI is not an external audit.",
+    "Review may be commissioned for this narrow configuration without closing comprehensive FZK-R069.",
+    "Public source/fixtures only; no private manuscript, witness, credential secret or setup secret."
+  ],
+  "packet_owner": "Codex Session 04",
+  "packet_status": "prepared-for-maintainer-review",
+  "prerequisites": [
+    23,
+    26,
+    34,
+    36,
+    44,
+    50,
+    51,
+    52,
+    54,
+    55,
+    56,
+    57
+  ],
+  "protocol_subject_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
+  "release_label": "unreviewed-research-candidate",
+  "required_domains": [
+    "cryptography",
+    "integer-arithmetic",
+    "privacy-composition",
+    "distributed-state"
+  ],
+  "review_questions": [
+    "Check commitments, proved witnesses and delivered values bind the same object.",
+    "Check every integer/range/rounding equation rather than field equality alone.",
+    "Check successor re-admission: input bound32 and output bound80 do not imply closure.",
+    "Distinguish proof validity, admission, replay consumption and availability.",
+    "Identify every observer, recipient corruption limit, authority trust and DP scope."
+  ],
+  "reviewed_commit": null,
+  "reviewer": "TBD \u2014 independent external reviewer",
+  "reviewer_requirements": [
+    "Relevant ZK-circuit, finite-field/fixed-point and Rust cryptography expertise.",
+    "Conflicts of interest disclosed before appointment.",
+    "Written severity-rated findings and remediation verification agreed."
+  ],
+  "reviewers": [],
+  "scope": {
+    "excluded": [
+      "Unreviewed backends/models, GPU, production ceremony or real deployment.",
+      "Complete DP release/accountant, consensus, data authenticity or physical erasure.",
+      "Security of later commits or CI/model candidates not in this protocol snapshot."
+    ],
+    "included": [
+      "Signed integer/RNE semantics and finite-field range connections.",
+      "Actual private arithmetic circuit, commitment binding and local research setup.",
+      "Pedersen VSS/proof/share/credential/state/observer composition in the v0.2 fixture.",
+      "Durable authority/replay and accepted-set invariants under declared assumptions."
+    ]
+  },
+  "status": "awaiting-independent-review",
+  "version": 1
+}

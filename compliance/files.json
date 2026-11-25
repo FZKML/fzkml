@@ -5767,6 +5767,258 @@
         "LICENSE"
       ],
       "notice_files": []
+    },
+    "assets/public/ci14-golden-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "assets/public/ci15-candidate-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/auth-native-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/authenticity-run-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/benchmark-plan-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/benchmark-run-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/ci-execution-ledger-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/ci14-golden-v1.sha256": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/contracts-v1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/evidence-index-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/golden-run-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/golden-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "ci/assurance/review-packet-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-assurance/Cargo.toml": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-assurance/src/main.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/assurance/book-evidence-proposal.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/assurance/evidence-index-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/assurance/review-packet-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/assurance": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_assurance/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_assurance/__main__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_assurance/authenticity.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_assurance/benchmark.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_assurance/common.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_assurance/golden.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_assurance/reporting.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_assurance/worker.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_assurance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Respective contributors recorded in Git history; original Session 04 contribution under authorized DCO.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
     }
   }
 }
