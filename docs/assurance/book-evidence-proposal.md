@@ -138,6 +138,8 @@ CI conformance, analytic references, empirical studies, security arguments and e
 ## Actual hosted CI observations
 
 - [prior model candidate conformance](https://github.com/FZKML/fzkml/actions/runs/45520402482): success; source `b602197104d810bc1a41a2ea24085b25484272b7`, checkout `1e45c90f282b776287696142b7f8312456ad8ec8`.
+- [superseded draft checks; no genuine gate success inferred](https://github.com/FZKML/fzkml/actions/runs/45528548265): cancelled; source `0b8a299589d0d907e825c18338958cee0937f3b4`, checkout `ce6130a212d3379abb9c90ae9c242d980e99b32a`.
+- [deliberate bad oracle and development receipt rejected by both mandatory gates](https://github.com/FZKML/fzkml/actions/runs/45528705973): failure; source `f5b8c2a2234f453bdc19705e7c1b64f567ec2cda`, checkout `6416110353cd371d7937f99be0a3f6a02d9b28f1`.
 
 ## Source claims and checked scope
 

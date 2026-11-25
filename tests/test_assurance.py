@@ -104,6 +104,9 @@ class AuthenticityTests(unittest.TestCase):
         bad = copy.deepcopy(self.actual)
         bad["cases"].pop()
         mutations.append(bad)
+        bad = copy.deepcopy(self.actual)
+        bad["cases"][0]["mode"] = "development"
+        mutations.append(bad)
         for key, value in [
             ("backend", "mock"),
             ("controller_key_digest", "0" * 64),
@@ -137,6 +140,10 @@ class ReviewAndReportingTests(unittest.TestCase):
             bad = dict(rp.review_packet(), **{key: value})
             with self.assertRaises(ValueError):
                 rp.validate_review(bad)
+        bad = rp.review_packet()
+        bad["scope"]["included"].pop()
+        with self.assertRaises(ValueError):
+            rp.validate_review(bad)
         bad = rp.review_packet()
         bad["artifacts"][0]["sha256"] = "0" * 64
         with self.assertRaises(ValueError):

@@ -9,6 +9,22 @@
       "checkout_commit": "1e45c90f282b776287696142b7f8312456ad8ec8",
       "url": "https://github.com/FZKML/fzkml/actions/runs/45520402482",
       "outcome": "success"
+    },
+    {
+      "purpose": "superseded draft checks; no genuine gate success inferred",
+      "run_id": 45528548265,
+      "source_commit": "0b8a299589d0d907e825c18338958cee0937f3b4",
+      "checkout_commit": "ce6130a212d3379abb9c90ae9c242d980e99b32a",
+      "url": "https://github.com/FZKML/fzkml/actions/runs/45528548265",
+      "outcome": "cancelled"
+    },
+    {
+      "purpose": "deliberate bad oracle and development receipt rejected by both mandatory gates",
+      "run_id": 45528705973,
+      "source_commit": "f5b8c2a2234f453bdc19705e7c1b64f567ec2cda",
+      "checkout_commit": "6416110353cd371d7937f99be0a3f6a02d9b28f1",
+      "url": "https://github.com/FZKML/fzkml/actions/runs/45528705973",
+      "outcome": "failure"
     }
   ]
 }

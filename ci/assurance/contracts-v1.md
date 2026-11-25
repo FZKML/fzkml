@@ -62,3 +62,25 @@ approved by that proposal. No secrets, witnesses, setup trapdoors or private
 manuscript exports are retained. The review packet and proposal contain public
 source metadata only, not unapproved empirical output. No merge or paid/GPU job
 is authorized by this implementation.
+
+## Observed validation
+
+Healthy local validation passed 184 Python and 21 Rust tests plus formatting,
+Clippy, Ruff, strict mypy, schema, governance, registry and canonical report checks.
+Clean local proof source was 7cf6185b5c6d916c8790ed9f86e8f152adba2001, producing a
+schema-valid standard1.1 result with null local workflow ID and approved=false.
+Clean bounded CPU diagnostic source was 0b8a299589d0d907e825c18338958cee0937f3b4;
+its status remains completed-diagnostic-field-study-not-run. Raw scientific output
+is retained locally rather than published without approval.
+
+Hosted deliberate mutation run [45528705973](https://github.com/FZKML/fzkml/actions/runs/45528705973)
+actually checked out merge6416110353cd371d7937f99be0a3f6a02d9b28f1 from
+head f5b8c2a2234f453bdc19705e7c1b64f567ec2cda. CI-14 job138918504888
+reported a -3/2 native rounding disagreement with native_exit_code0 and exited1.
+CI-15 job138918504548 reported actual producer exit0/candidate acceptedFalse
+and exited1. Required CPU failed. Governance fixture integrity also failed;
+registry and DCO remained successful, which did not satisfy the failed gates.
+The earlier superseded run45528548265 was canceled and is retained in the ledger.
+Fixtures are restored in a new commit; the intentional failing commit is preserved.
+Final hosted restoration receipts are linked from the draft PR rather than
+invented before execution or self-referenced in this source commit.

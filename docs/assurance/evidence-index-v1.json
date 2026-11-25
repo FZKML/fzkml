@@ -24,11 +24,27 @@
         "run_id": 45520402482,
         "source_commit": "b602197104d810bc1a41a2ea24085b25484272b7",
         "url": "https://github.com/FZKML/fzkml/actions/runs/45520402482"
+      },
+      {
+        "checkout_commit": "ce6130a212d3379abb9c90ae9c242d980e99b32a",
+        "outcome": "cancelled",
+        "purpose": "superseded draft checks; no genuine gate success inferred",
+        "run_id": 45528548265,
+        "source_commit": "0b8a299589d0d907e825c18338958cee0937f3b4",
+        "url": "https://github.com/FZKML/fzkml/actions/runs/45528548265"
+      },
+      {
+        "checkout_commit": "6416110353cd371d7937f99be0a3f6a02d9b28f1",
+        "outcome": "failure",
+        "purpose": "deliberate bad oracle and development receipt rejected by both mandatory gates",
+        "run_id": 45528705973,
+        "source_commit": "f5b8c2a2234f453bdc19705e7c1b64f567ec2cda",
+        "url": "https://github.com/FZKML/fzkml/actions/runs/45528705973"
       }
     ],
     "version": 1
   },
-  "ci_execution_ledger_digest": "e21ccd44e9135bfc44070749a90d8ba0af9c4dc84a7a5aefdf8262d18d24ac0d",
+  "ci_execution_ledger_digest": "6d0210f19b5d5628a52ad19aeb69384f0d24e0e69ac4f63c3a71728f3035c9eb",
   "claims": [
     {
       "assumptions": [
@@ -2886,8 +2902,8 @@
   "edition": "MS20261124",
   "generator": {
     "path": "src/fzkml_assurance/reporting.py",
-    "sha256": "ae3c16325c404263bbeef08259f90928db523db8e448ebdb6a8d55e7ba2a2727",
-    "source_commit": "a2acf65c791ef96db1e470a8f5e063c1b549f0d5"
+    "sha256": "69a79cdd8e52482c4530aad870be1a618a2358b0fe99ea6b92d1166fa0cd65cd",
+    "source_commit": "uncommitted"
   },
   "inputs": [
     {

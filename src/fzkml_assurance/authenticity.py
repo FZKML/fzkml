@@ -54,6 +54,13 @@ def validate_native(value: Any, require_candidate: bool = True) -> None:
     for row in value["cases"]:
         name = row["case"]
         require(
+            row["mode"] == (name if name in {"development", "mock"} else "research-real")
+            and row["status"]
+            == (name if name in {"skipped", "unsupported", "canceled"} else "executed")
+            and row["proof_bytes"] == (129 if name == "trailing-byte" else 128),
+            "authenticity-case-payload-binding",
+        )
+        require(
             row["accepted"] is (name == "positive") and row["nominal_exit_code"] == 0,
             "authenticity-zero-exit-rejection",
         )

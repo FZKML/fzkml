@@ -68,6 +68,8 @@ def generator() -> dict[str, str]:
     commit = subprocess.check_output(
         ["git", "log", "-1", "--format=%H", "--", path], cwd=ROOT, text=True
     ).strip()
+    if commit and blob(commit, path) != (ROOT / path).read_bytes():
+        commit = ""
     return {"path": path, "sha256": file_sha(path), "source_commit": commit or "uncommitted"}
 
 
@@ -150,6 +152,11 @@ def validate_review(packet: dict[str, Any], require_reviewed: bool = False) -> N
         and packet["reviewer"] == "TBD — independent external reviewer"
         and packet["packet_owner"] == "Codex Session 04",
         "review-distribution-not-authorized",
+    )
+    require(
+        {k: v for k, v in packet.items() if k != "findings"}
+        == {k: v for k, v in review_packet().items() if k != "findings"},
+        "scope-locked-review-metadata",
     )
     for finding in packet["findings"]:
         require(
