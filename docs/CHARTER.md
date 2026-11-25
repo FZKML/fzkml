@@ -14,11 +14,12 @@ failure cases, and the precise computation verified. Networking, deployment,
 production training, and claims of differential privacy or malicious-client
 robustness are outside the initial implementation scope.
 
-Currently implemented: governance checks, asset/file provenance validation, DCO
-trailer checks, and a source-only archive builder. Planned: the simulation,
-specification, vectors, and experiments. Untested: privacy, soundness of any
-future proof integration, scalability, robustness, and learning utility. There is
-no production readiness or external audit claim.
+Currently implemented: governance/CI tooling and a candidate tiny public-input
+exact linear round with independent vectors, a local arkworks research proof,
+Python bindings and a CPU float comparison. See docs/LANGUAGE-IMPLEMENTATION.md.
+Planned: a complete federated security protocol and broader scientific experiments.
+Untested: training-data privacy, reviewed cryptographic soundness, scalability,
+robustness and learning utility. There is no production readiness or external audit claim.
 
 ## Claims and evidence
 

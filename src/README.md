@@ -1,4 +1,5 @@
 # Reference implementations
 
-Reserved for original reference code. No training or proof implementation exists
-yet. Link each implementation to a specification, test vectors, and claim IDs.
+CI/report code lives here. The exact numeric relation and local research proof
+are in `crates/fzkml-core`; Python bindings are in `bindings/`; the independent
+arbitrary-precision oracle is in `reference/`. See docs/LANGUAGE-IMPLEMENTATION.md.

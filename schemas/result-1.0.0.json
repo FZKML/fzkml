@@ -167,7 +167,8 @@
             ".github/workflows/cpu.yml",
             ".github/workflows/reports.yml",
             ".github/workflows/research.yml",
-            ".github/workflows/release.yml"
+            ".github/workflows/release.yml",
+            ".github/workflows/language.yml"
           ]
         },
         "workflow_run": {

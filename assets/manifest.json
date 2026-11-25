@@ -42,6 +42,43 @@
       }
     },
     {
+      "id": "numeric-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/language-contract-bindings/assets/public/numeric-v1.json",
+      "version": "numeric-v1; exact-byte sha256 plus embedded contract_sha256",
+      "path": "assets/public/numeric-v1.json",
+      "sha256": "454af1102b6eff77c878b9012600320bdb25c797447ff067c716ea9242d693b8",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original FZKML contribution; no external dataset/model or private manuscript inputs.",
+      "intended_use": "Public exact arithmetic/interface conformance only; not a learning benchmark.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "scripts/generate_numeric_vectors.py using independent standard-library Fraction oracle",
+        "configuration": {
+          "seed": 20261124,
+          "valid_cases": 261,
+          "invalid_cases": 11,
+          "source_inputs": "none"
+        }
+      },
+      "source_inputs": "none; literal synthetic integer domain only",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original implementation submitted for maintainer PR review)",
+        "date": "2026-11-24",
+        "decision": "Original public generated test vectors; no third-party asset rights assumed. Numeric/security correctness requires separate review."
+      }
+    },
+    {
       "id": "privacy-performance-golden-v1",
       "kind": "synthetic-fixture",
       "source": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",

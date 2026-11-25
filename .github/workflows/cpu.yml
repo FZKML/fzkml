@@ -29,6 +29,7 @@ jobs:
         run: |
           printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
       - run: ./scripts/validate
+      - run: ./scripts/validate-aggregation
       - run: ./scripts/build-public-report
       - run: ./scripts/reproduce --contract-only
       - name: Bounded job summary
