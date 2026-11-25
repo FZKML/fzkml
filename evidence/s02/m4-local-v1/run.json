@@ -1,0 +1,2927 @@
+{
+  "schema_version": "s02-protected-run-1.0.0",
+  "kind": "local-candidate-research",
+  "planning_issue_claim_ids": [
+    "FZK-R042",
+    "FZK-R043",
+    "FZK-R044",
+    "FZK-R045"
+  ],
+  "source_commit": "568a81eb0fddb6a5ba89f08b0932b814a30b2a9b",
+  "source_dirty": false,
+  "source_approval": "not-independent-review; DCO pending for new commits",
+  "hardware": {
+    "os": "Darwin",
+    "machine": "arm64",
+    "logical_cpus": 12,
+    "gpu": "not-used",
+    "isolation": "shared local host"
+  },
+  "software": {
+    "python": "3.11.14",
+    "coCircom_source": "97adcc06afc0d506c2d6aa9f81b2e342fd8108c0",
+    "node": "v26.8.1",
+    "coCircom_binary_sha256": "07e1a9c9f94157189341c0c48d87a58356719d2f7403dc976b211aae0ba037e0"
+  },
+  "digests": {
+    "experiments/s02-protected/runtime-lock.json": "5eea61548df0d0d0e1e2f91aa19495097cb88580310d59e9240d9c85643fdee2",
+    "experiments/s02-protected/snarkjs-lock.json": "8d2e2d82b970f4b1d8928c14914c04efeb1b11310087b36ebc1f229360f8ae72",
+    "experiments/s02-protected/pq-inventory-v1.json": "1d77f0839ab98b87f6a6258c605a72b5c23c5cb808ed8be5f0b59fd68d424983",
+    "tests/vectors/book/progress-v1.json": "54150d5ddf0cc3ef025823a613a6bb4d1866f3b38496068925bc3347427dbd61",
+    "Cargo.lock": "44861cb09d5fa5e4576f6ad7256ba051265147f7577644d8f784159ae11255e8",
+    "uv.lock": "430a20df79b8fdd69a2eab08b08f35b4123fffd388131043552edd046bc600a5"
+  },
+  "observer_model": {
+    "trusted_harness": "Owns public synthetic full witness, shared host, all relay traffic and tool files.",
+    "REP3_workers": "Each holds two additive shares; at most one passive corrupt worker under assumed private channels.",
+    "network": "Pinned upstream0.10 uses raw TCP; loopback demonstration does not supply private authenticated channels.",
+    "HE": "Key owner knows a and full secret key; evaluator knows b and receives Enc(a); both receive only declared product as output.",
+    "authorized_output": "Product33; possession of either nonzero operand recovers the other. No output privacy/DP claim.",
+    "attestation": "No TEE, hardware attestation, quote or certificate verification executed."
+  },
+  "pipeline": [
+    {
+      "kind": "exact-discrete-event-simulation",
+      "window": 1,
+      "rounds": 16,
+      "proof_workers": 8,
+      "compute_seconds": "1/5",
+      "prove_worker_seconds": "2",
+      "capacity_upper_bound_per_second": "4",
+      "time_to_certified_quality_seconds": "176/5",
+      "final_weight": "1/65536",
+      "backpressure_seconds": "32",
+      "release_delay_seconds": "0",
+      "admission_fixture_scope": "separate-original-stale-and-unavailable-client-cases",
+      "quality_target_quadratic_gap": "1/8589934592",
+      "certified_per_second": "5/11",
+      "p50_certificate_delay_seconds": "2",
+      "p95_certificate_delay_seconds": "2",
+      "maximum_speculative_depth": 1,
+      "rollback_count": 0,
+      "discarded_computations": 0,
+      "issued_proof_jobs": 16,
+      "proving_work_worker_seconds": "32",
+      "trace": [
+        {
+          "time": "1/5",
+          "computed_tip": 1,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11/5",
+          "computed_tip": 1,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 2,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "22/5",
+          "computed_tip": 2,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 3,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "33/5",
+          "computed_tip": 3,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "34/5",
+          "computed_tip": 4,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "44/5",
+          "computed_tip": 4,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "9",
+          "computed_tip": 5,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11",
+          "computed_tip": 5,
+          "certified_height": 5,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "56/5",
+          "computed_tip": 6,
+          "certified_height": 5,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "66/5",
+          "computed_tip": 6,
+          "certified_height": 6,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "67/5",
+          "computed_tip": 7,
+          "certified_height": 6,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "77/5",
+          "computed_tip": 7,
+          "certified_height": 7,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "78/5",
+          "computed_tip": 8,
+          "certified_height": 7,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "88/5",
+          "computed_tip": 8,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "89/5",
+          "computed_tip": 9,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "99/5",
+          "computed_tip": 9,
+          "certified_height": 9,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "20",
+          "computed_tip": 10,
+          "certified_height": 9,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "22",
+          "computed_tip": 10,
+          "certified_height": 10,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "111/5",
+          "computed_tip": 11,
+          "certified_height": 10,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "121/5",
+          "computed_tip": 11,
+          "certified_height": 11,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "122/5",
+          "computed_tip": 12,
+          "certified_height": 11,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "132/5",
+          "computed_tip": 12,
+          "certified_height": 12,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "133/5",
+          "computed_tip": 13,
+          "certified_height": 12,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "143/5",
+          "computed_tip": 13,
+          "certified_height": 13,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "144/5",
+          "computed_tip": 14,
+          "certified_height": 13,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "154/5",
+          "computed_tip": 14,
+          "certified_height": 14,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "31",
+          "computed_tip": 15,
+          "certified_height": 14,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "33",
+          "computed_tip": 15,
+          "certified_height": 15,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "166/5",
+          "computed_tip": 16,
+          "certified_height": 15,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "176/5",
+          "computed_tip": 16,
+          "certified_height": 16,
+          "invalid_nodes": 0
+        }
+      ],
+      "excluded_clients": [
+        {
+          "id": "slow-client",
+          "start_round": 0,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "stale"
+        },
+        {
+          "id": "missing-state",
+          "start_round": 4,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "unavailable"
+        }
+      ],
+      "limitations": [
+        "Original synthetic halving objective; not a model-quality benchmark.",
+        "Independent resources; no shared GPU contention or network simulation.",
+        "Boolean evidence cannot satisfy an actual proof/release requirement."
+      ]
+    },
+    {
+      "kind": "exact-discrete-event-simulation",
+      "window": 1,
+      "rounds": 16,
+      "proof_workers": 8,
+      "compute_seconds": "1/5",
+      "prove_worker_seconds": "2",
+      "capacity_upper_bound_per_second": "4",
+      "time_to_certified_quality_seconds": "187/5",
+      "final_weight": "1/65536",
+      "backpressure_seconds": "34",
+      "release_delay_seconds": "0",
+      "admission_fixture_scope": "separate-original-stale-and-unavailable-client-cases",
+      "quality_target_quadratic_gap": "1/8589934592",
+      "certified_per_second": "80/187",
+      "p50_certificate_delay_seconds": "2",
+      "p95_certificate_delay_seconds": "2",
+      "maximum_speculative_depth": 1,
+      "rollback_count": 1,
+      "discarded_computations": 1,
+      "issued_proof_jobs": 17,
+      "proving_work_worker_seconds": "34",
+      "trace": [
+        {
+          "time": "1/5",
+          "computed_tip": 1,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11/5",
+          "computed_tip": 1,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 2,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "22/5",
+          "computed_tip": 2,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 3,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "33/5",
+          "computed_tip": 3,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "34/5",
+          "computed_tip": 4,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "44/5",
+          "computed_tip": 3,
+          "certified_height": 3,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "9",
+          "computed_tip": 4,
+          "certified_height": 3,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "11",
+          "computed_tip": 4,
+          "certified_height": 4,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "56/5",
+          "computed_tip": 5,
+          "certified_height": 4,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "66/5",
+          "computed_tip": 5,
+          "certified_height": 5,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "67/5",
+          "computed_tip": 6,
+          "certified_height": 5,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "77/5",
+          "computed_tip": 6,
+          "certified_height": 6,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "78/5",
+          "computed_tip": 7,
+          "certified_height": 6,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "88/5",
+          "computed_tip": 7,
+          "certified_height": 7,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "89/5",
+          "computed_tip": 8,
+          "certified_height": 7,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "99/5",
+          "computed_tip": 8,
+          "certified_height": 8,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "20",
+          "computed_tip": 9,
+          "certified_height": 8,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "22",
+          "computed_tip": 9,
+          "certified_height": 9,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "111/5",
+          "computed_tip": 10,
+          "certified_height": 9,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "121/5",
+          "computed_tip": 10,
+          "certified_height": 10,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "122/5",
+          "computed_tip": 11,
+          "certified_height": 10,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "132/5",
+          "computed_tip": 11,
+          "certified_height": 11,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "133/5",
+          "computed_tip": 12,
+          "certified_height": 11,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "143/5",
+          "computed_tip": 12,
+          "certified_height": 12,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "144/5",
+          "computed_tip": 13,
+          "certified_height": 12,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "154/5",
+          "computed_tip": 13,
+          "certified_height": 13,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "31",
+          "computed_tip": 14,
+          "certified_height": 13,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "33",
+          "computed_tip": 14,
+          "certified_height": 14,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "166/5",
+          "computed_tip": 15,
+          "certified_height": 14,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "176/5",
+          "computed_tip": 15,
+          "certified_height": 15,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "177/5",
+          "computed_tip": 16,
+          "certified_height": 15,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "187/5",
+          "computed_tip": 16,
+          "certified_height": 16,
+          "invalid_nodes": 1
+        }
+      ],
+      "excluded_clients": [
+        {
+          "id": "slow-client",
+          "start_round": 0,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "stale"
+        },
+        {
+          "id": "missing-state",
+          "start_round": 4,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "unavailable"
+        }
+      ],
+      "limitations": [
+        "Original synthetic halving objective; not a model-quality benchmark.",
+        "Independent resources; no shared GPU contention or network simulation.",
+        "Boolean evidence cannot satisfy an actual proof/release requirement."
+      ]
+    },
+    {
+      "kind": "exact-discrete-event-simulation",
+      "window": 2,
+      "rounds": 16,
+      "proof_workers": 8,
+      "compute_seconds": "1/5",
+      "prove_worker_seconds": "2",
+      "capacity_upper_bound_per_second": "4",
+      "time_to_certified_quality_seconds": "89/5",
+      "final_weight": "1/65536",
+      "backpressure_seconds": "72/5",
+      "release_delay_seconds": "0",
+      "admission_fixture_scope": "separate-original-stale-and-unavailable-client-cases",
+      "quality_target_quadratic_gap": "1/8589934592",
+      "certified_per_second": "80/89",
+      "p50_certificate_delay_seconds": "2",
+      "p95_certificate_delay_seconds": "2",
+      "maximum_speculative_depth": 2,
+      "rollback_count": 0,
+      "discarded_computations": 0,
+      "issued_proof_jobs": 16,
+      "proving_work_worker_seconds": "32",
+      "trace": [
+        {
+          "time": "1/5",
+          "computed_tip": 1,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "2/5",
+          "computed_tip": 2,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11/5",
+          "computed_tip": 2,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 2,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 3,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 4,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "22/5",
+          "computed_tip": 4,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 4,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 5,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "24/5",
+          "computed_tip": 6,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "33/5",
+          "computed_tip": 6,
+          "certified_height": 5,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "34/5",
+          "computed_tip": 6,
+          "certified_height": 6,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "34/5",
+          "computed_tip": 7,
+          "certified_height": 6,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "7",
+          "computed_tip": 8,
+          "certified_height": 6,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "44/5",
+          "computed_tip": 8,
+          "certified_height": 7,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "9",
+          "computed_tip": 8,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "9",
+          "computed_tip": 9,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "46/5",
+          "computed_tip": 10,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11",
+          "computed_tip": 10,
+          "certified_height": 9,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "56/5",
+          "computed_tip": 10,
+          "certified_height": 10,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "56/5",
+          "computed_tip": 11,
+          "certified_height": 10,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "57/5",
+          "computed_tip": 12,
+          "certified_height": 10,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "66/5",
+          "computed_tip": 12,
+          "certified_height": 11,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "67/5",
+          "computed_tip": 12,
+          "certified_height": 12,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "67/5",
+          "computed_tip": 13,
+          "certified_height": 12,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "68/5",
+          "computed_tip": 14,
+          "certified_height": 12,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "77/5",
+          "computed_tip": 14,
+          "certified_height": 13,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "78/5",
+          "computed_tip": 14,
+          "certified_height": 14,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "78/5",
+          "computed_tip": 15,
+          "certified_height": 14,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "79/5",
+          "computed_tip": 16,
+          "certified_height": 14,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "88/5",
+          "computed_tip": 16,
+          "certified_height": 15,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "89/5",
+          "computed_tip": 16,
+          "certified_height": 16,
+          "invalid_nodes": 0
+        }
+      ],
+      "excluded_clients": [
+        {
+          "id": "slow-client",
+          "start_round": 0,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "stale"
+        },
+        {
+          "id": "missing-state",
+          "start_round": 4,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "unavailable"
+        }
+      ],
+      "limitations": [
+        "Original synthetic halving objective; not a model-quality benchmark.",
+        "Independent resources; no shared GPU contention or network simulation.",
+        "Boolean evidence cannot satisfy an actual proof/release requirement."
+      ]
+    },
+    {
+      "kind": "exact-discrete-event-simulation",
+      "window": 2,
+      "rounds": 16,
+      "proof_workers": 8,
+      "compute_seconds": "1/5",
+      "prove_worker_seconds": "2",
+      "capacity_upper_bound_per_second": "4",
+      "time_to_certified_quality_seconds": "20",
+      "final_weight": "1/65536",
+      "backpressure_seconds": "72/5",
+      "release_delay_seconds": "0",
+      "admission_fixture_scope": "separate-original-stale-and-unavailable-client-cases",
+      "quality_target_quadratic_gap": "1/8589934592",
+      "certified_per_second": "4/5",
+      "p50_certificate_delay_seconds": "2",
+      "p95_certificate_delay_seconds": "2",
+      "maximum_speculative_depth": 2,
+      "rollback_count": 1,
+      "discarded_computations": 2,
+      "issued_proof_jobs": 17,
+      "proving_work_worker_seconds": "34",
+      "trace": [
+        {
+          "time": "1/5",
+          "computed_tip": 1,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "2/5",
+          "computed_tip": 2,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11/5",
+          "computed_tip": 2,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 2,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 3,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 4,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "22/5",
+          "computed_tip": 4,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 3,
+          "certified_height": 3,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "24/5",
+          "computed_tip": 4,
+          "certified_height": 3,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "5",
+          "computed_tip": 5,
+          "certified_height": 3,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "34/5",
+          "computed_tip": 5,
+          "certified_height": 4,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "7",
+          "computed_tip": 5,
+          "certified_height": 5,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "7",
+          "computed_tip": 6,
+          "certified_height": 5,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "36/5",
+          "computed_tip": 7,
+          "certified_height": 5,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "9",
+          "computed_tip": 7,
+          "certified_height": 6,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "46/5",
+          "computed_tip": 7,
+          "certified_height": 7,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "46/5",
+          "computed_tip": 8,
+          "certified_height": 7,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "47/5",
+          "computed_tip": 9,
+          "certified_height": 7,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "56/5",
+          "computed_tip": 9,
+          "certified_height": 8,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "57/5",
+          "computed_tip": 9,
+          "certified_height": 9,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "57/5",
+          "computed_tip": 10,
+          "certified_height": 9,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "58/5",
+          "computed_tip": 11,
+          "certified_height": 9,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "67/5",
+          "computed_tip": 11,
+          "certified_height": 10,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "68/5",
+          "computed_tip": 11,
+          "certified_height": 11,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "68/5",
+          "computed_tip": 12,
+          "certified_height": 11,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "69/5",
+          "computed_tip": 13,
+          "certified_height": 11,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "78/5",
+          "computed_tip": 13,
+          "certified_height": 12,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "79/5",
+          "computed_tip": 13,
+          "certified_height": 13,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "79/5",
+          "computed_tip": 14,
+          "certified_height": 13,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "16",
+          "computed_tip": 15,
+          "certified_height": 13,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "89/5",
+          "computed_tip": 15,
+          "certified_height": 14,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "18",
+          "computed_tip": 15,
+          "certified_height": 15,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "18",
+          "computed_tip": 16,
+          "certified_height": 15,
+          "invalid_nodes": 1
+        },
+        {
+          "time": "20",
+          "computed_tip": 16,
+          "certified_height": 16,
+          "invalid_nodes": 1
+        }
+      ],
+      "excluded_clients": [
+        {
+          "id": "slow-client",
+          "start_round": 0,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "stale"
+        },
+        {
+          "id": "missing-state",
+          "start_round": 4,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "unavailable"
+        }
+      ],
+      "limitations": [
+        "Original synthetic halving objective; not a model-quality benchmark.",
+        "Independent resources; no shared GPU contention or network simulation.",
+        "Boolean evidence cannot satisfy an actual proof/release requirement."
+      ]
+    },
+    {
+      "kind": "exact-discrete-event-simulation",
+      "window": 4,
+      "rounds": 16,
+      "proof_workers": 8,
+      "compute_seconds": "1/5",
+      "prove_worker_seconds": "2",
+      "capacity_upper_bound_per_second": "4",
+      "time_to_certified_quality_seconds": "47/5",
+      "final_weight": "1/65536",
+      "backpressure_seconds": "28/5",
+      "release_delay_seconds": "0",
+      "admission_fixture_scope": "separate-original-stale-and-unavailable-client-cases",
+      "quality_target_quadratic_gap": "1/8589934592",
+      "certified_per_second": "80/47",
+      "p50_certificate_delay_seconds": "2",
+      "p95_certificate_delay_seconds": "2",
+      "maximum_speculative_depth": 4,
+      "rollback_count": 0,
+      "discarded_computations": 0,
+      "issued_proof_jobs": 16,
+      "proving_work_worker_seconds": "32",
+      "trace": [
+        {
+          "time": "1/5",
+          "computed_tip": 1,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "2/5",
+          "computed_tip": 2,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "3/5",
+          "computed_tip": 3,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "4/5",
+          "computed_tip": 4,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11/5",
+          "computed_tip": 4,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 4,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 5,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 5,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 6,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "14/5",
+          "computed_tip": 6,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "14/5",
+          "computed_tip": 7,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "3",
+          "computed_tip": 8,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "22/5",
+          "computed_tip": 8,
+          "certified_height": 5,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 8,
+          "certified_height": 6,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 9,
+          "certified_height": 6,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "24/5",
+          "computed_tip": 9,
+          "certified_height": 7,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "24/5",
+          "computed_tip": 10,
+          "certified_height": 7,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "5",
+          "computed_tip": 10,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "5",
+          "computed_tip": 11,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "26/5",
+          "computed_tip": 12,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "33/5",
+          "computed_tip": 12,
+          "certified_height": 9,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "34/5",
+          "computed_tip": 12,
+          "certified_height": 10,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "34/5",
+          "computed_tip": 13,
+          "certified_height": 10,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "7",
+          "computed_tip": 13,
+          "certified_height": 11,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "7",
+          "computed_tip": 14,
+          "certified_height": 11,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "36/5",
+          "computed_tip": 14,
+          "certified_height": 12,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "36/5",
+          "computed_tip": 15,
+          "certified_height": 12,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "37/5",
+          "computed_tip": 16,
+          "certified_height": 12,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "44/5",
+          "computed_tip": 16,
+          "certified_height": 13,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "9",
+          "computed_tip": 16,
+          "certified_height": 14,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "46/5",
+          "computed_tip": 16,
+          "certified_height": 15,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "47/5",
+          "computed_tip": 16,
+          "certified_height": 16,
+          "invalid_nodes": 0
+        }
+      ],
+      "excluded_clients": [
+        {
+          "id": "slow-client",
+          "start_round": 0,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "stale"
+        },
+        {
+          "id": "missing-state",
+          "start_round": 4,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "unavailable"
+        }
+      ],
+      "limitations": [
+        "Original synthetic halving objective; not a model-quality benchmark.",
+        "Independent resources; no shared GPU contention or network simulation.",
+        "Boolean evidence cannot satisfy an actual proof/release requirement."
+      ]
+    },
+    {
+      "kind": "exact-discrete-event-simulation",
+      "window": 4,
+      "rounds": 16,
+      "proof_workers": 8,
+      "compute_seconds": "1/5",
+      "prove_worker_seconds": "2",
+      "capacity_upper_bound_per_second": "4",
+      "time_to_certified_quality_seconds": "58/5",
+      "final_weight": "1/65536",
+      "backpressure_seconds": "28/5",
+      "release_delay_seconds": "0",
+      "admission_fixture_scope": "separate-original-stale-and-unavailable-client-cases",
+      "quality_target_quadratic_gap": "1/8589934592",
+      "certified_per_second": "40/29",
+      "p50_certificate_delay_seconds": "2",
+      "p95_certificate_delay_seconds": "2",
+      "maximum_speculative_depth": 4,
+      "rollback_count": 1,
+      "discarded_computations": 4,
+      "issued_proof_jobs": 19,
+      "proving_work_worker_seconds": "38",
+      "trace": [
+        {
+          "time": "1/5",
+          "computed_tip": 1,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "2/5",
+          "computed_tip": 2,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "3/5",
+          "computed_tip": 3,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "4/5",
+          "computed_tip": 4,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11/5",
+          "computed_tip": 4,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 4,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 5,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 5,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 6,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "14/5",
+          "computed_tip": 3,
+          "certified_height": 3,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "3",
+          "computed_tip": 4,
+          "certified_height": 3,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "16/5",
+          "computed_tip": 5,
+          "certified_height": 3,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "17/5",
+          "computed_tip": 6,
+          "certified_height": 3,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "18/5",
+          "computed_tip": 7,
+          "certified_height": 3,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "22/5",
+          "computed_tip": 7,
+          "certified_height": 3,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 7,
+          "certified_height": 3,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "5",
+          "computed_tip": 7,
+          "certified_height": 4,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "26/5",
+          "computed_tip": 7,
+          "certified_height": 5,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "26/5",
+          "computed_tip": 8,
+          "certified_height": 5,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "27/5",
+          "computed_tip": 8,
+          "certified_height": 6,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "27/5",
+          "computed_tip": 9,
+          "certified_height": 6,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "28/5",
+          "computed_tip": 9,
+          "certified_height": 7,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "28/5",
+          "computed_tip": 10,
+          "certified_height": 7,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "29/5",
+          "computed_tip": 11,
+          "certified_height": 7,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "36/5",
+          "computed_tip": 11,
+          "certified_height": 8,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "37/5",
+          "computed_tip": 11,
+          "certified_height": 9,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "37/5",
+          "computed_tip": 12,
+          "certified_height": 9,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "38/5",
+          "computed_tip": 12,
+          "certified_height": 10,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "38/5",
+          "computed_tip": 13,
+          "certified_height": 10,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "39/5",
+          "computed_tip": 13,
+          "certified_height": 11,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "39/5",
+          "computed_tip": 14,
+          "certified_height": 11,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "8",
+          "computed_tip": 15,
+          "certified_height": 11,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "47/5",
+          "computed_tip": 15,
+          "certified_height": 12,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "48/5",
+          "computed_tip": 15,
+          "certified_height": 13,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "48/5",
+          "computed_tip": 16,
+          "certified_height": 13,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "49/5",
+          "computed_tip": 16,
+          "certified_height": 14,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "10",
+          "computed_tip": 16,
+          "certified_height": 15,
+          "invalid_nodes": 3
+        },
+        {
+          "time": "58/5",
+          "computed_tip": 16,
+          "certified_height": 16,
+          "invalid_nodes": 3
+        }
+      ],
+      "excluded_clients": [
+        {
+          "id": "slow-client",
+          "start_round": 0,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "stale"
+        },
+        {
+          "id": "missing-state",
+          "start_round": 4,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "unavailable"
+        }
+      ],
+      "limitations": [
+        "Original synthetic halving objective; not a model-quality benchmark.",
+        "Independent resources; no shared GPU contention or network simulation.",
+        "Boolean evidence cannot satisfy an actual proof/release requirement."
+      ]
+    },
+    {
+      "kind": "exact-discrete-event-simulation",
+      "window": 8,
+      "rounds": 16,
+      "proof_workers": 8,
+      "compute_seconds": "1/5",
+      "prove_worker_seconds": "2",
+      "capacity_upper_bound_per_second": "4",
+      "time_to_certified_quality_seconds": "29/5",
+      "final_weight": "1/65536",
+      "backpressure_seconds": "6/5",
+      "release_delay_seconds": "0",
+      "admission_fixture_scope": "separate-original-stale-and-unavailable-client-cases",
+      "quality_target_quadratic_gap": "1/8589934592",
+      "certified_per_second": "80/29",
+      "p50_certificate_delay_seconds": "2",
+      "p95_certificate_delay_seconds": "2",
+      "maximum_speculative_depth": 8,
+      "rollback_count": 0,
+      "discarded_computations": 0,
+      "issued_proof_jobs": 16,
+      "proving_work_worker_seconds": "32",
+      "trace": [
+        {
+          "time": "1/5",
+          "computed_tip": 1,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "2/5",
+          "computed_tip": 2,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "3/5",
+          "computed_tip": 3,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "4/5",
+          "computed_tip": 4,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "1",
+          "computed_tip": 5,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "6/5",
+          "computed_tip": 6,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "7/5",
+          "computed_tip": 7,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "8/5",
+          "computed_tip": 8,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11/5",
+          "computed_tip": 8,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 8,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 9,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 9,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 10,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "14/5",
+          "computed_tip": 10,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "14/5",
+          "computed_tip": 11,
+          "certified_height": 4,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "3",
+          "computed_tip": 11,
+          "certified_height": 5,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "3",
+          "computed_tip": 12,
+          "certified_height": 5,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "16/5",
+          "computed_tip": 12,
+          "certified_height": 6,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "16/5",
+          "computed_tip": 13,
+          "certified_height": 6,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "17/5",
+          "computed_tip": 13,
+          "certified_height": 7,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "17/5",
+          "computed_tip": 14,
+          "certified_height": 7,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "18/5",
+          "computed_tip": 14,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "18/5",
+          "computed_tip": 15,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "19/5",
+          "computed_tip": 16,
+          "certified_height": 8,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "22/5",
+          "computed_tip": 16,
+          "certified_height": 9,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 16,
+          "certified_height": 10,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "24/5",
+          "computed_tip": 16,
+          "certified_height": 11,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "5",
+          "computed_tip": 16,
+          "certified_height": 12,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "26/5",
+          "computed_tip": 16,
+          "certified_height": 13,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "27/5",
+          "computed_tip": 16,
+          "certified_height": 14,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "28/5",
+          "computed_tip": 16,
+          "certified_height": 15,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "29/5",
+          "computed_tip": 16,
+          "certified_height": 16,
+          "invalid_nodes": 0
+        }
+      ],
+      "excluded_clients": [
+        {
+          "id": "slow-client",
+          "start_round": 0,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "stale"
+        },
+        {
+          "id": "missing-state",
+          "start_round": 4,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "unavailable"
+        }
+      ],
+      "limitations": [
+        "Original synthetic halving objective; not a model-quality benchmark.",
+        "Independent resources; no shared GPU contention or network simulation.",
+        "Boolean evidence cannot satisfy an actual proof/release requirement."
+      ]
+    },
+    {
+      "kind": "exact-discrete-event-simulation",
+      "window": 8,
+      "rounds": 16,
+      "proof_workers": 8,
+      "compute_seconds": "1/5",
+      "prove_worker_seconds": "2",
+      "capacity_upper_bound_per_second": "4",
+      "time_to_certified_quality_seconds": "8",
+      "final_weight": "1/65536",
+      "backpressure_seconds": "6/5",
+      "release_delay_seconds": "0",
+      "admission_fixture_scope": "separate-original-stale-and-unavailable-client-cases",
+      "quality_target_quadratic_gap": "1/8589934592",
+      "certified_per_second": "2",
+      "p50_certificate_delay_seconds": "2",
+      "p95_certificate_delay_seconds": "11/5",
+      "maximum_speculative_depth": 8,
+      "rollback_count": 1,
+      "discarded_computations": 8,
+      "issued_proof_jobs": 23,
+      "proving_work_worker_seconds": "46",
+      "trace": [
+        {
+          "time": "1/5",
+          "computed_tip": 1,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "2/5",
+          "computed_tip": 2,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "3/5",
+          "computed_tip": 3,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "4/5",
+          "computed_tip": 4,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "1",
+          "computed_tip": 5,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "6/5",
+          "computed_tip": 6,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "7/5",
+          "computed_tip": 7,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "8/5",
+          "computed_tip": 8,
+          "certified_height": 0,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "11/5",
+          "computed_tip": 8,
+          "certified_height": 1,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 8,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "12/5",
+          "computed_tip": 9,
+          "certified_height": 2,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 9,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "13/5",
+          "computed_tip": 10,
+          "certified_height": 3,
+          "invalid_nodes": 0
+        },
+        {
+          "time": "14/5",
+          "computed_tip": 3,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "3",
+          "computed_tip": 3,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "3",
+          "computed_tip": 4,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "16/5",
+          "computed_tip": 4,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "16/5",
+          "computed_tip": 5,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "17/5",
+          "computed_tip": 5,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "17/5",
+          "computed_tip": 6,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "18/5",
+          "computed_tip": 6,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "18/5",
+          "computed_tip": 7,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "19/5",
+          "computed_tip": 8,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "4",
+          "computed_tip": 9,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "21/5",
+          "computed_tip": 10,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "22/5",
+          "computed_tip": 10,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "22/5",
+          "computed_tip": 11,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "23/5",
+          "computed_tip": 11,
+          "certified_height": 3,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "5",
+          "computed_tip": 11,
+          "certified_height": 4,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "26/5",
+          "computed_tip": 11,
+          "certified_height": 5,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "26/5",
+          "computed_tip": 12,
+          "certified_height": 5,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "27/5",
+          "computed_tip": 12,
+          "certified_height": 6,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "27/5",
+          "computed_tip": 13,
+          "certified_height": 6,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "28/5",
+          "computed_tip": 13,
+          "certified_height": 7,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "28/5",
+          "computed_tip": 14,
+          "certified_height": 7,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "29/5",
+          "computed_tip": 14,
+          "certified_height": 8,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "29/5",
+          "computed_tip": 15,
+          "certified_height": 8,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "6",
+          "computed_tip": 15,
+          "certified_height": 9,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "6",
+          "computed_tip": 16,
+          "certified_height": 9,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "32/5",
+          "computed_tip": 16,
+          "certified_height": 10,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "33/5",
+          "computed_tip": 16,
+          "certified_height": 11,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "36/5",
+          "computed_tip": 16,
+          "certified_height": 12,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "37/5",
+          "computed_tip": 16,
+          "certified_height": 13,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "38/5",
+          "computed_tip": 16,
+          "certified_height": 14,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "39/5",
+          "computed_tip": 16,
+          "certified_height": 15,
+          "invalid_nodes": 7
+        },
+        {
+          "time": "8",
+          "computed_tip": 16,
+          "certified_height": 16,
+          "invalid_nodes": 7
+        }
+      ],
+      "excluded_clients": [
+        {
+          "id": "slow-client",
+          "start_round": 0,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "stale"
+        },
+        {
+          "id": "missing-state",
+          "start_round": 4,
+          "head_round": 4,
+          "age_limit": 2,
+          "reason": "unavailable"
+        }
+      ],
+      "limitations": [
+        "Original synthetic halving objective; not a model-quality benchmark.",
+        "Independent resources; no shared GPU contention or network simulation.",
+        "Boolean evidence cannot satisfy an actual proof/release requirement."
+      ]
+    }
+  ],
+  "sampling": {
+    "capacity_upper_bound": "4",
+    "one_bad_detection": "1/100",
+    "one_percent_bad_exact_miss": 4.1033126308216346e-05,
+    "one_percent_bad_miss_upper": 4.317124741065825e-05,
+    "type": "exact fixed-trace without-replacement calculation; not a training proof"
+  },
+  "sumcheck_negative": {
+    "rounds": [
+      {
+        "constant": 4,
+        "local_consistency": true
+      },
+      {
+        "constant": 2,
+        "local_consistency": true
+      },
+      {
+        "constant": 1,
+        "local_consistency": true
+      }
+    ],
+    "terminal_claim": 1,
+    "unbound_verifier_accepts": true,
+    "intended_zero_polynomial": 0,
+    "bound_terminal_check_accepts": false
+  },
+  "pq_inventory_audit": [
+    {
+      "id": "public-research-v1",
+      "full_stack_pq_supported": false,
+      "blockers": [
+        "proof:vulnerable",
+        "signature:unknown",
+        "credential:unknown",
+        "transport:unknown",
+        "setup:vulnerable",
+        "artifact:unknown"
+      ],
+      "implemented": true,
+      "performance_eligible": true,
+      "review": "independent-review-required"
+    },
+    {
+      "id": "private-transition-v2",
+      "full_stack_pq_supported": false,
+      "blockers": [
+        "proof:vulnerable",
+        "signature:unknown",
+        "credential:unknown",
+        "transport:unknown",
+        "setup:vulnerable",
+        "artifact:unknown"
+      ],
+      "implemented": true,
+      "performance_eligible": true,
+      "review": "independent-review-required"
+    },
+    {
+      "id": "protected-aggregation-v1",
+      "full_stack_pq_supported": false,
+      "blockers": [
+        "proof:vulnerable",
+        "commitment:vulnerable",
+        "signature:vulnerable",
+        "credential:vulnerable",
+        "transport:unknown",
+        "setup:vulnerable",
+        "artifact:vulnerable"
+      ],
+      "implemented": true,
+      "performance_eligible": true,
+      "review": "independent-review-required"
+    },
+    {
+      "id": "external-cocircom-rep3",
+      "full_stack_pq_supported": false,
+      "blockers": [
+        "proof:vulnerable",
+        "signature:unknown",
+        "credential:unknown",
+        "transport:unknown",
+        "setup:vulnerable",
+        "artifact:unknown"
+      ],
+      "implemented": true,
+      "performance_eligible": true,
+      "review": "independent-review-required"
+    },
+    {
+      "id": "paillier-product-reference",
+      "full_stack_pq_supported": false,
+      "blockers": [
+        "commitment:vulnerable",
+        "signature:unknown",
+        "credential:unknown",
+        "transport:unknown",
+        "setup:vulnerable",
+        "artifact:unknown"
+      ],
+      "implemented": true,
+      "performance_eligible": true,
+      "review": "independent-review-required"
+    },
+    {
+      "id": "pq-authentication-mixed-proposal",
+      "full_stack_pq_supported": false,
+      "blockers": [
+        "proof:vulnerable",
+        "credential:unknown",
+        "transport:unknown",
+        "setup:vulnerable",
+        "artifact:unknown"
+      ],
+      "implemented": false,
+      "performance_eligible": false,
+      "review": "independent-review-required"
+    }
+  ],
+  "matched_workload": {
+    "function": "signed integer a*b",
+    "a": 3,
+    "b": 11,
+    "expected": 33,
+    "encoding": "Exact integers; abs(inputs)<=32, abs(product)<=1024; field/modulus no wrap.",
+    "dataset_provenance": "Public upstream synthetic arithmetic fixture; no learning data/model.",
+    "preprocessor": "identity",
+    "model": "one scalar coefficient11",
+    "he": [
+      {
+        "status": "completed",
+        "modulus_bits": 2048,
+        "output": 33,
+        "key_generation_seconds": 1.8232717079808936,
+        "encryption_seconds": 0.10220754198962823,
+        "evaluation_seconds": 0.00024691701401025057,
+        "decryption_seconds": 0.10686083300970495,
+        "end_to_end_seconds": 2.032586999994237,
+        "online_seconds": 0.20931529201334342,
+        "ciphertext_payload_bytes_each": 512,
+        "logical_messages": 2,
+        "protocol_round_trips": 1,
+        "communication_scope": "Two fixed-width ciphertext payloads, simulated local transfers; no measured network.",
+        "malformed_ciphertext_rejected": true,
+        "valid_malleation": {
+          "decoded": 34,
+          "detected_by_HE": false,
+          "detected_by_synthetic_oracle": true
+        },
+        "key_material_retained": false,
+        "limitations": [
+          "Original unaudited variable-time Python crypto reference; no deployment security.",
+          "Client holds complete decryption key and can decrypt every ciphertext it sees.",
+          "Evaluator knows coefficient11. Authorized product and an operand reveal the other operand.",
+          "No CCA integrity, range proof, computation proof, threshold key or PQ protection.",
+          "No claim to hide the evaluator coefficient from the full-key decrypting client."
+        ],
+        "repetition": 0,
+        "excluded": false
+      },
+      {
+        "status": "completed",
+        "modulus_bits": 2048,
+        "output": 33,
+        "key_generation_seconds": 3.2713895839988254,
+        "encryption_seconds": 0.102469666977413,
+        "evaluation_seconds": 0.0002662499900907278,
+        "decryption_seconds": 0.10632291703950614,
+        "end_to_end_seconds": 3.4804484180058353,
+        "online_seconds": 0.20905883400700986,
+        "ciphertext_payload_bytes_each": 512,
+        "logical_messages": 2,
+        "protocol_round_trips": 1,
+        "communication_scope": "Two fixed-width ciphertext payloads, simulated local transfers; no measured network.",
+        "malformed_ciphertext_rejected": true,
+        "valid_malleation": {
+          "decoded": 34,
+          "detected_by_HE": false,
+          "detected_by_synthetic_oracle": true
+        },
+        "key_material_retained": false,
+        "limitations": [
+          "Original unaudited variable-time Python crypto reference; no deployment security.",
+          "Client holds complete decryption key and can decrypt every ciphertext it sees.",
+          "Evaluator knows coefficient11. Authorized product and an operand reveal the other operand.",
+          "No CCA integrity, range proof, computation proof, threshold key or PQ protection.",
+          "No claim to hide the evaluator coefficient from the full-key decrypting client."
+        ],
+        "repetition": 1,
+        "excluded": false
+      },
+      {
+        "status": "completed",
+        "modulus_bits": 2048,
+        "output": 33,
+        "key_generation_seconds": 3.3478794589755125,
+        "encryption_seconds": 0.11533162504201755,
+        "evaluation_seconds": 0.00025708298198878765,
+        "decryption_seconds": 0.10511766601121053,
+        "end_to_end_seconds": 3.5685858330107294,
+        "online_seconds": 0.22070637403521687,
+        "ciphertext_payload_bytes_each": 512,
+        "logical_messages": 2,
+        "protocol_round_trips": 1,
+        "communication_scope": "Two fixed-width ciphertext payloads, simulated local transfers; no measured network.",
+        "malformed_ciphertext_rejected": true,
+        "valid_malleation": {
+          "decoded": 34,
+          "detected_by_HE": false,
+          "detected_by_synthetic_oracle": true
+        },
+        "key_material_retained": false,
+        "limitations": [
+          "Original unaudited variable-time Python crypto reference; no deployment security.",
+          "Client holds complete decryption key and can decrypt every ciphertext it sees.",
+          "Evaluator knows coefficient11. Authorized product and an operand reveal the other operand.",
+          "No CCA integrity, range proof, computation proof, threshold key or PQ protection.",
+          "No claim to hide the evaluator coefficient from the full-key decrypting client."
+        ],
+        "repetition": 2,
+        "excluded": false
+      }
+    ],
+    "collaborative_proofs": [
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.004686000000219792,
+        "proof_and_split_wall_seconds": 0.030925000028219074,
+        "verification_seconds": 0.007336417038459331,
+        "end_to_end_seconds": 0.13472566701238975,
+        "relay_delay_per_read_seconds": 0,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.024077791022136807,
+            "prover_kernel_ms": 2.502,
+            "max_rss_bytes": 6832128
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.022615999972913414,
+            "prover_kernel_ms": 15.635,
+            "max_rss_bytes": 6864896
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.021325208013877273,
+            "prover_kernel_ms": 2.595,
+            "max_rss_bytes": 6799360
+          }
+        ],
+        "proof_json_bytes": 724,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "5ead8315a6ae2f3437ce28abe8e161c845784290e1634f8198b527aff50b790f",
+          "proof0.json": "5ead8315a6ae2f3437ce28abe8e161c845784290e1634f8198b527aff50b790f",
+          "proof1.json": "5ead8315a6ae2f3437ce28abe8e161c845784290e1634f8198b527aff50b790f"
+        },
+        "repetition": 0,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      },
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.004196375026367605,
+        "proof_and_split_wall_seconds": 0.07675937504973263,
+        "verification_seconds": 0.012901499983854592,
+        "end_to_end_seconds": 0.24362041702261195,
+        "relay_delay_per_read_seconds": 0.005,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.070648416003678,
+            "prover_kernel_ms": 34.216,
+            "max_rss_bytes": 6832128
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.06922791601391509,
+            "prover_kernel_ms": 46.188,
+            "max_rss_bytes": 6864896
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.06775537499925122,
+            "prover_kernel_ms": 34.235,
+            "max_rss_bytes": 6864896
+          }
+        ],
+        "proof_json_bytes": 722,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "76a9e904c37e7de4af0ba6a38941d3d9fdbefdd219cdbd950dea23e22d2fc3ac",
+          "proof0.json": "76a9e904c37e7de4af0ba6a38941d3d9fdbefdd219cdbd950dea23e22d2fc3ac",
+          "proof1.json": "76a9e904c37e7de4af0ba6a38941d3d9fdbefdd219cdbd950dea23e22d2fc3ac"
+        },
+        "repetition": 0,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      },
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.004727999970782548,
+        "proof_and_split_wall_seconds": 0.029343999980483204,
+        "verification_seconds": 0.007635040965396911,
+        "end_to_end_seconds": 0.1337245000177063,
+        "relay_delay_per_read_seconds": 0,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.02269100002013147,
+            "prover_kernel_ms": 2.396,
+            "max_rss_bytes": 6815744
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.021497750014532357,
+            "prover_kernel_ms": 2.761,
+            "max_rss_bytes": 6832128
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.020184250024612993,
+            "prover_kernel_ms": 2.51,
+            "max_rss_bytes": 6782976
+          }
+        ],
+        "proof_json_bytes": 724,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "223be3cdafaacfbd71ea6d09d2b48808c0d114118fb44f4ffc5b2a6f71c06d7a",
+          "proof0.json": "223be3cdafaacfbd71ea6d09d2b48808c0d114118fb44f4ffc5b2a6f71c06d7a",
+          "proof1.json": "223be3cdafaacfbd71ea6d09d2b48808c0d114118fb44f4ffc5b2a6f71c06d7a"
+        },
+        "repetition": 1,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      },
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.004694417002610862,
+        "proof_and_split_wall_seconds": 0.08490708301542327,
+        "verification_seconds": 0.005982208997011185,
+        "end_to_end_seconds": 0.23966333299176767,
+        "relay_delay_per_read_seconds": 0.005,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.07218054198892787,
+            "prover_kernel_ms": 32.654,
+            "max_rss_bytes": 6832128
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.07092987501528114,
+            "prover_kernel_ms": 45.743,
+            "max_rss_bytes": 6864896
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.0754656660137698,
+            "prover_kernel_ms": 40.21,
+            "max_rss_bytes": 6881280
+          }
+        ],
+        "proof_json_bytes": 721,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "64a9375a35d30a7f08de70556d9fcabd225383a49f5cfc5e9d183dbd1e2368cf",
+          "proof0.json": "64a9375a35d30a7f08de70556d9fcabd225383a49f5cfc5e9d183dbd1e2368cf",
+          "proof1.json": "64a9375a35d30a7f08de70556d9fcabd225383a49f5cfc5e9d183dbd1e2368cf"
+        },
+        "repetition": 1,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      },
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.004614000034052879,
+        "proof_and_split_wall_seconds": 0.029570667014922947,
+        "verification_seconds": 0.007375209010206163,
+        "end_to_end_seconds": 0.1334264170145616,
+        "relay_delay_per_read_seconds": 0,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.022894625028129667,
+            "prover_kernel_ms": 2.736,
+            "max_rss_bytes": 6832128
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.021594499994535,
+            "prover_kernel_ms": 3.084,
+            "max_rss_bytes": 6815744
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.020198166952468455,
+            "prover_kernel_ms": 2.744,
+            "max_rss_bytes": 6766592
+          }
+        ],
+        "proof_json_bytes": 724,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "cd0c8e34a930707ecd9b81c9e9713a8cedc8a5d0c72087657aabf31089d1191f",
+          "proof0.json": "cd0c8e34a930707ecd9b81c9e9713a8cedc8a5d0c72087657aabf31089d1191f",
+          "proof1.json": "cd0c8e34a930707ecd9b81c9e9713a8cedc8a5d0c72087657aabf31089d1191f"
+        },
+        "repetition": 2,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      },
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.004700999998021871,
+        "proof_and_split_wall_seconds": 0.07647666695993394,
+        "verification_seconds": 0.014120583015028387,
+        "end_to_end_seconds": 0.24638441699789837,
+        "relay_delay_per_read_seconds": 0.005,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.06951762503013015,
+            "prover_kernel_ms": 32.488,
+            "max_rss_bytes": 6848512
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.06834079104010016,
+            "prover_kernel_ms": 44.749,
+            "max_rss_bytes": 6832128
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.06719283398706466,
+            "prover_kernel_ms": 32.45,
+            "max_rss_bytes": 6815744
+          }
+        ],
+        "proof_json_bytes": 722,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "fb7d9a018790e4187ff07ef3f0c1d6b43fabf815fbd10dc342bada19cb72e3b4",
+          "proof0.json": "fb7d9a018790e4187ff07ef3f0c1d6b43fabf815fbd10dc342bada19cb72e3b4",
+          "proof1.json": "fb7d9a018790e4187ff07ef3f0c1d6b43fabf815fbd10dc342bada19cb72e3b4"
+        },
+        "repetition": 2,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      }
+    ],
+    "trusted_prover": [
+      {
+        "status": "verified",
+        "backend": "snarkjs0.7.5 Groth16 singleThread",
+        "seconds": 0.3097923750174232,
+        "verification": "pinned independent coCircom verifier accepted",
+        "proof_json_bytes": 722,
+        "communication_bytes": 0,
+        "protocol_rounds": 0,
+        "max_rss_bytes": null,
+        "rss_status": "not-instrumented",
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        },
+        "limitations": [
+          "Different prover implementation/runtime; no speedup ratio inferred.",
+          "Reads the complete public synthetic witness; trusted prover baseline."
+        ],
+        "repetition": 0,
+        "excluded": false
+      },
+      {
+        "status": "verified",
+        "backend": "snarkjs0.7.5 Groth16 singleThread",
+        "seconds": 0.15803970798151568,
+        "verification": "pinned independent coCircom verifier accepted",
+        "proof_json_bytes": 717,
+        "communication_bytes": 0,
+        "protocol_rounds": 0,
+        "max_rss_bytes": null,
+        "rss_status": "not-instrumented",
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        },
+        "limitations": [
+          "Different prover implementation/runtime; no speedup ratio inferred.",
+          "Reads the complete public synthetic witness; trusted prover baseline."
+        ],
+        "repetition": 1,
+        "excluded": false
+      },
+      {
+        "status": "verified",
+        "backend": "snarkjs0.7.5 Groth16 singleThread",
+        "seconds": 0.18869204202201217,
+        "verification": "pinned independent coCircom verifier accepted",
+        "proof_json_bytes": 722,
+        "communication_bytes": 0,
+        "protocol_rounds": 0,
+        "max_rss_bytes": null,
+        "rss_status": "not-instrumented",
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        },
+        "limitations": [
+          "Different prover implementation/runtime; no speedup ratio inferred.",
+          "Reads the complete public synthetic witness; trusted prover baseline."
+        ],
+        "repetition": 2,
+        "excluded": false
+      }
+    ],
+    "attested_execution": {
+      "status": "not-run",
+      "reason": "real attestation backend/quote verifier unavailable"
+    }
+  },
+  "negative_runs": [
+    {
+      "case": "missing-share",
+      "expected": "not-verified",
+      "result": {
+        "status": "timeout-or-rejected",
+        "verified": false,
+        "split_seconds": 0.006714999966789037,
+        "proof_and_split_wall_seconds": 2.0114883329952136,
+        "verification_seconds": null,
+        "end_to_end_seconds": 2.147321291966364,
+        "relay_delay_per_read_seconds": 0,
+        "tcp_payload_bytes": 112,
+        "tcp_connections": 2,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "timeout",
+            "returncode": -9,
+            "collection_elapsed_seconds_upper_bound": 2.000968832988292,
+            "prover_kernel_ms": null,
+            "max_rss_bytes": null
+          },
+          {
+            "party": 1,
+            "status": "failed",
+            "returncode": 1,
+            "collection_elapsed_seconds_upper_bound": 2.0002826250274666,
+            "prover_kernel_ms": null,
+            "max_rss_bytes": 5734400
+          }
+        ],
+        "proof_json_bytes": null,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {}
+      }
+    },
+    {
+      "case": "malformed-share",
+      "expected": "not-verified",
+      "result": {
+        "status": "timeout-or-rejected",
+        "verified": false,
+        "split_seconds": 0.010605291987303644,
+        "proof_and_split_wall_seconds": 0.038327875023242086,
+        "verification_seconds": null,
+        "end_to_end_seconds": 0.13620491599431261,
+        "relay_delay_per_read_seconds": 0,
+        "tcp_payload_bytes": 304,
+        "tcp_connections": 6,
+        "relay_errors": [
+          "ConnectionResetError"
+        ],
+        "parties": [
+          {
+            "party": 0,
+            "status": "failed",
+            "returncode": 1,
+            "collection_elapsed_seconds_upper_bound": 0.023514583008363843,
+            "prover_kernel_ms": null,
+            "max_rss_bytes": 5750784
+          },
+          {
+            "party": 1,
+            "status": "failed",
+            "returncode": 1,
+            "collection_elapsed_seconds_upper_bound": 0.02159008296439424,
+            "prover_kernel_ms": null,
+            "max_rss_bytes": 5505024
+          },
+          {
+            "party": 2,
+            "status": "failed",
+            "returncode": 1,
+            "collection_elapsed_seconds_upper_bound": 0.01969741698121652,
+            "prover_kernel_ms": null,
+            "max_rss_bytes": 5652480
+          }
+        ],
+        "proof_json_bytes": null,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {}
+      }
+    },
+    {
+      "case": "wrong-public-output",
+      "accepted": false
+    },
+    {
+      "case": "malformed-proof",
+      "accepted": false
+    }
+  ],
+  "limitations": [
+    "No manuscript/claim status promotion, merge or independent security approval.",
+    "Simulation clocks are exact model outputs; local process timings are diagnostics on this host.",
+    "No WAN latency/bandwidth emulation, distributed physical machines, production input owners or private channels.",
+    "No DP theorem or statistical generalization from these deterministic examples.",
+    "Private operands/model coefficient are not authenticated by input commitments in the selected external circuit.",
+    "Protocol round trips and combined live coordinator/cluster memory remain unmeasured.",
+    "External proofs check one field multiplication; they do not certify full FZKML training or integer range constraints."
+  ],
+  "reproduction_command": "PYTHONPATH=.:src .venv/bin/python scripts/run_s02_protected.py .tools/fresh-run --external --repetitions 3",
+  "external_relation": {
+    "relation": "a*b=y mod BN254-Fr",
+    "integer_domain": "abs(a),abs(b)<=32; abs(y)<=1024",
+    "witness": [
+      1,
+      33,
+      3,
+      11
+    ],
+    "public_inputs": [
+      33
+    ],
+    "field_modulus": "21888242871839275222246405745257275088548364400416034343698204186575808495617",
+    "public_outputs": 1,
+    "public_input_variables": 0,
+    "private_inputs": 2,
+    "constraints": 1,
+    "r1cs_sha256": "18e7e2acedabd39db3efaa8a9b457e3dbd3883ae1c421be4a725eec530574ee2",
+    "witness_sha256": "7aa8efe33fc086e3ea026e1785eddb647934c51d9aeba574fc39f62a174f9ce4"
+  },
+  "public_artifacts": {
+    "proof0.json": "5ead8315a6ae2f3437ce28abe8e161c845784290e1634f8198b527aff50b790f",
+    "public0.json": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd"
+  }
+}

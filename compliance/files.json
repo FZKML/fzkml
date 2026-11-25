@@ -4069,6 +4069,213 @@
         "LICENSE"
       ],
       "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/development-failure-dirty.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/proof-manifest.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-0-0-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-0-0-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-0-0.005-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-0-0.005-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-1-0-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-1-0-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-1-0.005-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-1-0.005-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-2-0-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-2-0-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-2-0.005-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-2-0.005-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-0-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-0-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-1-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-1-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-2-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-2-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/run.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_s02_protected_evidence.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
     }
   }
 }
