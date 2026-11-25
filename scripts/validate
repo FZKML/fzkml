@@ -10,13 +10,16 @@ cargo metadata --locked --no-deps --format-version 1 >/dev/null
 cargo fmt --all --check
 cargo clippy --workspace --all-targets --locked -- -D warnings
 cargo test --workspace --locked
-uv run --locked ruff check src tests/test_pipeline.py tests/test_transcript_privacy.py scripts/check_ci_inventory.py
-uv run --locked ruff format --check src tests/test_pipeline.py tests/test_transcript_privacy.py scripts/check_ci_inventory.py
-uv run --locked mypy src tests/test_pipeline.py tests/test_transcript_privacy.py scripts/check_ci_inventory.py
+uv run --locked ruff check src tests/test_pipeline.py tests/test_protocol_privacy.py tests/test_transcript_privacy.py scripts/check_ci_inventory.py
+uv run --locked ruff format --check src tests/test_pipeline.py tests/test_protocol_privacy.py tests/test_transcript_privacy.py scripts/check_ci_inventory.py
+uv run --locked mypy src tests/test_pipeline.py tests/test_protocol_privacy.py tests/test_transcript_privacy.py scripts/check_ci_inventory.py
 uv run --locked python scripts/check_governance.py
 uv run --locked python scripts/check_citation.py
 PYTHONPATH=src uv run --locked python scripts/check_research.py
 PYTHONPATH=src uv run --locked python -m fzkml_transcript.fixtures --check
 PYTHONPATH=src uv run --locked python -m unittest discover -s tests -v
+protocol_evidence_dir="$(mktemp -d)"
+trap 'rm -rf "$protocol_evidence_dir"' EXIT
+./scripts/protocol-reference --check --output "$protocol_evidence_dir/reference"
 PYTHONPATH=src uv run --locked python -m fzkml_ci workflow-policy
 git diff --exit-code -- Cargo.lock uv.lock

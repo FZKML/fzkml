@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "roles": {
+    "client": {
+      "witness_view": "Own records, optimizer/model state, openings and coins.",
+      "assumption": "Local host is trusted for witness secrecy.",
+      "status": "reference-local"
+    },
+    "trusted-cluster": {
+      "witness_view": "Full assigned plaintext witnesses and intermediate computations.",
+      "assumption": "Every worker and operator with plaintext access is trusted; transport must be authenticated/confidential.",
+      "status": "unimplemented"
+    },
+    "outsourced-prover": {
+      "witness_view": "Full supplied witness, openings, private model and intermediate values.",
+      "assumption": "Ordinary prover is trusted with plaintext; final ZK does not hide its inputs from it.",
+      "status": "unimplemented"
+    },
+    "collaborative-prover": {
+      "witness_view": "Protocol-specified shares and authorized leakage, not assumed plaintext secrecy.",
+      "assumption": "Selected MPC/proving protocol, authenticated channels and a proved collusion threshold are required.",
+      "status": "unimplemented"
+    },
+    "attested-prover": {
+      "witness_view": "Plaintext inside the measured TEE; host-visible metadata and stated leakage.",
+      "assumption": "Verified measurement/attestation, provisioning, anti-rollback, trusted hardware and side-channel model.",
+      "status": "unimplemented"
+    },
+    "coordinator": {
+      "witness_view": "M0 clean updates, public policy/transcript, all synthetic inputs; proposed central sampler sees clean query.",
+      "assumption": "Trusted for central DP against public observer; aggregate confidentiality is unsupported in M0.",
+      "status": "reference-local"
+    },
+    "committee": {
+      "witness_view": "Protocol-defined shares/certificates and public transcript.",
+      "assumption": "Authenticated honest-quorum/collusion and availability assumptions; no committee implementation yet.",
+      "status": "unimplemented"
+    },
+    "telemetry": {
+      "witness_view": "Only fixed coarse public events; no witnesses, coins, paths or exception payloads.",
+      "assumption": "Exporter allowlist plus independent review of backend/worker/crash telemetry.",
+      "status": "reference-exporter"
+    },
+    "artifact-store": {
+      "witness_view": "Reviewed public JSON/reports and public identifiers; source fixtures are explicitly synthetic.",
+      "assumption": "CI-10 public-tree/schema checks, exact artifact regeneration and human narrative review.",
+      "status": "reference-exporter"
+    }
+  },
+  "flows": [
+    {
+      "sender": "client",
+      "receiver": "trusted-cluster",
+      "data": "Full witness",
+      "protection": "Trusted plaintext processing",
+      "assumption": "All receiving workers trusted."
+    },
+    {
+      "sender": "client",
+      "receiver": "outsourced-prover",
+      "data": "Full witness",
+      "protection": "Ordinary remote proving; authenticated transport required",
+      "assumption": "Receiving prover trusted with plaintext."
+    },
+    {
+      "sender": "client",
+      "receiver": "collaborative-prover",
+      "data": "Protocol-specific witness shares",
+      "protection": "Proposed MPC; unsupported",
+      "assumption": "No secrecy until protocol/collusion theorem is supplied."
+    },
+    {
+      "sender": "client",
+      "receiver": "attested-prover",
+      "data": "Encrypted witness provisioned into TEE",
+      "protection": "Proposed attested channel; unsupported",
+      "assumption": "Verify exact code/hardware/key provisioning before release."
+    },
+    {
+      "sender": "client",
+      "receiver": "coordinator",
+      "data": "M0 individual updates; proposed central-DP inputs",
+      "protection": "Transparent synthetic local mode",
+      "assumption": "Coordinator sees clean contributions/query; no privacy against it."
+    },
+    {
+      "sender": "coordinator",
+      "receiver": "committee",
+      "data": "Candidate state and certificates",
+      "protection": "Proposed authenticated dissemination",
+      "assumption": "Quorum honesty and certificate availability are distinct assumptions."
+    },
+    {
+      "sender": "coordinator",
+      "receiver": "telemetry",
+      "data": "Fixed coarse public event",
+      "protection": "Explicit exporter; CI-10 public-tree validation",
+      "assumption": "No raw exception or arbitrary worker log may cross this boundary."
+    },
+    {
+      "sender": "telemetry",
+      "receiver": "artifact-store",
+      "data": "Approved public event and schema-valid reports",
+      "protection": "Closed public schema and exact report regeneration",
+      "assumption": "Known-canary test does not establish complete noninterference."
+    }
+  ],
+  "public_surfaces": [
+    "reference CLI stdout/stderr",
+    "public event JSON",
+    "retained reference observations",
+    "CI-04 generated public report files"
+  ],
+  "limitations": [
+    "Synthetic reference surface audit only; no live distributed/proving deployment.",
+    "Source fixtures intentionally include canary definitions; no actual private input is used.",
+    "Timing, OS/subprocess logs, crash dumps, encoded leaks and malicious callbacks remain outside coverage."
+  ]
+}
