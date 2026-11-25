@@ -1,5 +1,7 @@
 //! Exact tiny research relation. No production security or constant-time claim.
 pub mod aggregation;
+pub mod model_workloads;
+
 pub mod private;
 pub mod proof;
 

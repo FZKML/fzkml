@@ -1,0 +1,321 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "source_head",
+    "source_dirty",
+    "source_files",
+    "input_digests",
+    "contract_sha256",
+    "dataset_provenance",
+    "reproduce",
+    "environment",
+    "proof_peak_process_rss_bytes",
+    "excluded_phases",
+    "outcomes",
+    "proofs",
+    "observations",
+    "scope"
+  ],
+  "properties": {
+    "version": {
+      "const": "fzkml-m5-run-1"
+    },
+    "source_head": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "source_dirty": {
+      "type": "boolean"
+    },
+    "source_files": {
+      "type": "object",
+      "minProperties": 7,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "input_digests": {
+      "type": "object",
+      "required": [
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "dataset_provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reproduce": {
+      "type": "string",
+      "minLength": 1
+    },
+    "environment": {
+      "type": "object",
+      "required": [
+        "os",
+        "arch",
+        "cpu",
+        "rustc",
+        "python",
+        "binary_sha256"
+      ],
+      "properties": {
+        "binary_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "proof_peak_process_rss_bytes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "excluded_phases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "outcomes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95"
+      ],
+      "properties": {
+        "89": {
+          "const": "proof-verified"
+        },
+        "90": {
+          "const": "proof-verified"
+        },
+        "91": {
+          "const": "reference-executed"
+        },
+        "92": {
+          "const": "reference-executed"
+        },
+        "93": {
+          "const": "reference-executed"
+        },
+        "94": {
+          "const": "reference-executed"
+        },
+        "95": {
+          "const": "reference-executed"
+        }
+      }
+    },
+    "proofs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "median",
+        "inference",
+        "train"
+      ],
+      "properties": {
+        "median": {
+          "$ref": "#/$defs/proof"
+        },
+        "inference": {
+          "$ref": "#/$defs/proof"
+        },
+        "train": {
+          "$ref": "#/$defs/proof"
+        }
+      }
+    },
+    "observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95"
+      ],
+      "properties": {
+        "89": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "90": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "91": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "92": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "93": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "94": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "95": {
+          "type": "object",
+          "minProperties": 1
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95"
+      ],
+      "properties": {
+        "89": {
+          "$ref": "#/$defs/scope"
+        },
+        "90": {
+          "$ref": "#/$defs/scope"
+        },
+        "91": {
+          "$ref": "#/$defs/scope"
+        },
+        "92": {
+          "$ref": "#/$defs/scope"
+        },
+        "93": {
+          "$ref": "#/$defs/scope"
+        },
+        "94": {
+          "$ref": "#/$defs/scope"
+        },
+        "95": {
+          "$ref": "#/$defs/scope"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "output",
+        "constraint_count",
+        "setup_seconds",
+        "witness_and_proving_seconds",
+        "verification_seconds",
+        "proof_bytes",
+        "modified_statement_rejected",
+        "modified_commitment_rejected",
+        "invalid_proof_rejected"
+      ],
+      "properties": {
+        "output": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "maxItems": 4
+        },
+        "constraint_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "setup_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "witness_and_proving_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "verification_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "proof_bytes": {
+          "const": 128
+        },
+        "modified_statement_rejected": {
+          "const": true
+        },
+        "modified_commitment_rejected": {
+          "const": true
+        },
+        "invalid_proof_rejected": {
+          "const": true
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim",
+        "task",
+        "observer",
+        "privacy_unit",
+        "release"
+      ],
+      "properties": {
+        "claim": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "privacy_unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "release": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
