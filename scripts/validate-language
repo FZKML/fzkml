@@ -2,14 +2,18 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 uv sync --locked --group ml
-uv run --no-sync ruff check bindings/python reference tests/test_language.py scripts/conformance.py scripts/generate_numeric_vectors.py scripts/profile_language.py scripts/mutation_conformance.py scripts/check_wheel.py
-uv run --no-sync ruff format --check bindings/python reference tests/test_language.py scripts/conformance.py scripts/generate_numeric_vectors.py scripts/profile_language.py scripts/mutation_conformance.py scripts/check_wheel.py
-MYPYPATH=bindings/python uv run --no-sync mypy bindings/python reference tests/test_language.py
+uv run --no-sync ruff check bindings/python reference tests/test_language.py tests/test_private_transcript.py scripts/conformance.py scripts/private_conformance.py scripts/generate_numeric_vectors.py scripts/profile_language.py scripts/profile_private.py scripts/mutation_conformance.py scripts/check_wheel.py
+uv run --no-sync ruff format --check bindings/python reference tests/test_language.py tests/test_private_transcript.py scripts/conformance.py scripts/private_conformance.py scripts/generate_numeric_vectors.py scripts/profile_language.py scripts/profile_private.py scripts/mutation_conformance.py scripts/check_wheel.py
+MYPYPATH=bindings/python uv run --no-sync mypy bindings/python reference tests/test_language.py tests/test_private_transcript.py
 cargo build --locked -p fzkml-core --bin fzkml-contract
 uv run --no-sync python scripts/conformance.py target/debug/fzkml-contract
 cargo test --release --locked -p fzkml-core
 cargo build --release --locked -p fzkml-core --bin fzkml-contract
+cargo build --release --locked -p fzkml-core --bin fzkml-private
 uv run --no-sync python scripts/conformance.py target/release/fzkml-contract
+uv run --no-sync python scripts/private_conformance.py target/release/fzkml-private
+target/release/fzkml-private smoke 256
+uv run --no-sync python scripts/profile_private.py
 if [[ "${GITHUB_EVENT_NAME:-}" == schedule ]]; then
   uv run --no-sync python scripts/conformance.py target/release/fzkml-contract --extra-random 2048
 fi
@@ -30,4 +34,5 @@ uv venv --clear .venv-smoke --python .venv/bin/python
 uv pip install --python .venv-smoke/bin/python --no-deps "$wheel"
 .venv-smoke/bin/python -c 'from fzkml_native import CanonicalBatch; import struct; data=b"FZKNUM01"+struct.pack("<HHIq",1,3,16,0)+struct.pack("<qqI",0,0,1)*3; assert CanonicalBatch(data).evaluate()==0'
 PYTHONPATH=.:src uv run --no-sync python -m unittest discover -s tests -p test_language.py -v
+PYTHONPATH=.:src uv run --no-sync python -m unittest tests.test_private_transcript -v
 PYTHONPATH=src uv run --no-sync python scripts/profile_language.py

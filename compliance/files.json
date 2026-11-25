@@ -4,14 +4,18 @@
     "Apache-2.0",
     "Apache-2.0 OR MIT",
     "Apache-2.0 WITH LLVM-exception",
+    "BSD-1-Clause",
     "BSD-3-Clause",
+    "BSL-1.0",
     "CC-BY-4.0",
     "LicenseRef-DCO-1.1",
+    "LicenseRef-SQLite-Public-Domain",
     "MIT",
     "MIT AND Unicode-3.0",
     "MIT OR Apache-2.0",
     "MPL-2.0",
-    "PSF-2.0"
+    "PSF-2.0",
+    "Unlicense"
   ],
   "files": {
     ".gitattributes": {
@@ -4272,6 +4276,1367 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "assets/public/private-transcript-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/bin/fzkml-private.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/private.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/private_transition/tests.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/PRIVATE-TRANSITION.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "reference/private_transcript.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/generate_private_vectors.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/private_conformance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/profile_private.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/private-transition-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/private-transition-v2.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_private_transcript.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/ark-ed-on-bn254-0.5.0/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/ark-ed-on-bn254/ark-ed-on-bn254-0.5.0.crate",
+      "version": "0.5.0",
+      "sha256": "e8d77d4bbe96e1b46ec0f40d1f12e19825e718c764bb3e9a695633ade9289f9e",
+      "attribution": "ark-ed-on-bn254 upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/ark-ed-on-bn254-0.5.0/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/ark-ed-on-bn254-0.5.0/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/ark-ed-on-bn254/ark-ed-on-bn254-0.5.0.crate",
+      "version": "0.5.0",
+      "sha256": "8f71659370c5268d9a1dc962a46232540e8fca63462586d8efaa95aab492a208",
+      "attribution": "ark-ed-on-bn254 upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/ark-ed-on-bn254-0.5.0/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/base64ct-1.8.3/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/base64ct/base64ct-1.8.3.crate",
+      "version": "1.8.3",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "attribution": "base64ct upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/base64ct-1.8.3/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/base64ct-1.8.3/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/base64ct/base64ct-1.8.3.crate",
+      "version": "1.8.3",
+      "sha256": "2d1c57bff28344b9e698f51063bc8509799cc4c99a4e0cf2aa3f7e7c3e1f9a9d",
+      "attribution": "base64ct upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/base64ct-1.8.3/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/bitflags-2.13.2/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/bitflags/bitflags-2.13.2.crate",
+      "version": "2.13.2",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "attribution": "bitflags upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/bitflags-2.13.2/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/bitflags-2.13.2/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/bitflags/bitflags-2.13.2.crate",
+      "version": "2.13.2",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "attribution": "bitflags upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/bitflags-2.13.2/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/cc-1.11.3/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/cc/cc-1.11.3.crate",
+      "version": "1.11.3",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "attribution": "cc upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/cc-1.11.3/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/cc-1.11.3/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/cc/cc-1.11.3.crate",
+      "version": "1.11.3",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "attribution": "cc upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/cc-1.11.3/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/const-oid-0.9.6/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/const-oid/const-oid-0.9.6.crate",
+      "version": "0.9.6",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "attribution": "const-oid upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/const-oid-0.9.6/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/const-oid-0.9.6/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/const-oid/const-oid-0.9.6.crate",
+      "version": "0.9.6",
+      "sha256": "bada9e7ed8dc00d63502053c455d7c8d7575dfb7e8277a2a832531844d900682",
+      "attribution": "const-oid upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/const-oid-0.9.6/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/curve25519-dalek-4.1.3/LICENSE": {
+      "license": "BSD-3-Clause",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/curve25519-dalek/curve25519-dalek-4.1.3.crate",
+      "version": "4.1.3",
+      "sha256": "cca0bd3c4fcdba74145ef9d49c62337e2c9fbf9368288f11d0547f1b0273219f",
+      "attribution": "curve25519-dalek upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/curve25519-dalek-4.1.3/LICENSE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/curve25519-dalek-derive-0.1.1/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/curve25519-dalek-derive/curve25519-dalek-derive-0.1.1.crate",
+      "version": "0.1.1",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "attribution": "curve25519-dalek-derive upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/curve25519-dalek-derive-0.1.1/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/curve25519-dalek-derive-0.1.1/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/curve25519-dalek-derive/curve25519-dalek-derive-0.1.1.crate",
+      "version": "0.1.1",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "attribution": "curve25519-dalek-derive upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/curve25519-dalek-derive-0.1.1/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/der-0.7.10/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/der/der-0.7.10.crate",
+      "version": "0.7.10",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "attribution": "der upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/der-0.7.10/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/der-0.7.10/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/der/der-0.7.10.crate",
+      "version": "0.7.10",
+      "sha256": "ad64fcb9589f162720f3cc5010ad76ca6ad3764e11861f9192c489df176bb71d",
+      "attribution": "der upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/der-0.7.10/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/ed25519-2.2.3/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/ed25519/ed25519-2.2.3.crate",
+      "version": "2.2.3",
+      "sha256": "78779d420019e6b4630376af8e86b6b335ee8a2f89ede6e0411e0469a326aaa4",
+      "attribution": "ed25519 upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/ed25519-2.2.3/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/ed25519-2.2.3/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/ed25519/ed25519-2.2.3.crate",
+      "version": "2.2.3",
+      "sha256": "b3470648aff02beb36d7a53240fc9260ed80ed93bd43bace6b67d7ef7336ee33",
+      "attribution": "ed25519 upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/ed25519-2.2.3/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/ed25519-dalek-2.2.0/LICENSE": {
+      "license": "BSD-3-Clause",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/ed25519-dalek/ed25519-dalek-2.2.0.crate",
+      "version": "2.2.0",
+      "sha256": "7a313964a6e050794d2ad57f4863c11f6bbe055c0ae6ce2cf3b9fc45150bada3",
+      "attribution": "ed25519-dalek upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/ed25519-dalek-2.2.0/LICENSE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/fallible-iterator-0.3.0/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/fallible-iterator/fallible-iterator-0.3.0.crate",
+      "version": "0.3.0",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "attribution": "fallible-iterator upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/fallible-iterator-0.3.0/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/fallible-iterator-0.3.0/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/fallible-iterator/fallible-iterator-0.3.0.crate",
+      "version": "0.3.0",
+      "sha256": "0816e154b159ba255c563f7c8c7df5bbb8cc5fc96f5ab8cf9f4743b4f41fe7eb",
+      "attribution": "fallible-iterator upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/fallible-iterator-0.3.0/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/fallible-streaming-iterator-0.1.9/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/fallible-streaming-iterator/fallible-streaming-iterator-0.1.9.crate",
+      "version": "0.1.9",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "attribution": "fallible-streaming-iterator upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/fallible-streaming-iterator-0.1.9/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/fallible-streaming-iterator-0.1.9/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/fallible-streaming-iterator/fallible-streaming-iterator-0.1.9.crate",
+      "version": "0.1.9",
+      "sha256": "8dcec5569a9be5b0e086c80faed6f1aefa670af0ec29cecc2f714303096887e0",
+      "attribution": "fallible-streaming-iterator upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/fallible-streaming-iterator-0.1.9/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/fiat-crypto-0.2.9/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/fiat-crypto/fiat-crypto-0.2.9.crate",
+      "version": "0.2.9",
+      "sha256": "9eacbcb81be660840c714a560a9d65ba07913db98dd4baf969f78dd499fdd60f",
+      "attribution": "fiat-crypto upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/fiat-crypto-0.2.9/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/fiat-crypto-0.2.9/LICENSE-BSD-1": {
+      "license": "BSD-1-Clause",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/fiat-crypto/fiat-crypto-0.2.9.crate",
+      "version": "0.2.9",
+      "sha256": "0c1240e29b4a2c528bcc3ccc38a98b1dba5e3e6b465da910208935f082e2ced6",
+      "attribution": "fiat-crypto upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/fiat-crypto-0.2.9/LICENSE-BSD-1"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/fiat-crypto-0.2.9/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/fiat-crypto/fiat-crypto-0.2.9.crate",
+      "version": "0.2.9",
+      "sha256": "0034712d5e97a4f5b900a160a5c19d582b740d8e0638b4e44fd07e7b492dcd13",
+      "attribution": "fiat-crypto upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/fiat-crypto-0.2.9/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/find-msvc-tools-0.1.15/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/find-msvc-tools/find-msvc-tools-0.1.15.crate",
+      "version": "0.1.15",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "attribution": "find-msvc-tools upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/find-msvc-tools-0.1.15/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/find-msvc-tools-0.1.15/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/find-msvc-tools/find-msvc-tools-0.1.15.crate",
+      "version": "0.1.15",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "attribution": "find-msvc-tools upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/find-msvc-tools-0.1.15/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/hashbrown-0.14.5/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/hashbrown/hashbrown-0.14.5.crate",
+      "version": "0.14.5",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "attribution": "hashbrown upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/hashbrown-0.14.5/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/hashbrown-0.14.5/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/hashbrown/hashbrown-0.14.5.crate",
+      "version": "0.14.5",
+      "sha256": "ff8f68cb076caf8cefe7a6430d4ac086ce6af2ca8ce2c4e5a2004d4552ef52a2",
+      "attribution": "hashbrown upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/hashbrown-0.14.5/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/hashlink-0.9.1/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/hashlink/hashlink-0.9.1.crate",
+      "version": "0.9.1",
+      "sha256": "c144680885b29e4719e2a51f0aab5439a1e02d980692b5aaf086cae12727f28b",
+      "attribution": "hashlink upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/hashlink-0.9.1/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/hashlink-0.9.1/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/hashlink/hashlink-0.9.1.crate",
+      "version": "0.9.1",
+      "sha256": "e915669a595b11a200873df8286561881b0e04932f6412a585db6297ba0bc97c",
+      "attribution": "hashlink upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/hashlink-0.9.1/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/itoa-1.0.19/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/itoa/itoa-1.0.19.crate",
+      "version": "1.0.19",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "attribution": "itoa upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/itoa-1.0.19/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/itoa-1.0.19/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/itoa/itoa-1.0.19.crate",
+      "version": "1.0.19",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "attribution": "itoa upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/itoa-1.0.19/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/libsqlite3-sys-0.30.1/LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/libsqlite3-sys/libsqlite3-sys-0.30.1.crate",
+      "version": "0.30.1",
+      "sha256": "f59ba65550f2a5adff98ec6478d783402c8e0a3eb515025c0b3438f3d30dc39e",
+      "attribution": "libsqlite3-sys upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/libsqlite3-sys-0.30.1/LICENSE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/libsqlite3-sys-0.30.1/NOTICE-SQLite": {
+      "license": "LicenseRef-SQLite-Public-Domain",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/libsqlite3-sys/libsqlite3-sys-0.30.1.crate",
+      "version": "SQLite 3.46.0 bundled by libsqlite3-sys 0.30.1",
+      "sha256": "39fc4986b224f2f5575dec58ae66c7c9ee2d5d3884ba4971c932f1fd5b40b033",
+      "attribution": "SQLite authors; original copyright disclaimer retained.",
+      "modifications": "verbatim leading notice excerpt from bundled sqlite3/sqlite3.c",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/libsqlite3-sys-0.30.1/NOTICE-SQLite"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/libsqlite3-sys-0.30.1/sqlcipher/LICENSE": {
+      "license": "BSD-3-Clause",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/libsqlite3-sys/libsqlite3-sys-0.30.1.crate",
+      "version": "0.30.1",
+      "sha256": "ea4fcb309f14a22065e1ea45362d494d320012249ed865fe9c7c0946db754131",
+      "attribution": "libsqlite3-sys upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/libsqlite3-sys-0.30.1/sqlcipher/LICENSE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/memchr-2.8.3/COPYING": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/memchr/memchr-2.8.3.crate",
+      "version": "2.8.3",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "attribution": "memchr upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/memchr-2.8.3/COPYING"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/memchr-2.8.3/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/memchr/memchr-2.8.3.crate",
+      "version": "2.8.3",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "attribution": "memchr upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/memchr-2.8.3/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/memchr-2.8.3/UNLICENSE": {
+      "license": "Unlicense",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/memchr/memchr-2.8.3.crate",
+      "version": "2.8.3",
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c",
+      "attribution": "memchr upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/memchr-2.8.3/UNLICENSE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/pkcs8-0.10.2/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/pkcs8/pkcs8-0.10.2.crate",
+      "version": "0.10.2",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "attribution": "pkcs8 upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/pkcs8-0.10.2/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/pkcs8-0.10.2/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/pkcs8/pkcs8-0.10.2.crate",
+      "version": "0.10.2",
+      "sha256": "ad64fcb9589f162720f3cc5010ad76ca6ad3764e11861f9192c489df176bb71d",
+      "attribution": "pkcs8 upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/pkcs8-0.10.2/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/pkg-config-0.3.34/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/pkg-config/pkg-config-0.3.34.crate",
+      "version": "0.3.34",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "attribution": "pkg-config upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/pkg-config-0.3.34/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/pkg-config-0.3.34/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/pkg-config/pkg-config-0.3.34.crate",
+      "version": "0.3.34",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "attribution": "pkg-config upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/pkg-config-0.3.34/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/rusqlite-0.32.1/LICENSE": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/rusqlite/rusqlite-0.32.1.crate",
+      "version": "0.32.1",
+      "sha256": "f59ba65550f2a5adff98ec6478d783402c8e0a3eb515025c0b3438f3d30dc39e",
+      "attribution": "rusqlite upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/rusqlite-0.32.1/LICENSE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/rustc_version-0.4.1/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/rustc_version/rustc_version-0.4.1.crate",
+      "version": "0.4.1",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "attribution": "rustc_version upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/rustc_version-0.4.1/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/rustc_version-0.4.1/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/rustc_version/rustc_version-0.4.1.crate",
+      "version": "0.4.1",
+      "sha256": "c9a75f18b9ab2927829a208fc6aa2cf4e63b8420887ba29cdb265d6619ae82d5",
+      "attribution": "rustc_version upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/rustc_version-0.4.1/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/ryu-1.0.23/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/ryu/ryu-1.0.23.crate",
+      "version": "1.0.23",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "attribution": "ryu upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/ryu-1.0.23/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/ryu-1.0.23/LICENSE-BOOST": {
+      "license": "BSL-1.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/ryu/ryu-1.0.23.crate",
+      "version": "1.0.23",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+      "attribution": "ryu upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/ryu-1.0.23/LICENSE-BOOST"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/semver-1.0.28/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/semver/semver-1.0.28.crate",
+      "version": "1.0.28",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "attribution": "semver upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/semver-1.0.28/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/semver-1.0.28/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/semver/semver-1.0.28.crate",
+      "version": "1.0.28",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "attribution": "semver upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/semver-1.0.28/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/serde-1.0.228/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/serde/serde-1.0.228.crate",
+      "version": "1.0.228",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "attribution": "serde upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/serde-1.0.228/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/serde-1.0.228/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/serde/serde-1.0.228.crate",
+      "version": "1.0.228",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "attribution": "serde upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/serde-1.0.228/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/serde_core-1.0.228/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/serde_core/serde_core-1.0.228.crate",
+      "version": "1.0.228",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "attribution": "serde_core upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/serde_core-1.0.228/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/serde_core-1.0.228/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/serde_core/serde_core-1.0.228.crate",
+      "version": "1.0.228",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "attribution": "serde_core upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/serde_core-1.0.228/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/serde_derive-1.0.228/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.228.crate",
+      "version": "1.0.228",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "attribution": "serde_derive upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/serde_derive-1.0.228/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/serde_derive-1.0.228/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.228.crate",
+      "version": "1.0.228",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "attribution": "serde_derive upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/serde_derive-1.0.228/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/serde_json-1.0.145/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/serde_json/serde_json-1.0.145.crate",
+      "version": "1.0.145",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "attribution": "serde_json upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/serde_json-1.0.145/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/serde_json-1.0.145/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/serde_json/serde_json-1.0.145.crate",
+      "version": "1.0.145",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "attribution": "serde_json upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/serde_json-1.0.145/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/shlex-2.0.1/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/shlex/shlex-2.0.1.crate",
+      "version": "2.0.1",
+      "sha256": "553fffcd9b1cb158bc3e9edc35da85ca5c3b3d7d2e61c883ebcfa8a65814b583",
+      "attribution": "shlex upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/shlex-2.0.1/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/shlex-2.0.1/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/shlex/shlex-2.0.1.crate",
+      "version": "2.0.1",
+      "sha256": "4455bf75a91154108304cb283e0fea9948c14f13e20d60887cf2552449dea3b1",
+      "attribution": "shlex upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/shlex-2.0.1/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/signature-2.2.0/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/signature/signature-2.2.0.crate",
+      "version": "2.2.0",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "attribution": "signature upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/signature-2.2.0/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/signature-2.2.0/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/signature/signature-2.2.0.crate",
+      "version": "2.2.0",
+      "sha256": "b3470648aff02beb36d7a53240fc9260ed80ed93bd43bace6b67d7ef7336ee33",
+      "attribution": "signature upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/signature-2.2.0/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/smallvec-1.16.6/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/smallvec/smallvec-1.16.6.crate",
+      "version": "1.16.6",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "attribution": "smallvec upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/smallvec-1.16.6/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/smallvec-1.16.6/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/smallvec/smallvec-1.16.6.crate",
+      "version": "1.16.6",
+      "sha256": "0b28172679e0009b655da42797c03fd163a3379d5cfa67ba1f1655e974a2a1a9",
+      "attribution": "smallvec upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/smallvec-1.16.6/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/spki-0.7.3/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/spki/spki-0.7.3.crate",
+      "version": "0.7.3",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "attribution": "spki upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/spki-0.7.3/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/spki-0.7.3/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/spki/spki-0.7.3.crate",
+      "version": "0.7.3",
+      "sha256": "c995204cc6bad2ed67dd41f7d89bb9f1a9d48e0edd745732b30640d7912089a4",
+      "attribution": "spki upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/spki-0.7.3/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/vcpkg-0.2.15/LICENSE-APACHE": {
+      "license": "Apache-2.0",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/vcpkg/vcpkg-0.2.15.crate",
+      "version": "0.2.15",
+      "sha256": "60c93a31f490375aadf64098b75f10715010379541021e00261045d7800611d3",
+      "attribution": "vcpkg upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/vcpkg-0.2.15/LICENSE-APACHE"
+      ],
+      "notice_files": []
+    },
+    "bindings/python/fzkml_native/licenses/rust/vcpkg-0.2.15/LICENSE-MIT": {
+      "license": "MIT",
+      "origin": "upstream",
+      "source": "https://static.crates.io/crates/vcpkg/vcpkg-0.2.15.crate",
+      "version": "0.2.15",
+      "sha256": "016d20f335060a70e79d9fcf8dfaa6201114d65d592211f4bdfb8ae9ca2bc1dc",
+      "attribution": "vcpkg upstream copyright holders; original notice retained.",
+      "modifications": "none; extracted unchanged from checksum-verified Cargo archive",
+      "license_files": [
+        "bindings/python/fzkml_native/licenses/rust/vcpkg-0.2.15/LICENSE-MIT"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/aggregation/crypto.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/aggregation/demo.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/aggregation/durable.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/aggregation/mod.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/aggregation/roles.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/aggregation/tests.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/bin/fzkml-aggregate-demo.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/PROTECTED-AGGREGATION.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/protected-aggregation/local-v02/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original public synthetic engineering evidence; source revision and procedure recorded alongside the measurements.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/protected-aggregation/local-v02/aggregation-profile.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original public synthetic engineering evidence; source revision and procedure recorded alongside the measurements.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/protected-aggregation/local-v02/aggregation-result.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original public synthetic engineering evidence; source revision and procedure recorded alongside the measurements.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/bundle-1.1.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/result-1.1.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/install-rust-toolchain": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/profile_aggregation.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/validate-aggregation": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/aggregation-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contribution; contributor provenance and authorization recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "assets/public/synthetic-cross-silo-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "claims/registry.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/claim-context.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/coverage-report.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/coverage.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/evidence-manifest.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering artifact generated with Codex; contributor history records provenance. Manuscript content excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/implementation-evidence.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering artifact generated with Codex; contributor history records provenance. Manuscript content excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/manuscript.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/security-obligations.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/source-index.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/capabilities.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/preregistration-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/replication-cards.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m0/reporting-cases.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/research_fixtures.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/capabilities-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/deployment-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/fixtures-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/measurement-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/relation-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/m0/security-v0.1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_research.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
       "license_files": [
         "LICENSE"
       ],

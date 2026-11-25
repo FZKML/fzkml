@@ -1,0 +1,52 @@
+{
+  "requirements_version": "measurement-0.1",
+  "purpose": "Fictional acceptance cases for CI-04; no run/evidence or measured values.",
+  "cases": [
+    {
+      "id": "success",
+      "status": "successful",
+      "timeout": false,
+      "requirement": "At least one completed included repetition; raw-linked summaries and non-placeholder provenance; quality threshold outcome recorded separately."
+    },
+    {
+      "id": "rejected-proof",
+      "status": "failed",
+      "timeout": false,
+      "requirement": "Retain rejection reason and incurred training, witness, proving and verification cost; exclude unaccepted model from released quality."
+    },
+    {
+      "id": "deadline",
+      "status": "failed",
+      "timeout": true,
+      "requirement": "Retain deadline, elapsed lower bound and partial work; do not report an absent proof or quality value as zero."
+    },
+    {
+      "id": "missing-backend",
+      "status": "not-run",
+      "timeout": false,
+      "requirement": "No repetitions, measurements or successful proof claim; report the unavailable prerequisite."
+    },
+    {
+      "id": "unsupported-cell",
+      "status": "unsupported",
+      "timeout": false,
+      "requirement": "No measurements; identify the model/assurance pair and version that is not supported."
+    },
+    {
+      "id": "uncertain-effect",
+      "status": "inconclusive",
+      "timeout": false,
+      "requirement": "Retain executed repetitions and uncertainty; insufficient evidence does not become a successful scientific hypothesis."
+    }
+  ],
+  "accounting_example": {
+    "purpose": "Illustrative cost IDs only; durations are intentionally absent.",
+    "events": [
+      {"cost_id": "setup-1", "phase": "setup", "attempt": "shared"},
+      {"cost_id": "prove-1", "phase": "prove", "attempt": "attempt-1-rejected"},
+      {"cost_id": "prove-2", "phase": "prove", "attempt": "attempt-2-completed"}
+    ],
+    "reuse": [{"attempt": "attempt-2-completed", "setup_cost_id": "setup-1"}],
+    "total_work_rule": "Count setup-1, prove-1 and prove-2 once each; the reuse reference creates no second setup cost. End-to-end wall time is measured separately."
+  }
+}

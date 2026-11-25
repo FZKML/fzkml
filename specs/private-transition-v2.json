@@ -1,0 +1,64 @@
+{
+  "contract_version": "fzk-private-2.0.0",
+  "numeric_contract": "fzknum-1.0.0",
+  "computation": "the complete three-client fixed16 linear update and weighted full-state aggregate from numeric-contract-v1.json",
+  "witness": [
+    "initial full-state weight",
+    "three x values",
+    "three y values",
+    "independent secret 32-byte model and data blindings"
+  ],
+  "public": [
+    "numeric relation digest",
+    "session and strictly increasing round",
+    "parent receipt",
+    "parent full-state value",
+    "ordered roster and aggregation weights",
+    "model, preprocessing, initialization, local-step, data-policy and optimizer identifiers",
+    "verifying-key identifier",
+    "model commitment",
+    "data commitment",
+    "full-state output"
+  ],
+  "parent_link": "The caller supplies a trusted ExpectedTransition built from the authorized genesis or last accepted statement. The public parent_value is constrained in-circuit equal to the private initial weight. For later rounds, TransitionChain requires parent receipt = SHA256(canonical previous statement), parent_value = previous full-state output, round = previous round + 1, and unchanged session, roster, algorithm identifiers and key. Counts may change within the validated 1..4 range.",
+  "parent_value_range": "The context parser accepts a full-state value in [-80,80]. The implemented fzknum-1.0.0 initial weight is more narrowly bounded to [-32,32]; prepare() rejects parent values outside that input domain, and the circuit also requires equality to its bounded private weight.",
+  "wire_versions": {
+    "context": "FZKCTX02",
+    "statement": "FZKSTA02",
+    "envelope": "FZKPRF02 || 02 00 00 00"
+  },
+  "domain_input": "The circuit constrains the public field domain input to the integer represented by the first 31 bytes, little-endian, of SHA256(the exact bytes of this contract JSON).",
+  "model_commitment": "SHA256(FZKMOD02 || secret_model_blinding_32 || context_sha256_32 || i64le(initial_weight))",
+  "data_commitment": "SHA256(FZKDAT02 || secret_data_blinding_32 || context_sha256_32 || concat_i(i64le(x_i) || i64le(y_i)))",
+  "hiding_assumption": "Computational hiding in the random-oracle model with independent uniform secret 256-bit blindings; collision resistance alone does not establish hiding.",
+  "binding_assumption": "SHA-256 collision resistance plus proof/extraction and trusted-setup assumptions.",
+  "randomness_policy": "Fresh OS entropy for each opening and proof; fail closed on entropy failure; never publish/reuse blindings; no secure-erasure guarantee.",
+  "configuration_ids": {
+    "model": "SHA256(fzkml.model.linear-1x1.no-bias.v1)",
+    "preprocessing": "SHA256(fzkml.preprocessing.identity.v1)",
+    "initialization": "SHA256(fzkml.initialization.authorized-parent-value.v1)",
+    "data_policy": "SHA256(fzkml.data.synthetic-identity-three-client.v1)",
+    "optimizer": "SHA256(fzkml.optimizer.fixed16.sgd-1of4.v1)",
+    "local_step_count": 1
+  },
+  "backend": "ark-groth16 0.5.0 over BN254, local random setup; keys and parameters are generated at process startup.",
+  "context_bytes": 392,
+  "statement_bytes": 472,
+  "proof_bytes": 128,
+  "envelope_bytes": 652,
+  "public_input_order": "private-contract-domain-Fr, 32 context-digest byte fields, 32 model-commitment byte fields, 32 data-commitment byte fields, three count fields, parent_value, signed output field",
+  "public_field_count": 102,
+  "state_scope": "The complete committed model is a single signed integer weight. The fixed optimizer is stateless SGD, identity preprocessing is pinned, the genesis identifier and value are trusted caller inputs, and exactly one local step is proved per transition. Single-process sequential in-memory chain; persistence, atomic durable writes, rollback resistance, multiworker consensus, identity authentication and authorization are outside the implementation.",
+  "exclusions": [
+    "production security",
+    "aggregate privacy",
+    "differential privacy",
+    "data authenticity",
+    "client participation",
+    "preprocessing provenance",
+    "general model families",
+    "four-client M0 deployment integration",
+    "formal cryptographic soundness proof",
+    "complete optimizer state beyond the declared stateless SGD configuration"
+  ]
+}

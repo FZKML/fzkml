@@ -1,0 +1,275 @@
+{
+  "version": "0.1",
+  "modes": [
+    "full-training-proof",
+    "update-property-proof",
+    "endpoint-certificate",
+    "inference-proof",
+    "attested-execution",
+    "certified-history"
+  ],
+  "families": [
+    {
+      "family": "linear-regression",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "planned",
+        "inference-proof": "planned",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "record selection and normalization",
+        "feature_extraction": "none beyond declared integer features",
+        "optimization": "only one SGD step targeted",
+        "randomness": "commitment coins unproved",
+        "lineage": "full history and data lineage unproved"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "classifiers",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "planned",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "label/feature preparation",
+        "feature_extraction": "external embeddings",
+        "optimization": "minibatch optimizer not implemented",
+        "randomness": "dropout/augmentation entropy",
+        "lineage": "checkpoint/data provenance"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "language-models",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "planned",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "tokenization and prompt policy",
+        "feature_extraction": "backbone representation",
+        "optimization": "fine tuning and backward pass",
+        "randomness": "sampling/dropout entropy",
+        "lineage": "base model and adapter initialization"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "preferences",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "unsupported",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "preference collection and filtering",
+        "feature_extraction": "reward representation",
+        "optimization": "preference objective and optimizer",
+        "randomness": "pair sampling",
+        "lineage": "annotator and policy lineage"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "distillation",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "unsupported",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "teacher-data filtering",
+        "feature_extraction": "teacher features/logits",
+        "optimization": "distillation optimizer",
+        "randomness": "teacher/sampling randomness",
+        "lineage": "teacher license/version and student initialization"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "self-supervision",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "unsupported",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "view/augmentation pipeline",
+        "feature_extraction": "representation encoder",
+        "optimization": "contrastive/pretext objective",
+        "randomness": "augmentation and negative sampling",
+        "lineage": "pretraining data/checkpoints"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "multimodal",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "planned",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "alignment and missing modalities",
+        "feature_extraction": "each modality encoder",
+        "optimization": "fusion and adaptation optimizer",
+        "randomness": "augmentation and sampling",
+        "lineage": "paired-source and backbone lineage"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "retrieval",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "planned",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "index/chunk construction",
+        "feature_extraction": "embedding model",
+        "optimization": "index/update or reranker optimization",
+        "randomness": "query/document sampling",
+        "lineage": "corpus, index and generator versions"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "graph-recommendation",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "planned",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "entity matching and edge construction",
+        "feature_extraction": "graph/user/item features",
+        "optimization": "graph or ranking objective",
+        "randomness": "neighbor/negative sampling",
+        "lineage": "identities, graph snapshot and initialization"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "time-series",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "planned",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "time-window and label-availability policy",
+        "feature_extraction": "temporal features",
+        "optimization": "forecast objective and optimizer",
+        "randomness": "window sampling",
+        "lineage": "ordered record and checkpoint history"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "diffusion",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "planned",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "conditioning and image preprocessing",
+        "feature_extraction": "encoder/latent representation",
+        "optimization": "denoising training objective",
+        "randomness": "noise law, seed entropy and sampler",
+        "lineage": "base and generative checkpoint lineage"
+      },
+      "excluded_scope": "Production deployment and real-world provenance guarantees",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    },
+    {
+      "family": "interactive-agents",
+      "assurance_modes": {
+        "full-training-proof": "planned",
+        "update-property-proof": "planned",
+        "endpoint-certificate": "unsupported",
+        "inference-proof": "planned",
+        "attested-execution": "unsupported",
+        "certified-history": "planned"
+      },
+      "unproved_steps": {
+        "preprocessing": "environment/trajectory filtering",
+        "feature_extraction": "state/action representations",
+        "optimization": "policy/reward optimization",
+        "randomness": "exploration/environment entropy",
+        "lineage": "simulator, policy and deployment lineage"
+      },
+      "excluded_scope": "Physical control/safety certification",
+      "initialization_binding": "Required model version, initialization digest, optimizer state and payload type."
+    }
+  ],
+  "manifest_required": [
+    "family",
+    "assurance_mode",
+    "relation_version",
+    "guarantee",
+    "observer",
+    "numerical_semantics",
+    "model_version",
+    "initialization_digest",
+    "optimizer_state_digest",
+    "payload_type",
+    "policy_digest",
+    "roster_digest"
+  ],
+  "payload_types": [
+    "full-state",
+    "delta"
+  ],
+  "excluded_modes": [
+    "physical-actuation-safety-certificate"
+  ],
+  "limitation": "All proof modes are targets; the synthetic generator is not an implemented assurance backend."
+}

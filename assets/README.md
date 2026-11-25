@@ -1,8 +1,8 @@
 # Dataset, model, checkpoint, and generated-output provenance
 
 No external dataset, pretrained model, checkpoint, or benchmark input is adopted.
-`manifest.json` inventories the small original synthetic fixture used to exercise
-governance validation. It is not a scientific dataset or training result.
+`manifest.json` inventories original public synthetic governance, exact arithmetic,
+and private-transcript fixtures. None is a scientific dataset or training result.
 
 Before adopting an asset, record its source URL, immutable version, local public
 path (if redistribution is approved), SHA-256, exact terms/license, attribution,

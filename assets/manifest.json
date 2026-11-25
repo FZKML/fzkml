@@ -247,6 +247,84 @@
         "date": "2026-11-25",
         "decision": "Original numerical facts and locators; no private prose/export redistributed. Contributor certification is tracked in PR126; authoritative edition migration and independent mathematical/security review remain pending."
       }
+    },
+    {
+      "id": "private-transcript-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/private-transition-proof/assets/public/private-transcript-v1.json",
+      "version": "private-transcript-v1; exact-byte sha256 plus embedded statement digest",
+      "path": "assets/public/private-transcript-v1.json",
+      "sha256": "8d015695e3bd4ccae26c81c1ee1c2ab7342e7a8206e16bb63b683e8a50e678e7",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original FZKML contribution; public synthetic values and test-only openings; no private manuscript inputs.",
+      "intended_use": "Public commitment/transcript encoding and low-entropy leakage counterexample tests only; not a security or training dataset.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "scripts/generate_private_vectors.py using standard-library SHA-256 and struct",
+        "configuration": {
+          "source": "reference/private_transcript.py",
+          "public_test_openings": [
+            11,
+            19
+          ],
+          "private_inputs": "none"
+        }
+      },
+      "source_inputs": "none; all values and openings are public synthetic fixtures",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original implementation submitted for PR review)",
+        "date": "2026-11-24",
+        "decision": "Original public conformance fixture only. Test openings are intentionally public and must never be reused operationally; no hiding or cryptographic security conclusion is implied."
+      }
+    },
+    {
+      "id": "synthetic-cross-silo-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/m0-scientific-specifications/scripts/research_fixtures.py",
+      "version": "synthetic-records-1.0; exact payload identified by SHA-256",
+      "path": "assets/public/synthetic-cross-silo-v1.json",
+      "sha256": "4e9adb696712bb682b69d87e5b02644896a525a23d4a510d949c4e5dc333e6b7",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original synthetic generator and fixtures; contributor provenance recorded in Git history.",
+      "intended_use": "Deterministic split/provenance conformance checks only; benchmark use awaits independent provenance review.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "SHA-256 of domain-separated public seed/site/entity/visit; bounded original integer features, repeated visits and explicit duplicates",
+        "configuration": {
+          "seed": 20261124,
+          "sources": 4,
+          "entities_per_source": 12,
+          "visits_per_entity": 2,
+          "duplicates_per_source": 1,
+          "scale": 16
+        }
+      },
+      "source_inputs": "none; no private, external or manuscript data inputs",
+      "review": {
+        "status": "approved",
+        "reviewer": "original synthetic contribution submitted for maintainer PR review",
+        "date": "2026-11-24",
+        "decision": "Source-only synthetic conformance payload under the repository license. No independent benchmark adoption approval is asserted."
+      }
     }
   ]
 }
