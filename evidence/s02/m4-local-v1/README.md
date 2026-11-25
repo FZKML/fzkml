@@ -1,7 +1,7 @@
 # Session02 M4 retained local evidence
 
-Calculation source: `3acde263a986433687572551a88c1013d591466e`; clean at run start.
-Raw artifact SHA-256: `6689af2d11ed7f36d0f13152b5b6bb3915adb2f024dfbedb25b52c6e9cc08fe5`.
+Calculation source: `6ce9767228fe6d9755fd818dd70b47ef7eeb9e56`; clean at run start.
+Raw artifact SHA-256: `208396ca57ed7661a18179b978eb76c3af79d7d90e435d393d5fc166322f58f8`.
 
 Three retained repetitions contain3 verified single-prover proofs,6 verified
 three-party proofs (3 each at zero and5ms relay-read delay), and3 Paillier runs.
@@ -12,8 +12,8 @@ included. Public numeric artifacts are not a production SRS or security approval
 
 | REP3 relay delay/read | End-to-end seconds (raw repetitions) | TCP payload bytes |
 | --- | --- | --- |
-| 0 | 0.136637, 0.133625, 0.233090 | 2720, 2720, 2720 |
-| 0.005 | 0.248739, 0.238752, 0.235941 | 2720, 2720, 2720 |
+| 0 | 0.137811, 0.140921, 0.148094 | 2720, 2720, 2720 |
+| 0.005 | 0.240603, 0.247948, 0.268233 | 2720, 2720, 2720 |
 
 These end-to-end clocks include relay setup/drain/teardown, dealer splitting,
 startup/IO and verification. Per-party proving kernels and RSS are separate.
@@ -30,7 +30,7 @@ asserted. Hardware is the same shared Darwin arm64 host with12 logical CPUs.
 | 8 | 29/5 | 8 |
 
 Pipeline values are exact modeled seconds on the declared halving quadratic,
-not measured training times. Missing/malformed-share runs retain timeout status and individual worker failures;
+not measured training times. Missing-share timeout and malformed-share failure remain distinct;
 wrong-output and malformed-proof negatives fail real verification. Every HE run
 retains valid ciphertext malleation33→34, accepted by HE and detected only by the
 independent synthetic oracle. Attestation is **not-run**, protocol round-trip
@@ -49,7 +49,8 @@ existing debug/release261/11/1040 conformance and3 controlled mutants pass,
 4 Rust tests plus17 governance and16 pipeline tests pass. The hosted language
 lane loads the reference tests; without installed external tools it explicitly
 skips1 upstream comparison. The external proof/HE experiment is local/manual,
-not a hosted experiment. DCO certification and independent review remain pending.
+not a hosted experiment. Contributor DCO certification was explicitly authorized on2026-11-25;
+independent scientific/security review remains pending.
 
 Reproduce with the optional bootstrap and runner commands in
 `experiments/s02-protected/README.md`. This companion is not a CI-04 public

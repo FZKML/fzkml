@@ -1,13 +1,13 @@
 {
   "schema_version": "s02-public-proof-artifacts-1.0.0",
-  "source_commit": "3acde263a986433687572551a88c1013d591466e",
+  "source_commit": "6ce9767228fe6d9755fd818dd70b47ef7eeb9e56",
   "verification_key_source": "https://github.com/TaceoLabs/co-snarks/blob/97adcc06afc0d506c2d6aa9f81b2e342fd8108c0/test_vectors/Groth16/bn254/multiplier2/verification_key.json",
   "verification_key_sha256": "4b69f1f57533b9225c16d43f4ccb4e20f324bb90bf26b8fb9c07ee81a6a2e00c",
   "proofs": [
     {
       "run": "trusted-0",
       "proof": "public/trusted-0-proof.json",
-      "proof_sha256": "c2874e9bd33aa49bf5b60236e8861cf47a5bf75e2b62a38cc65c418b3aedd7d1",
+      "proof_sha256": "2a356dbcb1da84d1556b746db4d4c68c700d62d36221d0f4202e8da5a234adb0",
       "output": "public/trusted-0-output.json",
       "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
       "generator": "snarkjs0.7.5",
@@ -16,7 +16,7 @@
     {
       "run": "trusted-1",
       "proof": "public/trusted-1-proof.json",
-      "proof_sha256": "8f6716ed642c7af8dfc858ab4e2265a4914681e85a640924bda8736b5513b710",
+      "proof_sha256": "cf2f62729fbe311865e0c5475a2b4afec3d0bc18f9b27663d4d3294f4d658eaf",
       "output": "public/trusted-1-output.json",
       "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
       "generator": "snarkjs0.7.5",
@@ -25,7 +25,7 @@
     {
       "run": "trusted-2",
       "proof": "public/trusted-2-proof.json",
-      "proof_sha256": "907fa7fd0199172cb59bcc0098c99aa67f799bdf3a5b73a87391e59e5a9b2821",
+      "proof_sha256": "98b52f1dca908012f41c9c50cc66d55454d1e7e0b75bda2d8a3730da403f1eba",
       "output": "public/trusted-2-output.json",
       "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
       "generator": "snarkjs0.7.5",
@@ -34,7 +34,7 @@
     {
       "run": "rep3-0-0",
       "proof": "public/rep3-0-0-proof.json",
-      "proof_sha256": "50ad5a157992ef49a58d3ad11a962ef28552e00344bf6cfa92cc34804a86f5a4",
+      "proof_sha256": "d897b12f2497496ced77c7d4dcb104bcaa085fbddd8ddc9dc18639a26862ef46",
       "output": "public/rep3-0-0-output.json",
       "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
       "generator": "coCircom0.10.0 REP3",
@@ -43,7 +43,7 @@
     {
       "run": "rep3-0-0.005",
       "proof": "public/rep3-0-0.005-proof.json",
-      "proof_sha256": "b1bc299aa9b49aa1f0986fa42ad5e4aa2a3c17af8429d3669e47056331d68c0a",
+      "proof_sha256": "d1bd22f9fc45413773358c5e503416a4f8a3d7aac5f5164b5c31899af634e33d",
       "output": "public/rep3-0-0.005-output.json",
       "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
       "generator": "coCircom0.10.0 REP3",
@@ -52,7 +52,7 @@
     {
       "run": "rep3-1-0",
       "proof": "public/rep3-1-0-proof.json",
-      "proof_sha256": "1b3b0731fff844ce83c728de49ea8f4dc65e79c0abcce99f9d339fa5f374e002",
+      "proof_sha256": "78f835ece0365c482513aaf1716942b08f414678928b401f418719125753b194",
       "output": "public/rep3-1-0-output.json",
       "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
       "generator": "coCircom0.10.0 REP3",
@@ -61,7 +61,7 @@
     {
       "run": "rep3-1-0.005",
       "proof": "public/rep3-1-0.005-proof.json",
-      "proof_sha256": "e476751d6806439e45c6e6910ac7cdbf54f03b8866925f24aa4040bb2f605240",
+      "proof_sha256": "fa394d82b96534a992aa641221f7c9354b540d59e4d8216391a4514e010aad99",
       "output": "public/rep3-1-0.005-output.json",
       "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
       "generator": "coCircom0.10.0 REP3",
@@ -70,7 +70,7 @@
     {
       "run": "rep3-2-0",
       "proof": "public/rep3-2-0-proof.json",
-      "proof_sha256": "b48a743bda45666da9eda87ebbe68aa6000403c7001a97401b80af68d9ed4090",
+      "proof_sha256": "0a11376b702148f627fcabfcc3de018a5ced45c7130a4530b4909e3bf5e71537",
       "output": "public/rep3-2-0-output.json",
       "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
       "generator": "coCircom0.10.0 REP3",
@@ -79,7 +79,7 @@
     {
       "run": "rep3-2-0.005",
       "proof": "public/rep3-2-0.005-proof.json",
-      "proof_sha256": "d8771607b3a7e3cc6f0cbdbb3987ffb80e88be88a55d7c0c56516b2a0311492c",
+      "proof_sha256": "86eeeefacc678107df420d62911b199ac1ce8509191a8e883823628e45e70f6d",
       "output": "public/rep3-2-0.005-output.json",
       "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
       "generator": "coCircom0.10.0 REP3",
