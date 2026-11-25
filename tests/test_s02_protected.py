@@ -305,11 +305,13 @@ class InventoryTests(unittest.TestCase):
                 self.assertEqual(client.recv(100), b"known-payload")
             worker.join(timeout=2)
             self.assertFalse(worker.is_alive())
-            self.assertEqual(relay.bytes, 2 * len(b"known-payload"))
-            self.assertEqual(relay.connections, 1)
         finally:
             relay.close()
             server.close()
+        # The peer can read a forwarded byte before its counter thread resumes.
+        # Join the forwarding threads before checking the final byte total.
+        self.assertEqual(relay.bytes, 2 * len(b"known-payload"))
+        self.assertEqual(relay.connections, 1)
 
     @unittest.skipUnless(
         (ROOT / ".tools/co-runtime/co-circom").exists(),
