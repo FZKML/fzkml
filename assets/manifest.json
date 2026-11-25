@@ -357,7 +357,7 @@
         "status": "approved",
         "reviewer": "Codex Session02 (terms/integrity review only)",
         "date": "2026-11-25",
-        "decision": "Original software/facts only; private manuscript content excluded. Contributor certification for this PR and independent scientific/security review remain pending."
+        "decision": "Original software/facts only; private manuscript content excluded. Contributor DCO certification for PR132 explicitly authorized on2026-11-25; independent scientific/security review and authoritative edition migration remain pending."
       }
     },
     {
@@ -391,7 +391,7 @@
         "status": "approved",
         "reviewer": "Codex Session02 (terms/integrity review only)",
         "date": "2026-11-25",
-        "decision": "Original software/facts only; private manuscript content excluded. Contributor certification for this PR and independent scientific/security review remain pending."
+        "decision": "Original software/facts only; private manuscript content excluded. Contributor DCO certification for PR132 explicitly authorized on2026-11-25; independent scientific/security review and authoritative edition migration remain pending."
       }
     }
   ]
