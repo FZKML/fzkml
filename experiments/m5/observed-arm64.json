@@ -1,0 +1,469 @@
+{
+  "contract_sha256": "51303cf9bb76adfb5e585311f1b39a615cbad8f0c0c9b0d6914ca6b48a3d13f0",
+  "dataset_provenance": "Original literal synthetic inputs in workloads.py and model_workloads.rs. Apache-2.0. No manuscript values, external datasets or model weights.",
+  "environment": {
+    "arch": "arm64",
+    "binary_sha256": "c3446242b487f505e4a7b6fb2afb65dfb1bf262825827478df81f6d122824c3b",
+    "cpu": "arm",
+    "os": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.11.14",
+    "runner": "local",
+    "rustc": "rustc 1.85.1 (4eb161250 2025-03-15)"
+  },
+  "excluded_phases": [
+    "Rust compilation and executable launch excluded from per-proof phase times",
+    "Distributed proving, network and accelerator runs excluded",
+    "Raw witness, commitment openings and keys intentionally omitted from records"
+  ],
+  "input_digests": {
+    "89": "aa292535aec577a7db70eaba0d818f1008e6729530faa9602f973547ebee69e1",
+    "90": "c3f2f036711bc211b1bed56632fdbd5a58d37dfe22d78445cd72a89dac91a4e0",
+    "91": "1e170d8395c857b2e406040e47599f232f3bae7d8fe1f086eba358181823cc6b",
+    "92": "ae33173119feab1ae1323661ec0c083211bdb29f895770d8058dda20dcaa7e68",
+    "93": "6fb2a1a0ef071a1f95354ad44a089c0bff32ddd2b0fe34c09753bebb557c3e63",
+    "94": "e45788ceba33452be5407fd24eb4fbf097313950f1cf45ec035dc11e247e1e46",
+    "95": "c48ad1d904db8f3bffee3f043f4da2802b4c53ad5ebd5e1f7b1b53021b7ecb71"
+  },
+  "observations": {
+    "89": {
+      "adjacent_medians": [
+        -4,
+        4
+      ],
+      "cosine": {
+        "opposite_direction": false,
+        "same_direction": true,
+        "zero_reference": false,
+        "zero_update": false
+      },
+      "different_medians": [
+        0,
+        -2
+      ],
+      "expected_output": [
+        1,
+        0
+      ],
+      "geometric_median_case": {
+        "bound": "8/3",
+        "data": [
+          -1,
+          0,
+          1,
+          1,
+          100
+        ],
+        "distance": 1
+      },
+      "input": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          -4,
+          0
+        ]
+      ],
+      "mean_x": -0.2,
+      "outlier_hits_target_with_mean": true,
+      "outlier_hits_target_with_median": false,
+      "outlier_target": "nonpositive coordinate zero",
+      "replace_one_l2_sensitivity": 8,
+      "same_sum": [
+        0,
+        0
+      ]
+    },
+    "90": {
+      "baseline_class_correct": {
+        "-1": 0,
+        "1": 0
+      },
+      "class_counts": {
+        "-1": 2,
+        "1": 1
+      },
+      "expected_inference_output": [
+        -2
+      ],
+      "expected_training_output": [
+        -2,
+        3,
+        0,
+        3
+      ],
+      "heldout": [
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "input": [
+        1,
+        1,
+        -2,
+        1,
+        2,
+        1
+      ],
+      "integer_class_correct": {
+        "-1": 0,
+        "1": 1
+      },
+      "integer_scores": [
+        0,
+        0,
+        9
+      ],
+      "rational_class_correct": {
+        "-1": 2,
+        "1": 1
+      },
+      "rational_scores": [
+        "-2",
+        "-1",
+        "25/4"
+      ],
+      "raw_gradient": [
+        12,
+        -6,
+        -6,
+        -6
+      ],
+      "step_error": [
+        "0",
+        "-1/2",
+        "-1/2",
+        "-1/2"
+      ]
+    },
+    "91": {
+      "adapted_correct": 3,
+      "baseline_correct": 0,
+      "certified_latency_status": "not-run",
+      "cpu_time_ns": 711000,
+      "exact_adapter": "8/3",
+      "exact_correct": 3,
+      "gpu_status": "not-run",
+      "heldout_backbone_logits_per_pass": 6,
+      "heldout_predictions": 3,
+      "host_cpu_tokens_per_second": 8438818.565400844,
+      "integer_adapter": 3,
+      "numeric_change": "1/3",
+      "proof_status": "not-run",
+      "public_canary_visible": false,
+      "public_query_matches": [
+        "public-1"
+      ],
+      "restricted_query_matches": [
+        "public-1",
+        "internal-1"
+      ],
+      "timed_token_predictions": 6000,
+      "training_backbone_logits": 6,
+      "unfiltered_canary_visible": true
+    },
+    "92": {
+      "distillation": {
+        "cohort_release_canary_disclosed": false,
+        "cohorts_released": 2,
+        "heldout_correct": 3,
+        "heldout_total": 3,
+        "raw_unique_canary_disclosed": true
+      },
+      "preference": {
+        "disagreement": 1,
+        "heldout_correct": 2,
+        "heldout_total": 3,
+        "train_clients": 3
+      },
+      "privacy_mechanism": "none",
+      "proof_status": "not-run",
+      "synthetic_generation_memorized_canary": true
+    },
+    "93": {
+      "best_deterministic_unpaired_worst_case_correct": 1,
+      "fixed_identity_correct": {
+        "equal": 2,
+        "opposite": 0
+      },
+      "heldout_per_world": 2,
+      "marginals_equal": true,
+      "missing_modality_rows_abstained": 1,
+      "paired_correct": {
+        "equal": 2,
+        "opposite": 2
+      },
+      "proof_status": "not-run",
+      "swapped_ids_change_optimum": true,
+      "worlds": {
+        "equal": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "opposite": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    "94": {
+      "common_item_vocabulary_size": 4,
+      "evaluation_users": 2,
+      "proof_status": "not-run",
+      "targets": 2,
+      "top1_hits": 2,
+      "train_users": 2,
+      "unauthorized_join_rejected": "unauthorized-edge",
+      "user_adjacency": "replace or remove all edges of one user within the cap",
+      "user_level_cap": 2
+    },
+    "95": {
+      "admitted": 2,
+      "completed": 3,
+      "invited": 4,
+      "modeled_deadline_ms": 12,
+      "proof_status": "not-run",
+      "sources": {
+        "coast": {
+          "actual_host_cpu_ns": 10000,
+          "admitted": true,
+          "completed": true,
+          "forecast_error": {
+            "1": {
+              "persistence_mae": "3",
+              "seasonal_mae": "2"
+            },
+            "2": {
+              "persistence_mae": "6",
+              "seasonal_mae": "2"
+            }
+          },
+          "modeled_completion_ms": 10,
+          "modeled_memory_budget_bytes": 64,
+          "payload_bytes": 16
+        },
+        "mountain": {
+          "actual_host_cpu_ns": 12000,
+          "admitted": false,
+          "completed": false,
+          "forecast_error": {
+            "1": {
+              "persistence_mae": "3",
+              "seasonal_mae": "4"
+            },
+            "2": {
+              "persistence_mae": "6",
+              "seasonal_mae": "4"
+            }
+          },
+          "modeled_completion_ms": null,
+          "modeled_memory_budget_bytes": 32,
+          "payload_bytes": 0
+        },
+        "north": {
+          "actual_host_cpu_ns": 16000,
+          "admitted": true,
+          "completed": true,
+          "forecast_error": {
+            "1": {
+              "persistence_mae": "3",
+              "seasonal_mae": "0"
+            },
+            "2": {
+              "persistence_mae": "6",
+              "seasonal_mae": "0"
+            }
+          },
+          "modeled_completion_ms": 11,
+          "modeled_memory_budget_bytes": 64,
+          "payload_bytes": 16
+        },
+        "south": {
+          "actual_host_cpu_ns": 12000,
+          "admitted": false,
+          "completed": true,
+          "forecast_error": {
+            "1": {
+              "persistence_mae": "3",
+              "seasonal_mae": "1"
+            },
+            "2": {
+              "persistence_mae": "6",
+              "seasonal_mae": "1"
+            }
+          },
+          "modeled_completion_ms": 14,
+          "modeled_memory_budget_bytes": 64,
+          "payload_bytes": 16
+        }
+      },
+      "test_times": [
+        8,
+        17
+      ],
+      "training_entities": [
+        "tr0",
+        "tr1"
+      ],
+      "training_times": [
+        0,
+        7
+      ]
+    }
+  },
+  "outcomes": {
+    "89": "proof-verified",
+    "90": "proof-verified",
+    "91": "reference-executed",
+    "92": "reference-executed",
+    "93": "reference-executed",
+    "94": "reference-executed",
+    "95": "reference-executed"
+  },
+  "proof_peak_process_rss_bytes": 171720704,
+  "proofs": {
+    "inference": {
+      "constraint_count": 39589,
+      "invalid_proof_rejected": true,
+      "modified_commitment_rejected": true,
+      "modified_statement_rejected": true,
+      "output": [
+        -2
+      ],
+      "proof_bytes": 128,
+      "setup_seconds": 1.354291042,
+      "verification_seconds": 0.001054,
+      "witness_and_proving_seconds": 0.595889334
+    },
+    "median": {
+      "constraint_count": 40048,
+      "invalid_proof_rejected": true,
+      "modified_commitment_rejected": true,
+      "modified_statement_rejected": true,
+      "output": [
+        1,
+        0
+      ],
+      "proof_bytes": 128,
+      "setup_seconds": 1.4225038749999999,
+      "verification_seconds": 0.001728167,
+      "witness_and_proving_seconds": 0.604350959
+    },
+    "train": {
+      "constraint_count": 39912,
+      "invalid_proof_rejected": true,
+      "modified_commitment_rejected": true,
+      "modified_statement_rejected": true,
+      "output": [
+        -2,
+        3,
+        0,
+        3
+      ],
+      "proof_bytes": 128,
+      "setup_seconds": 1.399058416,
+      "verification_seconds": 0.001010083,
+      "witness_and_proving_seconds": 0.602193583
+    }
+  },
+  "reproduce": "cargo build --release --locked -p fzkml-core --bin fzkml-m5-proof && python experiments/m5/run.py",
+  "scope": {
+    "89": {
+      "claim": "FZK-R051",
+      "observer": "The joint prover sees the ordered updates. The verifier receives the blinded commitment, aggregate and proof.",
+      "privacy_unit": "One complete two-coordinate client update under fixed roster replacement adjacency",
+      "release": "Deterministic median. No privacy mechanism. Public-reference cosine is an independent reference check.",
+      "task": "Exact two-coordinate median of five radius-four integer updates"
+    },
+    "90": {
+      "claim": "FZK-R052",
+      "observer": "The joint prover sees features, label and weights. The verifier sees the commitment and the score or all four updated weights.",
+      "privacy_unit": "One synthetic entity and its labeled example",
+      "release": "Inference score or complete post-update model. No noise, composition claim or private training system.",
+      "task": "Width-two, one-feature ReLU forward pass and separate one-sample SGD relation"
+    },
+    "91": {
+      "claim": "FZK-R053",
+      "observer": "The adaptation harness sees training and holdout tokens. The retrieval host sees queries, roles, documents and match sets. The caller receives permitted document IDs.",
+      "privacy_unit": "One example entity for adaptation; one document and authorization entry for retrieval",
+      "release": "Public synthetic metrics only. No raw real prompts, retrieved text, embeddings or generations. Authorization is a local allow-list; retrieval privacy and completeness are unproved.",
+      "task": "Frozen synthetic bigram head with one learned rank-one margin correction, plus a separate role-based exact-match retrieval fixture"
+    },
+    "92": {
+      "claim": "FZK-R054",
+      "observer": "The preference aggregator sees votes. The curator sees teacher logits and generated tokens. A student receives clipped cohort means for groups of at least two.",
+      "privacy_unit": "One voter for preference; one teacher example for distillation or generation",
+      "release": "Vote sign, clipped cohort mean, or threshold-selected token. Group size and clipping provide no DP claim. The generation check finds a deliberately copied canary.",
+      "task": "Separate capped preference vote, clipped teacher-logit cohort transfer, and generated canary audit"
+    },
+    "93": {
+      "claim": "FZK-R055",
+      "observer": "Silos see their own values. The authorized fixture joiner sees exact pair IDs and both modalities. The unpaired evaluator sees only marginals.",
+      "privacy_unit": "One whole pair or one unpaired entity",
+      "release": "Only synthetic correctness counts. Pair IDs are explicit authorization inputs. Negative sampling and embeddings are unused.",
+      "task": "Binary paired versus unpaired correspondence with a changed alignment and one absent modality"
+    },
+    "94": {
+      "claim": "FZK-R056",
+      "observer": "The synthetic ranker sees authorized support edges and shared item vocabulary. Ground-truth edges remain with the evaluator.",
+      "privacy_unit": "One whole user capped at two edges; node and edge privacy are different units",
+      "release": "Public synthetic aggregate ranking metrics only. No cross-silo user join. No proof of embeddings, negative sampling, aggregation, completeness or utility.",
+      "task": "Two-silo recommendation with fixed public item embeddings, bounded user edges and exact top-one ranking"
+    },
+    "95": {
+      "claim": "FZK-R057",
+      "observer": "A synthetic client holds its time series. The simulation observes completion, admission, payload size and timing. It reports per-source error.",
+      "privacy_unit": "One whole device trajectory",
+      "release": "Synthetic forecasts and counters. Host CPU time is measured; edge availability, memory, network latency and coverage are modeled.",
+      "task": "Entity-disjoint seasonal forecast with nonoverlapping event-time evaluation windows and modeled device budgets"
+    }
+  },
+  "source_dirty": true,
+  "source_files": {
+    "Cargo.lock": "0867137f6aa5e5c656d63267286e3c9017caa8dc936615cc1c010d216cdd3777",
+    "crates/fzkml-core/src/bin/fzkml-m5-proof.rs": "0b05deb50ee4bccfecf436e4e2c7d5d1c648b0fffe5c41ee3008912a9e479adc",
+    "crates/fzkml-core/src/model_workloads.rs": "47873703220b4398493877b87f9b62b2b5f37475bdff1fbcf042a32cce06fd2b",
+    "crates/fzkml-core/src/proof.rs": "aa8b1ce49cb5aa59b525f1dd10619917af37d56ac1cdd7b02fbbe0d10767946d",
+    "experiments/m5/contract-v1.json": "51303cf9bb76adfb5e585311f1b39a615cbad8f0c0c9b0d6914ca6b48a3d13f0",
+    "experiments/m5/run-v1.schema.json": "f364b0404e71db907864b39251e0996099e6541e013b12b26c3b21d39d900b6e",
+    "experiments/m5/run.py": "e61ae0113d4cfb22e9d7b49f35943a407c380cb7d4fd69e2f5b090875fabe8d1",
+    "experiments/m5/workloads.py": "e8f92b8ebaf3680006ea27b3d4272303cf2cfb35d6e8e76e7351cba32b2e7236",
+    "uv.lock": "430a20df79b8fdd69a2eab08b08f35b4123fffd388131043552edd046bc600a5"
+  },
+  "source_head": "9af2c3d46af36e29766e24596b51c54a2fdcc3ba",
+  "version": "fzkml-m5-run-1"
+}

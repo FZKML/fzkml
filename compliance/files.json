@@ -5803,6 +5803,87 @@
         "LICENSE"
       ],
       "notice_files": []
+    },
+    "crates/fzkml-core/src/bin/fzkml-m5-proof.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic workload, code or measurement developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "crates/fzkml-core/src/model_workloads.rs": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic workload, code or measurement developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m5/run.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic workload, code or measurement developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m5/test_workloads.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic workload, code or measurement developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m5/workloads.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic workload, code or measurement developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m5/contract-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic workload, code or measurement developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m5/observed-arm64.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic workload, code or measurement developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m5/run-v1.schema.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic workload, code or measurement developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/m5/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic workload, code or measurement developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
     }
   }
 }
