@@ -245,7 +245,7 @@
         "status": "approved",
         "reviewer": "Codex Session02 (terms/integrity review of original mathematical serialization only)",
         "date": "2026-11-25",
-        "decision": "Original numerical facts and locators; no private prose/export redistributed. Contributor DCO, authoritative edition migration and independent mathematical/security review remain pending."
+        "decision": "Original numerical facts and locators; no private prose/export redistributed. Contributor certification is tracked in PR126; authoritative edition migration and independent mathematical/security review remain pending."
       }
     }
   ]

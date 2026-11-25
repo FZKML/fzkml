@@ -189,3 +189,8 @@ identifies elliptic-curve discrete-logarithm quantum vulnerability. Tests reject
 claimed fully PQ mixed instance and every missing role. Inventory validation is
 not independent cryptographic review. All four issues remain open for those
 remaining security, integration, physical-network and external-review obligations.
+
+The contributor explicitly certified and authorized DCO sign-offs for PR126
+implementation and generated-evidence commits on2026-11-25. This certifies the
+contribution under the DCO; independent scientific/security review and the
+separate PR124 contribution certification are not supplied by this authorization.

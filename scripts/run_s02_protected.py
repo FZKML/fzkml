@@ -172,7 +172,9 @@ def main() -> None:
         "planning_issue_claim_ids": ["FZK-R042", "FZK-R043", "FZK-R044", "FZK-R045"],
         "source_commit": source_sha,
         "source_dirty": source_dirty,
-        "source_approval": "not-independent-review; DCO pending for new commits",
+        "source_approval": (
+            "local candidate; contribution certification tracked in PR, independent review pending"
+        ),
         "hardware": {
             "os": platform.system(),
             "machine": platform.machine(),
