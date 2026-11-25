@@ -1,14 +1,635 @@
 {
-  "findings": [],
+  "findings": [
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ahash",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-allocator-api2",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-bn254",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-crypto-primitives",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-crypto-primitives-macros",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-ec",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-ed-on-bn254",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-ff",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-ff-asm",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-ff-macros",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-groth16",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-poly",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-r1cs-std",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-relations",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-serialize",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-serialize-derive",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-snark",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ark-std",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-arrayvec",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-autocfg",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-base64ct",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-bitflags",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-blake2",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-block-buffer",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-bumpalo",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-byteorder",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-cc",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-cfg-if",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-const-oid",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-cpufeatures",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-crypto-common",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-curve25519-dalek",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-curve25519-dalek-derive",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-der",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-derivative",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-digest",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ed25519",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ed25519-dalek",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-educe",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-either",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-enum-ordinalize",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-enum-ordinalize-derive",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-fallible-iterator",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-fallible-streaming-iterator",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-fiat-crypto",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-find-msvc-tools",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-fnv",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-fzkml-python",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-generic-array",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-getrandom",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-getrandom",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-hashbrown",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-hashbrown",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-hashlink",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-heck",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-indoc",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-itertools",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-itoa",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-js-sys",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-keccak",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-libc",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-libsqlite3-sys",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-memchr",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-memoffset",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-merlin",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-num-bigint",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-num-integer",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-num-traits",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-once_cell",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-paste",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-pin-project-lite",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-pkcs8",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-pkg-config",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-portable-atomic",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ppv-lite86",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-proc-macro2",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-pyo3",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-pyo3-build-config",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-pyo3-ffi",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-pyo3-macros",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-pyo3-macros-backend",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-quote",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-r-efi",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-rand",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-rand_chacha",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-rand_core",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-rusqlite",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-rustc_version",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-rustversion",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-ryu",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-semver",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-serde",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-serde_core",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-serde_derive",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-serde_json",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-sha2",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-shlex",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-signature",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-smallvec",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-spki",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-subtle",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-syn",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-syn",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-syn",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-target-lexicon",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-tracing",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-tracing-attributes",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-tracing-core",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-tracing-subscriber",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-typenum",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-unicode-ident",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-unindent",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-valuable",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-vcpkg",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-version_check",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-wasi",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-wasm-bindgen",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-wasm-bindgen-macro",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-wasm-bindgen-macro-support",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-wasm-bindgen-shared",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-zerocopy",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-zerocopy-derive",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-zeroize",
+      "status": "unresolved-license"
+    },
+    {
+      "action": "Review upstream terms and retain required notices.",
+      "package": "SPDXRef-cargo-zeroize_derive",
+      "status": "unresolved-license"
+    }
+  ],
   "limitations": [
     "Includes all lock packages, including platform-conditional dependencies.",
     "No compatibility/rights conclusion; datasets and model terms are separate.",
     "Hosted runner tools and stdlib are external infrastructure."
   ],
   "lock_digests": {
-    "Cargo.lock": "0eca0cb26451a428a34d1c349fb590877c67aa12b136b4c2ca35be73ce99ece8",
+    "Cargo.lock": "a331067fcc9b226954f792a85e956ad5655a68155d63f828ac09cc8ba11db8ef",
     "tools-requirements.txt": "733006d4dfccca27a3a781dad8aaa4cf6ed8d42515317a90823a187610b34ef5",
-    "uv.lock": "eb7e8a9b6daa13557c1bb07547b464c810fa5ea2b8c454fc6ace6d35e6626f3d"
+    "uv.lock": "430a20df79b8fdd69a2eab08b08f35b4123fffd388131043552edd046bc600a5"
   },
   "sbom": {
     "SPDXID": "SPDXRef-DOCUMENT",
@@ -19,7 +640,7 @@
       ]
     },
     "dataLicense": "CC0-1.0",
-    "documentNamespace": "https://github.com/FZKML/fzkml/sbom/68698fceea49fb9a2f9e0922a5500db57859df266b8dbf00fde71624691b27cf",
+    "documentNamespace": "https://github.com/FZKML/fzkml/sbom/cda10fbf8268147c1cb719ce8c417990d338d761cf61d98f93aa07a2fe6f90e5",
     "name": "fzkml-locked-dependencies",
     "packages": [
       {
@@ -40,6 +661,40 @@
         "versionInfo": "26.1.0"
       },
       {
+        "SPDXID": "SPDXRef-pypi-filelock",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/e6/86/a5b9ec254b90efb180e390e31a4fa50a93b714d6e4174fa9a4ee25607159/filelock-4.3.1.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/filelock@4.3.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT",
+        "name": "filelock",
+        "versionInfo": "4.3.1"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-fsspec",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/77/cd/9be253869fc42e764de7f3dedd6969af7d44ff9c3375214a3442a6f3fc08/fsspec-2026.9.0.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/fsspec@2026.9.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "BSD-3-Clause",
+        "name": "fsspec",
+        "versionInfo": "2026.9.0"
+      },
+      {
         "SPDXID": "SPDXRef-pypi-fzkml-ci",
         "copyrightText": "NOASSERTION",
         "downloadLocation": "NOASSERTION",
@@ -55,6 +710,23 @@
         "licenseDeclared": "Apache-2.0",
         "name": "fzkml-ci",
         "versionInfo": "0.1.0"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-jinja2",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/df/bf/f7da0350254c0ed7c72f3e33cef02e048281fec7ecec5f032d4aac52226b/jinja2-3.1.6.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/jinja2@3.1.6",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "BSD-3-Clause",
+        "name": "jinja2",
+        "versionInfo": "3.1.6"
       },
       {
         "SPDXID": "SPDXRef-pypi-jsonschema",
@@ -91,6 +763,57 @@
         "versionInfo": "2025.9.1"
       },
       {
+        "SPDXID": "SPDXRef-pypi-markupsafe",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/38/9b/e422a865e1d5d57d0e509b4e0bf1c1a70a7f6382c29a5aa428df994c8bc8/markupsafe-3.0.4.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/markupsafe@3.0.4",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "BSD-3-Clause",
+        "name": "markupsafe",
+        "versionInfo": "3.0.4"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-maturin",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/30/0b/3fd746cf5cfa3c8d7e20ea08c0dbc2c2c765ae051d0fc43d808a38bc9548/maturin-1.8.3.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/maturin@1.8.3",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "MIT OR Apache-2.0",
+        "name": "maturin",
+        "versionInfo": "1.8.3"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-mpmath",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/e0/47/dd32fa426cc72114383ac549964eecb20ecfd886d1e5ccf5340b55b02f57/mpmath-1.3.0.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/mpmath@1.3.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "BSD-3-Clause",
+        "name": "mpmath",
+        "versionInfo": "1.3.0"
+      },
+      {
         "SPDXID": "SPDXRef-pypi-mypy",
         "copyrightText": "NOASSERTION",
         "downloadLocation": "https://files.pythonhosted.org/packages/c0/77/8f0d0001ffad290cef2f7f216f96c814866248a0b92a722365ed54648e7e/mypy-1.18.2.tar.gz",
@@ -123,6 +846,23 @@
         "licenseDeclared": "MIT",
         "name": "mypy-extensions",
         "versionInfo": "1.2.0"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-networkx",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/6a/51/63fe664f3908c97be9d2e4f1158eb633317598cfa6e1fc14af5383f17512/networkx-3.6.1.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/networkx@3.6.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "BSD-3-Clause",
+        "name": "networkx",
+        "versionInfo": "3.6.1"
       },
       {
         "SPDXID": "SPDXRef-pypi-pathspec",
@@ -210,6 +950,57 @@
         "versionInfo": "0.14.5"
       },
       {
+        "SPDXID": "SPDXRef-pypi-sympy",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "https://files.pythonhosted.org/packages/ca/99/5a5b6f19ff9f083671ddf7b9632028436167cd3d33e11015754e41b249a4/sympy-1.13.1.tar.gz",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/sympy@1.13.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "BSD-3-Clause",
+        "name": "sympy",
+        "versionInfo": "1.13.1"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-torch",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/torch@2.5.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "BSD-3-Clause",
+        "name": "torch",
+        "versionInfo": "2.5.1"
+      },
+      {
+        "SPDXID": "SPDXRef-pypi-torch",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:pypi/torch@2.5.1+cpu",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "BSD-3-Clause",
+        "name": "torch",
+        "versionInfo": "2.5.1+cpu"
+      },
+      {
         "SPDXID": "SPDXRef-pypi-types-jsonschema",
         "copyrightText": "NOASSERTION",
         "downloadLocation": "https://files.pythonhosted.org/packages/ef/da/5b901088da5f710690b422137e8ae74197fb1ca471e4aa84dd3ef0d6e295/types_jsonschema-4.25.1.20251009.tar.gz",
@@ -261,6 +1052,805 @@
         "versionInfo": "4.16.0"
       },
       {
+        "SPDXID": "SPDXRef-cargo-ahash",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ahash@0.8.13",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ahash",
+        "versionInfo": "0.8.13"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-allocator-api2",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/allocator-api2@0.2.21",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "allocator-api2",
+        "versionInfo": "0.2.21"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-bn254",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-bn254@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-bn254",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-crypto-primitives",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-crypto-primitives@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-crypto-primitives",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-crypto-primitives-macros",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-crypto-primitives-macros@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-crypto-primitives-macros",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-ec",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-ec@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-ec",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-ed-on-bn254",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-ed-on-bn254@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-ed-on-bn254",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-ff",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-ff@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-ff",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-ff-asm",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-ff-asm@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-ff-asm",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-ff-macros",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-ff-macros@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-ff-macros",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-groth16",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-groth16@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-groth16",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-poly",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-poly@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-poly",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-r1cs-std",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-r1cs-std@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-r1cs-std",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-relations",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-relations@0.5.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-relations",
+        "versionInfo": "0.5.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-serialize",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-serialize@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-serialize",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-serialize-derive",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-serialize-derive@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-serialize-derive",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-snark",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-snark@0.5.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-snark",
+        "versionInfo": "0.5.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ark-std",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ark-std@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ark-std",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-arrayvec",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/arrayvec@0.7.8",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "arrayvec",
+        "versionInfo": "0.7.8"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-autocfg",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/autocfg@1.5.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "autocfg",
+        "versionInfo": "1.5.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-base64ct",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/base64ct@1.8.3",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "base64ct",
+        "versionInfo": "1.8.3"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-bitflags",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/bitflags@2.13.2",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "bitflags",
+        "versionInfo": "2.13.2"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-blake2",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/blake2@0.10.6",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "blake2",
+        "versionInfo": "0.10.6"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-block-buffer",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/block-buffer@0.10.4",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "block-buffer",
+        "versionInfo": "0.10.4"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-bumpalo",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/bumpalo@3.20.4",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "bumpalo",
+        "versionInfo": "3.20.4"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-byteorder",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/byteorder@1.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "byteorder",
+        "versionInfo": "1.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-cc",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/cc@1.11.3",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "cc",
+        "versionInfo": "1.11.3"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-cfg-if",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/cfg-if@1.0.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "cfg-if",
+        "versionInfo": "1.0.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-const-oid",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/const-oid@0.9.6",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "const-oid",
+        "versionInfo": "0.9.6"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-cpufeatures",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/cpufeatures@0.2.17",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "cpufeatures",
+        "versionInfo": "0.2.17"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-crypto-common",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/crypto-common@0.1.7",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "crypto-common",
+        "versionInfo": "0.1.7"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-curve25519-dalek",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/curve25519-dalek@4.1.3",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "curve25519-dalek",
+        "versionInfo": "4.1.3"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-curve25519-dalek-derive",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/curve25519-dalek-derive@0.1.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "curve25519-dalek-derive",
+        "versionInfo": "0.1.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-der",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/der@0.7.10",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "der",
+        "versionInfo": "0.7.10"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-derivative",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/derivative@2.2.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "derivative",
+        "versionInfo": "2.2.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-digest",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/digest@0.10.7",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "digest",
+        "versionInfo": "0.10.7"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ed25519",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ed25519@2.2.3",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ed25519",
+        "versionInfo": "2.2.3"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ed25519-dalek",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ed25519-dalek@2.2.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ed25519-dalek",
+        "versionInfo": "2.2.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-educe",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/educe@0.6.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "educe",
+        "versionInfo": "0.6.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-either",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/either@1.19.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "either",
+        "versionInfo": "1.19.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-enum-ordinalize",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/enum-ordinalize@4.3.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "enum-ordinalize",
+        "versionInfo": "4.3.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-enum-ordinalize-derive",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/enum-ordinalize-derive@4.3.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "enum-ordinalize-derive",
+        "versionInfo": "4.3.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-fallible-iterator",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/fallible-iterator@0.3.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "fallible-iterator",
+        "versionInfo": "0.3.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-fallible-streaming-iterator",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/fallible-streaming-iterator@0.1.9",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "fallible-streaming-iterator",
+        "versionInfo": "0.1.9"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-fiat-crypto",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/fiat-crypto@0.2.9",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "fiat-crypto",
+        "versionInfo": "0.2.9"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-find-msvc-tools",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/find-msvc-tools@0.1.15",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "find-msvc-tools",
+        "versionInfo": "0.1.15"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-fnv",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/fnv@1.0.7",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "fnv",
+        "versionInfo": "1.0.7"
+      },
+      {
         "SPDXID": "SPDXRef-cargo-fzkml-core",
         "copyrightText": "NOASSERTION",
         "downloadLocation": "NOASSERTION",
@@ -276,6 +1866,1332 @@
         "licenseDeclared": "Apache-2.0",
         "name": "fzkml-core",
         "versionInfo": "0.1.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-fzkml-models",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/fzkml-models@0.1.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "Apache-2.0",
+        "name": "fzkml-models",
+        "versionInfo": "0.1.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-fzkml-python",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/fzkml-python@0.1.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "fzkml-python",
+        "versionInfo": "0.1.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-generic-array",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/generic-array@0.14.7",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "generic-array",
+        "versionInfo": "0.14.7"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-getrandom",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/getrandom@0.2.17",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "getrandom",
+        "versionInfo": "0.2.17"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-getrandom",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/getrandom@0.4.3",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "getrandom",
+        "versionInfo": "0.4.3"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-hashbrown",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/hashbrown@0.14.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "hashbrown",
+        "versionInfo": "0.14.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-hashbrown",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/hashbrown@0.15.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "hashbrown",
+        "versionInfo": "0.15.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-hashlink",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/hashlink@0.9.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "hashlink",
+        "versionInfo": "0.9.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-heck",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/heck@0.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "heck",
+        "versionInfo": "0.5.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-indoc",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/indoc@2.0.8",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "indoc",
+        "versionInfo": "2.0.8"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-itertools",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/itertools@0.13.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "itertools",
+        "versionInfo": "0.13.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-itoa",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/itoa@1.0.19",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "itoa",
+        "versionInfo": "1.0.19"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-js-sys",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/js-sys@0.3.107",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "js-sys",
+        "versionInfo": "0.3.107"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-keccak",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/keccak@0.1.6",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "keccak",
+        "versionInfo": "0.1.6"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-libc",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/libc@0.2.191",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "libc",
+        "versionInfo": "0.2.191"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-libsqlite3-sys",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/libsqlite3-sys@0.30.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "libsqlite3-sys",
+        "versionInfo": "0.30.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-memchr",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/memchr@2.8.3",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "memchr",
+        "versionInfo": "2.8.3"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-memoffset",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/memoffset@0.9.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "memoffset",
+        "versionInfo": "0.9.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-merlin",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/merlin@3.0.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "merlin",
+        "versionInfo": "3.0.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-num-bigint",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/num-bigint@0.4.8",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "num-bigint",
+        "versionInfo": "0.4.8"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-num-integer",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/num-integer@0.1.47",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "num-integer",
+        "versionInfo": "0.1.47"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-num-traits",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/num-traits@0.2.19",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "num-traits",
+        "versionInfo": "0.2.19"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-once_cell",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/once_cell@1.21.4",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "once_cell",
+        "versionInfo": "1.21.4"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-paste",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/paste@1.0.15",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "paste",
+        "versionInfo": "1.0.15"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-pin-project-lite",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/pin-project-lite@0.2.18",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "pin-project-lite",
+        "versionInfo": "0.2.18"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-pkcs8",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/pkcs8@0.10.2",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "pkcs8",
+        "versionInfo": "0.10.2"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-pkg-config",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/pkg-config@0.3.34",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "pkg-config",
+        "versionInfo": "0.3.34"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-portable-atomic",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/portable-atomic@1.15.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "portable-atomic",
+        "versionInfo": "1.15.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ppv-lite86",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ppv-lite86@0.2.21",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ppv-lite86",
+        "versionInfo": "0.2.21"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-proc-macro2",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/proc-macro2@1.0.107",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "proc-macro2",
+        "versionInfo": "1.0.107"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-pyo3",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/pyo3@0.23.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "pyo3",
+        "versionInfo": "0.23.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-pyo3-build-config",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/pyo3-build-config@0.23.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "pyo3-build-config",
+        "versionInfo": "0.23.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-pyo3-ffi",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/pyo3-ffi@0.23.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "pyo3-ffi",
+        "versionInfo": "0.23.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-pyo3-macros",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/pyo3-macros@0.23.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "pyo3-macros",
+        "versionInfo": "0.23.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-pyo3-macros-backend",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/pyo3-macros-backend@0.23.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "pyo3-macros-backend",
+        "versionInfo": "0.23.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-quote",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/quote@1.0.47",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "quote",
+        "versionInfo": "1.0.47"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-r-efi",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/r-efi@6.0.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "r-efi",
+        "versionInfo": "6.0.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-rand",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/rand@0.8.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "rand",
+        "versionInfo": "0.8.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-rand_chacha",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/rand_chacha@0.3.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "rand_chacha",
+        "versionInfo": "0.3.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-rand_core",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/rand_core@0.6.4",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "rand_core",
+        "versionInfo": "0.6.4"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-rusqlite",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/rusqlite@0.32.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "rusqlite",
+        "versionInfo": "0.32.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-rustc_version",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/rustc_version@0.4.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "rustc_version",
+        "versionInfo": "0.4.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-rustversion",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/rustversion@1.0.23",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "rustversion",
+        "versionInfo": "1.0.23"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-ryu",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/ryu@1.0.23",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "ryu",
+        "versionInfo": "1.0.23"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-semver",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/semver@1.0.28",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "semver",
+        "versionInfo": "1.0.28"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-serde",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/serde@1.0.228",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "serde",
+        "versionInfo": "1.0.228"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-serde_core",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/serde_core@1.0.228",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "serde_core",
+        "versionInfo": "1.0.228"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-serde_derive",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/serde_derive@1.0.228",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "serde_derive",
+        "versionInfo": "1.0.228"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-serde_json",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/serde_json@1.0.145",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "serde_json",
+        "versionInfo": "1.0.145"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-sha2",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/sha2@0.10.8",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "sha2",
+        "versionInfo": "0.10.8"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-shlex",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/shlex@2.0.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "shlex",
+        "versionInfo": "2.0.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-signature",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/signature@2.2.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "signature",
+        "versionInfo": "2.2.0"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-smallvec",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/smallvec@1.16.6",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "smallvec",
+        "versionInfo": "1.16.6"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-spki",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/spki@0.7.3",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "spki",
+        "versionInfo": "0.7.3"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-subtle",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/subtle@2.6.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "subtle",
+        "versionInfo": "2.6.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-syn",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/syn@1.0.109",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "syn",
+        "versionInfo": "1.0.109"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-syn",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/syn@2.0.119",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "syn",
+        "versionInfo": "2.0.119"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-syn",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/syn@3.0.10",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "syn",
+        "versionInfo": "3.0.10"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-target-lexicon",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/target-lexicon@0.12.16",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "target-lexicon",
+        "versionInfo": "0.12.16"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-tracing",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/tracing@0.1.44",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "tracing",
+        "versionInfo": "0.1.44"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-tracing-attributes",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/tracing-attributes@0.1.31",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "tracing-attributes",
+        "versionInfo": "0.1.31"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-tracing-core",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/tracing-core@0.1.36",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "tracing-core",
+        "versionInfo": "0.1.36"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-tracing-subscriber",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/tracing-subscriber@0.2.25",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "tracing-subscriber",
+        "versionInfo": "0.2.25"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-typenum",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/typenum@1.20.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "typenum",
+        "versionInfo": "1.20.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-unicode-ident",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/unicode-ident@1.0.27",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "unicode-ident",
+        "versionInfo": "1.0.27"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-unindent",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/unindent@0.2.4",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "unindent",
+        "versionInfo": "0.2.4"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-valuable",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/valuable@0.1.1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "valuable",
+        "versionInfo": "0.1.1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-vcpkg",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/vcpkg@0.2.15",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "vcpkg",
+        "versionInfo": "0.2.15"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-version_check",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/version_check@0.9.5",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "version_check",
+        "versionInfo": "0.9.5"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-wasi",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/wasi@0.11.1+wasi-snapshot-preview1",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "wasi",
+        "versionInfo": "0.11.1+wasi-snapshot-preview1"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-wasm-bindgen",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/wasm-bindgen@0.2.130",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "wasm-bindgen",
+        "versionInfo": "0.2.130"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-wasm-bindgen-macro",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/wasm-bindgen-macro@0.2.130",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "wasm-bindgen-macro",
+        "versionInfo": "0.2.130"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-wasm-bindgen-macro-support",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/wasm-bindgen-macro-support@0.2.130",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "wasm-bindgen-macro-support",
+        "versionInfo": "0.2.130"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-wasm-bindgen-shared",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/wasm-bindgen-shared@0.2.130",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "wasm-bindgen-shared",
+        "versionInfo": "0.2.130"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-zerocopy",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/zerocopy@0.8.64",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "zerocopy",
+        "versionInfo": "0.8.64"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-zerocopy-derive",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/zerocopy-derive@0.8.64",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "zerocopy-derive",
+        "versionInfo": "0.8.64"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-zeroize",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/zeroize@1.9.2",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "zeroize",
+        "versionInfo": "1.9.2"
+      },
+      {
+        "SPDXID": "SPDXRef-cargo-zeroize_derive",
+        "copyrightText": "NOASSERTION",
+        "downloadLocation": "NOASSERTION",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceLocator": "pkg:cargo/zeroize_derive@1.5.0",
+            "referenceType": "purl"
+          }
+        ],
+        "filesAnalyzed": false,
+        "licenseConcluded": "NOASSERTION",
+        "licenseDeclared": "NOASSERTION",
+        "name": "zeroize_derive",
+        "versionInfo": "1.5.0"
       },
       {
         "SPDXID": "SPDXRef-pypi-uv",
@@ -302,7 +3218,22 @@
         "spdxElementId": "SPDXRef-DOCUMENT"
       },
       {
+        "relatedSpdxElement": "SPDXRef-pypi-filelock",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-fsspec",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
         "relatedSpdxElement": "SPDXRef-pypi-fzkml-ci",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-jinja2",
         "relationshipType": "DESCRIBES",
         "spdxElementId": "SPDXRef-DOCUMENT"
       },
@@ -317,12 +3248,32 @@
         "spdxElementId": "SPDXRef-DOCUMENT"
       },
       {
+        "relatedSpdxElement": "SPDXRef-pypi-markupsafe",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-maturin",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-mpmath",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
         "relatedSpdxElement": "SPDXRef-pypi-mypy",
         "relationshipType": "DESCRIBES",
         "spdxElementId": "SPDXRef-DOCUMENT"
       },
       {
         "relatedSpdxElement": "SPDXRef-pypi-mypy-extensions",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-networkx",
         "relationshipType": "DESCRIBES",
         "spdxElementId": "SPDXRef-DOCUMENT"
       },
@@ -352,6 +3303,21 @@
         "spdxElementId": "SPDXRef-DOCUMENT"
       },
       {
+        "relatedSpdxElement": "SPDXRef-pypi-sympy",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-torch",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-pypi-torch",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
         "relatedSpdxElement": "SPDXRef-pypi-types-jsonschema",
         "relationshipType": "DESCRIBES",
         "spdxElementId": "SPDXRef-DOCUMENT"
@@ -367,7 +3333,632 @@
         "spdxElementId": "SPDXRef-DOCUMENT"
       },
       {
+        "relatedSpdxElement": "SPDXRef-cargo-ahash",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-allocator-api2",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-bn254",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-crypto-primitives",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-crypto-primitives-macros",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-ec",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-ed-on-bn254",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-ff",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-ff-asm",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-ff-macros",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-groth16",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-poly",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-r1cs-std",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-relations",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-serialize",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-serialize-derive",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-snark",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ark-std",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-arrayvec",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-autocfg",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-base64ct",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-bitflags",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-blake2",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-block-buffer",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-bumpalo",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-byteorder",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-cc",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-cfg-if",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-const-oid",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-cpufeatures",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-crypto-common",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-curve25519-dalek",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-curve25519-dalek-derive",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-der",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-derivative",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-digest",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ed25519",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ed25519-dalek",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-educe",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-either",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-enum-ordinalize",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-enum-ordinalize-derive",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-fallible-iterator",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-fallible-streaming-iterator",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-fiat-crypto",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-find-msvc-tools",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-fnv",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
         "relatedSpdxElement": "SPDXRef-cargo-fzkml-core",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-fzkml-models",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-fzkml-python",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-generic-array",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-getrandom",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-getrandom",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-hashbrown",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-hashbrown",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-hashlink",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-heck",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-indoc",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-itertools",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-itoa",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-js-sys",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-keccak",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-libc",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-libsqlite3-sys",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-memchr",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-memoffset",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-merlin",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-num-bigint",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-num-integer",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-num-traits",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-once_cell",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-paste",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-pin-project-lite",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-pkcs8",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-pkg-config",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-portable-atomic",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ppv-lite86",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-proc-macro2",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-pyo3",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-pyo3-build-config",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-pyo3-ffi",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-pyo3-macros",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-pyo3-macros-backend",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-quote",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-r-efi",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-rand",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-rand_chacha",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-rand_core",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-rusqlite",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-rustc_version",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-rustversion",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-ryu",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-semver",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-serde",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-serde_core",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-serde_derive",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-serde_json",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-sha2",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-shlex",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-signature",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-smallvec",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-spki",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-subtle",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-syn",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-syn",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-syn",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-target-lexicon",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-tracing",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-tracing-attributes",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-tracing-core",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-tracing-subscriber",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-typenum",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-unicode-ident",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-unindent",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-valuable",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-vcpkg",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-version_check",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-wasi",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-wasm-bindgen",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-wasm-bindgen-macro",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-wasm-bindgen-macro-support",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-wasm-bindgen-shared",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-zerocopy",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-zerocopy-derive",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-zeroize",
+        "relationshipType": "DESCRIBES",
+        "spdxElementId": "SPDXRef-DOCUMENT"
+      },
+      {
+        "relatedSpdxElement": "SPDXRef-cargo-zeroize_derive",
         "relationshipType": "DESCRIBES",
         "spdxElementId": "SPDXRef-DOCUMENT"
       },

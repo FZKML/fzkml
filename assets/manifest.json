@@ -196,6 +196,41 @@
         "date": "2026-11-24",
         "decision": "Original public conformance fixture only. Test openings are intentionally public and must never be reused operationally; no hiding or cryptographic security conclusion is implied."
       }
+    },
+    {
+      "id": "model-capacity-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/s04/model-capacity/assets/public/model-capacity-v1.json",
+      "version": "model-capacity-1.0.0; exact bytes identified by SHA-256",
+      "path": "assets/public/model-capacity-v1.json",
+      "sha256": "0fa76ec2d6c6aa98f6095dce4f7d246aafc9ce8a435e7e7eb079b27671987584",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original synthetic arrays, independently authored derived numeric facts and source locators; contributor history retained. No manuscript prose or export included.",
+      "intended_use": "Bounded exact conformance, counterexamples and public synthetic proof tests; not deployment/DP or model-quality evidence.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Original literal synthetic fixtures and exact arithmetic; numeric teaching examples checked against the readable canonical source.",
+        "configuration": {
+          "seed": "not applicable; deterministic fixed public arrays",
+          "private_inputs": "none"
+        }
+      },
+      "source_inputs": "No external dataset/model or manuscript prose; original synthetic arrays and independently calculated public numerical facts.",
+      "review": {
+        "status": "approved",
+        "reviewer": "Original contribution under the maintainer-authorized DCO; scientific review pending",
+        "date": "2026-11-25",
+        "decision": "Original Apache-2.0 fixture provenance only; no independent scientific correctness, security, privacy or publication-policy approval."
+      }
     }
   ]
 }
