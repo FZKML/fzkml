@@ -59,6 +59,14 @@
       "sha256": "25d07da6f66adf6e4abd5ca1a1181f3ee5057d8723c52e58df33347af54ef563"
     },
     {
+      "path": "docs/research/m4-implementation-evidence.md",
+      "sha256": "5ac8c8a8c576cced4e77bf55f39be98e387ba12703fc395fedbbd4980f3ce76a"
+    },
+    {
+      "path": "docs/research/m4-source-review.json",
+      "sha256": "3ba0ffb1fec3c36b4f8dd24e60e07c740864fb995a6a8789151808eb2426b688"
+    },
+    {
       "path": "docs/research/manuscript.json",
       "sha256": "8eb46515aabec7407176dfe6454f544b877eccea014d0af12eab8a63d86a893f"
     },
@@ -100,11 +108,39 @@
     },
     {
       "path": "specifications/README.md",
-      "sha256": "d296867501381de1d969d1f1f20198b341bead9490071b85b2f2aa4e876ed630"
+      "sha256": "2be6254eb3825885a7357d890455194fc3ab3d4a9e31ade3bfae7e02a1270b79"
     },
     {
       "path": "specifications/__init__.py",
       "sha256": "ef27bd3d997ae7ad20385b56e3c7d54c7824d30b1c77148c621928082f97d5b6"
+    },
+    {
+      "path": "specifications/m4/README.md",
+      "sha256": "4af8b6ce3b6c2e6f004c91159fbeab21db9de0476d38946d2fdb4ee56b0a4b1d"
+    },
+    {
+      "path": "specifications/m4/__init__.py",
+      "sha256": "e34ab05b8aa0396ae40bb9496f3b6823e046ed560bda65719f5b0f8532afd6fb"
+    },
+    {
+      "path": "specifications/m4/contracts-v1.json",
+      "sha256": "f4ea0f352ffdab727aace4a6d4dec49ddd370c625325b9d266496d9a39db2033"
+    },
+    {
+      "path": "specifications/m4/reference.py",
+      "sha256": "883956d924fad4f53fe373128366c0d6ea06684043c467943e8311bba0b39040"
+    },
+    {
+      "path": "specifications/m4/report-schema-v1.json",
+      "sha256": "a5b1462979f6cf98fb6ea43939019d55b811baf93b46a49fb0efd2ff0f470866"
+    },
+    {
+      "path": "specifications/m4/run.py",
+      "sha256": "d0821072e1baee45f2bfba4747eef9bc42ef24cf19232d4774197a0f060746f1"
+    },
+    {
+      "path": "specifications/m4/schema-v1.json",
+      "sha256": "df24ba36cbc5911042e51c1970e09d9a4f53e3c78491d40170a6e7b3f10d07e6"
     },
     {
       "path": "specifications/protocol-v1.json",
@@ -132,7 +168,7 @@
     },
     {
       "path": "specifications/validate.py",
-      "sha256": "c47e65cf68fb5ba360915072b46351d06ee016df382d5b3feffc56ebdf588020"
+      "sha256": "b5be8bd5cf9d08c252b3235996b8705b8fbf551abdec32d45aebb783d6d99809"
     },
     {
       "path": "specs/m0/capabilities-v0.1.md",
@@ -163,8 +199,12 @@
       "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
     },
     {
+      "path": "tests/test_m4_contracts.py",
+      "sha256": "b05753f5980fd5f652d23927997199bca5292399d24f5ec3630e5fa6bc250232"
+    },
+    {
       "path": "tests/test_specification_registry.py",
-      "sha256": "31eee85611709684ffbd422522f6c4a3aade6b008e5af25d675972101f575220"
+      "sha256": "a05223190260b22b9fdd797929f73243fd7921d03ca4a2716f75a52002ab8ccc"
     }
   ]
 }

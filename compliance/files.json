@@ -790,6 +790,24 @@
       ],
       "notice_files": []
     },
+    "docs/research/m4-implementation-evidence.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/m4-source-review.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "docs/research/manuscript.json": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -1087,6 +1105,69 @@
       ],
       "notice_files": []
     },
+    "specifications/m4/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/m4/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/m4/contracts-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/m4/reference.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/m4/report-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/m4/run.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/m4/schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "specifications/protocol-v1.json": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -1334,6 +1415,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_m4_contracts.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original research specification, source metadata or synthetic conformance code generated with Codex assistance; contributor provenance in Git history. Private manuscript content is excluded.",
       "license_files": [
         "LICENSE"
       ],

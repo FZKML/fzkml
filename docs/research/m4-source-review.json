@@ -1,0 +1,91 @@
+{
+  "version": "m4-prose-review-1.0.0",
+  "date": "2026-11-25",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "observed_revision_id": "AHj4eMTDhszajz9XWwtYr25APOt8jDNWJ06dbjKxf-xlK9xmwk34ZzwRRUkjWfouVFGjH-x3SMlEEFPR_syq3-Z8kERBX1SruWGFOdkln3SW",
+  "canonical_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+  "method": "Connected Google Docs revision readback matched the authorized paragraph snapshot; selected cached prose inspected. No new export or native-equation review is asserted.",
+  "sections": [
+    {
+      "source_id": "FZK-MS20261124-SEC-h.g0asafrt2ttq",
+      "range_utf16": [
+        470777,
+        472876
+      ],
+      "scope": "selected-prose-inspected-equation-dependent-claims-pending-source-review"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.ndvkd81m001k",
+      "range_utf16": [
+        472876,
+        475352
+      ],
+      "scope": "selected-prose-inspected-equation-dependent-claims-pending-source-review"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.64mk3d9b09a5",
+      "range_utf16": [
+        475352,
+        477169
+      ],
+      "scope": "selected-prose-inspected-equation-dependent-claims-pending-source-review"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.96yk4wc9vkpe",
+      "range_utf16": [
+        409501,
+        410764
+      ],
+      "scope": "selected-prose-inspected-equation-dependent-claims-pending-source-review"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.7mn23p1pkdtr",
+      "range_utf16": [
+        435406,
+        437264
+      ],
+      "scope": "selected-prose-inspected-equation-dependent-claims-pending-source-review"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.jokmh3hx94z7",
+      "range_utf16": [
+        145753,
+        147748
+      ],
+      "scope": "selected-prose-inspected-equation-dependent-claims-pending-source-review"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.7c5a933imkj4",
+      "range_utf16": [
+        501308,
+        503105
+      ],
+      "scope": "selected-prose-inspected-equation-dependent-claims-pending-source-review"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.q076h2gt0fzr",
+      "range_utf16": [
+        396030,
+        398195
+      ],
+      "scope": "selected-prose-inspected-equation-dependent-claims-pending-source-review"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.2zb564v0s5rk",
+      "range_utf16": [
+        403170,
+        404805
+      ],
+      "scope": "selected-prose-inspected-equation-dependent-claims-pending-source-review"
+    }
+  ],
+  "independent_review": false,
+  "native_equation_status": "unchanged;20 previously inspected,397 pending",
+  "publication_scope": "Original summaries, metadata and engineering references only; no manuscript prose, export, images or equation XML distributed.",
+  "followup_revision_observation": {
+    "date": "2026-11-25",
+    "revision_id": "AHj4eMTMcfjTugtNt8xYwR7dUyF_rmnj2mLtKlthyHmlSzP5kkQA-KrpiNmZ8biFwFCNl37SjE6VZnd9fXa2HG2_OYljPe3qPR7FXwmjg8dt",
+    "status": "different-token-pending-source-impact-review",
+    "qualification": "The initial metadata observation matched the pinned authorized snapshot; this later token differs. No content-equivalence, edition migration or current-edition source review is inferred. M4 references remain explicitly historical MS20261124."
+  }
+}

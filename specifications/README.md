@@ -54,3 +54,8 @@ hosted pass/skip scope. Candidate entries remain separate from adopted evidence
 and never promote a scientific claim. Include this catalog/schema when consuming
 the validator; published code hashes are reviewed observations, not network-fetched
 or executed by the validation command.
+
+M4 slots #76–#79 are specified in [m4/README.md](m4/README.md), with versioned
+contracts, manuscript-prose locators and original synthetic references. Their
+schemas/test/source links are checked by the authoritative validator. They do
+not add scientific claim status, genuine-proof, privacy or performance evidence.

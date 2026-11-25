@@ -1,0 +1,455 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "m4-reference-1.0.0"
+    },
+    "kind": {
+      "const": "synthetic-reference-conformance"
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "source_dirty": {
+      "type": "boolean"
+    },
+    "claim_ids": {
+      "const": []
+    },
+    "issues": {
+      "const": [
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    "contracts_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "python": {
+          "type": "string",
+          "minLength": 1
+        },
+        "system": {
+          "type": "string",
+          "minLength": 1
+        },
+        "machine": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cpu_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        }
+      },
+      "required": [
+        "python",
+        "system",
+        "machine",
+        "cpu_count"
+      ]
+    },
+    "publication_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "approved": {
+          "const": false
+        }
+      },
+      "required": [
+        "approved"
+      ]
+    },
+    "observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "n": {
+                "enum": [
+                  64,
+                  256,
+                  1024
+                ]
+              },
+              "strategy": {
+                "enum": [
+                  "ram",
+                  "recompute",
+                  "external-memory"
+                ]
+              },
+              "statement_sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "witness_sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "prepare_seconds": {
+                "type": "number",
+                "minimum": 0
+              },
+              "reference_compute_seconds": {
+                "type": "number",
+                "minimum": 0
+              },
+              "peak_python_allocated_bytes": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "prepare_generated_records": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "compute_generated_records": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "application_file_read_bytes": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "application_file_write_bytes": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "temporary_file_bytes_peak": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "peak_process_rss_bytes": {
+                "type": "null"
+              },
+              "peak_vram_bytes": {
+                "type": "null"
+              },
+              "prove_seconds": {
+                "type": "null"
+              },
+              "verify_seconds": {
+                "type": "null"
+              },
+              "proof_outcome": {
+                "const": "not-run"
+              }
+            },
+            "required": [
+              "n",
+              "strategy",
+              "statement_sha256",
+              "witness_sha256",
+              "prepare_seconds",
+              "reference_compute_seconds",
+              "peak_python_allocated_bytes",
+              "prepare_generated_records",
+              "compute_generated_records",
+              "application_file_read_bytes",
+              "application_file_write_bytes",
+              "temporary_file_bytes_peak",
+              "peak_process_rss_bytes",
+              "peak_vram_bytes",
+              "prove_seconds",
+              "verify_seconds",
+              "proof_outcome"
+            ]
+          },
+          "minItems": 9,
+          "maxItems": 5000
+        },
+        "checkpoint_rejections": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "queue": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "offered": {
+                "enum": [
+                  8,
+                  32,
+                  128
+                ]
+              },
+              "synthetic_acceptances": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "synthetic_rejections": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "backpressure": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "peak_queue": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "peak_reserved_work": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "latency_p50_seconds": {
+                "type": "null"
+              },
+              "latency_p95_seconds": {
+                "type": "null"
+              },
+              "latency_p99_seconds": {
+                "type": "null"
+              },
+              "genuine_proofs_verified": {
+                "const": 0
+              }
+            },
+            "required": [
+              "offered",
+              "synthetic_acceptances",
+              "synthetic_rejections",
+              "backpressure",
+              "peak_queue",
+              "peak_reserved_work",
+              "latency_p50_seconds",
+              "latency_p95_seconds",
+              "latency_p99_seconds",
+              "genuine_proofs_verified"
+            ]
+          },
+          "minItems": 3,
+          "maxItems": 5000
+        },
+        "certificate": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sum": {
+              "const": 10
+            },
+            "weight": {
+              "const": 4
+            },
+            "depth": {
+              "const": 2
+            },
+            "leaves": {
+              "const": 4
+            },
+            "proof_backend": {
+              "const": "not-integrated"
+            },
+            "zero_knowledge": {
+              "const": "not-established"
+            }
+          },
+          "required": [
+            "sum",
+            "weight",
+            "depth",
+            "leaves",
+            "proof_backend",
+            "zero_knowledge"
+          ]
+        },
+        "certificate_rejections": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hierarchy_rejections": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "subgroup_counterexample": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "global_left": {
+              "type": "integer"
+            },
+            "global_right": {
+              "type": "integer"
+            },
+            "subgroups_left": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "minItems": 3,
+              "maxItems": 5000
+            },
+            "subgroups_right": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "minItems": 3,
+              "maxItems": 5000
+            },
+            "scope": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "global_left",
+            "global_right",
+            "subgroups_left",
+            "subgroups_right",
+            "scope"
+          ]
+        }
+      },
+      "required": [
+        "memory",
+        "checkpoint_rejections",
+        "queue",
+        "certificate",
+        "certificate_rejections",
+        "hierarchy_rejections",
+        "subgroup_counterexample"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "maxItems": 5000
+    },
+    "source_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identities": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "relation": {
+          "const": "synthetic-witness-and-integer-sum-v1"
+        },
+        "context_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "model": {
+          "const": "not-applicable-no-training"
+        },
+        "preprocessor": {
+          "const": "none"
+        },
+        "dataset": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dataset_license": {
+          "const": "Apache-2.0"
+        },
+        "seed": {
+          "const": 17
+        }
+      },
+      "required": [
+        "relation",
+        "context_sha256",
+        "model",
+        "preprocessor",
+        "dataset",
+        "dataset_license",
+        "seed"
+      ]
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "local"
+        },
+        "repetitions_per_case": {
+          "const": 1
+        },
+        "reproduction_command": {
+          "type": "string",
+          "minLength": 1
+        },
+        "jsonschema_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dependency_lock_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "uncertainty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "excluded_phases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "kind",
+        "repetitions_per_case",
+        "reproduction_command",
+        "jsonschema_version",
+        "dependency_lock_sha256",
+        "uncertainty",
+        "excluded_phases"
+      ]
+    },
+    "observer_model": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "source_commit",
+    "source_dirty",
+    "claim_ids",
+    "issues",
+    "contracts_sha256",
+    "environment",
+    "publication_review",
+    "observations",
+    "limitations",
+    "source_version",
+    "identities",
+    "execution",
+    "observer_model"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/specifications/m4/report-schema-v1.json"
+}

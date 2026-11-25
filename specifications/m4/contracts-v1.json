@@ -1,0 +1,143 @@
+{
+  "schema_version": "m4-contracts-1.0.0",
+  "source_edition": "MS20261124",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "source_review": "docs/research/m4-source-review.json",
+  "genuine_proof_backend": "not-integrated",
+  "contracts": [
+    {
+      "id": "FZK-M4-R038-CONTRACT-001",
+      "issue": 76,
+      "status": "specified-reference-checks-only",
+      "claim_ids": [],
+      "source_refs": [
+        "FZK-MS20261124-CH-018",
+        "FZK-MS20261124-CH-062",
+        "FZK-MS20261124-CH-071",
+        "FZK-MS20261124-EX-030",
+        "FZK-MS20261124-EX-039",
+        "FZK-MS20261124-SEC-h.g0asafrt2ttq",
+        "FZK-MS20261124-SEC-h.ndvkd81m001k",
+        "FZK-MS20261124-SEC-h.64mk3d9b09a5"
+      ],
+      "source_quality": "Selected prose inspected; chapter/exercise mappings are coverage locators. Equation-dependent claims remain pending-source-review. No book numerical values or theorem are asserted. References remain pinned to historical MS20261124; a later revision-token difference requires source-impact review before current-edition mapping.",
+      "requirements": [
+        "fixed-statement-across-memory-strategies",
+        "authenticated-checkpoint-context-position-and-anti-replay",
+        "separate-prepare-compute-commitment-prove-verify-finalization-cost",
+        "report-per-role-RSS-VRAM-storage-and-application-vs-physical-I/O"
+      ],
+      "remaining": [
+        "genuine-prover-strategy-adapter",
+        "actual-per-role-RSS-VRAM-and-physical-I/O",
+        "mid-prover-kill-recovery",
+        "real-setup-and-ZK-finalization-review"
+      ],
+      "required_tests": [
+        "test_memory_strategies_bind_one_statement",
+        "test_checkpoint_replay_context_and_truncation"
+      ]
+    },
+    {
+      "id": "FZK-M4-R039-CONTRACT-001",
+      "issue": 77,
+      "status": "specified-reference-checks-only",
+      "claim_ids": [],
+      "source_refs": [
+        "FZK-MS20261124-CH-011",
+        "FZK-MS20261124-CH-066",
+        "FZK-MS20261124-CH-068",
+        "FZK-MS20261124-EX-034",
+        "FZK-MS20261124-EX-036",
+        "FZK-MS20261124-SEC-h.96yk4wc9vkpe",
+        "FZK-MS20261124-SEC-h.7mn23p1pkdtr"
+      ],
+      "source_quality": "Selected prose inspected; chapter/exercise mappings are coverage locators. Equation-dependent claims remain pending-source-review. No book numerical values or theorem are asserted. References remain pinned to historical MS20261124; a later revision-token difference requires source-impact review before current-edition mapping.",
+      "requirements": [
+        "bound-waiting-running-reserved-work-proof-bytes-and-identity-history",
+        "atomic-context-nullifier-and-payload-bound-idempotence",
+        "cancellation-does-not-refund-active-noninterruptible-work",
+        "count-only-genuine-valid-proofs-in-throughput"
+      ],
+      "remaining": [
+        "canonical-durable-ledger-adapter",
+        "genuine-proof-worker-adapter",
+        "measured-p50-p95-p99-and-resource-load-tests",
+        "admission-fairness-and-private-rejection-review"
+      ],
+      "required_tests": [
+        "test_queue_bounds_and_work_reservation",
+        "test_concurrent_duplicate_completion",
+        "test_cancel_finish_linearization"
+      ]
+    },
+    {
+      "id": "FZK-M4-R040-CONTRACT-001",
+      "issue": 78,
+      "status": "specified-reference-checks-only",
+      "claim_ids": [],
+      "source_refs": [
+        "FZK-MS20261124-CH-021",
+        "FZK-MS20261124-CH-046",
+        "FZK-MS20261124-CH-062",
+        "FZK-MS20261124-CH-066",
+        "FZK-MS20261124-CH-073",
+        "FZK-MS20261124-EX-014",
+        "FZK-MS20261124-EX-034",
+        "FZK-MS20261124-EX-041",
+        "FZK-MS20261124-SEC-h.jokmh3hx94z7",
+        "FZK-MS20261124-SEC-h.7c5a933imkj4"
+      ],
+      "source_quality": "Selected prose inspected; chapter/exercise mappings are coverage locators. Equation-dependent claims remain pending-source-review. No book numerical values or theorem are asserted. References remain pinned to historical MS20261124; a later revision-token difference requires source-impact review before current-edition mapping.",
+      "requirements": [
+        "ordered-roster-disjointness-authoritative-weights-and-sum-conservation",
+        "full-parent-model-optimizer-policy-key-parameter-context-binding",
+        "availability-and-authenticated-base-case-depth-obligations",
+        "separate-raw-object-and-final-artifact-ZK-and-total-per-step-finalization-work"
+      ],
+      "remaining": [
+        "existing-recursion-or-proof-aggregation-backend-integration",
+        "genuine-leaf-and-recursive-verification",
+        "complete-state-composition-and-depth-security-review",
+        "ZK-finalization-and-availability-implementation"
+      ],
+      "required_tests": [
+        "test_certificate_state_roster_weights_and_availability"
+      ]
+    },
+    {
+      "id": "FZK-M4-R041-CONTRACT-001",
+      "issue": 79,
+      "status": "specified-reference-checks-only",
+      "claim_ids": [],
+      "source_refs": [
+        "FZK-MS20261124-CH-008",
+        "FZK-MS20261124-CH-065",
+        "FZK-MS20261124-CH-066",
+        "FZK-MS20261124-CH-071",
+        "FZK-MS20261124-EX-033",
+        "FZK-MS20261124-EX-034",
+        "FZK-MS20261124-EX-039",
+        "FZK-MS20261124-SEC-h.q076h2gt0fzr",
+        "FZK-MS20261124-SEC-h.2zb564v0s5rk"
+      ],
+      "source_quality": "Selected prose inspected; chapter/exercise mappings are coverage locators. Equation-dependent claims remain pending-source-review. No book numerical values or theorem are asserted. References remain pinned to historical MS20261124; a later revision-token difference requires source-impact review before current-edition mapping.",
+      "requirements": [
+        "same-logical-global-cohort-through-direct-and-relay-routing",
+        "inventory-every-operator-and-coalition-view-before-any-reconstruction",
+        "no-clear-subgroup-release-under-global-only-policy",
+        "global-threshold-collusion-dropout-and-one-release-admission"
+      ],
+      "remaining": [
+        "protected-partial-payload-transport-and-recipient-backend",
+        "authenticated-global-accepted-ledger",
+        "full-topology-privacy-and-collusion-review",
+        "actual-transfer-cost-and-failure-recovery-experiments"
+      ],
+      "required_tests": [
+        "test_hierarchy_global_cohort_and_views",
+        "test_subgroup_outputs_expose_extra_information"
+      ]
+    }
+  ]
+}
