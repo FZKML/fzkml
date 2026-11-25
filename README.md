@@ -10,6 +10,12 @@ checks, a DCO check, and a source-distribution builder. No federated training,
 zero-knowledge proof system, or security guarantee is implemented or demonstrated.
 The research prototype is not production-ready or externally audited.
 
+The [M0 research registry](docs/research/README.md) records 80 chapter and 48
+exercise work mappings, selected manuscript prose claims, versioned deployment
+and measurement specifications, and explicit source-review gaps. Deterministic
+synthetic fixture generation and split checks are implemented. Training, proofs,
+protected aggregation and scientific benchmarking remain planned and untested.
+
 The first planned scientific workflow is a local, deterministic simulation of one
 federated learning round on synthetic inputs, followed by an explicitly specified
 verification relation and positive/negative test vectors. Privacy, proof cost,
