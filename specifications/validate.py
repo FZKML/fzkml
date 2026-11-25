@@ -7,6 +7,7 @@ import ast
 import hashlib
 import json
 import re
+import sys
 from collections import Counter
 from datetime import date
 from pathlib import Path, PurePosixPath
@@ -90,6 +91,11 @@ def schemas(root: Path) -> Registry[Any]:
         "claims/candidate-evidence-schema-v1.json",
         "specifications/m4/schema-v1.json",
         "specifications/m4/report-schema-v1.json",
+        "specifications/data_outcomes/schema-v1.json",
+        "specifications/data_outcomes/report-schema-v1.json",
+        "specifications/data_outcomes/factorial-schema-v1.json",
+        "specifications/data_outcomes/adoption-schema-v1.json",
+        "specifications/data_outcomes/sector-schema-v1.json",
     ):
         schema = read(root, name)
         Draft202012Validator.check_schema(schema)
@@ -336,6 +342,77 @@ def validate(root: Path = ROOT) -> Json:
     )
     nodes = check_source(root, source, manuscript)
     claims = indexed(registry["claims"], "id")
+    # Use this checker's own reviewed code, never code from the --root data input.
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
+    from specifications.data_outcomes.design import (
+        check_sector_source,
+        validate_adoption,
+        validate_factorial,
+    )
+
+    data_contract = read(root, "specifications/data_outcomes/contracts-v1.json")
+    check_schema(root, "specifications/data_outcomes/schema-v1.json", data_contract, local_schemas)
+    outcome_contracts = indexed(data_contract["contracts"], "id")
+    require(
+        len(outcome_contracts) == 5
+        and {row["issue"] for row in outcome_contracts.values()} == {101, 102, 103, 104, 105},
+        "incomplete data/outcome coverage",
+    )
+    require(
+        data_contract["source_version"] == trace["source_version"]
+        and data_contract["source_edition"] == manuscript["edition_id"],
+        "data/outcome source version mismatch",
+    )
+    source_review = read(root, data_contract["source_review"])
+    require(
+        source_review["source_version"] == trace["source_version"]
+        and source_review["observed_snapshot_revision"] == manuscript["observed_revision_id"]
+        and source_review["migration_status"] == "pending-source-impact-review"
+        and source_review["independent_review"] is False,
+        "data/outcome historical source inspection mismatch",
+    )
+    require(set(source_review["source_refs"]) <= nodes.keys(), "dangling outcome inspection source")
+    for section in source_review["source_sections"]:
+        sid = section["source_id"]
+        require(
+            sid in nodes
+            and nodes[sid]["kind"] == "section"
+            and section["range_utf16"][0] == nodes[sid]["location"]["start_utf16"]
+            and section["range_utf16"][1] > section["range_utf16"][0]
+            and section["tab_id"] == manuscript["tab_id"],
+            "outcome inspection locator mismatch",
+        )
+    required_file = local_file(root, "tests/test_data_outcomes.py")
+    outcome_tests = {
+        node.name
+        for node in ast.walk(ast.parse(required_file.read_text()))
+        if isinstance(node, ast.FunctionDef) and node.name.startswith("test_")
+    }
+    for row in outcome_contracts.values():
+        require(set(row["source_refs"]) <= nodes.keys(), "dangling data/outcome source reference")
+        require(set(row["affected_claim_ids"]) <= claims.keys(), "dangling affected outcome claim")
+        require(set(row["required_tests"]) <= outcome_tests, "missing data/outcome test")
+    for name, validator in (("factorial", validate_factorial), ("adoption", validate_adoption)):
+        plan = read(root, f"specifications/data_outcomes/{name}-v1.json")
+        check_schema(
+            root, f"specifications/data_outcomes/{name}-schema-v1.json", plan, local_schemas
+        )
+        validator(plan)
+        if name == "factorial":
+            checked_ref(root, {"path": plan["extends"], "sha256": plan["extends_sha256"]})
+    sector_cards = read(root, "specifications/data_outcomes/sector-cards-v1.json")
+    check_schema(
+        root, "specifications/data_outcomes/sector-schema-v1.json", sector_cards, local_schemas
+    )
+    cards = indexed(sector_cards["cards"], "id")
+    require(
+        {row["sector"] for row in cards.values()}
+        == {"healthcare", "fraud", "industrial", "drug-discovery"},
+        "incomplete sector coverage",
+    )
+    for card in cards.values():
+        check_sector_source(card)
     m4 = read(root, "specifications/m4/contracts-v1.json")
     check_schema(root, "specifications/m4/schema-v1.json", m4, local_schemas)
     contracts = indexed(m4["contracts"], "id")
@@ -635,6 +712,7 @@ def validate(root: Path = ROOT) -> Json:
         "declared_independent_reviews": reviewed_count,
         "candidate_external_records": len(candidate_records),
         "m4_contracts": len(contracts),
+        "data_outcome_contracts": len(outcome_contracts),
         "trust": "Metadata checked; external receipts/reviews require trusted verification.",
     }
 

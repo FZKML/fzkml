@@ -1,0 +1,111 @@
+{
+  "schema_version": "sector-cards-1.0.0",
+  "cards": [
+    {
+      "source_accessed": "2026-11-25",
+      "local_replication_status": "not-replicated",
+      "source_execution_status": "not-run-here",
+      "FZKML_deployment_outcome": false,
+      "data_adoption": "not-adopted",
+      "id": "exam-2021",
+      "sector": "healthcare",
+      "source_url": "https://dash.harvard.edu/server/api/core/bitstreams/6b7755b9-d34c-49b5-a67b-310167d6a6f1/content",
+      "canonical_publication": "https://doi.org/10.1038/s41591-021-01506-3",
+      "source_version": "Harvard author manuscript for Nature Medicine27:1735-1743(2021); Data Collection pp20-21, Data Table1 and Fig3 caption",
+      "inspection_scope": "Methods/data/table text inspected; publisher fetch blocked, author repository available.",
+      "population": {
+        "source_sites": 20,
+        "training_clients_max": 20,
+        "independent_test_sites": 3,
+        "selected_metric_sites": 18,
+        "physical_concurrent_participants": null,
+        "notes": "Twenty contributing training sites, client count up to20 by endpoint/connectivity. Three additional independent datasets: CDH,MVH,NCH. Eighteen in the selected figure is metric eligibility, not training/test allocation."
+      },
+      "endpoints": [
+        "24/72-hour oxygen-treatment prediction AUC; source performance, not patient-benefit or FZKML outcome"
+      ],
+      "data_access": "Private source data remain with institutions and are not public; no source data or code adopted.",
+      "deviations": "Synthetic pilot is a separate domain/endpoint/model and cannot reproduce this study."
+    },
+    {
+      "source_accessed": "2026-11-25",
+      "local_replication_status": "not-replicated",
+      "source_execution_status": "not-run-here",
+      "FZKML_deployment_outcome": false,
+      "data_adoption": "not-adopted",
+      "id": "starlit-v2",
+      "sector": "fraud",
+      "source_url": "https://arxiv.org/html/2401.10765v2",
+      "canonical_publication": "https://doi.org/10.48550/arXiv.2401.10765",
+      "source_version": "arXiv2401.10765v2,22Jan2024; sections10.1-10.2",
+      "inspection_scope": "Implementation/dataset description inspected; original code/data licenses and matching run configuration not adopted.",
+      "population": {
+        "source_sites": null,
+        "training_clients_max": null,
+        "independent_test_sites": null,
+        "selected_metric_sites": null,
+        "physical_concurrent_participants": null,
+        "notes": "Dataset represents transactions involving fifty institutions; that is not a verified physical deployment/client-concurrency count."
+      },
+      "endpoints": [
+        "Synthetic transaction/account data: fraud-detection performance and protocol costs, not deployed FZKML outcomes"
+      ],
+      "data_access": "Original provided synthetic datasets have not been obtained or licensed for this workstream.",
+      "deviations": "No fraud run performed; an unrelated industrial-shaped synthetic pilot supplies no fraud replication."
+    },
+    {
+      "source_accessed": "2026-11-25",
+      "local_replication_status": "not-replicated",
+      "source_execution_status": "not-run-here",
+      "FZKML_deployment_outcome": false,
+      "data_adoption": "not-adopted",
+      "id": "fedcmapss-v1",
+      "sector": "industrial",
+      "source_url": "https://arxiv.org/html/2608.26433v1",
+      "canonical_publication": "https://doi.org/10.48550/arXiv.2608.26433",
+      "source_version": "arXiv2608.26433v1,26Aug2026; sectionsIII-A/B/E andIV",
+      "inspection_scope": "Dataset/task/evaluation definitions inspected; no source implementation/data imported.",
+      "population": {
+        "source_sites": null,
+        "training_clients_max": null,
+        "independent_test_sites": null,
+        "selected_metric_sites": null,
+        "physical_concurrent_participants": null,
+        "notes": "C-MAPSS simulated engine trajectories. Task clients vary:10,4,10,6,85; ten random splits per task. Physical plants/workers and held-out institutions are not established by these simulated counts."
+      },
+      "endpoints": [
+        "RUL prediction RMSE and NASA Score on task-specific simulated trajectories"
+      ],
+      "data_access": "Source data/code terms and exact artifacts require separate review before adoption.",
+      "deviations": "Our rational synthetic regression pilot changes data/model/target; it is an original adaptation smoke test, not a reproduction or deployment result."
+    },
+    {
+      "source_accessed": "2026-11-25",
+      "local_replication_status": "not-replicated",
+      "source_execution_status": "not-run-here",
+      "FZKML_deployment_outcome": false,
+      "data_adoption": "not-adopted",
+      "id": "melloddy-jcim",
+      "sector": "drug-discovery",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11005050/",
+      "canonical_publication": "https://doi.org/10.1021/acs.jcim.3c00799",
+      "source_version": "JCIM64(7):2331-2344; abstract,Methods/discussion and Data Availability Statement",
+      "inspection_scope": "Partner count, task endpoints and private-data availability inspected; matching execution not performed.",
+      "population": {
+        "source_sites": 10,
+        "training_clients_max": 10,
+        "independent_test_sites": null,
+        "selected_metric_sites": null,
+        "physical_concurrent_participants": null,
+        "notes": "Ten pharma organizations; physical concurrency and a held-out-organization count are not established here."
+      },
+      "endpoints": [
+        "Partner/task-specific QSAR classification/regression comparisons, not clinical or FZKML outcomes"
+      ],
+      "data_access": "Underlying private QSAR datasets and derived models are not published by the source.",
+      "deviations": "No proprietary experiment reproduced; independent access/rights and task-matched artifacts would be required."
+    }
+  ],
+  "pilot_link": "specifications/data_outcomes/pilot.py",
+  "pilot_relationship": "original-synthetic-adaptation-not-source-replication"
+}

@@ -1,0 +1,190 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "const": "planned"
+    },
+    "training_runs_executed": {
+      "const": 0
+    },
+    "extends": {
+      "type": "string",
+      "minLength": 1
+    },
+    "extends_sha256": {
+      "type": "string",
+      "minLength": 1
+    },
+    "arms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 10000
+    },
+    "arm_meanings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "L": {
+          "type": "string",
+          "minLength": 1
+        },
+        "F": {
+          "type": "string",
+          "minLength": 1
+        },
+        "P": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Z": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "L",
+        "F",
+        "P",
+        "Z"
+      ]
+    },
+    "seeds": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 10000
+    },
+    "cells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "consumed_records": {
+            "type": "integer"
+          },
+          "source_diversity": {
+            "type": "integer"
+          },
+          "label_quality": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "consumed_records",
+          "source_diversity",
+          "label_quality"
+        ]
+      },
+      "maxItems": 10000
+    },
+    "controls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 10000
+    },
+    "batch_relation_status": {
+      "const": "pending"
+    },
+    "unique_entity_counts_required": {
+      "const": true
+    },
+    "primary_contrast": {
+      "type": "string",
+      "minLength": 1
+    },
+    "falsification_rule": {
+      "type": "string",
+      "minLength": 1
+    },
+    "missing_failure_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "endpoints": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 10000
+    },
+    "non_iid_control": {
+      "type": "string",
+      "minLength": 1
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "per_attempt_seconds": {
+          "type": "integer"
+        },
+        "attempts_per_seed": {
+          "type": "integer"
+        },
+        "cpu_workers_per_role": {
+          "type": "integer"
+        },
+        "bytes_per_worker": {
+          "type": "integer"
+        },
+        "gpu": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "per_attempt_seconds",
+        "attempts_per_seed",
+        "cpu_workers_per_role",
+        "bytes_per_worker",
+        "gpu"
+      ]
+    },
+    "inference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "readiness": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "version",
+    "status",
+    "training_runs_executed",
+    "extends",
+    "extends_sha256",
+    "arms",
+    "arm_meanings",
+    "seeds",
+    "cells",
+    "controls",
+    "batch_relation_status",
+    "unique_entity_counts_required",
+    "primary_contrast",
+    "falsification_rule",
+    "missing_failure_policy",
+    "endpoints",
+    "non_iid_control",
+    "budget",
+    "inference",
+    "readiness"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/specifications/data_outcomes/factorial-schema-v1.json"
+}

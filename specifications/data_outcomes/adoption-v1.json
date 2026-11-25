@@ -1,0 +1,34 @@
+{
+  "version": "adoption-1.0.0",
+  "status": "planned",
+  "recruitment_authorized": false,
+  "observations": [],
+  "claimed_effect": null,
+  "assignment_unit": "institution",
+  "comparison": [
+    "locality-only",
+    "secure-aggregate",
+    "verified-protected"
+  ],
+  "primary_outcome": "authorized-transferred-validated-novel-contribution",
+  "estimand": "ITT difference in probability of an authorized, actually transferred, validated novel contribution within proposed90days, comparing verified-protected offer to locality-only among pre-assignment consenting eligible institutions. Secondary secure-aggregate contrast is separate.",
+  "selection": "Define sampling frame and eligibility before assignment; obtain study consent before randomization. Report nonconsent/refusal and limits of generalizing beyond consenting institutions. Baseline authorized access/novelty inventory is fixed pre-offer.",
+  "assignment": "Stratified institution-level randomization by sector, size and baseline access readiness; record assignment probability and deviations. Three bundled offers identify bundle effects, not isolated privacy/verification mechanisms.",
+  "attrition": "Keep assigned denominators and reasons for refusal/withdrawal/cost. Distinguish known zero contributions from missing follow-up; report missingness bounds and sensitivity, not completer-only effects.",
+  "interference": "Shared governance, cross-institution collaboration and public offers can contaminate assignment; predefine clusters/network exposure and sensitivity analysis.",
+  "willingness_is_access": false,
+  "benefit_claim_status": "hypothesis",
+  "separate_outcomes": [
+    "willingness",
+    "consent",
+    "organizational authorization",
+    "actual transfer",
+    "novel protected entities/information",
+    "usable training contribution",
+    "held-out model utility",
+    "beneficiary/public benefit"
+  ],
+  "offer_review": "Each offer must specify actual versioned roles, views, costs, authorized release and supported guarantees. Do not promise unproved ZK/DP. Independent study/protocol/privacy and institutional approvals precede recruitment.",
+  "sample_size": "pending-feasibility-and-power-analysis; no institutions recruited or hypothetical willingness counted",
+  "generative_data": "Novel generated-data utility and beneficiary outcomes require distinct validation; remain hypotheses."
+}

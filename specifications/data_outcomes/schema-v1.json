@@ -1,0 +1,116 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "data-outcomes-contracts-1.0.0"
+    },
+    "source_edition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_review": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_promotion": {
+      "const": "none"
+    },
+    "contracts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "issue": {
+            "enum": [
+              101,
+              102,
+              103,
+              104,
+              105
+            ]
+          },
+          "status": {
+            "const": "specified-reference-or-study-design"
+          },
+          "affected_claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0,
+            "maxItems": 10000
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 10000
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 10000
+          },
+          "remaining": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 10000
+          },
+          "required_tests": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 10000
+          }
+        },
+        "required": [
+          "id",
+          "issue",
+          "status",
+          "affected_claim_ids",
+          "source_refs",
+          "requirements",
+          "remaining",
+          "required_tests"
+        ]
+      },
+      "minItems": 5,
+      "maxItems": 10000
+    }
+  },
+  "required": [
+    "schema_version",
+    "source_edition",
+    "source_version",
+    "source_review",
+    "claim_promotion",
+    "contracts"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/specifications/data_outcomes/schema-v1.json"
+}
