@@ -43,7 +43,7 @@ ACTIONS = {
 }
 
 
-def check_workflow(workflow: dict[str, Any]) -> None:
+def check_workflow(workflow: dict[str, Any], *, allow_history: bool = False) -> None:
     # BaseLoader preserves the YAML key 'on' and treats all scalar values as strings.
     triggers = workflow.get("on")
     require(isinstance(triggers, dict), "explicit-workflow-triggers-required")
@@ -107,7 +107,7 @@ def check_workflow(workflow: dict[str, Any]) -> None:
                 config = step.get("with", {})
                 if action.startswith("actions/checkout@"):
                     allowed = [{"persist-credentials": "false"}]
-                    if job_name in {"governance", "dco"}:
+                    if job_name in {"governance", "dco"} or allow_history:
                         allowed.append({"persist-credentials": "false", "fetch-depth": "0"})
                     require(config in allowed, "checkout-trust-boundary")
                 elif action.startswith("actions/setup-python@"):
@@ -155,4 +155,4 @@ def check_repository(directory: Path = ROOT / ".github" / "workflows") -> None:
                 continue
         workflow = yaml.load(data, Loader=yaml.BaseLoader)
         require(isinstance(workflow, dict), "workflow-shape")
-        check_workflow(workflow)
+        check_workflow(workflow, allow_history=path.name == "cpu.yml")

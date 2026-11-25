@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/ci/assurance/auth-native-schema-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "backend": {
+      "const": "ark-groth16-0.5.0-bn254"
+    },
+    "backend_mode": {
+      "const": "research-real"
+    },
+    "candidate": {
+      "enum": [
+        "positive",
+        "development",
+        "mock",
+        "substituted-key",
+        "forged-key-tag",
+        "fake-proof",
+        "changed-output",
+        "trailing-byte",
+        "skipped",
+        "unsupported",
+        "canceled"
+      ]
+    },
+    "nominal_exit_code": {
+      "const": 0
+    },
+    "candidate_accepted": {
+      "type": "boolean"
+    },
+    "controller_key_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "parameters_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "actual_output": {
+      "const": 9
+    },
+    "actual_proof_bytes": {
+      "const": 128
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "case": {
+            "enum": [
+              "positive",
+              "development",
+              "mock",
+              "substituted-key",
+              "forged-key-tag",
+              "fake-proof",
+              "changed-output",
+              "trailing-byte",
+              "skipped",
+              "unsupported",
+              "canceled"
+            ]
+          },
+          "nominal_exit_code": {
+            "const": 0
+          },
+          "mode": {
+            "enum": [
+              "research-real",
+              "development",
+              "mock"
+            ]
+          },
+          "status": {
+            "enum": [
+              "executed",
+              "skipped",
+              "unsupported",
+              "canceled"
+            ]
+          },
+          "accepted": {
+            "type": "boolean"
+          },
+          "native_verifier_called": {
+            "type": "boolean"
+          },
+          "verification_seconds": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 120
+          },
+          "proof_bytes": {
+            "type": "integer",
+            "minimum": 128,
+            "maximum": 129
+          },
+          "declared_key_digest": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "key_matches_controller": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "case",
+          "nominal_exit_code",
+          "mode",
+          "status",
+          "accepted",
+          "native_verifier_called",
+          "verification_seconds",
+          "proof_bytes",
+          "declared_key_digest",
+          "key_matches_controller"
+        ]
+      },
+      "minItems": 11,
+      "maxItems": 11
+    },
+    "setup_seconds": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 120
+    },
+    "witness_seconds": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 120
+    },
+    "prove_seconds": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 120
+    },
+    "negative_setup_and_prove_seconds": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 120
+    },
+    "contract_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "program_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "dependency_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "core_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      },
+      "minItems": 1,
+      "maxItems": 10
+    }
+  },
+  "required": [
+    "version",
+    "backend",
+    "backend_mode",
+    "candidate",
+    "nominal_exit_code",
+    "candidate_accepted",
+    "controller_key_digest",
+    "parameters_digest",
+    "actual_output",
+    "actual_proof_bytes",
+    "cases",
+    "setup_seconds",
+    "witness_seconds",
+    "prove_seconds",
+    "negative_setup_and_prove_seconds",
+    "contract_digest",
+    "program_digest",
+    "dependency_digest",
+    "core_digest",
+    "limitations"
+  ]
+}

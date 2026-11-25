@@ -1,0 +1,782 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/ci/assurance/evidence-index-schema-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "issue": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "source_commit": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "edition": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "source_version": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "canonical_book": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "generator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "sha256": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "source_commit": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "source_commit"
+      ]
+    },
+    "inputs": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "source_commit": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "sha256": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "url": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "path",
+          "source_commit",
+          "sha256",
+          "url"
+        ]
+      }
+    },
+    "coverage": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "number": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "status": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "source_review": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "extraction_status": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "source_url": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "claim_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": false
+              },
+              "planned_issues": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "evidence_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": false
+              },
+              "reason": {
+                "type": "string",
+                "maxLength": 1000
+              }
+            },
+            "required": [
+              "kind",
+              "number",
+              "title",
+              "status",
+              "source_review",
+              "extraction_status",
+              "source_url",
+              "claim_ids",
+              "planned_issues",
+              "evidence_ids",
+              "reason"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "number": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "status": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "source_review": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "extraction_status": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "source_url": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "claim_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              },
+              "planned_issues": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "evidence_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              },
+              "reason": {
+                "type": "string",
+                "maxLength": 1000
+              }
+            },
+            "required": [
+              "kind",
+              "number",
+              "title",
+              "status",
+              "source_review",
+              "extraction_status",
+              "source_url",
+              "claim_ids",
+              "planned_issues",
+              "evidence_ids",
+              "reason"
+            ]
+          }
+        ]
+      }
+    },
+    "claims": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "source": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "edition": {
+                    "type": "string",
+                    "maxLength": 1000
+                  },
+                  "chapter": {
+                    "type": "integer"
+                  },
+                  "section": {
+                    "type": "string",
+                    "maxLength": 1000
+                  },
+                  "equation": {
+                    "type": "string",
+                    "maxLength": 1000
+                  },
+                  "version": {
+                    "type": "string",
+                    "maxLength": 1000
+                  }
+                },
+                "required": [
+                  "edition",
+                  "chapter",
+                  "section",
+                  "equation",
+                  "version"
+                ]
+              },
+              "status": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "statement": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "declared_evidence_class": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "relation_id": {
+                "type": "null"
+              },
+              "scope": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "assumptions": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              },
+              "limitations": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              },
+              "evidence_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              },
+              "formal_artifact_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": false
+              },
+              "independent_review_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": false
+              }
+            },
+            "required": [
+              "id",
+              "source",
+              "status",
+              "statement",
+              "declared_evidence_class",
+              "relation_id",
+              "scope",
+              "assumptions",
+              "limitations",
+              "evidence_ids",
+              "formal_artifact_ids",
+              "independent_review_ids"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "source": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "edition": {
+                    "type": "string",
+                    "maxLength": 1000
+                  },
+                  "chapter": {
+                    "type": "integer"
+                  },
+                  "section": {
+                    "type": "string",
+                    "maxLength": 1000
+                  },
+                  "equation": {
+                    "type": "string",
+                    "maxLength": 1000
+                  },
+                  "version": {
+                    "type": "string",
+                    "maxLength": 1000
+                  }
+                },
+                "required": [
+                  "edition",
+                  "chapter",
+                  "section",
+                  "equation",
+                  "version"
+                ]
+              },
+              "status": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "statement": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "declared_evidence_class": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "relation_id": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "scope": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "assumptions": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              },
+              "limitations": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              },
+              "evidence_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              },
+              "formal_artifact_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": false
+              },
+              "independent_review_ids": {
+                "type": "array",
+                "maxItems": 128,
+                "items": false
+              }
+            },
+            "required": [
+              "id",
+              "source",
+              "status",
+              "statement",
+              "declared_evidence_class",
+              "relation_id",
+              "scope",
+              "assumptions",
+              "limitations",
+              "evidence_ids",
+              "formal_artifact_ids",
+              "independent_review_ids"
+            ]
+          }
+        ]
+      }
+    },
+    "reporting_fixture_cases": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "status": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "timeout": {
+            "type": "boolean"
+          },
+          "requirement": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "timeout",
+          "requirement"
+        ]
+      }
+    },
+    "reporting_fixture_classification": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "replication_cards": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "execution_status": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "source_url": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "mode": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "missing": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "id",
+          "execution_status",
+          "source_url",
+          "mode",
+          "missing"
+        ]
+      }
+    },
+    "classes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ci_conformance": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "empirical_field_study": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "mathematical_derivations": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "security_arguments": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "independent_review": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "ci_conformance",
+        "empirical_field_study",
+        "mathematical_derivations",
+        "security_arguments",
+        "independent_review"
+      ]
+    },
+    "candidate_results": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "producer": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "source_commit": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "state": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "ci_run": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "configuration": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "fixture": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "fixture_digest": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "artifact_policy": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "hardware_provenance": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "uncertainty": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "producer",
+          "source_commit",
+          "state",
+          "ci_run",
+          "configuration",
+          "fixture",
+          "fixture_digest",
+          "artifact_policy",
+          "hardware_provenance",
+          "uncertainty"
+        ]
+      }
+    },
+    "corrections": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "status": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "scope": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "evidence": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "book_source_claim_status_changed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "scope",
+          "evidence",
+          "book_source_claim_status_changed"
+        ]
+      }
+    },
+    "publication_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "approved": {
+          "type": "boolean"
+        },
+        "canonical_manuscript_edited": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "approved",
+        "canonical_manuscript_edited"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "string",
+        "maxLength": 1000
+      }
+    },
+    "ci_execution_ledger_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "ci_execution_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "classification",
+        "observations"
+      ],
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "classification": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "observations": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "purpose",
+              "run_id",
+              "source_commit",
+              "checkout_commit",
+              "url",
+              "outcome"
+            ],
+            "properties": {
+              "purpose": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "run_id": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "source_commit": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{40}$"
+              },
+              "checkout_commit": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{40}$"
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https://github.com/FZKML/fzkml/actions/runs/[0-9]+$"
+              },
+              "outcome": {
+                "enum": [
+                  "success",
+                  "failure",
+                  "cancelled",
+                  "in_progress"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "version",
+    "issue",
+    "status",
+    "source_commit",
+    "edition",
+    "source_version",
+    "canonical_book",
+    "generator",
+    "inputs",
+    "coverage",
+    "claims",
+    "reporting_fixture_cases",
+    "reporting_fixture_classification",
+    "replication_cards",
+    "classes",
+    "candidate_results",
+    "corrections",
+    "publication_review",
+    "limitations",
+    "ci_execution_ledger",
+    "ci_execution_ledger_digest"
+  ]
+}

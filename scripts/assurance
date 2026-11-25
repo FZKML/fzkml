@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+export CARGO_BUILD_JOBS=2 RAYON_NUM_THREADS=2 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2
+case "${1:-}" in
+  golden|proof|benchmark)
+    cargo build --release --locked -p fzkml-assurance -p fzkml-core --bin fzkml-assurance --bin fzkml-contract
+    ;;
+  report|review-check) ;;
+  *) echo 'fixed assurance subcommand required' >&2; exit 2 ;;
+esac
+PYTHONPATH=.:src uv run --locked python -m fzkml_assurance "$@"

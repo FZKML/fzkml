@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/ci/assurance/golden-run-schema-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "issue": {
+      "const": 109
+    },
+    "status": {
+      "enum": [
+        "running",
+        "completed",
+        "failed"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "source_dirty": {
+          "type": "boolean"
+        },
+        "execution_kind": {
+          "enum": [
+            "local",
+            "github-actions"
+          ]
+        },
+        "workflow_run": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            }
+          ]
+        },
+        "workflow_ref": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          ]
+        },
+        "python": {
+          "const": "3.11.14"
+        },
+        "rust": {
+          "const": "1.85.1"
+        },
+        "uv": {
+          "const": "0.9.11"
+        },
+        "hardware": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "architecture": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "os": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "logical_cpus": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              ]
+            },
+            "execution_hosts": {
+              "const": 1
+            },
+            "physical_hardware_inventory": {
+              "const": "not-verified"
+            },
+            "accelerator": {
+              "const": "none"
+            },
+            "processor": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "memory_bytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000000000000000
+            },
+            "runner_image_revision": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          },
+          "required": [
+            "architecture",
+            "os",
+            "logical_cpus",
+            "execution_hosts",
+            "physical_hardware_inventory",
+            "accelerator",
+            "processor",
+            "memory_bytes",
+            "runner_image_revision"
+          ]
+        },
+        "dependency_digest": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "source_commit",
+        "source_dirty",
+        "execution_kind",
+        "workflow_run",
+        "workflow_ref",
+        "python",
+        "rust",
+        "uv",
+        "hardware",
+        "dependency_digest"
+      ]
+    },
+    "fixture": {
+      "const": "assets/public/ci14-golden-v1.json"
+    },
+    "fixture_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "case": {
+            "enum": [
+              "positive",
+              "rounding-tie",
+              "negative-division",
+              "byte-order"
+            ]
+          },
+          "status": {
+            "enum": [
+              "accepted",
+              "rejected-as-required"
+            ]
+          },
+          "counts": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "rounding": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 2048
+              },
+              "signed": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 2048
+              },
+              "batches": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 2048
+              },
+              "invalid_i64": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 2048
+              },
+              "invalid_batches": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 2048
+              }
+            },
+            "required": []
+          },
+          "counterexample": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "operation": {
+                "enum": [
+                  "round",
+                  "field"
+                ]
+              },
+              "case": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "native_exit_code": {
+                "type": "integer"
+              },
+              "expected_digest": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "observed_digest": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "operation",
+              "case",
+              "native_exit_code",
+              "expected_digest",
+              "observed_digest"
+            ]
+          }
+        },
+        "required": [
+          "case",
+          "status",
+          "counts"
+        ]
+      },
+      "maxItems": 4
+    },
+    "failure": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "operation": {
+              "enum": [
+                "round",
+                "field"
+              ]
+            },
+            "case": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "native_exit_code": {
+              "type": "integer"
+            },
+            "expected_digest": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "observed_digest": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "operation",
+            "case",
+            "native_exit_code",
+            "expected_digest",
+            "observed_digest"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "const": "execution-or-determinism-failure"
+            }
+          },
+          "required": [
+            "code"
+          ]
+        }
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      },
+      "maxItems": 10
+    }
+  },
+  "required": [
+    "version",
+    "issue",
+    "status",
+    "provenance",
+    "fixture",
+    "fixture_digest",
+    "outcomes",
+    "failure",
+    "limitations"
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/ci/assurance/golden-schema-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "ci14-1.0.0"
+    },
+    "relation": {
+      "const": "fzknum-1.0.0"
+    },
+    "field": {
+      "const": "bn254-scalar-Fr"
+    },
+    "modulus": {
+      "const": "21888242871839275222246405745257275088548364400416034343698204186575808495617"
+    },
+    "signed_encoding": {
+      "const": "i64-twos-complement-little-endian"
+    },
+    "field_encoding": {
+      "const": "canonical-32-byte-little-endian"
+    },
+    "rounding": {
+      "const": "nearest-ties-to-even-euclidean-division"
+    },
+    "input_domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "w_min": {
+          "const": -32
+        },
+        "w_max": {
+          "const": 32
+        },
+        "x_y_min": {
+          "const": -32
+        },
+        "x_y_max": {
+          "const": 32
+        },
+        "count_min": {
+          "const": 1
+        },
+        "count_max": {
+          "const": 4
+        },
+        "clients": {
+          "const": 3
+        },
+        "scale": {
+          "const": 16
+        }
+      },
+      "required": [
+        "w_min",
+        "w_max",
+        "x_y_min",
+        "x_y_max",
+        "count_min",
+        "count_max",
+        "clients",
+        "scale"
+      ]
+    },
+    "seed": {
+      "const": 20261125
+    },
+    "contract_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "oracle_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "generator_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "classification": {
+      "const": "original-implementation-vectors-not-book-numerical-transcription"
+    },
+    "rounding_vectors": {
+      "type": "array",
+      "minItems": 1040,
+      "maxItems": 1040,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "n": {
+            "type": "integer",
+            "minimum": -32,
+            "maximum": 32
+          },
+          "d": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 16
+          },
+          "floor": {
+            "type": "integer"
+          },
+          "remainder": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 15
+          },
+          "rounded": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "n",
+          "d",
+          "floor",
+          "remainder",
+          "rounded"
+        ]
+      }
+    },
+    "signed_vectors": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "integer": {
+            "type": "integer",
+            "minimum": -9223372036854775808,
+            "maximum": 9223372036854775807
+          },
+          "signed_le_hex": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{16}$"
+          },
+          "field_decimal": {
+            "type": "string",
+            "pattern": "^[0-9]{1,77}$"
+          },
+          "field_le_hex": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "integer",
+          "signed_le_hex",
+          "field_decimal",
+          "field_le_hex"
+        ]
+      }
+    },
+    "batch_vectors": {
+      "type": "array",
+      "minItems": 36,
+      "maxItems": 36,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "canonical_hex": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{168}$"
+          },
+          "expected": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "predictions": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "gradients": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "updates": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "numerator": {
+                "type": "integer"
+              },
+              "denominator": {
+                "type": "integer"
+              },
+              "output": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "predictions",
+              "gradients",
+              "updates",
+              "numerator",
+              "denominator",
+              "output"
+            ]
+          }
+        },
+        "required": [
+          "canonical_hex",
+          "expected"
+        ]
+      }
+    },
+    "invalid_i64": {
+      "const": [
+        "9223372036854775808",
+        "-9223372036854775809",
+        "NaN",
+        "inf",
+        "1.0"
+      ]
+    },
+    "invalid_batch_hex": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "string",
+        "pattern": "^([a-f0-9]{2}){83,85}$"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "relation",
+    "field",
+    "modulus",
+    "signed_encoding",
+    "field_encoding",
+    "rounding",
+    "input_domain",
+    "seed",
+    "contract_digest",
+    "oracle_digest",
+    "generator_digest",
+    "classification",
+    "rounding_vectors",
+    "signed_vectors",
+    "batch_vectors",
+    "invalid_i64",
+    "invalid_batch_hex"
+  ]
+}

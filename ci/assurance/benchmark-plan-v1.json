@@ -1,0 +1,52 @@
+{
+  "version": "ci106-1.0.0",
+  "fixture": "original-public-fzknum-w8-three-client",
+  "quality_threshold": "1/9",
+  "holdout": {
+    "x": [
+      -12,
+      12
+    ],
+    "y": [
+      -12,
+      12
+    ],
+    "classification": "disjoint-original-toy-not-population-generalization"
+  },
+  "max_workers": 2,
+  "max_repetitions": 2,
+  "client_profiles": [
+    "same-host-normal",
+    "emulated-slow",
+    "injected-timeout"
+  ],
+  "protected_unproved_arm": "unavailable",
+  "physical_hardware_inventory": "only-one-execution-host-observed; no heterogeneous physical-device study",
+  "comparison_policy": "No security/DP-mismatched speedup; all raw failed clients retained.",
+  "publication_review": {
+    "approved": false
+  },
+  "training": {
+    "w": 8,
+    "x": [
+      16,
+      -8,
+      24
+    ],
+    "y": [
+      16,
+      -16,
+      8
+    ],
+    "counts": [
+      1,
+      2,
+      1
+    ]
+  },
+  "quality_semantics": "mean-squared-decoded-error-of-RNE-encoded-predictions",
+  "allowed_hardware": [
+    "local-cpu",
+    "github-hosted-cpu"
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/ci/assurance/authenticity-run-schema-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "issue": {
+      "const": 110
+    },
+    "status": {
+      "enum": [
+        "running",
+        "completed",
+        "failed"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "source_dirty": {
+          "type": "boolean"
+        },
+        "execution_kind": {
+          "enum": [
+            "local",
+            "github-actions"
+          ]
+        },
+        "workflow_run": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            }
+          ]
+        },
+        "workflow_ref": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          ]
+        },
+        "python": {
+          "const": "3.11.14"
+        },
+        "rust": {
+          "const": "1.85.1"
+        },
+        "uv": {
+          "const": "0.9.11"
+        },
+        "hardware": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "architecture": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "os": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "logical_cpus": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              ]
+            },
+            "execution_hosts": {
+              "const": 1
+            },
+            "physical_hardware_inventory": {
+              "const": "not-verified"
+            },
+            "accelerator": {
+              "const": "none"
+            },
+            "processor": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "memory_bytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000000000000000
+            },
+            "runner_image_revision": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          },
+          "required": [
+            "architecture",
+            "os",
+            "logical_cpus",
+            "execution_hosts",
+            "physical_hardware_inventory",
+            "accelerator",
+            "processor",
+            "memory_bytes",
+            "runner_image_revision"
+          ]
+        },
+        "dependency_digest": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "source_commit",
+        "source_dirty",
+        "execution_kind",
+        "workflow_run",
+        "workflow_ref",
+        "python",
+        "rust",
+        "uv",
+        "hardware",
+        "dependency_digest"
+      ]
+    },
+    "fixture": {
+      "const": "assets/public/ci15-candidate-v1.json"
+    },
+    "fixture_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "native": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "$id": "https://github.com/FZKML/fzkml/ci/assurance/auth-native-schema-v1.json",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "version": {
+              "const": 1
+            },
+            "backend": {
+              "const": "ark-groth16-0.5.0-bn254"
+            },
+            "backend_mode": {
+              "const": "research-real"
+            },
+            "candidate": {
+              "enum": [
+                "positive",
+                "development",
+                "mock",
+                "substituted-key",
+                "forged-key-tag",
+                "fake-proof",
+                "changed-output",
+                "trailing-byte",
+                "skipped",
+                "unsupported",
+                "canceled"
+              ]
+            },
+            "nominal_exit_code": {
+              "const": 0
+            },
+            "candidate_accepted": {
+              "type": "boolean"
+            },
+            "controller_key_digest": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "parameters_digest": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "actual_output": {
+              "const": 9
+            },
+            "actual_proof_bytes": {
+              "const": 128
+            },
+            "cases": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "case": {
+                    "enum": [
+                      "positive",
+                      "development",
+                      "mock",
+                      "substituted-key",
+                      "forged-key-tag",
+                      "fake-proof",
+                      "changed-output",
+                      "trailing-byte",
+                      "skipped",
+                      "unsupported",
+                      "canceled"
+                    ]
+                  },
+                  "nominal_exit_code": {
+                    "const": 0
+                  },
+                  "mode": {
+                    "enum": [
+                      "research-real",
+                      "development",
+                      "mock"
+                    ]
+                  },
+                  "status": {
+                    "enum": [
+                      "executed",
+                      "skipped",
+                      "unsupported",
+                      "canceled"
+                    ]
+                  },
+                  "accepted": {
+                    "type": "boolean"
+                  },
+                  "native_verifier_called": {
+                    "type": "boolean"
+                  },
+                  "verification_seconds": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 120
+                  },
+                  "proof_bytes": {
+                    "type": "integer",
+                    "minimum": 128,
+                    "maximum": 129
+                  },
+                  "declared_key_digest": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "key_matches_controller": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "case",
+                  "nominal_exit_code",
+                  "mode",
+                  "status",
+                  "accepted",
+                  "native_verifier_called",
+                  "verification_seconds",
+                  "proof_bytes",
+                  "declared_key_digest",
+                  "key_matches_controller"
+                ]
+              },
+              "minItems": 11,
+              "maxItems": 11
+            },
+            "setup_seconds": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 120
+            },
+            "witness_seconds": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 120
+            },
+            "prove_seconds": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 120
+            },
+            "negative_setup_and_prove_seconds": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 120
+            },
+            "contract_digest": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "program_digest": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "dependency_digest": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "core_digest": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "limitations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "minItems": 1,
+              "maxItems": 10
+            }
+          },
+          "required": [
+            "version",
+            "backend",
+            "backend_mode",
+            "candidate",
+            "nominal_exit_code",
+            "candidate_accepted",
+            "controller_key_digest",
+            "parameters_digest",
+            "actual_output",
+            "actual_proof_bytes",
+            "cases",
+            "setup_seconds",
+            "witness_seconds",
+            "prove_seconds",
+            "negative_setup_and_prove_seconds",
+            "contract_digest",
+            "program_digest",
+            "dependency_digest",
+            "core_digest",
+            "limitations"
+          ]
+        }
+      ]
+    },
+    "actual_process_exit": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "seconds": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 240
+        }
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      },
+      "maxItems": 10
+    }
+  },
+  "required": [
+    "version",
+    "issue",
+    "status",
+    "provenance",
+    "fixture",
+    "fixture_digest",
+    "native",
+    "actual_process_exit",
+    "seconds",
+    "limitations"
+  ]
+}

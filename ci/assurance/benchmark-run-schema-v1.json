@@ -1,0 +1,868 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/ci/assurance/benchmark-run-schema-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "issue": {
+      "const": 106
+    },
+    "status": {
+      "enum": [
+        "running",
+        "failed",
+        "completed-diagnostic-field-study-not-run"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "source_dirty": {
+          "type": "boolean"
+        },
+        "execution_kind": {
+          "enum": [
+            "local",
+            "github-actions"
+          ]
+        },
+        "workflow_run": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            }
+          ]
+        },
+        "workflow_ref": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          ]
+        },
+        "python": {
+          "const": "3.11.14"
+        },
+        "rust": {
+          "const": "1.85.1"
+        },
+        "uv": {
+          "const": "0.9.11"
+        },
+        "hardware": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "architecture": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "os": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "logical_cpus": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              ]
+            },
+            "execution_hosts": {
+              "const": 1
+            },
+            "physical_hardware_inventory": {
+              "const": "not-verified"
+            },
+            "accelerator": {
+              "const": "none"
+            },
+            "processor": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "memory_bytes": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000000000000000
+            },
+            "runner_image_revision": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          },
+          "required": [
+            "architecture",
+            "os",
+            "logical_cpus",
+            "execution_hosts",
+            "physical_hardware_inventory",
+            "accelerator",
+            "processor",
+            "memory_bytes",
+            "runner_image_revision"
+          ]
+        },
+        "dependency_digest": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "source_commit",
+        "source_dirty",
+        "execution_kind",
+        "workflow_run",
+        "workflow_ref",
+        "python",
+        "rust",
+        "uv",
+        "hardware",
+        "dependency_digest"
+      ]
+    },
+    "fixture_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "model_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "preprocessor_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "relation_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "dataset_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "program_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "field_study_status": {
+      "const": "not-run"
+    },
+    "heterogeneous_physical_devices": {
+      "const": "not-inventoried"
+    },
+    "maximum_concurrent_worker_processes": {
+      "const": 2
+    },
+    "remote_physical_clients": {
+      "const": 0
+    },
+    "energy_joules": {
+      "type": "null"
+    },
+    "monetary_cost": {
+      "type": "null"
+    },
+    "real_network_bytes": {
+      "type": "null"
+    },
+    "privacy_budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "const": "not-implemented"
+        },
+        "epsilon": {
+          "type": "null"
+        },
+        "delta": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "status",
+        "epsilon",
+        "delta"
+      ]
+    },
+    "publication_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "approved": {
+          "const": false
+        }
+      },
+      "required": [
+        "approved"
+      ]
+    },
+    "repetitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "status": {
+            "enum": [
+              "running",
+              "failed",
+              "completed-diagnostic"
+            ]
+          },
+          "arms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "arm": {
+                  "enum": [
+                    "local",
+                    "fl",
+                    "protected-fl",
+                    "proved-fl"
+                  ]
+                },
+                "status": {
+                  "enum": [
+                    "not-run",
+                    "running",
+                    "inconclusive",
+                    "completed-diagnostic"
+                  ]
+                },
+                "scope": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                },
+                "requested_local_only_training": {
+                  "const": "not-run"
+                },
+                "sample": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "status": {
+                      "enum": [
+                        "completed",
+                        "failed",
+                        "timeout"
+                      ]
+                    },
+                    "exit_code": {
+                      "type": "integer"
+                    },
+                    "wall_seconds": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 240
+                    },
+                    "queue_seconds": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 240
+                    },
+                    "cpu_seconds": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 240
+                    },
+                    "peak_process_rss_bytes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "stdin_bytes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "stdout_bytes": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  },
+                  "required": [
+                    "status",
+                    "exit_code",
+                    "wall_seconds",
+                    "queue_seconds",
+                    "cpu_seconds",
+                    "peak_process_rss_bytes",
+                    "stdin_bytes",
+                    "stdout_bytes"
+                  ]
+                },
+                "output": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "quality_squared_loss": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 1000
+                    }
+                  ]
+                },
+                "numeric_time_to_quality_seconds": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 240
+                    }
+                  ]
+                },
+                "certified_time_to_quality_seconds": {
+                  "type": "null"
+                },
+                "scenarios": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "scenario": {
+                        "enum": [
+                          "normal",
+                          "injected-timeout"
+                        ]
+                      },
+                      "status": {
+                        "enum": [
+                          "inconclusive",
+                          "completed"
+                        ]
+                      },
+                      "selected": {
+                        "const": 3
+                      },
+                      "accepted": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 3
+                      },
+                      "accepted_sources": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1000
+                        },
+                        "maxItems": 3
+                      },
+                      "excluded_sources": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 1000
+                        },
+                        "maxItems": 3
+                      },
+                      "clients": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "status": {
+                              "enum": [
+                                "completed",
+                                "failed",
+                                "timeout"
+                              ]
+                            },
+                            "exit_code": {
+                              "type": "integer"
+                            },
+                            "wall_seconds": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 240
+                            },
+                            "queue_seconds": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 240
+                            },
+                            "cpu_seconds": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 240
+                            },
+                            "peak_process_rss_bytes": {
+                              "type": "integer",
+                              "minimum": 0
+                            },
+                            "stdin_bytes": {
+                              "type": "integer",
+                              "minimum": 0
+                            },
+                            "stdout_bytes": {
+                              "type": "integer",
+                              "minimum": 0
+                            },
+                            "client": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 1000
+                            },
+                            "source": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 1000
+                            },
+                            "virtual_profile": {
+                              "enum": [
+                                "emulated-slow",
+                                "same-host-normal"
+                              ]
+                            },
+                            "emulated_delay_ms": {
+                              "enum": [
+                                0,
+                                10,
+                                200
+                              ]
+                            },
+                            "update": {
+                              "anyOf": [
+                                {
+                                  "type": "null"
+                                },
+                                {
+                                  "type": "integer",
+                                  "minimum": -80,
+                                  "maximum": 80
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "status",
+                            "exit_code",
+                            "wall_seconds",
+                            "queue_seconds",
+                            "cpu_seconds",
+                            "peak_process_rss_bytes",
+                            "stdin_bytes",
+                            "stdout_bytes",
+                            "client",
+                            "source",
+                            "virtual_profile",
+                            "emulated_delay_ms",
+                            "update"
+                          ]
+                        },
+                        "maxItems": 3
+                      },
+                      "output": {
+                        "anyOf": [
+                          {
+                            "type": "null"
+                          },
+                          {
+                            "type": "integer"
+                          }
+                        ]
+                      },
+                      "quality_squared_loss": {
+                        "anyOf": [
+                          {
+                            "type": "null"
+                          },
+                          {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 1000
+                          }
+                        ]
+                      },
+                      "numeric_time_to_quality_seconds": {
+                        "anyOf": [
+                          {
+                            "type": "null"
+                          },
+                          {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 240
+                          }
+                        ]
+                      },
+                      "certified_time_to_quality_seconds": {
+                        "type": "null"
+                      }
+                    },
+                    "required": [
+                      "scenario",
+                      "status",
+                      "selected",
+                      "accepted",
+                      "accepted_sources",
+                      "excluded_sources",
+                      "clients",
+                      "output",
+                      "quality_squared_loss",
+                      "numeric_time_to_quality_seconds",
+                      "certified_time_to_quality_seconds"
+                    ]
+                  },
+                  "maxItems": 2
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                },
+                "native": {
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "$id": "https://github.com/FZKML/fzkml/ci/assurance/auth-native-schema-v1.json",
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "version": {
+                      "const": 1
+                    },
+                    "backend": {
+                      "const": "ark-groth16-0.5.0-bn254"
+                    },
+                    "backend_mode": {
+                      "const": "research-real"
+                    },
+                    "candidate": {
+                      "enum": [
+                        "positive",
+                        "development",
+                        "mock",
+                        "substituted-key",
+                        "forged-key-tag",
+                        "fake-proof",
+                        "changed-output",
+                        "trailing-byte",
+                        "skipped",
+                        "unsupported",
+                        "canceled"
+                      ]
+                    },
+                    "nominal_exit_code": {
+                      "const": 0
+                    },
+                    "candidate_accepted": {
+                      "type": "boolean"
+                    },
+                    "controller_key_digest": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "parameters_digest": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "actual_output": {
+                      "const": 9
+                    },
+                    "actual_proof_bytes": {
+                      "const": 128
+                    },
+                    "cases": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "case": {
+                            "enum": [
+                              "positive",
+                              "development",
+                              "mock",
+                              "substituted-key",
+                              "forged-key-tag",
+                              "fake-proof",
+                              "changed-output",
+                              "trailing-byte",
+                              "skipped",
+                              "unsupported",
+                              "canceled"
+                            ]
+                          },
+                          "nominal_exit_code": {
+                            "const": 0
+                          },
+                          "mode": {
+                            "enum": [
+                              "research-real",
+                              "development",
+                              "mock"
+                            ]
+                          },
+                          "status": {
+                            "enum": [
+                              "executed",
+                              "skipped",
+                              "unsupported",
+                              "canceled"
+                            ]
+                          },
+                          "accepted": {
+                            "type": "boolean"
+                          },
+                          "native_verifier_called": {
+                            "type": "boolean"
+                          },
+                          "verification_seconds": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 120
+                          },
+                          "proof_bytes": {
+                            "type": "integer",
+                            "minimum": 128,
+                            "maximum": 129
+                          },
+                          "declared_key_digest": {
+                            "type": "string",
+                            "pattern": "^[a-f0-9]{64}$"
+                          },
+                          "key_matches_controller": {
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "case",
+                          "nominal_exit_code",
+                          "mode",
+                          "status",
+                          "accepted",
+                          "native_verifier_called",
+                          "verification_seconds",
+                          "proof_bytes",
+                          "declared_key_digest",
+                          "key_matches_controller"
+                        ]
+                      },
+                      "minItems": 11,
+                      "maxItems": 11
+                    },
+                    "setup_seconds": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 120
+                    },
+                    "witness_seconds": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 120
+                    },
+                    "prove_seconds": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 120
+                    },
+                    "negative_setup_and_prove_seconds": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 120
+                    },
+                    "contract_digest": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "program_digest": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "dependency_digest": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "core_digest": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "limitations": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 1000
+                      },
+                      "minItems": 1,
+                      "maxItems": 10
+                    }
+                  },
+                  "required": [
+                    "version",
+                    "backend",
+                    "backend_mode",
+                    "candidate",
+                    "nominal_exit_code",
+                    "candidate_accepted",
+                    "controller_key_digest",
+                    "parameters_digest",
+                    "actual_output",
+                    "actual_proof_bytes",
+                    "cases",
+                    "setup_seconds",
+                    "witness_seconds",
+                    "prove_seconds",
+                    "negative_setup_and_prove_seconds",
+                    "contract_digest",
+                    "program_digest",
+                    "dependency_digest",
+                    "core_digest",
+                    "limitations"
+                  ]
+                },
+                "certified_time_to_toy_quality_seconds": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 240
+                }
+              },
+              "required": [
+                "arm",
+                "status"
+              ]
+            },
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "index",
+          "status",
+          "arms"
+        ]
+      },
+      "maxItems": 2
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      },
+      "maxItems": 10
+    },
+    "comparison_eligible": {
+      "const": false
+    },
+    "separate_simulator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "deterministic-discrete-event"
+        },
+        "physical_clients": {
+          "const": 0
+        },
+        "outcomes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "client": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "status": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "simulated_latency": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              }
+            },
+            "required": [
+              "client",
+              "status",
+              "simulated_latency"
+            ]
+          },
+          "maxItems": 4
+        }
+      },
+      "required": [
+        "kind",
+        "physical_clients",
+        "outcomes"
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "issue",
+    "status",
+    "provenance",
+    "fixture_digest",
+    "model_digest",
+    "preprocessor_digest",
+    "relation_digest",
+    "dataset_digest",
+    "program_digest",
+    "field_study_status",
+    "heterogeneous_physical_devices",
+    "maximum_concurrent_worker_processes",
+    "remote_physical_clients",
+    "energy_joules",
+    "monetary_cost",
+    "real_network_bytes",
+    "privacy_budget",
+    "publication_review",
+    "repetitions",
+    "limitations"
+  ]
+}
