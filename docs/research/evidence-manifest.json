@@ -59,6 +59,14 @@
       "sha256": "25d07da6f66adf6e4abd5ca1a1181f3ee5057d8723c52e58df33347af54ef563"
     },
     {
+      "path": "docs/research/data-outcomes-implementation-evidence.md",
+      "sha256": "d58d9d9199b1be4246876988a163e2c4a4cb48e7015c5adbdee5cc35e8f6fc3f"
+    },
+    {
+      "path": "docs/research/data-outcomes-source-review.json",
+      "sha256": "644ce1ea230e4c672417311359608a10edba8414b50f3da60bb42eedf84043b8"
+    },
+    {
       "path": "docs/research/m4-implementation-evidence.md",
       "sha256": "5ac8c8a8c576cced4e77bf55f39be98e387ba12703fc395fedbbd4980f3ce76a"
     },
@@ -108,11 +116,71 @@
     },
     {
       "path": "specifications/README.md",
-      "sha256": "2be6254eb3825885a7357d890455194fc3ab3d4a9e31ade3bfae7e02a1270b79"
+      "sha256": "61117da23fbe8dbd6807b5a2141be47733ca85e2d92a3917e1726e6a0c76075e"
     },
     {
       "path": "specifications/__init__.py",
       "sha256": "ef27bd3d997ae7ad20385b56e3c7d54c7824d30b1c77148c621928082f97d5b6"
+    },
+    {
+      "path": "specifications/data_outcomes/README.md",
+      "sha256": "1ef10875fcc9b861d6fea9a0135e7851aa5ac9f491fbd02c53e5b9ddef80379b"
+    },
+    {
+      "path": "specifications/data_outcomes/__init__.py",
+      "sha256": "7fff548e62717a389f0f9f691ae40da783e833a5d4ee6aa13c20884460f94d9f"
+    },
+    {
+      "path": "specifications/data_outcomes/adoption-schema-v1.json",
+      "sha256": "e2f082dac36c952d4cf47f4d027d5b252ad8e9f921bef12d6072c86a702c4523"
+    },
+    {
+      "path": "specifications/data_outcomes/adoption-v1.json",
+      "sha256": "c2da208a56ca437264226c6b814f6911cc76edd904b7e084a45d522f6451f8b5"
+    },
+    {
+      "path": "specifications/data_outcomes/contracts-v1.json",
+      "sha256": "db79c3afca2270e0ac93356c8e48d18f03b35797e4ccb3e5b7b00fba1baa376e"
+    },
+    {
+      "path": "specifications/data_outcomes/design.py",
+      "sha256": "b523ceffb76a673e97eb3d0b5022959513eb7f988613d0400251deb7d50d6437"
+    },
+    {
+      "path": "specifications/data_outcomes/factorial-schema-v1.json",
+      "sha256": "12ddf5826ef75924e76cb513cceeedd0020bc33822fd73f60664620343f79b57"
+    },
+    {
+      "path": "specifications/data_outcomes/factorial-v1.json",
+      "sha256": "ddb3b17e3cbbbc3d37fc297620ca1b60d9851439389dcb1e878ffacd572b32ba"
+    },
+    {
+      "path": "specifications/data_outcomes/pilot.py",
+      "sha256": "aa41f2c30750d7c2c7036f7ff1901195c5bd2ec0ba16605a8942c3647aa56464"
+    },
+    {
+      "path": "specifications/data_outcomes/reference.py",
+      "sha256": "52de8e9ae6b1acedca1450c475442d22a18fbcc24068cd8cadfeb72f04219713"
+    },
+    {
+      "path": "specifications/data_outcomes/report-schema-v1.json",
+      "sha256": "0711721c09d8658219a6d254d4161737e90c56ac3c58560ea721a3a709c060d0"
+    },
+    {
+      "path": "specifications/data_outcomes/run.py",
+      "sha256": "0c48ee2aba8b01ff0cd4f0fd4ba1dc88e93ea3ace9f51752fc5577dbacfde2e5"
+    },
+    {
+      "path": "specifications/data_outcomes/schema-v1.json",
+      "sha256": "bf6586065ad19a2f17e74f17c9451f6eefe9f9944ce27eb21ffca1aa8182418a"
+    },
+    {
+      "path": "specifications/data_outcomes/sector-cards-v1.json",
+      "sha256": "7eb2c651a5e1054f6c96f42fb0c44a6f1c1241b5027aefd3acd6413bb1dc8308"
+    },
+    {
+      "path": "specifications/data_outcomes/sector-schema-v1.json",
+      "sha256": "332dbbce5425e5d0ef3dae4d11e536017948a18d63e41ccd685c63a13204bf9c"
     },
     {
       "path": "specifications/m4/README.md",
@@ -168,7 +236,7 @@
     },
     {
       "path": "specifications/validate.py",
-      "sha256": "b5be8bd5cf9d08c252b3235996b8705b8fbf551abdec32d45aebb783d6d99809"
+      "sha256": "156a374df3ee98a7ccec0ea2af83318df42f5ec2a150d349a945e84ed1a4d592"
     },
     {
       "path": "specs/m0/capabilities-v0.1.md",
@@ -199,12 +267,16 @@
       "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
     },
     {
+      "path": "tests/test_data_outcomes.py",
+      "sha256": "8e2916c5cc6f0f0e5da1d6370b7fbf1513120e55b0c4e8a2f96d448c20ba76a0"
+    },
+    {
       "path": "tests/test_m4_contracts.py",
       "sha256": "b05753f5980fd5f652d23927997199bca5292399d24f5ec3630e5fa6bc250232"
     },
     {
       "path": "tests/test_specification_registry.py",
-      "sha256": "a05223190260b22b9fdd797929f73243fd7921d03ca4a2716f75a52002ab8ccc"
+      "sha256": "0fc6e9e756dc2097a0a7e44f5b7340ecf14d56eceeacc2915ee08a8ba9ba43fd"
     }
   ]
 }

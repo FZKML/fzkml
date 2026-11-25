@@ -1,0 +1,160 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "sector-cards-1.0.0"
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sector": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "canonical_publication": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "inspection_scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "data_access": {
+            "type": "string",
+            "minLength": 1
+          },
+          "deviations": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_accessed": {
+            "type": "string",
+            "minLength": 1
+          },
+          "population": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "source_sites": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "training_clients_max": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "independent_test_sites": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "selected_metric_sites": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "physical_concurrent_participants": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "source_sites",
+              "training_clients_max",
+              "independent_test_sites",
+              "selected_metric_sites",
+              "physical_concurrent_participants",
+              "notes"
+            ]
+          },
+          "endpoints": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maxItems": 10000
+          },
+          "local_replication_status": {
+            "const": "not-replicated"
+          },
+          "source_execution_status": {
+            "const": "not-run-here"
+          },
+          "FZKML_deployment_outcome": {
+            "const": false
+          },
+          "data_adoption": {
+            "const": "not-adopted"
+          }
+        },
+        "required": [
+          "id",
+          "sector",
+          "source_url",
+          "canonical_publication",
+          "source_version",
+          "inspection_scope",
+          "data_access",
+          "deviations",
+          "source_accessed",
+          "population",
+          "endpoints",
+          "local_replication_status",
+          "source_execution_status",
+          "FZKML_deployment_outcome",
+          "data_adoption"
+        ]
+      },
+      "maxItems": 10000
+    },
+    "pilot_link": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pilot_relationship": {
+      "const": "original-synthetic-adaptation-not-source-replication"
+    }
+  },
+  "required": [
+    "schema_version",
+    "cards",
+    "pilot_link",
+    "pilot_relationship"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/specifications/data_outcomes/sector-schema-v1.json"
+}

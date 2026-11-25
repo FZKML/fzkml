@@ -772,6 +772,24 @@
       ],
       "notice_files": []
     },
+    "docs/research/data-outcomes-implementation-evidence.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "docs/research/data-outcomes-source-review.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "docs/research/evidence-manifest.json": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -1105,6 +1123,141 @@
       ],
       "notice_files": []
     },
+    "specifications/data_outcomes/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/adoption-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/adoption-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/contracts-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/design.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/factorial-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/factorial-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/pilot.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/reference.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/report-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/run.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/sector-cards-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specifications/data_outcomes/sector-schema-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "specifications/m4/README.md": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -1406,6 +1559,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original reference code/metadata generated with Codex; mathematical source references recorded in research documentation. Private manuscript bytes excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_data_outcomes.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original engineering specification, mathematical reference, synthetic pilot or source metadata generated with Codex assistance; contributor provenance in Git history. No manuscript or external paper/code/data payload is included.",
       "license_files": [
         "LICENSE"
       ],

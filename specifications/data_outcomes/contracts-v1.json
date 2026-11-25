@@ -1,0 +1,183 @@
+{
+  "schema_version": "data-outcomes-contracts-1.0.0",
+  "source_edition": "MS20261124",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "source_review": "docs/research/data-outcomes-source-review.json",
+  "claim_promotion": "none",
+  "contracts": [
+    {
+      "id": "FZK-R063-SPEC-001",
+      "issue": 101,
+      "status": "specified-reference-or-study-design",
+      "affected_claim_ids": [],
+      "source_refs": [
+        "FZK-MS20261124-CH-032",
+        "FZK-MS20261124-CH-052",
+        "FZK-MS20261124-CH-073",
+        "FZK-MS20261124-CH-076",
+        "FZK-MS20261124-EX-020",
+        "FZK-MS20261124-EX-044",
+        "FZK-MS20261124-SEC-h.dho3pplgxojd",
+        "FZK-MS20261124-SEC-h.1tw5iq3pexkw",
+        "FZK-MS20261124-SEC-h.j5ufkkkb5h14"
+      ],
+      "requirements": [
+        "fixed-sum-objective-lambda-positive-retained-set-authorization",
+        "stats-downdate-equals-full-recompute-and-model-lineage",
+        "residual-bound-is-numerical-not-physical-erasure-or-DP",
+        "known-copy-inventory-and-no-disclosure-accounting-refund"
+      ],
+      "remaining": [
+        "protected-statistics-and-genuine-transition-proof",
+        "finite-arithmetic-and-copy-lifecycle-independent-review",
+        "actual-deletion-authorization-and-retention-system"
+      ],
+      "required_tests": [
+        "test_ridge_removal_matches_recompute",
+        "test_lifecycle_rejects_tombstone_and_refund"
+      ]
+    },
+    {
+      "id": "FZK-R064-SPEC-001",
+      "issue": 102,
+      "status": "specified-reference-or-study-design",
+      "affected_claim_ids": [],
+      "source_refs": [
+        "FZK-MS20261124-CH-031",
+        "FZK-MS20261124-CH-033",
+        "FZK-MS20261124-CH-059",
+        "FZK-MS20261124-CH-060",
+        "FZK-MS20261124-EX-027",
+        "FZK-MS20261124-EX-028",
+        "FZK-MS20261124-SEC-h.epb1ner4buuw",
+        "FZK-MS20261124-SEC-h.bof9xo7cx405",
+        "FZK-MS20261124-SEC-h.m9avh6myo193",
+        "FZK-MS20261124-SEC-h.nkp2dkxm5q2u"
+      ],
+      "requirements": [
+        "exact-declared-coalition-utility-and-efficiency-normalization",
+        "uniform-all-coalition-eta-premise-before-2eta-allocation-bound",
+        "credential-entity-and-payment-observer-boundary",
+        "no-real-payment-without-separate-authorized-design"
+      ],
+      "remaining": [
+        "source-current-edition-migration-and-independent-mathematical-review",
+        "private-valuation-and-credential-backend",
+        "any-real-utility-estimation/payment-design-and-privacy-review"
+      ],
+      "required_tests": [
+        "test_shapley_source_table_and_replication",
+        "test_surrogate_requires_uniform_premise"
+      ]
+    },
+    {
+      "id": "FZK-R065-SPEC-001",
+      "issue": 103,
+      "status": "specified-reference-or-study-design",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C77-HYP-001",
+        "FZK-MS20261124-C80-HYP-001"
+      ],
+      "source_refs": [
+        "FZK-MS20261124-CH-001",
+        "FZK-MS20261124-CH-026",
+        "FZK-MS20261124-CH-027",
+        "FZK-MS20261124-CH-028",
+        "FZK-MS20261124-CH-077",
+        "FZK-MS20261124-CH-078",
+        "FZK-MS20261124-CH-080",
+        "FZK-MS20261124-EX-045",
+        "FZK-MS20261124-EX-048",
+        "FZK-MS20261124-SEC-h.5836gge76x2j"
+      ],
+      "requirements": [
+        "all-eight-factor-cells-and-four-arms",
+        "matched-honest-trace-and-privacy-mechanisms",
+        "entity-source-time-duplicate-and-label-quality-controls",
+        "preregister-falsification-uncertainty-and-negative-outcomes"
+      ],
+      "remaining": [
+        "versioned-batch-training-model-and-all-four-backends",
+        "actual-preregistered-factorial-benchmark",
+        "valid-uncertainty-and-independent-scientific-review"
+      ],
+      "required_tests": [
+        "test_factorial_requires_all_cells_and_controls",
+        "test_entity_duplicate_time_and_site_leakage"
+      ]
+    },
+    {
+      "id": "FZK-R066-SPEC-001",
+      "issue": 104,
+      "status": "specified-reference-or-study-design",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C38-DEF-001"
+      ],
+      "source_refs": [
+        "FZK-MS20261124-CH-026",
+        "FZK-MS20261124-CH-027",
+        "FZK-MS20261124-CH-028",
+        "FZK-MS20261124-CH-029",
+        "FZK-MS20261124-CH-038",
+        "FZK-MS20261124-CH-077",
+        "FZK-MS20261124-CH-078",
+        "FZK-MS20261124-CH-080",
+        "FZK-MS20261124-EX-045",
+        "FZK-MS20261124-EX-048",
+        "FZK-MS20261124-SEC-h.ggw2xaq5sgdo",
+        "FZK-MS20261124-SEC-h.8r56sk3s2ho5"
+      ],
+      "requirements": [
+        "separate-primary-source-and-population-endpoint-cards",
+        "source-specific-rights-availability-and-deviation-manifest",
+        "one-original-synthetic-pilot-is-not-paper-replication",
+        "no-sector-or-clinical-outcome-inference"
+      ],
+      "remaining": [
+        "original-source-data/code-rights-and-access",
+        "source-matched-reproduction-or-independent-replication",
+        "sector-specific-protocol-and-domain-review"
+      ],
+      "required_tests": [
+        "test_synthetic_pilot_has_disjoint_holdouts",
+        "test_sector_source_cannot_inherit_pilot_success"
+      ]
+    },
+    {
+      "id": "FZK-R067-SPEC-001",
+      "issue": 105,
+      "status": "specified-reference-or-study-design",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C80-ADOPT-001"
+      ],
+      "source_refs": [
+        "FZK-MS20261124-CH-001",
+        "FZK-MS20261124-CH-017",
+        "FZK-MS20261124-CH-031",
+        "FZK-MS20261124-CH-032",
+        "FZK-MS20261124-CH-033",
+        "FZK-MS20261124-CH-077",
+        "FZK-MS20261124-CH-079",
+        "FZK-MS20261124-CH-080",
+        "FZK-MS20261124-EX-045",
+        "FZK-MS20261124-EX-048",
+        "FZK-MS20261124-SEC-h.8l3iothd8p0p"
+      ],
+      "requirements": [
+        "consented-prospective-institution-level-assignment",
+        "explicit-ITT-estimand-selection-attrition-and-interference",
+        "willingness-authorization-transfer-novelty-utility-separation",
+        "hypothetical-records-cannot-prove-access-or-benefit"
+      ],
+      "remaining": [
+        "study-consent/institutional/protocol/privacy-approvals",
+        "sampling/power-plan-and-actual-prospective-recruitment",
+        "observed-authorized-contributions-and-causal-analysis"
+      ],
+      "required_tests": [
+        "test_planned_adoption_cannot_claim_effect",
+        "test_willingness_and_synthetic_records_are_not_access"
+      ]
+    }
+  ]
+}

@@ -59,3 +59,10 @@ M4 slots #76–#79 are specified in [m4/README.md](m4/README.md), with versioned
 contracts, manuscript-prose locators and original synthetic references. Their
 schemas/test/source links are checked by the authoritative validator. They do
 not add scientific claim status, genuine-proof, privacy or performance evidence.
+
+Data/outcome slots #101–#105 are specified in
+[data_outcomes/README.md](data_outcomes/README.md), with exact finite references,
+sector cards, one original synthetic smoke pilot and unexecuted factorial/adoption
+plans. Their schemas, historical source references and test links are part of
+the authoritative check. They do not promote scientific hypothesis or field-
+study status, source-paper replication, cryptographic erasure or economic fairness.

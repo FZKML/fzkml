@@ -271,6 +271,27 @@ class SpecificationRegistryTests(unittest.TestCase):
         self.save("specifications/m4/contracts-v1.json", d)
         self.invalid("missing M4 required test")
 
+    def test_outcome_contract_requires_source_links(self) -> None:
+        path = "specifications/data_outcomes/contracts-v1.json"
+        d = self.read(path)
+        d["contracts"][0]["source_refs"].append("missing-source")
+        self.save(path, d)
+        self.invalid("dangling data/outcome source reference")
+
+    def test_outcome_plan_cannot_contain_invented_observations(self) -> None:
+        path = "specifications/data_outcomes/adoption-v1.json"
+        d = self.read(path)
+        d["observations"] = [{"willing": True}]
+        self.save(path, d)
+        self.invalid("schema validation failed")
+
+    def test_sector_card_cannot_claim_FZKML_deployment(self) -> None:
+        path = "specifications/data_outcomes/sector-cards-v1.json"
+        d = self.read(path)
+        d["cards"][0]["FZKML_deployment_outcome"] = True
+        self.save(path, d)
+        self.invalid("schema validation failed")
+
     def test_unknown_status_rejected(self) -> None:
         d = self.read("claims/registry.json")
         d["claims"][0]["status"] = "verified"

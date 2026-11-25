@@ -1,0 +1,129 @@
+{
+  "version": "data-outcomes-source-review-1.0.0",
+  "date": "2026-11-25",
+  "source_edition": "MS20261124",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "observed_snapshot_revision": "AHj4eMTDhszajz9XWwtYr25APOt8jDNWJ06dbjKxf-xlK9xmwk34ZzwRRUkjWfouVFGjH-x3SMlEEFPR_syq3-Z8kERBX1SruWGFOdkln3SW",
+  "authorized_private_export_sha256": "990e1d372cef0122a8c2a8b4ac6e7062e416b926fa538855de227b8400bf52c8",
+  "current_metadata_token": "AHj4eMTMcfjTugtNt8xYwR7dUyF_rmnj2mLtKlthyHmlSzP5kkQA-KrpiNmZ8biFwFCNl37SjE6VZnd9fXa2HG2_OYljPe3qPR7FXwmjg8dt",
+  "migration_status": "pending-source-impact-review",
+  "source_refs": [
+    "FZK-MS20261124-SEC-h.dho3pplgxojd",
+    "FZK-MS20261124-SEC-h.1tw5iq3pexkw",
+    "FZK-MS20261124-SEC-h.j5ufkkkb5h14",
+    "FZK-MS20261124-SEC-h.epb1ner4buuw",
+    "FZK-MS20261124-SEC-h.bof9xo7cx405",
+    "FZK-MS20261124-SEC-h.m9avh6myo193",
+    "FZK-MS20261124-SEC-h.nkp2dkxm5q2u",
+    "FZK-MS20261124-SEC-h.5836gge76x2j",
+    "FZK-MS20261124-SEC-h.ggw2xaq5sgdo",
+    "FZK-MS20261124-SEC-h.8r56sk3s2ho5",
+    "FZK-MS20261124-SEC-h.8l3iothd8p0p"
+  ],
+  "inspection": "Historical authorized paragraph and DOCX equation-text inspection for52.3/52.4/59.2/59.3/59.5/59.6/76.3; original engineering summaries only. Exact section IDs/ranges identify scope; current-edition/native-ID alignment and independent review remain pending.",
+  "numerical_input_scope": "Historical52.3 two-unit-coordinate rows, labels1,lambda1;59.2 rational utility table;59.6 interchangeable-resource game. Outputs independently computed as transparent finite references, not current-edition reviewed numerical goldens.",
+  "independent_review": false,
+  "native_equation_catalog": "Unchanged20 previously catalogued; this sidecar does not promote global equation statuses or claim verification.",
+  "publication_scope": "No manuscript prose/body, export, images or equation XML distributed.",
+  "source_sections": [
+    {
+      "source_id": "FZK-MS20261124-SEC-h.dho3pplgxojd",
+      "tab_id": "t.0",
+      "range_utf16": [
+        224118,
+        226434
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.dho3pplgxojd"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.1tw5iq3pexkw",
+      "tab_id": "t.0",
+      "range_utf16": [
+        226434,
+        228315
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.1tw5iq3pexkw"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.j5ufkkkb5h14",
+      "tab_id": "t.0",
+      "range_utf16": [
+        542026,
+        544027
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.j5ufkkkb5h14"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.epb1ner4buuw",
+      "tab_id": "t.0",
+      "range_utf16": [
+        317016,
+        318944
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.epb1ner4buuw"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.bof9xo7cx405",
+      "tab_id": "t.0",
+      "range_utf16": [
+        318944,
+        321126
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.bof9xo7cx405"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.m9avh6myo193",
+      "tab_id": "t.0",
+      "range_utf16": [
+        323529,
+        326131
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.m9avh6myo193"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.nkp2dkxm5q2u",
+      "tab_id": "t.0",
+      "range_utf16": [
+        326131,
+        327757
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.nkp2dkxm5q2u"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.5836gge76x2j",
+      "tab_id": "t.0",
+      "range_utf16": [
+        595696,
+        597386
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.5836gge76x2j"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.ggw2xaq5sgdo",
+      "tab_id": "t.0",
+      "range_utf16": [
+        556986,
+        558523
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.ggw2xaq5sgdo"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.8r56sk3s2ho5",
+      "tab_id": "t.0",
+      "range_utf16": [
+        559720,
+        560983
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.8r56sk3s2ho5"
+    },
+    {
+      "source_id": "FZK-MS20261124-SEC-h.8l3iothd8p0p",
+      "tab_id": "t.0",
+      "range_utf16": [
+        598649,
+        599700
+      ],
+      "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.8l3iothd8p0p"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "version": "factorial-1.0.0",
+  "status": "planned",
+  "training_runs_executed": 0,
+  "extends": "experiments/m0/preregistration-v0.1.md",
+  "extends_sha256": "4373395f984e7e3dd860608a7bc95586d5b5ae6cde0c6a800dc786ccea81765c",
+  "arms": [
+    "L",
+    "F",
+    "P",
+    "Z"
+  ],
+  "arm_meanings": {
+    "L": "local-only",
+    "F": "ordinary federation",
+    "P": "same federation with specified protected aggregation/release",
+    "Z": "P with the specified genuine proof policy"
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "cells": [
+    {
+      "consumed_records": 8,
+      "source_diversity": 1,
+      "label_quality": "exact"
+    },
+    {
+      "consumed_records": 8,
+      "source_diversity": 1,
+      "label_quality": "quarter-corrupted"
+    },
+    {
+      "consumed_records": 8,
+      "source_diversity": 4,
+      "label_quality": "exact"
+    },
+    {
+      "consumed_records": 8,
+      "source_diversity": 4,
+      "label_quality": "quarter-corrupted"
+    },
+    {
+      "consumed_records": 32,
+      "source_diversity": 1,
+      "label_quality": "exact"
+    },
+    {
+      "consumed_records": 32,
+      "source_diversity": 1,
+      "label_quality": "quarter-corrupted"
+    },
+    {
+      "consumed_records": 32,
+      "source_diversity": 4,
+      "label_quality": "exact"
+    },
+    {
+      "consumed_records": 32,
+      "source_diversity": 4,
+      "label_quality": "quarter-corrupted"
+    }
+  ],
+  "controls": [
+    "same-honest-trace-F-P-Z",
+    "P-Z-same-privacy-mechanism",
+    "held-out-entity-time",
+    "held-out-site",
+    "source-fixed-count",
+    "count-fixed-source",
+    "eligible-population-denominator"
+  ],
+  "batch_relation_status": "pending",
+  "unique_entity_counts_required": true,
+  "primary_contrast": "MSE(source-diversity1)-MSE(source-diversity4), at matched consumed count and label quality; no proof-only quality benefit is inferred.",
+  "falsification_rule": "Proposed minimum useful scoped diversity gain0.01 MSE. CI upper bound below0.01 refutes that minimum-gain hypothesis; overlapping interval or underpower is inconclusive. Freeze before executing, retain adverse results.",
+  "missing_failure_policy": "Retain every seed/attempt, failure, timeout, cost and missing pair. Do not impute missing quality as zero or condition the deployment primary comparison on completers.",
+  "endpoints": [
+    "entity/future-time MSE",
+    "held-out-site/worst-site MSE",
+    "calibration when task supports it",
+    "group outcomes",
+    "time-to-useful-authorized-result",
+    "unique protected entities and sources",
+    "raw rows/duplicates/label corruption",
+    "invited/completed/accepted/released populations"
+  ],
+  "non_iid_control": "Freeze source-distribution generator, global task mixture and skew strength; verify realized distributions and label reliability, rather than assuming factor labels imply independent contrasts.",
+  "budget": {
+    "per_attempt_seconds": 300,
+    "attempts_per_seed": 2,
+    "cpu_workers_per_role": 1,
+    "bytes_per_worker": 2147483648,
+    "gpu": false
+  },
+  "inference": "Paired independent seeds, source/group variation and held-out populations; fixed analysis before runs. Same-record F/P/Z honest traces must agree when mechanisms/rounding are identical.",
+  "readiness": "not-ready-pending-versioned-batch-training-and-protected/proof-backends"
+}

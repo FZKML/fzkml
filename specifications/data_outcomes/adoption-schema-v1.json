@@ -1,0 +1,107 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "const": "planned"
+    },
+    "recruitment_authorized": {
+      "const": false
+    },
+    "observations": {
+      "const": []
+    },
+    "claimed_effect": {
+      "const": null
+    },
+    "assignment_unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "comparison": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 10000
+    },
+    "primary_outcome": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estimand": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selection": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assignment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "attrition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "interference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "willingness_is_access": {
+      "const": false
+    },
+    "benefit_claim_status": {
+      "const": "hypothesis"
+    },
+    "separate_outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 10000
+    },
+    "offer_review": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sample_size": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generative_data": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "version",
+    "status",
+    "recruitment_authorized",
+    "observations",
+    "claimed_effect",
+    "assignment_unit",
+    "comparison",
+    "primary_outcome",
+    "estimand",
+    "selection",
+    "assignment",
+    "attrition",
+    "interference",
+    "willingness_is_access",
+    "benefit_claim_status",
+    "separate_outcomes",
+    "offer_review",
+    "sample_size",
+    "generative_data"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/specifications/data_outcomes/adoption-schema-v1.json"
+}
