@@ -62,3 +62,11 @@ clean-environment reproduction command. The default-branch dependency-graph SBOM
 endpoint returned 404 while main still contains no dependency manifests; the
 lock-derived local inventory contains 16 packages with reviewed license metadata.
 This is not a compatibility/rights audit or a completed hosted update-PR review.
+
+## Public CPU proof adapter
+
+The updated CI foundation provides the native proof crate and its independent
+Python oracle. This branch uses the adapter from PR #122 for actual public
+Groth16 proofs and the five mandatory rejection cases in the PR CPU lane.
+This change supplies public arithmetic evidence only. Protected or private
+training, scientific comparison, and publication approval remain separate.

@@ -59,8 +59,9 @@ def proof_fixture() -> dict[str, Any]:
 
 class ProofGateTests(unittest.TestCase):
     def test_placeholder_and_missing_adapter_fail(self) -> None:
-        with self.assertRaises(Invalid):
-            proof_command()
+        with patch("fzkml_ci.research.load", return_value={"version": 1, "status": "unavailable"}):
+            with self.assertRaises(Invalid):
+                proof_command()
         with self.assertRaises(Invalid):
             proof_results(load(ROOT / "examples" / "results.json"))
 
@@ -95,7 +96,8 @@ class JournalTests(unittest.TestCase):
             path = Path(temporary) / "journal.json"
             initial = initialize("tiny-reference", path)
             self.assertEqual([r["status"] for r in initial["repetitions"]], ["not-started"] * 3)
-            self.assertEqual(run("tiny-reference", path), 1)
+            with patch("fzkml_ci.research.proof_command", side_effect=Invalid("unavailable")):
+                self.assertEqual(run("tiny-reference", path), 1)
             self.assertEqual([r["status"] for r in load(path)["repetitions"]], ["not-run"] * 3)
 
     def test_failure_retained_with_bounded_reproducer(self) -> None:

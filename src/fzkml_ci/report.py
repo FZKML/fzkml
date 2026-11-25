@@ -8,7 +8,15 @@ import json
 from pathlib import Path
 from typing import Any
 
-from .validate import ARTIFACTS, MAX_FILE, MAX_TOTAL, require, validate_artifacts, validate_bundle
+from .validate import (
+    ARTIFACTS,
+    MAX_FILE,
+    MAX_TOTAL,
+    require,
+    require_publication,
+    validate_artifacts,
+    validate_bundle,
+)
 
 
 def canonical(value: Any) -> str:
@@ -22,6 +30,7 @@ def text(value: Any) -> str:
 
 def render(bundle: dict[str, Any], claims: dict[str, Any]) -> dict[str, str]:
     coverage = validate_bundle(bundle, claims)
+    require_publication(bundle)
     summary: dict[str, Any] = {"schema_version": "1.0.0", "coverage": coverage, "runs": []}
     lines = [
         "# FZKML v0.1 research report",
@@ -92,7 +101,11 @@ def render(bundle: dict[str, Any], claims: dict[str, Any]) -> dict[str, str]:
             f"- Hardware: {text(canonical(hardware).strip())}",
             f"- Comparison group: {group}; separate groups must not be ranked together.",
             f"- Source: https://github.com/FZKML/fzkml/commit/{result['provenance']['source_commit']}",
-            f"- Workflow run: https://github.com/FZKML/fzkml/actions/runs/{result['provenance']['workflow_run']}",
+            (
+                f"- Workflow run: https://github.com/FZKML/fzkml/actions/runs/{result['provenance']['workflow_run']}"
+                if result["provenance"].get("execution_kind") != "local"
+                else "- Execution: local; no workflow run."
+            ),
             f"- Raw repetitions: results.json, run {text(result['run_id'])}",
             "",
         ]

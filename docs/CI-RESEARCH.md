@@ -6,19 +6,19 @@ runs even after upstream failure and accepts only success from both jobs; failur
 skip, cancellation or timeout cannot satisfy it. Jobs are capped at 15 minutes;
 research matrix max-parallel is 2. Required PR checks need no GPU.
 
-The current proof adapter is explicitly unavailable. This PR must remain draft:
-LANG-03 and FZK-R013/R014/R015 must implement a reviewed executable adapter and
-real, fresh CI-04 results for tiny proof, native/circuit conformance and negative
-cases. The gate rejects synthetic/development backends, skipped repetitions,
-missing/zero circuit/program/key identities and failed outcomes. Metadata checks
-cannot establish that an adapter performs real cryptography; reviewers must inspect
-its implementation and negative-case coverage. Require `required-cpu` in branch
-rules after reviewing its first real hosted run and measured CPU budget.
+The CPU gate uses the locked native Groth16 adapter for the exact public
+three-client arithmetic fixture. It checks the independent numeric oracle,
+verifies a newly generated proof, and requires five negative verification
+cases to reject. The gate rejects synthetic or development backends, skipped
+repetitions, missing or zero identities and failed outcomes. The proof uses
+a fresh local setup and all fixture inputs are public. Independent review of
+the adapter and the first hosted budget remains required. Release publication
+still requires separate approval.
 
 Scheduled/manual CPU research checks out only the default branch; dispatch accepts
 no ref, command or configuration. The reviewed fixed matrix is `contract` and
 `tiny-reference`. The first profile repeats contract tests, not a scientific
-benchmark. The second remains unavailable until the adapter exists. Research-supplied
+benchmark. The public proof adapter is validated for the PR CPU lane and local runs. Research-supplied
 fuzz corpora and multi-process scenarios remain dependencies; no substitute is
 reported as scientific evidence. Adding them requires code/profile review.
 
