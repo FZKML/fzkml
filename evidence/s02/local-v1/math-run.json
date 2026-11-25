@@ -1,0 +1,1155 @@
+{
+  "schema_version": "s02-math-run-1.0.0",
+  "run_id": "synthetic:s02-math-d5e28970a36b",
+  "kind": "deterministic-reference-calculations",
+  "claim_ids": [],
+  "source_commit": "d5e28970a36b43ccc1a6f72b18fef41e9914c7d7",
+  "source_dirty": false,
+  "execution": {
+    "kind": "local",
+    "workflow_run": null,
+    "python": "3.11.14",
+    "os": "Darwin",
+    "machine": "arm64",
+    "public_experiment_seed": 20261124,
+    "private_randomness": "not-used-or-recorded",
+    "reproduction_command": "./scripts/validate-s02; PYTHONPATH=.:src .venv/bin/python scripts/run_s02_experiments.py .tools/s02"
+  },
+  "digests": {
+    "Cargo.lock": "sha256:44861cb09d5fa5e4576f6ad7256ba051265147f7577644d8f784159ae11255e8",
+    "uv.lock": "sha256:430a20df79b8fdd69a2eab08b08f35b4123fffd388131043552edd046bc600a5",
+    "specs/numeric-contract-v1.json": "sha256:87d097bb7c7af37def94289290fb53e996fc63094144150bc4b1e7112a8b50c0",
+    "tests/vectors/book/manuscript-v1.json": "sha256:c4c5daf7d49ddb496b9b5420c98e7e3ff2b542c512df37aca9259ba4a8777a33",
+    "tests/vectors/synthetic/s02-boundaries-v1.json": "sha256:cebf9098307b6bcdf662aac2e43c155e5b6e53b44b94af336a9cd8b14aab0ff2",
+    "tests/vectors/synthetic/s02-data-v1.json": "sha256:39e3bc4018fb7902b3e0715876249206ea538a888419b89e605265e247168ed2",
+    "python/reference-sources.json": "sha256:8bec58ca7d622838612fbf0f2a3b1164acb24b3de459253d581538bef45c464a",
+    "tests/vectors/synthetic/private-transition-v2.json": "sha256:67b521351b374a971136a7e074b90810010a59bcb31501b6b30585557d9a51bd"
+  },
+  "observations": [
+    {
+      "id": "rne-full-state",
+      "status": "counterexample-reproduced",
+      "inputs": {
+        "w": 1,
+        "x": [
+          0,
+          0,
+          8
+        ],
+        "y": [
+          0,
+          0,
+          8
+        ],
+        "weights": [
+          1,
+          1,
+          2
+        ]
+      },
+      "result": {
+        "full_state": 2,
+        "delta_shortcut": 1
+      },
+      "assumptions": [
+        "fzknum-1.0.0 full-state RNE aggregation"
+      ],
+      "limitations": [
+        "Original synthetic counterexample; not a manuscript numerical example."
+      ]
+    },
+    {
+      "id": "rne-sensitivity",
+      "status": "counterexample-reproduced",
+      "inputs": {
+        "cap": 2,
+        "public_weights": [
+          1,
+          1
+        ],
+        "adjacency": "add-remove-zero-slot"
+      },
+      "result": {
+        "observed_sensitivity": 2,
+        "neighboring_witness": [
+          [
+            -2,
+            -1
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "lattice_bound": 2,
+        "unadjusted_ceil_bound": 1
+      },
+      "assumptions": [
+        "Integer numerator lattice, fixed denominator, nearest-even rounding"
+      ],
+      "limitations": [
+        "Finite enumeration covers only this small domain; general bound has a separate derivation/review obligation."
+      ]
+    },
+    {
+      "id": "finite-noise-law",
+      "status": "exact-finite-pair-analysis",
+      "inputs": {
+        "geometric_numerator": 2,
+        "geometric_denominator": 3,
+        "modulus": 7,
+        "query_shift": 1,
+        "exp_epsilon": "3/2"
+      },
+      "result": {
+        "probability_sum": "1",
+        "hockey_stick_delta": "0"
+      },
+      "assumptions": [
+        "Entire finite PMFs enumerated with exact rational arithmetic"
+      ],
+      "limitations": [
+        "No private noise sampler or entropy service implemented by this calculation; no empirical test or universal DP proof."
+      ]
+    },
+    {
+      "id": "book-privacy-audit",
+      "status": "analytical-teaching-example",
+      "inputs": {
+        "D_events": 100,
+        "D_trials": 1000,
+        "D_prime_events": 0,
+        "D_prime_trials": 1000,
+        "one_sided_error": 0.025,
+        "delta": 1e-06
+      },
+      "result": {
+        "p_lower": 0.08210533435557998,
+        "q_upper": 0.0036820838968657514,
+        "epsilon_lower": 3.104511940448151,
+        "simultaneous_confidence": 0.95,
+        "real_training_executions": 0
+      },
+      "assumptions": [
+        "Hypothetical independent mechanism executions, fixed neighboring pair/event, no calibration overlap, two one-sided bounds"
+      ],
+      "limitations": [
+        "Book hypothetical counts, not observations from model runs. No unsuccessful attack can certify DP; power is not estimated."
+      ]
+    },
+    {
+      "id": "book-small-group-certificate",
+      "status": "conditional-analytic-confidence",
+      "inputs": {
+        "noisy_denominators": [
+          1000,
+          100
+        ],
+        "noisy_gap": 0.04,
+        "epsilon": 1,
+        "alpha": 0.04,
+        "beta": 0.01
+      },
+      "result": {
+        "metric": "conditional-equal-opportunity-gap",
+        "status": "conditional-confidence",
+        "upper_bound": 0.5897709241361999,
+        "confidence": 0.95,
+        "measured_noisy_gap": 0.04,
+        "limitations": [
+          "Conditional confidence statement; no deployment fairness claim.",
+          "Group-specific missingness/shift allowances must be externally justified.",
+          "Finite-arithmetic DP mechanism remains a separate obligation."
+        ],
+        "noise_bound": 11.982929094215963,
+        "ratio_error_bounds": [
+          0.024554323626374483,
+          0.3151986412607301
+        ],
+        "sampling_radii": [
+          0.04827537101265646,
+          0.16174258823643883
+        ],
+        "missing_fractions": [
+          0,
+          0
+        ],
+        "distribution_shift_tv": [
+          0,
+          0
+        ]
+      },
+      "assumptions": [
+        "Fixed classifier/groups, independent IID evaluation units, ideal real-valued Laplace law"
+      ],
+      "limitations": [
+        "Hypothetical book inputs; no finite-Laplace implementation or deployment fairness claim."
+      ]
+    },
+    {
+      "id": "small-denominator",
+      "status": "inconclusive",
+      "inputs": {
+        "noisy_denominators": [
+          10,
+          10
+        ]
+      },
+      "result": {
+        "metric": "conditional-equal-opportunity-gap",
+        "status": "inconclusive",
+        "upper_bound": null,
+        "confidence": 0.95,
+        "measured_noisy_gap": 0.04,
+        "limitations": [
+          "Conditional confidence statement; no deployment fairness claim.",
+          "Group-specific missingness/shift allowances must be externally justified.",
+          "Finite-arithmetic DP mechanism remains a separate obligation."
+        ],
+        "noise_bound": 11.982929094215963,
+        "reason": "Noisy denominator does not exceed twice the noise bound."
+      },
+      "assumptions": [
+        "Same conditional certificate domain"
+      ],
+      "limitations": [
+        "No denominator repair or fairness certification; evidence insufficient."
+      ]
+    },
+    {
+      "id": "original-quadratic-precision",
+      "status": "numerical-reference-experiment",
+      "inputs": {
+        "analytic_optimum": "1/3",
+        "scales": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32
+        ],
+        "rate": "1/2",
+        "steps": 16,
+        "origin": "original-synthetic-not-book"
+      },
+      "result": {
+        "precisions": [
+          {
+            "fixture_kind": "original-synthetic-not-book",
+            "scale": 1,
+            "learning_rate": "1/2",
+            "smoothness": "1",
+            "strong_convexity": "1",
+            "analytic_optimum": "1/3",
+            "initial_weight": "0",
+            "status": "completed",
+            "steps_completed": 16,
+            "final_weight": "0",
+            "objective_gap": "1/18",
+            "stationarity_residual": "1/3",
+            "valid_contraction_assumption": true,
+            "trace": [
+              {
+                "step": 1,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "2/3"
+              },
+              {
+                "step": 2,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "5/6"
+              },
+              {
+                "step": 3,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "11/12"
+              },
+              {
+                "step": 4,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "23/24"
+              },
+              {
+                "step": 5,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "47/48"
+              },
+              {
+                "step": 6,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "95/96"
+              },
+              {
+                "step": 7,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "191/192"
+              },
+              {
+                "step": 8,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "383/384"
+              },
+              {
+                "step": 9,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "767/768"
+              },
+              {
+                "step": 10,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "1535/1536"
+              },
+              {
+                "step": 11,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "3071/3072"
+              },
+              {
+                "step": 12,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "6143/6144"
+              },
+              {
+                "step": 13,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "12287/12288"
+              },
+              {
+                "step": 14,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "24575/24576"
+              },
+              {
+                "step": 15,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "49151/49152"
+              },
+              {
+                "step": 16,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "98303/98304"
+              }
+            ],
+            "signed_i32_state_margin": 2147483645,
+            "constraint_cost": "not-measured-no-matching-circuit",
+            "limitations": [
+              "Finite deterministic toy trajectory, not global convergence evidence for other optimizers.",
+              "State margin is for stored encoded weights only, not a circuit residual/no-wrap proof.",
+              "No new book values or Rust numeric profile is inferred."
+            ]
+          },
+          {
+            "fixture_kind": "original-synthetic-not-book",
+            "scale": 2,
+            "learning_rate": "1/2",
+            "smoothness": "1",
+            "strong_convexity": "1",
+            "analytic_optimum": "1/3",
+            "initial_weight": "0",
+            "status": "completed",
+            "steps_completed": 16,
+            "final_weight": "0",
+            "objective_gap": "1/18",
+            "stationarity_residual": "1/3",
+            "valid_contraction_assumption": true,
+            "trace": [
+              {
+                "step": 1,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "5/12"
+              },
+              {
+                "step": 2,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "11/24"
+              },
+              {
+                "step": 3,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "23/48"
+              },
+              {
+                "step": 4,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "47/96"
+              },
+              {
+                "step": 5,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "95/192"
+              },
+              {
+                "step": 6,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "191/384"
+              },
+              {
+                "step": 7,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "383/768"
+              },
+              {
+                "step": 8,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "767/1536"
+              },
+              {
+                "step": 9,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "1535/3072"
+              },
+              {
+                "step": 10,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "3071/6144"
+              },
+              {
+                "step": 11,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "6143/12288"
+              },
+              {
+                "step": 12,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "12287/24576"
+              },
+              {
+                "step": 13,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "24575/49152"
+              },
+              {
+                "step": 14,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "49151/98304"
+              },
+              {
+                "step": 15,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "98303/196608"
+              },
+              {
+                "step": 16,
+                "weight": "0",
+                "objective_gap": "1/18",
+                "step_error": "1/6",
+                "recurrence_bound": "196607/393216"
+              }
+            ],
+            "signed_i32_state_margin": 2147483643,
+            "constraint_cost": "not-measured-no-matching-circuit",
+            "limitations": [
+              "Finite deterministic toy trajectory, not global convergence evidence for other optimizers.",
+              "State margin is for stored encoded weights only, not a circuit residual/no-wrap proof.",
+              "No new book values or Rust numeric profile is inferred."
+            ]
+          },
+          {
+            "fixture_kind": "original-synthetic-not-book",
+            "scale": 4,
+            "learning_rate": "1/2",
+            "smoothness": "1",
+            "strong_convexity": "1",
+            "analytic_optimum": "1/3",
+            "initial_weight": "0",
+            "status": "completed",
+            "steps_completed": 16,
+            "final_weight": "1/4",
+            "objective_gap": "1/288",
+            "stationarity_residual": "1/12",
+            "valid_contraction_assumption": true,
+            "trace": [
+              {
+                "step": 1,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/12",
+                "recurrence_bound": "7/24"
+              },
+              {
+                "step": 2,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "13/48"
+              },
+              {
+                "step": 3,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "25/96"
+              },
+              {
+                "step": 4,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "49/192"
+              },
+              {
+                "step": 5,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "97/384"
+              },
+              {
+                "step": 6,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "193/768"
+              },
+              {
+                "step": 7,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "385/1536"
+              },
+              {
+                "step": 8,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "769/3072"
+              },
+              {
+                "step": 9,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "1537/6144"
+              },
+              {
+                "step": 10,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "3073/12288"
+              },
+              {
+                "step": 11,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "6145/24576"
+              },
+              {
+                "step": 12,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "12289/49152"
+              },
+              {
+                "step": 13,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "24577/98304"
+              },
+              {
+                "step": 14,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "49153/196608"
+              },
+              {
+                "step": 15,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "98305/393216"
+              },
+              {
+                "step": 16,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "196609/786432"
+              }
+            ],
+            "signed_i32_state_margin": 2147483639,
+            "constraint_cost": "not-measured-no-matching-circuit",
+            "limitations": [
+              "Finite deterministic toy trajectory, not global convergence evidence for other optimizers.",
+              "State margin is for stored encoded weights only, not a circuit residual/no-wrap proof.",
+              "No new book values or Rust numeric profile is inferred."
+            ]
+          },
+          {
+            "fixture_kind": "original-synthetic-not-book",
+            "scale": 8,
+            "learning_rate": "1/2",
+            "smoothness": "1",
+            "strong_convexity": "1",
+            "analytic_optimum": "1/3",
+            "initial_weight": "0",
+            "status": "completed",
+            "steps_completed": 16,
+            "final_weight": "1/4",
+            "objective_gap": "1/288",
+            "stationarity_residual": "1/12",
+            "valid_contraction_assumption": true,
+            "trace": [
+              {
+                "step": 1,
+                "weight": "1/8",
+                "objective_gap": "25/1152",
+                "step_error": "1/24",
+                "recurrence_bound": "11/48"
+              },
+              {
+                "step": 2,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/48",
+                "recurrence_bound": "17/96"
+              },
+              {
+                "step": 3,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "29/192"
+              },
+              {
+                "step": 4,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "53/384"
+              },
+              {
+                "step": 5,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "101/768"
+              },
+              {
+                "step": 6,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "197/1536"
+              },
+              {
+                "step": 7,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "389/3072"
+              },
+              {
+                "step": 8,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "773/6144"
+              },
+              {
+                "step": 9,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "1541/12288"
+              },
+              {
+                "step": 10,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "3077/24576"
+              },
+              {
+                "step": 11,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "6149/49152"
+              },
+              {
+                "step": 12,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "12293/98304"
+              },
+              {
+                "step": 13,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "24581/196608"
+              },
+              {
+                "step": 14,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "49157/393216"
+              },
+              {
+                "step": 15,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "98309/786432"
+              },
+              {
+                "step": 16,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/24",
+                "recurrence_bound": "196613/1572864"
+              }
+            ],
+            "signed_i32_state_margin": 2147483631,
+            "constraint_cost": "not-measured-no-matching-circuit",
+            "limitations": [
+              "Finite deterministic toy trajectory, not global convergence evidence for other optimizers.",
+              "State margin is for stored encoded weights only, not a circuit residual/no-wrap proof.",
+              "No new book values or Rust numeric profile is inferred."
+            ]
+          },
+          {
+            "fixture_kind": "original-synthetic-not-book",
+            "scale": 16,
+            "learning_rate": "1/2",
+            "smoothness": "1",
+            "strong_convexity": "1",
+            "analytic_optimum": "1/3",
+            "initial_weight": "0",
+            "status": "completed",
+            "steps_completed": 16,
+            "final_weight": "5/16",
+            "objective_gap": "1/4608",
+            "stationarity_residual": "1/48",
+            "valid_contraction_assumption": true,
+            "trace": [
+              {
+                "step": 1,
+                "weight": "3/16",
+                "objective_gap": "49/4608",
+                "step_error": "1/48",
+                "recurrence_bound": "19/96"
+              },
+              {
+                "step": 2,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/96",
+                "recurrence_bound": "25/192"
+              },
+              {
+                "step": 3,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/48",
+                "recurrence_bound": "37/384"
+              },
+              {
+                "step": 4,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "61/768"
+              },
+              {
+                "step": 5,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "109/1536"
+              },
+              {
+                "step": 6,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "205/3072"
+              },
+              {
+                "step": 7,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "397/6144"
+              },
+              {
+                "step": 8,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "781/12288"
+              },
+              {
+                "step": 9,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "1549/24576"
+              },
+              {
+                "step": 10,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "3085/49152"
+              },
+              {
+                "step": 11,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "6157/98304"
+              },
+              {
+                "step": 12,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "12301/196608"
+              },
+              {
+                "step": 13,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "24589/393216"
+              },
+              {
+                "step": 14,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "49165/786432"
+              },
+              {
+                "step": 15,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "98317/1572864"
+              },
+              {
+                "step": 16,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "196621/3145728"
+              }
+            ],
+            "signed_i32_state_margin": 2147483615,
+            "constraint_cost": "not-measured-no-matching-circuit",
+            "limitations": [
+              "Finite deterministic toy trajectory, not global convergence evidence for other optimizers.",
+              "State margin is for stored encoded weights only, not a circuit residual/no-wrap proof.",
+              "No new book values or Rust numeric profile is inferred."
+            ]
+          },
+          {
+            "fixture_kind": "original-synthetic-not-book",
+            "scale": 32,
+            "learning_rate": "1/2",
+            "smoothness": "1",
+            "strong_convexity": "1",
+            "analytic_optimum": "1/3",
+            "initial_weight": "0",
+            "status": "completed",
+            "steps_completed": 16,
+            "final_weight": "5/16",
+            "objective_gap": "1/4608",
+            "stationarity_residual": "1/48",
+            "valid_contraction_assumption": true,
+            "trace": [
+              {
+                "step": 1,
+                "weight": "5/32",
+                "objective_gap": "289/18432",
+                "step_error": "1/96",
+                "recurrence_bound": "35/192"
+              },
+              {
+                "step": 2,
+                "weight": "1/4",
+                "objective_gap": "1/288",
+                "step_error": "1/192",
+                "recurrence_bound": "41/384"
+              },
+              {
+                "step": 3,
+                "weight": "9/32",
+                "objective_gap": "25/18432",
+                "step_error": "1/96",
+                "recurrence_bound": "53/768"
+              },
+              {
+                "step": 4,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/192",
+                "recurrence_bound": "77/1536"
+              },
+              {
+                "step": 5,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "125/3072"
+              },
+              {
+                "step": 6,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "221/6144"
+              },
+              {
+                "step": 7,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "413/12288"
+              },
+              {
+                "step": 8,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "797/24576"
+              },
+              {
+                "step": 9,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "1565/49152"
+              },
+              {
+                "step": 10,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "3101/98304"
+              },
+              {
+                "step": 11,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "6173/196608"
+              },
+              {
+                "step": 12,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "12317/393216"
+              },
+              {
+                "step": 13,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "24605/786432"
+              },
+              {
+                "step": 14,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "49181/1572864"
+              },
+              {
+                "step": 15,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "98333/3145728"
+              },
+              {
+                "step": 16,
+                "weight": "5/16",
+                "objective_gap": "1/4608",
+                "step_error": "1/96",
+                "recurrence_bound": "196637/6291456"
+              }
+            ],
+            "signed_i32_state_margin": 2147483583,
+            "constraint_cost": "not-measured-no-matching-circuit",
+            "limitations": [
+              "Finite deterministic toy trajectory, not global convergence evidence for other optimizers.",
+              "State margin is for stored encoded weights only, not a circuit residual/no-wrap proof.",
+              "No new book values or Rust numeric profile is inferred."
+            ]
+          }
+        ],
+        "unsafe_rate": {
+          "fixture_kind": "original-synthetic-not-book",
+          "scale": 16,
+          "learning_rate": "3",
+          "smoothness": "1",
+          "strong_convexity": "1",
+          "analytic_optimum": "1/3",
+          "initial_weight": "0",
+          "status": "rejected-state-domain",
+          "steps_completed": 2,
+          "final_weight": "-1",
+          "objective_gap": "8/9",
+          "stationarity_residual": "4/3",
+          "valid_contraction_assumption": false,
+          "trace": [
+            {
+              "step": 1,
+              "weight": "1",
+              "objective_gap": "2/9",
+              "step_error": "0",
+              "recurrence_bound": "67/96"
+            },
+            {
+              "step": 2,
+              "weight": "-1",
+              "objective_gap": "8/9",
+              "step_error": "0",
+              "recurrence_bound": "137/96"
+            }
+          ],
+          "signed_i32_state_margin": 2147483615,
+          "constraint_cost": "not-measured-no-matching-circuit",
+          "limitations": [
+            "Finite deterministic toy trajectory, not global convergence evidence for other optimizers.",
+            "State margin is for stored encoded weights only, not a circuit residual/no-wrap proof.",
+            "No new book values or Rust numeric profile is inferred."
+          ]
+        },
+        "observed_but_uncertified_class": {
+          "observed_unchanged": true,
+          "certified_unchanged": false,
+          "basis": "strict-margin-greater-than-twice-uniform-error-bound"
+        }
+      },
+      "assumptions": [
+        "Declared one-dimensional quadratic has L=mu=1; rate1/2 is contractive; rate3 is outside that condition."
+      ],
+      "limitations": [
+        "Original finite CPU reference trajectory, not manuscript numerical inputs or global model convergence evidence.",
+        "Circuit constraint cost and general attention/optimizer refinement remain not measured."
+      ]
+    },
+    {
+      "id": "numeric-profile-not-closed-under-update",
+      "status": "unsupported-continuation",
+      "inputs": {
+        "initial_weight": 32,
+        "features": [
+          8,
+          8,
+          8
+        ],
+        "labels": [
+          32,
+          32,
+          32
+        ],
+        "weights": [
+          1,
+          2,
+          1
+        ]
+      },
+      "result": {
+        "full_state_output": 34,
+        "next_parent_format_valid": true,
+        "next_numeric_initial_weight_supported": false
+      },
+      "assumptions": [
+        "Unchanged fzknum-1.0.0 input bound32 and v2 parent format bound80"
+      ],
+      "limitations": [
+        "A valid one-step transition does not imply every resulting state can continue under the same bounded numeric profile."
+      ]
+    }
+  ],
+  "repetitions": [
+    {
+      "id": "rep1",
+      "status": "completed",
+      "excluded": false,
+      "reference_checks_seconds": 0.06601204199250787
+    }
+  ],
+  "limitations": [
+    "Original reference artifact only; no public-report publication approval or claim-status promotion.",
+    "Timing is a calculation-runtime diagnostic, not a performance benchmark.",
+    "Statistical confidence is conditional; empirical statistical tests do not prove DP.",
+    "Books use MS20261124 snapshot metadata, not an author-declared edition."
+  ]
+}

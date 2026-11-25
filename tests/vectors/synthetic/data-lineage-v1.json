@@ -1,0 +1,431 @@
+{
+  "version": "s02-data-lineage-vectors-1.0.0",
+  "provenance": "original deterministic synthetic examples; not book numeric inputs",
+  "snapshot": {
+    "parts": [
+      {
+        "organization": "synthetic:A",
+        "source_version": "source-1",
+        "rows": [
+          {
+            "id": "synthetic:r0-0",
+            "entity": "synthetic:p0",
+            "org": "synthetic:A",
+            "time": 2,
+            "value": 1,
+            "label": 0,
+            "unit": "cm",
+            "split": "train"
+          },
+          {
+            "id": "synthetic:r0-1",
+            "entity": "synthetic:p1",
+            "org": "synthetic:A",
+            "time": 3,
+            "value": 2,
+            "label": 2,
+            "unit": "cm",
+            "split": "train"
+          },
+          {
+            "id": "synthetic:r0-2",
+            "entity": "synthetic:p2",
+            "org": "synthetic:A",
+            "time": 4,
+            "value": 3,
+            "label": 4,
+            "unit": "cm",
+            "split": "train"
+          },
+          {
+            "id": "synthetic:r0-3",
+            "entity": "synthetic:p3",
+            "org": "synthetic:A",
+            "time": 5,
+            "value": 4,
+            "label": 6,
+            "unit": "cm",
+            "split": "holdout"
+          }
+        ],
+        "digest": "76cddae51c74dba81d18534c60eac60b80c0f9a249d71c8e1310eab77e93af91"
+      },
+      {
+        "organization": "synthetic:B",
+        "source_version": "source-1",
+        "rows": [
+          {
+            "id": "synthetic:r1-0",
+            "entity": "synthetic:p0",
+            "org": "synthetic:B",
+            "time": 2,
+            "value": 2,
+            "label": -1,
+            "unit": "cm",
+            "split": "train"
+          },
+          {
+            "id": "synthetic:r1-1",
+            "entity": "synthetic:p1",
+            "org": "synthetic:B",
+            "time": 3,
+            "value": 3,
+            "label": 1,
+            "unit": "cm",
+            "split": "train"
+          },
+          {
+            "id": "synthetic:r1-2",
+            "entity": "synthetic:p2",
+            "org": "synthetic:B",
+            "time": 4,
+            "value": 4,
+            "label": 3,
+            "unit": "cm",
+            "split": "train"
+          },
+          {
+            "id": "synthetic:r1-3",
+            "entity": "synthetic:p3",
+            "org": "synthetic:B",
+            "time": 5,
+            "value": 5,
+            "label": 5,
+            "unit": "cm",
+            "split": "holdout"
+          }
+        ],
+        "digest": "3d47a77da10c8429cc513af84aa6533989536237bc752feaa65732390e55f470"
+      },
+      {
+        "organization": "synthetic:C",
+        "source_version": "source-1",
+        "rows": [
+          {
+            "id": "synthetic:r2-0",
+            "entity": "synthetic:p0",
+            "org": "synthetic:C",
+            "time": 2,
+            "value": 3,
+            "label": -2,
+            "unit": "cm",
+            "split": "train"
+          },
+          {
+            "id": "synthetic:r2-1",
+            "entity": "synthetic:p1",
+            "org": "synthetic:C",
+            "time": 3,
+            "value": 4,
+            "label": 0,
+            "unit": "cm",
+            "split": "train"
+          },
+          {
+            "id": "synthetic:r2-2",
+            "entity": "synthetic:p2",
+            "org": "synthetic:C",
+            "time": 4,
+            "value": 5,
+            "label": 2,
+            "unit": "cm",
+            "split": "train"
+          },
+          {
+            "id": "synthetic:r2-3",
+            "entity": "synthetic:p3",
+            "org": "synthetic:C",
+            "time": 5,
+            "value": 6,
+            "label": 4,
+            "unit": "cm",
+            "split": "holdout"
+          }
+        ],
+        "digest": "f8eb1dcdd9aed1f66cc3d802daf88a5f150c1786a451aae997c824c871a5d248"
+      }
+    ],
+    "policy": {
+      "version": "synthetic-policy-1",
+      "schema_version": "raw-row-1",
+      "preprocessing_version": "exact-cm-mm-v1",
+      "cutoff": 10,
+      "holdout": [
+        "synthetic:p3"
+      ],
+      "organizations": [
+        "synthetic:A",
+        "synthetic:B",
+        "synthetic:C"
+      ]
+    },
+    "expected_identity": "d4b78397b67834f373491a32f0f405ecf0fde46bbeed945b155c8321b701a2bc",
+    "expected_selected_count": 12,
+    "expected_schema_digest": "671215e19c9a5ab99302d65edf363111a857b9dcd8354081f8c9588009b9c611",
+    "expected_preprocessing_digest": "390e814e6253c70becd0fc3c8f807f659acb77ba27dfc4fd246d9fdb87166e33"
+  },
+  "summary": {
+    "records": 23,
+    "model": {
+      "version": "affine-rational-1",
+      "gain": "1",
+      "ridge": "1",
+      "feature_map": "[1,gain*x]",
+      "objective": "mean-half-squared-loss-plus-ridge"
+    },
+    "expected_statistics": {
+      "n": 23,
+      "s00": "23",
+      "s01": "-1",
+      "s11": "1041/128",
+      "t0": "-63/8",
+      "t1": "5/16",
+      "q": "625/64"
+    },
+    "theta": [
+      "1/2",
+      "1"
+    ],
+    "objective": "7507/5888",
+    "gradient": [
+      "239/184",
+      "3881/2944"
+    ]
+  },
+  "denoising": {
+    "workload": "untrained-linear-epsilon-DDIM-shaped-2x2",
+    "trace": [
+      {
+        "step": 3,
+        "input": [
+          "1/2",
+          "-1/2",
+          "1",
+          "-1"
+        ],
+        "noise_prediction": [
+          "1/8",
+          "-1/8",
+          "1/4",
+          "-1/4"
+        ],
+        "output": [
+          "7/10",
+          "-7/10",
+          "7/5",
+          "-7/5"
+        ]
+      },
+      {
+        "step": 2,
+        "input": [
+          "7/10",
+          "-7/10",
+          "7/5",
+          "-7/5"
+        ],
+        "noise_prediction": [
+          "7/40",
+          "-7/40",
+          "7/20",
+          "-7/20"
+        ],
+        "output": [
+          "511/600",
+          "-511/600",
+          "511/300",
+          "-511/300"
+        ]
+      },
+      {
+        "step": 1,
+        "input": [
+          "511/600",
+          "-511/600",
+          "511/300",
+          "-511/300"
+        ],
+        "noise_prediction": [
+          "511/2400",
+          "-511/2400",
+          "511/1200",
+          "-511/1200"
+        ],
+        "output": [
+          "8687/9600",
+          "-8687/9600",
+          "8687/4800",
+          "-8687/4800"
+        ]
+      }
+    ],
+    "model_digest": "7e59f5107b29821160b4b650d6e7eb41e43b52bce4216319cfe9129140a3ed16",
+    "sampling_steps": 3,
+    "pixel_updates": 12,
+    "training_steps": 0,
+    "proof_status": "not-run",
+    "zero_target_mse": "75463969/36864000",
+    "output": [
+      "8687/9600",
+      "-8687/9600",
+      "8687/4800",
+      "-8687/4800"
+    ],
+    "limitations": [
+      "Fixed public initial tape, not a Gaussian sampling experiment.",
+      "No trained image model, FID/IS, distributional or safety claim.",
+      "No denoising/training proof or DP/memorization guarantee."
+    ]
+  },
+  "quantized_denoising": {
+    "workload": "untrained-linear-epsilon-DDIM-shaped-2x2",
+    "trace": [
+      {
+        "step": 3,
+        "input": [
+          "1/2",
+          "-1/2",
+          "1",
+          "-1"
+        ],
+        "noise_prediction": [
+          "1/8",
+          "-1/8",
+          "1/4",
+          "-1/4"
+        ],
+        "output": [
+          "11/16",
+          "-11/16",
+          "11/8",
+          "-11/8"
+        ]
+      },
+      {
+        "step": 2,
+        "input": [
+          "11/16",
+          "-11/16",
+          "11/8",
+          "-11/8"
+        ],
+        "noise_prediction": [
+          "11/64",
+          "-11/64",
+          "11/32",
+          "-11/32"
+        ],
+        "output": [
+          "13/16",
+          "-13/16",
+          "27/16",
+          "-27/16"
+        ]
+      },
+      {
+        "step": 1,
+        "input": [
+          "13/16",
+          "-13/16",
+          "27/16",
+          "-27/16"
+        ],
+        "noise_prediction": [
+          "13/64",
+          "-13/64",
+          "27/64",
+          "-27/64"
+        ],
+        "output": [
+          "7/8",
+          "-7/8",
+          "29/16",
+          "-29/16"
+        ]
+      }
+    ],
+    "model_digest": "7e59f5107b29821160b4b650d6e7eb41e43b52bce4216319cfe9129140a3ed16",
+    "sampling_steps": 3,
+    "pixel_updates": 12,
+    "training_steps": 0,
+    "proof_status": "not-run",
+    "zero_target_mse": "1037/512",
+    "output": [
+      "7/8",
+      "-7/8",
+      "29/16",
+      "-29/16"
+    ],
+    "limitations": [
+      "Fixed public initial tape, not a Gaussian sampling experiment.",
+      "No trained image model, FID/IS, distributional or safety claim.",
+      "No denoising/training proof or DP/memorization guarantee."
+    ]
+  },
+  "control": {
+    "kind": "bounded-simulated-control",
+    "steps": 6,
+    "trajectory": [
+      {
+        "step": 0,
+        "state": 3,
+        "action": -1,
+        "next_state": 2,
+        "reward": -4,
+        "reward_unit": "negative-squared-grid-position",
+        "provenance": "synthetic-simulator"
+      },
+      {
+        "step": 1,
+        "state": 2,
+        "action": -1,
+        "next_state": 1,
+        "reward": -1,
+        "reward_unit": "negative-squared-grid-position",
+        "provenance": "synthetic-simulator"
+      },
+      {
+        "step": 2,
+        "state": 1,
+        "action": -1,
+        "next_state": 0,
+        "reward": 0,
+        "reward_unit": "negative-squared-grid-position",
+        "provenance": "synthetic-simulator"
+      },
+      {
+        "step": 3,
+        "state": 0,
+        "action": 0,
+        "next_state": 0,
+        "reward": 0,
+        "reward_unit": "negative-squared-grid-position",
+        "provenance": "synthetic-simulator"
+      },
+      {
+        "step": 4,
+        "state": 0,
+        "action": 0,
+        "next_state": 0,
+        "reward": 0,
+        "reward_unit": "negative-squared-grid-position",
+        "provenance": "synthetic-simulator"
+      },
+      {
+        "step": 5,
+        "state": 0,
+        "action": 0,
+        "next_state": 0,
+        "reward": 0,
+        "reward_unit": "negative-squared-grid-position",
+        "provenance": "synthetic-simulator"
+      }
+    ],
+    "simulated_return": -5,
+    "environment_digest": "94585820179e9f2c33dd7ade36360656d3cd942f3208059add4f7d38d85cc4ff",
+    "proof_status": "not-run",
+    "real_environment_authenticity": "untested",
+    "observer": "all synthetic states/actions/rewards visible; no adaptive-transcript DP",
+    "real_world_exclusion": true
+  }
+}

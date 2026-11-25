@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+paths=(python/fzkml_math/data_experiment_contract.py python/fzkml_math/data_lineage.py python/fzkml_math/join_reference.py python/fzkml_math/streaming_data.py python/fzkml_math/summary_cache.py python/fzkml_math/toy_generation.py scripts/run_s02_data.py scripts/generate_s02_data_vectors.py scripts/check_s02_data_evidence.py tests/test_s02_data.py)
+uv run --locked ruff check "${paths[@]}"
+uv run --locked ruff format --check "${paths[@]}"
+MYPYPATH=src uv run --locked mypy "${paths[@]}"
+PYTHONPATH=.:src uv run --locked python scripts/generate_s02_data_vectors.py --check
+PYTHONPATH=.:src uv run --locked python -m unittest discover -s tests -p test_s02_data.py -v
+if [[ -f evidence/s02/data-local-v1/run.json ]]; then
+  PYTHONPATH=.:src uv run --locked python scripts/check_s02_data_evidence.py evidence/s02/data-local-v1 --mutations
+fi

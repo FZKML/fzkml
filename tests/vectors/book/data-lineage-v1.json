@@ -1,0 +1,110 @@
+{
+  "fixture_version": "s02-book-data-1.0.0",
+  "source": {
+    "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+    "observed_edition": "MS20261125",
+    "author_declared_edition": null,
+    "native_revision": "AHj4eMTMcfjTugtNt8xYwR7dUyF_rmnj2mLtKlthyHmlSzP5kkQA-KrpiNmZ8biFwFCNl37SjE6VZnd9fXa2HG2_OYljPe3qPR7FXwmjg8dt",
+    "native_markdown_export_sha256": "309fe571705524159fdabd4c57c70c119829fde71757b75a0ba99aedf59c30ec",
+    "tab_id": "t.0",
+    "status": "source-inspected-candidate; authoritative-edition-migration-pending",
+    "limitations": [
+      "Both native passages and exported equations/caption were inspected; no atomic export/native snapshot or historical/current edition equivalence is asserted.",
+      "No manuscript prose, full export, image or old authoritative EQ-ID reassignment is included."
+    ]
+  },
+  "vectors": [
+    {
+      "id": "c51-3-duplicate-identifier-multiplicity",
+      "section": "51.3 / Figure51.1",
+      "heading_id": "h.8xa2las5kpty",
+      "source_ranges_utf16": [
+        [
+          211213,
+          211649
+        ],
+        [
+          212772,
+          213122
+        ]
+      ],
+      "equation": "relational multiplicity=a*b; set membership is a different function",
+      "verified_inputs": {
+        "rows_at_A": 2,
+        "rows_at_B": 3
+      },
+      "expected": {
+        "joined_rows": 6
+      },
+      "classification": "source-numerical-facts"
+    },
+    {
+      "id": "c78-9-missing-correspondence",
+      "section": "78.9",
+      "heading_id": "h.7p4hpxyrw8n7",
+      "source_ranges_utf16": [
+        [
+          575310,
+          576268
+        ]
+      ],
+      "verified_inputs": {
+        "values": [
+          0,
+          1
+        ],
+        "marginal_mass_each": "1/2",
+        "worlds": [
+          "always-equal",
+          "always-opposite"
+        ]
+      },
+      "expected": {
+        "equal_joint": [
+          [
+            0,
+            0,
+            "1/2"
+          ],
+          [
+            1,
+            1,
+            "1/2"
+          ]
+        ],
+        "opposite_joint": [
+          [
+            0,
+            1,
+            "1/2"
+          ],
+          [
+            1,
+            0,
+            "1/2"
+          ]
+        ],
+        "same_marginals": true
+      },
+      "classification": "source-numerical-facts"
+    },
+    {
+      "id": "c76-2-summary-semantics",
+      "section": "76.2",
+      "heading_id": "h.kkjjarz0wmez",
+      "source_ranges_utf16": [
+        [
+          540176,
+          541733
+        ]
+      ],
+      "source_equations": {
+        "sum_objective": "J(W)=1/2 sum ||Z_i W-Y_i||_F^2 + lambda/2 ||W||_F^2",
+        "sum_normal_equation": "(S+lambda I) W=T",
+        "mean_normal_equation": "(S+n lambda I) W=T",
+        "statistics": "S=sum Z_i^T Z_i; T=sum Z_i^T Y_i; q=sum ||Y_i||_F^2 required for absolute objective"
+      },
+      "classification": "source-equations-only; all new benchmark inputs are original synthetic"
+    }
+  ]
+}

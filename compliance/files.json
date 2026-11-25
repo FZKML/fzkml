@@ -3246,6 +3246,24 @@
       ],
       "notice_files": []
     },
+    "evidence/s02/local-v1/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original mathematical-reference evidence; source, input and software provenance recorded with the artifact.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/local-v1/math-run.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Generated original mathematical-reference evidence; source, input and software provenance recorded with the artifact.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "examples/claims.json": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3286,6 +3304,114 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/arithmetic.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/costs.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/datasets.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/distributions.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/numeric.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/private_v2.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML Python mathematical reference/vector contribution; provenance recorded alongside the files.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/refinement.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Python mathematical-reference contribution; contributor and source provenance recorded in Git and adjacent metadata.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/sensitivity.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/reference-sources.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
       "license_files": [
         "LICENSE"
       ],
@@ -3349,6 +3475,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/s02-math-run-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
       "license_files": [
         "LICENSE"
       ],
@@ -3435,6 +3570,24 @@
       ],
       "notice_files": []
     },
+    "scripts/generate_s02_private_v2.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML Python mathematical reference/vector contribution; provenance recorded alongside the files.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/generate_s02_vectors.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "scripts/mutation_conformance.py": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3453,6 +3606,24 @@
       ],
       "notice_files": []
     },
+    "scripts/run_s02_experiments.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/s02_conformance.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "scripts/validate": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3466,6 +3637,15 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Respective contributors recorded in Git history; no organization-wide ownership assertion.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/validate-s02": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
       "license_files": [
         "LICENSE"
       ],
@@ -3561,6 +3741,123 @@
       ],
       "notice_files": []
     },
+    "src/fzkml_protocol/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_protocol/geometric.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_protocol/integer.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/audit.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/compression.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/evaluation.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_research/statistics.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/__init__.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/algebra.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/entropy.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/ledger.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_transcript/sampling.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "tests/test_governance.py": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3588,6 +3885,51 @@
       ],
       "notice_files": []
     },
+    "tests/test_s02_math.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/book/manuscript-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/synthetic/private-transition-v2.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML Python mathematical reference/vector contribution; provenance recorded alongside the files.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/synthetic/s02-boundaries-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/synthetic/s02-data-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original FZKML contributor implementation/metadata; reused same-repository source provenance in python/reference-sources.json; no private manuscript bytes.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
     "tools-requirements.txt": {
       "license": "Apache-2.0",
       "origin": "original",
@@ -3601,6 +3943,339 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original contribution developed with Codex assistance; contributor provenance in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/s02-protected/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/s02-protected/pq-inventory-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/s02-protected/runtime-lock.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/s02-protected/snarkjs-lock.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/collaborative.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/pq_audit.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/progress.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/protected.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/s02-protected-run-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/bootstrap_s02_protected.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/run_s02_protected.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/validate-s02-protected": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_s02_protected.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/book/progress-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 code, numerical facts and generated provenance metadata developed with Codex assistance; external tools retain their own licenses and are not redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/development-failure-dirty.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/proof-manifest.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-0-0-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-0-0-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-0-0.005-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-0-0.005-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-1-0-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-1-0-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-1-0.005-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-1-0.005-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-2-0-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-2-0-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-2-0.005-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/rep3-2-0.005-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-0-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-0-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-1-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-1-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-2-output.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/public/trusted-2-proof.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/m4-local-v1/run.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_s02_protected_evidence.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original Session02 local numerical evidence/provenance and public mathematical proof artifacts; generated using identified upstream tools and public synthetic fixture. No upstream implementation, witness, key or manuscript prose redistributed.",
       "license_files": [
         "LICENSE"
       ],
@@ -4962,6 +5637,168 @@
       "license": "Apache-2.0",
       "origin": "original",
       "attribution": "Original engineering documentation, source metadata or synthetic tooling generated with Codex; contributor history records provenance. The manuscript itself is excluded.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/s02-data/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/s02-data/config-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/data_experiment_contract.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/data_lineage.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/join_reference.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/streaming_data.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/summary_cache.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/toy_generation.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/s02-data-run-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_s02_data_evidence.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/generate_s02_data_vectors.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/run_s02_data.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/validate-s02-data": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_s02_data.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/book/data-lineage-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/synthetic/data-lineage-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/data-local-v1/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original local synthetic numerical experiment and measurement evidence; assumptions and limitations retained; contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/data-local-v1/run.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original local synthetic numerical experiment and measurement evidence; assumptions and limitations retained; contributor certification and independent review tracked separately.",
       "license_files": [
         "LICENSE"
       ],

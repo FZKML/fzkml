@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "src/fzkml_research/__init__.py",
+      "source_commit": "a4670e13f2d5d1aa53f12ffbc2a9e8a7ae2e6637",
+      "source_path": "src/fzkml_research/__init__.py",
+      "sha256": "1704a93b7adb85812b4e5ecfdafde323fa03ceacb9092faf79e5fac8f183f798",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_research/statistics.py",
+      "source_commit": "a4670e13f2d5d1aa53f12ffbc2a9e8a7ae2e6637",
+      "source_path": "src/fzkml_research/statistics.py",
+      "sha256": "ca54541fddf5cd934b33c1442c4568202855ec5872ba994a9b74d5e2cd667332",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_research/audit.py",
+      "source_commit": "a4670e13f2d5d1aa53f12ffbc2a9e8a7ae2e6637",
+      "source_path": "src/fzkml_research/audit.py",
+      "sha256": "86200c563eddedd64f8b4de3e3bb3522721071f42417ff9c031eee9eec08b836",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_research/evaluation.py",
+      "source_commit": "a4670e13f2d5d1aa53f12ffbc2a9e8a7ae2e6637",
+      "source_path": "src/fzkml_research/evaluation.py",
+      "sha256": "d73c01d3f25eefd9d8de06caf1c7b671d6ca7518c209f1cb40bab46a14ddfd08",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_research/compression.py",
+      "source_commit": "a4670e13f2d5d1aa53f12ffbc2a9e8a7ae2e6637",
+      "source_path": "src/fzkml_research/compression.py",
+      "sha256": "4d7316609ac2197e8a96f084b3f9efcf2d051d02c9b899528fc90b66f5f77fbe",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_protocol/__init__.py",
+      "source_commit": "4e552ab0c47f2c8c3ff15551b9041b70a07329cf",
+      "source_path": "src/fzkml_protocol/__init__.py",
+      "sha256": "28878ceb8d8330f76b450fa24cb5fadfec125a36c12e73f681ef9ec50ac15200",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_protocol/integer.py",
+      "source_commit": "4e552ab0c47f2c8c3ff15551b9041b70a07329cf",
+      "source_path": "src/fzkml_protocol/integer.py",
+      "sha256": "3ff0cf009c79095aff3c977ec080735f879f97b555ea2d6dc9a6b923a9283651",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_protocol/geometric.py",
+      "source_commit": "4e552ab0c47f2c8c3ff15551b9041b70a07329cf",
+      "source_path": "src/fzkml_protocol/geometric.py",
+      "sha256": "7f3b07d727d0b33f322305ef4a31b8ab3ebd5076bb1db8c9badfae798596c3c6",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_transcript/__init__.py",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "source_path": "src/fzkml_transcript/__init__.py",
+      "sha256": "97e82afabbbd642ceed0198157fd2510da502bc80b297a3fd5ddfbdc37a45b24",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_transcript/algebra.py",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "source_path": "src/fzkml_transcript/algebra.py",
+      "sha256": "b8402347eefe1b640735f934ddf80a623ef38f308378e69030cc6c59aad94fb5",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_transcript/entropy.py",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "source_path": "src/fzkml_transcript/entropy.py",
+      "sha256": "e00504c2b3b57eda93ebd143ea6c1f71fc94dd1e4d265c2bd44ad7754089bc9f",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_transcript/sampling.py",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "source_path": "src/fzkml_transcript/sampling.py",
+      "sha256": "d89a086970e7678e08c73458b393be152d019168f1fbcc60cdccd05a4b9b74d5",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    },
+    {
+      "path": "src/fzkml_transcript/ledger.py",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "source_path": "src/fzkml_transcript/ledger.py",
+      "sha256": "bdd31f22335cced02b709c81410a44f7b8b1d25c05253a3c6ef58b5183f7c9bb",
+      "modifications": "none; existing same-repository Python reference implementation reused verbatim"
+    }
+  ]
+}

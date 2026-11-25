@@ -1,0 +1,76 @@
+{
+  "fixture_version": "s02-book-progress-1.0.0",
+  "source": {
+    "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+    "observed_edition": "MS20261125",
+    "author_declared_edition": null,
+    "revision": "AHj4eMSO5K9Q4_qk74qXsXCbzz4wXx6c88CG5z9I297L1fyL00UmSCl0RVGntLNlpPTwrWAiQ_fqtbzo3W9lKJ8BK5SjPfKwXdkbnFrTaM6w",
+    "native_markdown_export_sha256": "e010ba03e3bdf2f22be9c2a339a9b62c4507787c3af596edb55279de65a361dc",
+    "tab_id": "t.0",
+    "review": "exact-passages-inspected; authoritative-edition-migration-pending; not an atomic snapshot",
+    "limitations": [
+      "Opaque revision tokens changed during this session; stable pre/post export pair was observed, but no content equivalence with historical MS20261124 is asserted.",
+      "No manuscript prose, images, or export is redistributed."
+    ]
+  },
+  "vectors": [
+    {
+      "id": "c69-4-independent-pipeline-capacity",
+      "section": "69.4",
+      "section_heading_id": "h.wwlftgu6so8l",
+      "source_range_utf16": [
+        447707,
+        449406
+      ],
+      "equation_range_utf16": [
+        448095,
+        448117
+      ],
+      "equation": "r <= min(1/c, m/g)",
+      "verified_inputs": {
+        "compute_seconds": "1/5",
+        "prove_worker_seconds": "2",
+        "workers": 8
+      },
+      "expected": {
+        "training_capacity": "5",
+        "prover_capacity": "4",
+        "certified_rate_upper_bound": "4"
+      },
+      "assumptions": [
+        "Independent resources, identical workers, ignored communication/verification/contention."
+      ],
+      "status": "source-inspected-candidate"
+    },
+    {
+      "id": "c69-6-fixed-bad-step-sampling",
+      "section": "69.6",
+      "section_heading_id": "h.2z9dhjh3yeis",
+      "source_range_utf16": [
+        451950,
+        454039
+      ],
+      "equation_range_utf16": [
+        452871,
+        452873
+      ],
+      "equation": "P_miss=binom(T-b,k)/binom(T,k) <= (1-b/T)^k; zero if k>T-b",
+      "verified_inputs": {
+        "total": 100000,
+        "samples": 1000,
+        "isolated_bad": 1,
+        "fraction_bad_count": 1000
+      },
+      "expected": {
+        "isolated_detection": "1/100",
+        "fraction_miss_upper_rounded": "0.0000432",
+        "absolute_tolerance": "0.00000005"
+      },
+      "assumptions": [
+        "Trace and bad set frozen before uniform distinct sampling.",
+        "Every sampled bad step is detected; no challenge replacement or unavailable witness omission."
+      ],
+      "status": "source-inspected-candidate"
+    }
+  ]
+}

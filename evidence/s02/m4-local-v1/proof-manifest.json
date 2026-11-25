@@ -1,0 +1,110 @@
+{
+  "schema_version": "s02-public-proof-artifacts-1.0.0",
+  "source_commit": "6ce9767228fe6d9755fd818dd70b47ef7eeb9e56",
+  "verification_key_source": "https://github.com/TaceoLabs/co-snarks/blob/97adcc06afc0d506c2d6aa9f81b2e342fd8108c0/test_vectors/Groth16/bn254/multiplier2/verification_key.json",
+  "verification_key_sha256": "4b69f1f57533b9225c16d43f4ccb4e20f324bb90bf26b8fb9c07ee81a6a2e00c",
+  "proofs": [
+    {
+      "run": "trusted-0",
+      "proof": "public/trusted-0-proof.json",
+      "proof_sha256": "2a356dbcb1da84d1556b746db4d4c68c700d62d36221d0f4202e8da5a234adb0",
+      "output": "public/trusted-0-output.json",
+      "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
+      "generator": "snarkjs0.7.5",
+      "verification": "real pinned coCircom verifier accepted during recorded run"
+    },
+    {
+      "run": "trusted-1",
+      "proof": "public/trusted-1-proof.json",
+      "proof_sha256": "cf2f62729fbe311865e0c5475a2b4afec3d0bc18f9b27663d4d3294f4d658eaf",
+      "output": "public/trusted-1-output.json",
+      "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
+      "generator": "snarkjs0.7.5",
+      "verification": "real pinned coCircom verifier accepted during recorded run"
+    },
+    {
+      "run": "trusted-2",
+      "proof": "public/trusted-2-proof.json",
+      "proof_sha256": "98b52f1dca908012f41c9c50cc66d55454d1e7e0b75bda2d8a3730da403f1eba",
+      "output": "public/trusted-2-output.json",
+      "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
+      "generator": "snarkjs0.7.5",
+      "verification": "real pinned coCircom verifier accepted during recorded run"
+    },
+    {
+      "run": "rep3-0-0",
+      "proof": "public/rep3-0-0-proof.json",
+      "proof_sha256": "d897b12f2497496ced77c7d4dcb104bcaa085fbddd8ddc9dc18639a26862ef46",
+      "output": "public/rep3-0-0-output.json",
+      "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
+      "generator": "coCircom0.10.0 REP3",
+      "verification": "real pinned coCircom verifier accepted during recorded run"
+    },
+    {
+      "run": "rep3-0-0.005",
+      "proof": "public/rep3-0-0.005-proof.json",
+      "proof_sha256": "d1bd22f9fc45413773358c5e503416a4f8a3d7aac5f5164b5c31899af634e33d",
+      "output": "public/rep3-0-0.005-output.json",
+      "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
+      "generator": "coCircom0.10.0 REP3",
+      "verification": "real pinned coCircom verifier accepted during recorded run"
+    },
+    {
+      "run": "rep3-1-0",
+      "proof": "public/rep3-1-0-proof.json",
+      "proof_sha256": "78f835ece0365c482513aaf1716942b08f414678928b401f418719125753b194",
+      "output": "public/rep3-1-0-output.json",
+      "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
+      "generator": "coCircom0.10.0 REP3",
+      "verification": "real pinned coCircom verifier accepted during recorded run"
+    },
+    {
+      "run": "rep3-1-0.005",
+      "proof": "public/rep3-1-0.005-proof.json",
+      "proof_sha256": "fa394d82b96534a992aa641221f7c9354b540d59e4d8216391a4514e010aad99",
+      "output": "public/rep3-1-0.005-output.json",
+      "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
+      "generator": "coCircom0.10.0 REP3",
+      "verification": "real pinned coCircom verifier accepted during recorded run"
+    },
+    {
+      "run": "rep3-2-0",
+      "proof": "public/rep3-2-0-proof.json",
+      "proof_sha256": "0a11376b702148f627fcabfcc3de018a5ced45c7130a4530b4909e3bf5e71537",
+      "output": "public/rep3-2-0-output.json",
+      "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
+      "generator": "coCircom0.10.0 REP3",
+      "verification": "real pinned coCircom verifier accepted during recorded run"
+    },
+    {
+      "run": "rep3-2-0.005",
+      "proof": "public/rep3-2-0.005-proof.json",
+      "proof_sha256": "86eeeefacc678107df420d62911b199ac1ce8509191a8e883823628e45e70f6d",
+      "output": "public/rep3-2-0.005-output.json",
+      "output_sha256": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd",
+      "generator": "coCircom0.10.0 REP3",
+      "verification": "real pinned coCircom verifier accepted during recorded run"
+    }
+  ],
+  "workload_descriptors": {
+    "scope": "Derived public metadata only; these hashes are not public inputs or authenticated operand/model commitments in the external circuit.",
+    "model": {
+      "descriptor": {
+        "kind": "model",
+        "description": "one scalar coefficient11"
+      },
+      "sha256": "4d4aeaed4c32eb0b060a476de6023975b7818c109ab0231bd77212ac7ad924c9"
+    },
+    "preprocessor": {
+      "descriptor": {
+        "kind": "preprocessor",
+        "description": "identity"
+      },
+      "sha256": "6a0d1273fa090df91350e3456f860e534fa97e1c09d7dc247c2a2d29f9ea2302"
+    },
+    "relation": {
+      "kind": "serialized-r1cs",
+      "sha256": "18e7e2acedabd39db3efaa8a9b457e3dbd3883ae1c421be4a725eec530574ee2"
+    }
+  }
+}
