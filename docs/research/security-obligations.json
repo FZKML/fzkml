@@ -1,0 +1,216 @@
+{
+  "version": "0.1",
+  "scope": "Standalone target plus explicitly deferred extensions",
+  "obligations": [
+    {
+      "id": "M0-SETUP",
+      "status": "open",
+      "responsible_issue": 23,
+      "review_domain": "cryptography",
+      "required_evidence": "Name backend/setup version, parameter generation, trust/trapdoors and reviewed security parameter.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-COMMIT",
+      "status": "open",
+      "responsible_issue": 32,
+      "review_domain": "cryptography",
+      "required_evidence": "Choose message-binding and hiding commitments, canonical encodings and independent blinding.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-ARGUMENT",
+      "status": "open",
+      "responsible_issue": 33,
+      "review_domain": "cryptography",
+      "required_evidence": "Match standalone completeness, soundness, knowledge and ZK theorems to implemented verifier/circuit.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-NUMERIC",
+      "status": "open",
+      "responsible_issue": 26,
+      "review_domain": "numerical-semantics",
+      "required_evidence": "Complete no-wrap/range ledger, rounding and semantic-conformance review, including the norm predicate.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-AUTH",
+      "status": "open",
+      "responsible_issue": 47,
+      "review_domain": "protocol",
+      "required_evidence": "Instantiate authenticated key registration, signature/context binding and identity policy.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-PAYLOAD",
+      "status": "open",
+      "responsible_issue": 44,
+      "review_domain": "protocol",
+      "required_evidence": "Prove equality of the committed update and the contribution actually delivered and consumed.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-AGGREGATE",
+      "status": "open",
+      "responsible_issue": 46,
+      "review_domain": "protocol",
+      "required_evidence": "Specify witnesses, honest thresholds and exact conservation for the protected aggregate.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-ENTROPY",
+      "status": "open",
+      "responsible_issue": 56,
+      "review_domain": "cryptography-and-privacy",
+      "required_evidence": "Specify independent honest randomness, coalitions, dropouts and selective-abort/retry model.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-EXTRACTION",
+      "status": "open",
+      "responsible_issue": 23,
+      "review_domain": "cryptography",
+      "required_evidence": "Supply compatible composed extraction/simulation for the actual scheduling/setup model.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-UNIQUENESS",
+      "status": "open",
+      "responsible_issue": 51,
+      "review_domain": "protocol",
+      "required_evidence": "Replace or justify trusted ledger, receipts, authoritative roster and non-equivocation.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-RECOVERY",
+      "status": "open",
+      "responsible_issue": 49,
+      "review_domain": "protocol",
+      "required_evidence": "Implement durable release identities and crash/retry idempotence under the chosen failure model.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-DP",
+      "status": "open",
+      "responsible_issue": 57,
+      "review_domain": "privacy",
+      "required_evidence": "Prove ideal mechanism privacy and complete observer-view simulation, including failures/public observations.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-RECURSION",
+      "status": "open",
+      "responsible_issue": 51,
+      "review_domain": "cryptography",
+      "required_evidence": "Supply bounded-depth connected-state theorem, authenticated base case and complete-state linkage.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    },
+    {
+      "id": "M0-FORMAL",
+      "status": "open",
+      "responsible_issue": 23,
+      "review_domain": "formal-methods",
+      "required_evidence": "If formalizing, record exact theorem, axioms, trusted kernel/version and CI-checked artifact.",
+      "affected_claim_ids": [
+        "FZK-MS20261124-C04-SEC-001",
+        "FZK-MS20261124-C05-SEC-001",
+        "FZK-MS20261124-C14-SEC-001",
+        "FZK-MS20261124-C73-SEC-001"
+      ],
+      "independent_review_required": true,
+      "review_artifact_ids": []
+    }
+  ]
+}

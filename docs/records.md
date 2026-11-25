@@ -65,8 +65,11 @@ Evidence paths must resolve inside the repository and exist. Python unit-test
 references use `tests/test_file.py::test_function`; CI checks the function exists.
 Run claim IDs and claim evidence IDs must resolve. Coverage lists all ten statuses,
 unmapped claims and extraction pending R001; deferred/unmapped does not mean passed.
-The initial empty registry is intentional: #12 owns manuscript extraction and
-the chapter/exercise mapping. Synthetic schema tests are not imported book claims.
+`claims/registry.json` is the default public-report registry. #12's source
+locations, companion scientific context and chapter/exercise coverage are in
+`docs/research/`; extraction remains partial and native equations await source
+review. `examples/claims.json` remains an empty infrastructure test fixture.
+Synthetic schema tests are not imported book claims.
 
 Reports preserve exact inputs, claim scopes, all repetition failures/exclusions,
 limitations, source and run links. Inputs regenerate identical output bytes,

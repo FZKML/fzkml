@@ -13,5 +13,5 @@ target/
 .ruff_cache/
 *.egg-info/
 
-research/
+/research/
 release-bundle/
