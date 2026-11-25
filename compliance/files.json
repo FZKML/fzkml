@@ -5767,6 +5767,60 @@
         "LICENSE"
       ],
       "notice_files": []
+    },
+    "ci/fixtures/evidence-gates-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic fixture, specification or engineering code developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/ci-evidence": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic fixture, specification or engineering code developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/ci/evidence-gates-v1.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic fixture, specification or engineering code developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "specs/ci/evidence-run-v1.schema.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic fixture, specification or engineering code developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "src/fzkml_ci/evidence_gates.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic fixture, specification or engineering code developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_ci_evidence_gates.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original synthetic fixture, specification or engineering code developed with Codex assistance. Contributor provenance is recorded in Git history.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
     }
   }
 }

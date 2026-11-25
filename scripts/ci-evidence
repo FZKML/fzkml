@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+cargo build --locked -p fzkml-core --bin fzkml-contract
+binary="$PWD/target/debug/fzkml-contract"
+output=()
+if [[ $# == 2 && $1 == --output ]]; then
+  output=(--output "$2")
+elif [[ $# != 0 ]]; then
+  printf '%s\n' 'usage: scripts/ci-evidence [--output NEW_DIRECTORY]' >&2
+  exit 2
+fi
+PYTHONPATH=src uv run --locked python specifications/validate.py >/dev/null
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests -p test_ci_evidence_gates.py
+PYTHONPATH=src uv run --locked python -m fzkml_ci.evidence_gates --binary "$binary" ${output[@]+"${output[@]}"}
+
+if mutant=$(PYTHONPATH=src uv run --locked python -m fzkml_ci.evidence_gates --binary "$binary" --mutation benchmark-scope 2>&1); then
+  printf '%s\n' 'CI mutation unexpectedly passed' >&2
+  exit 1
+else
+  status=$?
+  if [[ $status != 1 || "$mutant" != 'evidence gate failed: matched-benchmark: expected diagnostic, observed unmatched' ]]; then
+    printf '%s\n' 'CI mutation failed for the wrong reason' >&2
+    exit 1
+  fi
+fi
+printf '%s\n' '- Deliberate benchmark scope mutation exited 1 at the comparison gate.'

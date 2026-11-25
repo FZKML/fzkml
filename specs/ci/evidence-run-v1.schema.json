@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fzkml:ci-evidence-gates:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_commit",
+    "source_ref",
+    "fixture_id",
+    "fixture_sha256",
+    "source_files",
+    "gates",
+    "claims",
+    "limitations",
+    "source_dirty",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "source_ref": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "fixture_id": {
+      "const": "ci-evidence-fixture-v1"
+    },
+    "fixture_sha256": {
+      "$ref": "#/$defs/digest"
+    },
+    "source_files": {
+      "type": "object",
+      "minProperties": 6,
+      "maxProperties": 16,
+      "additionalProperties": {
+        "$ref": "#/$defs/digest"
+      }
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 32,
+      "items": {
+        "$ref": "#/$defs/gate"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 200,
+      "items": {
+        "$ref": "#/$defs/claim"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_dirty": {
+      "type": "boolean"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "python",
+        "os_arch",
+        "workflow_run",
+        "workflow_attempt",
+        "native_binary_sha256",
+        "cargo_lock_sha256"
+      ],
+      "properties": {
+        "python": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 150
+        },
+        "os_arch": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 150
+        },
+        "workflow_run": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 150
+        },
+        "workflow_attempt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 150
+        },
+        "native_binary_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "cargo_lock_sha256": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "diagnostic",
+        "unmatched",
+        "inconclusive",
+        "rejected",
+        "failed",
+        "unsupported",
+        "skipped",
+        "canceled"
+      ]
+    },
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "issue",
+        "id",
+        "expected",
+        "observed",
+        "raw"
+      ],
+      "properties": {
+        "issue": {
+          "enum": [
+            116,
+            117,
+            118,
+            119,
+            120
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]{1,48}$"
+        },
+        "expected": {
+          "enum": [
+            "completed",
+            "diagnostic",
+            "unmatched",
+            "inconclusive",
+            "rejected"
+          ]
+        },
+        "observed": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "type": "object",
+          "minProperties": 1
+        }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "status",
+        "class",
+        "source",
+        "statement",
+        "sources",
+        "evidence",
+        "required_reviews",
+        "limitations"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^FZK-"
+        },
+        "status": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "edition",
+            "chapter",
+            "section",
+            "equation",
+            "version"
+          ]
+        },
+        "statement": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "extraction"
+            ]
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "availability"
+            ]
+          }
+        },
+        "required_reviews": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
