@@ -1,0 +1,114 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "m4-contracts-1.0.0"
+    },
+    "source_edition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_review": {
+      "type": "string",
+      "minLength": 1
+    },
+    "genuine_proof_backend": {
+      "const": "not-integrated"
+    },
+    "contracts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "issue": {
+            "enum": [
+              76,
+              77,
+              78,
+              79
+            ]
+          },
+          "status": {
+            "const": "specified-reference-checks-only"
+          },
+          "claim_ids": {
+            "const": []
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 5000
+          },
+          "source_quality": {
+            "type": "string",
+            "minLength": 1
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 5000
+          },
+          "remaining": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 5000
+          },
+          "required_tests": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 5000
+          }
+        },
+        "required": [
+          "id",
+          "issue",
+          "status",
+          "claim_ids",
+          "source_refs",
+          "source_quality",
+          "requirements",
+          "remaining",
+          "required_tests"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 5000
+    }
+  },
+  "required": [
+    "schema_version",
+    "source_edition",
+    "source_version",
+    "source_review",
+    "genuine_proof_backend",
+    "contracts"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/specifications/m4/schema-v1.json"
+}

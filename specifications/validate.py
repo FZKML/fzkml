@@ -88,6 +88,8 @@ def schemas(root: Path) -> Registry[Any]:
         "claims/source-map-schema-v1.json",
         "claims/traceability-schema-v1.json",
         "claims/candidate-evidence-schema-v1.json",
+        "specifications/m4/schema-v1.json",
+        "specifications/m4/report-schema-v1.json",
     ):
         schema = read(root, name)
         Draft202012Validator.check_schema(schema)
@@ -334,6 +336,43 @@ def validate(root: Path = ROOT) -> Json:
     )
     nodes = check_source(root, source, manuscript)
     claims = indexed(registry["claims"], "id")
+    m4 = read(root, "specifications/m4/contracts-v1.json")
+    check_schema(root, "specifications/m4/schema-v1.json", m4, local_schemas)
+    contracts = indexed(m4["contracts"], "id")
+    require(
+        len(contracts) == 4 and {row["issue"] for row in contracts.values()} == {76, 77, 78, 79},
+        "incomplete M4 contract coverage",
+    )
+    require(
+        m4["source_version"] == trace["source_version"]
+        and m4["source_edition"] == manuscript["edition_id"],
+        "M4 source version mismatch",
+    )
+    review = read(root, m4["source_review"])
+    require(
+        review["source_version"] == trace["source_version"]
+        and review["observed_revision_id"] == manuscript["observed_revision_id"]
+        and review["independent_review"] is False,
+        "M4 source inspection mismatch",
+    )
+    for section in review["sections"]:
+        sid = section["source_id"]
+        require(
+            sid in nodes
+            and nodes[sid]["kind"] == "section"
+            and section["range_utf16"][0] == nodes[sid]["location"]["start_utf16"]
+            and section["range_utf16"][1] > section["range_utf16"][0],
+            "M4 inspection locator mismatch",
+        )
+    tests = local_file(root, "tests/test_m4_contracts.py")
+    names = {
+        node.name
+        for node in ast.walk(ast.parse(tests.read_text()))
+        if isinstance(node, ast.FunctionDef) and node.name.startswith("test_")
+    }
+    for row in contracts.values():
+        require(set(row["source_refs"]) <= nodes.keys(), "dangling M4 source reference")
+        require(set(row["required_tests"]) <= names, "missing M4 required test")
     candidates = read(root, "claims/candidate-evidence-v1.json")
     check_schema(root, "claims/candidate-evidence-schema-v1.json", candidates, local_schemas)
     candidate_records = indexed(candidates["records"], "id")
@@ -595,6 +634,7 @@ def validate(root: Path = ROOT) -> Json:
         "declared_formal_artifacts": formal_count,
         "declared_independent_reviews": reviewed_count,
         "candidate_external_records": len(candidate_records),
+        "m4_contracts": len(contracts),
         "trust": "Metadata checked; external receipts/reviews require trusted verification.",
     }
 

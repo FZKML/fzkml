@@ -259,6 +259,18 @@ class SpecificationRegistryTests(unittest.TestCase):
         self.save("claims/candidate-evidence-v1.json", d)
         self.invalid("candidate immutable URL mismatch")
 
+    def test_m4_requires_source_and_test_links(self) -> None:
+        d = self.read("specifications/m4/contracts-v1.json")
+        d["contracts"][0]["source_refs"].append("missing-source")
+        self.save("specifications/m4/contracts-v1.json", d)
+        self.invalid("dangling M4 source reference")
+
+    def test_m4_requires_existing_named_test(self) -> None:
+        d = self.read("specifications/m4/contracts-v1.json")
+        d["contracts"][0]["required_tests"].append("test_nonexistent")
+        self.save("specifications/m4/contracts-v1.json", d)
+        self.invalid("missing M4 required test")
+
     def test_unknown_status_rejected(self) -> None:
         d = self.read("claims/registry.json")
         d["claims"][0]["status"] = "verified"
