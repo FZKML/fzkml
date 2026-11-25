@@ -151,6 +151,7 @@ def load_tests(
     """Include S02's independent math cases in the existing Python language lane."""
     if pattern in (None, "test_language.py"):
         tests.addTests(loader.discover(str(ROOT / "tests"), pattern="test_s02_math.py"))
+        tests.addTests(loader.discover(str(ROOT / "tests"), pattern="test_s02_protected.py"))
     return tests
 
 

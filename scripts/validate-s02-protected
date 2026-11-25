@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+paths=(python/fzkml_math/progress.py python/fzkml_math/protected.py python/fzkml_math/collaborative.py python/fzkml_math/pq_audit.py scripts/run_s02_protected.py scripts/bootstrap_s02_protected.py tests/test_s02_protected.py)
+uv run --locked ruff check "${paths[@]}"
+uv run --locked ruff format --check "${paths[@]}"
+MYPYPATH=src uv run --locked mypy "${paths[@]}"
+PYTHONPATH=.:src uv run --locked python -m unittest discover -s tests -p test_s02_protected.py -v

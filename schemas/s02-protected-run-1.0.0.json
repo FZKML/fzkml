@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fzkml.org/schemas/s02-protected-run-1.0.0.json",
+  "title": "Local candidate M4 reference companion; not a CI-04 public result",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "s02-protected-run-1.0.0"
+    },
+    "kind": {
+      "const": "local-candidate-research"
+    },
+    "planning_issue_claim_ids": {
+      "const": [
+        "FZK-R042",
+        "FZK-R043",
+        "FZK-R044",
+        "FZK-R045"
+      ]
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "source_dirty": {
+      "type": "boolean"
+    },
+    "source_approval": {
+      "type": "string"
+    },
+    "hardware": {
+      "type": "object"
+    },
+    "software": {
+      "type": "object"
+    },
+    "digests": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "observer_model": {
+      "type": "object"
+    },
+    "pipeline": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object"
+      }
+    },
+    "sampling": {
+      "type": "object"
+    },
+    "sumcheck_negative": {
+      "type": "object"
+    },
+    "pq_inventory_audit": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "full_stack_pq_supported": {
+            "const": false
+          },
+          "blockers": {
+            "type": "array"
+          },
+          "implemented": {
+            "type": "boolean"
+          },
+          "performance_eligible": {
+            "type": "boolean"
+          },
+          "review": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "full_stack_pq_supported",
+          "blockers",
+          "implemented",
+          "performance_eligible",
+          "review"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "matched_workload": {
+      "type": "object",
+      "properties": {
+        "function": {
+          "const": "signed integer a*b"
+        },
+        "a": {
+          "const": 3
+        },
+        "b": {
+          "const": 11
+        },
+        "expected": {
+          "const": 33
+        },
+        "encoding": {
+          "type": "string"
+        },
+        "dataset_provenance": {
+          "type": "string"
+        },
+        "preprocessor": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "he": {
+          "type": "array"
+        },
+        "collaborative_proofs": {
+          "type": "array"
+        },
+        "trusted_prover": {
+          "type": "array"
+        },
+        "attested_execution": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "const": "not-run"
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "function",
+        "a",
+        "b",
+        "expected",
+        "encoding",
+        "dataset_provenance",
+        "preprocessor",
+        "model",
+        "he",
+        "collaborative_proofs",
+        "trusted_prover",
+        "attested_execution"
+      ],
+      "additionalProperties": false
+    },
+    "negative_runs": {
+      "type": "array"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 5
+    },
+    "reproduction_command": {
+      "type": "string"
+    },
+    "external_relation": {
+      "type": "object"
+    },
+    "public_artifacts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "planning_issue_claim_ids",
+    "source_commit",
+    "source_dirty",
+    "source_approval",
+    "hardware",
+    "software",
+    "digests",
+    "observer_model",
+    "pipeline",
+    "sampling",
+    "sumcheck_negative",
+    "pq_inventory_audit",
+    "matched_workload",
+    "negative_runs",
+    "limitations",
+    "reproduction_command"
+  ],
+  "additionalProperties": false
+}
