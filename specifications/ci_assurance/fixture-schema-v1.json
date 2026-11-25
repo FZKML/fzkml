@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fzkml.org/specifications/ci-assurance/fixture/1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "canary": {
+      "type": "string",
+      "minLength": 16,
+      "maxLength": 128
+    },
+    "traces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 64
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 64
+              },
+              "minItems": 4,
+              "maxItems": 4
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "classification": {
+            "enum": [
+              "released",
+              "aborted-before-disclosure",
+              "aborted-possible-disclosure",
+              "inconclusive"
+            ]
+          },
+          "charged": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "releases": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "id",
+          "events",
+          "classification",
+          "charged",
+          "releases"
+        ]
+      },
+      "minItems": 7,
+      "maxItems": 16
+    },
+    "views": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "channel": {
+            "enum": [
+              "logs",
+              "public-inputs",
+              "metrics",
+              "uploads",
+              "recovery"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^[a-z-]{1,32}\\.txt$"
+          },
+          "visibility": {
+            "const": "public"
+          },
+          "role": {
+            "enum": [
+              "public",
+              "coordinator"
+            ]
+          },
+          "payload": {
+            "type": "string",
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "channel",
+          "path",
+          "visibility",
+          "role",
+          "payload"
+        ]
+      },
+      "minItems": 5,
+      "maxItems": 32
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mechanism": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "sampler": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "released_value": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "q": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "scale": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "clipping": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "cohort": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "privacy_unit": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "query": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "amplification": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "amplification_factor": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "claim_scope": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "adjacency": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "sensitivity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "theorem_sha256": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "budget_ratio": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "releases": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "maxLength": 32
+              },
+              "noise_instance": {
+                "type": "string",
+                "maxLength": 32
+              },
+              "cached_retransmission": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "id",
+              "noise_instance",
+              "cached_retransmission"
+            ]
+          }
+        }
+      },
+      "required": [
+        "mechanism",
+        "sampler",
+        "released_value",
+        "q",
+        "scale",
+        "clipping",
+        "cohort",
+        "privacy_unit",
+        "query",
+        "amplification",
+        "amplification_factor",
+        "claim_scope",
+        "adjacency",
+        "sensitivity",
+        "theorem_sha256",
+        "budget_ratio",
+        "releases"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "canary",
+    "traces",
+    "views",
+    "parameters"
+  ]
+}

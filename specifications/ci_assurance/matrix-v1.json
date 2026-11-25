@@ -1,0 +1,37 @@
+{
+  "id": "synthetic-ci20-v1",
+  "command_id": "ci-assurance-reference-v1",
+  "axes": {
+    "profile": [
+      "add-remove",
+      "replace"
+    ],
+    "seed": [
+      "s0",
+      "s1"
+    ]
+  },
+  "resources": {
+    "hardware": "cpu-reference",
+    "cpus": 1,
+    "gpus": 0,
+    "gpu_model": null,
+    "ram_mib": 2048,
+    "disk_mib": 1024,
+    "timeout_seconds": 60
+  },
+  "quotas": {
+    "jobs": 4,
+    "attempts": 8,
+    "serial_seconds": 480,
+    "cpu_seconds": 480,
+    "gpu_seconds": 0,
+    "concurrent_ram_mib": 4096,
+    "concurrent_disk_mib": 2048,
+    "cumulative_disk_mib": 8192
+  },
+  "attempts": 2,
+  "concurrency": 2,
+  "dataset_sha256": "7e93d8ce79939ea2dd50fa9cf2606e88e0d95b1425460e966316f852858dc093",
+  "software_sha256": "abaf7f14a3afce7aacad2f500932416327dc3675b0429f6d2036cf9d5881851c"
+}

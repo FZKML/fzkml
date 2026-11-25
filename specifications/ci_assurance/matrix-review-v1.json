@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "synthetic-test-only",
+  "synthetic_digests": [
+    "6e4fd692c4f02d6becd2d8c261d5f6b0a21d7b19bbba03d21a430b475923022b"
+  ],
+  "live_approved_digests": [],
+  "human_approval": null,
+  "dispatch_supported": false
+}

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fzkml.org/specifications/ci-assurance/contracts/1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "source_kind": {
+      "const": "original-engineering"
+    },
+    "scientific_claim_ids": {
+      "const": []
+    },
+    "workflow": {
+      "const": ".github/workflows/cpu.yml"
+    },
+    "local_command": {
+      "type": "string",
+      "maxLength": 256
+    },
+    "contracts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "enum": [
+              "CI-16",
+              "CI-17",
+              "CI-18",
+              "CI-19",
+              "CI-20"
+            ]
+          },
+          "issue": {
+            "type": "integer",
+            "minimum": 111,
+            "maximum": 115
+          },
+          "dependencies": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000
+            },
+            "minItems": 1,
+            "maxItems": 8
+          },
+          "dependency_status": {
+            "const": "integration-review-pending"
+          },
+          "fixture_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 80
+            },
+            "minItems": 1,
+            "maxItems": 16
+          },
+          "required_tests": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^test_[a-z_]+$"
+            },
+            "minItems": 1,
+            "maxItems": 16
+          },
+          "limits": {
+            "type": "string",
+            "maxLength": 1024
+          }
+        },
+        "required": [
+          "id",
+          "issue",
+          "dependencies",
+          "dependency_status",
+          "fixture_ids",
+          "required_tests",
+          "limits"
+        ]
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "dependency_interfaces": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256",
+          "status"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 256
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "status": {
+            "const": "specified-interface-only"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "source_kind",
+    "scientific_claim_ids",
+    "workflow",
+    "local_command",
+    "contracts",
+    "dependency_interfaces"
+  ]
+}

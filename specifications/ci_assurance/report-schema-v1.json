@@ -1,0 +1,610 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fzkml.org/specifications/ci-assurance/report/1.0.0",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "kind": {
+          "const": "synthetic-engineering-reference"
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "commit": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{40}$"
+            },
+            "dirty": {
+              "type": "boolean"
+            },
+            "files": {
+              "type": "object",
+              "minProperties": 10,
+              "maxProperties": 32,
+              "additionalProperties": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          },
+          "required": [
+            "commit",
+            "dirty",
+            "files"
+          ]
+        },
+        "fixture_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "execution_kind": {
+          "const": "reference-process"
+        },
+        "workflow_run_id": {
+          "type": "null"
+        },
+        "workflow_job_id": {
+          "type": "null"
+        },
+        "publication": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "approved": {
+              "const": false
+            }
+          },
+          "required": [
+            "approved"
+          ]
+        },
+        "scientific_claim_ids": {
+          "const": []
+        },
+        "records": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "contract_id": {
+                  "const": "CI-16"
+                },
+                "issue": {
+                  "const": 111
+                },
+                "fixture_ids": {
+                  "const": [
+                    "ci16-baseline",
+                    "ci16-duplicates",
+                    "ci16-reordered",
+                    "ci16-restart",
+                    "ci16-timeout",
+                    "ci16-dropped-share",
+                    "ci16-released-timeout"
+                  ]
+                },
+                "outcome": {
+                  "enum": [
+                    "successful",
+                    "failed",
+                    "inconclusive",
+                    "unsupported",
+                    "canceled"
+                  ]
+                },
+                "observations": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "traces": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "maxLength": 64
+                          },
+                          "classification": {
+                            "enum": [
+                              "released",
+                              "aborted-before-disclosure",
+                              "aborted-possible-disclosure",
+                              "inconclusive"
+                            ]
+                          },
+                          "charged": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1
+                          },
+                          "releases": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1
+                          },
+                          "accepted": {
+                            "type": "array",
+                            "items": {
+                              "type": "array",
+                              "items": {
+                                "type": "string",
+                                "maxLength": 64
+                              },
+                              "minItems": 2,
+                              "maxItems": 2
+                            },
+                            "minItems": 0,
+                            "maxItems": 2
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "classification",
+                          "charged",
+                          "releases",
+                          "accepted"
+                        ]
+                      },
+                      "minItems": 7,
+                      "maxItems": 16
+                    },
+                    "production_protocol_executed": {
+                      "const": false
+                    }
+                  },
+                  "required": [
+                    "traces",
+                    "production_protocol_executed"
+                  ]
+                },
+                "limits": {
+                  "const": "Synthetic receipt/state abstraction only: no protected aggregation, cryptographic admission, durable database or real share failure exercised."
+                }
+              },
+              "required": [
+                "contract_id",
+                "issue",
+                "fixture_ids",
+                "outcome",
+                "observations",
+                "limits"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "contract_id": {
+                  "const": "CI-17"
+                },
+                "issue": {
+                  "const": 112
+                },
+                "fixture_ids": {
+                  "const": [
+                    "ci17-finite-bfs",
+                    "ci17-concurrent",
+                    "ci17-double-release-mutant"
+                  ]
+                },
+                "outcome": {
+                  "enum": [
+                    "successful",
+                    "failed",
+                    "inconclusive",
+                    "unsupported",
+                    "canceled"
+                  ]
+                },
+                "observations": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "states": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 4096
+                    },
+                    "edges": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 65536
+                    },
+                    "linearized_events": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 256
+                    },
+                    "production_consensus_executed": {
+                      "const": false
+                    }
+                  },
+                  "required": [
+                    "states",
+                    "edges",
+                    "linearized_events",
+                    "production_consensus_executed"
+                  ]
+                },
+                "limits": {
+                  "const": "Finite two-client two-share single-authority abstraction; trusted authenticated latest atomic state and one canonical head assumed. No Byzantine consensus, liveness or production implementation proof."
+                }
+              },
+              "required": [
+                "contract_id",
+                "issue",
+                "fixture_ids",
+                "outcome",
+                "observations",
+                "limits"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "contract_id": {
+                  "const": "CI-18"
+                },
+                "issue": {
+                  "const": 113
+                },
+                "fixture_ids": {
+                  "const": [
+                    "ci18-five-public-views",
+                    "ci18-known-canary-mutants"
+                  ]
+                },
+                "outcome": {
+                  "enum": [
+                    "successful",
+                    "failed",
+                    "inconclusive",
+                    "unsupported",
+                    "canceled"
+                  ]
+                },
+                "observations": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "files_scanned": {
+                      "type": "integer",
+                      "minimum": 5,
+                      "maximum": 32
+                    },
+                    "bytes_scanned": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 4194304
+                    },
+                    "semantic_confidentiality_established": {
+                      "const": false
+                    }
+                  },
+                  "required": [
+                    "files_scanned",
+                    "bytes_scanned",
+                    "semantic_confidentiality_established"
+                  ]
+                },
+                "limits": {
+                  "const": "Known synthetic byte/hex/base64/percent canaries and inventoried public files only. No semantic/computational confidentiality or exhaustive observer-view proof."
+                }
+              },
+              "required": [
+                "contract_id",
+                "issue",
+                "fixture_ids",
+                "outcome",
+                "observations",
+                "limits"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "contract_id": {
+                  "const": "CI-19"
+                },
+                "issue": {
+                  "const": 114
+                },
+                "fixture_ids": {
+                  "const": [
+                    "ci19-q17-law",
+                    "ci19-parameter-mutants"
+                  ]
+                },
+                "outcome": {
+                  "enum": [
+                    "successful",
+                    "failed",
+                    "inconclusive",
+                    "unsupported",
+                    "canceled"
+                  ]
+                },
+                "observations": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "single_release_ratio": {
+                      "type": "string",
+                      "maxLength": 32
+                    },
+                    "composed_ratio": {
+                      "type": "string",
+                      "maxLength": 32
+                    },
+                    "fresh_releases": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 2
+                    },
+                    "ticket_count": {
+                      "const": 766
+                    },
+                    "system_dp_established": {
+                      "const": false
+                    }
+                  },
+                  "required": [
+                    "single_release_ratio",
+                    "composed_ratio",
+                    "fresh_releases",
+                    "ticket_count",
+                    "system_dp_established"
+                  ]
+                },
+                "limits": {
+                  "const": "Exact finite cyclic reference law and conditional ratio accountant only. Ideal secret independent tickets assumed; production sampler, full transcript DP and theorem review pending."
+                }
+              },
+              "required": [
+                "contract_id",
+                "issue",
+                "fixture_ids",
+                "outcome",
+                "observations",
+                "limits"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "contract_id": {
+                  "const": "CI-20"
+                },
+                "issue": {
+                  "const": 115
+                },
+                "fixture_ids": {
+                  "const": [
+                    "ci20-synthetic-matrix",
+                    "ci20-quota-mutants"
+                  ]
+                },
+                "outcome": {
+                  "enum": [
+                    "successful",
+                    "failed",
+                    "inconclusive",
+                    "unsupported",
+                    "canceled"
+                  ]
+                },
+                "observations": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "matrix_digest": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "totals": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "jobs": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65536
+                        },
+                        "attempts": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65536
+                        },
+                        "serial_seconds": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65536
+                        },
+                        "cpu_seconds": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65536
+                        },
+                        "gpu_seconds": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65536
+                        },
+                        "concurrent_ram_mib": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65536
+                        },
+                        "concurrent_disk_mib": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65536
+                        },
+                        "cumulative_disk_mib": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 65536
+                        }
+                      },
+                      "required": [
+                        "jobs",
+                        "attempts",
+                        "serial_seconds",
+                        "cpu_seconds",
+                        "gpu_seconds",
+                        "concurrent_ram_mib",
+                        "concurrent_disk_mib",
+                        "cumulative_disk_mib"
+                      ]
+                    },
+                    "rows": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "minProperties": 1,
+                        "maxProperties": 4,
+                        "additionalProperties": {
+                          "type": "string",
+                          "maxLength": 24
+                        }
+                      },
+                      "minItems": 1,
+                      "maxItems": 16
+                    },
+                    "dispatch_authorized": {
+                      "const": false
+                    },
+                    "review_scope": {
+                      "const": "synthetic-test-only"
+                    }
+                  },
+                  "required": [
+                    "matrix_digest",
+                    "totals",
+                    "rows",
+                    "dispatch_authorized",
+                    "review_scope"
+                  ]
+                },
+                "limits": {
+                  "const": "Offline synthetic quota arithmetic only; synthetic digest trust anchor is a test fixture, human/live approvals empty, no dispatch or hardware allocation supported."
+                }
+              },
+              "required": [
+                "contract_id",
+                "issue",
+                "fixture_ids",
+                "outcome",
+                "observations",
+                "limits"
+              ]
+            }
+          ],
+          "items": false,
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "outcome": {
+          "const": "successful"
+        }
+      },
+      "required": [
+        "schema_version",
+        "kind",
+        "source",
+        "fixture_sha256",
+        "execution_kind",
+        "workflow_run_id",
+        "workflow_job_id",
+        "publication",
+        "scientific_claim_ids",
+        "records",
+        "outcome"
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "kind": {
+          "const": "synthetic-engineering-reference"
+        },
+        "outcome": {
+          "enum": [
+            "failed",
+            "inconclusive",
+            "unsupported",
+            "canceled"
+          ]
+        },
+        "diagnostic": {
+          "const": "ci-assurance-gate-rejected"
+        },
+        "publication": {
+          "const": {
+            "approved": false
+          }
+        },
+        "scientific_claim_ids": {
+          "const": []
+        },
+        "records": {
+          "const": []
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "commit": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{40}$"
+            },
+            "dirty": {
+              "type": "boolean"
+            },
+            "files": {
+              "type": "object",
+              "minProperties": 10,
+              "maxProperties": 32,
+              "additionalProperties": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          },
+          "required": [
+            "commit",
+            "dirty",
+            "files"
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "kind",
+        "outcome",
+        "diagnostic",
+        "publication",
+        "scientific_claim_ids",
+        "records",
+        "source"
+      ]
+    }
+  ]
+}

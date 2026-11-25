@@ -97,8 +97,11 @@ reviewed and authorized, records remain unapproved; this proposed interface
 does not grant approval. Other inputs/producers/scopes need their own review.
 
 No published CI-14–CI-25 specification was found in the audited issues/files on
-2026-11-24. Treat those identifiers as pending specification rather than inventing
-acceptance requirements or claiming their completion. Existing CI ownership for
+2026-11-24. The 2026-11-25 follow-up supersedes that historical finding for
+CI-16–CI-20: issues #111–#115 and `ci_assurance/contracts-v1.json` now define
+bounded original synthetic reference contracts. Native integration and dependency
+review remain pending; this does not establish full-system completion or resolve
+the other identifiers. Existing CI ownership for
 #15/#16 remains with the CI session; S03 supplies the source/evidence interface.
 
 Candidate S02 numerical evidence is now catalogued separately in
