@@ -5785,6 +5785,24 @@
         "LICENSE"
       ],
       "notice_files": []
+    },
+    "evidence/s02/data-local-v1/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original local synthetic numerical experiment and measurement evidence; assumptions and limitations retained; contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "evidence/s02/data-local-v1/run.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original local synthetic numerical experiment and measurement evidence; assumptions and limitations retained; contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
     }
   }
 }
