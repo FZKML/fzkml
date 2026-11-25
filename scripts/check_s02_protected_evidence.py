@@ -16,6 +16,20 @@ from python.fzkml_math.collaborative import public_transcript, sha, verify
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def safe_file(root: Path, relative: str) -> Path:
+    path = Path(relative)
+    candidate = root / path
+    if (
+        path.is_absolute()
+        or ".." in path.parts
+        or candidate.is_symlink()
+        or not candidate.resolve().is_relative_to(root.resolve())
+        or not candidate.is_file()
+    ):
+        raise ValueError("unsafe-evidence-input-path")
+    return candidate
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("directory", type=Path)
@@ -34,7 +48,7 @@ def main() -> None:
         check=True,
     )
     for name, digest in report["digests"].items():
-        if sha(ROOT / name) != digest:
+        if sha(safe_file(ROOT, name)) != digest:
             raise ValueError("input-or-lock-drift:" + name)
     manifest = json.loads((directory / "proof-manifest.json").read_text())
     if manifest["source_commit"] != report["source_commit"] or len(manifest["proofs"]) != 9:
@@ -53,7 +67,7 @@ def main() -> None:
             relative = Path(row[kind])
             if relative.is_absolute() or ".." in relative.parts:
                 raise ValueError("unsafe-artifact-path")
-            p = directory / relative
+            p = safe_file(directory, row[kind])
             if p.is_symlink() or sha(p) != row[kind + "_sha256"]:
                 raise ValueError("public-artifact-integrity-failure")
             paths.append(p)

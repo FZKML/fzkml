@@ -379,7 +379,17 @@ def prove(
     if verified and json.loads((output / "public0.json").read_text()) != ["33"]:
         raise ValueError("unexpected-authorized-output")
     return {
-        "status": "verified" if verified else "timeout-or-rejected",
+        "status": (
+            "verified"
+            if verified
+            else "timeout"
+            if any(r["status"] == "timeout" for r in records)
+            else "failed"
+            if any(r["status"] == "failed" for r in records)
+            else "rejected"
+            if complete
+            else "incomplete"
+        ),
         "verified": verified,
         "split_seconds": split["seconds"],
         "proof_and_split_wall_seconds": elapsed,
