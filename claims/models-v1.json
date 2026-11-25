@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "claims": [
+    {
+      "id": "FZK-S04M5-C68-CAPACITY-001",
+      "source": {
+        "edition": "S04M5",
+        "chapter": 68,
+        "section": "68.original-reference",
+        "equation": "original-derivation-not-native-equation-transcription",
+        "version": "drive-modified-20261123T170644925Z"
+      },
+      "kind": "implementation-relation",
+      "statement": "Exact capacity budgets and bounded simulated queues with a local synthetic recovery ledger.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Tiny public synthetic reference; independent domain review and protocol integration remain required.",
+      "assumptions": [
+        "Exact declared rational/integer arithmetic.",
+        "External source authenticity, feature lineage and authorization; no vector protected aggregation or DP."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 84,
+      "status": "tested",
+      "evidence_ids": [
+        "models-spec",
+        "models-test-capacity"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof is asserted."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "No independent review is asserted."
+      },
+      "limitations": [
+        "Source numeric prose inspected; native manuscript equations were not transcribed.",
+        "Passing tests/proofs do not establish cryptographic security, private aggregation, DP or real model quality."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "bounded-exact-rational-and-integer-v1"
+    },
+    {
+      "id": "FZK-S04M5-C76-RIDGE-001",
+      "source": {
+        "edition": "S04M5",
+        "chapter": 76,
+        "section": "76.original-reference",
+        "equation": "original-derivation-not-native-equation-transcription",
+        "version": "drive-modified-20261123T170644925Z"
+      },
+      "kind": "implementation-relation",
+      "statement": "Exact weighted ridge/residual reference and genuine fixed two-record statistic proof.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Tiny public synthetic reference; independent domain review and protocol integration remain required.",
+      "assumptions": [
+        "Exact declared rational/integer arithmetic.",
+        "External source authenticity, feature lineage and authorization; no vector protected aggregation or DP."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 86,
+      "status": "tested",
+      "evidence_ids": [
+        "models-spec",
+        "models-test-ridge"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof is asserted."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "No independent review is asserted."
+      },
+      "limitations": [
+        "Source numeric prose inspected; native manuscript equations were not transcribed.",
+        "Passing tests/proofs do not establish cryptographic security, private aggregation, DP or real model quality."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "bounded-exact-rational-and-integer-v1"
+    },
+    {
+      "id": "FZK-S04M5-C72-ADAPTER-001",
+      "source": {
+        "edition": "S04M5",
+        "chapter": 72,
+        "section": "72.original-reference",
+        "equation": "original-derivation-not-native-equation-transcription",
+        "version": "drive-modified-20261123T170644925Z"
+      },
+      "kind": "implementation-relation",
+      "statement": "Fixed-factor exact algebra and genuine integer clipped two-client proof; rank-one truncation is approximate.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Tiny public synthetic reference; independent domain review and protocol integration remain required.",
+      "assumptions": [
+        "Exact declared rational/integer arithmetic.",
+        "External source authenticity, feature lineage and authorization; no vector protected aggregation or DP."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 87,
+      "status": "tested",
+      "evidence_ids": [
+        "models-spec",
+        "models-test-adapter"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof is asserted."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "No independent review is asserted."
+      },
+      "limitations": [
+        "Source numeric prose inspected; native manuscript equations were not transcribed.",
+        "Passing tests/proofs do not establish cryptographic security, private aggregation, DP or real model quality."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "bounded-exact-rational-and-integer-v1"
+    },
+    {
+      "id": "FZK-S04M5-C50-ELIGIBILITY-001",
+      "source": {
+        "edition": "S04M5",
+        "chapter": 50,
+        "section": "50.original-reference",
+        "equation": "original-derivation-not-native-equation-transcription",
+        "version": "drive-modified-20261123T170644925Z"
+      },
+      "kind": "implementation-relation",
+      "statement": "Typed initialization/state policy, declared-mask conformance and whole-client hidden-state counterexample.",
+      "evidence_class": "implementation-conformance",
+      "scope": "Tiny public synthetic reference; independent domain review and protocol integration remain required.",
+      "assumptions": [
+        "Exact declared rational/integer arithmetic.",
+        "External source authenticity, feature lineage and authorization; no vector protected aggregation or DP."
+      ],
+      "owner": "guillaumelauzier",
+      "responsible_issue": 88,
+      "status": "tested",
+      "evidence_ids": [
+        "models-spec",
+        "models-test-eligibility"
+      ],
+      "formal_proof": {
+        "artifact_ids": [],
+        "assumptions": [],
+        "scope": "No formal proof is asserted."
+      },
+      "independent_review": {
+        "artifact_ids": [],
+        "scope": "No independent review is asserted."
+      },
+      "limitations": [
+        "Source numeric prose inspected; native manuscript equations were not transcribed.",
+        "Passing tests/proofs do not establish cryptographic security, private aggregation, DP or real model quality."
+      ],
+      "observer": "external",
+      "privacy_unit": "not-applicable",
+      "numerical_semantics": "bounded-exact-rational-and-integer-v1"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "models-spec",
+      "kind": "specification",
+      "path": "specs/models/model-capacity-v1.json",
+      "scope": "Fixed relation, observer and dependency boundaries."
+    },
+    {
+      "id": "models-test-capacity",
+      "kind": "unit-test",
+      "path": "tests/test_models.py::test_source_capacity_assumptions_and_conditional_partials",
+      "scope": "Original exact reference and declared source numerical checks; not independent scientific review."
+    },
+    {
+      "id": "models-test-ridge",
+      "kind": "unit-test",
+      "path": "tests/test_models.py::test_independent_hand_solution_and_absolute_objective",
+      "scope": "Original exact reference and declared source numerical checks; not independent scientific review."
+    },
+    {
+      "id": "models-test-adapter",
+      "kind": "unit-test",
+      "path": "tests/test_models.py::test_fixed_common_factor_matches_dense_products",
+      "scope": "Original exact reference and declared source numerical checks; not independent scientific review."
+    },
+    {
+      "id": "models-test-eligibility",
+      "kind": "unit-test",
+      "path": "tests/test_models.py::test_source_denominators_and_padding_counterexample",
+      "scope": "Original exact reference and declared source numerical checks; not independent scientific review."
+    }
+  ]
+}

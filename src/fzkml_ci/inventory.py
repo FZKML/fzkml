@@ -41,7 +41,7 @@ def generate(root: Path = ROOT) -> dict[str, Any]:
         identifier = f"SPDXRef-{ecosystem}-{name}"
         license_id = (
             "Apache-2.0"
-            if name in {"fzkml-core", "fzkml-ci"}
+            if name in {"fzkml-core", "fzkml-ci", "fzkml-models"}
             else licenses.get((name.lower().replace("_", "-"), version), "NOASSERTION")
         )
         if license_id == "NOASSERTION":

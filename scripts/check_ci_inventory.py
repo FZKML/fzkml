@@ -46,7 +46,7 @@ def validate_ci_inventory(root: Path) -> None:
         raise ValueError("uv bootstrap hash differs from inventory")
     cargo = tomllib.loads((root / "Cargo.lock").read_text())
     local = {(p["name"], p["version"]) for p in cargo["package"] if "source" not in p}
-    if local != {("fzkml-core", "0.1.0"), ("fzkml-python", "0.1.0")}:
+    if local != {("fzkml-core", "0.1.0"), ("fzkml-python", "0.1.0"), ("fzkml-models", "0.1.0")}:
         raise ValueError("local Rust package metadata differs from reviewed workspace")
     native = json.loads((root / "compliance/rust-dependencies.json").read_text())
     registry = {(d["name"], d["version"]): d for d in native["dependencies"]}
