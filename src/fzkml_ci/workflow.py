@@ -6,6 +6,7 @@ Workflow ownership and protected refs remain administrator-enforced controls.
 
 from __future__ import annotations
 
+import hashlib
 import itertools
 import re
 from pathlib import Path
@@ -13,7 +14,27 @@ from typing import Any
 
 import yaml
 
-from .validate import ROOT, bounded_file, require
+from .validate import ROOT, bounded_file, load, require
+
+RESEARCH_WORKFLOWS = {
+    "cpu.yml",
+    "research.yml",
+    "research-reconcile.yml",
+    "codeql.yml",
+    "gpu.yml",
+    "release.yml",
+    "language.yml",
+    "reports.yml",
+}
+
+
+def check_research_workflow(name: str, data: bytes) -> None:
+    # These new trust boundaries use reviewed exact templates. Changes to both
+    # workflow and digest registry require CODEOWNERS review, just like policy code.
+    approved = load(ROOT / "ci" / "workflow-digests.json")
+    require(name in RESEARCH_WORKFLOWS, "unreviewed-research-workflow")
+    require(hashlib.sha256(data).hexdigest() == approved.get(name), "workflow-review-required")
+
 
 ACTIONS = {
     "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
@@ -28,7 +49,8 @@ def check_workflow(workflow: dict[str, Any]) -> None:
     require(isinstance(triggers, dict), "explicit-workflow-triggers-required")
     assert isinstance(triggers, dict)
     require(
-        bool(triggers) and set(triggers) <= {"pull_request", "push", "workflow_dispatch"},
+        bool(triggers)
+        and set(triggers) <= {"pull_request", "push", "workflow_dispatch", "schedule"},
         "unsafe-trigger",
     )
     require(workflow.get("permissions") == {}, "workflow-permissions-must-be-empty")
@@ -39,7 +61,12 @@ def check_workflow(workflow: dict[str, Any]) -> None:
     )
     require("env" not in workflow and "defaults" not in workflow, "global-execution-configuration")
     jobs = workflow.get("jobs", {})
-    require(isinstance(jobs, dict) and 0 < len(jobs) <= 4, "job-count-limit")
+    require(isinstance(jobs, dict) and 0 < len(jobs) <= 6, "job-count-limit")
+    if "schedule" in triggers:
+        require(
+            triggers["schedule"] == [{"cron": "37 4 * * 1"}] and set(jobs) == {"language"},
+            "schedule-not-reviewed",
+        )
     for job_name, job in jobs.items():
         require(isinstance(job, dict) and "uses" not in job, "reusable-job-not-reviewed")
         require(job.get("runs-on") == "ubuntu-24.04", "ephemeral-runner-required")
@@ -120,6 +147,12 @@ def check_repository(directory: Path = ROOT / ".github" / "workflows") -> None:
     paths = sorted(itertools.chain(directory.glob("*.yml"), directory.glob("*.yaml")))
     require(bool(paths), "no-workflows")
     for path in paths:
-        workflow = yaml.load(bounded_file(path), Loader=yaml.BaseLoader)
+        require(path.name in RESEARCH_WORKFLOWS | {"governance.yml"}, "workflow-not-registered")
+        data = bounded_file(path)
+        if path.name in RESEARCH_WORKFLOWS:
+            check_research_workflow(path.name, data)
+            if path.name != "cpu.yml":
+                continue
+        workflow = yaml.load(data, Loader=yaml.BaseLoader)
         require(isinstance(workflow, dict), "workflow-shape")
         check_workflow(workflow)

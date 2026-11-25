@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+cargo test --release --locked -p fzkml-core
+cargo build --release --locked -p fzkml-core --bin fzkml-aggregate-demo
+uv run --locked ruff check scripts/profile_aggregation.py
+uv run --locked ruff format --check scripts/profile_aggregation.py
+MYPYPATH=src uv run --locked mypy scripts/profile_aggregation.py
+uv run --locked python scripts/profile_aggregation.py .tools/aggregation

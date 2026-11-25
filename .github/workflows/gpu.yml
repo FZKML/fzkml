@@ -1,0 +1,20 @@
+name: Optional GPU research (disabled)
+on:
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: gpu-research
+  cancel-in-progress: false
+jobs:
+  disabled:
+    if: github.repository == 'FZKML/fzkml' && github.ref == 'refs/heads/main'
+    environment: gpu-research
+    runs-on: ubuntu-24.04
+    timeout-minutes: 1
+    permissions:
+      contents: read
+    steps:
+      - name: Refuse GPU execution until reviewed provider implementation exists
+        run: |
+          echo 'GPU lane disabled. No runner/provider/budget has been authorized.'
+          exit 1

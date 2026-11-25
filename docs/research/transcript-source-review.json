@@ -1,0 +1,50 @@
+{
+  "version": "transcript-source-review-1",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "document_url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+  "observed_revision_id": "AHj4eMTDhszajz9XWwtYr25APOt8jDNWJ06dbjKxf-xlK9xmwk34ZzwRRUkjWfouVFGjH-x3SMlEEFPR_syq3-Z8kERBX1SruWGFOdkln3SW",
+  "export_sha256": "990e1d372cef0122a8c2a8b4ac6e7062e416b926fa538855de227b8400bf52c8",
+  "format": "Authorized Google Docs DOCX export; word/document.xml equation markup inspected",
+  "inspection_date": "2026-11-24",
+  "inspector": "Codex source inspection for this contribution",
+  "independent_review": false,
+  "inspected_native_equation_ids": [
+    "native-154277",
+    "native-156319",
+    "native-156345",
+    "native-156505",
+    "native-239434",
+    "native-240038",
+    "native-240157",
+    "native-527046",
+    "native-530158",
+    "native-530755",
+    "native-533631",
+    "native-533704",
+    "native-533726",
+    "native-534998"
+  ],
+  "inspected_sections": [
+    "47.2",
+    "47.3",
+    "47.4",
+    "53.1",
+    "53.2",
+    "53.3",
+    "67.1-67.5",
+    "75.1-75.7"
+  ],
+  "verified_source_parameters": {
+    "precision_example": "K=(8/5) I_3-(1/2) 11^T; C=1; complete scalar cube and vector row-norm-bounded stream class",
+    "retry_example": "Ideal continuous Gaussian noise sign is visible to the rejector; neighboring query values 0 and Delta>0; retries until nonnegative",
+    "inclusion_example": "Fixed potential gradients (1,-1), weights (1/2,1/2), final inclusion probabilities (1,1/10)",
+    "conditioning": "Joint centered Gaussian independent of dataset; observed covariance block invertible"
+  },
+  "limitations": [
+    "Source inspection is not an independent mathematical or cryptographic review.",
+    "Only the enumerated native equations have inspected markup; remaining equation contents stay pending.",
+    "No private manuscript body, equation XML, images or source-export bytes are included in the public repository.",
+    "The export hash identifies an authorized private source snapshot, not an Apache-2.0 artifact."
+  ],
+  "post_export_revision_check": "Unavailable: connector transport failed. The observed pre-export revision and private export content hash are recorded separately; no atomic revision/export snapshot guarantee is claimed."
+}

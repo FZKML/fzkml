@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/schemas/ci-run-1.0.0.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "profile": {
+      "enum": [
+        "contract",
+        "tiny-reference",
+        "conformance",
+        "nightly-adversarial",
+        "weekly-proof",
+        "integration",
+        "protocol-invariants"
+      ]
+    },
+    "source_sha": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "workflow_run": {
+      "type": "string",
+      "pattern": "^(local|[1-9][0-9]{0,19})$"
+    },
+    "attempt": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]{0,5}$"
+    },
+    "status": {
+      "enum": [
+        "initialized",
+        "running",
+        "completed",
+        "failed",
+        "unavailable",
+        "skipped",
+        "inconclusive"
+      ]
+    },
+    "repetitions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4
+          },
+          "status": {
+            "enum": [
+              "not-started",
+              "running",
+              "completed",
+              "failed",
+              "timed-out",
+              "cancelled",
+              "not-run",
+              "skipped",
+              "inconclusive"
+            ]
+          },
+          "seconds": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1800
+              }
+            ]
+          }
+        },
+        "required": [
+          "index",
+          "status",
+          "seconds"
+        ]
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      }
+    }
+  },
+  "required": [
+    "version",
+    "profile",
+    "source_sha",
+    "workflow_run",
+    "attempt",
+    "status",
+    "repetitions",
+    "limitations"
+  ]
+}

@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/fzkml-core"]
+members = ["crates/fzkml-core", "crates/fzkml-python", "crates/fzkml-models"]
 resolver = "2"
 
 [workspace.package]

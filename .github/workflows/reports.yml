@@ -11,34 +11,46 @@ jobs:
   publish:
     if: github.ref == 'refs/heads/main'
     environment: public-reports
+    env:
+      S04_PUBLICATION_CONTEXT: protected-public-reports
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
         with:
           python-version: '3.11.14'
       - name: Install reviewed tools
         run: |
           python -m pip install --require-hashes -r tools-requirements.txt
-          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          source ./scripts/install-rust-toolchain
           uv sync --locked
-      - name: Record runner image revision
-        run: |
-          printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
+      - name: Record hosted image revision
+        run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
       - run: ./scripts/validate
-      - run: ./scripts/build-public-report
+      - run: ./scripts/research init tiny-reference
+      - run: ./scripts/research run tiny-reference
+      - name: Build actual or explicitly failed scientific evidence
+        if: always()
+        run: ./scripts/s04-report
       - name: Bounded job summary
-        run: cat dist/report.md >> "$GITHUB_STEP_SUMMARY"
-      - run: ./scripts/verify-public-report
-      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        run: ./scripts/research summary >> "$GITHUB_STEP_SUMMARY"
+      - name: Verify exact public report regeneration
+        id: public
+        if: always()
+        run: ./scripts/s04-report --verify
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        if: always() && steps.public.outcome == 'success'
         with:
           name: public-report-${{ github.sha }}
-          path: dist/
+          path: |
+            dist/
+            reports/s04-publication-receipt.json
           retention-days: 7
           if-no-files-found: error
           include-hidden-files: false

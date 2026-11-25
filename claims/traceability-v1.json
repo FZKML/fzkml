@@ -1,0 +1,888 @@
+{
+  "schema_version": "1.0.0",
+  "registry_path": "claims/registry.json",
+  "registry_schema": "claims/schema-v1.json",
+  "source_map_path": "claims/source-map-v1.json",
+  "source_map_schema": "claims/source-map-schema-v1.json",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "relations": [
+    {
+      "id": "m0-two-feature-v0.1",
+      "path": "specs/m0/relation-v0.1.md",
+      "sha256": "61fc98b1c0cc1ac95244db018d17a3ff14cdd5308ddc7f48e7f5cee778f3a4e2"
+    },
+    {
+      "id": "fzknum-1.0.0",
+      "path": "specifications/relations/fzknum-1.0.0.json",
+      "sha256": "76c83a9f06837d209425e66e3abe450d1ef539c94979b2ce2ec19b877bb78489"
+    },
+    {
+      "id": "analytic-reference-v1",
+      "path": "specs/privacy/transcript-v0.1.md",
+      "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
+    }
+  ],
+  "protocol": {
+    "id": "fzkml-research-service-1.0.0",
+    "path": "specifications/protocol-v1.json",
+    "sha256": "6ead5e53241a51cb352ab2ec79ccb3b0fa512e6d517c83e300644cd7778b4954"
+  },
+  "records": [
+    {
+      "claim_id": "FZK-MS20261124-C02-DEF-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-002",
+        "FZK-MS20261124-SEC-h.mn3e6ekapbyf",
+        "FZK-MS20261124-EQ-0004",
+        "FZK-MS20261124-EQ-0005"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "specs/m0/deployment-v0.1.md",
+        "sha256": "5bcef5481d5a8ab5f2601073f316646940d6dd7bda99fb3b219325d4b239eedf"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C03-MATH-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-003",
+        "FZK-MS20261124-SEC-h.4i1eqlmd67wf",
+        "FZK-MS20261124-EQ-0006"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": "m0-two-feature-v0.1",
+      "specification": {
+        "path": "specs/m0/deployment-v0.1.md",
+        "sha256": "5bcef5481d5a8ab5f2601073f316646940d6dd7bda99fb3b219325d4b239eedf"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C04-SEC-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-004",
+        "FZK-MS20261124-SEC-h.qynfat1gdlfk"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "specs/m0/security-v0.1.md",
+        "sha256": "9da084f5babf476132cd817aed97dd2e6cea775e77002676565f2a67ec9a47a3"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C05-SEC-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-005",
+        "FZK-MS20261124-SEC-h.saoa7hxj9kic",
+        "FZK-MS20261124-EQ-0009"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "specs/m0/security-v0.1.md",
+        "sha256": "9da084f5babf476132cd817aed97dd2e6cea775e77002676565f2a67ec9a47a3"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C07-REL-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-007",
+        "FZK-MS20261124-SEC-h.3qc3zk3a4gwj",
+        "FZK-MS20261124-EQ-0017"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": "m0-two-feature-v0.1",
+      "specification": {
+        "path": "specs/m0/relation-v0.1.md",
+        "sha256": "61fc98b1c0cc1ac95244db018d17a3ff14cdd5308ddc7f48e7f5cee778f3a4e2"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-relation-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C14-SEC-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-014",
+        "FZK-MS20261124-SEC-h.4zc95m5dipwu"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "specs/m0/security-v0.1.md",
+        "sha256": "9da084f5babf476132cd817aed97dd2e6cea775e77002676565f2a67ec9a47a3"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C17-DEF-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-017",
+        "FZK-MS20261124-SEC-h.30fmns6fp5js"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "specs/m0/fixtures-v0.1.md",
+        "sha256": "a13ec2bb9712479236fe7467989a29b6b782b6d0c4c2916e615cc6051bacc502"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-fixtures-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C38-DEF-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-038",
+        "FZK-MS20261124-SEC-h.l88xmv590y85"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "specs/m0/capabilities-v0.1.md",
+        "sha256": "019ed0775b8a5c63193c47553a51c795ef0c754711ba944424b3603d02d7606a"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-capabilities-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C40-REL-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-040",
+        "FZK-MS20261124-SEC-h.2i5vvyqm5f1l",
+        "FZK-MS20261124-EQ-0050",
+        "FZK-MS20261124-EQ-0051",
+        "FZK-MS20261124-EQ-0052",
+        "FZK-MS20261124-EQ-0053",
+        "FZK-MS20261124-EQ-0054",
+        "FZK-MS20261124-EQ-0055"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": "docs/research/s03-source-inspection.json",
+      "relation_id": "m0-two-feature-v0.1",
+      "specification": {
+        "path": "specs/m0/relation-v0.1.md",
+        "sha256": "61fc98b1c0cc1ac95244db018d17a3ff14cdd5308ddc7f48e7f5cee778f3a4e2"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-relation-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "The referenced worked-step equation markup was inspected; general source extraction remains partial.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C43-DEF-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-043",
+        "FZK-MS20261124-SEC-h.w0rgjjp54sqv"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": "m0-two-feature-v0.1",
+      "specification": {
+        "path": "specs/m0/deployment-v0.1.md",
+        "sha256": "5bcef5481d5a8ab5f2601073f316646940d6dd7bda99fb3b219325d4b239eedf"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-deployment-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C43-EXP-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-043",
+        "FZK-MS20261124-SEC-h.9f7b3s41mv0e"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": "m0-two-feature-v0.1",
+      "specification": {
+        "path": "specs/m0/measurement-v0.1.md",
+        "sha256": "555acaca233664dcfdcbd1a17a24512adee91174fc4419d6c935a286ad186abc"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-measurement-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C73-MATH-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-073",
+        "FZK-MS20261124-SEC-h.mpflvnnhtwzq"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "specs/m0/security-v0.1.md",
+        "sha256": "9da084f5babf476132cd817aed97dd2e6cea775e77002676565f2a67ec9a47a3"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C73-SEC-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-073",
+        "FZK-MS20261124-SEC-h.nn42qotnu70g",
+        "FZK-MS20261124-EQ-0339"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "specs/m0/security-v0.1.md",
+        "sha256": "9da084f5babf476132cd817aed97dd2e6cea775e77002676565f2a67ec9a47a3"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-security-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C77-HYP-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-077",
+        "FZK-MS20261124-SEC-h.q2ksf8xsi601"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "experiments/m0/preregistration-v0.1.md",
+        "sha256": "4373395f984e7e3dd860608a7bc95586d5b5ae6cde0c6a800dc786ccea81765c"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C80-HYP-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-080",
+        "FZK-MS20261124-SEC-h.56u5q1l9c7bl"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "experiments/m0/preregistration-v0.1.md",
+        "sha256": "4373395f984e7e3dd860608a7bc95586d5b5ae6cde0c6a800dc786ccea81765c"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C80-ADOPT-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-080",
+        "FZK-MS20261124-SEC-h.8l3iothd8p0p"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": null,
+      "relation_id": null,
+      "specification": {
+        "path": "experiments/m0/preregistration-v0.1.md",
+        "sha256": "4373395f984e7e3dd860608a7bc95586d5b5ae6cde0c6a800dc786ccea81765c"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-preregistration-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Source prose inspected; native equation payloads are not extracted.",
+        "Specification/design only; no training or cryptographic implementation evidence."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C47-ENTROPY-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-047",
+        "FZK-MS20261124-SEC-h.46hgt8p76kii",
+        "FZK-MS20261124-EQ-0093"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": "docs/research/transcript-source-review.json",
+      "relation_id": null,
+      "specification": {
+        "path": "specs/privacy/transcript-v0.1.md",
+        "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-transcript-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C47-RETRY-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-047",
+        "FZK-MS20261124-SEC-h.7it5eevtnxo1",
+        "FZK-MS20261124-EQ-0094",
+        "FZK-MS20261124-EQ-0095",
+        "FZK-MS20261124-EQ-0096"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": "docs/research/transcript-source-review.json",
+      "relation_id": "analytic-reference-v1",
+      "specification": {
+        "path": "specs/privacy/transcript-v0.1.md",
+        "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
+      },
+      "implementation": [
+        {
+          "path": "src/fzkml_transcript/entropy.py",
+          "sha256": "e00504c2b3b57eda93ebd143ea6c1f71fc94dd1e4d265c2bd44ad7754089bc9f",
+          "source_commit": "be22d33427c8e4ff4abaec41467447482668e633"
+        }
+      ],
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-retry-test"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C47-LEDGER-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-047",
+        "FZK-MS20261124-SEC-h.6ygnggir7wzu"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": "docs/research/transcript-source-review.json",
+      "relation_id": "analytic-reference-v1",
+      "specification": {
+        "path": "specs/privacy/transcript-v0.1.md",
+        "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
+      },
+      "implementation": [
+        {
+          "path": "src/fzkml_transcript/ledger.py",
+          "sha256": "bdd31f22335cced02b709c81410a44f7b8b1d25c05253a3c6ef58b5183f7c9bb",
+          "source_commit": "be22d33427c8e4ff4abaec41467447482668e633"
+        }
+      ],
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-ledger-test"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C75-GEOMETRY-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-075",
+        "FZK-MS20261124-SEC-h.h96lab402kwp",
+        "FZK-MS20261124-EQ-0376",
+        "FZK-MS20261124-EQ-0377",
+        "FZK-MS20261124-EQ-0378",
+        "FZK-MS20261124-EQ-0380"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": "docs/research/transcript-source-review.json",
+      "relation_id": null,
+      "specification": {
+        "path": "specs/privacy/transcript-v0.1.md",
+        "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
+      },
+      "implementation": [],
+      "evidence_ids": [
+        "spec-transcript-v0.1"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C75-REFERENCE-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-075",
+        "FZK-MS20261124-SEC-h.7z55qb3kyte5",
+        "FZK-MS20261124-EQ-0365",
+        "FZK-MS20261124-EQ-0371",
+        "FZK-MS20261124-EQ-0372",
+        "FZK-MS20261124-EQ-0376",
+        "FZK-MS20261124-EQ-0377",
+        "FZK-MS20261124-EQ-0378",
+        "FZK-MS20261124-EQ-0380"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": "docs/research/transcript-source-review.json",
+      "relation_id": "analytic-reference-v1",
+      "specification": {
+        "path": "specs/privacy/transcript-v0.1.md",
+        "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
+      },
+      "implementation": [
+        {
+          "path": "src/fzkml_transcript/algebra.py",
+          "sha256": "b8402347eefe1b640735f934ddf80a623ef38f308378e69030cc6c59aad94fb5",
+          "source_commit": "be22d33427c8e4ff4abaec41467447482668e633"
+        }
+      ],
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-reference-test"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C53-INCLUSION-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-053",
+        "FZK-MS20261124-SEC-h.g2hxl15c4lor",
+        "FZK-MS20261124-EQ-0174",
+        "FZK-MS20261124-EQ-0175",
+        "FZK-MS20261124-EQ-0176"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": "docs/research/transcript-source-review.json",
+      "relation_id": "analytic-reference-v1",
+      "specification": {
+        "path": "specs/privacy/transcript-v0.1.md",
+        "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
+      },
+      "implementation": [
+        {
+          "path": "src/fzkml_transcript/sampling.py",
+          "sha256": "d89a086970e7678e08c73458b393be152d019168f1fbcc60cdccd05a4b9b74d5",
+          "source_commit": "be22d33427c8e4ff4abaec41467447482668e633"
+        }
+      ],
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-inclusion-test"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    },
+    {
+      "claim_id": "FZK-MS20261124-C67-POPULATION-001",
+      "source_refs": [
+        "FZK-MS20261124-CH-067",
+        "FZK-MS20261124-SEC-h.o0gvyscd0hen"
+      ],
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_inspection": "docs/research/transcript-source-review.json",
+      "relation_id": "analytic-reference-v1",
+      "specification": {
+        "path": "specs/privacy/transcript-v0.1.md",
+        "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
+      },
+      "implementation": [
+        {
+          "path": "src/fzkml_transcript/sampling.py",
+          "sha256": "d89a086970e7678e08c73458b393be152d019168f1fbcc60cdccd05a4b9b74d5",
+          "source_commit": "be22d33427c8e4ff4abaec41467447482668e633"
+        }
+      ],
+      "evidence_ids": [
+        "spec-transcript-v0.1",
+        "transcript-population-test"
+      ],
+      "author": "guillaumelauzier",
+      "required_reviews": [
+        "independent-domain-review"
+      ],
+      "limitations": [
+        "Synthetic conformance and analytic idealizations only; no finite-sampler or deployed protocol privacy guarantee.",
+        "Source-markup inspection is distinct from independent review and mathematical proof."
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "spec-deployment-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/deployment-v0.1.md",
+      "sha256": "5bcef5481d5a8ab5f2601073f316646940d6dd7bda99fb3b219325d4b239eedf",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation.",
+      "source_commit": null,
+      "execution": null,
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "spec-security-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/security-v0.1.md",
+      "sha256": "9da084f5babf476132cd817aed97dd2e6cea775e77002676565f2a67ec9a47a3",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation.",
+      "source_commit": null,
+      "execution": null,
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "spec-relation-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/relation-v0.1.md",
+      "sha256": "61fc98b1c0cc1ac95244db018d17a3ff14cdd5308ddc7f48e7f5cee778f3a4e2",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation.",
+      "source_commit": null,
+      "execution": null,
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "spec-fixtures-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/fixtures-v0.1.md",
+      "sha256": "a13ec2bb9712479236fe7467989a29b6b782b6d0c4c2916e615cc6051bacc502",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation.",
+      "source_commit": null,
+      "execution": null,
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "spec-capabilities-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/capabilities-v0.1.md",
+      "sha256": "019ed0775b8a5c63193c47553a51c795ef0c754711ba944424b3603d02d7606a",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation.",
+      "source_commit": null,
+      "execution": null,
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "spec-measurement-v0.1",
+      "kind": "specification",
+      "path": "specs/m0/measurement-v0.1.md",
+      "sha256": "555acaca233664dcfdcbd1a17a24512adee91174fc4419d6c935a286ad186abc",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation.",
+      "source_commit": null,
+      "execution": null,
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "spec-preregistration-v0.1",
+      "kind": "specification",
+      "path": "experiments/m0/preregistration-v0.1.md",
+      "sha256": "4373395f984e7e3dd860608a7bc95586d5b5ae6cde0c6a800dc786ccea81765c",
+      "scope": "Defines target and limitations only; no empirical, formal or independent security validation.",
+      "source_commit": null,
+      "execution": null,
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "spec-transcript-v0.1",
+      "kind": "specification",
+      "path": "specs/privacy/transcript-v0.1.md",
+      "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0",
+      "scope": "Scoped synthetic/analytic requirements and derivations; independent protocol/privacy review remains pending.",
+      "source_commit": null,
+      "execution": null,
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "transcript-retry-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_half_normal_retry_counterexample",
+      "sha256": "bcefd5493dad4c2776e68ea297135ffd4c7c52bf6395da11222609560770d4cd",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review.",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "execution": {
+        "kind": "observed-github-actions",
+        "outcome": "successful",
+        "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+        "run_url": "https://github.com/FZKML/fzkml/actions/runs/45304417381",
+        "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+        "scope": "Observed hosted CPU suite includes this named test; not a formal proof or independent security review."
+      },
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "transcript-ledger-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_failure_retry_recovery_keeps_cost",
+      "sha256": "bcefd5493dad4c2776e68ea297135ffd4c7c52bf6395da11222609560770d4cd",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review.",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "execution": {
+        "kind": "observed-github-actions",
+        "outcome": "successful",
+        "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+        "run_url": "https://github.com/FZKML/fzkml/actions/runs/45304417381",
+        "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+        "scope": "Observed hosted CPU suite includes this named test; not a formal proof or independent security review."
+      },
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "transcript-reference-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_singular_support_is_not_zero_cost",
+      "sha256": "bcefd5493dad4c2776e68ea297135ffd4c7c52bf6395da11222609560770d4cd",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review.",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "execution": {
+        "kind": "observed-github-actions",
+        "outcome": "successful",
+        "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+        "run_url": "https://github.com/FZKML/fzkml/actions/runs/45304417381",
+        "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+        "scope": "Observed hosted CPU suite includes this named test; not a formal proof or independent security review."
+      },
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "transcript-inclusion-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_source_inverse_inclusion_example",
+      "sha256": "bcefd5493dad4c2776e68ea297135ffd4c7c52bf6395da11222609560770d4cd",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review.",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "execution": {
+        "kind": "observed-github-actions",
+        "outcome": "successful",
+        "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+        "run_url": "https://github.com/FZKML/fzkml/actions/runs/45304417381",
+        "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+        "scope": "Observed hosted CPU suite includes this named test; not a formal proof or independent security review."
+      },
+      "formal": null,
+      "review": null,
+      "replication": null
+    },
+    {
+      "evidence_id": "transcript-population-test",
+      "kind": "unit-test",
+      "path": "tests/test_transcript_privacy.py::test_resource_coverage_and_no_amplification",
+      "sha256": "bcefd5493dad4c2776e68ea297135ffd4c7c52bf6395da11222609560770d4cd",
+      "scope": "Tests the named synthetic/analytic reference behavior only; not a formal proof or independent security review.",
+      "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+      "execution": {
+        "kind": "observed-github-actions",
+        "outcome": "successful",
+        "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+        "run_url": "https://github.com/FZKML/fzkml/actions/runs/45304417381",
+        "source_commit": "be22d33427c8e4ff4abaec41467447482668e633",
+        "scope": "Observed hosted CPU suite includes this named test; not a formal proof or independent security review."
+      },
+      "formal": null,
+      "review": null,
+      "replication": null
+    }
+  ]
+}

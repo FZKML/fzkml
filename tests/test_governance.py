@@ -30,7 +30,7 @@ class GovernanceTests(unittest.TestCase):
         (self.root / name).write_text(json.dumps(value))
 
     def test_current_manifests(self):
-        self.assertEqual(validate(self.root, self.paths)["assets"], 1)
+        self.assertEqual(validate(self.root, self.paths)["assets"], 6)
 
     def test_controlled_missing_license_fixture(self):
         fixture = self.root / "unlicensed-example.py"
@@ -119,7 +119,8 @@ class GovernanceTests(unittest.TestCase):
     def test_source_bundle_and_reproducible_bytes(self):
         subprocess.run(["git", "init", "-q", str(self.root)], check=True)
         # Temporary test repo has exactly the manifest files (no ignored build artifacts).
-        subprocess.run(["git", "-C", str(self.root), "add", "."], check=True)
+        # Inventoried source may match broad build-output ignore patterns (research/).
+        subprocess.run(["git", "-C", str(self.root), "add", "--force", "."], check=True)
         archive = build(self.root)
         first_hash = digest(archive)
         with tarfile.open(archive) as bundle:

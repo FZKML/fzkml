@@ -12,3 +12,11 @@ target/
 .mypy_cache/
 .ruff_cache/
 *.egg-info/
+.cargo-cache/
+.mutation-work/
+.venv-smoke/
+*.so
+*.dylib
+
+research/
+release-bundle/

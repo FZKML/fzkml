@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "id": "integration",
+  "task": "integration",
+  "repetitions": 1,
+  "timeout_seconds": 900,
+  "threads": 2,
+  "max_input_bytes": 1000000,
+  "warmups": 0
+}

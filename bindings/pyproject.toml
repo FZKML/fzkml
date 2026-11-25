@@ -1,0 +1,16 @@
+[build-system]
+requires = ["maturin==1.8.3"]
+build-backend = "maturin"
+
+[project]
+name = "fzkml-native"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+description = "Bounded Python interface to the FZKML tiny Rust research relation"
+license = { text = "Apache-2.0" }
+
+[tool.maturin]
+manifest-path = "../crates/fzkml-python/Cargo.toml"
+python-source = "python"
+module-name = "fzkml_native._native"
+features = ["extension-module"]
