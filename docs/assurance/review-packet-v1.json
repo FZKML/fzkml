@@ -116,7 +116,7 @@
   "generator": {
     "path": "src/fzkml_assurance/reporting.py",
     "sha256": "69a79cdd8e52482c4530aad870be1a618a2358b0fe99ea6b92d1166fa0cd65cd",
-    "source_commit": "uncommitted"
+    "source_commit": "b450ff9aa9165fac98dab9b914c563204371a704"
   },
   "issue": 107,
   "limitations": [
