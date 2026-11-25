@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import subprocess
 import tempfile
@@ -53,6 +54,18 @@ def main() -> None:
     manifest = json.loads((directory / "proof-manifest.json").read_text())
     if manifest["source_commit"] != report["source_commit"] or len(manifest["proofs"]) != 9:
         raise ValueError("public-proof-inventory-mismatch")
+    descriptors = manifest["workload_descriptors"]
+    for kind in ("model", "preprocessor"):
+        expected = {"kind": kind, "description": report["matched_workload"][kind]}
+        canonical = json.dumps(expected, sort_keys=True, separators=(",", ":")).encode()
+        digest = hashlib.sha256(b"FZKS02-DESCRIPTOR-01\0" + canonical).hexdigest()
+        if descriptors[kind] != {"descriptor": expected, "sha256": digest}:
+            raise ValueError("workload-descriptor-mismatch")
+    if descriptors["relation"] != {
+        "kind": "serialized-r1cs",
+        "sha256": report["external_relation"]["r1cs_sha256"],
+    }:
+        raise ValueError("relation-descriptor-mismatch")
     binary = ROOT / ".tools/co-runtime/co-circom"
     vk = ROOT / ".tools/co-snarks/test_vectors/Groth16/bn254/multiplier2/verification_key.json"
     if args.external:

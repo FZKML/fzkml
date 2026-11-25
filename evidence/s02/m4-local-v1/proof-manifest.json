@@ -85,5 +85,26 @@
       "generator": "coCircom0.10.0 REP3",
       "verification": "real pinned coCircom verifier accepted during recorded run"
     }
-  ]
+  ],
+  "workload_descriptors": {
+    "scope": "Derived public metadata only; these hashes are not public inputs or authenticated operand/model commitments in the external circuit.",
+    "model": {
+      "descriptor": {
+        "kind": "model",
+        "description": "one scalar coefficient11"
+      },
+      "sha256": "4d4aeaed4c32eb0b060a476de6023975b7818c109ab0231bd77212ac7ad924c9"
+    },
+    "preprocessor": {
+      "descriptor": {
+        "kind": "preprocessor",
+        "description": "identity"
+      },
+      "sha256": "6a0d1273fa090df91350e3456f860e534fa97e1c09d7dc247c2a2d29f9ea2302"
+    },
+    "relation": {
+      "kind": "serialized-r1cs",
+      "sha256": "18e7e2acedabd39db3efaa8a9b457e3dbd3883ae1c421be4a725eec530574ee2"
+    }
+  }
 }

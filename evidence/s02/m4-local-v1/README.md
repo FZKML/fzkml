@@ -7,7 +7,10 @@ Three retained repetitions contain3 verified single-prover proofs,6 verified
 three-party proofs (3 each at zero and5ms relay-read delay), and3 Paillier runs.
 All use the original public synthetic operands3/11 and return33. Nine actual
 proofs/public outputs and the pinned verification-key digest are retained in
-`proof-manifest.json` and `public/`. No witness/share/key/config/backend log is
+`proof-manifest.json` and `public/`. Domain-separated canonical model and
+preprocessor descriptor digests and the R1CS digest are recorded and checked
+against the raw run; these derived public metadata hashes are not circuit-bound
+input commitments. No witness/share/key/config/backend log is
 included. Public numeric artifacts are not a production SRS or security approval.
 
 | REP3 relay delay/read | End-to-end seconds (raw repetitions) | TCP payload bytes |
