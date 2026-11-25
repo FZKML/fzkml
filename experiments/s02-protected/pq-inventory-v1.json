@@ -1,0 +1,541 @@
+{
+  "schema_version": "s02-pq-inventory-1.0.0",
+  "review_status": "candidate-inventory-not-security-approval",
+  "configurations": [
+    {
+      "id": "public-research-v1",
+      "implemented": true,
+      "claimed_full_stack_pq": false,
+      "independent_review": false,
+      "threat_model": "Quantum-capable adversary after retention of public proofs, commitments and traffic; computational assumptions and complete observer view must be assessed.",
+      "field_modulus_bits": 254,
+      "performance_scope": "Only actually executed local configuration; no PQ replacement benchmark.",
+      "primitives": [
+        {
+          "role": "proof",
+          "algorithm": "Groth16/BN254",
+          "quantum_status": "vulnerable",
+          "assumption": "Pairing-group discrete logarithm and Groth16-specific assumptions; no Shor resistance.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Replace proof construction and re-review relation, setup, bindings, soundness and ZK.",
+          "serialized_size_bytes": 128,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "commitment",
+          "algorithm": "SHA-256 contextual digest / proof witness bindings",
+          "quantum_status": "candidate",
+          "assumption": "Hash preimage/collision properties and encoding/domain binding separately; SHA label alone is not a PQ argument.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Analyze every used hash property and quantum query model; select reviewed commitment.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "signature",
+          "algorithm": "Operational signer unconfigured",
+          "quantum_status": "unknown",
+          "assumption": "DCO trailers are contribution certifications, not cryptographic signatures.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Select and integrate a reviewed PQ authentication scheme, public-key registry and revocation.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "credential",
+          "algorithm": "Operational credential issuer unconfigured",
+          "quantum_status": "unknown",
+          "assumption": "No complete adversarial credential/issuance policy is implemented in this configuration.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Inventory issuer, signature/possession construction and quantum authentication assumptions.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "transport",
+          "algorithm": "local process / deployment channel unspecified",
+          "quantum_status": "unknown",
+          "assumption": "No deployment channel confidentiality or PQ key establishment is demonstrated.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Provide authenticated private channels; assess KEM, signature, endpoints and harvest-now/decrypt-later exposure.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "setup",
+          "algorithm": "Circuit-specific Groth16 SRS",
+          "quantum_status": "vulnerable",
+          "assumption": "Local random test setup / upstream test zkey; no audited ceremony or toxic-waste destruction evidence.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Replace affected setup and keys with the selected PQ construction and version domains.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "artifact",
+          "algorithm": "Long-lived keys/proofs/receipts and source/release digests",
+          "quantum_status": "unknown",
+          "assumption": "Digest integrity does not supply quantum-secure artifact authentication or durable availability.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Inventory retention horizon, artifact signer, verification chain, migration and renewal.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        }
+      ]
+    },
+    {
+      "id": "private-transition-v2",
+      "implemented": true,
+      "claimed_full_stack_pq": false,
+      "independent_review": false,
+      "threat_model": "Quantum-capable adversary after retention of public proofs, commitments and traffic; computational assumptions and complete observer view must be assessed.",
+      "field_modulus_bits": 254,
+      "performance_scope": "Only actually executed local configuration; no PQ replacement benchmark.",
+      "primitives": [
+        {
+          "role": "proof",
+          "algorithm": "Groth16/BN254",
+          "quantum_status": "vulnerable",
+          "assumption": "Pairing-group discrete logarithm and Groth16-specific assumptions; no Shor resistance.",
+          "source": "https://github.com/FZKML/fzkml/blob/2e8a464ffd7eb5f358e811b9285519d46f594bc2/specs/private-transition-v2.json",
+          "replacement": "Replace proof construction and re-review relation, setup, bindings, soundness and ZK.",
+          "serialized_size_bytes": 128,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "commitment",
+          "algorithm": "SHA-256 contextual digest / proof witness bindings",
+          "quantum_status": "candidate",
+          "assumption": "Hash preimage/collision properties and encoding/domain binding separately; SHA label alone is not a PQ argument.",
+          "source": "https://github.com/FZKML/fzkml/blob/2e8a464ffd7eb5f358e811b9285519d46f594bc2/specs/private-transition-v2.json",
+          "replacement": "Analyze every used hash property and quantum query model; select reviewed commitment.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "signature",
+          "algorithm": "Operational signer unconfigured",
+          "quantum_status": "unknown",
+          "assumption": "DCO trailers are contribution certifications, not cryptographic signatures.",
+          "source": "https://github.com/FZKML/fzkml/blob/2e8a464ffd7eb5f358e811b9285519d46f594bc2/specs/private-transition-v2.json",
+          "replacement": "Select and integrate a reviewed PQ authentication scheme, public-key registry and revocation.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "credential",
+          "algorithm": "Operational credential issuer unconfigured",
+          "quantum_status": "unknown",
+          "assumption": "No complete adversarial credential/issuance policy is implemented in this configuration.",
+          "source": "https://github.com/FZKML/fzkml/blob/2e8a464ffd7eb5f358e811b9285519d46f594bc2/specs/private-transition-v2.json",
+          "replacement": "Inventory issuer, signature/possession construction and quantum authentication assumptions.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "transport",
+          "algorithm": "local process / deployment channel unspecified",
+          "quantum_status": "unknown",
+          "assumption": "No deployment channel confidentiality or PQ key establishment is demonstrated.",
+          "source": "https://github.com/FZKML/fzkml/blob/2e8a464ffd7eb5f358e811b9285519d46f594bc2/specs/private-transition-v2.json",
+          "replacement": "Provide authenticated private channels; assess KEM, signature, endpoints and harvest-now/decrypt-later exposure.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "setup",
+          "algorithm": "Circuit-specific Groth16 SRS",
+          "quantum_status": "vulnerable",
+          "assumption": "Local random test setup / upstream test zkey; no audited ceremony or toxic-waste destruction evidence.",
+          "source": "https://github.com/FZKML/fzkml/blob/2e8a464ffd7eb5f358e811b9285519d46f594bc2/specs/private-transition-v2.json",
+          "replacement": "Replace affected setup and keys with the selected PQ construction and version domains.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "artifact",
+          "algorithm": "Long-lived keys/proofs/receipts and source/release digests",
+          "quantum_status": "unknown",
+          "assumption": "Digest integrity does not supply quantum-secure artifact authentication or durable availability.",
+          "source": "https://github.com/FZKML/fzkml/blob/2e8a464ffd7eb5f358e811b9285519d46f594bc2/specs/private-transition-v2.json",
+          "replacement": "Inventory retention horizon, artifact signer, verification chain, migration and renewal.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        }
+      ]
+    },
+    {
+      "id": "protected-aggregation-v1",
+      "implemented": true,
+      "claimed_full_stack_pq": false,
+      "independent_review": false,
+      "threat_model": "Quantum-capable adversary against BN254 proofs, BabyJubJub commitments and Ed25519 issuer/client/recipient/durable-authority signatures; classical corruption/availability contracts are separate.",
+      "field_modulus_bits": 254,
+      "performance_scope": "Source inventory only; no new aggregation benchmark in this run.",
+      "primitives": [
+        {
+          "role": "proof",
+          "algorithm": "Groth16/BN254",
+          "quantum_status": "vulnerable",
+          "assumption": "Pairing-group discrete logarithm and Groth16-specific assumptions; no Shor resistance.",
+          "source": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/specs/aggregation-v1.json",
+          "replacement": "Replace proof construction and re-review relation, setup, bindings, soundness and ZK.",
+          "serialized_size_bytes": 128,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "commitment",
+          "algorithm": "BabyJubJub Pedersen VSS commitments with SHA-256-derived context/H",
+          "quantum_status": "vulnerable",
+          "assumption": "Elliptic-curve discrete-log binding, independent-generator ROM/unknown-DL assumption; local encodings and hash derivation need separate review.",
+          "source": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/specs/aggregation-v1.json",
+          "replacement": "Replace commitments/VSS and re-review proof links, subgroup checks and context/domain encodings.",
+          "serialized_size_bytes": 32,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "signature",
+          "algorithm": "Ed25519 strict signatures",
+          "quantum_status": "vulnerable",
+          "assumption": "Elliptic-curve signature assumptions; pinned issuer/client/recipient/durable-authority keys.",
+          "source": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/specs/aggregation-v1.json",
+          "replacement": "Migrate each role signer/registry/revocation/receipt verifier to a reviewed PQ signature, not only one endpoint.",
+          "serialized_size_bytes": 64,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "credential",
+          "algorithm": "Issuer-attested Ed25519 entity credentials",
+          "quantum_status": "vulnerable",
+          "assumption": "Issuer trust plus Ed25519 authentication; no real-world uniqueness/anonymity inferred.",
+          "source": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/specs/aggregation-v1.json",
+          "replacement": "Review issuer policy, possession/admission and credential migration as one contract.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "transport",
+          "algorithm": "Trusted authenticated private delivery API; network transport unsupported",
+          "quantum_status": "unknown",
+          "assumption": "Local role boundary assumes a private authenticated channel; no transport construction implemented.",
+          "source": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/specs/aggregation-v1.json",
+          "replacement": "Implement reviewed private authenticated transport and inventory complete KEM/signature/endpoint assumptions.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "setup",
+          "algorithm": "Circuit-specific Groth16 SRS",
+          "quantum_status": "vulnerable",
+          "assumption": "Local random test setup / upstream test zkey; no audited ceremony or toxic-waste destruction evidence.",
+          "source": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/specs/aggregation-v1.json",
+          "replacement": "Replace affected setup and keys with the selected PQ construction and version domains.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "artifact",
+          "algorithm": "Ed25519-signed durable accepted-root/release records, SQLite FULL/WAL trusted authority",
+          "quantum_status": "vulnerable",
+          "assumption": "Trusted non-rollback storage plus classical signature integrity; no Byzantine consensus or quantum-secure archival authentication.",
+          "source": "https://github.com/FZKML/fzkml/blob/cb3590648f3a6d38c8092e6f24ee3ad1461daef4/specs/aggregation-v1.json",
+          "replacement": "Migrate artifact signers, retention/renewal, authority trust and storage rollback policy together.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        }
+      ]
+    },
+    {
+      "id": "external-cocircom-rep3",
+      "implemented": true,
+      "claimed_full_stack_pq": false,
+      "independent_review": false,
+      "threat_model": "Quantum-capable adversary after retention of public proofs, commitments and traffic; computational assumptions and complete observer view must be assessed.",
+      "field_modulus_bits": 254,
+      "performance_scope": "Only actually executed local configuration; no PQ replacement benchmark.",
+      "primitives": [
+        {
+          "role": "proof",
+          "algorithm": "Groth16/BN254",
+          "quantum_status": "vulnerable",
+          "assumption": "Pairing-group discrete logarithm and Groth16-specific assumptions; no Shor resistance.",
+          "source": "https://github.com/TaceoLabs/co-snarks/blob/97adcc06afc0d506c2d6aa9f81b2e342fd8108c0/",
+          "replacement": "Replace proof construction and re-review relation, setup, bindings, soundness and ZK.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "commitment",
+          "algorithm": "SHA-256 contextual digest / proof witness bindings",
+          "quantum_status": "candidate",
+          "assumption": "Hash preimage/collision properties and encoding/domain binding separately; SHA label alone is not a PQ argument.",
+          "source": "https://github.com/TaceoLabs/co-snarks/blob/97adcc06afc0d506c2d6aa9f81b2e342fd8108c0/",
+          "replacement": "Analyze every used hash property and quantum query model; select reviewed commitment.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "signature",
+          "algorithm": "Operational signer unconfigured",
+          "quantum_status": "unknown",
+          "assumption": "DCO trailers are contribution certifications, not cryptographic signatures.",
+          "source": "https://github.com/TaceoLabs/co-snarks/blob/97adcc06afc0d506c2d6aa9f81b2e342fd8108c0/",
+          "replacement": "Select and integrate a reviewed PQ authentication scheme, public-key registry and revocation.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "credential",
+          "algorithm": "Operational credential issuer unconfigured",
+          "quantum_status": "unknown",
+          "assumption": "No complete adversarial credential/issuance policy is implemented in this configuration.",
+          "source": "https://github.com/TaceoLabs/co-snarks/blob/97adcc06afc0d506c2d6aa9f81b2e342fd8108c0/",
+          "replacement": "Inventory issuer, signature/possession construction and quantum authentication assumptions.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "transport",
+          "algorithm": "raw loopback TCP",
+          "quantum_status": "unknown",
+          "assumption": "CoCircom0.10 TcpNetwork is not TLS; shared host sees all traffic.",
+          "source": "https://github.com/TaceoLabs/co-snarks/blob/97adcc06afc0d506c2d6aa9f81b2e342fd8108c0/mpc-net/src/tcp.rs",
+          "replacement": "Provide authenticated private channels; assess KEM, signature, endpoints and harvest-now/decrypt-later exposure.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "setup",
+          "algorithm": "Circuit-specific Groth16 SRS",
+          "quantum_status": "vulnerable",
+          "assumption": "Local random test setup / upstream test zkey; no audited ceremony or toxic-waste destruction evidence.",
+          "source": "https://github.com/TaceoLabs/co-snarks/blob/97adcc06afc0d506c2d6aa9f81b2e342fd8108c0/",
+          "replacement": "Replace affected setup and keys with the selected PQ construction and version domains.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "artifact",
+          "algorithm": "Long-lived keys/proofs/receipts and source/release digests",
+          "quantum_status": "unknown",
+          "assumption": "Digest integrity does not supply quantum-secure artifact authentication or durable availability.",
+          "source": "https://github.com/TaceoLabs/co-snarks/blob/97adcc06afc0d506c2d6aa9f81b2e342fd8108c0/",
+          "replacement": "Inventory retention horizon, artifact signer, verification chain, migration and renewal.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        }
+      ]
+    },
+    {
+      "id": "paillier-product-reference",
+      "implemented": true,
+      "claimed_full_stack_pq": false,
+      "independent_review": false,
+      "threat_model": "One semi-honest decrypting client and evaluator; no active integrity or key-holder input confidentiality. Quantum factoring adversary excluded from classical analysis.",
+      "field_modulus_bits": null,
+      "performance_scope": "Actual 2048-bit local reference only.",
+      "primitives": [
+        {
+          "role": "proof",
+          "algorithm": "No computation proof",
+          "quantum_status": "not-applicable",
+          "assumption": "HE evaluation is not ZK or public verifiability.",
+          "source": "https://www.cs.tau.ac.il/~fiat/crypt07/papers/Pai99pai.pdf",
+          "replacement": "Add a reviewed proof of the exact input/payload/output relation when required.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "commitment",
+          "algorithm": "Paillier ciphertext confidentiality",
+          "quantum_status": "vulnerable",
+          "assumption": "Decisional composite residuosity; factoring reveals the secret key. Ciphertexts are malleable.",
+          "source": "https://www.cs.tau.ac.il/~fiat/crypt07/papers/Pai99pai.pdf",
+          "replacement": "Choose reviewed PQ HE or MPC; quantify exact semantics and output leakage.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "signature",
+          "algorithm": "Not implemented",
+          "quantum_status": "unknown",
+          "assumption": "No ciphertext authentication.",
+          "source": "https://www.cs.tau.ac.il/~fiat/crypt07/papers/Pai99pai.pdf",
+          "replacement": "Integrate authenticated identities and ciphertext policy.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "credential",
+          "algorithm": "Not implemented",
+          "quantum_status": "unknown",
+          "assumption": "Evaluator/key-holder roles are declared only.",
+          "source": "https://www.cs.tau.ac.il/~fiat/crypt07/papers/Pai99pai.pdf",
+          "replacement": "Integrate reviewed role admission.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "transport",
+          "algorithm": "In-process reference only",
+          "quantum_status": "unknown",
+          "assumption": "No deployment channels tested.",
+          "source": "https://www.cs.tau.ac.il/~fiat/crypt07/papers/Pai99pai.pdf",
+          "replacement": "Define authenticated channels and their PQ assumptions.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "setup",
+          "algorithm": "Local probabilistic Paillier key generation",
+          "quantum_status": "vulnerable",
+          "assumption": "2048-bit modulus; 64 independent Miller-Rabin rounds per candidate; timing and code are not audited.",
+          "source": "https://www.cs.tau.ac.il/~fiat/crypt07/papers/Pai99pai.pdf",
+          "replacement": "Review replacement setup, entropy, modulus and key authority.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "artifact",
+          "algorithm": "Synthetic timing/digest records",
+          "quantum_status": "unknown",
+          "assumption": "No signed long-lived cryptographic evidence.",
+          "source": "https://www.cs.tau.ac.il/~fiat/crypt07/papers/Pai99pai.pdf",
+          "replacement": "Use reviewed artifact authentication and retention policy.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        }
+      ]
+    },
+    {
+      "id": "pq-authentication-mixed-proposal",
+      "implemented": false,
+      "claimed_full_stack_pq": false,
+      "independent_review": false,
+      "threat_model": "Proposed ML-DSA authentication does not replace BN254 proofs or Paillier encryption.",
+      "field_modulus_bits": null,
+      "performance_scope": "not-run; no performance estimate",
+      "primitives": [
+        {
+          "role": "proof",
+          "algorithm": "Groth16/BN254",
+          "quantum_status": "vulnerable",
+          "assumption": "Pairing-group discrete logarithm and Groth16-specific assumptions; no Shor resistance.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Replace proof construction and re-review relation, setup, bindings, soundness and ZK.",
+          "serialized_size_bytes": 128,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "commitment",
+          "algorithm": "SHA-256 contextual digest / proof witness bindings",
+          "quantum_status": "candidate",
+          "assumption": "Hash preimage/collision properties and encoding/domain binding separately; SHA label alone is not a PQ argument.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Analyze every used hash property and quantum query model; select reviewed commitment.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "signature",
+          "algorithm": "ML-DSA proposal only",
+          "quantum_status": "candidate",
+          "assumption": "FIPS204 module-lattice signature assumptions, parameter/implementation integration pending.",
+          "source": "https://csrc.nist.gov/news/2024/postquantum-cryptography-fips-approved",
+          "replacement": "Implement and review key handling; still replace other vulnerable stack components.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "credential",
+          "algorithm": "Operational credential issuer unconfigured",
+          "quantum_status": "unknown",
+          "assumption": "No complete adversarial credential/issuance policy is implemented in this configuration.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Inventory issuer, signature/possession construction and quantum authentication assumptions.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "transport",
+          "algorithm": "local process / deployment channel unspecified",
+          "quantum_status": "unknown",
+          "assumption": "No deployment channel confidentiality or PQ key establishment is demonstrated.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Provide authenticated private channels; assess KEM, signature, endpoints and harvest-now/decrypt-later exposure.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "setup",
+          "algorithm": "Circuit-specific Groth16 SRS",
+          "quantum_status": "vulnerable",
+          "assumption": "Local random test setup / upstream test zkey; no audited ceremony or toxic-waste destruction evidence.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Replace affected setup and keys with the selected PQ construction and version domains.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        },
+        {
+          "role": "artifact",
+          "algorithm": "Long-lived keys/proofs/receipts and source/release digests",
+          "quantum_status": "unknown",
+          "assumption": "Digest integrity does not supply quantum-secure artifact authentication or durable availability.",
+          "source": "https://github.com/FZKML/fzkml/blob/91f61f7dc641e69192ee0c687cce4f64519cf172/crates/fzkml-core/src/proof.rs",
+          "replacement": "Inventory retention horizon, artifact signer, verification chain, migration and renewal.",
+          "serialized_size_bytes": null,
+          "security_bits": null,
+          "security_level_note": "No security level inferred from field/modulus/key size; specialized review required."
+        }
+      ]
+    }
+  ],
+  "source_documents": [
+    {
+      "commit": "cb3590648f3a6d38c8092e6f24ee3ad1461daef4",
+      "path": "specs/aggregation-v1.json",
+      "sha256": "7f0dd95e86275f3979ef72fd951d6aec77df366b76d6aa1af985b2d7a425a107"
+    }
+  ]
+}

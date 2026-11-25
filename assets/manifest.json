@@ -213,6 +213,40 @@
         "date": "2026-11-24",
         "decision": "Original software/metadata and mathematical facts only; private prose and full exports excluded. Independent scientific/security review remains pending."
       }
+    },
+    {
+      "id": "manuscript-progress-v1-s02",
+      "kind": "mathematical-reference",
+      "source": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+      "version": "s02-book-progress-1.0.0",
+      "path": "tests/vectors/book/progress-v1.json",
+      "sha256": "54150d5ddf0cc3ef025823a613a6bb4d1866f3b38496068925bc3347427dbd61",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original numerical serialization and mathematical facts/source locators; no private manuscript prose or external dataset copied.",
+      "intended_use": "Independent mathematical tests and reference calculations only; no production or scientific guarantee inferred.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Source-inspected numerical facts serialized by contributor",
+        "configuration": {
+          "seed": "not applicable; source facts"
+        }
+      },
+      "source_inputs": "Inspected manuscript mathematical facts; private export excluded",
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex Session02 (terms/integrity review of original mathematical serialization only)",
+        "date": "2026-11-25",
+        "decision": "Original numerical facts and locators; no private prose/export redistributed. Contributor DCO, authoritative edition migration and independent mathematical/security review remain pending."
+      }
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/TaceoLabs/co-snarks.git",
+  "tag": "co-circom-v0.10.0",
+  "source_commit": "97adcc06afc0d506c2d6aa9f81b2e342fd8108c0",
+  "scope": "optional external experimental executables; not linked or redistributed",
+  "licenses": {
+    "co-circom": "GPL-3.0-only",
+    "snarkjs": "GPL-3.0"
+  },
+  "archives": {
+    "Darwin-arm64": {
+      "url": "https://github.com/TaceoLabs/co-snarks/releases/download/co-circom-v0.10.0/co-circom-aarch64-apple-darwin.tar.gz",
+      "sha256": "844e74826ccb9f22f5339492ddfa11a8f743caf443d91eb6bf03981b205cb582"
+    },
+    "Linux-x86_64": {
+      "url": "https://github.com/TaceoLabs/co-snarks/releases/download/co-circom-v0.10.0/co-circom-x86_64-unknown-linux-gnu.tar.gz",
+      "sha256": "9faa61f45d5bf94d64d4221a5614df6b60bcca89c85c9a961955211bfbd3c4e1"
+    }
+  },
+  "external_files": {
+    "test_vectors/Groth16/bn254/multiplier2/circuit.r1cs": "18e7e2acedabd39db3efaa8a9b457e3dbd3883ae1c421be4a725eec530574ee2",
+    "test_vectors/Groth16/bn254/multiplier2/circuit.zkey": "4d7b1662843a4fa2e952eb3abad3022126efeddab6cd5532c2e89cab70aab15b",
+    "test_vectors/Groth16/bn254/multiplier2/witness.wtns": "7aa8efe33fc086e3ea026e1785eddb647934c51d9aeba574fc39f62a174f9ce4",
+    "test_vectors/Groth16/bn254/multiplier2/verification_key.json": "4b69f1f57533b9225c16d43f4ccb4e20f324bb90bf26b8fb9c07ee81a6a2e00c",
+    "test_vectors/Groth16/bn254/multiplier2/public.json": "68104caf9db5c74fc58f69a349ce3b1149634489c6d9917e206ef7b6184d4870",
+    "mpc-net/src/tcp.rs": "afd7bc99deb024b784d9086ba951db311ff218ce0369a777bcbebee9a68749ba",
+    "co-circom/co-circom/src/bin/co-circom.rs": "ffc3c883314ba0f63ff7ddd93ff7e2bb35b5ab332d97ec1a11d0ccb79e3e568a",
+    "LICENSE-GPL": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "LICENSE-APACHE": "d3365df4592d2f624788385311d4e347c62e370bdc720d61f69d7522e41c23ae",
+    "LICENSE-MIT": "bad28bc6dda829081d171d4473cd7c423b03c8e38c02a8996a4e3db23d2fb077"
+  },
+  "npm_lock_sha256": "8d2e2d82b970f4b1d8928c14914c04efeb1b11310087b36ebc1f229360f8ae72"
+}
