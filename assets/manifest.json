@@ -325,6 +325,74 @@
         "date": "2026-11-24",
         "decision": "Source-only synthetic conformance payload under the repository license. No independent benchmark adoption approval is asserted."
       }
+    },
+    {
+      "id": "s02-data-lineage-book-v1",
+      "kind": "mathematical-reference",
+      "source": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+      "version": "s02-book-data-1.0.0",
+      "path": "tests/vectors/book/data-lineage-v1.json",
+      "sha256": "398c063210de348f54527a705ebc209679b2833e633830dfecdfea9a68ffbeee",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original mathematical serialization and synthetic software; manuscript facts/locators only, no private prose/export or third-party dataset copied.",
+      "intended_use": "Bounded numerical reference tests, not production/security/scientific assurance.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Source-inspected mathematical facts serialized by contributor",
+        "configuration": {
+          "seed": "none; fixed public deterministic examples"
+        }
+      },
+      "source_inputs": "Inspected native ranges/revision/export digest in fixture; authoritative edition migration pending",
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex Session02 (terms/integrity review only)",
+        "date": "2026-11-25",
+        "decision": "Original software/facts only; private manuscript content excluded. Contributor certification for this PR and independent scientific/security review remain pending."
+      }
+    },
+    {
+      "id": "s02-data-lineage-synthetic-v1",
+      "kind": "synthetic-fixture",
+      "source": "Original deterministic contributor-generated synthetic inputs",
+      "version": "s02-data-lineage-vectors-1.0.0",
+      "path": "tests/vectors/synthetic/data-lineage-v1.json",
+      "sha256": "9b18aa242b8657ffdf56a0825163d939df2097eb89b66a71273af28d05c9d8f0",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original mathematical serialization and synthetic software; manuscript facts/locators only, no private prose/export or third-party dataset copied.",
+      "intended_use": "Bounded numerical reference tests, not production/security/scientific assurance.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "scripts/generate_s02_data_vectors.py",
+        "configuration": {
+          "seed": "none; fixed public deterministic examples"
+        }
+      },
+      "source_inputs": "Original bounded rational rows, denoising tape and simulator; no external weights/data",
+      "review": {
+        "status": "approved",
+        "reviewer": "Codex Session02 (terms/integrity review only)",
+        "date": "2026-11-25",
+        "decision": "Original software/facts only; private manuscript content excluded. Contributor certification for this PR and independent scientific/security review remain pending."
+      }
     }
   ]
 }

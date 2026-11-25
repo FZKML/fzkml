@@ -5641,6 +5641,150 @@
         "LICENSE"
       ],
       "notice_files": []
+    },
+    "experiments/s02-data/README.md": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "experiments/s02-data/config-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/data_experiment_contract.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/data_lineage.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/join_reference.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/streaming_data.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/summary_cache.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "python/fzkml_math/toy_generation.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "schemas/s02-data-run-1.0.0.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/check_s02_data_evidence.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/generate_s02_data_vectors.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/run_s02_data.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "scripts/validate-s02-data": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/test_s02_data.py": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/book/data-lineage-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
+    },
+    "tests/vectors/synthetic/data-lineage-v1.json": {
+      "license": "Apache-2.0",
+      "origin": "original",
+      "attribution": "Original reference software, synthetic data and mathematical serialization developed with Codex assistance; source locators identify mathematical facts, no private prose or external implementation copied. Contributor certification and independent review tracked separately.",
+      "license_files": [
+        "LICENSE"
+      ],
+      "notice_files": []
     }
   }
 }
