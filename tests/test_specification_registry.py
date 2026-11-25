@@ -18,7 +18,16 @@ class SpecificationRegistryTests(unittest.TestCase):
         self.temporary = tempfile.TemporaryDirectory(prefix="fzkml-registry-")
         self.addCleanup(self.temporary.cleanup)
         self.root = Path(self.temporary.name)
-        for directory in ("claims", "specifications", "docs", "schemas", "specs", "src", "tests"):
+        for directory in (
+            "claims",
+            "specifications",
+            "docs",
+            "schemas",
+            "specs",
+            "src",
+            "tests",
+            ".github",
+        ):
             shutil.copytree(
                 ROOT / directory,
                 self.root / directory,
@@ -44,6 +53,23 @@ class SpecificationRegistryTests(unittest.TestCase):
         self.assertEqual(report["declared_formal_artifacts"], 0)
         self.assertEqual(report["declared_independent_reviews"], 0)
         self.assertEqual(before, (self.root / "claims/registry.json").read_bytes())
+
+    def test_ci_assurance_reference_drift(self) -> None:
+        contract = self.read("specifications/ci_assurance/contracts-v1.json")
+        contract["contracts"][0]["required_tests"] = ["test_nonexistent_assurance"]
+        self.save("specifications/ci_assurance/contracts-v1.json", contract)
+        self.invalid("missing CI assurance test")
+
+    def test_ci_assurance_source_hash_drift(self) -> None:
+        path = self.root / "specifications/ci_assurance/rounds.py"
+        path.write_text(path.read_text() + "\n# changed source\n")
+        self.invalid("software-member-mismatch")
+
+    def test_ci_assurance_approval_cannot_be_invented(self) -> None:
+        review = self.read("specifications/ci_assurance/matrix-review-v1.json")
+        review["human_approval"] = {"approved": True}
+        self.save("specifications/ci_assurance/matrix-review-v1.json", review)
+        self.invalid("live approval not established")
 
     def test_missing_source_node(self) -> None:
         d = self.read("claims/source-map-v1.json")

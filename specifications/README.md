@@ -66,3 +66,8 @@ sector cards, one original synthetic smoke pilot and unexecuted factorial/adopti
 plans. Their schemas, historical source references and test links are part of
 the authoritative check. They do not promote scientific hypothesis or field-
 study status, source-paper replication, cryptographic erasure or economic fairness.
+
+`ci_assurance/` defines original synthetic CI-16–CI-20 contracts (#111–#115),
+closed engineering report/fixture schemas, fault/model/canary/DP/quota checkers
+and a no-dispatch matrix trust boundary. Its tests use the existing CPU workflow;
+no scientific claim status or publication approval follows from passing them.

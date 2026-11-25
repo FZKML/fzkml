@@ -1,0 +1,9 @@
+{
+  "kind": "original-public-synthetic",
+  "values": [
+    0,
+    1,
+    -1
+  ],
+  "purpose": "CI-20 immutable input identity only; no benchmark"
+}

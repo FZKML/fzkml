@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "source_kind": "original-engineering",
+  "scientific_claim_ids": [],
+  "workflow": ".github/workflows/cpu.yml",
+  "local_command": "PYTHONPATH=.:src python -m specifications.ci_assurance.run --output /private/tmp/ci-assurance.json",
+  "contracts": [
+    {
+      "id": "CI-16",
+      "issue": 111,
+      "dependencies": [
+        46,
+        48,
+        49
+      ],
+      "dependency_status": "integration-review-pending",
+      "fixture_ids": [
+        "ci16-baseline",
+        "ci16-duplicates",
+        "ci16-reordered",
+        "ci16-restart",
+        "ci16-timeout",
+        "ci16-dropped-share",
+        "ci16-released-timeout"
+      ],
+      "required_tests": [
+        "test_fault_replay_and_abort_classes",
+        "test_duplicate_release_mutation"
+      ],
+      "limits": "Synthetic receipt/state abstraction only: no protected aggregation, cryptographic admission, durable database or real share failure exercised."
+    },
+    {
+      "id": "CI-17",
+      "issue": 112,
+      "dependencies": [
+        47,
+        48,
+        51
+      ],
+      "dependency_status": "integration-review-pending",
+      "fixture_ids": [
+        "ci17-finite-bfs",
+        "ci17-concurrent",
+        "ci17-double-release-mutant"
+      ],
+      "required_tests": [
+        "test_exhaustive_model_and_inconclusive_bound",
+        "test_concurrent_history_and_conflicting_head",
+        "test_restart_rejects_rollback"
+      ],
+      "limits": "Finite two-client two-share single-authority abstraction; trusted authenticated latest atomic state and one canonical head assumed. No Byzantine consensus, liveness or production implementation proof."
+    },
+    {
+      "id": "CI-18",
+      "issue": 113,
+      "dependencies": [
+        18,
+        52,
+        57
+      ],
+      "dependency_status": "integration-review-pending",
+      "fixture_ids": [
+        "ci18-five-public-views",
+        "ci18-known-canary-mutants"
+      ],
+      "required_tests": [
+        "test_inventory_canaries_and_unlisted_outputs",
+        "test_scanner_path_and_resource_bounds"
+      ],
+      "limits": "Known synthetic byte/hex/base64/percent canaries and inventoried public files only. No semantic/computational confidentiality or exhaustive observer-view proof."
+    },
+    {
+      "id": "CI-19",
+      "issue": 114,
+      "dependencies": [
+        54,
+        55,
+        57
+      ],
+      "dependency_status": "integration-review-pending",
+      "fixture_ids": [
+        "ci19-q17-law",
+        "ci19-parameter-mutants"
+      ],
+      "required_tests": [
+        "test_exact_ticket_law_and_adjacency",
+        "test_dp_parameter_mutations",
+        "test_repeated_release_accounting"
+      ],
+      "limits": "Exact finite cyclic reference law and conditional ratio accountant only. Ideal secret independent tickets assumed; production sampler, full transcript DP and theorem review pending."
+    },
+    {
+      "id": "CI-20",
+      "issue": 115,
+      "dependencies": [
+        38,
+        15,
+        40
+      ],
+      "dependency_status": "integration-review-pending",
+      "fixture_ids": [
+        "ci20-synthetic-matrix",
+        "ci20-quota-mutants"
+      ],
+      "required_tests": [
+        "test_matrix_totals_and_no_dispatch",
+        "test_matrix_budget_mutations"
+      ],
+      "limits": "Offline synthetic quota arithmetic only; synthetic digest trust anchor is a test fixture, human/live approvals empty, no dispatch or hardware allocation supported."
+    }
+  ],
+  "dependency_interfaces": [
+    {
+      "path": "specifications/protocol-v1.json",
+      "sha256": "543fad4148a7202c91ec119cd3ecca0bb924798180bac1db7419178e274180f1",
+      "status": "specified-interface-only"
+    },
+    {
+      "path": "specs/privacy/transcript-v0.1.md",
+      "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0",
+      "status": "specified-interface-only"
+    },
+    {
+      "path": "specifications/reporting-requirements-v1.json",
+      "sha256": "fde707cfd6a9d524216ab938f207c9c03807111c4cbaab4da25e4c9040e7b247",
+      "status": "specified-interface-only"
+    },
+    {
+      "path": "specifications/m4/README.md",
+      "sha256": "4af8b6ce3b6c2e6f004c91159fbeab21db9de0476d38946d2fdb4ee56b0a4b1d",
+      "status": "specified-interface-only"
+    }
+  ]
+}

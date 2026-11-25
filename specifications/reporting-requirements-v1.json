@@ -143,6 +143,6 @@
       "phase expansion must preserve raw/summary identity and unit validation",
       "bundle validator resolves result versions locally and rejects unknown versions"
     ],
-    "ci_14_to_25": "pending-specification; no published contracts found in audit 2026-11-24"
+    "ci_14_to_25": "Historical 2026-11-24 audit found no contracts. Superseded for CI-16 through CI-20 by issues 111-115 and specifications/ci_assurance/contracts-v1.json (original synthetic references; production integration pending). No new conclusion about the other identifiers."
   }
 }

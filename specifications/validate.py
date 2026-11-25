@@ -96,6 +96,9 @@ def schemas(root: Path) -> Registry[Any]:
         "specifications/data_outcomes/factorial-schema-v1.json",
         "specifications/data_outcomes/adoption-schema-v1.json",
         "specifications/data_outcomes/sector-schema-v1.json",
+        "specifications/ci_assurance/schema-v1.json",
+        "specifications/ci_assurance/fixture-schema-v1.json",
+        "specifications/ci_assurance/report-schema-v1.json",
     ):
         schema = read(root, name)
         Draft202012Validator.check_schema(schema)
@@ -345,10 +348,87 @@ def validate(root: Path = ROOT) -> Json:
     # Use this checker's own reviewed code, never code from the --root data input.
     if str(ROOT) not in sys.path:
         sys.path.insert(0, str(ROOT))
+    from specifications.ci_assurance.parameters import check_parameters
+    from specifications.ci_assurance.planner import plan_matrix
     from specifications.data_outcomes.design import (
         check_sector_source,
         validate_adoption,
         validate_factorial,
+    )
+
+    assurance_path = "specifications/ci_assurance/"
+    assurance = read(root, assurance_path + "contracts-v1.json")
+    check_schema(root, assurance_path + "schema-v1.json", assurance, local_schemas)
+    assurance_contracts = indexed(assurance["contracts"], "id")
+    require(
+        [(c["id"], c["issue"]) for c in assurance["contracts"]]
+        == [(f"CI-{i + 16}", i + 111) for i in range(5)],
+        "incomplete CI assurance coverage",
+    )
+    fixture = read(root, assurance_path + "fixtures-v1.json")
+    check_schema(root, assurance_path + "fixture-schema-v1.json", fixture, local_schemas)
+    fixture_ids = {row["id"] for row in fixture["traces"]}
+    require(
+        len(fixture_ids) == len(fixture["traces"])
+        and fixture_ids == set(assurance_contracts["CI-16"]["fixture_ids"]),
+        "CI assurance fixture reference mismatch",
+    )
+    test_tree = ast.parse(local_file(root, "tests/test_ci_assurance.py").read_text())
+    assurance_tests = {
+        node.name
+        for node in ast.walk(test_tree)
+        if isinstance(node, ast.FunctionDef) and node.name.startswith("test_")
+    }
+    for contract in assurance_contracts.values():
+        require(
+            set(contract["required_tests"]) <= assurance_tests,
+            "missing CI assurance test",
+        )
+    for reference in assurance["dependency_interfaces"]:
+        checked_ref(root, reference)
+    # This single schema-fixed hidden path is allowed; generic evidence paths remain strict.
+    workflow_path = root / ".github" / "workflows" / "cpu.yml"
+    require(
+        workflow_path.is_file()
+        and not any(
+            path.is_symlink()
+            for path in (root / ".github", root / ".github/workflows", workflow_path)
+        ),
+        "unsafe CI assurance workflow path",
+    )
+    workflow = workflow_path.read_text()
+    require(
+        "timeout-minutes: 20" in workflow
+        and "contents: read" in workflow
+        and "persist-credentials: false" in workflow
+        and "./scripts/validate" in workflow,
+        "CI assurance bounded workflow reference mismatch",
+    )
+    check_parameters(fixture["parameters"], local_file(root, assurance_path + "dp-geometric-v1.md"))
+    matrix = read(root, assurance_path + "matrix-v1.json")
+    review = read(root, assurance_path + "matrix-review-v1.json")
+    require(
+        set(review)
+        == {
+            "schema_version",
+            "scope",
+            "synthetic_digests",
+            "live_approved_digests",
+            "human_approval",
+            "dispatch_supported",
+        }
+        and review["schema_version"] == "1.0.0"
+        and review["scope"] == "synthetic-test-only"
+        and review["live_approved_digests"] == []
+        and review["human_approval"] is None
+        and review["dispatch_supported"] is False,
+        "CI assurance live approval not established",
+    )
+    plan_matrix(
+        matrix,
+        frozenset(review["synthetic_digests"]),
+        local_file(root, assurance_path + "dataset-v1.json"),
+        local_file(root, assurance_path + "software-v1.json"),
     )
 
     data_contract = read(root, "specifications/data_outcomes/contracts-v1.json")
@@ -713,6 +793,7 @@ def validate(root: Path = ROOT) -> Json:
         "candidate_external_records": len(candidate_records),
         "m4_contracts": len(contracts),
         "data_outcome_contracts": len(outcome_contracts),
+        "ci_assurance_contracts": len(assurance_contracts),
         "trust": "Metadata checked; external receipts/reviews require trusted verification.",
     }
 

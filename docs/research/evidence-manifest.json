@@ -51,6 +51,10 @@
       "sha256": "db64323d2843c3d940564d71301d209735988838aabc103a45f84de70cb3975e"
     },
     {
+      "path": "docs/research/ci-assurance-implementation-evidence.md",
+      "sha256": "8750ee80fe48a2705a9151daf0701d3ec20c780e7951f52cbb8a7e819f628098"
+    },
+    {
       "path": "docs/research/claim-context.json",
       "sha256": "ba9ec686e2f0d1404cc0eb3ab1858c609dc8f0c5201e8e1597199aab6308a928"
     },
@@ -116,11 +120,79 @@
     },
     {
       "path": "specifications/README.md",
-      "sha256": "61117da23fbe8dbd6807b5a2141be47733ca85e2d92a3917e1726e6a0c76075e"
+      "sha256": "1918b56d719da1cc207811932d992239346595b9edeb88144b6ad8e884b0f98c"
     },
     {
       "path": "specifications/__init__.py",
       "sha256": "ef27bd3d997ae7ad20385b56e3c7d54c7824d30b1c77148c621928082f97d5b6"
+    },
+    {
+      "path": "specifications/ci_assurance/README.md",
+      "sha256": "e9872a3075aea44d0d05afc925e559d78511bc3a6eca6737b85f812290543b77"
+    },
+    {
+      "path": "specifications/ci_assurance/__init__.py",
+      "sha256": "8b815512ddf710abd436089a9a1d6a02a1232cac149f913f5dc4a29aff6e8584"
+    },
+    {
+      "path": "specifications/ci_assurance/contracts-v1.json",
+      "sha256": "db75fcd0509fbc40f2d190a5519cabf2ddf5cbc12597f97b0b82c9b8e903e7ad"
+    },
+    {
+      "path": "specifications/ci_assurance/dataset-v1.json",
+      "sha256": "7e93d8ce79939ea2dd50fa9cf2606e88e0d95b1425460e966316f852858dc093"
+    },
+    {
+      "path": "specifications/ci_assurance/disclosure.py",
+      "sha256": "d88378336f244a16afcee64d3e40b454e567ec962e000b1a5d5c06e9c8cef523"
+    },
+    {
+      "path": "specifications/ci_assurance/dp-geometric-v1.md",
+      "sha256": "6568a8a38c1816aaf9ffc7b2b112368bdf7b3fc791717b2241d5880be330349c"
+    },
+    {
+      "path": "specifications/ci_assurance/fixture-schema-v1.json",
+      "sha256": "640f07d1cdb6c64fea5876a269f4bf9c36aef88db7e2872183d31437d16732a3"
+    },
+    {
+      "path": "specifications/ci_assurance/fixtures-v1.json",
+      "sha256": "d1994fce455dea056fe21d8683055ae4684e80fc766c20b6783a09c793c6f41f"
+    },
+    {
+      "path": "specifications/ci_assurance/matrix-review-v1.json",
+      "sha256": "b02f36fc487bc8471e6acd39ac172a97f66334c3dbe690dd7b31bcb5c182e520"
+    },
+    {
+      "path": "specifications/ci_assurance/matrix-v1.json",
+      "sha256": "55100191eff965a61eec88070e60e9ff14c006117f309844dc94b35984536431"
+    },
+    {
+      "path": "specifications/ci_assurance/parameters.py",
+      "sha256": "5c96b9505b3d616119448606efbad9514a8e9a542241bfdf42c86b3f0d16fbd8"
+    },
+    {
+      "path": "specifications/ci_assurance/planner.py",
+      "sha256": "a56d4b6ea740bf37f3aa3208c6dfc9d40dddb4115c83b1616aa94cad0b23402c"
+    },
+    {
+      "path": "specifications/ci_assurance/report-schema-v1.json",
+      "sha256": "9931a1874ec27a4257d89084657e8ed9163dc293b249bb9efd38f7064cc48f08"
+    },
+    {
+      "path": "specifications/ci_assurance/rounds.py",
+      "sha256": "b87cbb6debd5ff217b5d9b1e9cd0d45378e8d3d01eb6194118438537059f7490"
+    },
+    {
+      "path": "specifications/ci_assurance/run.py",
+      "sha256": "68e670d589652d38a86624a4be700566400962cd67b46135be50add615f6e292"
+    },
+    {
+      "path": "specifications/ci_assurance/schema-v1.json",
+      "sha256": "89a7e4f34bd2bda07db87379683a6c6a025a4da935e60be0c3c22a2d67833b24"
+    },
+    {
+      "path": "specifications/ci_assurance/software-v1.json",
+      "sha256": "abaf7f14a3afce7aacad2f500932416327dc3675b0429f6d2036cf9d5881851c"
     },
     {
       "path": "specifications/data_outcomes/README.md",
@@ -224,11 +296,11 @@
     },
     {
       "path": "specifications/reporting-requirements-v1.json",
-      "sha256": "a751f985149b5cff21873f1ea075abc8f030495760b598c7d392ce93ca5dc6db"
+      "sha256": "fde707cfd6a9d524216ab938f207c9c03807111c4cbaab4da25e4c9040e7b247"
     },
     {
       "path": "specifications/session-handoffs-v1.md",
-      "sha256": "1a86ef30111bd95393e7a839b0c3c07f8099e065edd6dfe59684379d76a3ef35"
+      "sha256": "298571160e12386fb71d37d3ccc57d9c0d3c141c86272df7843bf9fdb0f23681"
     },
     {
       "path": "specifications/source-inputs-v1.json",
@@ -236,7 +308,7 @@
     },
     {
       "path": "specifications/validate.py",
-      "sha256": "156a374df3ee98a7ccec0ea2af83318df42f5ec2a150d349a945e84ed1a4d592"
+      "sha256": "1e0118561a0d22ba7a683c28745380b49f794bfd55b1dcb96ba8441bdb8443b3"
     },
     {
       "path": "specs/m0/capabilities-v0.1.md",
@@ -267,6 +339,10 @@
       "sha256": "dd6a19678191a9dc622444d137970bcc46327f3ec045af192d48206881f6bfa0"
     },
     {
+      "path": "tests/test_ci_assurance.py",
+      "sha256": "f8c8ecc798bf0fd4e0977d6edc1b551a93d3075b50b54fcac3be53c1599c8cb3"
+    },
+    {
       "path": "tests/test_data_outcomes.py",
       "sha256": "8e2916c5cc6f0f0e5da1d6370b7fbf1513120e55b0c4e8a2f96d448c20ba76a0"
     },
@@ -276,7 +352,7 @@
     },
     {
       "path": "tests/test_specification_registry.py",
-      "sha256": "0fc6e9e756dc2097a0a7e44f5b7340ecf14d56eceeacc2915ee08a8ba9ba43fd"
+      "sha256": "51325cf0b3332a704c38b0673cfba0b697c178bc0e98b1d12551ec1888dc1c5e"
     }
   ]
 }

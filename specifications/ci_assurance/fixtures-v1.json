@@ -1,0 +1,524 @@
+{
+  "schema_version": "1.0.0",
+  "canary": "SYNTHETIC-CANARY::ci18/v1!",
+  "traces": [
+    {
+      "id": "ci16-baseline",
+      "events": [
+        [
+          "admit",
+          "c0",
+          "p0",
+          "h0"
+        ],
+        [
+          "admit",
+          "c1",
+          "p1",
+          "h0"
+        ],
+        [
+          "freeze",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "reserve",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s0",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s1",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ]
+      ],
+      "classification": "released",
+      "charged": 1,
+      "releases": 1
+    },
+    {
+      "id": "ci16-duplicates",
+      "events": [
+        [
+          "admit",
+          "c0",
+          "p0",
+          "h0"
+        ],
+        [
+          "admit",
+          "c0",
+          "p0",
+          "h0"
+        ],
+        [
+          "admit",
+          "c1",
+          "p1",
+          "h0"
+        ],
+        [
+          "admit",
+          "c1",
+          "p1",
+          "h0"
+        ],
+        [
+          "freeze",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "freeze",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "reserve",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "reserve",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s0",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s0",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s1",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ]
+      ],
+      "classification": "released",
+      "charged": 1,
+      "releases": 1
+    },
+    {
+      "id": "ci16-reordered",
+      "events": [
+        [
+          "admit",
+          "c1",
+          "p1",
+          "h0"
+        ],
+        [
+          "share",
+          "s1",
+          "",
+          "h0"
+        ],
+        [
+          "admit",
+          "c0",
+          "p0",
+          "h0"
+        ],
+        [
+          "freeze",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "reserve",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s1",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s0",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ]
+      ],
+      "classification": "released",
+      "charged": 1,
+      "releases": 1
+    },
+    {
+      "id": "ci16-restart",
+      "events": [
+        [
+          "admit",
+          "c0",
+          "p0",
+          "h0"
+        ],
+        [
+          "restart",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "admit",
+          "c1",
+          "p1",
+          "h0"
+        ],
+        [
+          "freeze",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "restart",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "reserve",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s0",
+          "",
+          "h0"
+        ],
+        [
+          "restart",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s1",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "restart",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ]
+      ],
+      "classification": "released",
+      "charged": 1,
+      "releases": 1
+    },
+    {
+      "id": "ci16-timeout",
+      "events": [
+        [
+          "admit",
+          "c0",
+          "p0",
+          "h0"
+        ],
+        [
+          "timeout",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "admit",
+          "c1",
+          "p1",
+          "h0"
+        ],
+        [
+          "freeze",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "reserve",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s0",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s1",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ]
+      ],
+      "classification": "aborted-before-disclosure",
+      "charged": 0,
+      "releases": 0
+    },
+    {
+      "id": "ci16-dropped-share",
+      "events": [
+        [
+          "admit",
+          "c0",
+          "p0",
+          "h0"
+        ],
+        [
+          "admit",
+          "c1",
+          "p1",
+          "h0"
+        ],
+        [
+          "freeze",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "reserve",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s0",
+          "",
+          "h0"
+        ],
+        [
+          "timeout",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s1",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ]
+      ],
+      "classification": "aborted-possible-disclosure",
+      "charged": 1,
+      "releases": 0
+    },
+    {
+      "id": "ci16-released-timeout",
+      "events": [
+        [
+          "admit",
+          "c0",
+          "p0",
+          "h0"
+        ],
+        [
+          "admit",
+          "c1",
+          "p1",
+          "h0"
+        ],
+        [
+          "freeze",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "reserve",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s0",
+          "",
+          "h0"
+        ],
+        [
+          "share",
+          "s1",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "timeout",
+          "",
+          "",
+          "h0"
+        ],
+        [
+          "release",
+          "",
+          "",
+          "h0"
+        ]
+      ],
+      "classification": "released",
+      "charged": 1,
+      "releases": 1
+    }
+  ],
+  "views": [
+    {
+      "channel": "logs",
+      "path": "logs.txt",
+      "visibility": "public",
+      "role": "public",
+      "payload": "synthetic-public-logs: ok\n"
+    },
+    {
+      "channel": "public-inputs",
+      "path": "public-inputs.txt",
+      "visibility": "public",
+      "role": "public",
+      "payload": "synthetic-public-public-inputs: ok\n"
+    },
+    {
+      "channel": "metrics",
+      "path": "metrics.txt",
+      "visibility": "public",
+      "role": "public",
+      "payload": "synthetic-public-metrics: ok\n"
+    },
+    {
+      "channel": "uploads",
+      "path": "uploads.txt",
+      "visibility": "public",
+      "role": "public",
+      "payload": "synthetic-public-uploads: ok\n"
+    },
+    {
+      "channel": "recovery",
+      "path": "recovery.txt",
+      "visibility": "public",
+      "role": "coordinator",
+      "payload": "synthetic-public-recovery: ok\n"
+    }
+  ],
+  "parameters": {
+    "mechanism": "finite-cyclic-geometric-v1",
+    "sampler": "ideal-uniform-ticket-map-v1",
+    "released_value": "residue-mod-q",
+    "q": 17,
+    "scale": 1,
+    "clipping": 1,
+    "cohort": 3,
+    "privacy_unit": "client",
+    "query": "clipped-three-slot-sum-v1",
+    "amplification": "none",
+    "amplification_factor": 1,
+    "claim_scope": "released-residue-only",
+    "adjacency": "add-remove-fixed-zero-slot",
+    "sensitivity": 1,
+    "theorem_sha256": "6568a8a38c1816aaf9ffc7b2b112368bdf7b3fc791717b2241d5880be330349c",
+    "budget_ratio": 4,
+    "releases": [
+      {
+        "id": "r0",
+        "noise_instance": "n0",
+        "cached_retransmission": false
+      },
+      {
+        "id": "r0",
+        "noise_instance": "n0",
+        "cached_retransmission": true
+      },
+      {
+        "id": "r1",
+        "noise_instance": "n1",
+        "cached_retransmission": false
+      }
+    ]
+  }
+}
