@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+export RAYON_NUM_THREADS=2 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2
+# Building the genuine producer is mandatory, even when selecting the separately
+# labelled reference-only diagnostic. This flag cannot pass the CI proof step.
+cargo build --release --locked -p fzkml-models
+PYTHONPATH=src uv run --locked python -m fzkml_models "$@"

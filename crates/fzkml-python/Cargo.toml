@@ -1,0 +1,20 @@
+[package]
+name = "fzkml-python"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lib]
+name = "_native"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+fzkml-core = { path = "../fzkml-core" }
+pyo3 = { version = "=0.23.5", features = ["abi3-py311"] }
+
+[features]
+extension-module = ["pyo3/extension-module"]
+
+[lints]
+workspace = true

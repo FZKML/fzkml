@@ -1,0 +1,51 @@
+{
+  "version": "model-capacity-1.0.0",
+  "classification": "research-candidate-not-production",
+  "issues": [84, 86, 87, 88],
+  "ridge_proof": {
+    "shape": {"records": 2, "features": 2, "outputs": 1},
+    "private_encoding": "row-major-z0-z1-label-offset4-u8",
+    "decoded_range": [-4, 4],
+    "public_record_weights": [1, 2],
+    "feature_map": "synthetic-identity-2-v1",
+    "preprocessor": "exact-integer-identity-v1",
+    "regularization": 1,
+    "objective": "half-weighted-sum-squared-error-plus-half-lambda-norm-squared",
+    "public_output_order": ["S00", "S01", "S11", "T0", "T1", "lambda", "W0", "W1", "R0", "R1"],
+    "model_range": [-8, 8],
+    "required_residual": [0, 0],
+    "observer": "verifier-sees-clean-statistics-model-and-residual",
+    "feature_authenticity": "externally-authorized-commitment-and-identity-map-assumption"
+  },
+  "adapter_proof": {
+    "clients": 2,
+    "B_shape": [2, 1],
+    "A_shape": [1, 2],
+    "A": [[1, 0]],
+    "basis_version": "synthetic-selection-basis-v1",
+    "initialization": "zero-B-v1",
+    "message_kind": "initialization-delta",
+    "private_encoding": "client-major-B-row-major-offset4-u8",
+    "decoded_range": [-4, 4],
+    "per_client_B_norm_squared_bound": 9,
+    "dense_quantum": 1,
+    "dense_product_rounding": "exact-integer-no-fractional-rounding",
+    "public_weight_numerators": [1, 1],
+    "public_weight_denominator": 2,
+    "public_output_order": ["sumB0", "sumB1", "denseNumerator00", "denseNumerator01", "denseNumerator10", "denseNumerator11", "clipSquared", "denominator"],
+    "observer": "verifier-sees-clean-summed-B-and-dense-update"
+  },
+  "commitment": {
+    "function": "sha256(domain-with-relation-name || context-digest || fresh-private-32-byte-blinding || encoded-private-values)",
+    "context_digest": "sha256-of-this-exact-file",
+    "authentication": "verifier-must-authorize-context-commitment-and-key-before-proof-acceptance",
+    "limitations": "Conditional hash/proof/setup assumptions; no independently reviewed hiding or soundness argument."
+  },
+  "excluded_claims": [
+    "No protected aggregation for vector statistics or adapters is instantiated.",
+    "No differential privacy mechanism/accountant is implemented.",
+    "No proof of a real foundation-model feature extractor or full backbone training.",
+    "No production ceremony, distributed consensus, durable rollback resistance or physical erasure.",
+    "No scientific publication approval or authoritative manuscript claim promotion."
+  ]
+}

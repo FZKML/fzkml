@@ -1,0 +1,6025 @@
+{
+  "contract_version": "fzknum-1.0.0",
+  "fixture_version": "numeric-v1",
+  "contract_sha256": "87d097bb7c7af37def94289290fb53e996fc63094144150bc4b1e7112a8b50c0",
+  "oracle": "Python standard-library fractions.Fraction; no Rust bindings",
+  "seed": 20261124,
+  "valid": [
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000",
+      "expected": {
+        "predictions": [
+          0,
+          0,
+          0
+        ],
+        "gradients": [
+          0,
+          0,
+          0
+        ],
+        "updates": [
+          0,
+          0,
+          0
+        ],
+        "numerator": 0,
+        "denominator": 3,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000",
+      "expected": {
+        "predictions": [
+          0,
+          0,
+          0
+        ],
+        "gradients": [
+          0,
+          0,
+          0
+        ],
+        "updates": [
+          1,
+          1,
+          1
+        ],
+        "numerator": 3,
+        "denominator": 3,
+        "output": 1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000008000000000000001000000000000000100000000000000001000000f8fffffffffffffff0ffffffffffffff020000001800000000000000080000000000000001000000",
+      "expected": {
+        "predictions": [
+          8,
+          -4,
+          12
+        ],
+        "gradients": [
+          -8,
+          -6,
+          6
+        ],
+        "updates": [
+          10,
+          10,
+          6
+        ],
+        "numerator": 36,
+        "denominator": 4,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e0ffffffffffffffe0ffffffffffffff2000000000000000040000002000000000000000e0ffffffffffffff04000000e0ffffffffffffffe0ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          64,
+          -64,
+          64
+        ],
+        "gradients": [
+          -64,
+          -64,
+          -192
+        ],
+        "updates": [
+          -16,
+          -16,
+          16
+        ],
+        "numerator": -64,
+        "denominator": 12,
+        "output": -5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000020000000000000002000000000000000e0ffffffffffffff01000000e0ffffffffffffff2000000000000000040000002000000000000000200000000000000001000000",
+      "expected": {
+        "predictions": [
+          64,
+          -64,
+          64
+        ],
+        "gradients": [
+          192,
+          192,
+          64
+        ],
+        "updates": [
+          -16,
+          -16,
+          16
+        ],
+        "numerator": -64,
+        "denominator": 6,
+        "output": -11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f6ffffffffffffffe0ffffffffffffff1b0000000000000004000000e5ffffffffffffff1e0000000000000004000000f1fffffffffffffff4ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          20,
+          17,
+          9
+        ],
+        "gradients": [
+          14,
+          22,
+          -20
+        ],
+        "updates": [
+          -14,
+          -16,
+          -5
+        ],
+        "numerator": -130,
+        "denominator": 10,
+        "output": -13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9ffffffffffffffe0ffffffffffffff190000000000000003000000e7ffffffffffffff050000000000000003000000f2ffffffffffffffe3ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          46,
+          36,
+          20
+        ],
+        "gradients": [
+          -42,
+          -48,
+          -43
+        ],
+        "updates": [
+          -13,
+          -11,
+          -12
+        ],
+        "numerator": -84,
+        "denominator": 7,
+        "output": -12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9ffffffffffffff0000000000000000090000000000000003000000f4fffffffffffffffdffffffffffffff030000001900000000000000010000000000000003000000",
+      "expected": {
+        "predictions": [
+          0,
+          17,
+          -36
+        ],
+        "gradients": [
+          0,
+          -15,
+          -58
+        ],
+        "updates": [
+          -23,
+          -19,
+          -9
+        ],
+        "numerator": -153,
+        "denominator": 9,
+        "output": -17
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f1ffffffffffffff20000000000000000600000000000000010000000a00000000000000e5ffffffffffffff03000000e3fffffffffffffff3ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -30,
+          -9,
+          27
+        ],
+        "gradients": [
+          -72,
+          11,
+          -72
+        ],
+        "updates": [
+          3,
+          -18,
+          3
+        ],
+        "numerator": -39,
+        "denominator": 8,
+        "output": -5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000013000000000000001d00000000000000faffffffffffffff0200000013000000000000000800000000000000010000001600000000000000f8ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          34,
+          23,
+          26
+        ],
+        "gradients": [
+          72,
+          18,
+          47
+        ],
+        "updates": [
+          1,
+          15,
+          7
+        ],
+        "numerator": 31,
+        "denominator": 5,
+        "output": 6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001e000000000000001200000000000000150000000000000004000000f8fffffffffffffff5ffffffffffffff04000000e9ffffffffffffff170000000000000001000000",
+      "expected": {
+        "predictions": [
+          34,
+          -15,
+          -43
+        ],
+        "gradients": [
+          15,
+          2,
+          95
+        ],
+        "updates": [
+          26,
+          30,
+          6
+        ],
+        "numerator": 230,
+        "denominator": 9,
+        "output": 26
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001b00000000000000e4ffffffffffffffecffffffffffffff020000001d00000000000000e4ffffffffffffff0300000014000000000000001e0000000000000004000000",
+      "expected": {
+        "predictions": [
+          -47,
+          49,
+          34
+        ],
+        "gradients": [
+          47,
+          140,
+          5
+        ],
+        "updates": [
+          15,
+          -8,
+          26
+        ],
+        "numerator": 110,
+        "denominator": 9,
+        "output": 12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f5fffffffffffffff2ffffffffffffffe4ffffffffffffff040000001b000000000000000100000000000000030000000900000000000000130000000000000003000000",
+      "expected": {
+        "predictions": [
+          10,
+          -19,
+          -6
+        ],
+        "gradients": [
+          -33,
+          -34,
+          -14
+        ],
+        "updates": [
+          -3,
+          -3,
+          -7
+        ],
+        "numerator": -42,
+        "denominator": 10,
+        "output": -4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ebffffffffffffffe1ffffffffffffff030000000000000001000000ebfffffffffffffffeffffffffffffff02000000f1ffffffffffffff170000000000000001000000",
+      "expected": {
+        "predictions": [
+          41,
+          28,
+          20
+        ],
+        "gradients": [
+          -74,
+          -39,
+          3
+        ],
+        "updates": [
+          -3,
+          -11,
+          -22
+        ],
+        "numerator": -47,
+        "denominator": 4,
+        "output": -12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001800000000000000e7ffffffffffffff1b0000000000000004000000e0ffffffffffffff0400000000000000020000000b000000000000001c0000000000000004000000",
+      "expected": {
+        "predictions": [
+          -38,
+          -48,
+          16
+        ],
+        "gradients": [
+          102,
+          104,
+          -8
+        ],
+        "updates": [
+          -2,
+          -2,
+          26
+        ],
+        "numerator": 92,
+        "denominator": 10,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fcfffffffffffffffbfffffffffffffffaffffffffffffff030000001a000000000000000e000000000000000100000002000000000000000e0000000000000003000000",
+      "expected": {
+        "predictions": [
+          1,
+          -6,
+          0
+        ],
+        "gradients": [
+          -2,
+          -32,
+          -2
+        ],
+        "updates": [
+          -4,
+          4,
+          -4
+        ],
+        "numerator": -20,
+        "denominator": 7,
+        "output": -3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e0ffffffffffffff1f00000000000000e2ffffffffffffff020000000b00000000000000f1ffffffffffffff020000001100000000000000f9ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -62,
+          -22,
+          -34
+        ],
+        "gradients": [
+          -62,
+          -5,
+          -29
+        ],
+        "updates": [
+          -16,
+          -31,
+          -25
+        ],
+        "numerator": -194,
+        "denominator": 8,
+        "output": -24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f2ffffffffffffffe7ffffffffffffff0d0000000000000004000000fbffffffffffffffe5ffffffffffffff03000000e5ffffffffffffff170000000000000003000000",
+      "expected": {
+        "predictions": [
+          22,
+          4,
+          24
+        ],
+        "gradients": [
+          -14,
+          -10,
+          -2
+        ],
+        "updates": [
+          -10,
+          -12,
+          -14
+        ],
+        "numerator": -118,
+        "denominator": 10,
+        "output": -12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fbffffffffffffffebfffffffffffffff9ffffffffffffff030000000600000000000000e9ffffffffffffff020000000300000000000000f3ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          7,
+          -2,
+          -1
+        ],
+        "gradients": [
+          -18,
+          8,
+          2
+        ],
+        "updates": [
+          -1,
+          -7,
+          -5
+        ],
+        "numerator": -22,
+        "denominator": 6,
+        "output": -4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001000000000000000fcffffffffffffff1900000000000000020000001700000000000000e5ffffffffffffff03000000e5ffffffffffffff060000000000000004000000",
+      "expected": {
+        "predictions": [
+          -4,
+          23,
+          -27
+        ],
+        "gradients": [
+          7,
+          72,
+          56
+        ],
+        "updates": [
+          14,
+          -2,
+          2
+        ],
+        "numerator": 30,
+        "denominator": 9,
+        "output": 3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001700000000000000fdfffffffffffffff1ffffffffffffff02000000f6fffffffffffffff6ffffffffffffff03000000e0ffffffffffffff180000000000000003000000",
+      "expected": {
+        "predictions": [
+          -4,
+          -14,
+          -46
+        ],
+        "gradients": [
+          -2,
+          2,
+          140
+        ],
+        "updates": [
+          23,
+          23,
+          -12
+        ],
+        "numerator": 79,
+        "denominator": 8,
+        "output": 10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000a00000000000000f9ffffffffffffffe4ffffffffffffff0300000004000000000000001b0000000000000003000000feffffffffffffff1e0000000000000004000000",
+      "expected": {
+        "predictions": [
+          -4,
+          2,
+          -1
+        ],
+        "gradients": [
+          -10,
+          -6,
+          4
+        ],
+        "updates": [
+          12,
+          12,
+          9
+        ],
+        "numerator": 108,
+        "denominator": 10,
+        "output": 11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f0ffffffffffffff0b000000000000002000000000000000030000001e00000000000000060000000000000002000000e7ffffffffffffffe9ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -11,
+          -30,
+          25
+        ],
+        "gradients": [
+          -30,
+          -68,
+          -75
+        ],
+        "updates": [
+          -8,
+          1,
+          3
+        ],
+        "numerator": -13,
+        "denominator": 8,
+        "output": -2
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e5ffffffffffffff1b000000000000000400000000000000020000001e000000000000001300000000000000030000000c000000000000000c0000000000000004000000",
+      "expected": {
+        "predictions": [
+          -46,
+          -51,
+          -20
+        ],
+        "gradients": [
+          -84,
+          -131,
+          -24
+        ],
+        "updates": [
+          -6,
+          6,
+          -21
+        ],
+        "numerator": -78,
+        "denominator": 9,
+        "output": -9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000f00000000000000e1ffffffffffffff1600000000000000030000001600000000000000eaffffffffffffff03000000f7ffffffffffffff0b0000000000000003000000",
+      "expected": {
+        "predictions": [
+          -29,
+          21,
+          -8
+        ],
+        "gradients": [
+          99,
+          59,
+          11
+        ],
+        "updates": [
+          -10,
+          0,
+          12
+        ],
+        "numerator": 6,
+        "denominator": 9,
+        "output": 1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000010000000000000000400000000000000f6ffffffffffffff04000000e0ffffffffffffff0000000000000000010000000700000000000000f4ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          4,
+          -32,
+          7
+        ],
+        "gradients": [
+          4,
+          64,
+          8
+        ],
+        "updates": [
+          15,
+          0,
+          14
+        ],
+        "numerator": 116,
+        "denominator": 9,
+        "output": 13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e4ffffffffffffff1a00000000000000ecffffffffffffff020000001800000000000000feffffffffffffff0400000001000000000000001e0000000000000003000000",
+      "expected": {
+        "predictions": [
+          -46,
+          -42,
+          -2
+        ],
+        "gradients": [
+          -42,
+          -60,
+          -2
+        ],
+        "updates": [
+          -18,
+          -13,
+          -28
+        ],
+        "numerator": -172,
+        "denominator": 9,
+        "output": -19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001600000000000000feffffffffffffff0d0000000000000004000000faffffffffffffff090000000000000001000000fbfffffffffffffff4ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -3,
+          -8,
+          -7
+        ],
+        "gradients": [
+          2,
+          6,
+          -2
+        ],
+        "updates": [
+          22,
+          20,
+          22
+        ],
+        "numerator": 196,
+        "denominator": 9,
+        "output": 22
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f4ffffffffffffffe6ffffffffffffff080000000000000003000000e4ffffffffffffffe6ffffffffffffff0300000010000000000000001b0000000000000002000000",
+      "expected": {
+        "predictions": [
+          20,
+          21,
+          -12
+        ],
+        "gradients": [
+          -20,
+          -82,
+          -39
+        ],
+        "updates": [
+          -7,
+          8,
+          -2
+        ],
+        "numerator": -1,
+        "denominator": 8,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f6ffffffffffffff0c00000000000000090000000000000001000000fbfffffffffffffff3ffffffffffffff030000000200000000000000170000000000000003000000",
+      "expected": {
+        "predictions": [
+          -8,
+          3,
+          -1
+        ],
+        "gradients": [
+          -13,
+          -5,
+          -3
+        ],
+        "updates": [
+          -7,
+          -9,
+          -9
+        ],
+        "numerator": -61,
+        "denominator": 7,
+        "output": -9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000d000000000000001d000000000000000400000000000000010000000b000000000000000d00000000000000040000000200000000000000f9ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          24,
+          9,
+          2
+        ],
+        "gradients": [
+          36,
+          -3,
+          1
+        ],
+        "updates": [
+          4,
+          14,
+          13
+        ],
+        "numerator": 86,
+        "denominator": 7,
+        "output": 12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001d000000000000001b00000000000000020000000000000004000000faffffffffffffff0c00000000000000010000000300000000000000100000000000000003000000",
+      "expected": {
+        "predictions": [
+          49,
+          -11,
+          5
+        ],
+        "gradients": [
+          79,
+          9,
+          -2
+        ],
+        "updates": [
+          9,
+          27,
+          29
+        ],
+        "numerator": 150,
+        "denominator": 8,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000002000000000000001d000000000000000f00000000000000030000001600000000000000fcffffffffffffff02000000fcffffffffffffff090000000000000003000000",
+      "expected": {
+        "predictions": [
+          4,
+          3,
+          0
+        ],
+        "gradients": [
+          -20,
+          10,
+          2
+        ],
+        "updates": [
+          7,
+          0,
+          2
+        ],
+        "numerator": 27,
+        "denominator": 8,
+        "output": 3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f2ffffffffffffffffffffffffffffffe0ffffffffffffff010000001500000000000000050000000000000002000000ecfffffffffffffff4ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          1,
+          -18,
+          18
+        ],
+        "gradients": [
+          -2,
+          -30,
+          -38
+        ],
+        "updates": [
+          -14,
+          -6,
+          -4
+        ],
+        "numerator": -38,
+        "denominator": 6,
+        "output": -6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f3ffffffffffffff1300000000000000e8ffffffffffffff04000000feffffffffffffff0900000000000000030000000f000000000000001d0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -15,
+          2,
+          -12
+        ],
+        "gradients": [
+          11,
+          1,
+          -38
+        ],
+        "updates": [
+          -16,
+          -13,
+          -3
+        ],
+        "numerator": -106,
+        "denominator": 8,
+        "output": -13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000b00000000000000fffffffffffffffffeffffffffffffff02000000e8ffffffffffffff1a00000000000000020000000600000000000000130000000000000001000000",
+      "expected": {
+        "predictions": [
+          -1,
+          -16,
+          4
+        ],
+        "gradients": [
+          0,
+          63,
+          -6
+        ],
+        "updates": [
+          11,
+          -5,
+          13
+        ],
+        "numerator": 25,
+        "denominator": 5,
+        "output": 5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000019000000000000000c00000000000000020000000000000004000000e1ffffffffffffffe5ffffffffffffff0300000014000000000000000c0000000000000004000000",
+      "expected": {
+        "predictions": [
+          19,
+          -48,
+          31
+        ],
+        "gradients": [
+          13,
+          41,
+          24
+        ],
+        "updates": [
+          22,
+          15,
+          19
+        ],
+        "numerator": 209,
+        "denominator": 11,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ecffffffffffffffe3ffffffffffffffe5ffffffffffffff01000000e1ffffffffffffff040000000000000004000000f9ffffffffffffff150000000000000001000000",
+      "expected": {
+        "predictions": [
+          36,
+          39,
+          9
+        ],
+        "gradients": [
+          -114,
+          -68,
+          5
+        ],
+        "updates": [
+          8,
+          -3,
+          -21
+        ],
+        "numerator": -25,
+        "denominator": 6,
+        "output": -4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fdfffffffffffffff6ffffffffffffffe6ffffffffffffff040000000f00000000000000e1ffffffffffffff04000000feffffffffffffffe5ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          2,
+          -3,
+          0
+        ],
+        "gradients": [
+          -18,
+          26,
+          -3
+        ],
+        "updates": [
+          1,
+          -9,
+          -2
+        ],
+        "numerator": -38,
+        "denominator": 11,
+        "output": -3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f4ffffffffffffff0a00000000000000070000000000000003000000e3ffffffffffffff1b0000000000000001000000fbffffffffffffff0f0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -8,
+          22,
+          4
+        ],
+        "gradients": [
+          -9,
+          9,
+          3
+        ],
+        "updates": [
+          -10,
+          -14,
+          -13
+        ],
+        "numerator": -57,
+        "denominator": 5,
+        "output": -11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001900000000000000f0ffffffffffffff08000000000000000200000007000000000000001c0000000000000004000000f5ffffffffffffffe5ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -25,
+          11,
+          -17
+        ],
+        "gradients": [
+          33,
+          -7,
+          -7
+        ],
+        "updates": [
+          17,
+          27,
+          27
+        ],
+        "numerator": 169,
+        "denominator": 7,
+        "output": 24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000c00000000000000e7ffffffffffffff0a0000000000000003000000f6ffffffffffffff080000000000000003000000ebffffffffffffffecffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -19,
+          -8,
+          -16
+        ],
+        "gradients": [
+          45,
+          10,
+          -5
+        ],
+        "updates": [
+          1,
+          10,
+          13
+        ],
+        "numerator": 85,
+        "denominator": 10,
+        "output": 8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000015000000000000000600000000000000100000000000000001000000f3ffffffffffffff150000000000000003000000eaffffffffffffff1b0000000000000001000000",
+      "expected": {
+        "predictions": [
+          8,
+          -17,
+          -29
+        ],
+        "gradients": [
+          -3,
+          31,
+          77
+        ],
+        "updates": [
+          22,
+          13,
+          2
+        ],
+        "numerator": 63,
+        "denominator": 5,
+        "output": 13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9ffffffffffffff04000000000000001b0000000000000002000000f5ffffffffffffff1b00000000000000010000000500000000000000f0ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -6,
+          16,
+          -7
+        ],
+        "gradients": [
+          -8,
+          8,
+          3
+        ],
+        "updates": [
+          -21,
+          -25,
+          -24
+        ],
+        "numerator": -139,
+        "denominator": 6,
+        "output": -23
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f3ffffffffffffff0300000000000000170000000000000001000000e4fffffffffffffff7ffffffffffffff01000000eafffffffffffffffcffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -2,
+          23,
+          18
+        ],
+        "gradients": [
+          -5,
+          -56,
+          -30
+        ],
+        "updates": [
+          -12,
+          1,
+          -5
+        ],
+        "numerator": -26,
+        "denominator": 5,
+        "output": -5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000200000000000000f2ffffffffffffffffffffffffffffff02000000e8ffffffffffffff1000000000000000020000000200000000000000f6ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -2,
+          -3,
+          0
+        ],
+        "gradients": [
+          1,
+          28,
+          1
+        ],
+        "updates": [
+          2,
+          -5,
+          2
+        ],
+        "numerator": -2,
+        "denominator": 6,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9ffffffffffffff1e000000000000001c00000000000000010000000c00000000000000170000000000000001000000ffffffffffffffffe4ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -43,
+          -17,
+          1
+        ],
+        "gradients": [
+          -133,
+          -30,
+          -2
+        ],
+        "updates": [
+          10,
+          -15,
+          -23
+        ],
+        "numerator": -51,
+        "denominator": 4,
+        "output": -13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000001000000000000001a000000000000000f0000000000000001000000eafffffffffffffff0ffffffffffffff040000001100000000000000faffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          2,
+          -1,
+          1
+        ],
+        "gradients": [
+          -21,
+          -21,
+          7
+        ],
+        "updates": [
+          6,
+          6,
+          -1
+        ],
+        "numerator": 28,
+        "denominator": 7,
+        "output": 4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000100000000000000faffffffffffffff1f0000000000000003000000e2ffffffffffffff0100000000000000020000000600000000000000f0ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          0,
+          -2,
+          0
+        ],
+        "gradients": [
+          12,
+          6,
+          6
+        ],
+        "updates": [
+          -2,
+          -1,
+          -1
+        ],
+        "numerator": -10,
+        "denominator": 7,
+        "output": -1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f2ffffffffffffffe7ffffffffffffff1600000000000000040000001c00000000000000f6ffffffffffffff040000001500000000000000fbffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          22,
+          -24,
+          -18
+        ],
+        "gradients": [
+          0,
+          -24,
+          -17
+        ],
+        "updates": [
+          -14,
+          -8,
+          -10
+        ],
+        "numerator": -98,
+        "denominator": 9,
+        "output": -11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e2ffffffffffffff0a00000000000000e6ffffffffffffff0300000020000000000000001a00000000000000020000000d00000000000000e3ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -19,
+          -60,
+          -24
+        ],
+        "gradients": [
+          4,
+          -172,
+          4
+        ],
+        "updates": [
+          -31,
+          13,
+          -31
+        ],
+        "numerator": -98,
+        "denominator": 6,
+        "output": -16
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001f00000000000000f3ffffffffffffff050000000000000002000000fafffffffffffffff1ffffffffffffff02000000fbffffffffffffff100000000000000004000000",
+      "expected": {
+        "predictions": [
+          -25,
+          -12,
+          -10
+        ],
+        "gradients": [
+          24,
+          -1,
+          8
+        ],
+        "updates": [
+          25,
+          31,
+          29
+        ],
+        "numerator": 228,
+        "denominator": 8,
+        "output": 28
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000020000000000000001000000000000000f4ffffffffffffff01000000ebffffffffffffff1d00000000000000030000001f00000000000000180000000000000003000000",
+      "expected": {
+        "predictions": [
+          32,
+          -42,
+          62
+        ],
+        "gradients": [
+          44,
+          93,
+          74
+        ],
+        "updates": [
+          21,
+          9,
+          14
+        ],
+        "numerator": 90,
+        "denominator": 7,
+        "output": 13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e8ffffffffffffff0e00000000000000eeffffffffffffff0100000015000000000000001300000000000000010000001800000000000000090000000000000003000000",
+      "expected": {
+        "predictions": [
+          -21,
+          -32,
+          -36
+        ],
+        "gradients": [
+          -3,
+          -67,
+          -68
+        ],
+        "updates": [
+          -23,
+          -7,
+          -7
+        ],
+        "numerator": -51,
+        "denominator": 5,
+        "output": -10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9ffffffffffffff0300000000000000f6ffffffffffffff0300000000000000000000000a000000000000000200000011000000000000000a0000000000000004000000",
+      "expected": {
+        "predictions": [
+          -4,
+          0,
+          -24
+        ],
+        "gradients": [
+          1,
+          0,
+          -36
+        ],
+        "updates": [
+          -23,
+          -23,
+          -14
+        ],
+        "numerator": -171,
+        "denominator": 9,
+        "output": -19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e3ffffffffffffffebffffffffffffff1500000000000000040000000e00000000000000e2ffffffffffffff010000001000000000000000110000000000000001000000",
+      "expected": {
+        "predictions": [
+          38,
+          -25,
+          -29
+        ],
+        "gradients": [
+          -22,
+          4,
+          -46
+        ],
+        "updates": [
+          -23,
+          -30,
+          -17
+        ],
+        "numerator": -139,
+        "denominator": 6,
+        "output": -23
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000efffffffffffffff0700000000000000e4ffffffffffffff01000000efffffffffffffff110000000000000004000000e5ffffffffffffff040000000000000002000000",
+      "expected": {
+        "predictions": [
+          -7,
+          18,
+          29
+        ],
+        "gradients": [
+          9,
+          -1,
+          -42
+        ],
+        "updates": [
+          -19,
+          -17,
+          -7
+        ],
+        "numerator": -101,
+        "denominator": 7,
+        "output": -14
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e0fffffffffffffff3ffffffffffffff200000000000000004000000eeffffffffffffff1300000000000000030000000d000000000000000f0000000000000004000000",
+      "expected": {
+        "predictions": [
+          26,
+          36,
+          -26
+        ],
+        "gradients": [
+          5,
+          -19,
+          -33
+        ],
+        "updates": [
+          -33,
+          -27,
+          -24
+        ],
+        "numerator": -309,
+        "denominator": 11,
+        "output": -28
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f6ffffffffffffff1f000000000000000500000000000000020000001d00000000000000060000000000000004000000e2ffffffffffffff020000000000000001000000",
+      "expected": {
+        "predictions": [
+          -19,
+          -18,
+          19
+        ],
+        "gradients": [
+          -46,
+          -44,
+          -32
+        ],
+        "updates": [
+          2,
+          1,
+          -2
+        ],
+        "numerator": 6,
+        "denominator": 7,
+        "output": 1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ffffffffffffffffe9ffffffffffffff1c00000000000000010000000d000000000000000700000000000000030000001c00000000000000efffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          1,
+          -1,
+          -2
+        ],
+        "gradients": [
+          39,
+          -6,
+          26
+        ],
+        "updates": [
+          -11,
+          1,
+          -7
+        ],
+        "numerator": -15,
+        "denominator": 5,
+        "output": -3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f3ffffffffffffff050000000000000009000000000000000100000015000000000000001b00000000000000020000000500000000000000040000000000000001000000",
+      "expected": {
+        "predictions": [
+          -4,
+          -17,
+          -4
+        ],
+        "gradients": [
+          -4,
+          -58,
+          -2
+        ],
+        "updates": [
+          -12,
+          1,
+          -13
+        ],
+        "numerator": -23,
+        "denominator": 4,
+        "output": -6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000eeffffffffffffff0c00000000000000eaffffffffffffff010000001e000000000000000500000000000000040000000d00000000000000e7ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -14,
+          -34,
+          -15
+        ],
+        "gradients": [
+          6,
+          -73,
+          8
+        ],
+        "updates": [
+          -20,
+          0,
+          -20
+        ],
+        "numerator": -80,
+        "denominator": 8,
+        "output": -10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001b0000000000000000000000000000001700000000000000040000001c000000000000000f00000000000000020000001b00000000000000170000000000000004000000",
+      "expected": {
+        "predictions": [
+          0,
+          47,
+          46
+        ],
+        "gradients": [
+          0,
+          56,
+          39
+        ],
+        "updates": [
+          27,
+          13,
+          17
+        ],
+        "numerator": 202,
+        "denominator": 10,
+        "output": 20
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f1ffffffffffffff1d00000000000000f7ffffffffffffff04000000e7ffffffffffffff0f00000000000000040000001d00000000000000ebffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -27,
+          23,
+          -27
+        ],
+        "gradients": [
+          -33,
+          -12,
+          -11
+        ],
+        "updates": [
+          -7,
+          -12,
+          -12
+        ],
+        "numerator": -100,
+        "denominator": 10,
+        "output": -10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ecffffffffffffff1100000000000000e1ffffffffffffff010000001f00000000000000f9ffffffffffffff020000001b00000000000000feffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -21,
+          -39,
+          -34
+        ],
+        "gradients": [
+          11,
+          -62,
+          -54
+        ],
+        "updates": [
+          -23,
+          -4,
+          -6
+        ],
+        "numerator": -55,
+        "denominator": 7,
+        "output": -8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001c00000000000000f1fffffffffffffff8ffffffffffffff01000000e0ffffffffffffff010000000000000004000000f4ffffffffffffff1c0000000000000002000000",
+      "expected": {
+        "predictions": [
+          -26,
+          -56,
+          -21
+        ],
+        "gradients": [
+          17,
+          114,
+          37
+        ],
+        "updates": [
+          24,
+          0,
+          19
+        ],
+        "numerator": 62,
+        "denominator": 7,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f6ffffffffffffffe7ffffffffffffff1f00000000000000020000000200000000000000faffffffffffffff030000000d000000000000001b0000000000000004000000",
+      "expected": {
+        "predictions": [
+          16,
+          -1,
+          -8
+        ],
+        "gradients": [
+          23,
+          1,
+          -28
+        ],
+        "updates": [
+          -16,
+          -10,
+          -3
+        ],
+        "numerator": -74,
+        "denominator": 9,
+        "output": -8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e4fffffffffffffffaffffffffffffff050000000000000001000000ecffffffffffffffeaffffffffffffff020000000200000000000000edffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          10,
+          35,
+          -4
+        ],
+        "gradients": [
+          -2,
+          -71,
+          2
+        ],
+        "updates": [
+          -28,
+          -10,
+          -28
+        ],
+        "numerator": -76,
+        "denominator": 4,
+        "output": -19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000b000000000000001d0000000000000003000000000000000400000006000000000000002000000000000000030000001d00000000000000f7ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          20,
+          4,
+          20
+        ],
+        "gradients": [
+          31,
+          -10,
+          53
+        ],
+        "updates": [
+          3,
+          13,
+          -2
+        ],
+        "numerator": 43,
+        "denominator": 11,
+        "output": 4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001c000000000000000200000000000000e4ffffffffffffff02000000ebffffffffffffffefffffffffffffff040000000000000000000000f3ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          4,
+          -37,
+          0
+        ],
+        "gradients": [
+          4,
+          26,
+          0
+        ],
+        "updates": [
+          27,
+          22,
+          28
+        ],
+        "numerator": 254,
+        "denominator": 10,
+        "output": 25
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ecfffffffffffffff4ffffffffffffff190000000000000002000000e2fffffffffffffff2ffffffffffffff040000001200000000000000000000000000000004000000",
+      "expected": {
+        "predictions": [
+          15,
+          38,
+          -22
+        ],
+        "gradients": [
+          8,
+          -98,
+          -25
+        ],
+        "updates": [
+          -22,
+          4,
+          -14
+        ],
+        "numerator": -84,
+        "denominator": 10,
+        "output": -8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e2ffffffffffffffe1ffffffffffffff0c0000000000000001000000feffffffffffffffefffffffffffffff02000000edffffffffffffff1e0000000000000001000000",
+      "expected": {
+        "predictions": [
+          58,
+          4,
+          36
+        ],
+        "gradients": [
+          -89,
+          -3,
+          -7
+        ],
+        "updates": [
+          -8,
+          -29,
+          -28
+        ],
+        "numerator": -94,
+        "denominator": 4,
+        "output": -24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001d000000000000001f00000000000000eaffffffffffffff04000000e9ffffffffffffff1000000000000000020000000c00000000000000090000000000000003000000",
+      "expected": {
+        "predictions": [
+          56,
+          -42,
+          22
+        ],
+        "gradients": [
+          151,
+          83,
+          10
+        ],
+        "updates": [
+          -9,
+          8,
+          27
+        ],
+        "numerator": 61,
+        "denominator": 9,
+        "output": 7
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000200000000000000e0ffffffffffffff060000000000000002000000efffffffffffffffeeffffffffffffff03000000e4fffffffffffffffeffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -4,
+          -2,
+          -4
+        ],
+        "gradients": [
+          20,
+          -17,
+          4
+        ],
+        "updates": [
+          -3,
+          6,
+          1
+        ],
+        "numerator": 16,
+        "denominator": 9,
+        "output": 2
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000200000000000000019000000000000001b0000000000000003000000e7ffffffffffffffebffffffffffffff020000001f00000000000000fbffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          50,
+          -50,
+          62
+        ],
+        "gradients": [
+          36,
+          45,
+          130
+        ],
+        "updates": [
+          23,
+          21,
+          0
+        ],
+        "numerator": 111,
+        "denominator": 6,
+        "output": 18
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000feffffffffffffffe3ffffffffffffff0f0000000000000003000000f9ffffffffffffff030000000000000001000000e9fffffffffffffff9ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          4,
+          1,
+          3
+        ],
+        "gradients": [
+          20,
+          1,
+          -14
+        ],
+        "updates": [
+          -7,
+          -2,
+          2
+        ],
+        "numerator": -21,
+        "denominator": 5,
+        "output": -4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001500000000000000e5ffffffffffffff0b00000000000000020000001200000000000000200000000000000002000000fcfffffffffffffff8ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -35,
+          24,
+          -5
+        ],
+        "gradients": [
+          78,
+          -9,
+          -1
+        ],
+        "updates": [
+          1,
+          23,
+          21
+        ],
+        "numerator": 69,
+        "denominator": 5,
+        "output": 14
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e6ffffffffffffff0900000000000000f4ffffffffffffff04000000ecffffffffffffff1500000000000000010000001e00000000000000130000000000000004000000",
+      "expected": {
+        "predictions": [
+          -15,
+          32,
+          -49
+        ],
+        "gradients": [
+          -2,
+          -14,
+          -128
+        ],
+        "updates": [
+          -26,
+          -22,
+          6
+        ],
+        "numerator": -102,
+        "denominator": 9,
+        "output": -11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f5ffffffffffffffe3ffffffffffffffe5ffffffffffffff03000000eaffffffffffffff1600000000000000030000001900000000000000edffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          20,
+          15,
+          -17
+        ],
+        "gradients": [
+          -85,
+          10,
+          3
+        ],
+        "updates": [
+          10,
+          -13,
+          -12
+        ],
+        "numerator": -33,
+        "denominator": 8,
+        "output": -4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000edffffffffffffff1600000000000000200000000000000004000000e0fffffffffffffffaffffffffffffff020000001b00000000000000010000000000000002000000",
+      "expected": {
+        "predictions": [
+          -26,
+          38,
+          -32
+        ],
+        "gradients": [
+          -80,
+          -88,
+          -56
+        ],
+        "updates": [
+          1,
+          3,
+          -5
+        ],
+        "numerator": 0,
+        "denominator": 8,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000f000000000000000000000000000000e3ffffffffffffff03000000e9ffffffffffffff0a00000000000000040000001a00000000000000f1ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          0,
+          -22,
+          24
+        ],
+        "gradients": [
+          0,
+          46,
+          63
+        ],
+        "updates": [
+          15,
+          3,
+          -1
+        ],
+        "numerator": 55,
+        "denominator": 9,
+        "output": 6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000400000000000000f6ffffffffffffffffffffffffffffff020000001100000000000000edffffffffffffff04000000e2ffffffffffffff150000000000000001000000",
+      "expected": {
+        "predictions": [
+          -2,
+          4,
+          -8
+        ],
+        "gradients": [
+          1,
+          24,
+          54
+        ],
+        "updates": [
+          4,
+          -2,
+          -10
+        ],
+        "numerator": -10,
+        "denominator": 7,
+        "output": -1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000a000000000000000b000000000000000d0000000000000002000000ebffffffffffffff120000000000000004000000f4ffffffffffffff040000000000000003000000",
+      "expected": {
+        "predictions": [
+          7,
+          -13,
+          -8
+        ],
+        "gradients": [
+          -4,
+          41,
+          9
+        ],
+        "updates": [
+          11,
+          0,
+          8
+        ],
+        "numerator": 46,
+        "denominator": 9,
+        "output": 5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000030000000000000017000000000000000f0000000000000003000000f5fffffffffffffffaffffffffffffff010000000300000000000000f2ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          4,
+          -2,
+          1
+        ],
+        "gradients": [
+          -16,
+          -3,
+          3
+        ],
+        "updates": [
+          7,
+          4,
+          2
+        ],
+        "numerator": 33,
+        "denominator": 8,
+        "output": 4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000900000000000000f4fffffffffffffffcffffffffffffff02000000edffffffffffffffecffffffffffffff03000000ebffffffffffffffe9ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -7,
+          -11,
+          -12
+        ],
+        "gradients": [
+          2,
+          -11,
+          -14
+        ],
+        "updates": [
+          9,
+          12,
+          13
+        ],
+        "numerator": 93,
+        "denominator": 8,
+        "output": 12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001300000000000000070000000000000020000000000000000200000007000000000000000500000000000000010000000100000000000000ffffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          8,
+          8,
+          1
+        ],
+        "gradients": [
+          -10,
+          1,
+          0
+        ],
+        "updates": [
+          21,
+          19,
+          19
+        ],
+        "numerator": 99,
+        "denominator": 5,
+        "output": 20
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f5ffffffffffffff1f000000000000000f0000000000000003000000ffffffffffffffff0400000000000000030000001100000000000000eaffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -21,
+          1,
+          -12
+        ],
+        "gradients": [
+          -70,
+          0,
+          11
+        ],
+        "updates": [
+          7,
+          -11,
+          -14
+        ],
+        "numerator": -68,
+        "denominator": 10,
+        "output": -7
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001300000000000000e8ffffffffffffff08000000000000000100000000000000000000001a0000000000000002000000fbffffffffffffff010000000000000002000000",
+      "expected": {
+        "predictions": [
+          -28,
+          0,
+          -6
+        ],
+        "gradients": [
+          54,
+          0,
+          2
+        ],
+        "updates": [
+          5,
+          19,
+          19
+        ],
+        "numerator": 81,
+        "denominator": 5,
+        "output": 16
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000e00000000000000ecffffffffffffff1800000000000000030000000d00000000000000fdffffffffffffff03000000eefffffffffffffff0ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -18,
+          11,
+          -16
+        ],
+        "gradients": [
+          52,
+          11,
+          0
+        ],
+        "updates": [
+          1,
+          11,
+          14
+        ],
+        "numerator": 78,
+        "denominator": 9,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000a00000000000000060000000000000008000000000000000400000007000000000000001600000000000000030000001a00000000000000e2ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          4,
+          4,
+          16
+        ],
+        "gradients": [
+          -2,
+          -8,
+          75
+        ],
+        "updates": [
+          10,
+          12,
+          -9
+        ],
+        "numerator": 49,
+        "denominator": 10,
+        "output": 5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001000000000000000f0ffffffffffffffffffffffffffffff0300000006000000000000001e00000000000000010000001d00000000000000feffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -16,
+          6,
+          29
+        ],
+        "gradients": [
+          15,
+          -9,
+          56
+        ],
+        "updates": [
+          12,
+          18,
+          2
+        ],
+        "numerator": 56,
+        "denominator": 5,
+        "output": 11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000017000000000000000200000000000000e4ffffffffffffff03000000e4fffffffffffffff3ffffffffffffff02000000e8ffffffffffffffe6ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          3,
+          -40,
+          -34
+        ],
+        "gradients": [
+          4,
+          47,
+          12
+        ],
+        "updates": [
+          22,
+          11,
+          20
+        ],
+        "numerator": 148,
+        "denominator": 8,
+        "output": 18
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000000000000000000001100000000000000e5ffffffffffffff03000000efffffffffffffffe1ffffffffffffff030000000800000000000000feffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          0,
+          0,
+          0
+        ],
+        "gradients": [
+          29,
+          -33,
+          1
+        ],
+        "updates": [
+          -7,
+          8,
+          0
+        ],
+        "numerator": 3,
+        "denominator": 10,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000030000000000000018000000000000001800000000000000010000001e00000000000000150000000000000002000000e1fffffffffffffffbffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          4,
+          6,
+          -6
+        ],
+        "gradients": [
+          -30,
+          -28,
+          2
+        ],
+        "updates": [
+          11,
+          10,
+          3
+        ],
+        "numerator": 40,
+        "denominator": 6,
+        "output": 7
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001700000000000000fffffffffffffffff8ffffffffffffff020000001200000000000000e9ffffffffffffff04000000fdffffffffffffff1c0000000000000004000000",
+      "expected": {
+        "predictions": [
+          -1,
+          26,
+          -4
+        ],
+        "gradients": [
+          0,
+          55,
+          6
+        ],
+        "updates": [
+          23,
+          9,
+          21
+        ],
+        "numerator": 166,
+        "denominator": 10,
+        "output": 17
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000800000000000000e1ffffffffffffffedffffffffffffff0300000019000000000000000c000000000000000300000002000000000000000e0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -16,
+          12,
+          1
+        ],
+        "gradients": [
+          -6,
+          0,
+          -2
+        ],
+        "updates": [
+          10,
+          8,
+          8
+        ],
+        "numerator": 62,
+        "denominator": 7,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000000000000000000000b00000000000000f9ffffffffffffff0100000004000000000000000f000000000000000400000002000000000000001a0000000000000001000000",
+      "expected": {
+        "predictions": [
+          0,
+          0,
+          0
+        ],
+        "gradients": [
+          5,
+          -4,
+          -3
+        ],
+        "updates": [
+          -1,
+          1,
+          1
+        ],
+        "numerator": 4,
+        "denominator": 6,
+        "output": 1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000faffffffffffffff1a00000000000000fbffffffffffffff0100000020000000000000000e000000000000000200000018000000000000000d0000000000000003000000",
+      "expected": {
+        "predictions": [
+          -10,
+          -12,
+          -9
+        ],
+        "gradients": [
+          -8,
+          -52,
+          -33
+        ],
+        "updates": [
+          -4,
+          7,
+          2
+        ],
+        "numerator": 16,
+        "denominator": 6,
+        "output": 3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000900000000000000e7ffffffffffffff0a0000000000000001000000e9ffffffffffffffe8ffffffffffffff02000000ebfffffffffffffff8ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -14,
+          -13,
+          -12
+        ],
+        "gradients": [
+          38,
+          -16,
+          5
+        ],
+        "updates": [
+          -1,
+          13,
+          8
+        ],
+        "numerator": 41,
+        "denominator": 5,
+        "output": 8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000002000000000000001900000000000000e5ffffffffffffff0100000009000000000000000800000000000000040000001d00000000000000130000000000000004000000",
+      "expected": {
+        "predictions": [
+          3,
+          1,
+          4
+        ],
+        "gradients": [
+          47,
+          -4,
+          -27
+        ],
+        "updates": [
+          -10,
+          3,
+          9
+        ],
+        "numerator": 38,
+        "denominator": 9,
+        "output": 4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e3fffffffffffffffcffffffffffffff0b0000000000000003000000e9fffffffffffffff8ffffffffffffff030000001400000000000000e8ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          7,
+          42,
+          -36
+        ],
+        "gradients": [
+          1,
+          -72,
+          -15
+        ],
+        "updates": [
+          -29,
+          -11,
+          -25
+        ],
+        "numerator": -195,
+        "denominator": 9,
+        "output": -22
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000011000000000000001d00000000000000fcffffffffffffff01000000f8fffffffffffffff5ffffffffffffff0400000004000000000000000b0000000000000003000000",
+      "expected": {
+        "predictions": [
+          31,
+          -8,
+          4
+        ],
+        "gradients": [
+          63,
+          -2,
+          -2
+        ],
+        "updates": [
+          1,
+          17,
+          17
+        ],
+        "numerator": 120,
+        "denominator": 8,
+        "output": 15
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f5ffffffffffffff0200000000000000eeffffffffffffff020000000a00000000000000f4ffffffffffffff020000001500000000000000fdffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -1,
+          -7,
+          -14
+        ],
+        "gradients": [
+          2,
+          3,
+          -14
+        ],
+        "updates": [
+          -11,
+          -12,
+          -7
+        ],
+        "numerator": -74,
+        "denominator": 8,
+        "output": -9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000011000000000000001d00000000000000180000000000000003000000f7ffffffffffffff0400000000000000040000000000000000000000050000000000000002000000",
+      "expected": {
+        "predictions": [
+          31,
+          -10,
+          0
+        ],
+        "gradients": [
+          13,
+          8,
+          0
+        ],
+        "updates": [
+          14,
+          15,
+          17
+        ],
+        "numerator": 136,
+        "denominator": 9,
+        "output": 15
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001a000000000000000e00000000000000200000000000000003000000faffffffffffffffe2ffffffffffffff02000000e5ffffffffffffffe7ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          23,
+          -10,
+          -44
+        ],
+        "gradients": [
+          -8,
+          -8,
+          32
+        ],
+        "updates": [
+          28,
+          28,
+          18
+        ],
+        "numerator": 158,
+        "denominator": 6,
+        "output": 26
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000150000000000000011000000000000001b0000000000000004000000f6ffffffffffffff2000000000000000040000001000000000000000110000000000000004000000",
+      "expected": {
+        "predictions": [
+          22,
+          -13,
+          21
+        ],
+        "gradients": [
+          -5,
+          28,
+          4
+        ],
+        "updates": [
+          22,
+          14,
+          20
+        ],
+        "numerator": 224,
+        "denominator": 12,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000002000000000000000eaffffffffffffffecffffffffffffff01000000eaffffffffffffff0800000000000000020000000f00000000000000110000000000000004000000",
+      "expected": {
+        "predictions": [
+          -44,
+          -44,
+          30
+        ],
+        "gradients": [
+          33,
+          72,
+          12
+        ],
+        "updates": [
+          24,
+          14,
+          29
+        ],
+        "numerator": 168,
+        "denominator": 7,
+        "output": 24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000eaffffffffffffff0800000000000000e6ffffffffffffff020000000a00000000000000edffffffffffffff0100000009000000000000001c0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -11,
+          -14,
+          -12
+        ],
+        "gradients": [
+          8,
+          3,
+          -22
+        ],
+        "updates": [
+          -24,
+          -23,
+          -16
+        ],
+        "numerator": -87,
+        "denominator": 4,
+        "output": -22
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f0ffffffffffffffe2fffffffffffffffaffffffffffffff010000000c00000000000000140000000000000003000000faffffffffffffff110000000000000001000000",
+      "expected": {
+        "predictions": [
+          30,
+          -12,
+          6
+        ],
+        "gradients": [
+          -68,
+          -24,
+          4
+        ],
+        "updates": [
+          1,
+          -10,
+          -17
+        ],
+        "numerator": -46,
+        "denominator": 5,
+        "output": -9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000700000000000000f8ffffffffffffff1400000000000000040000001a0000000000000012000000000000000200000015000000000000001a0000000000000004000000",
+      "expected": {
+        "predictions": [
+          -4,
+          11,
+          9
+        ],
+        "gradients": [
+          12,
+          -11,
+          -22
+        ],
+        "updates": [
+          4,
+          10,
+          13
+        ],
+        "numerator": 88,
+        "denominator": 10,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f4fffffffffffffff4ffffffffffffffe3ffffffffffffff01000000f2ffffffffffffff2000000000000000030000000200000000000000170000000000000002000000",
+      "expected": {
+        "predictions": [
+          9,
+          10,
+          -2
+        ],
+        "gradients": [
+          -28,
+          19,
+          -3
+        ],
+        "updates": [
+          -5,
+          -17,
+          -11
+        ],
+        "numerator": -78,
+        "denominator": 6,
+        "output": -13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000300000000000000e4ffffffffffffff04000000000000000300000004000000000000001e00000000000000030000001d00000000000000f9ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -5,
+          1,
+          5
+        ],
+        "gradients": [
+          16,
+          -7,
+          22
+        ],
+        "updates": [
+          -1,
+          5,
+          -3
+        ],
+        "numerator": 6,
+        "denominator": 8,
+        "output": 1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f0fffffffffffffff3ffffffffffffff140000000000000001000000f5ffffffffffffff090000000000000003000000fcfffffffffffffff1ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          13,
+          11,
+          4
+        ],
+        "gradients": [
+          6,
+          -1,
+          -5
+        ],
+        "updates": [
+          -18,
+          -16,
+          -15
+        ],
+        "numerator": -111,
+        "denominator": 7,
+        "output": -16
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ebffffffffffffff1100000000000000f6ffffffffffffff010000001000000000000000eeffffffffffffff040000000b00000000000000110000000000000004000000",
+      "expected": {
+        "predictions": [
+          -22,
+          -21,
+          -14
+        ],
+        "gradients": [
+          -13,
+          -3,
+          -21
+        ],
+        "updates": [
+          -18,
+          -20,
+          -16
+        ],
+        "numerator": -162,
+        "denominator": 9,
+        "output": -18
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001b00000000000000edffffffffffffffe7ffffffffffffff010000001f00000000000000ecffffffffffffff030000000500000000000000180000000000000002000000",
+      "expected": {
+        "predictions": [
+          -32,
+          52,
+          8
+        ],
+        "gradients": [
+          8,
+          140,
+          -5
+        ],
+        "updates": [
+          25,
+          -8,
+          28
+        ],
+        "numerator": 57,
+        "denominator": 6,
+        "output": 10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000eefffffffffffffff5ffffffffffffffeaffffffffffffff02000000e6fffffffffffffffbffffffffffffff030000001900000000000000e3ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          12,
+          29,
+          -28
+        ],
+        "gradients": [
+          -23,
+          -55,
+          2
+        ],
+        "updates": [
+          -12,
+          -4,
+          -18
+        ],
+        "numerator": -72,
+        "denominator": 7,
+        "output": -10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000005000000000000000b00000000000000180000000000000002000000f9ffffffffffffffecffffffffffffff02000000fdffffffffffffff0a0000000000000004000000",
+      "expected": {
+        "predictions": [
+          3,
+          -2,
+          -1
+        ],
+        "gradients": [
+          -14,
+          -8,
+          2
+        ],
+        "updates": [
+          9,
+          7,
+          5
+        ],
+        "numerator": 52,
+        "denominator": 8,
+        "output": 6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e3fffffffffffffff2ffffffffffffff160000000000000004000000f0ffffffffffffff0300000000000000030000001a00000000000000ebffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          25,
+          29,
+          -47
+        ],
+        "gradients": [
+          -3,
+          -26,
+          -42
+        ],
+        "updates": [
+          -28,
+          -23,
+          -19
+        ],
+        "numerator": -219,
+        "denominator": 9,
+        "output": -24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f1ffffffffffffff0000000000000000140000000000000001000000f9fffffffffffffff2ffffffffffffff01000000ecffffffffffffff030000000000000004000000",
+      "expected": {
+        "predictions": [
+          0,
+          7,
+          19
+        ],
+        "gradients": [
+          0,
+          -9,
+          -20
+        ],
+        "updates": [
+          -15,
+          -13,
+          -10
+        ],
+        "numerator": -68,
+        "denominator": 6,
+        "output": -11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000f000000000000001c000000000000001a00000000000000020000000800000000000000f2ffffffffffffff01000000ecffffffffffffff1e0000000000000002000000",
+      "expected": {
+        "predictions": [
+          26,
+          8,
+          -19
+        ],
+        "gradients": [
+          0,
+          11,
+          61
+        ],
+        "updates": [
+          15,
+          12,
+          0
+        ],
+        "numerator": 42,
+        "denominator": 5,
+        "output": 8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001800000000000000f8fffffffffffffff4ffffffffffffff020000001c00000000000000e6ffffffffffffff02000000f1ffffffffffffffe8ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -12,
+          42,
+          -22
+        ],
+        "gradients": [
+          0,
+          119,
+          -2
+        ],
+        "updates": [
+          24,
+          -6,
+          24
+        ],
+        "numerator": 132,
+        "denominator": 8,
+        "output": 16
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001d000000000000000800000000000000feffffffffffffff04000000eeffffffffffffffeaffffffffffffff010000001300000000000000200000000000000004000000",
+      "expected": {
+        "predictions": [
+          14,
+          -33,
+          34
+        ],
+        "gradients": [
+          8,
+          12,
+          2
+        ],
+        "updates": [
+          27,
+          26,
+          29
+        ],
+        "numerator": 250,
+        "denominator": 9,
+        "output": 28
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000600000000000000e8fffffffffffffffaffffffffffffff03000000e7ffffffffffffff1a00000000000000040000000d000000000000000f0000000000000003000000",
+      "expected": {
+        "predictions": [
+          -9,
+          -9,
+          5
+        ],
+        "gradients": [
+          4,
+          55,
+          -8
+        ],
+        "updates": [
+          5,
+          -8,
+          8
+        ],
+        "numerator": 7,
+        "denominator": 10,
+        "output": 1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000000000000000000ebfffffffffffffff9ffffffffffffff03000000efffffffffffffff160000000000000003000000e3fffffffffffffff7ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          0,
+          0,
+          0
+        ],
+        "gradients": [
+          -9,
+          23,
+          -16
+        ],
+        "updates": [
+          2,
+          -6,
+          4
+        ],
+        "numerator": 0,
+        "denominator": 9,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000002000000000000000e4ffffffffffffff080000000000000004000000ecffffffffffffff1b0000000000000002000000ecffffffffffffffe8ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -56,
+          -40,
+          -40
+        ],
+        "gradients": [
+          112,
+          84,
+          20
+        ],
+        "updates": [
+          4,
+          11,
+          27
+        ],
+        "numerator": 119,
+        "denominator": 9,
+        "output": 13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fdffffffffffffffe8fffffffffffffff8ffffffffffffff010000000100000000000000f7ffffffffffffff04000000f2fffffffffffffff2ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          4,
+          0,
+          3
+        ],
+        "gradients": [
+          -18,
+          1,
+          -15
+        ],
+        "updates": [
+          1,
+          -3,
+          1
+        ],
+        "numerator": -7,
+        "denominator": 9,
+        "output": -1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000600000000000000f2ffffffffffffff0500000000000000030000000800000000000000e0ffffffffffffff01000000f7ffffffffffffffe8ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -5,
+          3,
+          -3
+        ],
+        "gradients": [
+          9,
+          18,
+          -12
+        ],
+        "updates": [
+          4,
+          2,
+          9
+        ],
+        "numerator": 50,
+        "denominator": 8,
+        "output": 6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001400000000000000f4ffffffffffffff0a00000000000000040000001300000000000000f8ffffffffffffff04000000ebfffffffffffffff3ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -15,
+          24,
+          -26
+        ],
+        "gradients": [
+          19,
+          38,
+          17
+        ],
+        "updates": [
+          15,
+          10,
+          16
+        ],
+        "numerator": 148,
+        "denominator": 11,
+        "output": 13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000017000000000000000e00000000000000ffffffffffffffff0300000005000000000000000500000000000000040000001e00000000000000160000000000000002000000",
+      "expected": {
+        "predictions": [
+          20,
+          7,
+          43
+        ],
+        "gradients": [
+          18,
+          1,
+          39
+        ],
+        "updates": [
+          19,
+          23,
+          13
+        ],
+        "numerator": 175,
+        "denominator": 9,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000c000000000000000c00000000000000feffffffffffffff040000000200000000000000120000000000000002000000eeffffffffffffffe3ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          9,
+          2,
+          -14
+        ],
+        "gradients": [
+          8,
+          -2,
+          -17
+        ],
+        "updates": [
+          10,
+          12,
+          16
+        ],
+        "numerator": 80,
+        "denominator": 7,
+        "output": 11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000b00000000000000e2ffffffffffffffedffffffffffffff010000001b000000000000000b00000000000000040000000e00000000000000e4ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -21,
+          19,
+          10
+        ],
+        "gradients": [
+          4,
+          14,
+          33
+        ],
+        "updates": [
+          10,
+          7,
+          3
+        ],
+        "numerator": 50,
+        "denominator": 9,
+        "output": 6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000e0000000000000013000000000000000b000000000000000100000005000000000000001b00000000000000010000001700000000000000f8ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          17,
+          4,
+          20
+        ],
+        "gradients": [
+          7,
+          -7,
+          40
+        ],
+        "updates": [
+          12,
+          16,
+          4
+        ],
+        "numerator": 40,
+        "denominator": 5,
+        "output": 8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e8fffffffffffffff3ffffffffffffffe2ffffffffffffff010000001e00000000000000060000000000000002000000feffffffffffffffe1ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          20,
+          -45,
+          3
+        ],
+        "gradients": [
+          -41,
+          -96,
+          -4
+        ],
+        "updates": [
+          -14,
+          0,
+          -23
+        ],
+        "numerator": -83,
+        "denominator": 6,
+        "output": -14
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f6ffffffffffffffe6ffffffffffffffeaffffffffffffff01000000f9ffffffffffffff070000000000000004000000e3ffffffffffffff000000000000000002000000",
+      "expected": {
+        "predictions": [
+          16,
+          4,
+          18
+        ],
+        "gradients": [
+          -62,
+          1,
+          -33
+        ],
+        "updates": [
+          6,
+          -10,
+          -2
+        ],
+        "numerator": -38,
+        "denominator": 7,
+        "output": -5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001400000000000000e7fffffffffffffff8ffffffffffffff020000000400000000000000050000000000000001000000effffffffffffffff6ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -31,
+          5,
+          -21
+        ],
+        "gradients": [
+          36,
+          0,
+          12
+        ],
+        "updates": [
+          11,
+          20,
+          17
+        ],
+        "numerator": 93,
+        "denominator": 6,
+        "output": 16
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000c00000000000000fdfffffffffffffff9ffffffffffffff020000000e00000000000000f3ffffffffffffff040000002000000000000000e3ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -2,
+          10,
+          24
+        ],
+        "gradients": [
+          -1,
+          20,
+          106
+        ],
+        "updates": [
+          12,
+          7,
+          -14
+        ],
+        "numerator": -4,
+        "denominator": 10,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000180000000000000005000000000000000f00000000000000040000000900000000000000f3ffffffffffffff020000001b000000000000000e0000000000000004000000",
+      "expected": {
+        "predictions": [
+          8,
+          14,
+          40
+        ],
+        "gradients": [
+          -2,
+          15,
+          44
+        ],
+        "updates": [
+          24,
+          20,
+          13
+        ],
+        "numerator": 188,
+        "denominator": 10,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001600000000000000e7ffffffffffffffebffffffffffffff0300000009000000000000000d000000000000000100000006000000000000000a0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -34,
+          12,
+          8
+        ],
+        "gradients": [
+          20,
+          -1,
+          -1
+        ],
+        "updates": [
+          17,
+          22,
+          22
+        ],
+        "numerator": 95,
+        "denominator": 5,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fdffffffffffffffe0ffffffffffffff1a00000000000000020000000c00000000000000e1ffffffffffffff030000001700000000000000e5ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          6,
+          -2,
+          -4
+        ],
+        "gradients": [
+          40,
+          22,
+          33
+        ],
+        "updates": [
+          -13,
+          -9,
+          -11
+        ],
+        "numerator": -64,
+        "denominator": 6,
+        "output": -11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e1fffffffffffffff0ffffffffffffffe0ffffffffffffff010000000200000000000000f6ffffffffffffff01000000faffffffffffffffe0ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          31,
+          -4,
+          12
+        ],
+        "gradients": [
+          -63,
+          1,
+          -16
+        ],
+        "updates": [
+          -15,
+          -31,
+          -27
+        ],
+        "numerator": -73,
+        "denominator": 3,
+        "output": -24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9ffffffffffffff0300000000000000e8ffffffffffffff020000001100000000000000faffffffffffffff040000001300000000000000e9ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -4,
+          -24,
+          -27
+        ],
+        "gradients": [
+          4,
+          -19,
+          -5
+        ],
+        "updates": [
+          -24,
+          -18,
+          -22
+        ],
+        "numerator": -142,
+        "denominator": 7,
+        "output": -20
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000e00000000000000f2ffffffffffffffefffffffffffffff02000000e4ffffffffffffffe1ffffffffffffff01000000e4fffffffffffffff1ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -12,
+          -24,
+          -24
+        ],
+        "gradients": [
+          -4,
+          -12,
+          16
+        ],
+        "updates": [
+          15,
+          17,
+          10
+        ],
+        "numerator": 57,
+        "denominator": 4,
+        "output": 14
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001b0000000000000001000000000000000800000000000000020000000200000000000000ecffffffffffffff04000000f3fffffffffffffff1ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          2,
+          3,
+          -22
+        ],
+        "gradients": [
+          0,
+          3,
+          6
+        ],
+        "updates": [
+          27,
+          26,
+          25
+        ],
+        "numerator": 208,
+        "denominator": 8,
+        "output": 26
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000b000000000000000700000000000000ffffffffffffffff010000000b00000000000000faffffffffffffff030000001600000000000000f6ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          5,
+          8,
+          15
+        ],
+        "gradients": [
+          3,
+          10,
+          34
+        ],
+        "updates": [
+          10,
+          9,
+          3
+        ],
+        "numerator": 40,
+        "denominator": 5,
+        "output": 8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001300000000000000e1ffffffffffffff040000000000000003000000f1ffffffffffffffe0ffffffffffffff01000000feffffffffffffff190000000000000002000000",
+      "expected": {
+        "predictions": [
+          -37,
+          -18,
+          -2
+        ],
+        "gradients": [
+          79,
+          -13,
+          3
+        ],
+        "updates": [
+          -1,
+          22,
+          18
+        ],
+        "numerator": 55,
+        "denominator": 6,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001600000000000000e0ffffffffffffffe4ffffffffffffff03000000f6ffffffffffffff0a00000000000000040000000b00000000000000f8ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -44,
+          -14,
+          15
+        ],
+        "gradients": [
+          32,
+          15,
+          16
+        ],
+        "updates": [
+          14,
+          18,
+          18
+        ],
+        "numerator": 168,
+        "denominator": 10,
+        "output": 17
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9ffffffffffffff1c000000000000000100000000000000020000001200000000000000070000000000000002000000fcfffffffffffffffbffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -40,
+          -26,
+          6
+        ],
+        "gradients": [
+          -72,
+          -37,
+          -3
+        ],
+        "updates": [
+          -5,
+          -14,
+          -22
+        ],
+        "numerator": -126,
+        "denominator": 8,
+        "output": -16
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e2ffffffffffffff0d0000000000000016000000000000000300000000000000000000001e00000000000000030000002000000000000000e9ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -24,
+          0,
+          -60
+        ],
+        "gradients": [
+          -37,
+          0,
+          -74
+        ],
+        "updates": [
+          -21,
+          -30,
+          -12
+        ],
+        "numerator": -165,
+        "denominator": 7,
+        "output": -24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000014000000000000000300000000000000010000000000000003000000e2fffffffffffffffcffffffffffffff010000000600000000000000e1ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          4,
+          -38,
+          8
+        ],
+        "gradients": [
+          1,
+          64,
+          15
+        ],
+        "updates": [
+          20,
+          4,
+          16
+        ],
+        "numerator": 128,
+        "denominator": 8,
+        "output": 16
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000f00000000000000eaffffffffffffff1500000000000000020000001c00000000000000fcffffffffffffff04000000feffffffffffffffe5ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -21,
+          26,
+          -2
+        ],
+        "gradients": [
+          58,
+          52,
+          -3
+        ],
+        "updates": [
+          1,
+          2,
+          16
+        ],
+        "numerator": 42,
+        "denominator": 8,
+        "output": 5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e2ffffffffffffff1400000000000000fcffffffffffffff04000000ffffffffffffffff1700000000000000030000001d00000000000000100000000000000001000000",
+      "expected": {
+        "predictions": [
+          -38,
+          2,
+          -54
+        ],
+        "gradients": [
+          -42,
+          1,
+          -127
+        ],
+        "updates": [
+          -20,
+          -30,
+          2
+        ],
+        "numerator": -168,
+        "denominator": 8,
+        "output": -21
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000d00000000000000ebfffffffffffffff8ffffffffffffff010000001900000000000000160000000000000004000000f4fffffffffffffff4ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -17,
+          20,
+          -10
+        ],
+        "gradients": [
+          12,
+          -3,
+          -2
+        ],
+        "updates": [
+          10,
+          14,
+          13
+        ],
+        "numerator": 118,
+        "denominator": 9,
+        "output": 13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000edffffffffffffffe3ffffffffffffff060000000000000004000000ebffffffffffffff0500000000000000020000002000000000000000ecffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          34,
+          25,
+          -38
+        ],
+        "gradients": [
+          -51,
+          -26,
+          -36
+        ],
+        "updates": [
+          -6,
+          -13,
+          -10
+        ],
+        "numerator": -90,
+        "denominator": 10,
+        "output": -9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000400000000000000ffffffffffffffff0f00000000000000030000001a00000000000000fcffffffffffffff0400000005000000000000001a0000000000000003000000",
+      "expected": {
+        "predictions": [
+          0,
+          6,
+          1
+        ],
+        "gradients": [
+          1,
+          16,
+          -8
+        ],
+        "updates": [
+          4,
+          0,
+          6
+        ],
+        "numerator": 30,
+        "denominator": 10,
+        "output": 3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000feffffffffffffffeefffffffffffffff0ffffffffffffff010000001600000000000000e5ffffffffffffff04000000f3ffffffffffffffebffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          2,
+          -3,
+          2
+        ],
+        "gradients": [
+          -20,
+          33,
+          -19
+        ],
+        "updates": [
+          3,
+          -10,
+          3
+        ],
+        "numerator": -34,
+        "denominator": 6,
+        "output": -6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ebffffffffffffff1800000000000000110000000000000004000000eafffffffffffffffcffffffffffffff02000000ffffffffffffffff130000000000000002000000",
+      "expected": {
+        "predictions": [
+          -32,
+          29,
+          1
+        ],
+        "gradients": [
+          -74,
+          -45,
+          1
+        ],
+        "updates": [
+          -3,
+          -10,
+          -21
+        ],
+        "numerator": -74,
+        "denominator": 8,
+        "output": -9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001e000000000000001900000000000000f9ffffffffffffff01000000200000000000000002000000000000000100000013000000000000000d0000000000000002000000",
+      "expected": {
+        "predictions": [
+          47,
+          60,
+          36
+        ],
+        "gradients": [
+          84,
+          116,
+          27
+        ],
+        "updates": [
+          9,
+          1,
+          23
+        ],
+        "numerator": 56,
+        "denominator": 4,
+        "output": 14
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000016000000000000000c00000000000000fcffffffffffffff04000000fcffffffffffffff1b000000000000000100000001000000000000000a0000000000000002000000",
+      "expected": {
+        "predictions": [
+          16,
+          -6,
+          1
+        ],
+        "gradients": [
+          15,
+          8,
+          -1
+        ],
+        "updates": [
+          18,
+          20,
+          22
+        ],
+        "numerator": 136,
+        "denominator": 7,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001200000000000000e9ffffffffffffff0b00000000000000030000000f00000000000000ebffffffffffffff03000000e8ffffffffffffff130000000000000003000000",
+      "expected": {
+        "predictions": [
+          -26,
+          17,
+          -27
+        ],
+        "gradients": [
+          53,
+          36,
+          69
+        ],
+        "updates": [
+          5,
+          9,
+          1
+        ],
+        "numerator": 45,
+        "denominator": 9,
+        "output": 5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e4ffffffffffffff0400000000000000f8ffffffffffffff010000000600000000000000130000000000000004000000f7ffffffffffffff1a0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -7,
+          -10,
+          16
+        ],
+        "gradients": [
+          0,
+          -11,
+          6
+        ],
+        "updates": [
+          -28,
+          -25,
+          -30
+        ],
+        "numerator": -158,
+        "denominator": 6,
+        "output": -26
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fcffffffffffffff0c00000000000000190000000000000002000000e7ffffffffffffffe3ffffffffffffff030000000800000000000000faffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -3,
+          6,
+          -2
+        ],
+        "gradients": [
+          -21,
+          -55,
+          2
+        ],
+        "updates": [
+          1,
+          10,
+          -4
+        ],
+        "numerator": 24,
+        "denominator": 7,
+        "output": 3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000012000000000000000e00000000000000f6ffffffffffffff04000000feffffffffffffff0c00000000000000010000001a00000000000000020000000000000003000000",
+      "expected": {
+        "predictions": [
+          16,
+          -2,
+          29
+        ],
+        "gradients": [
+          23,
+          2,
+          44
+        ],
+        "updates": [
+          12,
+          18,
+          7
+        ],
+        "numerator": 87,
+        "denominator": 8,
+        "output": 11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001500000000000000eeffffffffffffff0100000000000000020000000f00000000000000e4ffffffffffffff04000000edffffffffffffffe8ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -24,
+          20,
+          -25
+        ],
+        "gradients": [
+          28,
+          45,
+          1
+        ],
+        "updates": [
+          14,
+          10,
+          21
+        ],
+        "numerator": 152,
+        "denominator": 10,
+        "output": 15
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e7fffffffffffffff7ffffffffffffffffffffffffffffff030000000900000000000000e4ffffffffffffff040000001d00000000000000e3ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          14,
+          -14,
+          -45
+        ],
+        "gradients": [
+          -8,
+          8,
+          -29
+        ],
+        "updates": [
+          -23,
+          -27,
+          -18
+        ],
+        "numerator": -249,
+        "denominator": 11,
+        "output": -23
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e6ffffffffffffff1300000000000000faffffffffffffff02000000f8fffffffffffffff7ffffffffffffff010000001e00000000000000180000000000000003000000",
+      "expected": {
+        "predictions": [
+          -31,
+          13,
+          -49
+        ],
+        "gradients": [
+          -30,
+          -11,
+          -137
+        ],
+        "updates": [
+          -18,
+          -23,
+          8
+        ],
+        "numerator": -35,
+        "denominator": 6,
+        "output": -6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fdfffffffffffffff3ffffffffffffff0f00000000000000020000000e00000000000000160000000000000004000000faffffffffffffffe4ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          2,
+          -3,
+          1
+        ],
+        "gradients": [
+          11,
+          -22,
+          -11
+        ],
+        "updates": [
+          -6,
+          3,
+          0
+        ],
+        "numerator": 0,
+        "denominator": 10,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001900000000000000f9ffffffffffffffe5ffffffffffffff04000000f3fffffffffffffff7ffffffffffffff030000000600000000000000f5ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -11,
+          -20,
+          9
+        ],
+        "gradients": [
+          -7,
+          9,
+          8
+        ],
+        "updates": [
+          27,
+          23,
+          23
+        ],
+        "numerator": 246,
+        "denominator": 10,
+        "output": 25
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ffffffffffffffff10000000000000000a00000000000000010000000e000000000000000d0000000000000001000000e7ffffffffffffffe1ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -1,
+          -1,
+          2
+        ],
+        "gradients": [
+          -11,
+          -12,
+          -52
+        ],
+        "updates": [
+          2,
+          2,
+          12
+        ],
+        "numerator": 16,
+        "denominator": 3,
+        "output": 5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000004000000000000000e000000000000000200000000000000040000001500000000000000e6ffffffffffffff04000000e6fffffffffffffffdffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          4,
+          5,
+          -6
+        ],
+        "gradients": [
+          2,
+          41,
+          5
+        ],
+        "updates": [
+          4,
+          -6,
+          3
+        ],
+        "numerator": 1,
+        "denominator": 11,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001400000000000000180000000000000010000000000000000200000005000000000000000600000000000000030000001000000000000000f6ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          30,
+          6,
+          20
+        ],
+        "gradients": [
+          21,
+          0,
+          30
+        ],
+        "updates": [
+          15,
+          20,
+          12
+        ],
+        "numerator": 102,
+        "denominator": 6,
+        "output": 17
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000900000000000000f5ffffffffffffffecffffffffffffff04000000f2ffffffffffffff1a00000000000000010000000d00000000000000030000000000000003000000",
+      "expected": {
+        "predictions": [
+          -6,
+          -8,
+          7
+        ],
+        "gradients": [
+          -10,
+          30,
+          3
+        ],
+        "updates": [
+          11,
+          1,
+          8
+        ],
+        "numerator": 69,
+        "denominator": 8,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000005000000000000000e00000000000000e2ffffffffffffff01000000f6ffffffffffffff0700000000000000020000001e000000000000000a0000000000000002000000",
+      "expected": {
+        "predictions": [
+          4,
+          -3,
+          9
+        ],
+        "gradients": [
+          30,
+          6,
+          -2
+        ],
+        "updates": [
+          -3,
+          3,
+          5
+        ],
+        "numerator": 13,
+        "denominator": 5,
+        "output": 3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000e00000000000000e9ffffffffffffff1700000000000000020000000c00000000000000ffffffffffffffff030000001d00000000000000f7ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -20,
+          10,
+          25
+        ],
+        "gradients": [
+          62,
+          8,
+          62
+        ],
+        "updates": [
+          -2,
+          12,
+          -2
+        ],
+        "numerator": 28,
+        "denominator": 7,
+        "output": 4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f7ffffffffffffffffffffffffffffff1f000000000000000300000014000000000000001d000000000000000300000007000000000000000a0000000000000001000000",
+      "expected": {
+        "predictions": [
+          1,
+          -11,
+          -4
+        ],
+        "gradients": [
+          2,
+          -50,
+          -6
+        ],
+        "updates": [
+          -9,
+          3,
+          -7
+        ],
+        "numerator": -25,
+        "denominator": 7,
+        "output": -4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000faffffffffffffff03000000000000000b0000000000000004000000ecffffffffffffff020000000000000001000000fcffffffffffffffeaffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -1,
+          8,
+          2
+        ],
+        "gradients": [
+          -2,
+          -8,
+          -6
+        ],
+        "updates": [
+          -6,
+          -4,
+          -4
+        ],
+        "numerator": -32,
+        "denominator": 6,
+        "output": -5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000100000000000000009000000000000001100000000000000040000001200000000000000090000000000000003000000f4ffffffffffffffebffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          9,
+          18,
+          -12
+        ],
+        "gradients": [
+          -4,
+          10,
+          -7
+        ],
+        "updates": [
+          17,
+          14,
+          18
+        ],
+        "numerator": 164,
+        "denominator": 10,
+        "output": 16
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000feffffffffffffffedffffffffffffffefffffffffffffff030000000c00000000000000020000000000000003000000ffffffffffffffff010000000000000002000000",
+      "expected": {
+        "predictions": [
+          2,
+          -2,
+          0
+        ],
+        "gradients": [
+          -23,
+          -3,
+          0
+        ],
+        "updates": [
+          4,
+          -1,
+          -2
+        ],
+        "numerator": 5,
+        "denominator": 8,
+        "output": 1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e0ffffffffffffff0e0000000000000014000000000000000200000012000000000000001100000000000000040000000a000000000000000d0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -28,
+          -36,
+          -20
+        ],
+        "gradients": [
+          -42,
+          -60,
+          -21
+        ],
+        "updates": [
+          -22,
+          -17,
+          -27
+        ],
+        "numerator": -139,
+        "denominator": 7,
+        "output": -20
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000011000000000000001900000000000000090000000000000003000000f1ffffffffffffff0b0000000000000003000000faffffffffffffff060000000000000001000000",
+      "expected": {
+        "predictions": [
+          27,
+          -16,
+          -6
+        ],
+        "gradients": [
+          28,
+          25,
+          4
+        ],
+        "updates": [
+          10,
+          11,
+          16
+        ],
+        "numerator": 79,
+        "denominator": 7,
+        "output": 11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e1ffffffffffffffeafffffffffffffff9ffffffffffffff03000000e5ffffffffffffff0d00000000000000040000000e00000000000000f1ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          43,
+          52,
+          -27
+        ],
+        "gradients": [
+          -69,
+          -66,
+          -10
+        ],
+        "updates": [
+          -14,
+          -15,
+          -29
+        ],
+        "numerator": -160,
+        "denominator": 9,
+        "output": -18
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001400000000000000f7ffffffffffffff010000000000000003000000eeffffffffffffffe2ffffffffffffff03000000eafffffffffffffff6ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -11,
+          -22,
+          -28
+        ],
+        "gradients": [
+          7,
+          -9,
+          25
+        ],
+        "updates": [
+          18,
+          22,
+          14
+        ],
+        "numerator": 134,
+        "denominator": 7,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000feffffffffffffff0a00000000000000e3ffffffffffffff04000000fbffffffffffffffe1ffffffffffffff01000000e7ffffffffffffff0f0000000000000002000000",
+      "expected": {
+        "predictions": [
+          -1,
+          1,
+          3
+        ],
+        "gradients": [
+          18,
+          -10,
+          19
+        ],
+        "updates": [
+          -6,
+          0,
+          -7
+        ],
+        "numerator": -38,
+        "denominator": 7,
+        "output": -5
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000008000000000000001900000000000000fcffffffffffffff0100000010000000000000000c00000000000000020000000400000000000000080000000000000002000000",
+      "expected": {
+        "predictions": [
+          12,
+          8,
+          2
+        ],
+        "gradients": [
+          25,
+          -4,
+          -2
+        ],
+        "updates": [
+          2,
+          9,
+          8
+        ],
+        "numerator": 36,
+        "denominator": 5,
+        "output": 7
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e6fffffffffffffffdffffffffffffff1f00000000000000040000001c0000000000000004000000000000000400000017000000000000001a0000000000000003000000",
+      "expected": {
+        "predictions": [
+          5,
+          -46,
+          -37
+        ],
+        "gradients": [
+          5,
+          -88,
+          -91
+        ],
+        "updates": [
+          -27,
+          -4,
+          -3
+        ],
+        "numerator": -133,
+        "denominator": 11,
+        "output": -12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000011000000000000000d000000000000000300000000000000030000000200000000000000e2ffffffffffffff020000001600000000000000e1ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          14,
+          2,
+          23
+        ],
+        "gradients": [
+          9,
+          4,
+          74
+        ],
+        "updates": [
+          15,
+          16,
+          -1
+        ],
+        "numerator": 75,
+        "denominator": 7,
+        "output": 11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ebffffffffffffff0a00000000000000ecffffffffffffff03000000f7ffffffffffffff0e0000000000000003000000e6ffffffffffffffefffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -13,
+          12,
+          34
+        ],
+        "gradients": [
+          4,
+          1,
+          -83
+        ],
+        "updates": [
+          -22,
+          -21,
+          0
+        ],
+        "numerator": -129,
+        "denominator": 9,
+        "output": -14
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9ffffffffffffff170000000000000016000000000000000100000013000000000000001f0000000000000002000000e6ffffffffffffff160000000000000002000000",
+      "expected": {
+        "predictions": [
+          -33,
+          -27,
+          37
+        ],
+        "gradients": [
+          -79,
+          -69,
+          -24
+        ],
+        "updates": [
+          -3,
+          -6,
+          -17
+        ],
+        "numerator": -49,
+        "denominator": 5,
+        "output": -10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001d000000000000001b0000000000000017000000000000000300000004000000000000000500000000000000040000001e00000000000000070000000000000001000000",
+      "expected": {
+        "predictions": [
+          49,
+          7,
+          54
+        ],
+        "gradients": [
+          44,
+          0,
+          88
+        ],
+        "updates": [
+          18,
+          29,
+          7
+        ],
+        "numerator": 177,
+        "denominator": 8,
+        "output": 22
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f4ffffffffffffffeeffffffffffffff1f0000000000000003000000f5ffffffffffffff07000000000000000100000007000000000000000c0000000000000004000000",
+      "expected": {
+        "predictions": [
+          14,
+          8,
+          -5
+        ],
+        "gradients": [
+          19,
+          -1,
+          -7
+        ],
+        "updates": [
+          -17,
+          -12,
+          -10
+        ],
+        "numerator": -103,
+        "denominator": 8,
+        "output": -13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000eefffffffffffffff2ffffffffffffffffffffffffffffff02000000e2ffffffffffffff0f00000000000000010000000200000000000000030000000000000001000000",
+      "expected": {
+        "predictions": [
+          16,
+          34,
+          -2
+        ],
+        "gradients": [
+          -15,
+          -36,
+          -1
+        ],
+        "updates": [
+          -14,
+          -9,
+          -18
+        ],
+        "numerator": -55,
+        "denominator": 4,
+        "output": -14
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e4ffffffffffffffe7ffffffffffffff0700000000000000030000000f00000000000000ebffffffffffffff03000000ffffffffffffffff010000000000000003000000",
+      "expected": {
+        "predictions": [
+          44,
+          -26,
+          2
+        ],
+        "gradients": [
+          -58,
+          -5,
+          0
+        ],
+        "updates": [
+          -14,
+          -27,
+          -28
+        ],
+        "numerator": -207,
+        "denominator": 9,
+        "output": -23
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001a0000000000000000000000000000001d0000000000000004000000feffffffffffffff200000000000000003000000e8ffffffffffffffe9ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          0,
+          -3,
+          -39
+        ],
+        "gradients": [
+          0,
+          4,
+          24
+        ],
+        "updates": [
+          26,
+          25,
+          20
+        ],
+        "numerator": 259,
+        "denominator": 11,
+        "output": 24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e3ffffffffffffff0c00000000000000f4ffffffffffffff0100000018000000000000001a0000000000000002000000e1ffffffffffffff1b0000000000000004000000",
+      "expected": {
+        "predictions": [
+          -22,
+          -44,
+          56
+        ],
+        "gradients": [
+          -8,
+          -105,
+          -56
+        ],
+        "updates": [
+          -27,
+          -3,
+          -15
+        ],
+        "numerator": -93,
+        "denominator": 7,
+        "output": -13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e2ffffffffffffff0700000000000000e2ffffffffffffff04000000f4ffffffffffffffe9ffffffffffffff030000000400000000000000030000000000000004000000",
+      "expected": {
+        "predictions": [
+          -13,
+          22,
+          -8
+        ],
+        "gradients": [
+          7,
+          -34,
+          -3
+        ],
+        "updates": [
+          -32,
+          -22,
+          -29
+        ],
+        "numerator": -310,
+        "denominator": 11,
+        "output": -28
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e3ffffffffffffffe3ffffffffffffff180000000000000001000000e8ffffffffffffff1200000000000000040000000f00000000000000edffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          53,
+          44,
+          -27
+        ],
+        "gradients": [
+          -53,
+          -39,
+          -8
+        ],
+        "updates": [
+          -16,
+          -19,
+          -27
+        ],
+        "numerator": -173,
+        "denominator": 8,
+        "output": -22
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000d000000000000000d00000000000000f4ffffffffffffff04000000eefffffffffffffff1ffffffffffffff030000000100000000000000f0ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          11,
+          -15,
+          1
+        ],
+        "gradients": [
+          19,
+          0,
+          1
+        ],
+        "updates": [
+          8,
+          13,
+          13
+        ],
+        "numerator": 123,
+        "denominator": 11,
+        "output": 11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001800000000000000eeffffffffffffff0400000000000000040000000200000000000000090000000000000004000000fcffffffffffffffebffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -27,
+          3,
+          -6
+        ],
+        "gradients": [
+          35,
+          -1,
+          -4
+        ],
+        "updates": [
+          15,
+          24,
+          25
+        ],
+        "numerator": 181,
+        "denominator": 9,
+        "output": 20
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001100000000000000e4fffffffffffffff8ffffffffffffff020000001800000000000000200000000000000001000000f3ffffffffffffff160000000000000004000000",
+      "expected": {
+        "predictions": [
+          -30,
+          26,
+          -14
+        ],
+        "gradients": [
+          38,
+          -9,
+          29
+        ],
+        "updates": [
+          7,
+          19,
+          10
+        ],
+        "numerator": 73,
+        "denominator": 7,
+        "output": 10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e8ffffffffffffff1700000000000000e8ffffffffffffff020000000d00000000000000eaffffffffffffff0200000001000000000000001a0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -34,
+          -20,
+          -2
+        ],
+        "gradients": [
+          -14,
+          2,
+          -2
+        ],
+        "updates": [
+          -20,
+          -24,
+          -24
+        ],
+        "numerator": -112,
+        "denominator": 5,
+        "output": -22
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001d00000000000000f7ffffffffffffffeeffffffffffffff02000000e7ffffffffffffffffffffffffffffff01000000f6ffffffffffffffe9ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -16,
+          -45,
+          -18
+        ],
+        "gradients": [
+          -1,
+          69,
+          -3
+        ],
+        "updates": [
+          29,
+          12,
+          30
+        ],
+        "numerator": 190,
+        "denominator": 7,
+        "output": 27
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001400000000000000e1ffffffffffffff040000000000000004000000e1ffffffffffffff1400000000000000020000001900000000000000e8ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -39,
+          -39,
+          31
+        ],
+        "gradients": [
+          83,
+          114,
+          86
+        ],
+        "updates": [
+          -1,
+          -8,
+          -2
+        ],
+        "numerator": -24,
+        "denominator": 8,
+        "output": -3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001300000000000000f3ffffffffffffff1e00000000000000020000001400000000000000e2ffffffffffffff01000000ecffffffffffffffffffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -15,
+          24,
+          -24
+        ],
+        "gradients": [
+          37,
+          68,
+          29
+        ],
+        "updates": [
+          10,
+          2,
+          12
+        ],
+        "numerator": 46,
+        "denominator": 5,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000e000000000000001900000000000000e3ffffffffffffff040000001600000000000000fdffffffffffffff040000002000000000000000f8ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          22,
+          19,
+          28
+        ],
+        "gradients": [
+          80,
+          30,
+          72
+        ],
+        "updates": [
+          -6,
+          6,
+          -4
+        ],
+        "numerator": -8,
+        "denominator": 10,
+        "output": -1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000009000000000000000100000000000000fbffffffffffffff020000000a00000000000000110000000000000003000000f7fffffffffffffff2ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          1,
+          6,
+          -5
+        ],
+        "gradients": [
+          0,
+          -7,
+          -5
+        ],
+        "updates": [
+          9,
+          11,
+          10
+        ],
+        "numerator": 71,
+        "denominator": 7,
+        "output": 10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001800000000000000e4ffffffffffffffe5ffffffffffffff020000001700000000000000020000000000000001000000ecffffffffffffff1b0000000000000002000000",
+      "expected": {
+        "predictions": [
+          -42,
+          34,
+          -30
+        ],
+        "gradients": [
+          26,
+          46,
+          71
+        ],
+        "updates": [
+          18,
+          12,
+          6
+        ],
+        "numerator": 60,
+        "denominator": 5,
+        "output": 12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ecffffffffffffff1c00000000000000e3ffffffffffffff030000001400000000000000fcffffffffffffff020000000000000000000000f4ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -35,
+          -25,
+          0
+        ],
+        "gradients": [
+          -10,
+          -26,
+          0
+        ],
+        "updates": [
+          -18,
+          -14,
+          -20
+        ],
+        "numerator": -162,
+        "denominator": 9,
+        "output": -18
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f7fffffffffffffffbffffffffffffff0b0000000000000002000000f6ffffffffffffffe7ffffffffffffff01000000e1fffffffffffffff0ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          3,
+          6,
+          17
+        ],
+        "gradients": [
+          2,
+          -19,
+          -64
+        ],
+        "updates": [
+          -9,
+          -4,
+          7
+        ],
+        "numerator": -15,
+        "denominator": 4,
+        "output": -4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000170000000000000002000000000000000700000000000000010000000f000000000000001c00000000000000010000001e000000000000001b0000000000000003000000",
+      "expected": {
+        "predictions": [
+          3,
+          22,
+          43
+        ],
+        "gradients": [
+          0,
+          -6,
+          30
+        ],
+        "updates": [
+          23,
+          25,
+          15
+        ],
+        "numerator": 93,
+        "denominator": 5,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000e000000000000000a000000000000000f0000000000000001000000edffffffffffffff0200000000000000030000000c00000000000000edffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          9,
+          -17,
+          10
+        ],
+        "gradients": [
+          -4,
+          23,
+          22
+        ],
+        "updates": [
+          15,
+          8,
+          8
+        ],
+        "numerator": 71,
+        "denominator": 8,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fefffffffffffffffdfffffffffffffff4ffffffffffffff0400000015000000000000000500000000000000040000001300000000000000020000000000000004000000",
+      "expected": {
+        "predictions": [
+          0,
+          -3,
+          -2
+        ],
+        "gradients": [
+          -2,
+          -10,
+          -5
+        ],
+        "updates": [
+          -2,
+          0,
+          -1
+        ],
+        "numerator": -12,
+        "denominator": 12,
+        "output": -1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000019000000000000001e00000000000000faffffffffffffff02000000e4ffffffffffffffeeffffffffffffff0200000006000000000000001f0000000000000004000000",
+      "expected": {
+        "predictions": [
+          47,
+          -44,
+          9
+        ],
+        "gradients": [
+          99,
+          46,
+          -8
+        ],
+        "updates": [
+          0,
+          13,
+          27
+        ],
+        "numerator": 134,
+        "denominator": 8,
+        "output": 17
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000003000000000000000900000000000000070000000000000004000000e4ffffffffffffff1b0000000000000002000000f9ffffffffffffffe2ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          2,
+          -5,
+          -1
+        ],
+        "gradients": [
+          -3,
+          56,
+          -13
+        ],
+        "updates": [
+          4,
+          -11,
+          6
+        ],
+        "numerator": 0,
+        "denominator": 7,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000b0000000000000001000000000000001b0000000000000003000000fdffffffffffffff150000000000000002000000ecffffffffffffffe8ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          1,
+          -2,
+          -14
+        ],
+        "gradients": [
+          -2,
+          4,
+          -12
+        ],
+        "updates": [
+          11,
+          10,
+          14
+        ],
+        "numerator": 67,
+        "denominator": 6,
+        "output": 11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ebffffffffffffff1100000000000000ebffffffffffffff03000000efffffffffffffff020000000000000004000000ebffffffffffffffe7ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -22,
+          22,
+          28
+        ],
+        "gradients": [
+          -1,
+          -21,
+          -70
+        ],
+        "updates": [
+          -21,
+          -16,
+          -3
+        ],
+        "numerator": -130,
+        "denominator": 8,
+        "output": -16
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000080000000000000001000000000000001900000000000000020000000500000000000000f3ffffffffffffff020000000400000000000000e9ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          0,
+          2,
+          2
+        ],
+        "gradients": [
+          -2,
+          5,
+          6
+        ],
+        "updates": [
+          8,
+          7,
+          6
+        ],
+        "numerator": 54,
+        "denominator": 8,
+        "output": 7
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000ebffffffffffffff00000000000000000d0000000000000004000000f5fffffffffffffffaffffffffffffff04000000f6fffffffffffffff6ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          0,
+          14,
+          13
+        ],
+        "gradients": [
+          0,
+          -14,
+          -14
+        ],
+        "updates": [
+          -21,
+          -17,
+          -17
+        ],
+        "numerator": -186,
+        "denominator": 10,
+        "output": -19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fdffffffffffffffeffffffffffffffff2ffffffffffffff010000001300000000000000180000000000000002000000fdffffffffffffffe3ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          3,
+          -4,
+          1
+        ],
+        "gradients": [
+          -18,
+          -33,
+          -6
+        ],
+        "updates": [
+          1,
+          5,
+          -1
+        ],
+        "numerator": 7,
+        "denominator": 7,
+        "output": 1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001600000000000000fdffffffffffffff0f0000000000000002000000f2ffffffffffffff080000000000000002000000f6fffffffffffffffeffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -4,
+          -19,
+          -14
+        ],
+        "gradients": [
+          4,
+          24,
+          8
+        ],
+        "updates": [
+          21,
+          16,
+          20
+        ],
+        "numerator": 154,
+        "denominator": 8,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9fffffffffffffff9ffffffffffffffe3ffffffffffffff010000000200000000000000e8ffffffffffffff030000001300000000000000f4ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          10,
+          -3,
+          -27
+        ],
+        "gradients": [
+          -17,
+          3,
+          -18
+        ],
+        "updates": [
+          -19,
+          -24,
+          -19
+        ],
+        "numerator": -167,
+        "denominator": 8,
+        "output": -21
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000efffffffffffffffe4ffffffffffffff0300000000000000030000000c00000000000000f3ffffffffffffff020000001e000000000000000f0000000000000001000000",
+      "expected": {
+        "predictions": [
+          30,
+          -13,
+          -32
+        ],
+        "gradients": [
+          -47,
+          0,
+          -88
+        ],
+        "updates": [
+          -5,
+          -17,
+          5
+        ],
+        "numerator": -44,
+        "denominator": 6,
+        "output": -7
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f6ffffffffffffffe7ffffffffffffff1a00000000000000010000001600000000000000ffffffffffffffff01000000e3ffffffffffffffe8ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          16,
+          -14,
+          18
+        ],
+        "gradients": [
+          16,
+          -18,
+          -76
+        ],
+        "updates": [
+          -14,
+          -6,
+          9
+        ],
+        "numerator": -2,
+        "denominator": 4,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e9ffffffffffffff0d00000000000000000000000000000002000000050000000000000002000000000000000100000017000000000000001d0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -19,
+          -7,
+          -33
+        ],
+        "gradients": [
+          -15,
+          -3,
+          -89
+        ],
+        "updates": [
+          -19,
+          -22,
+          -1
+        ],
+        "numerator": -61,
+        "denominator": 4,
+        "output": -15
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001800000000000000fafffffffffffffff6ffffffffffffff0400000011000000000000001c0000000000000003000000feffffffffffffff150000000000000004000000",
+      "expected": {
+        "predictions": [
+          -9,
+          26,
+          -3
+        ],
+        "gradients": [
+          0,
+          -2,
+          3
+        ],
+        "updates": [
+          24,
+          24,
+          23
+        ],
+        "numerator": 260,
+        "denominator": 11,
+        "output": 24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001e00000000000000fbfffffffffffffffdffffffffffffff010000000000000000000000060000000000000002000000f1fffffffffffffff5ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          -9,
+          0,
+          -28
+        ],
+        "gradients": [
+          2,
+          0,
+          16
+        ],
+        "updates": [
+          30,
+          30,
+          26
+        ],
+        "numerator": 116,
+        "denominator": 4,
+        "output": 29
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001500000000000000eeffffffffffffffe8ffffffffffffff0100000000000000000000001400000000000000040000001a00000000000000170000000000000003000000",
+      "expected": {
+        "predictions": [
+          -24,
+          0,
+          34
+        ],
+        "gradients": [
+          0,
+          0,
+          18
+        ],
+        "updates": [
+          21,
+          21,
+          17
+        ],
+        "numerator": 156,
+        "denominator": 8,
+        "output": 20
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000000000000000000effffffffffffffff5ffffffffffffff03000000faffffffffffffffe9ffffffffffffff030000000900000000000000060000000000000004000000",
+      "expected": {
+        "predictions": [
+          0,
+          0,
+          0
+        ],
+        "gradients": [
+          -12,
+          -9,
+          -3
+        ],
+        "updates": [
+          3,
+          2,
+          1
+        ],
+        "numerator": 19,
+        "denominator": 10,
+        "output": 2
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e5ffffffffffffff0300000000000000f7ffffffffffffff020000000a00000000000000e8ffffffffffffff04000000f3ffffffffffffff0f0000000000000004000000",
+      "expected": {
+        "predictions": [
+          -5,
+          -17,
+          22
+        ],
+        "gradients": [
+          1,
+          4,
+          -6
+        ],
+        "updates": [
+          -27,
+          -28,
+          -25
+        ],
+        "numerator": -266,
+        "denominator": 10,
+        "output": -27
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000feffffffffffffff0b000000000000000100000000000000020000000f00000000000000e4ffffffffffffff030000002000000000000000110000000000000002000000",
+      "expected": {
+        "predictions": [
+          -1,
+          -2,
+          -4
+        ],
+        "gradients": [
+          -1,
+          24,
+          -42
+        ],
+        "updates": [
+          -2,
+          -8,
+          8
+        ],
+        "numerator": -12,
+        "denominator": 7,
+        "output": -2
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000090000000000000020000000000000000e00000000000000040000001a000000000000000d0000000000000003000000eafffffffffffffff1ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          18,
+          15,
+          -12
+        ],
+        "gradients": [
+          8,
+          3,
+          -4
+        ],
+        "updates": [
+          7,
+          8,
+          10
+        ],
+        "numerator": 62,
+        "denominator": 8,
+        "output": 8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000a0000000000000015000000000000000100000000000000040000000400000000000000fdffffffffffffff03000000f6ffffffffffffffe4ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          13,
+          2,
+          -6
+        ],
+        "gradients": [
+          16,
+          1,
+          -14
+        ],
+        "updates": [
+          6,
+          10,
+          14
+        ],
+        "numerator": 68,
+        "denominator": 8,
+        "output": 8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000040000000000000005000000000000000800000000000000030000002000000000000000e1ffffffffffffff04000000f7ffffffffffffffe0ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          1,
+          8,
+          -2
+        ],
+        "gradients": [
+          -2,
+          78,
+          -17
+        ],
+        "updates": [
+          4,
+          -16,
+          8
+        ],
+        "numerator": -28,
+        "denominator": 10,
+        "output": -3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000500000000000000feffffffffffffff0f0000000000000003000000eaffffffffffffffe2ffffffffffffff03000000faffffffffffffff190000000000000002000000",
+      "expected": {
+        "predictions": [
+          -1,
+          -7,
+          -2
+        ],
+        "gradients": [
+          2,
+          -32,
+          10
+        ],
+        "updates": [
+          5,
+          13,
+          3
+        ],
+        "numerator": 60,
+        "denominator": 8,
+        "output": 8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000f000000000000001a00000000000000110000000000000002000000f9ffffffffffffff1b0000000000000001000000fbffffffffffffffe6ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          24,
+          -7,
+          -5
+        ],
+        "gradients": [
+          11,
+          15,
+          -7
+        ],
+        "updates": [
+          12,
+          11,
+          17
+        ],
+        "numerator": 103,
+        "denominator": 7,
+        "output": 15
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000003000000000000000f000000000000000700000000000000030000000b00000000000000ebffffffffffffff01000000f2ffffffffffffff170000000000000002000000",
+      "expected": {
+        "predictions": [
+          3,
+          2,
+          -3
+        ],
+        "gradients": [
+          -4,
+          16,
+          23
+        ],
+        "updates": [
+          4,
+          -1,
+          -3
+        ],
+        "numerator": 5,
+        "denominator": 6,
+        "output": 1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fcfffffffffffffff5ffffffffffffff1b00000000000000010000000d000000000000000d0000000000000002000000e0fffffffffffffff6ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          3,
+          -3,
+          8
+        ],
+        "gradients": [
+          16,
+          -13,
+          -36
+        ],
+        "updates": [
+          -8,
+          -1,
+          5
+        ],
+        "numerator": 0,
+        "denominator": 5,
+        "output": 0
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000015000000000000000f000000000000001500000000000000030000000d000000000000001800000000000000020000000c00000000000000efffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          20,
+          17,
+          16
+        ],
+        "gradients": [
+          -1,
+          -6,
+          25
+        ],
+        "updates": [
+          21,
+          23,
+          15
+        ],
+        "numerator": 154,
+        "denominator": 8,
+        "output": 19
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fcffffffffffffffeaffffffffffffff090000000000000001000000e3ffffffffffffff190000000000000002000000eaffffffffffffffe7ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          6,
+          7,
+          6
+        ],
+        "gradients": [
+          4,
+          33,
+          -43
+        ],
+        "updates": [
+          -5,
+          -12,
+          7
+        ],
+        "numerator": -8,
+        "denominator": 6,
+        "output": -1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001b0000000000000002000000000000000100000000000000020000001f000000000000000200000000000000010000002000000000000000f4ffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          3,
+          52,
+          54
+        ],
+        "gradients": [
+          0,
+          97,
+          132
+        ],
+        "updates": [
+          27,
+          3,
+          -6
+        ],
+        "numerator": 51,
+        "denominator": 4,
+        "output": 13
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f2ffffffffffffffe6fffffffffffffffaffffffffffffff02000000efffffffffffffff0e0000000000000004000000edffffffffffffff1a0000000000000003000000",
+      "expected": {
+        "predictions": [
+          23,
+          15,
+          17
+        ],
+        "gradients": [
+          -47,
+          -1,
+          11
+        ],
+        "updates": [
+          -2,
+          -14,
+          -17
+        ],
+        "numerator": -111,
+        "denominator": 9,
+        "output": -12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e2fffffffffffffffbfffffffffffffffdffffffffffffff01000000f5ffffffffffffff0a00000000000000040000001c00000000000000e3ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          9,
+          21,
+          -52
+        ],
+        "gradients": [
+          -4,
+          -8,
+          -40
+        ],
+        "updates": [
+          -29,
+          -28,
+          -20
+        ],
+        "numerator": -221,
+        "denominator": 9,
+        "output": -25
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001e000000000000000500000000000000f9ffffffffffffff0200000008000000000000001b0000000000000001000000f1fffffffffffffff8ffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          9,
+          15,
+          -28
+        ],
+        "gradients": [
+          5,
+          -6,
+          19
+        ],
+        "updates": [
+          29,
+          32,
+          25
+        ],
+        "numerator": 190,
+        "denominator": 7,
+        "output": 27
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001a0000000000000013000000000000000d000000000000000400000007000000000000001c00000000000000040000000800000000000000000000000000000003000000",
+      "expected": {
+        "predictions": [
+          31,
+          11,
+          13
+        ],
+        "gradients": [
+          21,
+          -7,
+          6
+        ],
+        "updates": [
+          21,
+          28,
+          24
+        ],
+        "numerator": 268,
+        "denominator": 11,
+        "output": 24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000fbfffffffffffffff2fffffffffffffffcffffffffffffff030000001c00000000000000160000000000000003000000f0ffffffffffffffe4ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          4,
+          -9,
+          5
+        ],
+        "gradients": [
+          -7,
+          -54,
+          -33
+        ],
+        "updates": [
+          -3,
+          9,
+          3
+        ],
+        "numerator": 27,
+        "denominator": 9,
+        "output": 3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000e00000000000000ffffffffffffffffe4ffffffffffffff030000000500000000000000f3ffffffffffffff0200000010000000000000000e0000000000000003000000",
+      "expected": {
+        "predictions": [
+          -1,
+          4,
+          14
+        ],
+        "gradients": [
+          -2,
+          5,
+          0
+        ],
+        "updates": [
+          14,
+          13,
+          14
+        ],
+        "numerator": 110,
+        "denominator": 8,
+        "output": 14
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f5ffffffffffffff0b00000000000000e7ffffffffffffff02000000e0ffffffffffffffeaffffffffffffff030000001f00000000000000edffffffffffffff04000000",
+      "expected": {
+        "predictions": [
+          -8,
+          22,
+          -21
+        ],
+        "gradients": [
+          12,
+          -88,
+          -4
+        ],
+        "updates": [
+          -14,
+          11,
+          -10
+        ],
+        "numerator": -35,
+        "denominator": 9,
+        "output": -4
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f2ffffffffffffff1100000000000000eaffffffffffffff010000001200000000000000ffffffffffffffff04000000e0ffffffffffffff160000000000000004000000",
+      "expected": {
+        "predictions": [
+          -15,
+          -16,
+          28
+        ],
+        "gradients": [
+          7,
+          -17,
+          -12
+        ],
+        "updates": [
+          -16,
+          -10,
+          -11
+        ],
+        "numerator": -100,
+        "denominator": 9,
+        "output": -11
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000011000000000000001000000000000000000000000000000004000000e0ffffffffffffff150000000000000002000000e5ffffffffffffffecffffffffffffff01000000",
+      "expected": {
+        "predictions": [
+          17,
+          -34,
+          -29
+        ],
+        "gradients": [
+          17,
+          110,
+          15
+        ],
+        "updates": [
+          13,
+          -11,
+          13
+        ],
+        "numerator": 43,
+        "denominator": 7,
+        "output": 6
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000000f000000000000000500000000000000eaffffffffffffff020000001700000000000000fcffffffffffffff020000001200000000000000feffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          5,
+          22,
+          17
+        ],
+        "gradients": [
+          8,
+          37,
+          21
+        ],
+        "updates": [
+          13,
+          6,
+          10
+        ],
+        "numerator": 68,
+        "denominator": 7,
+        "output": 10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000002000000000000000300000000000000110000000000000004000000e4ffffffffffffff0800000000000000020000000e00000000000000130000000000000003000000",
+      "expected": {
+        "predictions": [
+          0,
+          -4,
+          2
+        ],
+        "gradients": [
+          -3,
+          21,
+          -15
+        ],
+        "updates": [
+          3,
+          -3,
+          6
+        ],
+        "numerator": 24,
+        "denominator": 9,
+        "output": 3
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e6ffffffffffffff0b00000000000000ecffffffffffffff030000001500000000000000f0ffffffffffffff04000000e6ffffffffffffffe5ffffffffffffff03000000",
+      "expected": {
+        "predictions": [
+          -18,
+          -34,
+          42
+        ],
+        "gradients": [
+          1,
+          -24,
+          -112
+        ],
+        "updates": [
+          -26,
+          -20,
+          2
+        ],
+        "numerator": -152,
+        "denominator": 10,
+        "output": -15
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000e7ffffffffffffff1d00000000000000e0ffffffffffffff0200000009000000000000000f0000000000000001000000e5ffffffffffffff200000000000000001000000",
+      "expected": {
+        "predictions": [
+          -45,
+          -14,
+          42
+        ],
+        "gradients": [
+          -24,
+          -16,
+          -17
+        ],
+        "updates": [
+          -19,
+          -21,
+          -21
+        ],
+        "numerator": -80,
+        "denominator": 4,
+        "output": -20
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f9ffffffffffffff1a00000000000000e2ffffffffffffff010000000800000000000000e4ffffffffffffff040000001400000000000000030000000000000003000000",
+      "expected": {
+        "predictions": [
+          -11,
+          -4,
+          -9
+        ],
+        "gradients": [
+          31,
+          12,
+          -15
+        ],
+        "updates": [
+          -15,
+          -10,
+          -3
+        ],
+        "numerator": -64,
+        "denominator": 8,
+        "output": -8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f1fffffffffffffffafffffffffffffffcffffffffffffff01000000efffffffffffffffe7ffffffffffffff03000000f3ffffffffffffff1c0000000000000002000000",
+      "expected": {
+        "predictions": [
+          6,
+          16,
+          12
+        ],
+        "gradients": [
+          -4,
+          -44,
+          13
+        ],
+        "updates": [
+          -14,
+          -4,
+          -18
+        ],
+        "numerator": -62,
+        "denominator": 6,
+        "output": -10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d3031010003001000000011000000000000001100000000000000e0ffffffffffffff020000001e000000000000000b00000000000000020000002000000000000000190000000000000004000000",
+      "expected": {
+        "predictions": [
+          18,
+          32,
+          34
+        ],
+        "gradients": [
+          53,
+          39,
+          18
+        ],
+        "updates": [
+          4,
+          7,
+          13
+        ],
+        "numerator": 74,
+        "denominator": 8,
+        "output": 9
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000faffffffffffffff1900000000000000e7ffffffffffffff02000000e8fffffffffffffff7ffffffffffffff010000000d00000000000000ebffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -9,
+          9,
+          -5
+        ],
+        "gradients": [
+          25,
+          -27,
+          13
+        ],
+        "updates": [
+          -12,
+          1,
+          -9
+        ],
+        "numerator": -41,
+        "denominator": 5,
+        "output": -8
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001200000000000000e4ffffffffffffff200000000000000004000000f7fffffffffffffff2ffffffffffffff02000000e8ffffffffffffff1b0000000000000001000000",
+      "expected": {
+        "predictions": [
+          -32,
+          -10,
+          -27
+        ],
+        "gradients": [
+          112,
+          -2,
+          81
+        ],
+        "updates": [
+          -10,
+          18,
+          -2
+        ],
+        "numerator": -6,
+        "denominator": 7,
+        "output": -1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f1ffffffffffffffe9ffffffffffffffe1ffffffffffffff030000001b00000000000000feffffffffffffff020000001300000000000000040000000000000001000000",
+      "expected": {
+        "predictions": [
+          22,
+          -25,
+          -18
+        ],
+        "gradients": [
+          -76,
+          -39,
+          -26
+        ],
+        "updates": [
+          4,
+          -5,
+          -9
+        ],
+        "numerator": -7,
+        "denominator": 6,
+        "output": -1
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d303101000300100000001c00000000000000f8ffffffffffffff0600000000000000010000001000000000000000f4ffffffffffffff02000000fdffffffffffffffe4ffffffffffffff02000000",
+      "expected": {
+        "predictions": [
+          -14,
+          28,
+          -5
+        ],
+        "gradients": [
+          10,
+          40,
+          -4
+        ],
+        "updates": [
+          26,
+          18,
+          29
+        ],
+        "numerator": 120,
+        "denominator": 5,
+        "output": 24
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f6fffffffffffffffbffffffffffffffeeffffffffffffff01000000f4ffffffffffffff1e00000000000000030000000900000000000000170000000000000002000000",
+      "expected": {
+        "predictions": [
+          3,
+          8,
+          -6
+        ],
+        "gradients": [
+          -7,
+          16,
+          -16
+        ],
+        "updates": [
+          -8,
+          -14,
+          -6
+        ],
+        "numerator": -62,
+        "denominator": 6,
+        "output": -10
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000f4fffffffffffffffdfffffffffffffffcffffffffffffff02000000fdffffffffffffffedffffffffffffff02000000eeffffffffffffff1a0000000000000001000000",
+      "expected": {
+        "predictions": [
+          2,
+          2,
+          14
+        ],
+        "gradients": [
+          -1,
+          -4,
+          14
+        ],
+        "updates": [
+          -12,
+          -11,
+          -16
+        ],
+        "numerator": -62,
+        "denominator": 5,
+        "output": -12
+      }
+    },
+    {
+      "canonical_hex": "465a4b4e554d30310100030010000000eafffffffffffffff2ffffffffffffff0500000000000000020000001600000000000000e6ffffffffffffff010000001300000000000000190000000000000002000000",
+      "expected": {
+        "predictions": [
+          19,
+          -30,
+          -26
+        ],
+        "gradients": [
+          -12,
+          -6,
+          -61
+        ],
+        "updates": [
+          -19,
+          -20,
+          -7
+        ],
+        "numerator": -72,
+        "denominator": 5,
+        "output": -14
+      }
+    }
+  ],
+  "invalid_hex": [
+    "",
+    "465a4b4e554d3031010003001000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000",
+    "465a4b4e554d30310100030010000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000",
+    "57524f4e4730303101000300100000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000",
+    "465a4b4e554d303102000300100000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000",
+    "465a4b4e554d303101000300100000002100000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000",
+    "465a4b4e554d30310100030010000000dfffffffffffffff000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000",
+    "465a4b4e554d303101000300100000000000000000000080000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000",
+    "465a4b4e554d303101000300100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000",
+    "465a4b4e554d303101000300100000000000000000000000000000000000000000000000000000000500000000000000000000000000000000000000010000000000000000000000000000000000000001000000",
+    "465a4b4e554d30310100030010000000000000000000000000000000000000000000000000000000ffffffff00000000000000000000000000000000010000000000000000000000000000000000000001000000"
+  ]
+}

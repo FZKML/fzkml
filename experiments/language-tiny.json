@@ -1,0 +1,16 @@
+{
+  "experiment_id": "language-tiny-v1",
+  "contract_version": "fzknum-1.0.0",
+  "fixture_id": "numeric-v1",
+  "command": "./scripts/validate-language",
+  "model": "Linear(1,1,bias=False)",
+  "optimizer": "SGD(lr=0.25,momentum=0,weight_decay=0)",
+  "preprocessor": "identity",
+  "dtype": "float64 CPU",
+  "fixture_seed": 7,
+  "protocol_randomness": "OS entropy; never recorded or derived from fixture seed",
+  "repetitions": 1,
+  "outputs": ["reports/language-profile.json", "reports/language-result.json on GitHub CI only"],
+  "claims": [],
+  "limitations": ["Public synthetic integration fixture", "Not a statistical performance or learning-quality study"]
+}

@@ -1,0 +1,699 @@
+{
+  "schema_version": "1.0.0",
+  "claims": {
+    "FZK-MS20261124-C02-DEF-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 14766,
+        "end_utf16": 14778,
+        "heading_id": "h.mn3e6ekapbyf",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mn3e6ekapbyf"
+      },
+      "source_range_utf16": [
+        14766,
+        16508
+      ],
+      "source_review": "prose-inspected-equations-pending",
+      "native_equation_ids": [
+        "native-16109",
+        "native-16327"
+      ],
+      "observer": "public; coordinator; coordinator plus at most one statically corrupt client",
+      "privacy_unit": "none; no DP claim",
+      "numerical_semantics": "not-applicable",
+      "required_validation": [
+        "observer-view audit",
+        "abort/rejection leakage audit"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/deployment-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C03-MATH-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 16571,
+        "end_utf16": 16582,
+        "heading_id": "h.4i1eqlmd67wf",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.4i1eqlmd67wf"
+      },
+      "source_range_utf16": [
+        16571,
+        17266
+      ],
+      "source_review": "prose-inspected-equations-pending",
+      "native_equation_ids": [
+        "native-16761"
+      ],
+      "observer": "all observers of the released model",
+      "privacy_unit": "none; sensitivity not derived",
+      "numerical_semantics": "signed integers; nearest ties toward positive infinity",
+      "required_validation": [
+        "roster/weight conservation",
+        "empty/zero denominator rejection",
+        "negative rounding vectors"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/deployment-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C04-SEC-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 18401,
+        "end_utf16": 18430,
+        "heading_id": "h.qynfat1gdlfk",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.qynfat1gdlfk"
+      },
+      "source_range_utf16": [
+        18401,
+        19586
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "public verifier and coordinator",
+      "privacy_unit": "none; witness confidentiality target only",
+      "numerical_semantics": "canonical message encoding pending #32",
+      "required_validation": [
+        "commitment-opening negative tests",
+        "independent commitment/setup review"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/security-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C05-SEC-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 19612,
+        "end_utf16": 19640,
+        "heading_id": "h.saoa7hxj9kic",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.saoa7hxj9kic"
+      },
+      "source_range_utf16": [
+        19612,
+        20464
+      ],
+      "source_review": "prose-inspected-equations-pending",
+      "native_equation_ids": [
+        "native-19763"
+      ],
+      "observer": "standalone verifier given public instance",
+      "privacy_unit": "none; not DP",
+      "numerical_semantics": "relation-v0.1 bounded integers",
+      "required_validation": [
+        "wrong-instance/witness rejection",
+        "backend theorem and extractor review"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/security-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C07-REL-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 22686,
+        "end_utf16": 22715,
+        "heading_id": "h.3qc3zk3a4gwj",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.3qc3zk3a4gwj"
+      },
+      "source_range_utf16": [
+        22686,
+        23580
+      ],
+      "source_review": "prose-inspected-equations-pending",
+      "native_equation_ids": [
+        "native-22760"
+      ],
+      "observer": "public verifier; witnesses remain synthetic and public in simulation",
+      "privacy_unit": "none",
+      "numerical_semantics": "S=16; rate 1; ties toward positive infinity",
+      "required_validation": [
+        "independent exact arithmetic vectors",
+        "range/remainder adversarial corpus",
+        "public-context binding mutations"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/relation-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C14-SEC-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 30678,
+        "end_utf16": 30694,
+        "heading_id": "h.4zc95m5dipwu",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.4zc95m5dipwu"
+      },
+      "source_range_utf16": [
+        30678,
+        31338
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "coordinator plus one corrupt client; public verifier",
+      "privacy_unit": "none",
+      "numerical_semantics": "exact payload/commitment encoding pending #44",
+      "required_validation": [
+        "valid-proof/different-payload attack",
+        "external protocol-composition review"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/security-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C17-DEF-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 33480,
+        "end_utf16": 33517,
+        "heading_id": "h.30fmns6fp5js",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.30fmns6fp5js"
+      },
+      "source_range_utf16": [
+        33480,
+        34005
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "all observers",
+      "privacy_unit": "none",
+      "numerical_semantics": "representation-specific binding",
+      "required_validation": [
+        "provenance/permission review"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/fixtures-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C38-DEF-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 45938,
+        "end_utf16": 45972,
+        "heading_id": "h.l88xmv590y85",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.l88xmv590y85"
+      },
+      "source_range_utf16": [
+        45938,
+        47939
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "manifest-declared observer",
+      "privacy_unit": "mode-specific; none by default",
+      "numerical_semantics": "manifest-declared relation",
+      "required_validation": [
+        "matrix completeness check",
+        "manifest assurance-type review"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/capabilities-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C40-REL-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 65671,
+        "end_utf16": 65720,
+        "heading_id": "h.2i5vvyqm5f1l",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.2i5vvyqm5f1l"
+      },
+      "source_range_utf16": [
+        65671,
+        68475
+      ],
+      "source_review": "prose-and-equation-markup-inspected",
+      "native_equation_ids": [
+        "native-66390",
+        "native-66581",
+        "native-66608",
+        "native-66642",
+        "native-66651",
+        "native-66694"
+      ],
+      "observer": "transparent simulator and future standalone verifier",
+      "privacy_unit": "none",
+      "numerical_semantics": "rnd16(v)=floor((v+8)/16)",
+      "required_validation": [
+        "independent reference computation under #28",
+        "native-equation source inspection"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/relation-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied.",
+      "source_inspection_record": "docs/research/s03-source-inspection.json"
+    },
+    "FZK-MS20261124-C43-DEF-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 112748,
+        "end_utf16": 112803,
+        "heading_id": "h.w0rgjjp54sqv",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.w0rgjjp54sqv"
+      },
+      "source_range_utf16": [
+        112748,
+        114313
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "all logical roles in a local simulation",
+      "privacy_unit": "none",
+      "numerical_semantics": "relation-v0.1",
+      "required_validation": [
+        "state-machine acceptance/recovery tests under later implementation issues"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/deployment-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C43-EXP-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 116320,
+        "end_utf16": 116363,
+        "heading_id": "h.9f7b3s41mv0e",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.9f7b3s41mv0e"
+      },
+      "source_range_utf16": [
+        116320,
+        118667
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "same declared observer across matched arms",
+      "privacy_unit": "fixed before any protected comparison",
+      "numerical_semantics": "identical relation and initialization",
+      "required_validation": [
+        "matched-trace equality",
+        "paired resource/quality experiment",
+        "failure cost audit"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/measurement-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C73-MATH-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 503105,
+        "end_utf16": 503166,
+        "heading_id": "h.mpflvnnhtwzq",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.mpflvnnhtwzq"
+      },
+      "source_range_utf16": [
+        503105,
+        505495
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "two isolated honest verifiers",
+      "privacy_unit": "none",
+      "numerical_semantics": "abstract state transition",
+      "required_validation": [
+        "two-history counterexample",
+        "independent protocol review"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/security-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C73-SEC-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 509345,
+        "end_utf16": 509427,
+        "heading_id": "h.nn42qotnu70g",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.nn42qotnu70g"
+      },
+      "source_range_utf16": [
+        509345,
+        511545
+      ],
+      "source_review": "prose-inspected-equations-pending",
+      "native_equation_ids": [
+        "native-510226"
+      ],
+      "observer": "complete declared observer transcript",
+      "privacy_unit": "chosen adjacency must be specified by later #54/#57",
+      "numerical_semantics": "no numeric approximation term is a DP parameter",
+      "required_validation": [
+        "native-equation source inspection",
+        "independent privacy/composition review"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "specs/m0/security-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C77-HYP-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 554365,
+        "end_utf16": 554410,
+        "heading_id": "h.q2ksf8xsi601",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.q2ksf8xsi601"
+      },
+      "source_range_utf16": [
+        554365,
+        556986
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "public approved experiment report",
+      "privacy_unit": "none for public synthetic data",
+      "numerical_semantics": "new batch profile required for sample-count effects",
+      "required_validation": [
+        "factorial paired experiment",
+        "duplicate/entity/time split audit"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "experiments/m0/preregistration-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C80-HYP-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 593411,
+        "end_utf16": 593454,
+        "heading_id": "h.56u5q1l9c7bl",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.56u5q1l9c7bl"
+      },
+      "source_range_utf16": [
+        593411,
+        598649
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "declared released-model observer",
+      "privacy_unit": "same privacy unit across compared protected arms",
+      "numerical_semantics": "identical fixed-point profile",
+      "required_validation": [
+        "20-seed paired experiment",
+        "censored time-to-quality and cost report"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "experiments/m0/preregistration-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C80-ADOPT-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 598649,
+        "end_utf16": 598712,
+        "heading_id": "h.8l3iothd8p0p",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.8l3iothd8p0p"
+      },
+      "source_range_utf16": [
+        598649,
+        599700
+      ],
+      "source_review": "prose-inspected",
+      "native_equation_ids": [],
+      "observer": "approved aggregate field-study observer",
+      "privacy_unit": "study-specific; not defined by this synthetic prototype",
+      "numerical_semantics": "not-applicable",
+      "required_validation": [
+        "consented field study",
+        "independent outcome analysis"
+      ],
+      "implementation_status": "unimplemented",
+      "experiment_status": "not-run",
+      "specification": "experiments/m0/preregistration-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary/adaptation; no manuscript body copied."
+    },
+    "FZK-MS20261124-C47-ENTROPY-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 153850,
+        "end_utf16": 155709,
+        "heading_id": "h.46hgt8p76kii",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.46hgt8p76kii"
+      },
+      "source_range_utf16": [
+        153850,
+        155709
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-154277"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "independent mathematical review",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "analytic-specification-only",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C47-RETRY-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 155709,
+        "end_utf16": 159848,
+        "heading_id": "h.7it5eevtnxo1",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.7it5eevtnxo1"
+      },
+      "source_range_utf16": [
+        155709,
+        159848
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-156319",
+        "native-156345",
+        "native-156505"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C47-LEDGER-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 159848,
+        "end_utf16": 161801,
+        "heading_id": "h.6ygnggir7wzu",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.6ygnggir7wzu"
+      },
+      "source_range_utf16": [
+        159848,
+        161801
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C75-GEOMETRY-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 533337,
+        "end_utf16": 535556,
+        "heading_id": "h.h96lab402kwp",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.h96lab402kwp"
+      },
+      "source_range_utf16": [
+        533337,
+        535556
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-533631",
+        "native-533704",
+        "native-533726",
+        "native-534998"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "independent mathematical review",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "analytic-specification-only",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C75-REFERENCE-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 526389,
+        "end_utf16": 535556,
+        "heading_id": "h.7z55qb3kyte5",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.7z55qb3kyte5"
+      },
+      "source_range_utf16": [
+        526389,
+        535556
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-527046",
+        "native-530158",
+        "native-530755",
+        "native-533631",
+        "native-533704",
+        "native-533726",
+        "native-534998"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C53-INCLUSION-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 239089,
+        "end_utf16": 241418,
+        "heading_id": "h.g2hxl15c4lor",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.g2hxl15c4lor"
+      },
+      "source_range_utf16": [
+        239089,
+        241418
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [
+        "native-239434",
+        "native-240038",
+        "native-240157"
+      ],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    },
+    "FZK-MS20261124-C67-POPULATION-001": {
+      "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+      "source_location": {
+        "tab_id": "t.0",
+        "start_utf16": 420350,
+        "end_utf16": 424215,
+        "heading_id": "h.o0gvyscd0hen",
+        "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit#heading=h.o0gvyscd0hen"
+      },
+      "source_range_utf16": [
+        420350,
+        424215
+      ],
+      "source_review": "export-markup-inspected",
+      "source_inspection_record": "docs/research/transcript-source-review.json",
+      "native_equation_ids": [],
+      "observer": "fixed synthetic coordinating server; coalition side information explicit in Gaussian fixtures",
+      "privacy_unit": "synthetic-record for ledger; analytic adjacency as stated in the specification",
+      "numerical_semantics": "Exact rational reference arithmetic; erf approximation only is rounded with absolute tolerance 1e-12",
+      "required_validation": [
+        "named reference unit test",
+        "independent protocol/privacy composition review before deployment"
+      ],
+      "implementation_status": "reference-implemented",
+      "experiment_status": "not-run",
+      "specification": "specs/privacy/transcript-v0.1.md",
+      "review_status": "pending-independent-review",
+      "source_derivation": "Original scoped engineering summary and implementation after authorized source inspection."
+    }
+  }
+}

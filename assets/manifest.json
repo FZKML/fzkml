@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "governance-vector-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/m0-governance-foundation/assets/public/governance-vector.json",
+      "version": "governance-vector-v1; sha256 identifies exact bytes",
+      "path": "assets/public/governance-vector.json",
+      "sha256": "ce2e2e27ff4ea63391bbf406d348b8de1d60a475d29856b5e07dba77e6e8d534",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original FZKML repository contribution; contributor provenance in Git history.",
+      "intended_use": "Exercise governance checks only; no scientific or training use.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Literal deterministic integer vector; no random sampling",
+        "configuration": {
+          "values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "seed": "not applicable; no randomness"
+        }
+      },
+      "source_inputs": "none; no private or external inputs",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original contribution submitted for PR review)",
+        "date": "2026-11-24",
+        "decision": "Original trivial synthetic metadata fixture only; maintainer reviews this decision with the PR."
+      }
+    },
+    {
+      "id": "numeric-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/language-contract-bindings/assets/public/numeric-v1.json",
+      "version": "numeric-v1; exact-byte sha256 plus embedded contract_sha256",
+      "path": "assets/public/numeric-v1.json",
+      "sha256": "454af1102b6eff77c878b9012600320bdb25c797447ff067c716ea9242d693b8",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original FZKML contribution; no external dataset/model or private manuscript inputs.",
+      "intended_use": "Public exact arithmetic/interface conformance only; not a learning benchmark.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "scripts/generate_numeric_vectors.py using independent standard-library Fraction oracle",
+        "configuration": {
+          "seed": 20261124,
+          "valid_cases": 261,
+          "invalid_cases": 11,
+          "source_inputs": "none"
+        }
+      },
+      "source_inputs": "none; literal synthetic integer domain only",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original implementation submitted for maintainer PR review)",
+        "date": "2026-11-24",
+        "decision": "Original public generated test vectors; no third-party asset rights assumed. Numeric/security correctness requires separate review."
+      }
+    },
+    {
+      "id": "synthetic-cross-silo-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/m0-scientific-specifications/scripts/research_fixtures.py",
+      "version": "synthetic-records-1.0; exact payload identified by SHA-256",
+      "path": "assets/public/synthetic-cross-silo-v1.json",
+      "sha256": "4e9adb696712bb682b69d87e5b02644896a525a23d4a510d949c4e5dc333e6b7",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original synthetic generator and fixtures; contributor provenance recorded in Git history.",
+      "intended_use": "Deterministic split/provenance conformance checks only; benchmark use awaits independent provenance review.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "SHA-256 of domain-separated public seed/site/entity/visit; bounded original integer features, repeated visits and explicit duplicates",
+        "configuration": {
+          "seed": 20261124,
+          "sources": 4,
+          "entities_per_source": 12,
+          "visits_per_entity": 2,
+          "duplicates_per_source": 1,
+          "scale": 16
+        }
+      },
+      "source_inputs": "none; no private, external or manuscript data inputs",
+      "review": {
+        "status": "approved",
+        "reviewer": "original synthetic contribution submitted for maintainer PR review",
+        "date": "2026-11-24",
+        "decision": "Source-only synthetic conformance payload under the repository license. No independent benchmark adoption approval is asserted."
+      }
+    },
+    {
+      "id": "transcript-analytic-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/transcript-privacy-research/src/fzkml_transcript/fixtures.py",
+      "version": "transcript-analytic-1; exact bytes identified by SHA-256",
+      "path": "assets/public/transcript-analytic-v1.json",
+      "sha256": "ae294df7023abc6e7639e9e3baa3cc1899bc041d0e1733fc0717a85a344c0d72",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original analytic fixture implementation generated with Codex; manuscript and primary source references recorded separately.",
+      "intended_use": "Exact mathematical/synthetic conformance cases only, not a private dataset or deployed privacy benchmark.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Deterministic exact rational functions and one named erf approximation; no sampled data",
+        "configuration": {
+          "precision": "(8/5)I_3-(1/2)11^T",
+          "clip_bound": 1,
+          "delta_over_sigma": "1/10",
+          "final_inclusions": [
+            "1",
+            "1/10"
+          ],
+          "seed": "not applicable; no sampling"
+        }
+      },
+      "source_inputs": "No data/model inputs. Mathematical parameters refer to inspected source locations in docs/research/transcript-source-review.json.",
+      "review": {
+        "status": "approved",
+        "reviewer": "original synthetic contribution submitted for maintainer review",
+        "date": "2026-11-24",
+        "decision": "Original analytic fixture only; no independent benchmark/privacy approval asserted."
+      }
+    },
+    {
+      "id": "private-transcript-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/private-transition-proof/assets/public/private-transcript-v1.json",
+      "version": "private-transcript-v1; exact-byte sha256 plus embedded statement digest",
+      "path": "assets/public/private-transcript-v1.json",
+      "sha256": "8d015695e3bd4ccae26c81c1ee1c2ab7342e7a8206e16bb63b683e8a50e678e7",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original FZKML contribution; public synthetic values and test-only openings; no private manuscript inputs.",
+      "intended_use": "Public commitment/transcript encoding and low-entropy leakage counterexample tests only; not a security or training dataset.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "scripts/generate_private_vectors.py using standard-library SHA-256 and struct",
+        "configuration": {
+          "source": "reference/private_transcript.py",
+          "public_test_openings": [
+            11,
+            19
+          ],
+          "private_inputs": "none"
+        }
+      },
+      "source_inputs": "none; all values and openings are public synthetic fixtures",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original implementation submitted for PR review)",
+        "date": "2026-11-24",
+        "decision": "Original public conformance fixture only. Test openings are intentionally public and must never be reused operationally; no hiding or cryptographic security conclusion is implied."
+      }
+    },
+    {
+      "id": "model-capacity-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/s04/model-capacity/assets/public/model-capacity-v1.json",
+      "version": "model-capacity-1.0.0; exact bytes identified by SHA-256",
+      "path": "assets/public/model-capacity-v1.json",
+      "sha256": "0fa76ec2d6c6aa98f6095dce4f7d246aafc9ce8a435e7e7eb079b27671987584",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original synthetic arrays, independently authored derived numeric facts and source locators; contributor history retained. No manuscript prose or export included.",
+      "intended_use": "Bounded exact conformance, counterexamples and public synthetic proof tests; not deployment/DP or model-quality evidence.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "Original literal synthetic fixtures and exact arithmetic; numeric teaching examples checked against the readable canonical source.",
+        "configuration": {
+          "seed": "not applicable; deterministic fixed public arrays",
+          "private_inputs": "none"
+        }
+      },
+      "source_inputs": "No external dataset/model or manuscript prose; original synthetic arrays and independently calculated public numerical facts.",
+      "review": {
+        "status": "approved",
+        "reviewer": "Original contribution under the maintainer-authorized DCO; scientific review pending",
+        "date": "2026-11-25",
+        "decision": "Original Apache-2.0 fixture provenance only; no independent scientific correctness, security, privacy or publication-policy approval."
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "id": "s04-public-synthetic-v1",
+  "status": "proposed",
+  "scope": "Only the fixed original Apache-2.0 public synthetic three-client arithmetic fixture and bounded CI-04 outcomes; no private or manuscript inputs.",
+  "producer_files": {
+    "scripts/s04-proof": "sha256:1c3640ef96e0cea4005fb4c053587152f830f5e9aef3cac6bcbd219f979374ce",
+    "scripts/s04_proof.py": "sha256:11078cf9f2979f3071c88ff19f7d1b2f619c444cb8084c43becef36ec642ef22",
+    "scripts/s04-report": "sha256:a0cae74faf23a506cee86d2d0623b7fcc8a3ea4f63b065d1c6efbe0f620242fb",
+    "scripts/s04_report.py": "sha256:e72854e34e851e0908e932e09c8208713a4af9df32e3bdf06bc9c8dce03f3af7",
+    "scripts/research": "sha256:52493cd159d2bf9f661db1d0796ee423acc55cdb162988108506a0f8cc016737",
+    "scripts/reproduce": "sha256:d5397cbfe0e8425cc46fbd55a95e60600c133862f854e7d64e9aff04ad0387b6",
+    "src/fzkml_ci/publication.py": "sha256:6f9cd3634c5a0ad1416998e86d4fcef1e2c36b984ee94168d58ac2b1389f4c71",
+    "src/fzkml_ci/validate.py": "sha256:d831c6b263cfdc4b695bdae1330a392b8d4c756a15ea20e9c59e8f97d0522ce4",
+    "src/fzkml_ci/research.py": "sha256:a3fc93c19e0af7f3f5c24c30ac053c329b4c2564d35851a283388f952288b372",
+    "src/fzkml_ci/s04.py": "sha256:57454e0eb51f40f44801114fdba33fb18377c47084ef87afda27c359d64a0397",
+    "src/fzkml_ci/report.py": "sha256:d782c07f226447d10d6daa5c6c1de38b873d174d3dc93b5a5550c3e08167a68e",
+    "src/fzkml_ci/benchmark.py": "sha256:cec28480d19ee066b26c4731ba7d23405f6d7d9c0ad2fb079bb38e47b6a28c26",
+    "src/fzkml_ci/__main__.py": "sha256:3005e0130ccb393329bcc990c3ea0d2ae90434965e0dd54c0f3dd07c0fad2490",
+    "crates/fzkml-core/src/lib.rs": "sha256:31d1680a7be386ca36b549797d61e1efeb81296c627404e5d650f4c2ef2e1b1c",
+    "crates/fzkml-core/src/proof.rs": "sha256:aa8b1ce49cb5aa59b525f1dd10619917af37d56ac1cdd7b02fbbe0d10767946d",
+    "crates/fzkml-python/src/lib.rs": "sha256:f6b6145cb8ff645940218c3b3ebd340eeb3c9ea6df32a31d8abe079e6d00f25f",
+    "bindings/python/fzkml_native/__init__.py": "sha256:5d39e0b719b8afb3be8aad6748daa5b0fa35b769be03ae4d22958b436d10d912",
+    "reference/numeric.py": "sha256:f11d110fa07e11a7047a8f1286eb65bda82c8e7fa669d92f7e15d70a8f5dd69a",
+    "specs/numeric-contract-v1.json": "sha256:87d097bb7c7af37def94289290fb53e996fc63094144150bc4b1e7112a8b50c0",
+    "assets/public/numeric-v1.json": "sha256:454af1102b6eff77c878b9012600320bdb25c797447ff067c716ea9242d693b8",
+    "Cargo.toml": "sha256:fc25b7320d47b7332d0993e6ef5aae113cafc5bb253fc51ebd4ee759a2673e1a",
+    "Cargo.lock": "sha256:a331067fcc9b226954f792a85e956ad5655a68155d63f828ac09cc8ba11db8ef",
+    "uv.lock": "sha256:430a20df79b8fdd69a2eab08b08f35b4123fffd388131043552edd046bc600a5",
+    "pyproject.toml": "sha256:3108c38d3133f1894999fc2aab0120a2374ea4ba627366d6e88824bf8ebe0daa",
+    "bindings/pyproject.toml": "sha256:2b389b938d3bc690f88731165d9b68f2459f0412c949ace616181f18427732d8",
+    "rust-toolchain.toml": "sha256:b323b19900e4b811af0a8facce5ec11249ed135ae5a46ff5c0be90067521e11f",
+    "tools-requirements.txt": "sha256:733006d4dfccca27a3a781dad8aaa4cf6ed8d42515317a90823a187610b34ef5",
+    ".github/workflows/reports.yml": "sha256:37140e98b8e6590837898664e97b812271bb91300a9cb7601172371fae0b0cb3",
+    "claims/registry.json": "sha256:ceacffa47c1d59d145c0cab0aee295d28b74f21838c4444ccd9853f6652dcebd"
+  },
+  "schemas": {
+    "schemas/bundle-1.0.0.json": "sha256:42c72def250dd8523df1f68896a2ba1206d49783aff34be79440b868d2c38332",
+    "schemas/bundle-1.1.0.json": "sha256:4ba965923f13c02781671567f359eaa1207255773ea1aa3c027827cfc1393e54",
+    "schemas/ci-proof-1.0.0.json": "sha256:878680ccc134ae3e33fcdbdf4b8cf9dc5dd9477b7ca54448eac4223a003f84bb",
+    "schemas/ci-run-1.0.0.json": "sha256:9654e68743bd0ca12f9b8da328bdd8c59b9616c5a41cd7b1635076514309e714",
+    "schemas/claims-1.0.0.json": "sha256:d49eacb8b32c69fb0002c157e35c3ae714157521eeff09823d4076f419b6a057",
+    "schemas/result-1.0.0.json": "sha256:c295bb83cfc24eaec2bc970cf9a00464e01eb00ca13680475e90a3fbb55948a0",
+    "schemas/result-1.1.0.json": "sha256:582bc7a993f3dd5baf612cb90ef0b7ea56480700d9413eb7fa2252ffbbea6f5e"
+  },
+  "allowed_scenarios": [
+    "tiny-proof",
+    "native-circuit-conformance",
+    "negative-cases",
+    "genuine-proof-job"
+  ],
+  "allowed_outcomes": [
+    "successful",
+    "failed",
+    "skipped",
+    "not-run",
+    "inconclusive"
+  ],
+  "limitations": [
+    "No human approval exists for this proposal.",
+    "A protected environment alone does not authorize this policy.",
+    "Policy enforcement does not provide independent scientific, cryptographic or privacy review."
+  ],
+  "human_approval": null
+}

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+fail() { printf '%s\n' "$1" >&2; exit 1; }
+test "$(uv --version | cut -d' ' -f1-2)" = 'uv 0.9.11' || fail unsupported-uv-version
+test "$(rustc --version | cut -d' ' -f2)" = '1.85.1' || fail unsupported-rust-version
+test "$(uv run --locked python -c 'import platform; print(platform.python_version())')" = '3.11.14' || fail unsupported-python-version
+uv lock --check
+cargo metadata --locked --no-deps --format-version 1 >/dev/null
+cargo fmt --all --check
+cargo clippy --workspace --all-targets --locked -- -D warnings
+cargo test --workspace --locked
+uv run --locked ruff check src tests/test_pipeline.py tests/test_ci_research.py tests/test_s04_ci.py tests/test_models.py tests/test_specification_registry.py specifications scripts/check_ci_inventory.py scripts/s04_proof.py scripts/s04_report.py scripts/s04_private.py
+uv run --locked ruff format --check src tests/test_pipeline.py tests/test_ci_research.py tests/test_s04_ci.py tests/test_models.py tests/test_specification_registry.py specifications scripts/check_ci_inventory.py scripts/s04_proof.py scripts/s04_report.py scripts/s04_private.py
+MYPYPATH=bindings/python uv run --locked mypy src tests/test_pipeline.py tests/test_ci_research.py tests/test_s04_ci.py tests/test_models.py tests/test_specification_registry.py specifications scripts/check_ci_inventory.py scripts/s04_proof.py scripts/s04_report.py scripts/s04_private.py
+uv run --locked python scripts/check_governance.py
+uv run --locked python scripts/check_citation.py
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests -p test_governance.py -v
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests -p test_pipeline.py -v
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests -p test_ci_research.py -v
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests -p test_s04_ci.py -v
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests -p test_research.py -v
+PYTHONPATH=src uv run --locked python scripts/check_research.py
+PYTHONPATH=src uv run --locked python specifications/validate.py
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests -p test_transcript_privacy.py -v
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests -p test_specification_registry.py -v
+PYTHONPATH=src uv run --locked python -m fzkml_ci workflow-policy
+git diff --exit-code -- Cargo.lock uv.lock
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests -p test_models.py -v

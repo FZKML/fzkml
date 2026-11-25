@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "source_version": "text-e33a203f59359c1b3ef1dd956e47e4bc38cbab242d479e332f2f86617d9d48b0",
+  "source_edition": "MS20261124",
+  "inspection_record": "docs/research/s03-source-inspection.json",
+  "classification": "source-inspected-transcription-not-independent-oracle",
+  "vectors": [
+    {
+      "id": "chapter40-worked-step",
+      "claim_id": "FZK-MS20261124-C40-REL-001",
+      "relation_id": "m0-two-feature-v0.1",
+      "source_refs": [
+        "FZK-MS20261124-EQ-0050",
+        "FZK-MS20261124-EQ-0051",
+        "FZK-MS20261124-EQ-0052",
+        "FZK-MS20261124-EQ-0053",
+        "FZK-MS20261124-EQ-0054",
+        "FZK-MS20261124-EQ-0055"
+      ],
+      "source_range_utf16": [
+        65671,
+        68475
+      ],
+      "input": {
+        "scale": 16,
+        "features": 2,
+        "selected_records": 1,
+        "learning_rate": 1,
+        "bias": false,
+        "X": [
+          16,
+          -8
+        ],
+        "Y": 4,
+        "W": [
+          8,
+          4
+        ]
+      },
+      "rounding": "nearest-ties-toward-positive-infinity",
+      "expected_trace": {
+        "A": 96,
+        "Q": 6,
+        "E": 2,
+        "G": [
+          2,
+          -1
+        ],
+        "W_next": [
+          6,
+          5
+        ]
+      },
+      "status": "source-inspected-pending-independent-calculation",
+      "limitations": [
+        "Single local worked step; not the four-client M0 aggregation fixture or scalar fzknum implementation.",
+        "No independent numerical replication or formal theorem is asserted."
+      ]
+    }
+  ]
+}

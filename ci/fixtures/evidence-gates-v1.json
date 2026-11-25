@@ -1,0 +1,149 @@
+{
+  "version": "ci-evidence-fixture-v1",
+  "benchmark": {
+    "schedule": [
+      "warmup",
+      "run-1",
+      "run-2",
+      "run-3"
+    ],
+    "seconds": [
+      [
+        0.6,
+        1.2,
+        1.0,
+        1.1
+      ],
+      [
+        0.8,
+        1.4,
+        1.0,
+        1.5
+      ]
+    ]
+  },
+  "lineage": {
+    "rows": [
+      {
+        "id": "r0",
+        "entity": "synthetic-a",
+        "t": 2,
+        "value": 1,
+        "unit": "kWh"
+      },
+      {
+        "id": "r1",
+        "entity": "synthetic-b",
+        "t": 4,
+        "value": 450,
+        "unit": "Wh"
+      }
+    ],
+    "source_sha256": "4f364533e1507d528e91dbb9155f5eec89e145f2034b2e7dcf7e040d522efd99",
+    "watermark": 5,
+    "correction_horizon": 2,
+    "events": [
+      {
+        "id": "e0",
+        "row_id": "r1",
+        "revision": 1,
+        "t": 4,
+        "value": 500,
+        "unit": "Wh"
+      },
+      {
+        "id": "e1",
+        "row_id": "r1",
+        "revision": 2,
+        "t": 4,
+        "value": 0,
+        "unit": "Wh"
+      }
+    ],
+    "expected_after_first": [
+      1000,
+      500
+    ],
+    "expected_after_second": [
+      1000,
+      0
+    ]
+  },
+  "release": {
+    "candidate": "Synthetic summary: 2/2 evaluated.",
+    "canary": "ci-fixture-lilac-71",
+    "train_ids": [
+      "tr0",
+      "tr1",
+      "tr2"
+    ],
+    "eval_ids": [
+      "ev0",
+      "ev1",
+      "ev2",
+      "ev3"
+    ],
+    "assets": [
+      {
+        "id": "dataset",
+        "license": "Apache-2.0",
+        "redistributable": true,
+        "payload": "original synthetic rows, fixture edition 1",
+        "sha256": "bdfc30bfc2c989cc3fa4327e2f69e9165720c6f5a0cda4fd28de30fcdf459e25"
+      },
+      {
+        "id": "checkpoint",
+        "license": "Apache-2.0",
+        "redistributable": true,
+        "payload": "original scalar model, fixture edition 1",
+        "sha256": "b62eb8a233e8bd91a9ee21b22cff59d828bb6da72edbad24a00d6b0c9dcab83e"
+      }
+    ],
+    "publication_approved": true
+  },
+  "outcomes": {
+    "seeds": [
+      17,
+      23,
+      41
+    ],
+    "counts": [
+      1,
+      1,
+      1
+    ],
+    "initial_w": -2,
+    "x": [
+      16,
+      16,
+      -16
+    ],
+    "heldout": [
+      {
+        "id": "ev0",
+        "group": "A",
+        "x": 16,
+        "y": 4
+      },
+      {
+        "id": "ev1",
+        "group": "A",
+        "x": -16,
+        "y": -4
+      },
+      {
+        "id": "ev2",
+        "group": "B",
+        "x": 16,
+        "y": 12
+      },
+      {
+        "id": "ev3",
+        "group": "B",
+        "x": -16,
+        "y": -12
+      }
+    ],
+    "timeout_seed": 23
+  }
+}

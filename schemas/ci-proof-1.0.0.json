@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FZKML/fzkml/schemas/ci-proof-1.0.0.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "backend": {
+      "const": "ark-groth16-0.5.0-bn254"
+    },
+    "proof_mode": {
+      "const": "research-real"
+    },
+    "assurance": {
+      "const": "public-arithmetic-only"
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "verified": {
+      "const": true
+    },
+    "proof_bytes": {
+      "const": 128
+    },
+    "expected_output": {
+      "const": 9
+    },
+    "oracle_matches": {
+      "const": true
+    },
+    "negatives": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "changed-output": {
+          "const": true
+        },
+        "changed-public-count": {
+          "const": true
+        },
+        "wrong-verifying-key": {
+          "const": true
+        },
+        "malformed-proof": {
+          "const": true
+        },
+        "trailing-proof-byte": {
+          "const": true
+        }
+      },
+      "required": [
+        "changed-output",
+        "changed-public-count",
+        "wrong-verifying-key",
+        "malformed-proof",
+        "trailing-proof-byte"
+      ]
+    },
+    "seconds": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "prepare": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "setup": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "witness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "prove": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "verify": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "negative-setup": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "negative-verify": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "end-to-end": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        }
+      },
+      "required": [
+        "prepare",
+        "setup",
+        "witness",
+        "prove",
+        "verify",
+        "negative-setup",
+        "negative-verify",
+        "end-to-end"
+      ]
+    },
+    "workflow_run": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "integer",
+          "minimum": 1
+        }
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      }
+    },
+    "contract_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "program_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "circuit_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "native_extension_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "parameters_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "key_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "source_dirty": {
+      "type": "boolean"
+    },
+    "adapter_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "version",
+    "backend",
+    "proof_mode",
+    "assurance",
+    "source_commit",
+    "verified",
+    "proof_bytes",
+    "expected_output",
+    "oracle_matches",
+    "negatives",
+    "seconds",
+    "workflow_run",
+    "limitations",
+    "contract_digest",
+    "program_digest",
+    "circuit_digest",
+    "native_extension_digest",
+    "parameters_digest",
+    "key_digest",
+    "source_dirty",
+    "adapter_digest"
+  ]
+}

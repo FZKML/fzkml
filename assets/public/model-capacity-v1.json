@@ -1,0 +1,26 @@
+{
+  "version": "model-capacity-1.0.0",
+  "source_inspection": {
+    "url": "https://docs.google.com/document/d/14tD223seyGYrtYZJOuPKtH0lwlKo4To4p4aRHhKI9RY/edit",
+    "edition": "illustrated-research-1.1-2026-11-23",
+    "observed_modified_time": "2026-11-23T17:06:44.925Z",
+    "inspected_on": "2026-11-25",
+    "surface": "connected-Drive-readable-text",
+    "native_equation_review": "not-performed; formula derivations below are independently authored",
+    "rights": "Original numerical fixture and locators only; no manuscript prose or native export included."
+  },
+  "source_numeric_vectors": [
+    {"id": "heterogeneous-denominators", "section": "50.4", "inputs": [[2, null], [4, 8]], "eligible_expected": [3, 8], "padding_expected": [3, 4]},
+    {"id": "capacity-window", "sections": ["68.2", "68.3"], "enrolled": 10000000, "selected": 20000, "coordinates": 65536, "coordinate_bits": 32, "buckets": 40, "assumed_proof_envelope_bytes": 2048, "assumed_verifier_seconds": "1/200", "hypothetical_workers": 64, "window_seconds": 60, "ingress_bits_per_second": 1000000000, "expected_client_payload_bytes": 5242880000, "conditional_32bit_partial_bytes": 10485760, "expected_proof_traffic_bytes": 40960000, "expected_verifier_cpu_seconds": 100, "expected_ideal_verifier_seconds": "25/16", "expected_ideal_ingress_seconds": "131072/3125", "assurance": "hypothetical-budget-not-observed-proof-or-protocol-performance"},
+    {"id": "adapter-representation", "section": "72.2", "a": 4096, "b": 4096, "rank": 8, "bytes_per_scalar": 4, "dense_bytes": 67108864, "two_factor_bytes": 262144, "fixed_factor_bytes": 131072},
+    {"id": "ridge-statistic-payload-768", "section": "76.5", "d": 768, "c": 100, "bytes_per_scalar": 4, "expected_bytes": 1488384, "crossover_rounds": "969/200"},
+    {"id": "ridge-statistic-payload-4096", "section": "76.5", "d": 4096, "c": 100, "bytes_per_scalar": 4, "expected_bytes": 35201024, "crossover_rounds": "4297/200"}
+  ],
+  "original_synthetic_vectors": {
+    "ridge": {"Z": [[1, 0], [0, 1]], "Y": [[2], [3]], "weights": [1, 2], "regularization": 1, "S": [[1, 0], [0, 2]], "T": [[2], [6]], "W": [[1], [2]], "residual": [[0], [0]], "objective": 4},
+    "adapter": {"A": [[1, 0]], "B": [[[1], [0]], [[1], [2]]], "weights": ["1/2", "1/2"], "mean_B": [[1], [1]], "mean_dense": [[1, 0], [1, 0]], "clip": 3},
+    "cross_terms": {"A": [1, -1], "B": [1, -1], "mean_product": 1, "product_means": 0},
+    "rank_growth": {"client_products": [[[1, 0], [0, 0]], [[0, 0], [0, 1]]], "sum_rank": 2, "best_rank1_squared_error": 1},
+    "hidden_state": {"records": 4, "clip": 1, "actual_replacement_change": 2, "invalid_single_gradient_bound": "1/2"}
+  }
+}
