@@ -1,7 +1,7 @@
 # Session 02: retained local data/reference evidence
 
-Calculation source: `7f19c2b14066a97dff85c898b81b7a8ab33f3d17`, clean at run start.
-Raw `run.json` SHA-256: `65c974e58b5181e6b9499d6123fe155455e00fac256a258d4fed1c4d5fca49bd`.
+Calculation source: `424dff510f42024cda4a6e134f66c4e4e1156170`, clean at run start.
+Raw `run.json` SHA-256: `5256340727b565126faa3c132daac568335064e5dd5f6cd36d1a5495a5757132`.
 The user personally certified and authorized DCO sign-off for this PR and
 regenerated evidence on2026-11-25. This is not independent scientific/security
 review or publication approval.
@@ -17,9 +17,9 @@ For Q=8 the raw full-row and summary setup+query times in seconds are:
 
 | N | Full row loop, three repetitions | Exact summary, three repetitions | Approximate summary, three repetitions |
 | --- | --- | --- | --- |
-| 64 | 0.005702,0.005812,0.005549 | 0.001640,0.001779,0.001623 | 0.001673,0.001942,0.001689 |
-| 256 | 0.021999,0.022183,0.022406 | 0.003716,0.003707,0.003837 | 0.004227,0.004279,0.004375 |
-| 1024 | 0.090068,0.088907,0.089589 | 0.012122,0.012176,0.012407 | 0.020675,0.014436,0.016923 |
+| 64 | 0.006153,0.006458,0.005742 | 0.001610,0.001633,0.001955 | 0.002120,0.001653,0.001889 |
+| 256 | 0.023700,0.026394,0.023854 | 0.004564,0.004563,0.004522 | 0.004978,0.005704,0.004723 |
+| 1024 | 0.096755,0.096993,0.090775 | 0.013018,0.013401,0.013057 | 0.016420,0.015918,0.020620 |
 
 These are diagnostic trusted arithmetic paths on a shared Apple M3 Pro,
 Darwin arm64,12 logical CPUs, Python3.11.14/SQLite as recorded; GPU unused.
@@ -70,4 +70,7 @@ source-inspected mathematical facts/equations and locators from51.3,76.2,78.9;
 current authoritative edition migration/review remains pending. No native EQ
 catalog or scientific claim status is promoted by these results.
 
-This run refreshes source/lock pins after rebasing on base20c4b7cd5a61b9699b584c4ddc1ae0870e1efa72. The earlier PR candidate raw SHA9e6e5f460a06df745742a01dd46b44e4ec6b4bacfaf04457c6f7224f632ed551 is superseded; its original commit remains historical.
+This final run refreshes source/lock pins after base integration and authorized
+DCO history rewriting. Earlier unsigned candidates and their raw digests are
+historical, superseded measurements. No source-derived or scientific claim is
+promoted by contribution certification.
