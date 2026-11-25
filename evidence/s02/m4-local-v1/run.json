@@ -7,7 +7,7 @@
     "FZK-R044",
     "FZK-R045"
   ],
-  "source_commit": "568a81eb0fddb6a5ba89f08b0932b814a30b2a9b",
+  "source_commit": "3acde263a986433687572551a88c1013d591466e",
   "source_dirty": false,
   "source_approval": "not-independent-review; DCO pending for new commits",
   "hardware": {
@@ -2222,12 +2222,12 @@
         "status": "completed",
         "modulus_bits": 2048,
         "output": 33,
-        "key_generation_seconds": 1.8232717079808936,
-        "encryption_seconds": 0.10220754198962823,
-        "evaluation_seconds": 0.00024691701401025057,
-        "decryption_seconds": 0.10686083300970495,
-        "end_to_end_seconds": 2.032586999994237,
-        "online_seconds": 0.20931529201334342,
+        "key_generation_seconds": 1.3770480829989538,
+        "encryption_seconds": 0.09827600000426173,
+        "evaluation_seconds": 0.00023691699607297778,
+        "decryption_seconds": 0.09663800004636869,
+        "end_to_end_seconds": 1.5721990000456572,
+        "online_seconds": 0.1951509170467034,
         "ciphertext_payload_bytes_each": 512,
         "logical_messages": 2,
         "protocol_round_trips": 1,
@@ -2253,12 +2253,12 @@
         "status": "completed",
         "modulus_bits": 2048,
         "output": 33,
-        "key_generation_seconds": 3.2713895839988254,
-        "encryption_seconds": 0.102469666977413,
-        "evaluation_seconds": 0.0002662499900907278,
-        "decryption_seconds": 0.10632291703950614,
-        "end_to_end_seconds": 3.4804484180058353,
-        "online_seconds": 0.20905883400700986,
+        "key_generation_seconds": 2.211209625005722,
+        "encryption_seconds": 0.09807925001950935,
+        "evaluation_seconds": 0.00023916701320558786,
+        "decryption_seconds": 0.09781658399151638,
+        "end_to_end_seconds": 2.4073446260299534,
+        "online_seconds": 0.19613500102423131,
         "ciphertext_payload_bytes_each": 512,
         "logical_messages": 2,
         "protocol_round_trips": 1,
@@ -2284,12 +2284,12 @@
         "status": "completed",
         "modulus_bits": 2048,
         "output": 33,
-        "key_generation_seconds": 3.3478794589755125,
-        "encryption_seconds": 0.11533162504201755,
-        "evaluation_seconds": 0.00025708298198878765,
-        "decryption_seconds": 0.10511766601121053,
-        "end_to_end_seconds": 3.5685858330107294,
-        "online_seconds": 0.22070637403521687,
+        "key_generation_seconds": 1.3168010829831474,
+        "encryption_seconds": 0.10721395799191669,
+        "evaluation_seconds": 0.00027129199588671327,
+        "decryption_seconds": 0.1143773749936372,
+        "end_to_end_seconds": 1.538663707964588,
+        "online_seconds": 0.2218626249814406,
         "ciphertext_payload_bytes_each": 512,
         "logical_messages": 2,
         "protocol_round_trips": 1,
@@ -2316,10 +2316,10 @@
       {
         "status": "verified",
         "verified": true,
-        "split_seconds": 0.004686000000219792,
-        "proof_and_split_wall_seconds": 0.030925000028219074,
-        "verification_seconds": 0.007336417038459331,
-        "end_to_end_seconds": 0.13472566701238975,
+        "split_seconds": 0.004570624965708703,
+        "proof_and_split_wall_seconds": 0.031137374986428767,
+        "verification_seconds": 0.009318624972365797,
+        "end_to_end_seconds": 0.13663658301811665,
         "relay_delay_per_read_seconds": 0,
         "tcp_payload_bytes": 2720,
         "tcp_connections": 6,
@@ -2329,24 +2329,276 @@
             "party": 0,
             "status": "completed",
             "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.024077791022136807,
-            "prover_kernel_ms": 2.502,
-            "max_rss_bytes": 6832128
+            "collection_elapsed_seconds_upper_bound": 0.02415437495801598,
+            "prover_kernel_ms": 2.511,
+            "max_rss_bytes": 6864896
           },
           {
             "party": 1,
             "status": "completed",
             "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.022615999972913414,
-            "prover_kernel_ms": 15.635,
+            "collection_elapsed_seconds_upper_bound": 0.02291900001000613,
+            "prover_kernel_ms": 15.612,
+            "max_rss_bytes": 6815744
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.021499000024050474,
+            "prover_kernel_ms": 2.632,
+            "max_rss_bytes": 6832128
+          }
+        ],
+        "proof_json_bytes": 724,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "50ad5a157992ef49a58d3ad11a962ef28552e00344bf6cfa92cc34804a86f5a4",
+          "proof0.json": "50ad5a157992ef49a58d3ad11a962ef28552e00344bf6cfa92cc34804a86f5a4",
+          "proof1.json": "50ad5a157992ef49a58d3ad11a962ef28552e00344bf6cfa92cc34804a86f5a4"
+        },
+        "repetition": 0,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      },
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.005170875054318458,
+        "proof_and_split_wall_seconds": 0.08125762495910749,
+        "verification_seconds": 0.013802708010189235,
+        "end_to_end_seconds": 0.2487387919682078,
+        "relay_delay_per_read_seconds": 0.005,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.0676904579740949,
+            "prover_kernel_ms": 27.239,
+            "max_rss_bytes": 6815744
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.07207566598663107,
+            "prover_kernel_ms": 46.525,
             "max_rss_bytes": 6864896
           },
           {
             "party": 2,
             "status": "completed",
             "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.021325208013877273,
-            "prover_kernel_ms": 2.595,
+            "collection_elapsed_seconds_upper_bound": 0.07054149999748915,
+            "prover_kernel_ms": 36.112,
+            "max_rss_bytes": 6897664
+          }
+        ],
+        "proof_json_bytes": 723,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "b1bc299aa9b49aa1f0986fa42ad5e4aa2a3c17af8429d3669e47056331d68c0a",
+          "proof0.json": "b1bc299aa9b49aa1f0986fa42ad5e4aa2a3c17af8429d3669e47056331d68c0a",
+          "proof1.json": "b1bc299aa9b49aa1f0986fa42ad5e4aa2a3c17af8429d3669e47056331d68c0a"
+        },
+        "repetition": 0,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      },
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.005003541009500623,
+        "proof_and_split_wall_seconds": 0.030103374971076846,
+        "verification_seconds": 0.007683916017413139,
+        "end_to_end_seconds": 0.13362499995855615,
+        "relay_delay_per_read_seconds": 0,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.023027665971312672,
+            "prover_kernel_ms": 2.985,
+            "max_rss_bytes": 6815744
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.021647582994773984,
+            "prover_kernel_ms": 4.506,
+            "max_rss_bytes": 6914048
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.020301499986089766,
+            "prover_kernel_ms": 3.159,
+            "max_rss_bytes": 6832128
+          }
+        ],
+        "proof_json_bytes": 722,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "1b3b0731fff844ce83c728de49ea8f4dc65e79c0abcce99f9d339fa5f374e002",
+          "proof0.json": "1b3b0731fff844ce83c728de49ea8f4dc65e79c0abcce99f9d339fa5f374e002",
+          "proof1.json": "1b3b0731fff844ce83c728de49ea8f4dc65e79c0abcce99f9d339fa5f374e002"
+        },
+        "repetition": 1,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      },
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.004723916994407773,
+        "proof_and_split_wall_seconds": 0.07785812497604638,
+        "verification_seconds": 0.006458749994635582,
+        "end_to_end_seconds": 0.23875220800982788,
+        "relay_delay_per_read_seconds": 0.005,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.07094270800007507,
+            "prover_kernel_ms": 32.881,
+            "max_rss_bytes": 6848512
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.06957937497645617,
+            "prover_kernel_ms": 45.856,
+            "max_rss_bytes": 6848512
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.06813262501964346,
+            "prover_kernel_ms": 34.182,
+            "max_rss_bytes": 6864896
+          }
+        ],
+        "proof_json_bytes": 723,
+        "protocol_rounds": null,
+        "round_trip_measurement": "not-instrumented",
+        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
+        "retained_artifacts": {
+          "proof2.json": "e476751d6806439e45c6e6910ac7cdbf54f03b8866925f24aa4040bb2f605240",
+          "proof0.json": "e476751d6806439e45c6e6910ac7cdbf54f03b8866925f24aa4040bb2f605240",
+          "proof1.json": "e476751d6806439e45c6e6910ac7cdbf54f03b8866925f24aa4040bb2f605240"
+        },
+        "repetition": 1,
+        "excluded": false,
+        "public_transcript": {
+          "proof_fields": [
+            "curve",
+            "pi_a",
+            "pi_b",
+            "pi_c",
+            "protocol"
+          ],
+          "public_outputs": [
+            "33"
+          ],
+          "witness_columns_exported": false,
+          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
+        }
+      },
+      {
+        "status": "verified",
+        "verified": true,
+        "split_seconds": 0.0048983749584294856,
+        "proof_and_split_wall_seconds": 0.03174408298218623,
+        "verification_seconds": 0.006084041961003095,
+        "end_to_end_seconds": 0.23308970796642825,
+        "relay_delay_per_read_seconds": 0,
+        "tcp_payload_bytes": 2720,
+        "tcp_connections": 6,
+        "relay_errors": [],
+        "parties": [
+          {
+            "party": 0,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.02481154102133587,
+            "prover_kernel_ms": 3.737,
+            "max_rss_bytes": 6782976
+          },
+          {
+            "party": 1,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.023346000001765788,
+            "prover_kernel_ms": 4.052,
+            "max_rss_bytes": 6848512
+          },
+          {
+            "party": 2,
+            "status": "completed",
+            "returncode": 0,
+            "collection_elapsed_seconds_upper_bound": 0.021938833000604063,
+            "prover_kernel_ms": 3.732,
             "max_rss_bytes": 6799360
           }
         ],
@@ -2355,261 +2607,9 @@
         "round_trip_measurement": "not-instrumented",
         "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
         "retained_artifacts": {
-          "proof2.json": "5ead8315a6ae2f3437ce28abe8e161c845784290e1634f8198b527aff50b790f",
-          "proof0.json": "5ead8315a6ae2f3437ce28abe8e161c845784290e1634f8198b527aff50b790f",
-          "proof1.json": "5ead8315a6ae2f3437ce28abe8e161c845784290e1634f8198b527aff50b790f"
-        },
-        "repetition": 0,
-        "excluded": false,
-        "public_transcript": {
-          "proof_fields": [
-            "curve",
-            "pi_a",
-            "pi_b",
-            "pi_c",
-            "protocol"
-          ],
-          "public_outputs": [
-            "33"
-          ],
-          "witness_columns_exported": false,
-          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
-        }
-      },
-      {
-        "status": "verified",
-        "verified": true,
-        "split_seconds": 0.004196375026367605,
-        "proof_and_split_wall_seconds": 0.07675937504973263,
-        "verification_seconds": 0.012901499983854592,
-        "end_to_end_seconds": 0.24362041702261195,
-        "relay_delay_per_read_seconds": 0.005,
-        "tcp_payload_bytes": 2720,
-        "tcp_connections": 6,
-        "relay_errors": [],
-        "parties": [
-          {
-            "party": 0,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.070648416003678,
-            "prover_kernel_ms": 34.216,
-            "max_rss_bytes": 6832128
-          },
-          {
-            "party": 1,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.06922791601391509,
-            "prover_kernel_ms": 46.188,
-            "max_rss_bytes": 6864896
-          },
-          {
-            "party": 2,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.06775537499925122,
-            "prover_kernel_ms": 34.235,
-            "max_rss_bytes": 6864896
-          }
-        ],
-        "proof_json_bytes": 722,
-        "protocol_rounds": null,
-        "round_trip_measurement": "not-instrumented",
-        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
-        "retained_artifacts": {
-          "proof2.json": "76a9e904c37e7de4af0ba6a38941d3d9fdbefdd219cdbd950dea23e22d2fc3ac",
-          "proof0.json": "76a9e904c37e7de4af0ba6a38941d3d9fdbefdd219cdbd950dea23e22d2fc3ac",
-          "proof1.json": "76a9e904c37e7de4af0ba6a38941d3d9fdbefdd219cdbd950dea23e22d2fc3ac"
-        },
-        "repetition": 0,
-        "excluded": false,
-        "public_transcript": {
-          "proof_fields": [
-            "curve",
-            "pi_a",
-            "pi_b",
-            "pi_c",
-            "protocol"
-          ],
-          "public_outputs": [
-            "33"
-          ],
-          "witness_columns_exported": false,
-          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
-        }
-      },
-      {
-        "status": "verified",
-        "verified": true,
-        "split_seconds": 0.004727999970782548,
-        "proof_and_split_wall_seconds": 0.029343999980483204,
-        "verification_seconds": 0.007635040965396911,
-        "end_to_end_seconds": 0.1337245000177063,
-        "relay_delay_per_read_seconds": 0,
-        "tcp_payload_bytes": 2720,
-        "tcp_connections": 6,
-        "relay_errors": [],
-        "parties": [
-          {
-            "party": 0,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.02269100002013147,
-            "prover_kernel_ms": 2.396,
-            "max_rss_bytes": 6815744
-          },
-          {
-            "party": 1,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.021497750014532357,
-            "prover_kernel_ms": 2.761,
-            "max_rss_bytes": 6832128
-          },
-          {
-            "party": 2,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.020184250024612993,
-            "prover_kernel_ms": 2.51,
-            "max_rss_bytes": 6782976
-          }
-        ],
-        "proof_json_bytes": 724,
-        "protocol_rounds": null,
-        "round_trip_measurement": "not-instrumented",
-        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
-        "retained_artifacts": {
-          "proof2.json": "223be3cdafaacfbd71ea6d09d2b48808c0d114118fb44f4ffc5b2a6f71c06d7a",
-          "proof0.json": "223be3cdafaacfbd71ea6d09d2b48808c0d114118fb44f4ffc5b2a6f71c06d7a",
-          "proof1.json": "223be3cdafaacfbd71ea6d09d2b48808c0d114118fb44f4ffc5b2a6f71c06d7a"
-        },
-        "repetition": 1,
-        "excluded": false,
-        "public_transcript": {
-          "proof_fields": [
-            "curve",
-            "pi_a",
-            "pi_b",
-            "pi_c",
-            "protocol"
-          ],
-          "public_outputs": [
-            "33"
-          ],
-          "witness_columns_exported": false,
-          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
-        }
-      },
-      {
-        "status": "verified",
-        "verified": true,
-        "split_seconds": 0.004694417002610862,
-        "proof_and_split_wall_seconds": 0.08490708301542327,
-        "verification_seconds": 0.005982208997011185,
-        "end_to_end_seconds": 0.23966333299176767,
-        "relay_delay_per_read_seconds": 0.005,
-        "tcp_payload_bytes": 2720,
-        "tcp_connections": 6,
-        "relay_errors": [],
-        "parties": [
-          {
-            "party": 0,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.07218054198892787,
-            "prover_kernel_ms": 32.654,
-            "max_rss_bytes": 6832128
-          },
-          {
-            "party": 1,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.07092987501528114,
-            "prover_kernel_ms": 45.743,
-            "max_rss_bytes": 6864896
-          },
-          {
-            "party": 2,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.0754656660137698,
-            "prover_kernel_ms": 40.21,
-            "max_rss_bytes": 6881280
-          }
-        ],
-        "proof_json_bytes": 721,
-        "protocol_rounds": null,
-        "round_trip_measurement": "not-instrumented",
-        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
-        "retained_artifacts": {
-          "proof2.json": "64a9375a35d30a7f08de70556d9fcabd225383a49f5cfc5e9d183dbd1e2368cf",
-          "proof0.json": "64a9375a35d30a7f08de70556d9fcabd225383a49f5cfc5e9d183dbd1e2368cf",
-          "proof1.json": "64a9375a35d30a7f08de70556d9fcabd225383a49f5cfc5e9d183dbd1e2368cf"
-        },
-        "repetition": 1,
-        "excluded": false,
-        "public_transcript": {
-          "proof_fields": [
-            "curve",
-            "pi_a",
-            "pi_b",
-            "pi_c",
-            "protocol"
-          ],
-          "public_outputs": [
-            "33"
-          ],
-          "witness_columns_exported": false,
-          "limitation": "Field allowlist is not a proof of zero knowledge or absence of side channels."
-        }
-      },
-      {
-        "status": "verified",
-        "verified": true,
-        "split_seconds": 0.004614000034052879,
-        "proof_and_split_wall_seconds": 0.029570667014922947,
-        "verification_seconds": 0.007375209010206163,
-        "end_to_end_seconds": 0.1334264170145616,
-        "relay_delay_per_read_seconds": 0,
-        "tcp_payload_bytes": 2720,
-        "tcp_connections": 6,
-        "relay_errors": [],
-        "parties": [
-          {
-            "party": 0,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.022894625028129667,
-            "prover_kernel_ms": 2.736,
-            "max_rss_bytes": 6832128
-          },
-          {
-            "party": 1,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.021594499994535,
-            "prover_kernel_ms": 3.084,
-            "max_rss_bytes": 6815744
-          },
-          {
-            "party": 2,
-            "status": "completed",
-            "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.020198166952468455,
-            "prover_kernel_ms": 2.744,
-            "max_rss_bytes": 6766592
-          }
-        ],
-        "proof_json_bytes": 724,
-        "protocol_rounds": null,
-        "round_trip_measurement": "not-instrumented",
-        "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
-        "retained_artifacts": {
-          "proof2.json": "cd0c8e34a930707ecd9b81c9e9713a8cedc8a5d0c72087657aabf31089d1191f",
-          "proof0.json": "cd0c8e34a930707ecd9b81c9e9713a8cedc8a5d0c72087657aabf31089d1191f",
-          "proof1.json": "cd0c8e34a930707ecd9b81c9e9713a8cedc8a5d0c72087657aabf31089d1191f"
+          "proof2.json": "b48a743bda45666da9eda87ebbe68aa6000403c7001a97401b80af68d9ed4090",
+          "proof0.json": "b48a743bda45666da9eda87ebbe68aa6000403c7001a97401b80af68d9ed4090",
+          "proof1.json": "b48a743bda45666da9eda87ebbe68aa6000403c7001a97401b80af68d9ed4090"
         },
         "repetition": 2,
         "excluded": false,
@@ -2631,10 +2631,10 @@
       {
         "status": "verified",
         "verified": true,
-        "split_seconds": 0.004700999998021871,
-        "proof_and_split_wall_seconds": 0.07647666695993394,
-        "verification_seconds": 0.014120583015028387,
-        "end_to_end_seconds": 0.24638441699789837,
+        "split_seconds": 0.0038490829756483436,
+        "proof_and_split_wall_seconds": 0.08132574998307973,
+        "verification_seconds": 0.006517792004160583,
+        "end_to_end_seconds": 0.23594095796579495,
         "relay_delay_per_read_seconds": 0.005,
         "tcp_payload_bytes": 2720,
         "tcp_connections": 6,
@@ -2644,25 +2644,25 @@
             "party": 0,
             "status": "completed",
             "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.06951762503013015,
-            "prover_kernel_ms": 32.488,
-            "max_rss_bytes": 6848512
+            "collection_elapsed_seconds_upper_bound": 0.07579050003550947,
+            "prover_kernel_ms": 39.423,
+            "max_rss_bytes": 6832128
           },
           {
             "party": 1,
             "status": "completed",
             "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.06834079104010016,
-            "prover_kernel_ms": 44.749,
-            "max_rss_bytes": 6832128
+            "collection_elapsed_seconds_upper_bound": 0.07461016601882875,
+            "prover_kernel_ms": 51.988,
+            "max_rss_bytes": 6864896
           },
           {
             "party": 2,
             "status": "completed",
             "returncode": 0,
-            "collection_elapsed_seconds_upper_bound": 0.06719283398706466,
-            "prover_kernel_ms": 32.45,
-            "max_rss_bytes": 6815744
+            "collection_elapsed_seconds_upper_bound": 0.07310016598785296,
+            "prover_kernel_ms": 39.868,
+            "max_rss_bytes": 6864896
           }
         ],
         "proof_json_bytes": 722,
@@ -2670,9 +2670,9 @@
         "round_trip_measurement": "not-instrumented",
         "preprocessing": "trusted-public-fixture-SRS-and-dealer-split; no ceremony measured",
         "retained_artifacts": {
-          "proof2.json": "fb7d9a018790e4187ff07ef3f0c1d6b43fabf815fbd10dc342bada19cb72e3b4",
-          "proof0.json": "fb7d9a018790e4187ff07ef3f0c1d6b43fabf815fbd10dc342bada19cb72e3b4",
-          "proof1.json": "fb7d9a018790e4187ff07ef3f0c1d6b43fabf815fbd10dc342bada19cb72e3b4"
+          "proof2.json": "d8771607b3a7e3cc6f0cbdbb3987ffb80e88be88a55d7c0c56516b2a0311492c",
+          "proof0.json": "d8771607b3a7e3cc6f0cbdbb3987ffb80e88be88a55d7c0c56516b2a0311492c",
+          "proof1.json": "d8771607b3a7e3cc6f0cbdbb3987ffb80e88be88a55d7c0c56516b2a0311492c"
         },
         "repetition": 2,
         "excluded": false,
@@ -2696,9 +2696,9 @@
       {
         "status": "verified",
         "backend": "snarkjs0.7.5 Groth16 singleThread",
-        "seconds": 0.3097923750174232,
+        "seconds": 0.25008387496927753,
         "verification": "pinned independent coCircom verifier accepted",
-        "proof_json_bytes": 722,
+        "proof_json_bytes": 723,
         "communication_bytes": 0,
         "protocol_rounds": 0,
         "max_rss_bytes": null,
@@ -2727,9 +2727,9 @@
       {
         "status": "verified",
         "backend": "snarkjs0.7.5 Groth16 singleThread",
-        "seconds": 0.15803970798151568,
+        "seconds": 0.1800854160101153,
         "verification": "pinned independent coCircom verifier accepted",
-        "proof_json_bytes": 717,
+        "proof_json_bytes": 726,
         "communication_bytes": 0,
         "protocol_rounds": 0,
         "max_rss_bytes": null,
@@ -2758,9 +2758,9 @@
       {
         "status": "verified",
         "backend": "snarkjs0.7.5 Groth16 singleThread",
-        "seconds": 0.18869204202201217,
+        "seconds": 0.15255979204084724,
         "verification": "pinned independent coCircom verifier accepted",
-        "proof_json_bytes": 722,
+        "proof_json_bytes": 723,
         "communication_bytes": 0,
         "protocol_rounds": 0,
         "max_rss_bytes": null,
@@ -2797,12 +2797,12 @@
       "case": "missing-share",
       "expected": "not-verified",
       "result": {
-        "status": "timeout-or-rejected",
+        "status": "timeout",
         "verified": false,
-        "split_seconds": 0.006714999966789037,
-        "proof_and_split_wall_seconds": 2.0114883329952136,
+        "split_seconds": 0.004230291000567377,
+        "proof_and_split_wall_seconds": 2.0084119580569677,
         "verification_seconds": null,
-        "end_to_end_seconds": 2.147321291966364,
+        "end_to_end_seconds": 2.146816792024765,
         "relay_delay_per_read_seconds": 0,
         "tcp_payload_bytes": 112,
         "tcp_connections": 2,
@@ -2812,7 +2812,7 @@
             "party": 0,
             "status": "timeout",
             "returncode": -9,
-            "collection_elapsed_seconds_upper_bound": 2.000968832988292,
+            "collection_elapsed_seconds_upper_bound": 2.000778709014412,
             "prover_kernel_ms": null,
             "max_rss_bytes": null
           },
@@ -2820,9 +2820,9 @@
             "party": 1,
             "status": "failed",
             "returncode": 1,
-            "collection_elapsed_seconds_upper_bound": 2.0002826250274666,
+            "collection_elapsed_seconds_upper_bound": 2.001043667027261,
             "prover_kernel_ms": null,
-            "max_rss_bytes": 5734400
+            "max_rss_bytes": 5668864
           }
         ],
         "proof_json_bytes": null,
@@ -2836,12 +2836,12 @@
       "case": "malformed-share",
       "expected": "not-verified",
       "result": {
-        "status": "timeout-or-rejected",
+        "status": "failed",
         "verified": false,
-        "split_seconds": 0.010605291987303644,
-        "proof_and_split_wall_seconds": 0.038327875023242086,
+        "split_seconds": 0.009935082984156907,
+        "proof_and_split_wall_seconds": 0.03339654201408848,
         "verification_seconds": null,
-        "end_to_end_seconds": 0.13620491599431261,
+        "end_to_end_seconds": 0.23297000001184642,
         "relay_delay_per_read_seconds": 0,
         "tcp_payload_bytes": 304,
         "tcp_connections": 6,
@@ -2853,25 +2853,25 @@
             "party": 0,
             "status": "failed",
             "returncode": 1,
-            "collection_elapsed_seconds_upper_bound": 0.023514583008363843,
+            "collection_elapsed_seconds_upper_bound": 0.020878750015981495,
             "prover_kernel_ms": null,
-            "max_rss_bytes": 5750784
+            "max_rss_bytes": 5685248
           },
           {
             "party": 1,
             "status": "failed",
             "returncode": 1,
-            "collection_elapsed_seconds_upper_bound": 0.02159008296439424,
+            "collection_elapsed_seconds_upper_bound": 0.01925958297215402,
             "prover_kernel_ms": null,
-            "max_rss_bytes": 5505024
+            "max_rss_bytes": 5439488
           },
           {
             "party": 2,
             "status": "failed",
             "returncode": 1,
-            "collection_elapsed_seconds_upper_bound": 0.01969741698121652,
+            "collection_elapsed_seconds_upper_bound": 0.01795029197819531,
             "prover_kernel_ms": null,
-            "max_rss_bytes": 5652480
+            "max_rss_bytes": 5685248
           }
         ],
         "proof_json_bytes": null,
@@ -2921,7 +2921,7 @@
     "witness_sha256": "7aa8efe33fc086e3ea026e1785eddb647934c51d9aeba574fc39f62a174f9ce4"
   },
   "public_artifacts": {
-    "proof0.json": "5ead8315a6ae2f3437ce28abe8e161c845784290e1634f8198b527aff50b790f",
+    "proof0.json": "50ad5a157992ef49a58d3ad11a962ef28552e00344bf6cfa92cc34804a86f5a4",
     "public0.json": "0327562ac0e86ecba365bd4a19df8d4fdc735811c34d8825f4b6c83f6d2fe2dd"
   }
 }

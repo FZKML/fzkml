@@ -1,7 +1,7 @@
 # Session02 M4 retained local evidence
 
-Calculation source: `568a81eb0fddb6a5ba89f08b0932b814a30b2a9b`; clean at run start.
-Raw artifact SHA-256: `7a86820e04a7f38711f25caffca57a94554bee1c5ec6b1ab3e353787c2952c08`.
+Calculation source: `3acde263a986433687572551a88c1013d591466e`; clean at run start.
+Raw artifact SHA-256: `6689af2d11ed7f36d0f13152b5b6bb3915adb2f024dfbedb25b52c6e9cc08fe5`.
 
 Three retained repetitions contain3 verified single-prover proofs,6 verified
 three-party proofs (3 each at zero and5ms relay-read delay), and3 Paillier runs.
@@ -12,8 +12,8 @@ included. Public numeric artifacts are not a production SRS or security approval
 
 | REP3 relay delay/read | End-to-end seconds (raw repetitions) | TCP payload bytes |
 | --- | --- | --- |
-| 0 | 0.134726, 0.133725, 0.133426 | 2720, 2720, 2720 |
-| 0.005 | 0.243620, 0.239663, 0.246384 | 2720, 2720, 2720 |
+| 0 | 0.136637, 0.133625, 0.233090 | 2720, 2720, 2720 |
+| 0.005 | 0.248739, 0.238752, 0.235941 | 2720, 2720, 2720 |
 
 These end-to-end clocks include relay setup/drain/teardown, dealer splitting,
 startup/IO and verification. Per-party proving kernels and RSS are separate.
@@ -30,7 +30,7 @@ asserted. Hardware is the same shared Darwin arm64 host with12 logical CPUs.
 | 8 | 29/5 | 8 |
 
 Pipeline values are exact modeled seconds on the declared halving quadratic,
-not measured training times. Missing/malformed-share runs remain timeout/rejected;
+not measured training times. Missing/malformed-share runs retain timeout status and individual worker failures;
 wrong-output and malformed-proof negatives fail real verification. Every HE run
 retains valid ciphertext malleation33→34, accepted by HE and detected only by the
 independent synthetic oracle. Attestation is **not-run**, protocol round-trip
