@@ -1,0 +1,55 @@
+{
+  "version": "fzkml-m5-synthetic-1",
+  "provenance": "Original literal synthetic inputs in workloads.py and model_workloads.rs. Apache-2.0. No manuscript values, external datasets or model weights.",
+  "scope": {
+    "89": {
+      "claim": "FZK-R051",
+      "task": "Exact two-coordinate median of five radius-four integer updates",
+      "observer": "The joint prover sees the ordered updates. The verifier receives the blinded commitment, aggregate and proof.",
+      "privacy_unit": "One complete two-coordinate client update under fixed roster replacement adjacency",
+      "release": "Deterministic median. No privacy mechanism. Public-reference cosine is an independent reference check."
+    },
+    "90": {
+      "claim": "FZK-R052",
+      "task": "Width-two, one-feature ReLU forward pass and separate one-sample SGD relation",
+      "observer": "The joint prover sees features, label and weights. The verifier sees the commitment and the score or all four updated weights.",
+      "privacy_unit": "One synthetic entity and its labeled example",
+      "release": "Inference score or complete post-update model. No noise, composition claim or private training system."
+    },
+    "91": {
+      "claim": "FZK-R053",
+      "task": "Frozen synthetic bigram head with one learned rank-one margin correction, plus a separate role-based exact-match retrieval fixture",
+      "observer": "The adaptation harness sees training and holdout tokens. The retrieval host sees queries, roles, documents and match sets. The caller receives permitted document IDs.",
+      "privacy_unit": "One example entity for adaptation; one document and authorization entry for retrieval",
+      "release": "Public synthetic metrics only. No raw real prompts, retrieved text, embeddings or generations. Authorization is a local allow-list; retrieval privacy and completeness are unproved."
+    },
+    "92": {
+      "claim": "FZK-R054",
+      "task": "Separate capped preference vote, clipped teacher-logit cohort transfer, and generated canary audit",
+      "observer": "The preference aggregator sees votes. The curator sees teacher logits and generated tokens. A student receives clipped cohort means for groups of at least two.",
+      "privacy_unit": "One voter for preference; one teacher example for distillation or generation",
+      "release": "Vote sign, clipped cohort mean, or threshold-selected token. Group size and clipping provide no DP claim. The generation check finds a deliberately copied canary."
+    },
+    "93": {
+      "claim": "FZK-R055",
+      "task": "Binary paired versus unpaired correspondence with a changed alignment and one absent modality",
+      "observer": "Silos see their own values. The authorized fixture joiner sees exact pair IDs and both modalities. The unpaired evaluator sees only marginals.",
+      "privacy_unit": "One whole pair or one unpaired entity",
+      "release": "Only synthetic correctness counts. Pair IDs are explicit authorization inputs. Negative sampling and embeddings are unused."
+    },
+    "94": {
+      "claim": "FZK-R056",
+      "task": "Two-silo recommendation with fixed public item embeddings, bounded user edges and exact top-one ranking",
+      "observer": "The synthetic ranker sees authorized support edges and shared item vocabulary. Ground-truth edges remain with the evaluator.",
+      "privacy_unit": "One whole user capped at two edges; node and edge privacy are different units",
+      "release": "Public synthetic aggregate ranking metrics only. No cross-silo user join. No proof of embeddings, negative sampling, aggregation, completeness or utility."
+    },
+    "95": {
+      "claim": "FZK-R057",
+      "task": "Entity-disjoint seasonal forecast with nonoverlapping event-time evaluation windows and modeled device budgets",
+      "observer": "A synthetic client holds its time series. The simulation observes completion, admission, payload size and timing. It reports per-source error.",
+      "privacy_unit": "One whole device trajectory",
+      "release": "Synthetic forecasts and counters. Host CPU time is measured; edge availability, memory, network latency and coverage are modeled."
+    }
+  }
+}
