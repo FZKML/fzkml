@@ -152,6 +152,7 @@ def load_tests(
     if pattern in (None, "test_language.py"):
         tests.addTests(loader.discover(str(ROOT / "tests"), pattern="test_s02_math.py"))
         tests.addTests(loader.discover(str(ROOT / "tests"), pattern="test_s02_protected.py"))
+        tests.addTests(loader.discover(str(ROOT / "tests"), pattern="test_s02_data.py"))
     return tests
 
 

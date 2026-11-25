@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fzkml.org/schemas/s02-data-run-1.0.0.json",
+  "title": "Local M5 synthetic research companion; not a CI-04 publication gate",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "s02-data-run-1.0.0"
+    },
+    "kind": {
+      "const": "local-synthetic-reference-companion"
+    },
+    "status": {
+      "enum": [
+        "running",
+        "completed",
+        "failed"
+      ]
+    },
+    "planning_issue_claim_ids": {
+      "const": [
+        "FZK-R058",
+        "FZK-R059",
+        "FZK-R060",
+        "FZK-R061",
+        "FZK-R062"
+      ]
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "source_dirty": {
+      "type": "boolean"
+    },
+    "source_approval": {
+      "type": "string"
+    },
+    "hardware": {
+      "type": "object"
+    },
+    "software": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "digests": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "observer_model": {
+      "type": "object"
+    },
+    "snapshot": {
+      "type": "object"
+    },
+    "join": {
+      "type": "object"
+    },
+    "stream": {
+      "type": "object"
+    },
+    "faults": {
+      "type": "object"
+    },
+    "toy": {
+      "type": "object"
+    },
+    "fixture_setup": {
+      "type": "array",
+      "maxItems": 9
+    },
+    "repetitions": {
+      "type": "array",
+      "maxItems": 27,
+      "items": {
+        "type": "object",
+        "properties": {
+          "records": {
+            "enum": [
+              64,
+              256,
+              1024
+            ]
+          },
+          "queries": {
+            "enum": [
+              1,
+              4,
+              8
+            ]
+          },
+          "repetition": {
+            "enum": [
+              0,
+              1,
+              2
+            ]
+          },
+          "excluded": {
+            "const": false
+          },
+          "status": {
+            "const": "completed"
+          },
+          "modes": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "properties": {
+                "mode": {
+                  "enum": [
+                    "exact",
+                    "approximate"
+                  ]
+                },
+                "proof_seconds": {
+                  "type": "null"
+                },
+                "proof_break_even_queries": {
+                  "type": "null"
+                },
+                "proof_status": {
+                  "const": "not-run"
+                }
+              },
+              "required": [
+                "mode",
+                "proof_seconds",
+                "proof_break_even_queries",
+                "proof_status"
+              ]
+            }
+          }
+        },
+        "required": [
+          "records",
+          "queries",
+          "repetition",
+          "excluded",
+          "status",
+          "modes"
+        ]
+      }
+    },
+    "proof_amortization": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "not-run"
+        },
+        "break_even": {
+          "type": "null"
+        },
+        "mock_proof_permitted": {
+          "const": false
+        },
+        "reason": {
+          "type": "string"
+        },
+        "existing_backend_source": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "break_even",
+        "mock_proof_permitted",
+        "reason",
+        "existing_backend_source"
+      ],
+      "additionalProperties": false
+    },
+    "failures": {
+      "type": "array"
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "reproduction_command": {
+      "type": "string"
+    },
+    "negative_findings": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "status",
+    "planning_issue_claim_ids",
+    "source_commit",
+    "source_dirty",
+    "source_approval",
+    "hardware",
+    "software",
+    "provenance",
+    "digests",
+    "observer_model",
+    "snapshot",
+    "join",
+    "stream",
+    "faults",
+    "toy",
+    "fixture_setup",
+    "repetitions",
+    "proof_amortization",
+    "failures",
+    "limitations",
+    "reproduction_command",
+    "negative_findings"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "completed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "repetitions": {
+            "minItems": 27
+          },
+          "fixture_setup": {
+            "minItems": 9
+          },
+          "stream": {
+            "required": [
+              "DP_guarantee"
+            ],
+            "properties": {
+              "DP_guarantee": {
+                "const": false
+              }
+            }
+          },
+          "join": {
+            "required": [
+              "crypto_PSI_status",
+              "DP_guarantee"
+            ],
+            "properties": {
+              "crypto_PSI_status": {
+                "const": "not-implemented"
+              },
+              "DP_guarantee": {
+                "const": false
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

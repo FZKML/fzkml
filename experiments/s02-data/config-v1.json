@@ -1,0 +1,128 @@
+{
+  "version": "s02-data-experiments-1.0.0",
+  "planning_issue_claim_ids": [
+    "FZK-R058",
+    "FZK-R059",
+    "FZK-R060",
+    "FZK-R061",
+    "FZK-R062"
+  ],
+  "provenance": "Original public synthetic records, rational vectors and bounded simulator; not real people/events or trained model outputs.",
+  "repetitions": 3,
+  "summary": {
+    "records": [
+      64,
+      256,
+      1024
+    ],
+    "queries": [
+      1,
+      4,
+      8
+    ],
+    "features": 2,
+    "serialized_statistic_scalars": 7,
+    "feature": "[1,x]",
+    "objective": "mean-half-squared-loss-plus-ridge",
+    "lambda": "1",
+    "approximation_grid": "1/2",
+    "input_scale": 16,
+    "dataset_generator": "x=((7i mod33)-16)/16; y=((11i mod33)-16)/16"
+  },
+  "join": {
+    "organizations": 3,
+    "public_fixed_cohort": 4,
+    "joined_entity_cap": 2,
+    "scalar_clip_cm": 3,
+    "public_denominator": 8,
+    "matching": "exact declared synthetic entity equality",
+    "output": "clipped fixed-denominator aggregate only",
+    "crypto_psi": "not-implemented"
+  },
+  "stream": {
+    "rounds": 4,
+    "window": "cumulative event-time [0,watermark]",
+    "correction": "explicit trusted-operator revision; old/new snapshots bound",
+    "release_classification": "explicitly-unprotected exact synthetic output",
+    "storage": "SQLite WAL/FULL + existing ReferenceAccountant idempotent outbox",
+    "max_release_slots": 4,
+    "DP_guarantee": false
+  },
+  "toy": {
+    "denoising": {
+      "shape": [
+        2,
+        2
+      ],
+      "steps": 3,
+      "signal_scales": [
+        "1",
+        "4/5",
+        "3/5",
+        "5/13"
+      ],
+      "noise_scales": [
+        "0",
+        "3/5",
+        "4/5",
+        "12/13"
+      ],
+      "untrained_epsilon_predictor": "x/4",
+      "initial_pixels": [
+        "1/2",
+        "-1/2",
+        "1",
+        "-1"
+      ],
+      "proof": "not-run"
+    },
+    "control": {
+      "steps": 6,
+      "start": 3,
+      "actions": [
+        -1,
+        0,
+        1
+      ],
+      "transition": "x+a",
+      "reward": "-(x+a)^2",
+      "reward_units": "negative-squared-grid-position",
+      "real_world": false
+    },
+    "training": "not-run",
+    "environment_authenticity": "not-tested",
+    "adaptive_transcript_DP": "not-implemented",
+    "manuscript_specific_model_values": "pending-source-review"
+  },
+  "follow_up_expansion": {
+    "id": "synthetic-generative-followup-1",
+    "max_cpu_seconds": 30,
+    "max_pixels": 16,
+    "denoising_steps": 4,
+    "data": "original synthetic geometric arrays",
+    "model": "versioned fixed small convolution; no external model weights/data",
+    "required_full_path": [
+      "every denoising call",
+      "numeric conversion",
+      "all trace/commitment/proof costs if real backend added"
+    ],
+    "failure_criteria": [
+      "full-path cost exceeds budget",
+      "trace omitted or wrong numeric result",
+      "unavailable real proof when required",
+      "training example copy in declared attack case"
+    ],
+    "excluded_claims": [
+      "model-family feasibility",
+      "real control/safety",
+      "DP or environment truth"
+    ]
+  },
+  "proof_amortization": {
+    "status": "not-run",
+    "existing_backend_source": "https://github.com/FZKML/fzkml/blob/b602197104d810bc1a41a2ea24085b25484272b7/specs/models/model-capacity-v1.json",
+    "reason": "Existing genuine ridge proof is fixed2records, integer identity features, public weights1/2 and sum objective. This benchmark uses64/256/1024 rational affine-feature records, mean objective and absolute loss q; no matching input/summary/witness circuit is integrated.",
+    "break_even": null,
+    "mock_proof_permitted": false
+  }
+}
