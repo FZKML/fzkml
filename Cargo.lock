@@ -518,6 +518,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "fzkml-models"
+version = "0.1.0"
+dependencies = [
+ "ark-bn254",
+ "ark-crypto-primitives",
+ "ark-ff",
+ "ark-groth16",
+ "ark-r1cs-std",
+ "ark-relations",
+ "ark-serialize",
+ "rand",
+ "serde_json",
+ "sha2",
+]
+
+[[package]]
 name = "fzkml-python"
 version = "0.1.0"
 dependencies = [

@@ -95,7 +95,7 @@ def validate(root, paths=None):
         raise ValueError("dependency inventory differs from pinned requirements")
     validate_ci_inventory(root)
     integrated = {"pyproject.toml", "Cargo.toml", "crates/fzkml-core/Cargo.toml",
-                  "crates/fzkml-python/Cargo.toml", "bindings/pyproject.toml"}
+                  "crates/fzkml-python/Cargo.toml", "crates/fzkml-models/Cargo.toml", "bindings/pyproject.toml"}
     # Additional runtime/build manifests still require explicit inventory integration.
     for name in actual:
         basename = Path(name).name

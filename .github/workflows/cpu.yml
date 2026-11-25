@@ -47,7 +47,7 @@ jobs:
       - name: Install reviewed tools
         run: |
           python -m pip install --require-hashes -r tools-requirements.txt
-          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          source ./scripts/install-rust-toolchain
           uv sync --locked
       - name: Record hosted image revision
         run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
@@ -55,6 +55,8 @@ jobs:
       - run: ./scripts/research run tiny-reference
       - name: Require Session 01 genuine private transition proof
         run: ./scripts/s04-private
+      - name: Require genuine ridge and fixed-factor research proofs
+        run: ./scripts/models
       - name: Genuine-proof result and assurance boundary
         if: always()
         run: ./scripts/research summary >> "$GITHUB_STEP_SUMMARY"
@@ -73,7 +75,7 @@ jobs:
       - name: Install reviewed tools
         run: |
           python -m pip install --require-hashes -r tools-requirements.txt
-          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          source ./scripts/install-rust-toolchain
           uv sync --locked
       - name: Record hosted image revision
         run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
@@ -97,7 +99,7 @@ jobs:
       - name: Install reviewed tools
         run: |
           python -m pip install --require-hashes -r tools-requirements.txt
-          rustup toolchain install 1.85.1 --profile minimal --component rustfmt --component clippy
+          source ./scripts/install-rust-toolchain
           uv sync --locked
       - name: Record hosted image revision
         run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
