@@ -47,6 +47,9 @@ jobs:
         env:
           PROFILE: nightly-adversarial
         run: ./scripts/research run "$PROFILE"
+      - name: Bounded capacity and model references; no genuine-proof claim
+        if: always()
+        run: PYTHONPATH=src uv run --locked python -m fzkml_models --references-only --repetitions 3
       - name: Retain every attempt outcome in job summary
         if: always()
         run: ./scripts/research summary >> "$GITHUB_STEP_SUMMARY"
