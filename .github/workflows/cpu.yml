@@ -28,6 +28,8 @@ jobs:
       - name: Record hosted image revision
         run: printf '%s\n' "$ImageOS" "$ImageVersion" >> "$GITHUB_STEP_SUMMARY"
       - run: ./scripts/validate
+      - name: Check bounded research evidence and render the claim preview
+        run: ./scripts/ci-evidence --output "$RUNNER_TEMP/fzkml-ci-evidence" >> "$GITHUB_STEP_SUMMARY"
       - run: ./scripts/validate-aggregation
       - run: ./scripts/build-public-report
       - run: ./scripts/reproduce --contract-only
