@@ -1,5 +1,6 @@
 //! Exact tiny research relation. No production security or constant-time claim.
 pub mod aggregation;
+pub mod private;
 pub mod proof;
 
 pub const RESULT_SCHEMA_VERSION: &str = "1.0.0";

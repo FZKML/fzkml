@@ -79,6 +79,45 @@
       }
     },
     {
+      "id": "private-transcript-v1",
+      "kind": "synthetic-fixture",
+      "source": "https://github.com/FZKML/fzkml/blob/codex/private-transition-proof/assets/public/private-transcript-v1.json",
+      "version": "private-transcript-v1; exact-byte sha256 plus embedded statement digest",
+      "path": "assets/public/private-transcript-v1.json",
+      "sha256": "8d015695e3bd4ccae26c81c1ee1c2ab7342e7a8206e16bb63b683e8a50e678e7",
+      "terms": {
+        "license": "Apache-2.0",
+        "text": "LICENSE"
+      },
+      "attribution": "Original FZKML contribution; public synthetic values and test-only openings; no private manuscript inputs.",
+      "intended_use": "Public commitment/transcript encoding and low-entropy leakage counterexample tests only; not a security or training dataset.",
+      "permissions": {
+        "download": "allowed",
+        "experiment": "allowed",
+        "repository": "allowed",
+        "release": "allowed",
+        "generated_outputs": "allowed"
+      },
+      "generation": {
+        "method": "scripts/generate_private_vectors.py using standard-library SHA-256 and struct",
+        "configuration": {
+          "source": "reference/private_transcript.py",
+          "public_test_openings": [
+            11,
+            19
+          ],
+          "private_inputs": "none"
+        }
+      },
+      "source_inputs": "none; all values and openings are public synthetic fixtures",
+      "review": {
+        "status": "approved",
+        "reviewer": "guillaumelauzier (original implementation submitted for PR review)",
+        "date": "2026-11-24",
+        "decision": "Original public conformance fixture only. Test openings are intentionally public and must never be reused operationally; no hiding or cryptographic security conclusion is implied."
+      }
+    },
+    {
       "id": "synthetic-cross-silo-v1",
       "kind": "synthetic-fixture",
       "source": "https://github.com/FZKML/fzkml/blob/codex/m0-scientific-specifications/scripts/research_fixtures.py",

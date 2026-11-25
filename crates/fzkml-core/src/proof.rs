@@ -3,7 +3,12 @@ use crate::{Batch, ContractError, Witness, evaluate};
 use ark_bn254::{Bn254, Fr};
 use ark_ff::{AdditiveGroup, Field, PrimeField};
 use ark_groth16::{Groth16, PreparedVerifyingKey, Proof, ProvingKey, prepare_verifying_key};
-use ark_r1cs_std::{alloc::AllocVar, boolean::Boolean, eq::EqGadget, fields::fp::FpVar};
+use ark_r1cs_std::{
+    alloc::{AllocVar, AllocationMode},
+    boolean::Boolean,
+    eq::EqGadget,
+    fields::fp::FpVar,
+};
 use ark_relations::r1cs::{ConstraintSynthesizer, ConstraintSystemRef, SynthesisError};
 use ark_serialize::{CanonicalDeserialize, CanonicalSerialize};
 use rand::rngs::OsRng;
@@ -102,82 +107,113 @@ impl ConstraintSynthesizer<Fr> for Circuit {
     fn generate_constraints(self, cs: ConstraintSystemRef<Fr>) -> Result<(), SynthesisError> {
         let domain_input = FpVar::new_input(cs.clone(), || Ok(domain()))?;
         domain_input.enforce_equal(&FpVar::Constant(domain()))?;
-        let w = FpVar::new_input(cs.clone(), || Ok(field(self.batch.w.into())))?;
-        bound(cs.clone(), &w, self.batch.w.into(), -32, 32)?;
-        let mut numerator = FpVar::Constant(Fr::ZERO);
-        let mut denominator = FpVar::Constant(Fr::ZERO);
-        let mut num_value = 0_i128;
-        let mut den_value = 0_i128;
-        for i in 0..3 {
-            let xv = i128::from(self.batch.x[i]);
-            let yv = i128::from(self.batch.y[i]);
-            let cv = i128::from(self.batch.counts[i]);
-            let x = FpVar::new_input(cs.clone(), || Ok(field(xv)))?;
-            let y = FpVar::new_input(cs.clone(), || Ok(field(yv)))?;
-            let count = FpVar::new_input(cs.clone(), || Ok(field(cv)))?;
-            bound(cs.clone(), &x, xv, -32, 32)?;
-            bound(cs.clone(), &y, yv, -32, 32)?;
-            bound(cs.clone(), &count, cv, 1, 4)?;
-            let prediction = rounded(
-                cs.clone(),
-                &(&w * &x),
-                i128::from(self.batch.w) * xv,
-                &FpVar::Constant(field(16)),
-                16,
-                16,
-            )?;
-            bound(
-                cs.clone(),
-                &prediction,
-                self.witness.predictions[i].into(),
-                -64,
-                64,
-            )?;
-            let residual = prediction - y;
-            let residual_value = i128::from(self.witness.predictions[i]) - yv;
-            bound(cs.clone(), &residual, residual_value, -96, 96)?;
-            let gradient = rounded(
-                cs.clone(),
-                &(residual * x),
-                residual_value * xv,
-                &FpVar::Constant(field(16)),
-                16,
-                16,
-            )?;
-            bound(
-                cs.clone(),
-                &gradient,
-                self.witness.gradients[i].into(),
-                -192,
-                192,
-            )?;
-            let update = &w
-                - rounded(
-                    cs.clone(),
-                    &gradient,
-                    self.witness.gradients[i].into(),
-                    &FpVar::Constant(field(4)),
-                    4,
-                    4,
-                )?;
-            bound(cs.clone(), &update, self.witness.updates[i].into(), -80, 80)?;
-            numerator += update * &count;
-            denominator += count;
-            num_value += i128::from(self.witness.updates[i]) * cv;
-            den_value += cv;
-        }
-        let output = rounded(
+        let arithmetic = arithmetic(
             cs.clone(),
-            &numerator,
-            num_value,
-            &denominator,
-            den_value,
-            12,
+            &self.batch,
+            &self.witness,
+            AllocationMode::Input,
         )?;
         let claimed = FpVar::new_input(cs.clone(), || Ok(field(self.claimed.into())))?;
         bound(cs, &claimed, self.claimed.into(), -80, 80)?;
-        output.enforce_equal(&claimed)
+        arithmetic.output.enforce_equal(&claimed)
     }
+}
+
+/// One maintained constraint implementation; visibility is chosen by the proof wrapper.
+pub(crate) struct ArithmeticVars {
+    pub w: FpVar<Fr>,
+    pub x: Vec<FpVar<Fr>>,
+    pub y: Vec<FpVar<Fr>>,
+    pub output: FpVar<Fr>,
+}
+pub(crate) fn arithmetic(
+    cs: ConstraintSystemRef<Fr>,
+    batch: &Batch,
+    witness: &Witness,
+    visibility: AllocationMode,
+) -> Result<ArithmeticVars, SynthesisError> {
+    let w = FpVar::new_variable(cs.clone(), || Ok(field(batch.w.into())), visibility)?;
+    bound(cs.clone(), &w, batch.w.into(), -32, 32)?;
+    let mut numerator = FpVar::Constant(Fr::ZERO);
+    let mut denominator = FpVar::Constant(Fr::ZERO);
+    let mut num_value = 0_i128;
+    let mut den_value = 0_i128;
+    let mut xs = Vec::with_capacity(3);
+    let mut ys = Vec::with_capacity(3);
+    for i in 0..3 {
+        let xv = i128::from(batch.x[i]);
+        let yv = i128::from(batch.y[i]);
+        let cv = i128::from(batch.counts[i]);
+        let x = FpVar::new_variable(cs.clone(), || Ok(field(xv)), visibility)?;
+        let y = FpVar::new_variable(cs.clone(), || Ok(field(yv)), visibility)?;
+        let count = FpVar::new_input(cs.clone(), || Ok(field(cv)))?;
+        xs.push(x.clone());
+        ys.push(y.clone());
+        bound(cs.clone(), &x, xv, -32, 32)?;
+        bound(cs.clone(), &y, yv, -32, 32)?;
+        bound(cs.clone(), &count, cv, 1, 4)?;
+        let prediction = rounded(
+            cs.clone(),
+            &(&w * &x),
+            i128::from(batch.w) * xv,
+            &FpVar::Constant(field(16)),
+            16,
+            16,
+        )?;
+        bound(
+            cs.clone(),
+            &prediction,
+            witness.predictions[i].into(),
+            -64,
+            64,
+        )?;
+        let residual = prediction - y;
+        let residual_value = i128::from(witness.predictions[i]) - yv;
+        bound(cs.clone(), &residual, residual_value, -96, 96)?;
+        let gradient = rounded(
+            cs.clone(),
+            &(residual * x),
+            residual_value * xv,
+            &FpVar::Constant(field(16)),
+            16,
+            16,
+        )?;
+        bound(
+            cs.clone(),
+            &gradient,
+            witness.gradients[i].into(),
+            -192,
+            192,
+        )?;
+        let update = &w
+            - rounded(
+                cs.clone(),
+                &gradient,
+                witness.gradients[i].into(),
+                &FpVar::Constant(field(4)),
+                4,
+                4,
+            )?;
+        bound(cs.clone(), &update, witness.updates[i].into(), -80, 80)?;
+        numerator += update * &count;
+        denominator += count;
+        num_value += i128::from(witness.updates[i]) * cv;
+        den_value += cv;
+    }
+    let output = rounded(
+        cs.clone(),
+        &numerator,
+        num_value,
+        &denominator,
+        den_value,
+        12,
+    )?;
+    Ok(ArithmeticVars {
+        w,
+        x: xs,
+        y: ys,
+        output,
+    })
 }
 
 fn public_inputs(batch: &Batch, output: i64) -> Vec<Fr> {
